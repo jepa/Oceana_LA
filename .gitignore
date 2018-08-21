@@ -1,9 +1,9 @@
 # History files
 .Rhistory
 .Rapp.history
+.gitignore
 
 # Session Data files
-.RData
 
 # Example code in package build process
 *-Ex.R
@@ -34,3 +34,4 @@ vignettes/*.pdf
 
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+.Rproj.user
