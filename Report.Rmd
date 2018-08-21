@@ -66,7 +66,7 @@ development does not jeopardize health and livelihoods in (particularly coastal)
 
 ## Specifics Brazil
 ## Specifics Chile
-##Specifics Peru
+## Specifics Peru
 # Methods
 
 The objective of this project, for each nation considered, was to determine the domestic seafood
