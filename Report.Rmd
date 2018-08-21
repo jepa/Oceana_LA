@@ -1,0 +1,13 @@
+---
+title: Contributions of marine capture fisheries to the domestic livelihoods and seafood
+  consumption of Brazil Chile and Peru
+author: Juliano Palacios Abrantes, MSc, Camila Vargas, MSc, Daniel Viana, PhD, Maria
+  I. Rivera, MSc, Rocío López, MSc, Santiago de la Puente, MSc1, Andrés M. Cisneros-Montemayor,
+  PhD
+subtitle: 'Response to Oceana Request for Proposal: Most Important Fisheries for People
+  Study'
+output:
+  html_notebook: default
+  pdf_document: default
+---
+
