@@ -5,6 +5,7 @@
 
 # Session Data files
 .Report.Rmd
+
 # Example code in package build process
 *-Ex.R
 
@@ -35,3 +36,7 @@ vignettes/*.pdf
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
 .Rproj.user
+
+# Final R markdown knitted documents
+.Report.pdf
+.Report.nb.html
