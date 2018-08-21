@@ -7,7 +7,45 @@ author: Juliano Palacios Abrantes, MSc, Camila Vargas, MSc, Daniel Viana, PhD, M
 subtitle: 'Response to Oceana Request for Proposal: Most Important Fisheries for People
   Study'
 output:
-  html_notebook: default
+  html_notebook: 
+    toc: true
+    toc_float: true
   pdf_document: default
 ---
+
+# Project Goal
+# Key Objectives
+# Introduction
+## Overall introduction
+## Specifics Brazil
+## Specifics Chile
+##Specifics Peru
+#Methods
+##General Approach
+## Brazil Specifics
+## Chile Specifics
+## Peru Specifics
+# Results
+## Results Brazil
+### Domestic Fish Consumption (General)
+### Employment and Income (General)
+### Fisheries Context (General)
+## Results Chile
+### Domestic Fish Consumption (General)
+### Employment and Income (General)
+### Fisheries Context (General)
+## Results Peru
+### Domestic Fish Consumption (General)
+### Employment and Income (General)
+### Fisheries Context (General)
+# Critical Analysis 
+## Overall of the region
+### Brazil
+### Chile
+### Peru
+# Conclusions
+# References
+References
+Data
+Supplemental Material List 
 
