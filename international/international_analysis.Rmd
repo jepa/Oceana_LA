@@ -1,0 +1,190 @@
+---
+title: "International Nalaysis"
+output: html_notebook
+---
+
+```{r setup, eval=F, echo=F, warning=F,message=F}
+
+#### READ ME !!! ####
+# Run this chunk before knit so you make sure you have all pkgs installed in R
+
+ipak <- function(pkg){
+  new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+  if (length(new.pkg)) 
+    install.packages(new.pkg, dependencies = TRUE)
+  sapply(pkg, require, character.only = TRUE)
+}
+
+#### Library ####
+packages <- c(
+  # "readxl", # Read dataframe
+  "dplyr", # Data manipulation
+  "tidyr", # Data manipulation
+  "ggplot2", #Nice grpahs and spatial analysis
+  "plotly",
+  # "rgdal",
+  # "RColorBrewer",
+  "knitr",
+  # "kableExtra",
+  "data.table"#,
+  # "ggrepel",
+  # "gridExtra",
+  # "ggmap",
+  # "rgeos",
+  # "sp",
+  # "rgdal", #Spatial analysis 
+  # "tools" #Spatial analysis 
+)
+
+suppressWarnings(
+  suppressMessages(
+    ipak(packages)
+    )
+)
+
+### Set up pannel 
+
+# Choose countries to analyze
+Countries <- c("Brazil","Chile","Peru")
+# Year(s) to be analized
+Year_an <- 2014
+
+```
+
+### Landings data
+- Estimate landings and revenue for each country form the Sea Around Us (http://www.seaaroundus.org/) database. 
+
+#### Notes
+
+- Using reconstructed catch
+- Filter out external countries (China, South Korea and "unknown")
+- Removed Chile's reported landings in Peruvean waters
+
+#### Questions to discuss with the team:
+- Should we remove Recreational landings? 
+- Removed Chile's reported landings in Peruvean waters?
+
+```{r SAU_Landings_Data, eval = T, echo = T, warning =F, message = F}
+
+#Data Path
+Data_Path <- "./information/raw_databases/"
+# File name
+SAU_F_Name <- "SAU EEZ 604,152,76 v47-0.csv"
+#read dataset
+SAU <- fread(paste(Data_Path,SAU_F_Name,
+                   sep = ""))
+# Data exploration
+# names(SAU)
+# head(SAU)
+# unique(SAU$fishing_sector) # "Industrial"   "Subsistence"  "Artisanal"    "Recreational"
+
+# Countries excluded from the analysis
+unique(SAU$fishing_entity) # There are 29 countries fishing in these waters, fill filter them
+
+SAU_Clean <- SAU %>% 
+  group_by(area_name,
+           year,
+           # scientific_name, # Trade data is too generic for species details
+           fishing_entity#,
+           # fishing_sector # #Trade data is too generic for sector details
+           ) %>% 
+  summarise(
+    Total_tonnes = sum(tonnes),
+    Total_value = sum(landed_value)
+  ) %>% 
+  filter(fishing_entity %in% Countries, # Remove China, Korea and unknown fishing country
+         year == Year_an) %>%  # Choose year to be analyzed
+  rename(Reporter = fishing_entity) %>%  # Change name of variable to match UN trade dataset
+  filter(area_name != "Peru" | Reporter != "Chile") # Remove Chile report in Peruvean waters*
+  
+  head(SAU_Clean)
+
+# names(SAU_Clean)
+# head(SAU_Clean)
+# unique(SAU_Clean$fishing_entity)
+
+# Clenaed!
+
+#Write csv
+# write.csv(SAU_Clean,
+#           "sau_clean_dataset.csv")
+```
+### Trade data
+- Estimate imports and exports of fish for each country form the UN come-trade database
+
+#### Methods Notes:
+
+- Data set does not contain weight information, just US dollars
+- "Fish and crustaceans, molluscs and other aquatic invertebrates" is the only clasification for all three countries
+- Exports - Imports - Re-Imports 
+
+#### Questions to discuss with the team:
+- What are "re-import"? Do we consider them? I'm assuming that they cost money to the country re-importing
+
+```{r UN_Cometrade_Data, eval = T, echo = T, warning =F, message = F}
+
+#File name
+UN_F_Name <- "UN_Comtrade_Statistics.csv"
+
+
+UN <- fread(paste(Data_Path,UN_F_Name,
+                   sep = ""))
+
+# Data exploration
+
+head(UN)
+names(UN)
+# unique(UN$Commodity) # [1] "Fish and crustaceans, molluscs and other aquatic invertebrates
+# unique(UN$Reporter) # [1] "Brazil" "Chile"  "Peru"  
+# min(UN$Year) # 2013
+# max(UN$Year) #2017
+max(UN$Gross_weight_kg)
+
+UN_Clean <- UN %>% 
+  filter(Year == Year_an) %>% 
+  group_by(Reporter,
+           Trade_Flow
+           ) %>% 
+  summarise(
+    Trade_Value = sum(Trade_Value_US, na.rm =T)
+  ) %>% 
+  spread(Trade_Flow,Trade_Value) %>% 
+  mutate(
+    Net_Export_Value = (Export-Import),
+    Net_Re_Import_value = ifelse(!is.na(`Re-Import`),(Net_Export_Value -`Re-Import`),Net_Export_Value)
+  ); UN_Clean
+  
+
+
+```
+
+### Analysis
+
+- Merge datasets and estimate total tons of fish and revenue from fishing activity
+
+#### Methods Notes
+
+- Total fishing value + Net exportation gain
+
+#### Questions to discuss with the team
+
+
+```{r Analysis, eval = T, echo = T, warning =F, message = F}
+
+# Merge Datasets ####
+
+SAU_Clean %>% 
+  left_join(UN_Clean,
+            by = "Reporter") %>% 
+  mutate(
+    Total_Fishing_Value = Total_value + Net_Re_Import_value
+  ) %>% 
+  ggplot(.,
+           aes(
+             x = Reporter,
+             y = Total_Fishing_Value,
+             fill = Reporter
+           )) +
+  geom_bar(stat = "identity")
+
+```
