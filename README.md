@@ -13,24 +13,24 @@ Andrés M. Cisneros-Montemayor, PhD
 
 ## Timeline and Important dates:
 
-### First Progress report phone call ()
+### First Progress report phone call (Aug. 27th)
 - Develop project datasets for analysis (**JEPA**)
 - Identify and review all available literature and data on seafood consumption and related food security for each nation (**All**)
 - Prepare preliminary reports of findings for each nation, highlighting existing data and limitations (**JEPA**)
 - Discuss with Oceana specifics of analysis and potentially useful contacts through national offices (**JEPA/ACM**)
   
-### Second Progress report phone call ()
+### Second Progress report phone call (Oct. 1st)
 - Data collection on previously identified sources (**Brasil/Chile/Peru**)
 - Data collection involving personal in-country meetings with individuals from ministries, universities and national Oceana offices (**Brasil/Chile/Peru**)
 Analysis of collected data (**All**)
 Highlight existing data gaps and qualitative issues (**Brasil/Chile/Peru**)
 Second preliminary reports of findings for each nation (**JEPA**)
 
-### First draft of deliverables
+### First draft of deliverables (Nov. 2nd)
 - **First draft of report and joint dataset**
 
-### Deliverables follow-up phone call
+### Deliverables follow-up phone call (Nov. 12th)
 - Address comments on report
 
-### Final deliverable (December 21)
+### Final deliverable (December 21st)
 - **Final deliverable**
