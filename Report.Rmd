@@ -6,6 +6,12 @@ output:
   html_notebook: 
     toc: true
     toc_float: true
+    collapsed: false
+    smooth_scroll: true
+    number_sections: true
+
+---
+
   pdf_document: default
 ---
 
