@@ -1,11 +1,7 @@
 ---
-title: Contributions of marine capture fisheries to the domestic livelihoods and seafood
-  consumption of Brazil Chile and Peru
-author: Juliano Palacios Abrantes, MSc, Camila Vargas, MSc, Daniel Viana, PhD, Maria
-  I. Rivera, MSc, Rocío López, MSc, Santiago de la Puente, MSc1, Andrés M. Cisneros-Montemayor,
-  PhD
-subtitle: 'Response to Oceana Request for Proposal: Most Important Fisheries for People
-  Study'
+title: "Contributions of marine capture fisheries to the domestic livelihoods and seafood consumption of Brazil Chile and Peru"
+author: "Juliano Palacios Abrantes, MSc, Camila Vargas, MSc, Daniel Viana, PhD, Maria I. Rivera, MSc, Rocío López, MSc, Santiago de la Puente, MSc, Andrés M. Cisneros-Montemayor, PhD"
+subtitle: "Response to Oceana Request for Proposal: Most Important Fisheries for People Study"
 output:
   html_notebook: 
     toc: true
@@ -18,7 +14,7 @@ Determine the contribution of specific fisheries to domestic fish consumption an
 livelihoods throughout Brazil, Chile, and Peru.
 
 # Key Objectives
-Key objectives
+
 - Critical analysis highlighting important capture fisheries for domestic food security, in the context
 of vulnerable populations and regions.
 - Determine most important capture fisheries for food provision, and domestic seafood consumption
@@ -38,61 +34,23 @@ Peru).
 
 # Introduction
 
-Latin American nations include the main fisheries regions of the world in terms of landings and,
-with a high (51%) proportion of net seafood production traded locally1, domestic fisheries remain highly
-important for national food security. The UN Food and Agriculture Organization estimates that Latin
-American countries consumed around 6.2 million tons of fish in 2015, averaging a per capita food fish
-consumption of 9.8 kg/year. The contribution of fisheries’ to food security and livelihoods is particularly
-pertinent given the ongoing World Trade Negotiations on fishery subsidies disciplines, as these are partially
-intended to avoid trade and operational distortions that may threaten local food security in maritime
-nations2.
+Latin American nations include the main fisheries regions of the world in terms of landings and, with a high (51%) proportion of net seafood production traded locally1, domestic fisheries remain highly important for national food security. The UN Food and Agriculture Organization estimates that Latin American countries consumed around 6.2 million tons of fish in 2015, averaging a per capita food fish consumption of 9.8 kg/year. The contribution of fisheries’ to food security and livelihoods is particularly pertinent given the ongoing World Trade Negotiations on fishery subsidies disciplines, as these are partially intended to avoid trade and operational distortions that may threaten local food security in maritime nations.
 
-In 2016, total fish landings in Chile and Peru, two of the world’s top fishing nations, averaged 8
-million tons per year [@Fishstat]. In Peru, the seafood sector generates over US$1.7 billion per year,
-supporting over 200 thousand jobs3. Moreover, Chile’s aquaculture production is among the largest of the
-world1 and fish meal and salmon exports generate over US$2.2 billion per year4. Despite comparatively
-lower catches, Brazil’s fisheries sustain thousands of local families in coastal areas5-6, and inland captures
-are among the largest of the world1. In Latin America size matters as 90% of Landings from small scale
-fisheries (SSF) are paramount in Latin America, as 90% of all motorized fishing vessels are under 12m
-length1. However, this sector is among the most marginalized groups in the region 7, despite it being critical
-to achieving Sustainable Development Goal 1, “Eradicating hunger,” as highlighted by the recent FAO
-small scale fisheries guidelines that explicitly links the sector with food security and poverty eradication
-[@Fishstat].
+In 2016, total fish landings in Chile and Peru, two of the world’s top fishing nations, averaged 8 million tons per year [@Fishstat]. In Peru, the seafood sector generates over US 1.7 billion per year, supporting over 200 thousand jobs3. Moreover, Chile’s aquaculture production is among the largest of the world1 and fish meal and salmon exports generate over US$2.2 billion per year4. Despite comparatively lower catches, Brazil’s fisheries sustain thousands of local families in coastal areas5-6, and inland captures are among the largest of the world1. In Latin America size matters as 90% of Landings from small scale fisheries (SSF) are paramount in Latin America, as 90% of all motorized fishing vessels are under 12m
+length1. However, this sector is among the most marginalized groups in the region 7, despite it being critical to achieving Sustainable Development Goal 1, “Eradicating hunger,” as highlighted by the recent FAO small scale fisheries guidelines that explicitly links the sector with food security and poverty eradication [@Fishstat].
 
-Given the increasing pressures on vulnerable populations, including climate change but also rapid
-policy and market shifts, it is imperative to highlight the critical importance of particular capture fisheries
-for meeting domestic seafood supply. This knowledge can help guide future policies to ensure economic
-development does not jeopardize health and livelihoods in (particularly coastal) communities.
+Given the increasing pressures on vulnerable populations, including climate change but also rapid policy and market shifts, it is imperative to highlight the critical importance of particular capture fisheries for meeting domestic seafood supply. This knowledge can help guide future policies to ensure economic development does not jeopardize health and livelihoods in (particularly coastal) communities.
 
 ## Specifics Brazil
 ## Specifics Chile
 ## Specifics Peru
 # Methods
 
-The objective of this project, for each nation considered, was to determine the domestic seafood
-consumption (regionally, as possible) and its relationship with local employment in wild capture fisheries.
-Given that seafood is a widely traded commodity and that aquaculture has steadily increased supply into
-markets, meeting this objective will involve using species-specific data on domestic catches, aquaculture,
-and seafood imports and exports in order to highlight the most important species and fisheries for
-contributing to local and national food security.
+The objective of this project, for each nation considered, was to determine the domestic seafood consumption (regionally, as possible) and its relationship with local employment in wild capture fisheries. Given that seafood is a widely traded commodity and that aquaculture has steadily increased supply into markets, meeting this objective will involve using species-specific data on domestic catches, aquaculture, and seafood imports and exports in order to highlight the most important species and fisheries for contributing to local and national food security.
 
-Figure 1 below is a conceptual diagram of the anticipated methods to be undertaken in each nation.
-These methods directly link to the objectives proposed in the project Terms of Reference. Given the nature
-of fisheries data and governance systems, we anticipate that each of the nations considered will present
-unique challenges. Nevertheless, the overall approach (as captured in Fig. 1) will be used to maintain
-consistency in methods and comparability of results across nations, of course acknowledging specific
-uncertainties as appropriate.
+Figure 1 below is a conceptual diagram of the anticipated methods to be undertaken in each nation. These methods directly link to the objectives proposed in the project Terms of Reference. Given the nature of fisheries data and governance systems, we anticipate that each of the nations considered will present unique challenges. Nevertheless, the overall approach (as captured in Fig. 1) will be used to maintain consistency in methods and comparability of results across nations, of course acknowledging specific uncertainties as appropriate.
 
-Based on the best available data in each country, total seafood supply will be estimated as the sum
-of per-species production of domestic catch and aquaculture (minus exports), plus the sum of speciesspecific
-net imports. Catch statistics will also be broken down by sectors whenever possible, including
-artisanal, industrial, and subsistence catches. In the case of domestic catch, inputs to aquaculture are
-subtracted from production (similar to exports); this is anticipated to be particularly relevant for large
-industrialized fisheries for small pelagics that are almost entirely reduced into fish feeds for aquaculture.
-The distribution of consumption (demand) of this seafood supply will be based on regional (as
-available) estimates of seafood consumption per capita and regional populations. An important additional
-aspect for the critical analysis portion of the project will be to link these regions with available socioeconomic
-and governance indicators, providing a basis for discussing relative vulnerabilities to potential
+Based on the best available data in each country, total seafood supply will be estimated as the sum of per-species production of domestic catch and aquaculture (minus exports), plus the sum of species specific net imports. Catch statistics will also be broken down by sectors whenever possible, including artisanal, industrial, and subsistence catches. In the case of domestic catch, inputs to aquaculture are subtracted from production (similar to exports); this is anticipated to be particularly relevant for large industrialized fisheries for small pelagics that are almost entirely reduced into fish feeds for aquaculture. The distribution of consumption (demand) of this seafood supply will be based on regional (as available) estimates of seafood consumption per capita and regional populations. An important additional aspect for the critical analysis portion of the project will be to link these regions with available socioeconomic and governance indicators, providing a basis for discussing relative vulnerabilities to potential
 changes in seafood supply.
 
 ## Brazil Specifics
