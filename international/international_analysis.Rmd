@@ -1,9 +1,13 @@
 ---
 title: "International Nalaysis"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+  pdf_document: default
 ---
 
-```{r setup, eval=F, echo=F, warning=F,message=F}
+```{r setup, eval=T, echo=F, warning=F,message=F}
 
 #### READ ME !!! ####
 # Run this chunk before knit so you make sure you have all pkgs installed in R
@@ -64,7 +68,7 @@ Year_an <- 2014
 - Should we remove Recreational landings? 
 - Removed Chile's reported landings in Peruvean waters?
 
-```{r SAU_Landings_Data, eval = T, echo = T, warning =F, message = F}
+```{r SAU_Landings_Data, eval = T, echo = T, warning =F, message = F, fig.height = 15, fig.width= 10}
 
 #Data Path
 Data_Path <- "./information/raw_databases/"
@@ -81,6 +85,67 @@ SAU <- fread(paste(Data_Path,SAU_F_Name,
 # Countries excluded from the analysis
 unique(SAU$fishing_entity) # There are 29 countries fishing in these waters, fill filter them
 
+#Main fisheries
+
+SAU$scientific_name <- gsub(" ", "\n",SAU$scientific_name)
+
+# Plot <-
+SAU %>% 
+  filter(scientific_name != "Marine\nfishes\nnot\nidentified") %>%  #Removed but top in B and P
+  group_by(area_name,
+           year,
+           scientific_name, # Trade data is too generic for species details
+           fishing_entity#,
+           # fishing_sector # #Trade data is too generic for sector details
+  ) %>%
+  summarise(
+    Total_tonnes = sum(tonnes),
+    Landings_Value = sum(landed_value)
+  ) %>%
+  filter(fishing_entity %in% Countries, # Remove China, Korea and unknown fishing country
+         year == Year_an) %>%  # Choose year to be analyzed
+  rename(Reporter = fishing_entity) %>%  # Change name of variable to match UN trade dataset
+  filter(area_name != "Peru" | Reporter != "Chile") %>% 
+  tidyr::gather("Variable","Value",5:6)  %>% 
+  group_by(area_name,Variable) %>%
+  top_n(n = 10, wt = Value) %>%  # Top 10, change if interactive plot
+  # Determine what species are in both "Top" categories
+  group_by(area_name,scientific_name) %>%  
+  mutate(Repeated = n()) %>% 
+  mutate(Repeated = ifelse(Repeated == 1, "No", "Yes")) %>% 
+  # Plot 
+  ggplot(.,
+         aes(
+           x= reorder(scientific_name,-Value),
+           y = Value/1000, #thousands
+           fill = Repeated
+         )
+  ) +
+  geom_bar(stat = "identity") +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 45,
+                                   hjust = 1,
+                                   face = "italic")
+  ) +
+  scale_fill_manual(values =c("darkred",
+                              "darkgreen"),
+                    name ="Repeated") +
+  facet_wrap(~area_name + Variable,
+             scales = "free",
+             ncol = 2) +
+  labs(title="Top 25 species by landings (left) and value (right)\n from the SAU dataset",
+       x ="Species",
+       y = "Values \n (Thousand of Tonns & US Dollars)"
+  )
+
+  
+# For interactive plot
+# Name the plot and then call it
+# ggplotly(g_plot)
+
+  
+## Totals per Country
+
 SAU_Clean <- SAU %>% 
   group_by(area_name,
            year,
@@ -90,7 +155,7 @@ SAU_Clean <- SAU %>%
            ) %>% 
   summarise(
     Total_tonnes = sum(tonnes),
-    Total_value = sum(landed_value)
+    Landings_Value = sum(landed_value)
   ) %>% 
   filter(fishing_entity %in% Countries, # Remove China, Korea and unknown fishing country
          year == Year_an) %>%  # Choose year to be analyzed
@@ -121,7 +186,7 @@ SAU_Clean <- SAU %>%
 #### Questions to discuss with the team:
 - What are "re-import"? Do we consider them? I'm assuming that they cost money to the country re-importing
 
-```{r UN_Cometrade_Data, eval = T, echo = T, warning =F, message = F}
+```{r UN_Cometrade_Data, eval = T, echo = T, warning =F, message = F, fig.width= 10}
 
 #File name
 UN_F_Name <- "UN_Comtrade_Statistics.csv"
@@ -132,27 +197,110 @@ UN <- fread(paste(Data_Path,UN_F_Name,
 
 # Data exploration
 
-head(UN)
-names(UN)
+# head(UN)
+# names(UN)
 # unique(UN$Commodity) # [1] "Fish and crustaceans, molluscs and other aquatic invertebrates
 # unique(UN$Reporter) # [1] "Brazil" "Chile"  "Peru"  
 # min(UN$Year) # 2013
 # max(UN$Year) #2017
-max(UN$Gross_weight_kg)
 
-UN_Clean <- UN %>% 
+# max(UN$Gross_weight_kg)
+
+
+#### Trade Graph ####
+
+# UN_Clean <-
+UN %>% 
   filter(Year == Year_an) %>% 
   group_by(Reporter,
            Trade_Flow
-           ) %>% 
+  ) %>% 
   summarise(
     Trade_Value = sum(Trade_Value_US, na.rm =T)
   ) %>% 
   spread(Trade_Flow,Trade_Value) %>% 
   mutate(
-    Net_Export_Value = (Export-Import),
-    Net_Re_Import_value = ifelse(!is.na(`Re-Import`),(Net_Export_Value -`Re-Import`),Net_Export_Value)
-  ); UN_Clean
+    Net_Trade_Value = (Export-Import),
+    Net_Re_Import_value = ifelse(!is.na(`Re-Import`),(Net_Trade_Value -`Re-Import`),Net_Trade_Value)
+  ) %>% 
+  tidyr::gather("Action","Value",2:6) %>%
+  filter(!Action %in% c("Re-Import","Net_Export_Value","Net_Re_Import_value")) %>% 
+  ggplot(.,
+         aes(
+           x = Action,
+           y = Value/1000000,
+           # colour = Action
+           fill = Action
+         )
+  ) +
+  # geom_point()
+  geom_bar(stat = "identity") +
+  facet_wrap(~Reporter) +
+  scale_fill_manual(values =c("green4", # Export
+                              "red", # Import
+                              "blue" # Totals
+  )
+  ) +
+  theme_classic() +
+  theme(legend.position = "top") +
+  coord_flip() +
+  labs(title="",
+       x ="Countries",
+       y = "Million US Dollars"
+  )
+
+  
+  #### Trade Graph With Landings ####
+
+
+# UN_Clean <-
+  UN %>% 
+  filter(Year == Year_an) %>% 
+  group_by(Reporter,
+           Trade_Flow
+  ) %>% 
+  summarise(
+    Trade_Value = sum(Trade_Value_US, na.rm =T)
+  ) %>% 
+  spread(Trade_Flow,Trade_Value) %>% 
+  mutate(
+    Net_Trade_Value = (Export-Import),
+    Net_Re_Import_value = ifelse(!is.na(`Re-Import`),(Net_Trade_Value -`Re-Import`),Net_Trade_Value)
+  ) %>% 
+  left_join(SAU_Clean,
+            by = "Reporter") %>% 
+  mutate(Fish_Industry_Total = Net_Trade_Value + Landings_Value) %>% 
+  select(1:3,5,10:11) %>% 
+  tidyr::gather("Action","Value",2:6) %>%
+  ggplot(.,
+         aes(
+           x = Action,
+           y = Value/1000000,
+           # colour = Action
+           fill = Action
+         )
+  ) +
+  # geom_point()
+  geom_bar(stat = "identity",
+           width = 0.5 #Bar size
+  ) +
+  facet_wrap(~Reporter) +
+  scale_fill_manual(values =c("green4", 
+                              "blue", 
+                              "red", 
+                              "green3",
+                              "skyblue"
+  )
+  ) +
+  theme_classic() +
+  theme(legend.position = "top") +
+  coord_flip() +
+  labs(title="",
+       x ="Countries",
+       y = "Million US Dollars"
+  )
+
+  
   
 
 
@@ -169,7 +317,7 @@ UN_Clean <- UN %>%
 #### Questions to discuss with the team
 
 
-```{r Analysis, eval = T, echo = T, warning =F, message = F}
+```{r Analysis, eval = F, echo = T, warning =F, message = F}
 
 # Merge Datasets ####
 
@@ -185,6 +333,7 @@ SAU_Clean %>%
              y = Total_Fishing_Value,
              fill = Reporter
            )) +
-  geom_bar(stat = "identity")
+  geom_bar(stat = "identity") +
+  theme_classic()
 
 ```
