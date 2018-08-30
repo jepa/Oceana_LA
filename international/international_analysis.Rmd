@@ -1,5 +1,5 @@
 ---
-title: "International Nalaysis"
+title: "International Analysis"
 output:
   pdf_document: default
   html_notebook: default
@@ -62,11 +62,11 @@ Year_an <- 2014
 
 - Using reconstructed catch
 - Filter out external countries (China, South Korea and "unknown")
-- Removed Chile's reported landings in Peruvean waters
+- Removed Chile's reported landings in Peruvian waters
 
 #### Questions to discuss with the team:
 - Should we remove Recreational landings? 
-- Removed Chile's reported landings in Peruvean waters?
+- Removed Chile's reported landings in Peruvian waters?
 
 ```{r SAU_Landings_Data, eval = T, echo = T, warning =F, message = F, fig.height = 15, fig.width= 10}
 
@@ -180,7 +180,7 @@ SAU_Clean <- SAU %>%
 #### Methods Notes:
 
 - Data set does not contain weight information, just US dollars
-- "Fish and crustaceans, molluscs and other aquatic invertebrates" is the only clasification for all three countries
+- "Fish and crustaceans, mollusks and other aquatic invertebrates" is the only classification for all three countries
 - Exports - Imports - Re-Imports 
 
 #### Questions to discuss with the team:
@@ -308,7 +308,7 @@ UN %>%
 
 ### Analysis
 
-- Merge datasets and estimate total tons of fish and revenue from fishing activity
+- Merge data-sets and estimate total tons of fish and revenue from fishing activity
 
 #### Methods Notes
 
