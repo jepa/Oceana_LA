@@ -39,3 +39,7 @@ rsconnect/
 # Final R markdown knitted documents
 .Report.pdf
 .Report.nb.html
+
+# International Analysis documents
+.international_analysis.html
+.international_analysis.nb.html
