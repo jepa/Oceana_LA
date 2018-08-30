@@ -13,13 +13,13 @@ This is the repository for the Oceana project on most important fisheries in Bra
 
 ## Authors contributing to the project:
 
-Juliano Palacios Abrantes, MSc (Project coordinator)
-Camila Vargas, MSc (Chile Working Group)
-Daniel Viana, PhD  (Brazil Working Group)
-Maria I. Rivera, MSc  (Chile Working Group)
-Rocio Lopez, MSc  (Peru Working Group)
-Santiago de la Puente, MSc  (Peru Working Group)
-Andrés M. Cisneros-Montemayor, PhD  (Project Coordinator)
+- Juliano Palacios Abrantes, MSc (Project coordinator)
+- Camila Vargas, MSc (Chile Working Group)
+- Daniel Viana, PhD  (Brazil Working Group)
+- Maria I. Rivera, MSc  (Chile Working Group)
+- Rocio Lopez, MSc  (Peru Working Group)
+- Santiago de la Puente, MSc  (Peru Working Group)
+- Andrés M. Cisneros-Montemayor, PhD  (Project Coordinator)
 
 **Note:** We expect the different working groups talk, colaborate and support each other throughout the development of the project
 
