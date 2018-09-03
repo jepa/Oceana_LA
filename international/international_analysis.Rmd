@@ -89,7 +89,8 @@ unique(SAU$fishing_entity) # There are 29 countries fishing in these waters, fil
 
 SAU$scientific_name <- gsub(" ", "\n",SAU$scientific_name)
 
-# Plot <-
+# Plot <- #For dynamic plot
+# SAU_Clean <- # FOr saving the plot
 SAU %>% 
   filter(scientific_name != "Marine\nfishes\nnot\nidentified") %>%  #Removed but top in B and P
   group_by(area_name,
@@ -172,7 +173,7 @@ SAU_Clean <- SAU %>%
 
 #Write csv
 # write.csv(SAU_Clean,
-#           "sau_clean_dataset.csv")
+#           "SAU_Dataset.csv")
 ```
 ### Trade data
 - Estimate imports and exports of fish for each country form the UN come-trade database
