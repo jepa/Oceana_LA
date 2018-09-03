@@ -15,6 +15,73 @@ output:
   pdf_document: default
 ---
 
+```{r setup, eval=T, echo=F, warning=F,message=F}
+
+#### READ ME !!! ####
+# Run this chunk before knit so you make sure you have all pkgs installed in R
+# Please include any package used in your analysis
+
+ipak <- function(pkg){
+  new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+  if (length(new.pkg)) 
+    install.packages(new.pkg, dependencies = TRUE)
+  sapply(pkg, require, character.only = TRUE)
+}
+
+#### Library ####
+packages <- c(
+  # "readxl", # Read dataframe
+  "dplyr", # Data manipulation
+  "tidyr", # Data manipulation
+  "ggplot2", #Nice grpahs and spatial analysis
+  "plotly",
+  # "rgdal",
+  # "RColorBrewer",
+  "knitr",
+  # "kableExtra",
+  "data.table"#,
+  # "ggrepel",
+  # "gridExtra",
+  # "ggmap",
+  # "rgeos",
+  # "sp",
+  # "rgdal", #Spatial analysis 
+  # "tools" #Spatial analysis 
+)
+
+suppressWarnings(
+  suppressMessages(
+    suppressPackageStartupMessages(
+    ipak(packages)
+    )
+  )
+)
+
+#### For all plots look alike
+
+ggtheme_plot <- function() {
+  theme(
+    plot.title = element_text(size = rel(1.25), hjust = 0, face = "bold"),
+    panel.background = element_blank(),
+    strip.background = element_blank(),
+    # strip.text       = element_text(size = base_size, face = "italic"),
+    panel.border     = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_text(angle = 45, hjust = 1, face = "italic", size = 22),
+    axis.text.y = element_text(size = 22),
+    axis.title = element_text(size = 22),
+    legend.key = element_rect(colour = NA, fill = NA),
+    legend.position  = "top",
+    legend.title = element_text(size = 20),
+    legend.text = element_text(size = 16),
+    strip.text.x = element_text(size = 20, colour = "darkgrey")
+  )
+}
+
+```
+
 # Project Goal
 Determine the contribution of specific fisheries to domestic fish consumption and domestic
 livelihoods throughout Brazil, Chile, and Peru.
@@ -29,6 +96,7 @@ patterns through time and space.
 income.
 - Determine most important capture fisheries and fisheries sectors for domestic catch and landed
 value.
+
 Deliverables
 - Final report including a critical analysis of domestic seafood consumption, related fisheries
 employment and income, and general fishery conditions of each nation included (Brazil, Chile and
@@ -59,10 +127,110 @@ Figure 1 below is a conceptual diagram of the anticipated methods to be undertak
 Based on the best available data in each country, total seafood supply will be estimated as the sum of per-species production of domestic catch and aquaculture (minus exports), plus the sum of species specific net imports. Catch statistics will also be broken down by sectors whenever possible, including artisanal, industrial, and subsistence catches. In the case of domestic catch, inputs to aquaculture are subtracted from production (similar to exports); this is anticipated to be particularly relevant for large industrialized fisheries for small pelagics that are almost entirely reduced into fish feeds for aquaculture. The distribution of consumption (demand) of this seafood supply will be based on regional (as available) estimates of seafood consumption per capita and regional populations. An important additional aspect for the critical analysis portion of the project will be to link these regions with available socioeconomic and governance indicators, providing a basis for discussing relative vulnerabilities to potential
 changes in seafood supply.
 
+## International Analysis
+
+The first approach that we did was to determine domestic seafood consumption, and its relationship with local employment in wild capture fisheries from international databases. While this first step represents the most broad analysis, it gives an idea of general country-level trends as well as information available to focus at more specific levels.
+
+### Databases
+
+The international analysis done using three main datasets. 
+
+1. The Sea Around Us Dataset (SAU) has reconstructed fisheries catches for all three countries dating from 1950 to 2014. These data present a more accurate and complete picture of global fisheries than nationally collected data (nor the FAO dataset) [@Zeller2016]. 
+2. The United Nations Come-trade database (UNCD) is managed by the Trade Statistics Branch of the United Nations Statistics Division. The UNCD has detailed trade data by commodity or services category for both merchandise trade and trade in services from 1962 to 2017 (https://unstats.un.org/unsd/trade/default.asp). 
+3. Fish consumption (TBD)
+
+### Analysis
+
+For the former analysis we used the SAU database to estimate the total landings (tons) of Chile, Brasil, and Peru in 2014, the last year of data in the SAU database. All fishing sectors were aggregated (Industrial, Subsistence and Artisanal) and ** COMMENT: "Recreational" was ignored as it does not contribute to local food security.** Other countries that fish within Chile, Peru and Brasil were also not included in the analysis for the same reason. Landings were grouped by taxa excluding those not identified (e.g. "Marine fishes not identified"). We used the same database and method to estimate the revenue (US dollars) from each fishery. 
+
+In addition to the landings data, we used the UNCD database to determine the value (US dollars) of fish and crustaceans, mollusks and other aquatic invertebrates imported and exported by Brazil, Chile and Peru in 2014. We estimate the net trade (*NT*) as follows:
+
+$$NT = (E-I)-RI$$
+where *E* is exports, *I* is imports and *RI* is re-imports. Due to the lack of detail in the UNCD database, all taxa in the SAU database had to be combined. Therefore, the estimate of total revenue from fisheries-related products per country in 2014 is an addition of the total landings revenue (all species) and the UN net trade.
+
+Finally, for estimating the contribution of landings and imports to domestic seafood consumption, we used the FAO data on food security per capita...
+
+
 ## Brazil Specifics
 ## Chile Specifics
 ## Peru Specifics
 # Results
+## International
+
+Results from the international analysis shows a clear dominance in fisheries landings of both Chile and Peru over Brazil, even thou Brazil captures around 3 times more species than the formers. In terms of total fishing revenue, all nations are simliar (**Table XX**)
+
+```{r Total_Table, eval =T, echo = F}
+
+#For dynamic plot
+# #Data Path
+Data_Path <- "./clean_databases/International/"
+# # File name
+SAU_F_Name <- "SAU_Dataset.csv"
+# #read dataset
+SAU_Database <- fread(paste(Data_Path,SAU_F_Name,
+                            sep = ""))
+
+SAU_Database %>% 
+  group_by(area_name,Variable) %>%
+  summarise(
+    "Totals" = round(sum(Value)/10000),
+    "Exploited Species" = n()
+  ) %>% 
+  tidyr::spread(Variable,Totals)
+
+```
+
+When we analyze the top ten species in terms of landing volume (tons) and value (USD), we find different trends between and within countries. Brazil's most prolific fishery in 2014 was *Umbrina canosai*, a croaker fished in the southern part of the country, however, the most exploited specie (in terms of landings) was the ray-finned fish *Sardinella brasiliensis*. For Chile, the most valuable fishery was the Chilean jack mackerel *Trachurus murphyi*, just above *Engraulis ringens*, Peruvian anchoveta, who not surprisingly represents the most landed species in the country. Finally, Peru most valuable fishery in 2014 was the Peruvian scallop *Argopecten purpuratus* but like Chile, *Engraulis ringens* was the most landed species (**Fig. XX**).
+
+```{r SAU_Landings_Data, eval = T, echo = T, warning =F, message = F, fig.height = 15, fig.width= 10, fig.cap= "Top 25 species by landings (left) and value (right)\n from the SAU dataset. Red bars repreent species not present in the other category"}
+
+## Data ####
+
+#For dynamic plot
+# #Data Path
+Data_Path <- "./clean_databases/International/"
+# # File name
+SAU_F_Name <- "SAU_Dataset.csv"
+# #read dataset
+SAU_Database <- fread(paste(Data_Path,SAU_F_Name,
+                            sep = ""))
+
+## Former Analysis ####
+
+SAU_Database %>%
+  group_by(area_name,Variable) %>%
+  top_n(n = 10, wt = Value) %>%  # Top 10, change if interactive plot
+  # Determine what species are in both "Top" categories
+  group_by(area_name,scientific_name) %>%  
+  mutate(Repeated = n()) %>% 
+  mutate(Repeated = ifelse(Repeated == 1, "No", "Yes")) %>% 
+  # Plot 
+  ggplot(.,
+         aes(
+           x= reorder(scientific_name,-Value),
+           y = Value/1000, #thousands
+           fill = Repeated
+         )
+  ) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values =c("darkred",
+                              "darkgreen"),
+                    name ="Repeated") +
+  facet_wrap(~area_name + Variable,
+             scales = "free",
+             ncol = 2) +
+  labs(#title="Top 25 species by landings (left) and value (right)\n from the SAU dataset",
+    x ="Species",
+    y = "Values (Thousand of Tonns & Thousand of US Dollars)"
+  ) +
+  ggtheme_plot()
+
+
+# For interactive plot
+# Name the plot and then call it
+# ggplotly(g_plot)
+```
+
 ## Results Brazil
 ### Domestic Fish Consumption (General)
 ### Employment and Income (General)
