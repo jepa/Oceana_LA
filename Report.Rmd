@@ -76,6 +76,19 @@ ggtheme_plot <- function() {
   )
 }
 
+
+#### Datasets ####
+
+
+#### SAU dataset used for international analysis chunks:
+# 1, 2 & 3
+Data_Path <- "./clean_databases/International/"
+# # File name
+SAU_F_Name <- "SAU_Dataset.csv"
+# #read dataset
+SAU_Database <- fread(paste(Data_Path,SAU_F_Name,
+                            sep = ""))
+
 ```
 
 # Project Goal
@@ -131,7 +144,7 @@ The first approach that we did was to determine domestic seafood consumption, an
 
 The international analysis done using three main datasets. 
 
-1. The Sea Around Us Dataset (SAU) has reconstructed fisheries catches for all three countries dating from 1950 to 2014. These data present a more accurate and complete picture of global fisheries than nationally collected data (nor the FAO dataset) [@Zeller2016]. 
+1. The Sea Around Us Dataset (SAU) has reconstructed fisheries catches for all three countries dating from 1950 to 2014. These data present a more accurate and complete picture of global fisheries than nationally collected data (nor the FAO dataset) [@Zeller2016]. Data extracted from SAU for Chile included the islands Juan Fernandez, Easter, and Desventuradas. For Brazil landings data included Fernando de Noronha, St Paul and St. Peter Archipelagos, and Trindade & Martim Vaz islands.
 2. The United Nations Come-trade database (UNCD) is managed by the Trade Statistics Branch of the United Nations Statistics Division. The UNCD has detailed trade data by commodity or services category for both merchandise trade and trade in services from 1962 to 2017 (https://unstats.un.org/unsd/trade/default.asp). 
 3. Fish consumption (TBD)
 
@@ -157,47 +170,29 @@ Results from the international analysis shows a clear dominance in fisheries lan
 
 ```{r Total_Table, eval =T, echo = F}
 
-#For dynamic plot
-# #Data Path
-Data_Path <- "./clean_databases/International/"
-# # File name
-SAU_F_Name <- "SAU_Dataset.csv"
-# #read dataset
-SAU_Database <- fread(paste(Data_Path,SAU_F_Name,
-                            sep = ""))
-
-SAU_Database %>% 
-  group_by(area_name,Variable) %>%
+Totals <- SAU_Database %>% 
+  group_by(Reporter,Variable) %>%
   summarise(
-    "Totals" = round(sum(Value)/10000),
+    "Totals" = round(sum(Value)),
     "Exploited Species" = n()
   ) %>% 
-  tidyr::spread(Variable,Totals)
+  tidyr::spread(Variable,Totals) %>% 
+  rename("Total Revenue" = Landings_Value,
+         "Total Landings" = Total_tonnes)
+
+kable(Totals)
 
 ```
 
-When we analyze the top ten species in terms of landing volume (tons) and value (USD), we find different trends between and within countries. Brazil's most prolific fishery in 2014 was *Umbrina canosai*, a croaker fished in the southern part of the country, however, the most exploited specie (in terms of landings) was the ray-finned fish *Sardinella brasiliensis*. For Chile, the most valuable fishery was the Chilean jack mackerel *Trachurus murphyi*, just above *Engraulis ringens*, Peruvian anchoveta, who not surprisingly represents the most landed species in the country. Finally, Peru most valuable fishery in 2014 was the Peruvian scallop *Argopecten purpuratus* but like Chile, *Engraulis ringens* was the most landed species (**Fig. XX**).
+When we analyze the top ten species in terms of landing volume (tons) and value (USD), we find different trends between and within countries. Brazil's most prolific fishery in 2014 was *Umbrina canosai*, a croaker fished in the southern part of the country, however, the most exploited specie (in terms of landings) was the ray-finned fish *Sardinella brasiliensis*. For Chile, the most valuable and landed fishery was *Engraulis ringens*, Peruvian anchoveta. Finally, Peru most valuable fishery in 2014 was the Peruvian scallop *Argopecten purpuratus* but like Chile, *Engraulis ringens* was the most landed species (**Fig. XX**).
 
 ```{r SAU_Landings_Data, eval = T, echo = T, warning =F, message = F, fig.height = 15, fig.width= 10, fig.cap= "Top 25 species by landings (left) and value (right)\n from the SAU dataset. Red bars repreent species not present in the other category"}
 
-## Data ####
-
-#For dynamic plot
-# #Data Path
-Data_Path <- "./clean_databases/International/"
-# # File name
-SAU_F_Name <- "SAU_Dataset.csv"
-# #read dataset
-SAU_Database <- fread(paste(Data_Path,SAU_F_Name,
-                            sep = ""))
-
-## Former Analysis ####
-
 SAU_Database %>%
-  group_by(area_name,Variable) %>%
+  group_by(Reporter,Variable) %>%
   top_n(n = 10, wt = Value) %>%  # Top 10, change if interactive plot
   # Determine what species are in both "Top" categories
-  group_by(area_name,scientific_name) %>%  
+  group_by(Reporter,scientific_name) %>%  
   mutate(Repeated = n()) %>% 
   mutate(Repeated = ifelse(Repeated == 1, "No", "Yes")) %>% 
   # Plot 
@@ -212,7 +207,7 @@ SAU_Database %>%
   scale_fill_manual(values =c("darkred",
                               "darkgreen"),
                     name ="Repeated") +
-  facet_wrap(~area_name + Variable,
+  facet_wrap(~Reporter + Variable,
              scales = "free",
              ncol = 2) +
   labs(#title="Top 25 species by landings (left) and value (right)\n from the SAU dataset",
@@ -220,7 +215,6 @@ SAU_Database %>%
     y = "Values (Thousand of Tonns & Thousand of US Dollars)"
   ) +
   ggtheme_plot()
-
 
 # For interactive plot
 # Name the plot and then call it

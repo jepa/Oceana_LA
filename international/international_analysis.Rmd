@@ -73,7 +73,7 @@ Year_an <- 2014
 #Data Path
 Data_Path <- "./information/raw_databases/"
 # File name
-SAU_F_Name <- "SAU EEZ 604,152,76 v47-0.csv"
+SAU_F_Name <- "SAU EEZ 76,969,77,970,604,152,153,154,155 v47-0.csv"
 #read dataset
 SAU <- fread(paste(Data_Path,SAU_F_Name,
                    sep = ""))
@@ -84,7 +84,8 @@ SAU <- fread(paste(Data_Path,SAU_F_Name,
 
 # Countries excluded from the analysis
 unique(SAU$fishing_entity) # There are 29 countries fishing in these waters, fill filter them
-
+Countries <- c("Brazil","Chile","Peru")
+unique(SAU$area_name)
 #Main fisheries
 
 SAU$scientific_name <- gsub(" ", "\n",SAU$scientific_name)
@@ -93,8 +94,8 @@ SAU$scientific_name <- gsub(" ", "\n",SAU$scientific_name)
 # SAU_Clean <- # FOr saving the plot
 SAU %>% 
   filter(scientific_name != "Marine\nfishes\nnot\nidentified") %>%  #Removed but top in B and P
-  group_by(area_name,
-           year,
+  filter(fishing_entity %in% Countries) %>% # Remove other fishing nations
+  group_by(year,
            scientific_name, # Trade data is too generic for species details
            fishing_entity#,
            # fishing_sector # #Trade data is too generic for sector details
@@ -103,15 +104,14 @@ SAU %>%
     Total_tonnes = sum(tonnes),
     Landings_Value = sum(landed_value)
   ) %>%
-  filter(fishing_entity %in% Countries, # Remove China, Korea and unknown fishing country
-         year == Year_an) %>%  # Choose year to be analyzed
+  filter(year == Year_an) %>%  # Choose year to be analyzed
   rename(Reporter = fishing_entity) %>%  # Change name of variable to match UN trade dataset
-  filter(area_name != "Peru" | Reporter != "Chile") %>% 
-  tidyr::gather("Variable","Value",5:6)  %>% 
-  group_by(area_name,Variable) %>%
+  # filter(area_name != "Peru" | Reporter != "Chile") %>% 
+  tidyr::gather("Variable","Value",4:5)  %>% 
+  group_by(Reporter,Variable) %>%
   top_n(n = 10, wt = Value) %>%  # Top 10, change if interactive plot
   # Determine what species are in both "Top" categories
-  group_by(area_name,scientific_name) %>%  
+  group_by(Reporter,scientific_name) %>%  
   mutate(Repeated = n()) %>% 
   mutate(Repeated = ifelse(Repeated == 1, "No", "Yes")) %>% 
   # Plot 
@@ -131,7 +131,7 @@ SAU %>%
   scale_fill_manual(values =c("darkred",
                               "darkgreen"),
                     name ="Repeated") +
-  facet_wrap(~area_name + Variable,
+  facet_wrap(~Reporter + Variable,
              scales = "free",
              ncol = 2) +
   labs(title="Top 25 species by landings (left) and value (right)\n from the SAU dataset",
@@ -174,6 +174,27 @@ SAU_Clean <- SAU %>%
 #Write csv
 # write.csv(SAU_Clean,
 #           "SAU_Dataset.csv")
+  
+  
+#### Proportion of the catch
+
+Proportions <- SAU_Database %>%
+  spread(Variable,Value) %>% 
+  group_by(scientific_name,Reporter) %>% 
+  summarise_at(vars(Landings_Value:Total_tonnes), mean,na.rm=T) %>% 
+  left_join(Totals,
+            by = "Reporter") %>% 
+  select(-`Exploited Species`) %>% 
+  mutate(
+    Proportion_Landings = round(Landings_Value/`Total Revenue`,2),
+    Proportion_Revenue = round(Total_tonnes/`Total Landings`,2)
+  ) %>% 
+  group_by(Reporter) %>% 
+  summarise(
+    Top = sum(Proportion_Landings),
+    N = n()
+  )
+
 ```
 ### Trade data
 - Estimate imports and exports of fish for each country form the UN come-trade database
