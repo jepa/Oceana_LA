@@ -43,5 +43,5 @@ rsconnect/
 .Report.nb.html
 
 # International Analysis documents
-.international_analysis.html
-.international_analysis.nb.html
+international_analysis.html
+international_analysis.nb.html
