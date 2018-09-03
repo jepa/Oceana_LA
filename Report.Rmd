@@ -9,10 +9,6 @@ output:
     collapsed: false
     smooth_scroll: true
     number_sections: true
-
----
-
-  pdf_document: default
 ---
 
 ```{r setup, eval=T, echo=F, warning=F,message=F}
