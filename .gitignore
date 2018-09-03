@@ -3,7 +3,9 @@
 .Rapp.history
 .gitignore
 
-# Session Data files
+# Data files
+# Please ignore raw_data files
+raw_databases
 
 # Example code in package build process
 *-Ex.R
