@@ -1,1393 +1,813 @@
-"","year","scientific_name","Reporter","Variable","Value"
-"1",2014,"Abudefduf","Brazil","Total_tonnes",5.2116944605
-"2",2014,"Acanthocybium
-solandri","Brazil","Total_tonnes",499.8772465901
-"3",2014,"Acanthurus","Brazil","Total_tonnes",27.2308034923
-"4",2014,"Achirus","Brazil","Total_tonnes",1102.39608356
-"5",2014,"Aetobatus
-narinari","Brazil","Total_tonnes",62.3432057061
-"6",2014,"Albula
-vulpes","Brazil","Total_tonnes",15.0399716165
-"7",2014,"Alectis
-ciliaris","Brazil","Total_tonnes",11.5115834646
-"8",2014,"Alopias","Brazil","Total_tonnes",28.2927942367
-"9",2014,"Alopias
-superciliosus","Brazil","Total_tonnes",18.0134413178
-"10",2014,"Alopias
-vulpinus","Brazil","Total_tonnes",14.2272005735
-"11",2014,"Aluterus","Brazil","Total_tonnes",500.8905130172
-"12",2014,"Amphiarius
-phrygiatus","Brazil","Total_tonnes",15.4090884176
-"13",2014,"Anchoa
-hepsetus","Brazil","Total_tonnes",43.7413495586
-"14",2014,"Anchoa
-nasus","Peru","Total_tonnes",0.3138322304
-"15",2014,"Anchoa
-spinifer","Brazil","Total_tonnes",0.3196445269
-"16",2014,"Anchoviella","Brazil","Total_tonnes",1889.7894887853
-"17",2014,"Anguilliformes","Brazil","Total_tonnes",109.3929114101
-"18",2014,"Anguilliformes","Peru","Total_tonnes",10924.2
-"19",2014,"Aplodactylus
-punctatus","Chile","Total_tonnes",48.3
-"20",2014,"Archosargus
-probatocephalus","Brazil","Total_tonnes",4.7140061176
-"21",2014,"Archosargus
-rhomboidalis","Brazil","Total_tonnes",110.5565213688
-"22",2014,"Argopecten
-purpuratus","Peru","Total_tonnes",76707
-"23",2014,"Ariidae","Brazil","Total_tonnes",16654.6588657226
-"24",2014,"Artemesia
-longinaris","Brazil","Total_tonnes",3513.3950507569
-"25",2014,"Aspistor
-quadriscutis","Brazil","Total_tonnes",3164.8299411832
-"26",2014,"Atlantoraja
-cyclophora","Brazil","Total_tonnes",0.0720631569
-"27",2014,"Aulacomya
-ater","Chile","Total_tonnes",7698.1
-"28",2014,"Aulacomya
-ater","Peru","Total_tonnes",8308.6022793253
-"29",2014,"Aulostomidae","Brazil","Total_tonnes",0.3033396168
-"30",2014,"Auxis
-thazard","Brazil","Total_tonnes",608.1779376288
-"31",2014,"Bagre
-bagre","Brazil","Total_tonnes",4188.7720322123
-"32",2014,"Bairdiella
-ronchus","Brazil","Total_tonnes",19.5487706917
-"33",2014,"Balistes
-capriscus","Brazil","Total_tonnes",1805.3657741595
-"34",2014,"Balistidae","Brazil","Total_tonnes",610.8808853953
-"35",2014,"Bathygobius
-soporator","Brazil","Total_tonnes",6.9101658072
-"36",2014,"Batoidea","Brazil","Total_tonnes",34462.4601295096
-"37",2014,"Batrachoididae","Brazil","Total_tonnes",370.2962969659
-"38",2014,"Beryx
-splendens","Brazil","Total_tonnes",1.4083625066
-"39",2014,"Beryx
-splendens","Chile","Total_tonnes",0.003
-"40",2014,"Bivalvia","Brazil","Total_tonnes",2362.3837798085
-"41",2014,"Bivalvia","Chile","Total_tonnes",3886.31
-"42",2014,"Bivalvia","Peru","Total_tonnes",1709.5947751697
-"43",2014,"Brama
-australis","Chile","Total_tonnes",76869.2481175
-"44",2014,"Bramidae","Chile","Total_tonnes",203.8166666667
-"45",2014,"Brevoortia
-pectinata","Brazil","Total_tonnes",6.0366330983
-"46",2014,"Calamus","Brazil","Total_tonnes",622.8253123166
-"47",2014,"Callinectes","Brazil","Total_tonnes",2350.8454269091
-"48",2014,"Callinectes
-danae","Brazil","Total_tonnes",395.4412496124
-"49",2014,"Callinectes
-sapidus","Brazil","Total_tonnes",0.0190869046
-"50",2014,"Carangidae","Brazil","Total_tonnes",3178.9394244439
-"51",2014,"Caranx","Brazil","Total_tonnes",620.7650558988
-"52",2014,"Caranx
-crysos","Brazil","Total_tonnes",2983.6567879184
-"53",2014,"Caranx
-hippos","Brazil","Total_tonnes",2293.9841628012
-"54",2014,"Caranx
-latus","Brazil","Total_tonnes",4596.4936226223
-"55",2014,"Caranx
-lugubris","Brazil","Total_tonnes",36.7292982148
-"56",2014,"Caranx
-lugubris","Chile","Total_tonnes",2.19335
-"57",2014,"Carcharhinidae","Brazil","Total_tonnes",3687.9581293284
-"58",2014,"Carcharhiniformes","Brazil","Total_tonnes",32.9447090607
-"59",2014,"Carcharhinus","Brazil","Total_tonnes",82.0540730095
-"60",2014,"Carcharhinus
-falciformis","Brazil","Total_tonnes",220.7861670718
-"61",2014,"Carcharhinus
-galapagensis","Chile","Total_tonnes",0.24289
-"62",2014,"Carcharhinus
-leucas","Brazil","Total_tonnes",18.3817861147
-"63",2014,"Carcharhinus
-limbatus","Brazil","Total_tonnes",5.0514230598
-"64",2014,"Carcharhinus
-longimanus","Brazil","Total_tonnes",38.1968050545
-"65",2014,"Carcharhinus
-plumbeus","Brazil","Total_tonnes",0.7765945971
-"66",2014,"Carcharias
-taurus","Brazil","Total_tonnes",15.1878115798
-"67",2014,"Centrolophidae","Chile","Total_tonnes",9.1734
-"68",2014,"Centropomus","Brazil","Total_tonnes",3340.7326538365
-"69",2014,"Centropomus
-undecimalis","Brazil","Total_tonnes",354.1730338462
-"70",2014,"Cephalopholis
-fulva","Brazil","Total_tonnes",575.1920659866
-"71",2014,"Cephalopoda","Brazil","Total_tonnes",7.0085027754
-"72",2014,"Cervimunida
-johni","Chile","Total_tonnes",5487.41029375
-"73",2014,"Cetengraulis
-edentulus","Brazil","Total_tonnes",5546.6757618428
-"74",2014,"Chaetodipterus
-faber","Brazil","Total_tonnes",619.0239058252
-"75",2014,"Chaetodontidae","Brazil","Total_tonnes",11.4131216383
-"76",2014,"Cheilodactylus
-variegatus","Peru","Total_tonnes",2285.6132568581
-"77",2014,"Chloroscombrus
-chrysurus","Brazil","Total_tonnes",8475.1968443104
-"78",2014,"Choromytilus
-chorus","Chile","Total_tonnes",1214.4
-"79",2014,"Cilus
-gilberti","Chile","Total_tonnes",2125.2
-"80",2014,"Cilus
-gilberti","Peru","Total_tonnes",20037.1356
-"81",2014,"Clupea
-bentincki","Chile","Total_tonnes",312528.443111111
-"82",2014,"Clupeidae","Brazil","Total_tonnes",33007.0804219124
-"83",2014,"Clupeiformes","Brazil","Total_tonnes",155.616734861
-"84",2014,"Concholepas
-concholepas","Chile","Total_tonnes",5175
-"85",2014,"Concholepas
-concholepas","Peru","Total_tonnes",1848.0887249702
-"86",2014,"Conger
-orbignianus","Brazil","Total_tonnes",65.6774720467
-"87",2014,"Conodon
-nobilis","Brazil","Total_tonnes",1358.1701041093
-"88",2014,"Cookeolus
-japonicus","Brazil","Total_tonnes",58.35069031
-"89",2014,"Coryphaena","Brazil","Total_tonnes",94.5250454512
-"90",2014,"Coryphaena","Peru","Total_tonnes",17594.8786293562
-"91",2014,"Coryphaena
-hippurus","Brazil","Total_tonnes",10597.5960644214
-"92",2014,"Coryphaena
-hippurus","Chile","Total_tonnes",0.1
-"93",2014,"Coryphaena
-hippurus","Peru","Total_tonnes",74433.6
-"94",2014,"Crassostrea","Brazil","Total_tonnes",378.1407653632
-"95",2014,"Crassostrea
-rhizophorae","Brazil","Total_tonnes",1156.4546154041
-"96",2014,"Ctenosciaena
-gracilicirrhus","Brazil","Total_tonnes",50.1447369764
-"97",2014,"Cynoscion","Brazil","Total_tonnes",9288.1206721997
-"98",2014,"Cynoscion
-acoupa","Brazil","Total_tonnes",20421.6334989312
-"99",2014,"Cynoscion
-analis","Peru","Total_tonnes",6535.3344160115
-"100",2014,"Cynoscion
-guatucupa","Brazil","Total_tonnes",21590.3259704608
-"101",2014,"Cynoscion
-jamaicensis","Brazil","Total_tonnes",1883.4669782633
-"102",2014,"Cynoscion
-leiarchus","Brazil","Total_tonnes",1869.8434305533
-"103",2014,"Cynoscion
-virescens","Brazil","Total_tonnes",3729.3194851208
-"104",2014,"Dasyatidae","Brazil","Total_tonnes",823.7435320278
-"105",2014,"Dasyatis","Brazil","Total_tonnes",33.0995914296
-"106",2014,"Dasyatis
-guttata","Brazil","Total_tonnes",19.894635235
-"107",2014,"Decapterus","Brazil","Total_tonnes",150.6710757074
-"108",2014,"Decapterus
-punctatus","Brazil","Total_tonnes",4.2949563463
-"109",2014,"Diapterus
-rhombeus","Brazil","Total_tonnes",82.1474379222
-"110",2014,"Diplodus
-argenteus
-argenteus","Brazil","Total_tonnes",10.6443466858
-"111",2014,"Doryteuthis
-gahi","Chile","Total_tonnes",18.4
-"112",2014,"Dosidicus
-gigas","Chile","Total_tonnes",288410.8
-"113",2014,"Dosidicus
-gigas","Peru","Total_tonnes",654706.8432
-"114",2014,"Echinodermata","Peru","Total_tonnes",2521.8
-"115",2014,"Elagatis
-bipinnulata","Brazil","Total_tonnes",133.9492333232
-"116",2014,"Elagatis
-bipinnulata","Chile","Total_tonnes",11.9312
-"117",2014,"Elasmobranchii","Brazil","Total_tonnes",2527.9455224847
-"118",2014,"Elasmobranchii","Peru","Total_tonnes",5425.789012871
-"119",2014,"Eleginops
-maclovinus","Chile","Total_tonnes",664.7
-"120",2014,"Engraulidae","Brazil","Total_tonnes",4101.4761277329
-"121",2014,"Engraulis
-anchoita","Brazil","Total_tonnes",27.7555749647
-"122",2014,"Engraulis
-ringens","Chile","Total_tonnes",1897056.30888889
-"123",2014,"Engraulis
-ringens","Peru","Total_tonnes",2430742.12501411
-"124",2014,"Epinephelus
-adscensionis","Brazil","Total_tonnes",159.5445896277
-"125",2014,"Epinephelus
-itajara","Brazil","Total_tonnes",354.7877616009
-"126",2014,"Epinephelus
-marginatus","Brazil","Total_tonnes",139.1087737044
-"127",2014,"Epinephelus
-morio","Brazil","Total_tonnes",373.4913695443
-"128",2014,"Ethmidium
-maculatum","Chile","Total_tonnes",18837
-"129",2014,"Ethmidium
-maculatum","Peru","Total_tonnes",5132.1474468138
-"130",2014,"Eucinostomus","Brazil","Total_tonnes",84.1393120894
-"131",2014,"Euthynnus
-alletteratus","Brazil","Total_tonnes",765.9143268395
-"132",2014,"Euthynnus
-lineatus","Peru","Total_tonnes",81
-"133",2014,"Farfantepenaeus
-paulensis","Brazil","Total_tonnes",2114.6127441634
-"134",2014,"Farfantepenaeus
-subtilis","Brazil","Total_tonnes",5409.9917049172
-"135",2014,"Fistularia
-tabacaria","Brazil","Total_tonnes",45.7097909349
-"136",2014,"Gadiformes","Brazil","Total_tonnes",4920.8504072303
-"137",2014,"Galeocerdo
-cuvier","Brazil","Total_tonnes",11.7625821625
-"138",2014,"Galeorhinus
-galeus","Brazil","Total_tonnes",15.6469501084
-"139",2014,"Galeorhinus
-galeus","Chile","Total_tonnes",66.7
-"140",2014,"Gastropoda","Brazil","Total_tonnes",0.513326603
-"141",2014,"Gastropoda","Chile","Total_tonnes",71513.44
-"142",2014,"Gastropoda","Peru","Total_tonnes",4550.6256300162
-"143",2014,"Gempylidae","Brazil","Total_tonnes",6.7285271558
-"144",2014,"Genyatremus
-luteus","Brazil","Total_tonnes",2642.1892703384
-"145",2014,"Genypterus","Brazil","Total_tonnes",514.273615392
-"146",2014,"Genypterus
-blacodes","Chile","Total_tonnes",1377.7
-"147",2014,"Genypterus
-maculatus","Chile","Total_tonnes",542.8
-"148",2014,"Gerreidae","Brazil","Total_tonnes",2393.8776057194
-"149",2014,"Ginglymostoma
-cirratum","Brazil","Total_tonnes",0.7966718458
-"150",2014,"Gobiidae","Brazil","Total_tonnes",54.3409176356
-"151",2014,"Gymnothorax","Brazil","Total_tonnes",403.059339747
-"152",2014,"Gymnura
-micrura","Brazil","Total_tonnes",6.1773175758
-"153",2014,"Haemulidae","Brazil","Total_tonnes",1681.9241232577
-"154",2014,"Haemulidae","Chile","Total_tonnes",18.4
-"155",2014,"Haemulidae","Peru","Total_tonnes",2685.0289690705
-"156",2014,"Haemulon","Brazil","Total_tonnes",311.5933933
-"157",2014,"Haemulon
-aurolineatum","Brazil","Total_tonnes",349.0632073172
-"158",2014,"Haemulon
-flavolineatum","Brazil","Total_tonnes",42.4604155263
-"159",2014,"Haliporoides
-diomedeae","Chile","Total_tonnes",12.9
-"160",2014,"Harengula","Brazil","Total_tonnes",8.0074233828
-"161",2014,"Harengula
-clupeola","Brazil","Total_tonnes",305.3288022167
-"162",2014,"Harengula
-jaguana","Brazil","Total_tonnes",23.4920069826
-"163",2014,"Hemiramphidae","Brazil","Total_tonnes",25.0230109743
-"164",2014,"Hemiramphus","Brazil","Total_tonnes",545.0277531929
-"165",2014,"Hemiramphus
-brasiliensis","Brazil","Total_tonnes",246.9534408225
-"166",2014,"Heterocarpus
-reedi","Chile","Total_tonnes",5161.17
-"167",2014,"Heteropriacanthus
-cruentatus","Brazil","Total_tonnes",1.8398344374
-"168",2014,"Heteropriacanthus
-cruentatus","Chile","Total_tonnes",0.6
-"169",2014,"Hexanchus
-griseus","Brazil","Total_tonnes",21.2184018481
-"170",2014,"Holocentrus
-adscensionis","Brazil","Total_tonnes",422.1081513141
-"171",2014,"Hyperoglyphe","Brazil","Total_tonnes",1.776899779
-"172",2014,"Hyporthodus
-flavolimbatus","Brazil","Total_tonnes",0.2475242968
-"173",2014,"Hyporthodus
-niveatus","Brazil","Total_tonnes",64.1251273088
-"174",2014,"Illex
-argentinus","Brazil","Total_tonnes",49.4301192334
-"175",2014,"Isacia
-conceptionis","Chile","Total_tonnes",186.3
-"176",2014,"Isacia
-conceptionis","Peru","Total_tonnes",5430.9487920363
-"177",2014,"Isopisthus
-parvipinnis","Brazil","Total_tonnes",2466.5740999407
-"178",2014,"Istiompax
-indica","Peru","Total_tonnes",0.027081265
-"179",2014,"Istiophoridae","Brazil","Total_tonnes",76.5317454173
-"180",2014,"Istiophoridae","Chile","Total_tonnes",13.34
-"181",2014,"Istiophoridae","Peru","Total_tonnes",1.0352076082
-"182",2014,"Istiophorus
-albicans","Brazil","Total_tonnes",50.4811079468
-"183",2014,"Isurus
-oxyrinchus","Brazil","Total_tonnes",277.4031632187
-"184",2014,"Isurus
-oxyrinchus","Chile","Total_tonnes",587.35
-"185",2014,"Jasus
-frontalis","Chile","Total_tonnes",207
-"186",2014,"Kajikia
-albida","Brazil","Total_tonnes",50.2446090889
-"187",2014,"Katsuwonus
-pelamis","Brazil","Total_tonnes",24820.3209867873
-"188",2014,"Katsuwonus
-pelamis","Chile","Total_tonnes",0.3423754294
-"189",2014,"Katsuwonus
-pelamis","Peru","Total_tonnes",708.6168707716
-"190",2014,"Kyphosus","Brazil","Total_tonnes",76.0709927477
-"191",2014,"Labridae","Brazil","Total_tonnes",210.2437717258
-"192",2014,"Lagocephalus
-laevigatus","Brazil","Total_tonnes",528.8438457868
-"193",2014,"Lamna
-nasus","Brazil","Total_tonnes",2.9039365821
-"194",2014,"Lamniformes","Brazil","Total_tonnes",0.1830871258
-"195",2014,"Lampris
-guttatus","Brazil","Total_tonnes",0.862677545
-"196",2014,"Lampris
-guttatus","Chile","Total_tonnes",9.2
-"197",2014,"Larimus
-breviceps","Brazil","Total_tonnes",444.6020466651
-"198",2014,"Lepidocybium
-flavobrunneum","Brazil","Total_tonnes",69.1495157128
-"199",2014,"Lithodes
-antarcticus","Chile","Total_tonnes",4420.37
-"200",2014,"Litopenaeus
-schmitti","Brazil","Total_tonnes",5398.4503640849
-"201",2014,"Lobotes
-surinamensis","Brazil","Total_tonnes",460.3012509417
-"202",2014,"Loliginidae","Brazil","Total_tonnes",725.0907146014
-"203",2014,"Lophius
-gastrophysus","Brazil","Total_tonnes",2170.899372757
-"204",2014,"Loxechinus
-albus","Chile","Total_tonnes",74388.9
-"205",2014,"Lutjanidae","Brazil","Total_tonnes",3.5502250967
-"206",2014,"Lutjanus","Brazil","Total_tonnes",929.8479497038
-"207",2014,"Lutjanus
-analis","Brazil","Total_tonnes",2649.2215664167
-"208",2014,"Lutjanus
-apodus","Brazil","Total_tonnes",44.630927752
-"209",2014,"Lutjanus
-jocu","Brazil","Total_tonnes",1450.9612764784
-"210",2014,"Lutjanus
-purpureus","Brazil","Total_tonnes",4714.4676019098
-"211",2014,"Lutjanus
-synagris","Brazil","Total_tonnes",2577.0358698571
-"212",2014,"Lutjanus
-vivanus","Brazil","Total_tonnes",15.3216621816
-"213",2014,"Macrodon
-ancylodon","Brazil","Total_tonnes",35703.5415047642
-"214",2014,"Macrouridae","Brazil","Total_tonnes",0.0809476569
-"215",2014,"Makaira
-nigricans","Brazil","Total_tonnes",32.2313519547
-"216",2014,"Malacanthidae","Peru","Total_tonnes",160.52505
-"217",2014,"Malacostraca","Chile","Total_tonnes",13316.946
-"218",2014,"Marine
-finfishes
-not
-identified","Brazil","Total_tonnes",910.1471456184
-"219",2014,"Marine
-finfishes
-not
-identified","Chile","Total_tonnes",10.18647
-"220",2014,"Marine
-pelagic
-fishes
-not
-identified","Brazil","Total_tonnes",126.1499466148
-"221",2014,"Marine
-pelagic
-fishes
-not
-identified","Chile","Total_tonnes",0.6447288628
-"222",2014,"Marine
-pelagic
-fishes
-not
-identified","Peru","Total_tonnes",536.7627240255
-"223",2014,"Megalops
-atlanticus","Brazil","Total_tonnes",916.17642521
-"224",2014,"Menticirrhus","Brazil","Total_tonnes",2973.2009491056
-"225",2014,"Menticirrhus
-americanus","Brazil","Total_tonnes",138.2811321245
-"226",2014,"Merluccius
-australis","Chile","Total_tonnes",128320.72217625
-"227",2014,"Merluccius
-gayi
-gayi","Chile","Total_tonnes",40661.92029375
-"228",2014,"Merluccius
-gayi
-gayi","Peru","Total_tonnes",78076.4946
-"229",2014,"Merluccius
-hubbsi","Brazil","Total_tonnes",2292.6601870995
-"230",2014,"Mesodesma
-donacium","Chile","Total_tonnes",1913.6
-"231",2014,"Micropogonias
-furnieri","Brazil","Total_tonnes",74326.0691553525
-"232",2014,"Miscellaneous
-marine
-crustaceans","Peru","Total_tonnes",286.2
-"233",2014,"Mollusca","Brazil","Total_tonnes",9.456717737
-"234",2014,"Mollusca","Peru","Total_tonnes",2442.0680243455
-"235",2014,"Mugil","Brazil","Total_tonnes",15130.0978885898
-"236",2014,"Mugil
-cephalus","Chile","Total_tonnes",135.7
-"237",2014,"Mugil
-cephalus","Peru","Total_tonnes",19717.298582946
-"238",2014,"Mugil
-liza","Brazil","Total_tonnes",5547.9465039457
-"239",2014,"Mulinia","Chile","Total_tonnes",4008.9
-"240",2014,"Mullidae","Brazil","Total_tonnes",929.4476650854
-"241",2014,"Mulloidichthys
-martinicus","Brazil","Total_tonnes",0.0937237668
-"242",2014,"Mullus
-argentinae","Brazil","Total_tonnes",242.559306919
-"243",2014,"Muraenidae","Brazil","Total_tonnes",1.6159027873
-"244",2014,"Mustelus","Brazil","Total_tonnes",11449.9431018152
-"245",2014,"Mustelus
-schmitti","Brazil","Total_tonnes",11509.7646983063
-"246",2014,"Mycteroperca","Brazil","Total_tonnes",839.6631658182
-"247",2014,"Mycteroperca
-bonaci","Brazil","Total_tonnes",1375.628995846
-"248",2014,"Mycteroperca
-microlepis","Brazil","Total_tonnes",1.2102661815
-"249",2014,"Myliobatidae","Brazil","Total_tonnes",21.474778727
-"250",2014,"Myripristis
-jacobus","Brazil","Total_tonnes",127.2256013788
-"251",2014,"Mytilidae","Brazil","Total_tonnes",1837.7776058799
-"252",2014,"Mytilus
-chilensis","Chile","Total_tonnes",1699.7
-"253",2014,"Nebris
-microps","Brazil","Total_tonnes",1296.7380327031
-"254",2014,"Nemadactylus","Chile","Total_tonnes",33.58
-"255",2014,"Nemadactylus
-bergi","Brazil","Total_tonnes",203.8765674346
-"256",2014,"Normanichthys
-crockeri","Chile","Total_tonnes",111179.7
-"257",2014,"Notarius
-grandicassis","Brazil","Total_tonnes",978.0456171581
-"258",2014,"Notorynchus
-cepedianus","Brazil","Total_tonnes",0.023267081
-"259",2014,"Octopodidae","Brazil","Total_tonnes",130.5424388766
-"260",2014,"Octopus","Brazil","Total_tonnes",845.6928260043
-"261",2014,"Octopus
-vulgaris","Brazil","Total_tonnes",154.2014733978
-"262",2014,"Ocyurus
-chrysurus","Brazil","Total_tonnes",6859.5635935443
-"263",2014,"Odontesthes
-regia","Chile","Total_tonnes",2589.8
-"264",2014,"Odontesthes
-regia","Peru","Total_tonnes",13406.5675738333
-"265",2014,"Opisthonema
-oglinum","Brazil","Total_tonnes",14715.3775094144
-"266",2014,"Ostraciidae","Brazil","Total_tonnes",0.0385028488
-"267",2014,"Ostrea
-chilensis","Chile","Total_tonnes",43.7
-"268",2014,"Pagrus
-pagrus","Brazil","Total_tonnes",1289.5174819152
-"269",2014,"Panulirus","Brazil","Total_tonnes",2249.9888524869
-"270",2014,"Panulirus","Chile","Total_tonnes",1.29075
-"271",2014,"Panulirus
-argus","Brazil","Total_tonnes",3572.7130135363
-"272",2014,"Panulirus
-gracilis","Peru","Total_tonnes",5.4
-"273",2014,"Paralabrax
-humeralis","Chile","Total_tonnes",179.41
-"274",2014,"Paralabrax
-humeralis","Peru","Total_tonnes",2357.6869755738
-"275",2014,"Paralichthyidae","Chile","Total_tonnes",833.5481175
-"276",2014,"Paralichthys","Chile","Total_tonnes",3335.46
-"277",2014,"Paralichthys
-microps","Chile","Total_tonnes",34.5
-"278",2014,"Paralomis
-granulosa","Chile","Total_tonnes",5177.3
-"279",2014,"Paralonchurus
-brasiliensis","Brazil","Total_tonnes",11060.2219996487
-"280",2014,"Paralonchurus
-peruanus","Peru","Total_tonnes",2743.3041622828
-"281",2014,"Parona
-signata","Brazil","Total_tonnes",62.8991233188
-"282",2014,"Pectinidae","Brazil","Total_tonnes",1.1583945838
-"283",2014,"Pellona
-harroweri","Brazil","Total_tonnes",1184.9398155293
-"284",2014,"Penaeidae","Brazil","Total_tonnes",2616.4975188155
-"285",2014,"Peprilus
-paru","Brazil","Total_tonnes",542.1277176548
-"286",2014,"Perciformes","Brazil","Total_tonnes",36.2223880465
-"287",2014,"Perciformes","Chile","Total_tonnes",6558.893
-"288",2014,"Percophis
-brasiliensis","Brazil","Total_tonnes",672.1359221444
-"289",2014,"Perna
-perna","Brazil","Total_tonnes",246.326629056
-"290",2014,"Pinguipedidae","Brazil","Total_tonnes",146.7415579377
-"291",2014,"Pinguipes
-chilensis","Chile","Total_tonnes",57.5
-"292",2014,"Plagioscion
-surinamensis","Brazil","Total_tonnes",1.0329097328
-"293",2014,"Pleoticus
-muelleri","Brazil","Total_tonnes",312.312714299
-"294",2014,"Pleuroncodes
-monodon","Chile","Total_tonnes",12582.55217625
-"295",2014,"Pleuronectiformes","Brazil","Total_tonnes",1791.8251900366
-"296",2014,"Pleuronectiformes","Chile","Total_tonnes",204.1496666667
-"297",2014,"Pleuronectiformes","Peru","Total_tonnes",5040
-"298",2014,"Pogonias
-cromis","Brazil","Total_tonnes",194.2319795148
-"299",2014,"Polyprion
-americanus","Brazil","Total_tonnes",5.8644010682
-"300",2014,"Polyprion
-oxygeneios","Chile","Total_tonnes",7.1719
-"301",2014,"Pomatomus
-saltatrix","Brazil","Total_tonnes",2246.0025508553
-"302",2014,"Porichthys
-porosissimus","Brazil","Total_tonnes",1405.3431277405
-"303",2014,"Portunidae","Brazil","Total_tonnes",23.8104570381
-"304",2014,"Priacanthus
-arenatus","Brazil","Total_tonnes",288.4100717449
-"305",2014,"Prionace
-glauca","Brazil","Total_tonnes",3221.4011067948
-"306",2014,"Prionace
-glauca","Chile","Total_tonnes",391
-"307",2014,"Prionotus
-stephanophrys","Peru","Total_tonnes",9275.9927625
-"308",2014,"Pristidae","Brazil","Total_tonnes",43.1345572504
-"309",2014,"Prolatilus
-jugularis","Chile","Total_tonnes",89.7
-"310",2014,"Pseudocaranx
-dentex","Brazil","Total_tonnes",6.9101658072
-"311",2014,"Pyura
-chilensis","Chile","Total_tonnes",4358.5
-"312",2014,"Rachycentron
-canadum","Brazil","Total_tonnes",837.0653398872
-"313",2014,"Rajidae","Brazil","Total_tonnes",1819.8078761444
-"314",2014,"Rajiformes","Brazil","Total_tonnes",4110.6852889858
-"315",2014,"Rajiformes","Peru","Total_tonnes",2109.9004655942
-"316",2014,"Rhinobatidae","Peru","Total_tonnes",399.6000000001
-"317",2014,"Rhinobatos","Brazil","Total_tonnes",140.2106744102
-"318",2014,"Rhinobatos
-percellens","Brazil","Total_tonnes",2.5722947341
-"319",2014,"Rhizoprionodon
-porosus","Brazil","Total_tonnes",106.856021578
-"320",2014,"Rhomboplites
-aurorubens","Brazil","Total_tonnes",538.8606816386
-"321",2014,"Ruvettus
-pretiosus","Brazil","Total_tonnes",5.2122393471
-"322",2014,"Sarda
-chiliensis","Chile","Total_tonnes",85.1
-"323",2014,"Sarda
-chiliensis","Peru","Total_tonnes",55874.9926702876
-"324",2014,"Sarda
-sarda","Brazil","Total_tonnes",595.84811371
-"325",2014,"Sardinella
-aurita","Brazil","Total_tonnes",23.4920069826
-"326",2014,"Sardinella
-brasiliensis","Brazil","Total_tonnes",104922.177932306
-"327",2014,"Sardinops
-sagax","Chile","Total_tonnes",191456.933111111
-"328",2014,"Sardinops
-sagax","Peru","Total_tonnes",1013.1725760001
-"329",2014,"Sciades
-couma","Brazil","Total_tonnes",1490.168619961
-"330",2014,"Sciades
-parkeri","Brazil","Total_tonnes",6047.1242383171
-"331",2014,"Sciades
-proops","Brazil","Total_tonnes",6116.8368485555
-"332",2014,"Sciaenidae","Brazil","Total_tonnes",10573.3208838291
-"333",2014,"Sciaenidae","Peru","Total_tonnes",1723.1108927749
-"334",2014,"Scomber
-japonicus","Chile","Total_tonnes",229841.85
-"335",2014,"Scomber
-japonicus","Peru","Total_tonnes",91621.4080850354
-"336",2014,"Scomberomorus
-brasiliensis","Brazil","Total_tonnes",10400.6362964429
-"337",2014,"Scomberomorus
-cavalla","Brazil","Total_tonnes",3987.2566842389
-"338",2014,"Scomberomorus
-regalis","Brazil","Total_tonnes",12.7769237245
-"339",2014,"Scomberomorus
-sierra","Peru","Total_tonnes",1332.6635324728
-"340",2014,"Scombridae","Brazil","Total_tonnes",896.1545838222
-"341",2014,"Scombridae","Peru","Total_tonnes",561.3006130233
-"342",2014,"Scorpaeniformes","Brazil","Total_tonnes",218.9692826358
-"343",2014,"Scorpaeniformes","Chile","Total_tonnes",44.16
-"344",2014,"Selar
-crumenophthalmus","Brazil","Total_tonnes",171.4776330755
-"345",2014,"Selene
-setapinnis","Brazil","Total_tonnes",1498.2313352606
-"346",2014,"Selene
-vomer","Brazil","Total_tonnes",109.2422991558
-"347",2014,"Semele
-solida","Chile","Total_tonnes",1230.5
-"348",2014,"Seriola","Brazil","Total_tonnes",911.048046653
-"349",2014,"Seriola
-dumerili","Brazil","Total_tonnes",307.7888090122
-"350",2014,"Seriola
-lalandi","Brazil","Total_tonnes",79.8952800949
-"351",2014,"Seriola
-lalandi","Chile","Total_tonnes",878.6950993857
-"352",2014,"Seriolella","Chile","Total_tonnes",68.554
-"353",2014,"Seriolella","Peru","Total_tonnes",371.6174169907
-"354",2014,"Seriolella
-caerulea","Chile","Total_tonnes",6.9
-"355",2014,"Serranidae","Brazil","Total_tonnes",652.7745325421
-"356",2014,"Serranidae","Chile","Total_tonnes",448.73
-"357",2014,"Serranidae","Peru","Total_tonnes",101.5500000001
-"358",2014,"Siluriformes","Brazil","Total_tonnes",11391.7448157402
-"359",2014,"Sparidae","Brazil","Total_tonnes",104.1278557969
-"360",2014,"Sphyraena","Brazil","Total_tonnes",1040.0960372489
-"361",2014,"Sphyraena
-barracuda","Brazil","Total_tonnes",88.7207311871
-"362",2014,"Sphyraena
-guachancho","Brazil","Total_tonnes",10.0896699002
-"363",2014,"Sphyrna","Brazil","Total_tonnes",1149.8105930103
-"364",2014,"Sphyrna
-lewini","Brazil","Total_tonnes",37.8187145422
-"365",2014,"Sphyrna
-mokarran","Brazil","Total_tonnes",0.1292049812
-"366",2014,"Sphyrna
-tiburo","Brazil","Total_tonnes",0.0487680428
-"367",2014,"Squalus","Brazil","Total_tonnes",11513.8602092797
-"368",2014,"Squalus
-acanthias","Chile","Total_tonnes",4.6
-"369",2014,"Stellifer
-rastrifer","Brazil","Total_tonnes",5927.9791312799
-"370",2014,"Tawera
-gayi","Chile","Total_tonnes",11700.1
-"371",2014,"Tetraodontidae","Brazil","Total_tonnes",10976.8816869312
-"372",2014,"Tetrapturus
-pfluegeri","Brazil","Total_tonnes",6.2163647441
-"373",2014,"Thunnus","Brazil","Total_tonnes",701.5050952193
-"374",2014,"Thunnus
-alalunga","Brazil","Total_tonnes",617.5287402627
-"375",2014,"Thunnus
-alalunga","Chile","Total_tonnes",18.547
-"376",2014,"Thunnus
-albacares","Brazil","Total_tonnes",4960.2564843434
-"377",2014,"Thunnus
-albacares","Chile","Total_tonnes",19.276086386
-"378",2014,"Thunnus
-albacares","Peru","Total_tonnes",1650.3871925072
-"379",2014,"Thunnus
-atlanticus","Brazil","Total_tonnes",509.2225628242
-"380",2014,"Thunnus
-maccoyii","Brazil","Total_tonnes",7.8914450822
-"381",2014,"Thunnus
-obesus","Brazil","Total_tonnes",3174.6267741718
-"382",2014,"Thunnus
-obesus","Chile","Total_tonnes",0.068
-"383",2014,"Thunnus
-obesus","Peru","Total_tonnes",255.2564868356
-"384",2014,"Thyrsites
-atun","Chile","Total_tonnes",4724.235
-"385",2014,"Thyrsitops
-lepidopoides","Brazil","Total_tonnes",0.2162758466
-"386",2014,"Trachinotus","Brazil","Total_tonnes",557.2365980696
-"387",2014,"Trachinotus
-carolinus","Brazil","Total_tonnes",164.7811718551
-"388",2014,"Trachinotus
-goodei","Brazil","Total_tonnes",0.865542012
-"389",2014,"Trachurus
-lathami","Brazil","Total_tonnes",2209.6478658274
-"390",2014,"Trachurus
-murphyi","Chile","Total_tonnes",529905.922459594
-"391",2014,"Trachurus
-murphyi","Peru","Total_tonnes",104072.533732187
-"392",2014,"Trichiurus
-lepturus","Brazil","Total_tonnes",18715.9882953486
-"393",2014,"Umbrina
-canosai","Brazil","Total_tonnes",47669.2612208751
-"394",2014,"Uraspis
-secunda","Brazil","Total_tonnes",0.0098716654
-"395",2014,"Urophycis
-brasiliensis","Brazil","Total_tonnes",2619.5601184572
-"396",2014,"Veneridae","Brazil","Total_tonnes",3439.4091161193
-"397",2014,"Veneridae","Chile","Total_tonnes",2098.29
-"398",2014,"Xiphias
-gladius","Brazil","Total_tonnes",2402.3033377641
-"399",2014,"Xiphias
-gladius","Chile","Total_tonnes",226.728
-"400",2014,"Xiphias
-gladius","Peru","Total_tonnes",605.4880574252
-"401",2014,"Xiphopenaeus
-kroyeri","Brazil","Total_tonnes",15647.8761993859
-"402",2014,"Zearaja
-chilensis","Chile","Total_tonnes",46
-"403",2014,"Zenopsis
-conchifer","Brazil","Total_tonnes",44.4295036597
-"404",2014,"Abudefduf","Brazil","Landings_Value",46352.810531687
-"405",2014,"Acanthocybium
-solandri","Brazil","Landings_Value",2248447.85516219
-"406",2014,"Acanthurus","Brazil","Landings_Value",138359.712543868
-"407",2014,"Achirus","Brazil","Landings_Value",830104.250920529
-"408",2014,"Aetobatus
-narinari","Brazil","Landings_Value",71258.2841220723
-"409",2014,"Albula
-vulpes","Brazil","Landings_Value",8392.3041619512
-"410",2014,"Alectis
-ciliaris","Brazil","Landings_Value",51594.917087889
-"411",2014,"Alopias","Brazil","Landings_Value",39553.3263429066
-"412",2014,"Alopias
-superciliosus","Brazil","Landings_Value",13870.3498147571
-"413",2014,"Alopias
-vulpinus","Brazil","Landings_Value",20757.4856364447
-"414",2014,"Aluterus","Brazil","Landings_Value",1897373.2633084
-"415",2014,"Amphiarius
-phrygiatus","Brazil","Landings_Value",29061.540755405
-"416",2014,"Anchoa
-hepsetus","Brazil","Landings_Value",53889.3426561952
-"417",2014,"Anchoa
-nasus","Peru","Landings_Value",160.995934191096
-"418",2014,"Anchoa
-spinifer","Brazil","Landings_Value",393.8020571408
-"419",2014,"Anchoviella","Brazil","Landings_Value",2328220.65018337
-"420",2014,"Anguilliformes","Brazil","Landings_Value",355089.390437184
-"421",2014,"Anguilliformes","Peru","Landings_Value",16014877.2
-"422",2014,"Aplodactylus
-punctatus","Chile","Landings_Value",56172.9
-"423",2014,"Archosargus
-probatocephalus","Brazil","Landings_Value",5868.9376162875
-"424",2014,"Archosargus
-rhomboidalis","Brazil","Landings_Value",137642.869104156
-"425",2014,"Argopecten
-purpuratus","Peru","Landings_Value",1282541040
-"426",2014,"Ariidae","Brazil","Landings_Value",29062379.7206854
-"427",2014,"Artemesia
-longinaris","Brazil","Landings_Value",30580590.5217863
-"428",2014,"Aspistor
-quadriscutis","Brazil","Landings_Value",5968869.26907133
-"429",2014,"Atlantoraja
-cyclophora","Brazil","Landings_Value",168.4115976753
-"430",2014,"Aulacomya
-ater","Chile","Landings_Value",12309261.9
-"431",2014,"Aulacomya
-ater","Peru","Landings_Value",10535307.6901845
-"432",2014,"Aulostomidae","Brazil","Landings_Value",493.8368961504
-"433",2014,"Auxis
-thazard","Brazil","Landings_Value",1042416.98509593
-"434",2014,"Bagre
-bagre","Brazil","Landings_Value",7900024.05275221
-"435",2014,"Bairdiella
-ronchus","Brazil","Landings_Value",84313.8479933021
-"436",2014,"Balistes
-capriscus","Brazil","Landings_Value",3316456.927131
-"437",2014,"Balistidae","Brazil","Landings_Value",1786215.70889527
-"438",2014,"Bathygobius
-soporator","Brazil","Landings_Value",10130.3030732086
-"439",2014,"Batoidea","Brazil","Landings_Value",73163802.8549488
-"440",2014,"Batrachoididae","Brazil","Landings_Value",2139201.707572
-"441",2014,"Beryx
-splendens","Brazil","Landings_Value",6737.6062315744
-"442",2014,"Beryx
-splendens","Chile","Landings_Value",10.251
-"443",2014,"Bivalvia","Brazil","Landings_Value",11585130.0561808
-"444",2014,"Bivalvia","Chile","Landings_Value",13613743.93
-"445",2014,"Bivalvia","Peru","Landings_Value",4749254.28542152
-"446",2014,"Brama
-australis","Chile","Landings_Value",156198312.17476
-"447",2014,"Bramidae","Chile","Landings_Value",811801.783333466
-"448",2014,"Brevoortia
-pectinata","Brazil","Landings_Value",4129.0570392372
-"449",2014,"Calamus","Brazil","Landings_Value",1046969.35000404
-"450",2014,"Callinectes","Brazil","Landings_Value",5566801.97092027
-"451",2014,"Callinectes
-danae","Brazil","Landings_Value",936404.879082163
-"452",2014,"Callinectes
-sapidus","Brazil","Landings_Value",45.1977900928
-"453",2014,"Carangidae","Brazil","Landings_Value",9225282.20973562
-"454",2014,"Caranx","Brazil","Landings_Value",2478094.10314801
-"455",2014,"Caranx
-crysos","Brazil","Landings_Value",10126531.138195
-"456",2014,"Caranx
-hippos","Brazil","Landings_Value",7957831.06075667
-"457",2014,"Caranx
-latus","Brazil","Landings_Value",11109725.0858781
-"458",2014,"Caranx
-lugubris","Brazil","Landings_Value",201680.576497467
-"459",2014,"Caranx
-lugubris","Chile","Landings_Value",8602.3187
-"460",2014,"Carcharhinidae","Brazil","Landings_Value",4359166.50886616
-"461",2014,"Carcharhiniformes","Brazil","Landings_Value",60486.4858354453
-"462",2014,"Carcharhinus","Brazil","Landings_Value",214653.454992852
-"463",2014,"Carcharhinus
-falciformis","Brazil","Landings_Value",299386.042549129
-"464",2014,"Carcharhinus
-galapagensis","Chile","Landings_Value",356.07674
-"465",2014,"Carcharhinus
-leucas","Brazil","Landings_Value",17425.9332367356
-"466",2014,"Carcharhinus
-limbatus","Brazil","Landings_Value",6390.0501705205
-"467",2014,"Carcharhinus
-longimanus","Brazil","Landings_Value",89686.09826837
-"468",2014,"Carcharhinus
-plumbeus","Brazil","Landings_Value",805.328597192699
-"469",2014,"Carcharias
-taurus","Brazil","Landings_Value",124691.933069337
-"470",2014,"Centrolophidae","Chile","Landings_Value",44032.32
-"471",2014,"Centropomus","Brazil","Landings_Value",14545549.9748037
-"472",2014,"Centropomus
-undecimalis","Brazil","Landings_Value",2862072.28651114
-"473",2014,"Cephalopholis
-fulva","Brazil","Landings_Value",3538006.39788235
-"474",2014,"Cephalopoda","Brazil","Landings_Value",24445.6576812928
-"475",2014,"Cervimunida
-johni","Chile","Landings_Value",15490959.2592563
-"476",2014,"Cetengraulis
-edentulus","Brazil","Landings_Value",6833504.53859033
-"477",2014,"Chaetodipterus
-faber","Brazil","Landings_Value",673498.009537709
-"478",2014,"Chaetodontidae","Brazil","Landings_Value",100001.771794785
-"479",2014,"Cheilodactylus
-variegatus","Peru","Landings_Value",6971120.43341716
-"480",2014,"Chloroscombrus
-chrysurus","Brazil","Landings_Value",30561559.8205833
-"481",2014,"Choromytilus
-chorus","Chile","Landings_Value",1941825.6
-"482",2014,"Cilus
-gilberti","Chile","Landings_Value",6048319.2
-"483",2014,"Cilus
-gilberti","Peru","Landings_Value",29374440.7896
-"484",2014,"Clupea
-bentincki","Chile","Landings_Value",92508419.1608888
-"485",2014,"Clupeidae","Brazil","Landings_Value",6040295.71720997
-"486",2014,"Clupeiformes","Brazil","Landings_Value",93525.657651461
-"487",2014,"Concholepas
-concholepas","Chile","Landings_Value",7586550
-"488",2014,"Concholepas
-concholepas","Peru","Landings_Value",5222698.73676588
-"489",2014,"Conger
-orbignianus","Brazil","Landings_Value",145278.5681673
-"490",2014,"Conodon
-nobilis","Brazil","Landings_Value",3711878.89453044
-"491",2014,"Cookeolus
-japonicus","Brazil","Landings_Value",294379.23261395
-"492",2014,"Coryphaena","Brazil","Landings_Value",477824.104755816
-"493",2014,"Coryphaena","Peru","Landings_Value",25794092.0706362
-"494",2014,"Coryphaena
-hippurus","Brazil","Landings_Value",49162248.1428508
-"495",2014,"Coryphaena
-hippurus","Chile","Landings_Value",331.3
-"496",2014,"Coryphaena
-hippurus","Peru","Landings_Value",195611500.8
-"497",2014,"Crassostrea","Brazil","Landings_Value",380409.609955379
-"498",2014,"Crassostrea
-rhizophorae","Brazil","Landings_Value",2770865.25850823
-"499",2014,"Ctenosciaena
-gracilicirrhus","Brazil","Landings_Value",216274.250579213
-"500",2014,"Cynoscion","Brazil","Landings_Value",27260634.1729058
-"501",2014,"Cynoscion
-acoupa","Brazil","Landings_Value",71455295.6127596
-"502",2014,"Cynoscion
-analis","Peru","Landings_Value",12953032.8125348
-"503",2014,"Cynoscion
-guatucupa","Brazil","Landings_Value",75544550.5706425
-"504",2014,"Cynoscion
-jamaicensis","Brazil","Landings_Value",6590250.95694328
-"505",2014,"Cynoscion
-leiarchus","Brazil","Landings_Value",6542582.163506
-"506",2014,"Cynoscion
-virescens","Brazil","Landings_Value",13048888.8784377
-"507",2014,"Dasyatidae","Brazil","Landings_Value",810563.635515355
-"508",2014,"Dasyatis","Brazil","Landings_Value",47597.2124757648
-"509",2014,"Dasyatis
-guttata","Brazil","Landings_Value",34198.877968965
-"510",2014,"Decapterus","Brazil","Landings_Value",232334.798740657
-"511",2014,"Decapterus
-punctatus","Brazil","Landings_Value",13125.3865942928
-"512",2014,"Diapterus
-rhombeus","Brazil","Landings_Value",223851.768337995
-"513",2014,"Diplodus
-argenteus
-argenteus","Brazil","Landings_Value",75468.418000904
-"514",2014,"Doryteuthis
-gahi","Chile","Landings_Value",84345.6
-"515",2014,"Dosidicus
-gigas","Chile","Landings_Value",343497262.8
-"516",2014,"Dosidicus
-gigas","Peru","Landings_Value",350268161.112
-"517",2014,"Echinodermata","Peru","Landings_Value",3696958.8
-"518",2014,"Elagatis
-bipinnulata","Brazil","Landings_Value",688365.110047411
-"519",2014,"Elagatis
-bipinnulata","Chile","Landings_Value",43799.4352
-"520",2014,"Elasmobranchii","Brazil","Landings_Value",11681636.2594013
-"521",2014,"Elasmobranchii","Peru","Landings_Value",14204715.6356965
-"522",2014,"Eleginops
-maclovinus","Chile","Landings_Value",2861533.5
-"523",2014,"Engraulidae","Brazil","Landings_Value",2411667.96310695
-"524",2014,"Engraulis
-anchoita","Brazil","Landings_Value",37914.1154017802
-"525",2014,"Engraulis
-ringens","Chile","Landings_Value",639307976.095555
-"526",2014,"Engraulis
-ringens","Peru","Landings_Value",719499669.004176
-"527",2014,"Epinephelus
-adscensionis","Brazil","Landings_Value",1447388.5171025
-"528",2014,"Epinephelus
-itajara","Brazil","Landings_Value",5159323.62920029
-"529",2014,"Epinephelus
-marginatus","Brazil","Landings_Value",2290008.63272183
-"530",2014,"Epinephelus
-morio","Brazil","Landings_Value",2280538.30243811
-"531",2014,"Ethmidium
-maculatum","Chile","Landings_Value",13920543
-"532",2014,"Ethmidium
-maculatum","Peru","Landings_Value",1626890.74063997
-"533",2014,"Eucinostomus","Brazil","Landings_Value",229279.625443343
-"534",2014,"Euthynnus
-alletteratus","Brazil","Landings_Value",2277829.20802067
-"535",2014,"Euthynnus
-lineatus","Peru","Landings_Value",118746
-"536",2014,"Farfantepenaeus
-paulensis","Brazil","Landings_Value",8953270.35878741
-"537",2014,"Farfantepenaeus
-subtilis","Brazil","Landings_Value",22905904.8786194
-"538",2014,"Fistularia
-tabacaria","Brazil","Landings_Value",32088.2732362998
-"539",2014,"Gadiformes","Brazil","Landings_Value",9871225.91690398
-"540",2014,"Galeocerdo
-cuvier","Brazil","Landings_Value",30053.3974246765
-"541",2014,"Galeorhinus
-galeus","Brazil","Landings_Value",26709.3438348681
-"542",2014,"Galeorhinus
-galeus","Chile","Landings_Value",97782.2
-"543",2014,"Gastropoda","Brazil","Landings_Value",2370.5422517304
-"544",2014,"Gastropoda","Chile","Landings_Value",235922838.56
-"545",2014,"Gastropoda","Peru","Landings_Value",11904436.6481223
-"546",2014,"Gempylidae","Brazil","Landings_Value",16296.4927713476
-"547",2014,"Genyatremus
-luteus","Brazil","Landings_Value",7847302.13290505
-"548",2014,"Genypterus","Brazil","Landings_Value",1049632.44901507
-"549",2014,"Genypterus
-blacodes","Chile","Landings_Value",2008686.6
-"550",2014,"Genypterus
-maculatus","Chile","Landings_Value",791402.4
-"551",2014,"Gerreidae","Brazil","Landings_Value",6523316.47558536
-"552",2014,"Ginglymostoma
-cirratum","Brazil","Landings_Value",1462.6895085216
-"553",2014,"Gobiidae","Brazil","Landings_Value",119821.723386498
-"554",2014,"Gymnothorax","Brazil","Landings_Value",763394.389480818
-"555",2014,"Gymnura
-micrura","Brazil","Landings_Value",19563.5647625586
-"556",2014,"Haemulidae","Brazil","Landings_Value",4002979.41335333
-"557",2014,"Haemulidae","Chile","Landings_Value",31280
-"558",2014,"Haemulidae","Peru","Landings_Value",3619419.05030703
-"559",2014,"Haemulon","Brazil","Landings_Value",689867.772765758
-"560",2014,"Haemulon
-aurolineatum","Brazil","Landings_Value",772825.941000281
-"561",2014,"Haemulon
-flavolineatum","Brazil","Landings_Value",94007.3599752282
-"562",2014,"Haliporoides
-diomedeae","Chile","Landings_Value",46878.6
-"563",2014,"Harengula","Brazil","Landings_Value",3226.9916232684
-"564",2014,"Harengula
-clupeola","Brazil","Landings_Value",123047.50729333
-"565",2014,"Harengula
-jaguana","Brazil","Landings_Value",9467.2788139878
-"566",2014,"Hemiramphidae","Brazil","Landings_Value",47768.9279499388
-"567",2014,"Hemiramphus","Brazil","Landings_Value",930907.402453473
-"568",2014,"Hemiramphus
-brasiliensis","Brazil","Landings_Value",421796.476925171
-"569",2014,"Heterocarpus
-reedi","Chile","Landings_Value",12763573.41
-"570",2014,"Heteropriacanthus
-cruentatus","Brazil","Landings_Value",14352.5484461574
-"571",2014,"Heteropriacanthus
-cruentatus","Chile","Landings_Value",3343.2
-"572",2014,"Hexanchus
-griseus","Brazil","Landings_Value",31360.797931344
-"573",2014,"Holocentrus
-adscensionis","Brazil","Landings_Value",2840787.85834457
-"574",2014,"Hyperoglyphe","Brazil","Landings_Value",8068.901896439
-"575",2014,"Hyporthodus
-flavolimbatus","Brazil","Landings_Value",1898.0163078624
-"576",2014,"Hyporthodus
-niveatus","Brazil","Landings_Value",440411.374356838
-"577",2014,"Illex
-argentinus","Brazil","Landings_Value",103506.66967453
-"578",2014,"Isacia
-conceptionis","Chile","Landings_Value",202694.4
-"579",2014,"Isacia
-conceptionis","Peru","Landings_Value",8412539.67886423
-"580",2014,"Isopisthus
-parvipinnis","Brazil","Landings_Value",10638334.0930442
-"581",2014,"Istiompax
-indica","Peru","Landings_Value",39.7011345025208
-"582",2014,"Istiophoridae","Brazil","Landings_Value",561819.543108399
-"583",2014,"Istiophoridae","Chile","Landings_Value",69954.96
-"584",2014,"Istiophoridae","Peru","Landings_Value",1517.61435368537
-"585",2014,"Istiophorus
-albicans","Brazil","Landings_Value",176582.915598053
-"586",2014,"Isurus
-oxyrinchus","Brazil","Landings_Value",966195.217490274
-"587",2014,"Isurus
-oxyrinchus","Chile","Landings_Value",1461326.8
-"588",2014,"Jasus
-frontalis","Chile","Landings_Value",3546945
-"589",2014,"Kajikia
-albida","Brazil","Landings_Value",185503.096756283
-"590",2014,"Katsuwonus
-pelamis","Brazil","Landings_Value",51502166.0475837
-"591",2014,"Katsuwonus
-pelamis","Chile","Landings_Value",507.742761697741
-"592",2014,"Katsuwonus
-pelamis","Peru","Landings_Value",832624.823156617
-"593",2014,"Kyphosus","Brazil","Landings_Value",184624.299398668
-"594",2014,"Labridae","Brazil","Landings_Value",702214.197564172
-"595",2014,"Lagocephalus
-laevigatus","Brazil","Landings_Value",2044510.30781177
-"596",2014,"Lamna
-nasus","Brazil","Landings_Value",10149.2583544395
-"597",2014,"Lamniformes","Brazil","Landings_Value",336.1479629688
-"598",2014,"Lampris
-guttatus","Brazil","Landings_Value",3222.96330812
-"599",2014,"Lampris
-guttatus","Chile","Landings_Value",13487.2
-"600",2014,"Larimus
-breviceps","Brazil","Landings_Value",1917568.62726658
-"601",2014,"Lepidocybium
-flavobrunneum","Brazil","Landings_Value",175916.367973363
-"602",2014,"Lithodes
-antarcticus","Chile","Landings_Value",12284208.23
-"603",2014,"Litopenaeus
-schmitti","Brazil","Landings_Value",24255237.485833
-"604",2014,"Lobotes
-surinamensis","Brazil","Landings_Value",3325216.23680284
-"605",2014,"Loliginidae","Brazil","Landings_Value",5104638.63079316
-"606",2014,"Lophius
-gastrophysus","Brazil","Landings_Value",12074542.3112744
-"607",2014,"Loxechinus
-albus","Chile","Landings_Value",136131687
-"608",2014,"Lutjanidae","Brazil","Landings_Value",32019.4801471373
-"609",2014,"Lutjanus","Brazil","Landings_Value",3734269.36601046
-"610",2014,"Lutjanus
-analis","Brazil","Landings_Value",14520383.4055299
-"611",2014,"Lutjanus
-apodus","Brazil","Landings_Value",248683.529434144
-"612",2014,"Lutjanus
-jocu","Brazil","Landings_Value",3328505.16824145
-"613",2014,"Lutjanus
-purpureus","Brazil","Landings_Value",32534540.9207802
-"614",2014,"Lutjanus
-synagris","Brazil","Landings_Value",14732914.067973
-"615",2014,"Lutjanus
-vivanus","Brazil","Landings_Value",105734.790713842
-"616",2014,"Macrodon
-ancylodon","Brazil","Landings_Value",142242909.35498
-"617",2014,"Macrouridae","Brazil","Landings_Value",59.9822137629
-"618",2014,"Makaira
-nigricans","Brazil","Landings_Value",91053.5692720044
-"619",2014,"Malacanthidae","Peru","Landings_Value",235329.7233
-"620",2014,"Malacostraca","Chile","Landings_Value",44918058.858
-"621",2014,"Marine
-finfishes
-not
-identified","Brazil","Landings_Value",1334275.71547643
-"622",2014,"Marine
-finfishes
-not
-identified","Chile","Landings_Value",10583.74233
-"623",2014,"Marine
-pelagic
-fishes
-not
-identified","Brazil","Landings_Value",184935.821737452
-"624",2014,"Marine
-pelagic
-fishes
-not
-identified","Chile","Landings_Value",921.962273839387
-"625",2014,"Marine
-pelagic
-fishes
-not
-identified","Peru","Landings_Value",786894.153421449
-"626",2014,"Megalops
-atlanticus","Brazil","Landings_Value",1089333.76957457
-"627",2014,"Menticirrhus","Brazil","Landings_Value",3133753.80035741
-"628",2014,"Menticirrhus
-americanus","Brazil","Landings_Value",145748.313259223
-"629",2014,"Merluccius
-australis","Chile","Landings_Value",217118661.922215
-"630",2014,"Merluccius
-gayi
-gayi","Chile","Landings_Value",41637806.3808
-"631",2014,"Merluccius
-gayi
-gayi","Peru","Landings_Value",63398113.6152
-"632",2014,"Merluccius
-hubbsi","Brazil","Landings_Value",417264.154052109
-"633",2014,"Mesodesma
-donacium","Chile","Landings_Value",4900729.6
-"634",2014,"Micropogonias
-furnieri","Brazil","Landings_Value",114982428.98333
-"635",2014,"Miscellaneous
-marine
-crustaceans","Peru","Landings_Value",419569.2
-"636",2014,"Mollusca","Brazil","Landings_Value",32672.959781335
-"637",2014,"Mollusca","Peru","Landings_Value",4779127.12364405
-"638",2014,"Mugil","Brazil","Landings_Value",24979791.6140619
-"639",2014,"Mugil
-cephalus","Chile","Landings_Value",262443.8
-"640",2014,"Mugil
-cephalus","Peru","Landings_Value",30246336.026239
-"641",2014,"Mugil
-liza","Brazil","Landings_Value",9159659.67801419
-"642",2014,"Mulinia","Chile","Landings_Value",8394636.60000001
-"643",2014,"Mullidae","Brazil","Landings_Value",9882817.022852
-"644",2014,"Mulloidichthys
-martinicus","Brazil","Landings_Value",762.5365666848
-"645",2014,"Mullus
-argentinae","Brazil","Landings_Value",1797121.90496361
-"646",2014,"Muraenidae","Brazil","Landings_Value",8081.1298392873
-"647",2014,"Mustelus","Brazil","Landings_Value",41185445.3372286
-"648",2014,"Mustelus
-schmitti","Brazil","Landings_Value",43426342.2067089
-"649",2014,"Mycteroperca","Brazil","Landings_Value",5990157.02494703
-"650",2014,"Mycteroperca
-bonaci","Brazil","Landings_Value",11082067.1905354
-"651",2014,"Mycteroperca
-microlepis","Brazil","Landings_Value",10473.643534701
-"652",2014,"Myliobatidae","Brazil","Landings_Value",23901.428723151
-"653",2014,"Myripristis
-jacobus","Brazil","Landings_Value",775948.942808691
-"654",2014,"Mytilidae","Brazil","Landings_Value",12932441.0125768
-"655",2014,"Mytilus
-chilensis","Chile","Landings_Value",2354084.5
-"656",2014,"Nebris
-microps","Brazil","Landings_Value",5166204.32228915
-"657",2014,"Nemadactylus","Chile","Landings_Value",39053.54
-"658",2014,"Nemadactylus
-bergi","Brazil","Landings_Value",331911.051783529
-"659",2014,"Normanichthys
-crockeri","Chile","Landings_Value",229252541.4
-"660",2014,"Notarius
-grandicassis","Brazil","Landings_Value",1844594.03396018
-"661",2014,"Notorynchus
-cepedianus","Brazil","Landings_Value",44.347056386
-"662",2014,"Octopodidae","Brazil","Landings_Value",293459.402594597
-"663",2014,"Octopus","Brazil","Landings_Value",3341332.35554299
-"664",2014,"Octopus
-vulgaris","Brazil","Landings_Value",783189.283387426
-"665",2014,"Ocyurus
-chrysurus","Brazil","Landings_Value",41774742.2846848
-"666",2014,"Odontesthes
-regia","Chile","Landings_Value",5151112.2
-"667",2014,"Odontesthes
-regia","Peru","Landings_Value",21142157.0639351
-"668",2014,"Opisthonema
-oglinum","Brazil","Landings_Value",5562412.69855864
-"669",2014,"Ostraciidae","Brazil","Landings_Value",173.840362332
-"670",2014,"Ostrea
-chilensis","Chile","Landings_Value",150328
-"671",2014,"Pagrus
-pagrus","Brazil","Landings_Value",20692887.0322916
-"672",2014,"Panulirus","Brazil","Landings_Value",25773622.3052362
-"673",2014,"Panulirus","Chile","Landings_Value",10562.20725
-"674",2014,"Panulirus
-argus","Brazil","Landings_Value",51686439.1668297
-"675",2014,"Panulirus
-gracilis","Peru","Landings_Value",35040.6
-"676",2014,"Paralabrax
-humeralis","Chile","Landings_Value",773615.92
-"677",2014,"Paralabrax
-humeralis","Peru","Landings_Value",8060931.76948692
-"678",2014,"Paralichthyidae","Chile","Landings_Value",1221981.540255
-"679",2014,"Paralichthys","Chile","Landings_Value",12127732.56
-"680",2014,"Paralichthys
-microps","Chile","Landings_Value",125442
-"681",2014,"Paralomis
-granulosa","Chile","Landings_Value",14387716.7
-"682",2014,"Paralonchurus
-brasiliensis","Brazil","Landings_Value",47702737.4844848
-"683",2014,"Paralonchurus
-peruanus","Peru","Landings_Value",6191637.49427231
-"684",2014,"Parona
-signata","Brazil","Landings_Value",120514.720278821
-"685",2014,"Pectinidae","Brazil","Landings_Value",4405.3746021914
-"686",2014,"Pellona
-harroweri","Brazil","Landings_Value",712148.829133109
-"687",2014,"Penaeidae","Brazil","Landings_Value",17609028.3016276
-"688",2014,"Peprilus
-paru","Brazil","Landings_Value",1326586.52510178
-"689",2014,"Perciformes","Brazil","Landings_Value",127865.029803792
-"690",2014,"Perciformes","Chile","Landings_Value",16541528.146
-"691",2014,"Percophis
-brasiliensis","Brazil","Landings_Value",1094237.28125092
-"692",2014,"Perna
-perna","Brazil","Landings_Value",551278.995827328
-"693",2014,"Pinguipedidae","Brazil","Landings_Value",238895.256322413
-"694",2014,"Pinguipes
-chilensis","Chile","Landings_Value",66872.5000000001
-"695",2014,"Plagioscion
-surinamensis","Brazil","Landings_Value",4210.1400704852
-"696",2014,"Pleoticus
-muelleri","Brazil","Landings_Value",1588734.77763851
-"697",2014,"Pleuroncodes
-monodon","Chile","Landings_Value",35520544.7935537
-"698",2014,"Pleuronectiformes","Brazil","Landings_Value",6131625.80030525
-"699",2014,"Pleuronectiformes","Chile","Landings_Value",499145.935000081
-"700",2014,"Pleuronectiformes","Peru","Landings_Value",7388640
-"701",2014,"Pogonias
-cromis","Brazil","Landings_Value",401865.965615914
-"702",2014,"Polyprion
-americanus","Brazil","Landings_Value",98785.8359921445
-"703",2014,"Polyprion
-oxygeneios","Chile","Landings_Value",9782.4716
-"704",2014,"Pomatomus
-saltatrix","Brazil","Landings_Value",10756106.216046
-"705",2014,"Porichthys
-porosissimus","Brazil","Landings_Value",3053810.61657989
-"706",2014,"Portunidae","Brazil","Landings_Value",56621.266836364
-"707",2014,"Priacanthus
-arenatus","Brazil","Landings_Value",665073.625443739
-"708",2014,"Prionace
-glauca","Brazil","Landings_Value",5656780.34353172
-"709",2014,"Prionace
-glauca","Chile","Landings_Value",490314
-"710",2014,"Prionotus
-stephanophrys","Peru","Landings_Value",3756777.0688125
-"711",2014,"Pristidae","Brazil","Landings_Value",91574.6650425991
-"712",2014,"Prolatilus
-jugularis","Chile","Landings_Value",104321.1
-"713",2014,"Pseudocaranx
-dentex","Brazil","Landings_Value",36831.183751843
-"714",2014,"Pyura
-chilensis","Chile","Landings_Value",28805326.5
-"715",2014,"Rachycentron
-canadum","Brazil","Landings_Value",2928891.62426531
-"716",2014,"Rajidae","Brazil","Landings_Value",2562289.48961131
-"717",2014,"Rajiformes","Brazil","Landings_Value",7341683.92612864
-"718",2014,"Rajiformes","Peru","Landings_Value",2135219.27118134
-"719",2014,"Rhinobatidae","Peru","Landings_Value",585813.6
-"720",2014,"Rhinobatos","Brazil","Landings_Value",297667.261772855
-"721",2014,"Rhinobatos
-percellens","Brazil","Landings_Value",5646.1869413495
-"722",2014,"Rhizoprionodon
-porosus","Brazil","Landings_Value",101406.364477427
-"723",2014,"Rhomboplites
-aurorubens","Brazil","Landings_Value",3262262.56664009
-"724",2014,"Ruvettus
-pretiosus","Brazil","Landings_Value",11644.1427014214
-"725",2014,"Sarda
-chiliensis","Chile","Landings_Value",125097
-"726",2014,"Sarda
-chiliensis","Peru","Landings_Value",92920112.8106882
-"727",2014,"Sarda
-sarda","Brazil","Landings_Value",1749410.06185256
-"728",2014,"Sardinella
-aurita","Brazil","Landings_Value",21448.2023751138
-"729",2014,"Sardinella
-brasiliensis","Brazil","Landings_Value",108594454.159936
-"730",2014,"Sardinops
-sagax","Chile","Landings_Value",37525558.8897778
-"731",2014,"Sardinops
-sagax","Peru","Landings_Value",1485310.996416
-"732",2014,"Sciades
-couma","Brazil","Landings_Value",2810458.01724664
-"733",2014,"Sciades
-parkeri","Brazil","Landings_Value",11404876.3134659
-"734",2014,"Sciades
-proops","Brazil","Landings_Value",11536354.2963757
-"735",2014,"Sciaenidae","Brazil","Landings_Value",74319872.4924341
-"736",2014,"Sciaenidae","Peru","Landings_Value",6861427.57502965
-"737",2014,"Scomber
-japonicus","Chile","Landings_Value",188240475.15
-"738",2014,"Scomber
-japonicus","Peru","Landings_Value",64684714.1080349
-"739",2014,"Scomberomorus
-brasiliensis","Brazil","Landings_Value",33282036.1486172
-"740",2014,"Scomberomorus
-cavalla","Brazil","Landings_Value",15570237.3519529
-"741",2014,"Scomberomorus
-regalis","Brazil","Landings_Value",49893.8871441725
-"742",2014,"Scomberomorus
-sierra","Peru","Landings_Value",2416118.98437344
-"743",2014,"Scombridae","Brazil","Landings_Value",1518085.86499457
-"744",2014,"Scombridae","Peru","Landings_Value",822866.698692095
-"745",2014,"Scorpaeniformes","Brazil","Landings_Value",153716.436410262
-"746",2014,"Scorpaeniformes","Chile","Landings_Value",22168.32
-"747",2014,"Selar
-crumenophthalmus","Brazil","Landings_Value",1077908.40151196
-"748",2014,"Selene
-setapinnis","Brazil","Landings_Value",3008448.52120308
-"749",2014,"Selene
-vomer","Brazil","Landings_Value",199694.92285662
-"750",2014,"Semele
-solida","Chile","Landings_Value",1890048
-"751",2014,"Seriola","Brazil","Landings_Value",4011344.54941316
-"752",2014,"Seriola
-dumerili","Brazil","Landings_Value",2978780.09361813
-"753",2014,"Seriola
-lalandi","Brazil","Landings_Value",835305.153392179
-"754",2014,"Seriola
-lalandi","Chile","Landings_Value",6562973.69731179
-"755",2014,"Seriolella","Chile","Landings_Value",282648.142
-"756",2014,"Seriolella","Peru","Landings_Value",1214817.33614263
-"757",2014,"Seriolella
-caerulea","Chile","Landings_Value",28448.7
-"758",2014,"Serranidae","Brazil","Landings_Value",1228521.67024386
-"759",2014,"Serranidae","Chile","Landings_Value",603093.12
-"760",2014,"Serranidae","Peru","Landings_Value",148872.3
-"761",2014,"Siluriformes","Brazil","Landings_Value",16700297.8998753
-"762",2014,"Sparidae","Brazil","Landings_Value",332480.243559183
-"763",2014,"Sphyraena","Brazil","Landings_Value",3903480.42779474
-"764",2014,"Sphyraena
-barracuda","Brazil","Landings_Value",529928.927380549
-"765",2014,"Sphyraena
-guachancho","Brazil","Landings_Value",60265.5983138946
-"766",2014,"Sphyrna","Brazil","Landings_Value",1915584.44795516
-"767",2014,"Sphyrna
-lewini","Brazil","Landings_Value",53513.48107693
-"768",2014,"Sphyrna
-mokarran","Brazil","Landings_Value",182.825048115
-"769",2014,"Sphyrna
-tiburo","Brazil","Landings_Value",60.1797646918
-"770",2014,"Squalus","Brazil","Landings_Value",11410235.4673962
-"771",2014,"Squalus
-acanthias","Chile","Landings_Value",6720.6
-"772",2014,"Stellifer
-rastrifer","Brazil","Landings_Value",25567373.9932102
-"773",2014,"Tawera
-gayi","Chile","Landings_Value",34526995.1
-"774",2014,"Tetraodontidae","Brazil","Landings_Value",15806709.6291806
-"775",2014,"Tetrapturus
-pfluegeri","Brazil","Landings_Value",9113.19071477269
-"776",2014,"Thunnus","Brazil","Landings_Value",2357057.11993684
-"777",2014,"Thunnus
-alalunga","Brazil","Landings_Value",2886946.86072736
-"778",2014,"Thunnus
-alalunga","Chile","Landings_Value",61928.433
-"779",2014,"Thunnus
-albacares","Brazil","Landings_Value",18586081.0468347
-"780",2014,"Thunnus
-albacares","Chile","Landings_Value",51602.0832554985
-"781",2014,"Thunnus
-albacares","Peru","Landings_Value",3503772.00969302
-"782",2014,"Thunnus
-atlanticus","Brazil","Landings_Value",1568405.49349818
-"783",2014,"Thunnus
-maccoyii","Brazil","Landings_Value",11568.8584905562
-"784",2014,"Thunnus
-obesus","Brazil","Landings_Value",12301678.7499156
-"785",2014,"Thunnus
-obesus","Chile","Landings_Value",188.224
-"786",2014,"Thunnus
-obesus","Peru","Landings_Value",374206.009701016
-"787",2014,"Thyrsites
-atun","Chile","Landings_Value",3179410.155
-"788",2014,"Thyrsitops
-lepidopoides","Brazil","Landings_Value",454.6118295532
-"789",2014,"Trachinotus","Brazil","Landings_Value",1642733.49110918
-"790",2014,"Trachinotus
-carolinus","Brazil","Landings_Value",1496872.16513173
-"791",2014,"Trachinotus
-goodei","Brazil","Landings_Value",2622.592295754
-"792",2014,"Trachurus
-lathami","Brazil","Landings_Value",3853625.87800264
-"793",2014,"Trachurus
-murphyi","Chile","Landings_Value",514538650.708266
-"794",2014,"Trachurus
-murphyi","Peru","Landings_Value",55366587.9455236
-"795",2014,"Trichiurus
-lepturus","Brazil","Landings_Value",82275484.5463524
-"796",2014,"Umbrina
-canosai","Brazil","Landings_Value",164601958.995682
-"797",2014,"Uraspis
-secunda","Brazil","Landings_Value",12.5074000618
-"798",2014,"Urophycis
-brasiliensis","Brazil","Landings_Value",4089133.34491169
-"799",2014,"Veneridae","Brazil","Landings_Value",13716363.5550837
-"800",2014,"Veneridae","Chile","Landings_Value",5978028.21
-"801",2014,"Xiphias
-gladius","Brazil","Landings_Value",21282005.2692518
-"802",2014,"Xiphias
-gladius","Chile","Landings_Value",1434734.784
-"803",2014,"Xiphias
-gladius","Peru","Landings_Value",887645.492185231
-"804",2014,"Xiphopenaeus
-kroyeri","Brazil","Landings_Value",13504117.1600699
-"805",2014,"Zearaja
-chilensis","Chile","Landings_Value",76774
-"806",2014,"Zenopsis
-conchifer","Brazil","Landings_Value",215394.233742226
+"year","scientific_name","Reporter","Variable","Value"
+2014,"Abudefduf","Brazil","Total_tonnes",5.2116944605
+2014,"Acanthocybium solandri","Brazil","Total_tonnes",499.8772465901
+2014,"Acanthurus","Brazil","Total_tonnes",27.2308034923
+2014,"Achirus","Brazil","Total_tonnes",1102.39608356
+2014,"Aetobatus narinari","Brazil","Total_tonnes",62.3432057061
+2014,"Albula vulpes","Brazil","Total_tonnes",15.0399716165
+2014,"Alectis ciliaris","Brazil","Total_tonnes",11.5115834646
+2014,"Alopias","Brazil","Total_tonnes",28.2927942367
+2014,"Alopias superciliosus","Brazil","Total_tonnes",18.0134413178
+2014,"Alopias vulpinus","Brazil","Total_tonnes",14.2272005735
+2014,"Aluterus","Brazil","Total_tonnes",500.8905130172
+2014,"Amphiarius phrygiatus","Brazil","Total_tonnes",15.4090884176
+2014,"Anchoa hepsetus","Brazil","Total_tonnes",43.7413495586
+2014,"Anchoa nasus","Peru","Total_tonnes",0.3138322304
+2014,"Anchoa spinifer","Brazil","Total_tonnes",0.3196445269
+2014,"Anchoviella","Brazil","Total_tonnes",1889.7894887853
+2014,"Anguilliformes","Brazil","Total_tonnes",109.3929114101
+2014,"Anguilliformes","Peru","Total_tonnes",10924.2
+2014,"Aplodactylus punctatus","Chile","Total_tonnes",48.3
+2014,"Archosargus probatocephalus","Brazil","Total_tonnes",4.7140061176
+2014,"Archosargus rhomboidalis","Brazil","Total_tonnes",110.5565213688
+2014,"Argopecten purpuratus","Peru","Total_tonnes",76707
+2014,"Ariidae","Brazil","Total_tonnes",16654.6588657226
+2014,"Artemesia longinaris","Brazil","Total_tonnes",3513.3950507569
+2014,"Aspistor quadriscutis","Brazil","Total_tonnes",3164.8299411832
+2014,"Atlantoraja cyclophora","Brazil","Total_tonnes",0.0720631569
+2014,"Aulacomya ater","Chile","Total_tonnes",7698.1
+2014,"Aulacomya ater","Peru","Total_tonnes",8308.6022793253
+2014,"Aulostomidae","Brazil","Total_tonnes",0.3033396168
+2014,"Auxis thazard","Brazil","Total_tonnes",608.1779376288
+2014,"Bagre bagre","Brazil","Total_tonnes",4188.7720322123
+2014,"Bairdiella ronchus","Brazil","Total_tonnes",19.5487706917
+2014,"Balistes capriscus","Brazil","Total_tonnes",1805.3657741595
+2014,"Balistidae","Brazil","Total_tonnes",610.8808853953
+2014,"Bathygobius soporator","Brazil","Total_tonnes",6.9101658072
+2014,"Batoidea","Brazil","Total_tonnes",34462.4601295096
+2014,"Batrachoididae","Brazil","Total_tonnes",370.2962969659
+2014,"Beryx splendens","Brazil","Total_tonnes",1.4083625066
+2014,"Beryx splendens","Chile","Total_tonnes",0.003
+2014,"Bivalvia","Brazil","Total_tonnes",2362.3837798085
+2014,"Bivalvia","Chile","Total_tonnes",3886.31
+2014,"Bivalvia","Peru","Total_tonnes",1709.5947751697
+2014,"Brama australis","Chile","Total_tonnes",76869.2481175
+2014,"Bramidae","Chile","Total_tonnes",203.8166666667
+2014,"Brevoortia pectinata","Brazil","Total_tonnes",6.0366330983
+2014,"Calamus","Brazil","Total_tonnes",622.8253123166
+2014,"Callinectes","Brazil","Total_tonnes",2350.8454269091
+2014,"Callinectes danae","Brazil","Total_tonnes",395.4412496124
+2014,"Callinectes sapidus","Brazil","Total_tonnes",0.0190869046
+2014,"Carangidae","Brazil","Total_tonnes",3178.9394244439
+2014,"Caranx","Brazil","Total_tonnes",620.7650558988
+2014,"Caranx crysos","Brazil","Total_tonnes",2983.6567879184
+2014,"Caranx hippos","Brazil","Total_tonnes",2293.9841628012
+2014,"Caranx latus","Brazil","Total_tonnes",4596.4936226223
+2014,"Caranx lugubris","Brazil","Total_tonnes",36.7292982148
+2014,"Caranx lugubris","Chile","Total_tonnes",2.19335
+2014,"Carcharhinidae","Brazil","Total_tonnes",3687.9581293284
+2014,"Carcharhiniformes","Brazil","Total_tonnes",32.9447090607
+2014,"Carcharhinus","Brazil","Total_tonnes",82.0540730095
+2014,"Carcharhinus falciformis","Brazil","Total_tonnes",220.7861670718
+2014,"Carcharhinus galapagensis","Chile","Total_tonnes",0.24289
+2014,"Carcharhinus leucas","Brazil","Total_tonnes",18.3817861147
+2014,"Carcharhinus limbatus","Brazil","Total_tonnes",5.0514230598
+2014,"Carcharhinus longimanus","Brazil","Total_tonnes",38.1968050545
+2014,"Carcharhinus plumbeus","Brazil","Total_tonnes",0.7765945971
+2014,"Carcharias taurus","Brazil","Total_tonnes",15.1878115798
+2014,"Centrolophidae","Chile","Total_tonnes",9.1734
+2014,"Centropomus","Brazil","Total_tonnes",3340.7326538365
+2014,"Centropomus undecimalis","Brazil","Total_tonnes",354.1730338462
+2014,"Cephalopholis fulva","Brazil","Total_tonnes",575.1920659866
+2014,"Cephalopoda","Brazil","Total_tonnes",7.0085027754
+2014,"Cervimunida johni","Chile","Total_tonnes",5487.41029375
+2014,"Cetengraulis edentulus","Brazil","Total_tonnes",5546.6757618428
+2014,"Chaetodipterus faber","Brazil","Total_tonnes",619.0239058252
+2014,"Chaetodontidae","Brazil","Total_tonnes",11.4131216383
+2014,"Cheilodactylus variegatus","Peru","Total_tonnes",2285.6132568581
+2014,"Chloroscombrus chrysurus","Brazil","Total_tonnes",8475.1968443104
+2014,"Choromytilus chorus","Chile","Total_tonnes",1214.4
+2014,"Cilus gilberti","Chile","Total_tonnes",2125.2
+2014,"Cilus gilberti","Peru","Total_tonnes",20037.1356
+2014,"Clupea bentincki","Chile","Total_tonnes",312528.443111111
+2014,"Clupeidae","Brazil","Total_tonnes",33007.0804219124
+2014,"Clupeiformes","Brazil","Total_tonnes",155.616734861
+2014,"Concholepas concholepas","Chile","Total_tonnes",5175
+2014,"Concholepas concholepas","Peru","Total_tonnes",1848.0887249702
+2014,"Conger orbignianus","Brazil","Total_tonnes",65.6774720467
+2014,"Conodon nobilis","Brazil","Total_tonnes",1358.1701041093
+2014,"Cookeolus japonicus","Brazil","Total_tonnes",58.35069031
+2014,"Coryphaena","Brazil","Total_tonnes",94.5250454512
+2014,"Coryphaena","Peru","Total_tonnes",17594.8786293562
+2014,"Coryphaena hippurus","Brazil","Total_tonnes",10597.5960644214
+2014,"Coryphaena hippurus","Chile","Total_tonnes",0.1
+2014,"Coryphaena hippurus","Peru","Total_tonnes",74433.6
+2014,"Crassostrea","Brazil","Total_tonnes",378.1407653632
+2014,"Crassostrea rhizophorae","Brazil","Total_tonnes",1156.4546154041
+2014,"Ctenosciaena gracilicirrhus","Brazil","Total_tonnes",50.1447369764
+2014,"Cynoscion","Brazil","Total_tonnes",9288.1206721997
+2014,"Cynoscion acoupa","Brazil","Total_tonnes",20421.6334989312
+2014,"Cynoscion analis","Peru","Total_tonnes",6535.3344160115
+2014,"Cynoscion guatucupa","Brazil","Total_tonnes",21590.3259704608
+2014,"Cynoscion jamaicensis","Brazil","Total_tonnes",1883.4669782633
+2014,"Cynoscion leiarchus","Brazil","Total_tonnes",1869.8434305533
+2014,"Cynoscion virescens","Brazil","Total_tonnes",3729.3194851208
+2014,"Dasyatidae","Brazil","Total_tonnes",823.7435320278
+2014,"Dasyatis","Brazil","Total_tonnes",33.0995914296
+2014,"Dasyatis guttata","Brazil","Total_tonnes",19.894635235
+2014,"Decapterus","Brazil","Total_tonnes",150.6710757074
+2014,"Decapterus punctatus","Brazil","Total_tonnes",4.2949563463
+2014,"Diapterus rhombeus","Brazil","Total_tonnes",82.1474379222
+2014,"Diplodus argenteus argenteus","Brazil","Total_tonnes",10.6443466858
+2014,"Doryteuthis gahi","Chile","Total_tonnes",18.4
+2014,"Dosidicus gigas","Chile","Total_tonnes",288410.8
+2014,"Dosidicus gigas","Peru","Total_tonnes",654706.8432
+2014,"Echinodermata","Peru","Total_tonnes",2521.8
+2014,"Elagatis bipinnulata","Brazil","Total_tonnes",133.9492333232
+2014,"Elagatis bipinnulata","Chile","Total_tonnes",11.9312
+2014,"Elasmobranchii","Brazil","Total_tonnes",2527.9455224847
+2014,"Elasmobranchii","Peru","Total_tonnes",5425.789012871
+2014,"Eleginops maclovinus","Chile","Total_tonnes",664.7
+2014,"Engraulidae","Brazil","Total_tonnes",4101.4761277329
+2014,"Engraulis anchoita","Brazil","Total_tonnes",27.7555749647
+2014,"Engraulis ringens","Chile","Total_tonnes",1897056.30888889
+2014,"Engraulis ringens","Peru","Total_tonnes",2430742.12501411
+2014,"Epinephelus adscensionis","Brazil","Total_tonnes",159.5445896277
+2014,"Epinephelus itajara","Brazil","Total_tonnes",354.7877616009
+2014,"Epinephelus marginatus","Brazil","Total_tonnes",139.1087737044
+2014,"Epinephelus morio","Brazil","Total_tonnes",373.4913695443
+2014,"Ethmidium maculatum","Chile","Total_tonnes",18837
+2014,"Ethmidium maculatum","Peru","Total_tonnes",5132.1474468138
+2014,"Eucinostomus","Brazil","Total_tonnes",84.1393120894
+2014,"Euthynnus alletteratus","Brazil","Total_tonnes",765.9143268395
+2014,"Euthynnus lineatus","Peru","Total_tonnes",81
+2014,"Farfantepenaeus paulensis","Brazil","Total_tonnes",2114.6127441634
+2014,"Farfantepenaeus subtilis","Brazil","Total_tonnes",5409.9917049172
+2014,"Fistularia tabacaria","Brazil","Total_tonnes",45.7097909349
+2014,"Gadiformes","Brazil","Total_tonnes",4920.8504072303
+2014,"Galeocerdo cuvier","Brazil","Total_tonnes",11.7625821625
+2014,"Galeorhinus galeus","Brazil","Total_tonnes",15.6469501084
+2014,"Galeorhinus galeus","Chile","Total_tonnes",66.7
+2014,"Gastropoda","Brazil","Total_tonnes",0.513326603
+2014,"Gastropoda","Chile","Total_tonnes",71513.44
+2014,"Gastropoda","Peru","Total_tonnes",4550.6256300162
+2014,"Gempylidae","Brazil","Total_tonnes",6.7285271558
+2014,"Genyatremus luteus","Brazil","Total_tonnes",2642.1892703384
+2014,"Genypterus","Brazil","Total_tonnes",514.273615392
+2014,"Genypterus blacodes","Chile","Total_tonnes",1377.7
+2014,"Genypterus maculatus","Chile","Total_tonnes",542.8
+2014,"Gerreidae","Brazil","Total_tonnes",2393.8776057194
+2014,"Ginglymostoma cirratum","Brazil","Total_tonnes",0.7966718458
+2014,"Gobiidae","Brazil","Total_tonnes",54.3409176356
+2014,"Gymnothorax","Brazil","Total_tonnes",403.059339747
+2014,"Gymnura micrura","Brazil","Total_tonnes",6.1773175758
+2014,"Haemulidae","Brazil","Total_tonnes",1681.9241232577
+2014,"Haemulidae","Chile","Total_tonnes",18.4
+2014,"Haemulidae","Peru","Total_tonnes",2685.0289690705
+2014,"Haemulon","Brazil","Total_tonnes",311.5933933
+2014,"Haemulon aurolineatum","Brazil","Total_tonnes",349.0632073172
+2014,"Haemulon flavolineatum","Brazil","Total_tonnes",42.4604155263
+2014,"Haliporoides diomedeae","Chile","Total_tonnes",12.9
+2014,"Harengula","Brazil","Total_tonnes",8.0074233828
+2014,"Harengula clupeola","Brazil","Total_tonnes",305.3288022167
+2014,"Harengula jaguana","Brazil","Total_tonnes",23.4920069826
+2014,"Hemiramphidae","Brazil","Total_tonnes",25.0230109743
+2014,"Hemiramphus","Brazil","Total_tonnes",545.0277531929
+2014,"Hemiramphus brasiliensis","Brazil","Total_tonnes",246.9534408225
+2014,"Heterocarpus reedi","Chile","Total_tonnes",5161.17
+2014,"Heteropriacanthus cruentatus","Brazil","Total_tonnes",1.8398344374
+2014,"Heteropriacanthus cruentatus","Chile","Total_tonnes",0.6
+2014,"Hexanchus griseus","Brazil","Total_tonnes",21.2184018481
+2014,"Holocentrus adscensionis","Brazil","Total_tonnes",422.1081513141
+2014,"Hyperoglyphe","Brazil","Total_tonnes",1.776899779
+2014,"Hyporthodus flavolimbatus","Brazil","Total_tonnes",0.2475242968
+2014,"Hyporthodus niveatus","Brazil","Total_tonnes",64.1251273088
+2014,"Illex argentinus","Brazil","Total_tonnes",49.4301192334
+2014,"Isacia conceptionis","Chile","Total_tonnes",186.3
+2014,"Isacia conceptionis","Peru","Total_tonnes",5430.9487920363
+2014,"Isopisthus parvipinnis","Brazil","Total_tonnes",2466.5740999407
+2014,"Istiompax indica","Peru","Total_tonnes",0.027081265
+2014,"Istiophoridae","Brazil","Total_tonnes",76.5317454173
+2014,"Istiophoridae","Chile","Total_tonnes",13.34
+2014,"Istiophoridae","Peru","Total_tonnes",1.0352076082
+2014,"Istiophorus albicans","Brazil","Total_tonnes",50.4811079468
+2014,"Isurus oxyrinchus","Brazil","Total_tonnes",277.4031632187
+2014,"Isurus oxyrinchus","Chile","Total_tonnes",587.35
+2014,"Jasus frontalis","Chile","Total_tonnes",207
+2014,"Kajikia albida","Brazil","Total_tonnes",50.2446090889
+2014,"Katsuwonus pelamis","Brazil","Total_tonnes",24820.3209867873
+2014,"Katsuwonus pelamis","Chile","Total_tonnes",0.3423754294
+2014,"Katsuwonus pelamis","Peru","Total_tonnes",708.6168707716
+2014,"Kyphosus","Brazil","Total_tonnes",76.0709927477
+2014,"Labridae","Brazil","Total_tonnes",210.2437717258
+2014,"Lagocephalus laevigatus","Brazil","Total_tonnes",528.8438457868
+2014,"Lamna nasus","Brazil","Total_tonnes",2.9039365821
+2014,"Lamniformes","Brazil","Total_tonnes",0.1830871258
+2014,"Lampris guttatus","Brazil","Total_tonnes",0.862677545
+2014,"Lampris guttatus","Chile","Total_tonnes",9.2
+2014,"Larimus breviceps","Brazil","Total_tonnes",444.6020466651
+2014,"Lepidocybium flavobrunneum","Brazil","Total_tonnes",69.1495157128
+2014,"Lithodes antarcticus","Chile","Total_tonnes",4420.37
+2014,"Litopenaeus schmitti","Brazil","Total_tonnes",5398.4503640849
+2014,"Lobotes surinamensis","Brazil","Total_tonnes",460.3012509417
+2014,"Loliginidae","Brazil","Total_tonnes",725.0907146014
+2014,"Lophius gastrophysus","Brazil","Total_tonnes",2170.899372757
+2014,"Loxechinus albus","Chile","Total_tonnes",74388.9
+2014,"Lutjanidae","Brazil","Total_tonnes",3.5502250967
+2014,"Lutjanus","Brazil","Total_tonnes",929.8479497038
+2014,"Lutjanus analis","Brazil","Total_tonnes",2649.2215664167
+2014,"Lutjanus apodus","Brazil","Total_tonnes",44.630927752
+2014,"Lutjanus jocu","Brazil","Total_tonnes",1450.9612764784
+2014,"Lutjanus purpureus","Brazil","Total_tonnes",4714.4676019098
+2014,"Lutjanus synagris","Brazil","Total_tonnes",2577.0358698571
+2014,"Lutjanus vivanus","Brazil","Total_tonnes",15.3216621816
+2014,"Macrodon ancylodon","Brazil","Total_tonnes",35703.5415047642
+2014,"Macrouridae","Brazil","Total_tonnes",0.0809476569
+2014,"Makaira nigricans","Brazil","Total_tonnes",32.2313519547
+2014,"Malacanthidae","Peru","Total_tonnes",160.52505
+2014,"Malacostraca","Chile","Total_tonnes",13316.946
+2014,"Marine finfishes not identified","Brazil","Total_tonnes",910.1471456184
+2014,"Marine finfishes not identified","Chile","Total_tonnes",10.18647
+2014,"Marine fishes not identified","Brazil","Total_tonnes",56241.0790450956
+2014,"Marine fishes not identified","Chile","Total_tonnes",19183.7273348114
+2014,"Marine fishes not identified","Peru","Total_tonnes",195876.883825205
+2014,"Marine pelagic fishes not identified","Brazil","Total_tonnes",126.1499466148
+2014,"Marine pelagic fishes not identified","Chile","Total_tonnes",0.6447288628
+2014,"Marine pelagic fishes not identified","Peru","Total_tonnes",536.7627240255
+2014,"Megalops atlanticus","Brazil","Total_tonnes",916.17642521
+2014,"Menticirrhus","Brazil","Total_tonnes",2973.2009491056
+2014,"Menticirrhus americanus","Brazil","Total_tonnes",138.2811321245
+2014,"Merluccius australis","Chile","Total_tonnes",128320.72217625
+2014,"Merluccius gayi gayi","Chile","Total_tonnes",40661.92029375
+2014,"Merluccius gayi gayi","Peru","Total_tonnes",78076.4946
+2014,"Merluccius hubbsi","Brazil","Total_tonnes",2292.6601870995
+2014,"Mesodesma donacium","Chile","Total_tonnes",1913.6
+2014,"Micropogonias furnieri","Brazil","Total_tonnes",74326.0691553525
+2014,"Miscellaneous marine crustaceans","Peru","Total_tonnes",286.2
+2014,"Mollusca","Brazil","Total_tonnes",9.456717737
+2014,"Mollusca","Peru","Total_tonnes",2442.0680243455
+2014,"Mugil","Brazil","Total_tonnes",15130.0978885898
+2014,"Mugil cephalus","Chile","Total_tonnes",135.7
+2014,"Mugil cephalus","Peru","Total_tonnes",19717.298582946
+2014,"Mugil liza","Brazil","Total_tonnes",5547.9465039457
+2014,"Mulinia","Chile","Total_tonnes",4008.9
+2014,"Mullidae","Brazil","Total_tonnes",929.4476650854
+2014,"Mulloidichthys martinicus","Brazil","Total_tonnes",0.0937237668
+2014,"Mullus argentinae","Brazil","Total_tonnes",242.559306919
+2014,"Muraenidae","Brazil","Total_tonnes",1.6159027873
+2014,"Mustelus","Brazil","Total_tonnes",11449.9431018152
+2014,"Mustelus schmitti","Brazil","Total_tonnes",11509.7646983063
+2014,"Mycteroperca","Brazil","Total_tonnes",839.6631658182
+2014,"Mycteroperca bonaci","Brazil","Total_tonnes",1375.628995846
+2014,"Mycteroperca microlepis","Brazil","Total_tonnes",1.2102661815
+2014,"Myliobatidae","Brazil","Total_tonnes",21.474778727
+2014,"Myripristis jacobus","Brazil","Total_tonnes",127.2256013788
+2014,"Mytilidae","Brazil","Total_tonnes",1837.7776058799
+2014,"Mytilus chilensis","Chile","Total_tonnes",1699.7
+2014,"Nebris microps","Brazil","Total_tonnes",1296.7380327031
+2014,"Nemadactylus","Chile","Total_tonnes",33.58
+2014,"Nemadactylus bergi","Brazil","Total_tonnes",203.8765674346
+2014,"Normanichthys crockeri","Chile","Total_tonnes",111179.7
+2014,"Notarius grandicassis","Brazil","Total_tonnes",978.0456171581
+2014,"Notorynchus cepedianus","Brazil","Total_tonnes",0.023267081
+2014,"Octopodidae","Brazil","Total_tonnes",130.5424388766
+2014,"Octopus","Brazil","Total_tonnes",845.6928260043
+2014,"Octopus vulgaris","Brazil","Total_tonnes",154.2014733978
+2014,"Ocyurus chrysurus","Brazil","Total_tonnes",6859.5635935443
+2014,"Odontesthes regia","Chile","Total_tonnes",2589.8
+2014,"Odontesthes regia","Peru","Total_tonnes",13406.5675738333
+2014,"Opisthonema oglinum","Brazil","Total_tonnes",14715.3775094144
+2014,"Ostraciidae","Brazil","Total_tonnes",0.0385028488
+2014,"Ostrea chilensis","Chile","Total_tonnes",43.7
+2014,"Pagrus pagrus","Brazil","Total_tonnes",1289.5174819152
+2014,"Panulirus","Brazil","Total_tonnes",2249.9888524869
+2014,"Panulirus","Chile","Total_tonnes",1.29075
+2014,"Panulirus argus","Brazil","Total_tonnes",3572.7130135363
+2014,"Panulirus gracilis","Peru","Total_tonnes",5.4
+2014,"Paralabrax humeralis","Chile","Total_tonnes",179.41
+2014,"Paralabrax humeralis","Peru","Total_tonnes",2357.6869755738
+2014,"Paralichthyidae","Chile","Total_tonnes",833.5481175
+2014,"Paralichthys","Chile","Total_tonnes",3335.46
+2014,"Paralichthys microps","Chile","Total_tonnes",34.5
+2014,"Paralomis granulosa","Chile","Total_tonnes",5177.3
+2014,"Paralonchurus brasiliensis","Brazil","Total_tonnes",11060.2219996487
+2014,"Paralonchurus peruanus","Peru","Total_tonnes",2743.3041622828
+2014,"Parona signata","Brazil","Total_tonnes",62.8991233188
+2014,"Pectinidae","Brazil","Total_tonnes",1.1583945838
+2014,"Pellona harroweri","Brazil","Total_tonnes",1184.9398155293
+2014,"Penaeidae","Brazil","Total_tonnes",2616.4975188155
+2014,"Peprilus paru","Brazil","Total_tonnes",542.1277176548
+2014,"Perciformes","Brazil","Total_tonnes",36.2223880465
+2014,"Perciformes","Chile","Total_tonnes",6558.893
+2014,"Percophis brasiliensis","Brazil","Total_tonnes",672.1359221444
+2014,"Perna perna","Brazil","Total_tonnes",246.326629056
+2014,"Pinguipedidae","Brazil","Total_tonnes",146.7415579377
+2014,"Pinguipes chilensis","Chile","Total_tonnes",57.5
+2014,"Plagioscion surinamensis","Brazil","Total_tonnes",1.0329097328
+2014,"Pleoticus muelleri","Brazil","Total_tonnes",312.312714299
+2014,"Pleuroncodes monodon","Chile","Total_tonnes",12582.55217625
+2014,"Pleuronectiformes","Brazil","Total_tonnes",1791.8251900366
+2014,"Pleuronectiformes","Chile","Total_tonnes",204.1496666667
+2014,"Pleuronectiformes","Peru","Total_tonnes",5040
+2014,"Pogonias cromis","Brazil","Total_tonnes",194.2319795148
+2014,"Polyprion americanus","Brazil","Total_tonnes",5.8644010682
+2014,"Polyprion oxygeneios","Chile","Total_tonnes",7.1719
+2014,"Pomatomus saltatrix","Brazil","Total_tonnes",2246.0025508553
+2014,"Porichthys porosissimus","Brazil","Total_tonnes",1405.3431277405
+2014,"Portunidae","Brazil","Total_tonnes",23.8104570381
+2014,"Priacanthus arenatus","Brazil","Total_tonnes",288.4100717449
+2014,"Prionace glauca","Brazil","Total_tonnes",3221.4011067948
+2014,"Prionace glauca","Chile","Total_tonnes",391
+2014,"Prionotus stephanophrys","Peru","Total_tonnes",9275.9927625
+2014,"Pristidae","Brazil","Total_tonnes",43.1345572504
+2014,"Prolatilus jugularis","Chile","Total_tonnes",89.7
+2014,"Pseudocaranx dentex","Brazil","Total_tonnes",6.9101658072
+2014,"Pyura chilensis","Chile","Total_tonnes",4358.5
+2014,"Rachycentron canadum","Brazil","Total_tonnes",837.0653398872
+2014,"Rajidae","Brazil","Total_tonnes",1819.8078761444
+2014,"Rajiformes","Brazil","Total_tonnes",4110.6852889858
+2014,"Rajiformes","Peru","Total_tonnes",2109.9004655942
+2014,"Rhinobatidae","Peru","Total_tonnes",399.6000000001
+2014,"Rhinobatos","Brazil","Total_tonnes",140.2106744102
+2014,"Rhinobatos percellens","Brazil","Total_tonnes",2.5722947341
+2014,"Rhizoprionodon porosus","Brazil","Total_tonnes",106.856021578
+2014,"Rhomboplites aurorubens","Brazil","Total_tonnes",538.8606816386
+2014,"Ruvettus pretiosus","Brazil","Total_tonnes",5.2122393471
+2014,"Sarda chiliensis","Chile","Total_tonnes",85.1
+2014,"Sarda chiliensis","Peru","Total_tonnes",55874.9926702876
+2014,"Sarda sarda","Brazil","Total_tonnes",595.84811371
+2014,"Sardinella aurita","Brazil","Total_tonnes",23.4920069826
+2014,"Sardinella brasiliensis","Brazil","Total_tonnes",104922.177932306
+2014,"Sardinops sagax","Chile","Total_tonnes",191456.933111111
+2014,"Sardinops sagax","Peru","Total_tonnes",1013.1725760001
+2014,"Sciades couma","Brazil","Total_tonnes",1490.168619961
+2014,"Sciades parkeri","Brazil","Total_tonnes",6047.1242383171
+2014,"Sciades proops","Brazil","Total_tonnes",6116.8368485555
+2014,"Sciaenidae","Brazil","Total_tonnes",10573.3208838291
+2014,"Sciaenidae","Peru","Total_tonnes",1723.1108927749
+2014,"Scomber japonicus","Chile","Total_tonnes",229841.85
+2014,"Scomber japonicus","Peru","Total_tonnes",91621.4080850354
+2014,"Scomberomorus brasiliensis","Brazil","Total_tonnes",10400.6362964429
+2014,"Scomberomorus cavalla","Brazil","Total_tonnes",3987.2566842389
+2014,"Scomberomorus regalis","Brazil","Total_tonnes",12.7769237245
+2014,"Scomberomorus sierra","Peru","Total_tonnes",1332.6635324728
+2014,"Scombridae","Brazil","Total_tonnes",896.1545838222
+2014,"Scombridae","Peru","Total_tonnes",561.3006130233
+2014,"Scorpaeniformes","Brazil","Total_tonnes",218.9692826358
+2014,"Scorpaeniformes","Chile","Total_tonnes",44.16
+2014,"Selar crumenophthalmus","Brazil","Total_tonnes",171.4776330755
+2014,"Selene setapinnis","Brazil","Total_tonnes",1498.2313352606
+2014,"Selene vomer","Brazil","Total_tonnes",109.2422991558
+2014,"Semele solida","Chile","Total_tonnes",1230.5
+2014,"Seriola","Brazil","Total_tonnes",911.048046653
+2014,"Seriola dumerili","Brazil","Total_tonnes",307.7888090122
+2014,"Seriola lalandi","Brazil","Total_tonnes",79.8952800949
+2014,"Seriola lalandi","Chile","Total_tonnes",878.6950993857
+2014,"Seriolella","Chile","Total_tonnes",68.554
+2014,"Seriolella","Peru","Total_tonnes",371.6174169907
+2014,"Seriolella caerulea","Chile","Total_tonnes",6.9
+2014,"Serranidae","Brazil","Total_tonnes",652.7745325421
+2014,"Serranidae","Chile","Total_tonnes",448.73
+2014,"Serranidae","Peru","Total_tonnes",101.5500000001
+2014,"Siluriformes","Brazil","Total_tonnes",11391.7448157402
+2014,"Sparidae","Brazil","Total_tonnes",104.1278557969
+2014,"Sphyraena","Brazil","Total_tonnes",1040.0960372489
+2014,"Sphyraena barracuda","Brazil","Total_tonnes",88.7207311871
+2014,"Sphyraena guachancho","Brazil","Total_tonnes",10.0896699002
+2014,"Sphyrna","Brazil","Total_tonnes",1149.8105930103
+2014,"Sphyrna lewini","Brazil","Total_tonnes",37.8187145422
+2014,"Sphyrna mokarran","Brazil","Total_tonnes",0.1292049812
+2014,"Sphyrna tiburo","Brazil","Total_tonnes",0.0487680428
+2014,"Squalus","Brazil","Total_tonnes",11513.8602092797
+2014,"Squalus acanthias","Chile","Total_tonnes",4.6
+2014,"Stellifer rastrifer","Brazil","Total_tonnes",5927.9791312799
+2014,"Tawera gayi","Chile","Total_tonnes",11700.1
+2014,"Tetraodontidae","Brazil","Total_tonnes",10976.8816869312
+2014,"Tetrapturus pfluegeri","Brazil","Total_tonnes",6.2163647441
+2014,"Thunnus","Brazil","Total_tonnes",701.5050952193
+2014,"Thunnus alalunga","Brazil","Total_tonnes",617.5287402627
+2014,"Thunnus alalunga","Chile","Total_tonnes",18.547
+2014,"Thunnus albacares","Brazil","Total_tonnes",4960.2564843434
+2014,"Thunnus albacares","Chile","Total_tonnes",19.276086386
+2014,"Thunnus albacares","Peru","Total_tonnes",1650.3871925072
+2014,"Thunnus atlanticus","Brazil","Total_tonnes",509.2225628242
+2014,"Thunnus maccoyii","Brazil","Total_tonnes",7.8914450822
+2014,"Thunnus obesus","Brazil","Total_tonnes",3174.6267741718
+2014,"Thunnus obesus","Chile","Total_tonnes",0.068
+2014,"Thunnus obesus","Peru","Total_tonnes",255.2564868356
+2014,"Thyrsites atun","Chile","Total_tonnes",4724.235
+2014,"Thyrsitops lepidopoides","Brazil","Total_tonnes",0.2162758466
+2014,"Trachinotus","Brazil","Total_tonnes",557.2365980696
+2014,"Trachinotus carolinus","Brazil","Total_tonnes",164.7811718551
+2014,"Trachinotus goodei","Brazil","Total_tonnes",0.865542012
+2014,"Trachurus lathami","Brazil","Total_tonnes",2209.6478658274
+2014,"Trachurus murphyi","Chile","Total_tonnes",529905.922459594
+2014,"Trachurus murphyi","Peru","Total_tonnes",104072.533732187
+2014,"Trichiurus lepturus","Brazil","Total_tonnes",18715.9882953486
+2014,"Umbrina canosai","Brazil","Total_tonnes",47669.2612208751
+2014,"Uraspis secunda","Brazil","Total_tonnes",0.0098716654
+2014,"Urophycis brasiliensis","Brazil","Total_tonnes",2619.5601184572
+2014,"Veneridae","Brazil","Total_tonnes",3439.4091161193
+2014,"Veneridae","Chile","Total_tonnes",2098.29
+2014,"Xiphias gladius","Brazil","Total_tonnes",2402.3033377641
+2014,"Xiphias gladius","Chile","Total_tonnes",226.728
+2014,"Xiphias gladius","Peru","Total_tonnes",605.4880574252
+2014,"Xiphopenaeus kroyeri","Brazil","Total_tonnes",15647.8761993859
+2014,"Zearaja chilensis","Chile","Total_tonnes",46
+2014,"Zenopsis conchifer","Brazil","Total_tonnes",44.4295036597
+2014,"Abudefduf","Brazil","Landings_Value",46352.810531687
+2014,"Acanthocybium solandri","Brazil","Landings_Value",2248447.85516219
+2014,"Acanthurus","Brazil","Landings_Value",138359.712543868
+2014,"Achirus","Brazil","Landings_Value",830104.250920529
+2014,"Aetobatus narinari","Brazil","Landings_Value",71258.2841220723
+2014,"Albula vulpes","Brazil","Landings_Value",8392.3041619512
+2014,"Alectis ciliaris","Brazil","Landings_Value",51594.917087889
+2014,"Alopias","Brazil","Landings_Value",39553.3263429066
+2014,"Alopias superciliosus","Brazil","Landings_Value",13870.3498147571
+2014,"Alopias vulpinus","Brazil","Landings_Value",20757.4856364447
+2014,"Aluterus","Brazil","Landings_Value",1897373.2633084
+2014,"Amphiarius phrygiatus","Brazil","Landings_Value",29061.540755405
+2014,"Anchoa hepsetus","Brazil","Landings_Value",53889.3426561952
+2014,"Anchoa nasus","Peru","Landings_Value",160.995934191096
+2014,"Anchoa spinifer","Brazil","Landings_Value",393.8020571408
+2014,"Anchoviella","Brazil","Landings_Value",2328220.65018337
+2014,"Anguilliformes","Brazil","Landings_Value",355089.390437184
+2014,"Anguilliformes","Peru","Landings_Value",16014877.2
+2014,"Aplodactylus punctatus","Chile","Landings_Value",56172.9
+2014,"Archosargus probatocephalus","Brazil","Landings_Value",5868.9376162875
+2014,"Archosargus rhomboidalis","Brazil","Landings_Value",137642.869104156
+2014,"Argopecten purpuratus","Peru","Landings_Value",1282541040
+2014,"Ariidae","Brazil","Landings_Value",29062379.7206854
+2014,"Artemesia longinaris","Brazil","Landings_Value",30580590.5217863
+2014,"Aspistor quadriscutis","Brazil","Landings_Value",5968869.26907133
+2014,"Atlantoraja cyclophora","Brazil","Landings_Value",168.4115976753
+2014,"Aulacomya ater","Chile","Landings_Value",12309261.9
+2014,"Aulacomya ater","Peru","Landings_Value",10535307.6901845
+2014,"Aulostomidae","Brazil","Landings_Value",493.8368961504
+2014,"Auxis thazard","Brazil","Landings_Value",1042416.98509593
+2014,"Bagre bagre","Brazil","Landings_Value",7900024.05275221
+2014,"Bairdiella ronchus","Brazil","Landings_Value",84313.8479933021
+2014,"Balistes capriscus","Brazil","Landings_Value",3316456.927131
+2014,"Balistidae","Brazil","Landings_Value",1786215.70889527
+2014,"Bathygobius soporator","Brazil","Landings_Value",10130.3030732086
+2014,"Batoidea","Brazil","Landings_Value",73163802.8549488
+2014,"Batrachoididae","Brazil","Landings_Value",2139201.707572
+2014,"Beryx splendens","Brazil","Landings_Value",6737.6062315744
+2014,"Beryx splendens","Chile","Landings_Value",10.251
+2014,"Bivalvia","Brazil","Landings_Value",11585130.0561808
+2014,"Bivalvia","Chile","Landings_Value",13613743.93
+2014,"Bivalvia","Peru","Landings_Value",4749254.28542152
+2014,"Brama australis","Chile","Landings_Value",156198312.17476
+2014,"Bramidae","Chile","Landings_Value",811801.783333466
+2014,"Brevoortia pectinata","Brazil","Landings_Value",4129.0570392372
+2014,"Calamus","Brazil","Landings_Value",1046969.35000404
+2014,"Callinectes","Brazil","Landings_Value",5566801.97092027
+2014,"Callinectes danae","Brazil","Landings_Value",936404.879082163
+2014,"Callinectes sapidus","Brazil","Landings_Value",45.1977900928
+2014,"Carangidae","Brazil","Landings_Value",9225282.20973562
+2014,"Caranx","Brazil","Landings_Value",2478094.10314801
+2014,"Caranx crysos","Brazil","Landings_Value",10126531.138195
+2014,"Caranx hippos","Brazil","Landings_Value",7957831.06075667
+2014,"Caranx latus","Brazil","Landings_Value",11109725.0858781
+2014,"Caranx lugubris","Brazil","Landings_Value",201680.576497467
+2014,"Caranx lugubris","Chile","Landings_Value",8602.3187
+2014,"Carcharhinidae","Brazil","Landings_Value",4359166.50886616
+2014,"Carcharhiniformes","Brazil","Landings_Value",60486.4858354453
+2014,"Carcharhinus","Brazil","Landings_Value",214653.454992852
+2014,"Carcharhinus falciformis","Brazil","Landings_Value",299386.042549129
+2014,"Carcharhinus galapagensis","Chile","Landings_Value",356.07674
+2014,"Carcharhinus leucas","Brazil","Landings_Value",17425.9332367356
+2014,"Carcharhinus limbatus","Brazil","Landings_Value",6390.0501705205
+2014,"Carcharhinus longimanus","Brazil","Landings_Value",89686.09826837
+2014,"Carcharhinus plumbeus","Brazil","Landings_Value",805.328597192699
+2014,"Carcharias taurus","Brazil","Landings_Value",124691.933069337
+2014,"Centrolophidae","Chile","Landings_Value",44032.32
+2014,"Centropomus","Brazil","Landings_Value",14545549.9748037
+2014,"Centropomus undecimalis","Brazil","Landings_Value",2862072.28651114
+2014,"Cephalopholis fulva","Brazil","Landings_Value",3538006.39788235
+2014,"Cephalopoda","Brazil","Landings_Value",24445.6576812928
+2014,"Cervimunida johni","Chile","Landings_Value",15490959.2592563
+2014,"Cetengraulis edentulus","Brazil","Landings_Value",6833504.53859033
+2014,"Chaetodipterus faber","Brazil","Landings_Value",673498.009537709
+2014,"Chaetodontidae","Brazil","Landings_Value",100001.771794785
+2014,"Cheilodactylus variegatus","Peru","Landings_Value",6971120.43341716
+2014,"Chloroscombrus chrysurus","Brazil","Landings_Value",30561559.8205833
+2014,"Choromytilus chorus","Chile","Landings_Value",1941825.6
+2014,"Cilus gilberti","Chile","Landings_Value",6048319.2
+2014,"Cilus gilberti","Peru","Landings_Value",29374440.7896
+2014,"Clupea bentincki","Chile","Landings_Value",92508419.1608888
+2014,"Clupeidae","Brazil","Landings_Value",6040295.71720997
+2014,"Clupeiformes","Brazil","Landings_Value",93525.657651461
+2014,"Concholepas concholepas","Chile","Landings_Value",7586550
+2014,"Concholepas concholepas","Peru","Landings_Value",5222698.73676588
+2014,"Conger orbignianus","Brazil","Landings_Value",145278.5681673
+2014,"Conodon nobilis","Brazil","Landings_Value",3711878.89453044
+2014,"Cookeolus japonicus","Brazil","Landings_Value",294379.23261395
+2014,"Coryphaena","Brazil","Landings_Value",477824.104755816
+2014,"Coryphaena","Peru","Landings_Value",25794092.0706362
+2014,"Coryphaena hippurus","Brazil","Landings_Value",49162248.1428508
+2014,"Coryphaena hippurus","Chile","Landings_Value",331.3
+2014,"Coryphaena hippurus","Peru","Landings_Value",195611500.8
+2014,"Crassostrea","Brazil","Landings_Value",380409.609955379
+2014,"Crassostrea rhizophorae","Brazil","Landings_Value",2770865.25850823
+2014,"Ctenosciaena gracilicirrhus","Brazil","Landings_Value",216274.250579213
+2014,"Cynoscion","Brazil","Landings_Value",27260634.1729058
+2014,"Cynoscion acoupa","Brazil","Landings_Value",71455295.6127596
+2014,"Cynoscion analis","Peru","Landings_Value",12953032.8125348
+2014,"Cynoscion guatucupa","Brazil","Landings_Value",75544550.5706425
+2014,"Cynoscion jamaicensis","Brazil","Landings_Value",6590250.95694328
+2014,"Cynoscion leiarchus","Brazil","Landings_Value",6542582.163506
+2014,"Cynoscion virescens","Brazil","Landings_Value",13048888.8784377
+2014,"Dasyatidae","Brazil","Landings_Value",810563.635515355
+2014,"Dasyatis","Brazil","Landings_Value",47597.2124757648
+2014,"Dasyatis guttata","Brazil","Landings_Value",34198.877968965
+2014,"Decapterus","Brazil","Landings_Value",232334.798740657
+2014,"Decapterus punctatus","Brazil","Landings_Value",13125.3865942928
+2014,"Diapterus rhombeus","Brazil","Landings_Value",223851.768337995
+2014,"Diplodus argenteus argenteus","Brazil","Landings_Value",75468.418000904
+2014,"Doryteuthis gahi","Chile","Landings_Value",84345.6
+2014,"Dosidicus gigas","Chile","Landings_Value",343497262.8
+2014,"Dosidicus gigas","Peru","Landings_Value",350268161.112
+2014,"Echinodermata","Peru","Landings_Value",3696958.8
+2014,"Elagatis bipinnulata","Brazil","Landings_Value",688365.110047411
+2014,"Elagatis bipinnulata","Chile","Landings_Value",43799.4352
+2014,"Elasmobranchii","Brazil","Landings_Value",11681636.2594013
+2014,"Elasmobranchii","Peru","Landings_Value",14204715.6356965
+2014,"Eleginops maclovinus","Chile","Landings_Value",2861533.5
+2014,"Engraulidae","Brazil","Landings_Value",2411667.96310695
+2014,"Engraulis anchoita","Brazil","Landings_Value",37914.1154017802
+2014,"Engraulis ringens","Chile","Landings_Value",639307976.095555
+2014,"Engraulis ringens","Peru","Landings_Value",719499669.004176
+2014,"Epinephelus adscensionis","Brazil","Landings_Value",1447388.5171025
+2014,"Epinephelus itajara","Brazil","Landings_Value",5159323.62920029
+2014,"Epinephelus marginatus","Brazil","Landings_Value",2290008.63272183
+2014,"Epinephelus morio","Brazil","Landings_Value",2280538.30243811
+2014,"Ethmidium maculatum","Chile","Landings_Value",13920543
+2014,"Ethmidium maculatum","Peru","Landings_Value",1626890.74063997
+2014,"Eucinostomus","Brazil","Landings_Value",229279.625443343
+2014,"Euthynnus alletteratus","Brazil","Landings_Value",2277829.20802067
+2014,"Euthynnus lineatus","Peru","Landings_Value",118746
+2014,"Farfantepenaeus paulensis","Brazil","Landings_Value",8953270.35878741
+2014,"Farfantepenaeus subtilis","Brazil","Landings_Value",22905904.8786194
+2014,"Fistularia tabacaria","Brazil","Landings_Value",32088.2732362998
+2014,"Gadiformes","Brazil","Landings_Value",9871225.91690398
+2014,"Galeocerdo cuvier","Brazil","Landings_Value",30053.3974246765
+2014,"Galeorhinus galeus","Brazil","Landings_Value",26709.3438348681
+2014,"Galeorhinus galeus","Chile","Landings_Value",97782.2
+2014,"Gastropoda","Brazil","Landings_Value",2370.5422517304
+2014,"Gastropoda","Chile","Landings_Value",235922838.56
+2014,"Gastropoda","Peru","Landings_Value",11904436.6481223
+2014,"Gempylidae","Brazil","Landings_Value",16296.4927713476
+2014,"Genyatremus luteus","Brazil","Landings_Value",7847302.13290505
+2014,"Genypterus","Brazil","Landings_Value",1049632.44901507
+2014,"Genypterus blacodes","Chile","Landings_Value",2008686.6
+2014,"Genypterus maculatus","Chile","Landings_Value",791402.4
+2014,"Gerreidae","Brazil","Landings_Value",6523316.47558536
+2014,"Ginglymostoma cirratum","Brazil","Landings_Value",1462.6895085216
+2014,"Gobiidae","Brazil","Landings_Value",119821.723386498
+2014,"Gymnothorax","Brazil","Landings_Value",763394.389480818
+2014,"Gymnura micrura","Brazil","Landings_Value",19563.5647625586
+2014,"Haemulidae","Brazil","Landings_Value",4002979.41335333
+2014,"Haemulidae","Chile","Landings_Value",31280
+2014,"Haemulidae","Peru","Landings_Value",3619419.05030703
+2014,"Haemulon","Brazil","Landings_Value",689867.772765758
+2014,"Haemulon aurolineatum","Brazil","Landings_Value",772825.941000281
+2014,"Haemulon flavolineatum","Brazil","Landings_Value",94007.3599752282
+2014,"Haliporoides diomedeae","Chile","Landings_Value",46878.6
+2014,"Harengula","Brazil","Landings_Value",3226.9916232684
+2014,"Harengula clupeola","Brazil","Landings_Value",123047.50729333
+2014,"Harengula jaguana","Brazil","Landings_Value",9467.2788139878
+2014,"Hemiramphidae","Brazil","Landings_Value",47768.9279499388
+2014,"Hemiramphus","Brazil","Landings_Value",930907.402453473
+2014,"Hemiramphus brasiliensis","Brazil","Landings_Value",421796.476925171
+2014,"Heterocarpus reedi","Chile","Landings_Value",12763573.41
+2014,"Heteropriacanthus cruentatus","Brazil","Landings_Value",14352.5484461574
+2014,"Heteropriacanthus cruentatus","Chile","Landings_Value",3343.2
+2014,"Hexanchus griseus","Brazil","Landings_Value",31360.797931344
+2014,"Holocentrus adscensionis","Brazil","Landings_Value",2840787.85834457
+2014,"Hyperoglyphe","Brazil","Landings_Value",8068.901896439
+2014,"Hyporthodus flavolimbatus","Brazil","Landings_Value",1898.0163078624
+2014,"Hyporthodus niveatus","Brazil","Landings_Value",440411.374356838
+2014,"Illex argentinus","Brazil","Landings_Value",103506.66967453
+2014,"Isacia conceptionis","Chile","Landings_Value",202694.4
+2014,"Isacia conceptionis","Peru","Landings_Value",8412539.67886423
+2014,"Isopisthus parvipinnis","Brazil","Landings_Value",10638334.0930442
+2014,"Istiompax indica","Peru","Landings_Value",39.7011345025208
+2014,"Istiophoridae","Brazil","Landings_Value",561819.543108399
+2014,"Istiophoridae","Chile","Landings_Value",69954.96
+2014,"Istiophoridae","Peru","Landings_Value",1517.61435368537
+2014,"Istiophorus albicans","Brazil","Landings_Value",176582.915598053
+2014,"Isurus oxyrinchus","Brazil","Landings_Value",966195.217490274
+2014,"Isurus oxyrinchus","Chile","Landings_Value",1461326.8
+2014,"Jasus frontalis","Chile","Landings_Value",3546945
+2014,"Kajikia albida","Brazil","Landings_Value",185503.096756283
+2014,"Katsuwonus pelamis","Brazil","Landings_Value",51502166.0475837
+2014,"Katsuwonus pelamis","Chile","Landings_Value",507.742761697741
+2014,"Katsuwonus pelamis","Peru","Landings_Value",832624.823156617
+2014,"Kyphosus","Brazil","Landings_Value",184624.299398668
+2014,"Labridae","Brazil","Landings_Value",702214.197564172
+2014,"Lagocephalus laevigatus","Brazil","Landings_Value",2044510.30781177
+2014,"Lamna nasus","Brazil","Landings_Value",10149.2583544395
+2014,"Lamniformes","Brazil","Landings_Value",336.1479629688
+2014,"Lampris guttatus","Brazil","Landings_Value",3222.96330812
+2014,"Lampris guttatus","Chile","Landings_Value",13487.2
+2014,"Larimus breviceps","Brazil","Landings_Value",1917568.62726658
+2014,"Lepidocybium flavobrunneum","Brazil","Landings_Value",175916.367973363
+2014,"Lithodes antarcticus","Chile","Landings_Value",12284208.23
+2014,"Litopenaeus schmitti","Brazil","Landings_Value",24255237.485833
+2014,"Lobotes surinamensis","Brazil","Landings_Value",3325216.23680284
+2014,"Loliginidae","Brazil","Landings_Value",5104638.63079316
+2014,"Lophius gastrophysus","Brazil","Landings_Value",12074542.3112744
+2014,"Loxechinus albus","Chile","Landings_Value",136131687
+2014,"Lutjanidae","Brazil","Landings_Value",32019.4801471373
+2014,"Lutjanus","Brazil","Landings_Value",3734269.36601046
+2014,"Lutjanus analis","Brazil","Landings_Value",14520383.4055299
+2014,"Lutjanus apodus","Brazil","Landings_Value",248683.529434144
+2014,"Lutjanus jocu","Brazil","Landings_Value",3328505.16824145
+2014,"Lutjanus purpureus","Brazil","Landings_Value",32534540.9207802
+2014,"Lutjanus synagris","Brazil","Landings_Value",14732914.067973
+2014,"Lutjanus vivanus","Brazil","Landings_Value",105734.790713842
+2014,"Macrodon ancylodon","Brazil","Landings_Value",142242909.35498
+2014,"Macrouridae","Brazil","Landings_Value",59.9822137629
+2014,"Makaira nigricans","Brazil","Landings_Value",91053.5692720044
+2014,"Malacanthidae","Peru","Landings_Value",235329.7233
+2014,"Malacostraca","Chile","Landings_Value",44918058.858
+2014,"Marine finfishes not identified","Brazil","Landings_Value",1334275.71547643
+2014,"Marine finfishes not identified","Chile","Landings_Value",10583.74233
+2014,"Marine fishes not identified","Brazil","Landings_Value",90491896.1835583
+2014,"Marine fishes not identified","Chile","Landings_Value",22061286.4350331
+2014,"Marine fishes not identified","Peru","Landings_Value",178639718.048587
+2014,"Marine pelagic fishes not identified","Brazil","Landings_Value",184935.821737452
+2014,"Marine pelagic fishes not identified","Chile","Landings_Value",921.962273839387
+2014,"Marine pelagic fishes not identified","Peru","Landings_Value",786894.153421449
+2014,"Megalops atlanticus","Brazil","Landings_Value",1089333.76957457
+2014,"Menticirrhus","Brazil","Landings_Value",3133753.80035741
+2014,"Menticirrhus americanus","Brazil","Landings_Value",145748.313259223
+2014,"Merluccius australis","Chile","Landings_Value",217118661.922215
+2014,"Merluccius gayi gayi","Chile","Landings_Value",41637806.3808
+2014,"Merluccius gayi gayi","Peru","Landings_Value",63398113.6152
+2014,"Merluccius hubbsi","Brazil","Landings_Value",417264.154052109
+2014,"Mesodesma donacium","Chile","Landings_Value",4900729.6
+2014,"Micropogonias furnieri","Brazil","Landings_Value",114982428.98333
+2014,"Miscellaneous marine crustaceans","Peru","Landings_Value",419569.2
+2014,"Mollusca","Brazil","Landings_Value",32672.959781335
+2014,"Mollusca","Peru","Landings_Value",4779127.12364405
+2014,"Mugil","Brazil","Landings_Value",24979791.6140619
+2014,"Mugil cephalus","Chile","Landings_Value",262443.8
+2014,"Mugil cephalus","Peru","Landings_Value",30246336.026239
+2014,"Mugil liza","Brazil","Landings_Value",9159659.67801419
+2014,"Mulinia","Chile","Landings_Value",8394636.60000001
+2014,"Mullidae","Brazil","Landings_Value",9882817.022852
+2014,"Mulloidichthys martinicus","Brazil","Landings_Value",762.5365666848
+2014,"Mullus argentinae","Brazil","Landings_Value",1797121.90496361
+2014,"Muraenidae","Brazil","Landings_Value",8081.1298392873
+2014,"Mustelus","Brazil","Landings_Value",41185445.3372286
+2014,"Mustelus schmitti","Brazil","Landings_Value",43426342.2067089
+2014,"Mycteroperca","Brazil","Landings_Value",5990157.02494703
+2014,"Mycteroperca bonaci","Brazil","Landings_Value",11082067.1905354
+2014,"Mycteroperca microlepis","Brazil","Landings_Value",10473.643534701
+2014,"Myliobatidae","Brazil","Landings_Value",23901.428723151
+2014,"Myripristis jacobus","Brazil","Landings_Value",775948.942808691
+2014,"Mytilidae","Brazil","Landings_Value",12932441.0125768
+2014,"Mytilus chilensis","Chile","Landings_Value",2354084.5
+2014,"Nebris microps","Brazil","Landings_Value",5166204.32228915
+2014,"Nemadactylus","Chile","Landings_Value",39053.54
+2014,"Nemadactylus bergi","Brazil","Landings_Value",331911.051783529
+2014,"Normanichthys crockeri","Chile","Landings_Value",229252541.4
+2014,"Notarius grandicassis","Brazil","Landings_Value",1844594.03396018
+2014,"Notorynchus cepedianus","Brazil","Landings_Value",44.347056386
+2014,"Octopodidae","Brazil","Landings_Value",293459.402594597
+2014,"Octopus","Brazil","Landings_Value",3341332.35554299
+2014,"Octopus vulgaris","Brazil","Landings_Value",783189.283387426
+2014,"Ocyurus chrysurus","Brazil","Landings_Value",41774742.2846848
+2014,"Odontesthes regia","Chile","Landings_Value",5151112.2
+2014,"Odontesthes regia","Peru","Landings_Value",21142157.0639351
+2014,"Opisthonema oglinum","Brazil","Landings_Value",5562412.69855864
+2014,"Ostraciidae","Brazil","Landings_Value",173.840362332
+2014,"Ostrea chilensis","Chile","Landings_Value",150328
+2014,"Pagrus pagrus","Brazil","Landings_Value",20692887.0322916
+2014,"Panulirus","Brazil","Landings_Value",25773622.3052362
+2014,"Panulirus","Chile","Landings_Value",10562.20725
+2014,"Panulirus argus","Brazil","Landings_Value",51686439.1668297
+2014,"Panulirus gracilis","Peru","Landings_Value",35040.6
+2014,"Paralabrax humeralis","Chile","Landings_Value",773615.92
+2014,"Paralabrax humeralis","Peru","Landings_Value",8060931.76948692
+2014,"Paralichthyidae","Chile","Landings_Value",1221981.540255
+2014,"Paralichthys","Chile","Landings_Value",12127732.56
+2014,"Paralichthys microps","Chile","Landings_Value",125442
+2014,"Paralomis granulosa","Chile","Landings_Value",14387716.7
+2014,"Paralonchurus brasiliensis","Brazil","Landings_Value",47702737.4844848
+2014,"Paralonchurus peruanus","Peru","Landings_Value",6191637.49427231
+2014,"Parona signata","Brazil","Landings_Value",120514.720278821
+2014,"Pectinidae","Brazil","Landings_Value",4405.3746021914
+2014,"Pellona harroweri","Brazil","Landings_Value",712148.829133109
+2014,"Penaeidae","Brazil","Landings_Value",17609028.3016276
+2014,"Peprilus paru","Brazil","Landings_Value",1326586.52510178
+2014,"Perciformes","Brazil","Landings_Value",127865.029803792
+2014,"Perciformes","Chile","Landings_Value",16541528.146
+2014,"Percophis brasiliensis","Brazil","Landings_Value",1094237.28125092
+2014,"Perna perna","Brazil","Landings_Value",551278.995827328
+2014,"Pinguipedidae","Brazil","Landings_Value",238895.256322413
+2014,"Pinguipes chilensis","Chile","Landings_Value",66872.5000000001
+2014,"Plagioscion surinamensis","Brazil","Landings_Value",4210.1400704852
+2014,"Pleoticus muelleri","Brazil","Landings_Value",1588734.77763851
+2014,"Pleuroncodes monodon","Chile","Landings_Value",35520544.7935537
+2014,"Pleuronectiformes","Brazil","Landings_Value",6131625.80030525
+2014,"Pleuronectiformes","Chile","Landings_Value",499145.935000081
+2014,"Pleuronectiformes","Peru","Landings_Value",7388640
+2014,"Pogonias cromis","Brazil","Landings_Value",401865.965615914
+2014,"Polyprion americanus","Brazil","Landings_Value",98785.8359921445
+2014,"Polyprion oxygeneios","Chile","Landings_Value",9782.4716
+2014,"Pomatomus saltatrix","Brazil","Landings_Value",10756106.216046
+2014,"Porichthys porosissimus","Brazil","Landings_Value",3053810.61657989
+2014,"Portunidae","Brazil","Landings_Value",56621.266836364
+2014,"Priacanthus arenatus","Brazil","Landings_Value",665073.625443739
+2014,"Prionace glauca","Brazil","Landings_Value",5656780.34353172
+2014,"Prionace glauca","Chile","Landings_Value",490314
+2014,"Prionotus stephanophrys","Peru","Landings_Value",3756777.0688125
+2014,"Pristidae","Brazil","Landings_Value",91574.6650425991
+2014,"Prolatilus jugularis","Chile","Landings_Value",104321.1
+2014,"Pseudocaranx dentex","Brazil","Landings_Value",36831.183751843
+2014,"Pyura chilensis","Chile","Landings_Value",28805326.5
+2014,"Rachycentron canadum","Brazil","Landings_Value",2928891.62426531
+2014,"Rajidae","Brazil","Landings_Value",2562289.48961131
+2014,"Rajiformes","Brazil","Landings_Value",7341683.92612864
+2014,"Rajiformes","Peru","Landings_Value",2135219.27118134
+2014,"Rhinobatidae","Peru","Landings_Value",585813.6
+2014,"Rhinobatos","Brazil","Landings_Value",297667.261772855
+2014,"Rhinobatos percellens","Brazil","Landings_Value",5646.1869413495
+2014,"Rhizoprionodon porosus","Brazil","Landings_Value",101406.364477427
+2014,"Rhomboplites aurorubens","Brazil","Landings_Value",3262262.56664009
+2014,"Ruvettus pretiosus","Brazil","Landings_Value",11644.1427014214
+2014,"Sarda chiliensis","Chile","Landings_Value",125097
+2014,"Sarda chiliensis","Peru","Landings_Value",92920112.8106882
+2014,"Sarda sarda","Brazil","Landings_Value",1749410.06185256
+2014,"Sardinella aurita","Brazil","Landings_Value",21448.2023751138
+2014,"Sardinella brasiliensis","Brazil","Landings_Value",108594454.159936
+2014,"Sardinops sagax","Chile","Landings_Value",37525558.8897778
+2014,"Sardinops sagax","Peru","Landings_Value",1485310.996416
+2014,"Sciades couma","Brazil","Landings_Value",2810458.01724664
+2014,"Sciades parkeri","Brazil","Landings_Value",11404876.3134659
+2014,"Sciades proops","Brazil","Landings_Value",11536354.2963757
+2014,"Sciaenidae","Brazil","Landings_Value",74319872.4924341
+2014,"Sciaenidae","Peru","Landings_Value",6861427.57502965
+2014,"Scomber japonicus","Chile","Landings_Value",188240475.15
+2014,"Scomber japonicus","Peru","Landings_Value",64684714.1080349
+2014,"Scomberomorus brasiliensis","Brazil","Landings_Value",33282036.1486172
+2014,"Scomberomorus cavalla","Brazil","Landings_Value",15570237.3519529
+2014,"Scomberomorus regalis","Brazil","Landings_Value",49893.8871441725
+2014,"Scomberomorus sierra","Peru","Landings_Value",2416118.98437344
+2014,"Scombridae","Brazil","Landings_Value",1518085.86499457
+2014,"Scombridae","Peru","Landings_Value",822866.698692095
+2014,"Scorpaeniformes","Brazil","Landings_Value",153716.436410262
+2014,"Scorpaeniformes","Chile","Landings_Value",22168.32
+2014,"Selar crumenophthalmus","Brazil","Landings_Value",1077908.40151196
+2014,"Selene setapinnis","Brazil","Landings_Value",3008448.52120308
+2014,"Selene vomer","Brazil","Landings_Value",199694.92285662
+2014,"Semele solida","Chile","Landings_Value",1890048
+2014,"Seriola","Brazil","Landings_Value",4011344.54941316
+2014,"Seriola dumerili","Brazil","Landings_Value",2978780.09361813
+2014,"Seriola lalandi","Brazil","Landings_Value",835305.153392179
+2014,"Seriola lalandi","Chile","Landings_Value",6562973.69731179
+2014,"Seriolella","Chile","Landings_Value",282648.142
+2014,"Seriolella","Peru","Landings_Value",1214817.33614263
+2014,"Seriolella caerulea","Chile","Landings_Value",28448.7
+2014,"Serranidae","Brazil","Landings_Value",1228521.67024386
+2014,"Serranidae","Chile","Landings_Value",603093.12
+2014,"Serranidae","Peru","Landings_Value",148872.3
+2014,"Siluriformes","Brazil","Landings_Value",16700297.8998753
+2014,"Sparidae","Brazil","Landings_Value",332480.243559183
+2014,"Sphyraena","Brazil","Landings_Value",3903480.42779474
+2014,"Sphyraena barracuda","Brazil","Landings_Value",529928.927380549
+2014,"Sphyraena guachancho","Brazil","Landings_Value",60265.5983138946
+2014,"Sphyrna","Brazil","Landings_Value",1915584.44795516
+2014,"Sphyrna lewini","Brazil","Landings_Value",53513.48107693
+2014,"Sphyrna mokarran","Brazil","Landings_Value",182.825048115
+2014,"Sphyrna tiburo","Brazil","Landings_Value",60.1797646918
+2014,"Squalus","Brazil","Landings_Value",11410235.4673962
+2014,"Squalus acanthias","Chile","Landings_Value",6720.6
+2014,"Stellifer rastrifer","Brazil","Landings_Value",25567373.9932102
+2014,"Tawera gayi","Chile","Landings_Value",34526995.1
+2014,"Tetraodontidae","Brazil","Landings_Value",15806709.6291806
+2014,"Tetrapturus pfluegeri","Brazil","Landings_Value",9113.19071477269
+2014,"Thunnus","Brazil","Landings_Value",2357057.11993684
+2014,"Thunnus alalunga","Brazil","Landings_Value",2886946.86072736
+2014,"Thunnus alalunga","Chile","Landings_Value",61928.433
+2014,"Thunnus albacares","Brazil","Landings_Value",18586081.0468347
+2014,"Thunnus albacares","Chile","Landings_Value",51602.0832554985
+2014,"Thunnus albacares","Peru","Landings_Value",3503772.00969302
+2014,"Thunnus atlanticus","Brazil","Landings_Value",1568405.49349818
+2014,"Thunnus maccoyii","Brazil","Landings_Value",11568.8584905562
+2014,"Thunnus obesus","Brazil","Landings_Value",12301678.7499156
+2014,"Thunnus obesus","Chile","Landings_Value",188.224
+2014,"Thunnus obesus","Peru","Landings_Value",374206.009701016
+2014,"Thyrsites atun","Chile","Landings_Value",3179410.155
+2014,"Thyrsitops lepidopoides","Brazil","Landings_Value",454.6118295532
+2014,"Trachinotus","Brazil","Landings_Value",1642733.49110918
+2014,"Trachinotus carolinus","Brazil","Landings_Value",1496872.16513173
+2014,"Trachinotus goodei","Brazil","Landings_Value",2622.592295754
+2014,"Trachurus lathami","Brazil","Landings_Value",3853625.87800264
+2014,"Trachurus murphyi","Chile","Landings_Value",514538650.708266
+2014,"Trachurus murphyi","Peru","Landings_Value",55366587.9455236
+2014,"Trichiurus lepturus","Brazil","Landings_Value",82275484.5463524
+2014,"Umbrina canosai","Brazil","Landings_Value",164601958.995682
+2014,"Uraspis secunda","Brazil","Landings_Value",12.5074000618
+2014,"Urophycis brasiliensis","Brazil","Landings_Value",4089133.34491169
+2014,"Veneridae","Brazil","Landings_Value",13716363.5550837
+2014,"Veneridae","Chile","Landings_Value",5978028.21
+2014,"Xiphias gladius","Brazil","Landings_Value",21282005.2692518
+2014,"Xiphias gladius","Chile","Landings_Value",1434734.784
+2014,"Xiphias gladius","Peru","Landings_Value",887645.492185231
+2014,"Xiphopenaeus kroyeri","Brazil","Landings_Value",13504117.1600699
+2014,"Zearaja chilensis","Chile","Landings_Value",76774
+2014,"Zenopsis conchifer","Brazil","Landings_Value",215394.233742226
