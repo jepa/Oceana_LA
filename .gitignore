@@ -47,4 +47,5 @@ international_analysis.html
 international_analysis.nb.html
 
 # Ignore any html document, the're too big
-/Report.nb.html
+*.html
+Report.nb.html
