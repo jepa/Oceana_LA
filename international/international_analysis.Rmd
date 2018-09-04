@@ -43,7 +43,7 @@ packages <- c(
 suppressWarnings(
   suppressMessages(
     ipak(packages)
-    )
+  )
 )
 
 ### Set up pannel 
@@ -91,8 +91,8 @@ unique(SAU$area_name)
 SAU$scientific_name <- gsub(" ", "\n",SAU$scientific_name)
 
 # Plot <- #For dynamic plot
-# SAU_Clean <- # FOr saving the plot
-SAU %>% 
+SAU_Clean <- # FOr saving the plot
+  SAU %>% 
   filter(scientific_name != "Marine\nfishes\nnot\nidentified") %>%  #Removed but top in B and P
   filter(fishing_entity %in% Countries) %>% # Remove other fishing nations
   group_by(year,
@@ -113,15 +113,16 @@ SAU %>%
   # Determine what species are in both "Top" categories
   group_by(Reporter,scientific_name) %>%  
   mutate(Repeated = n()) %>% 
-  mutate(Repeated = ifelse(Repeated == 1, "No", "Yes")) %>% 
-  # Plot 
-  ggplot(.,
-         aes(
-           x= reorder(scientific_name,-Value),
-           y = Value/1000, #thousands
-           fill = Repeated
-         )
-  ) +
+  mutate(Repeated = ifelse(Repeated == 1, "No", "Yes"))
+
+# Plot 
+ggplot(SAU_Clean,
+       aes(
+         x= reorder(scientific_name,-Value),
+         y = Value/1000, #thousands
+         fill = Repeated
+       )
+) +
   geom_bar(stat = "identity") +
   theme_classic() +
   theme(axis.text.x = element_text(angle = 45,
@@ -139,21 +140,21 @@ SAU %>%
        y = "Values \n (Thousand of Tonns & US Dollars)"
   )
 
-  
+
 # For interactive plot
 # Name the plot and then call it
 # ggplotly(g_plot)
 
-  
-## Totals per Country
 
-SAU_Clean <- SAU %>% 
+## Totals per Country ####
+
+SAU_Tot <- SAU %>% 
   group_by(area_name,
            year,
            # scientific_name, # Trade data is too generic for species details
            fishing_entity#,
            # fishing_sector # #Trade data is too generic for sector details
-           ) %>% 
+  ) %>% 
   summarise(
     Total_tonnes = sum(tonnes),
     Landings_Value = sum(landed_value)
@@ -162,8 +163,8 @@ SAU_Clean <- SAU %>%
          year == Year_an) %>%  # Choose year to be analyzed
   rename(Reporter = fishing_entity) %>%  # Change name of variable to match UN trade dataset
   filter(area_name != "Peru" | Reporter != "Chile") # Remove Chile report in Peruvean waters*
-  
-  head(SAU_Clean)
+
+head(SAU_Clean)
 
 # names(SAU_Clean)
 # head(SAU_Clean)
@@ -173,27 +174,104 @@ SAU_Clean <- SAU %>%
 
 #Write csv
 # write.csv(SAU_Clean,
-#           "SAU_Dataset.csv")
-  
-  
-#### Proportion of the catch
+#           "SAU_Dataset.csv",
+#           row.names = FALSE)
 
-Proportions <- SAU_Database %>%
-  spread(Variable,Value) %>% 
-  group_by(scientific_name,Reporter) %>% 
-  summarise_at(vars(Landings_Value:Total_tonnes), mean,na.rm=T) %>% 
-  left_join(Totals,
-            by = "Reporter") %>% 
-  select(-`Exploited Species`) %>% 
-  mutate(
-    Proportion_Landings = round(Landings_Value/`Total Revenue`,2),
-    Proportion_Revenue = round(Total_tonnes/`Total Landings`,2)
-  ) %>% 
-  group_by(Reporter) %>% 
+
+#### Proportion of the catch ####
+
+Totals <- SAU %>% 
+  filter(scientific_name != "Marine\nfishes\nnot\nidentified") %>%  #Removed but top in B and P
+  filter(fishing_entity %in% Countries) %>% # Remove other fishing nations
+  group_by(
+    year,
+    fishing_entity
+  ) %>%
   summarise(
-    Top = sum(Proportion_Landings),
-    N = n()
+    Total_tonnes = sum(tonnes),
+    Landings_Value = sum(landed_value)
+  ) %>%
+  filter(year == Year_an) %>% 
+  ungroup() %>% 
+  select(-year) %>% 
+  tidyr::gather("Variable","Totals",2:3)
+
+SAU_Spp <- SAU %>% 
+  filter(scientific_name != "Marine\nfishes\nnot\nidentified") %>%  #Removed but top in B and P
+  filter(fishing_entity %in% Countries) %>% # Remove other fishing nations
+  group_by(
+    year,
+    scientific_name, # Trade data is too generic for species details
+    fishing_entity
+  ) %>%
+  summarise(
+    Total_tonnes = sum(tonnes),
+    Landings_Value = sum(landed_value)
+  ) %>%
+  filter(year == Year_an) %>% 
+  ungroup() %>% 
+  select(-year) %>% 
+  tidyr::gather("Variable","Partials",3:4) %>% 
+  left_join(Totals,
+            by = c("fishing_entity", "Variable")) %>% 
+  mutate(
+    Proportion = round((Partials/Totals)*100,2)
+  ) %>% 
+  group_by(fishing_entity,Variable) %>%
+  top_n(n = 10, wt = Proportion) %>% 
+  select(-4:-5) %>% 
+  rename(Reporter = fishing_entity) %>%
+  left_join(SAU_Clean,
+            by = c("scientific_name","Reporter","Variable"))%>%  
+  mutate(Repeated = n()) %>% 
+  mutate(Repeated = ifelse(Repeated == 1, "No", "Yes"))
+
+Prop_Total <- SAU_Spp %>% 
+  group_by(Reporter,Variable) %>% 
+  summarise(
+    Tot_Prop = sum(Proportion),
+    Location = max(Value)
+    )
+  
+
+ggplot() +
+  geom_bar(data = SAU_Spp,
+           aes(
+             x= reorder(scientific_name,-Value),
+             y = Value/1000, #thousands
+             fill = Repeated
+           ),
+           stat = "identity"
+           ) +
+  geom_label(data = SAU_Spp,
+            aes(
+              x = reorder(scientific_name,-Value),
+              y = Value/1000,
+              label = paste(as.character(Proportion),"%",sep = " ")
+            )
+  ) +
+  geom_label(data = Prop_Total,
+            aes(
+              x = SAU_Spp$scientific_name[10],
+              y = Location/1000,
+              label = paste(as.character(Tot_Prop),"%",sep = " ")
+            )
+  ) +
+  theme(axis.text.x = element_text(angle = 45,
+                                   hjust = 1,
+                                   face = "italic")
+  ) +
+  scale_fill_manual(values =c("darkred",
+                              "darkgreen"),
+                    name ="Repeated") +
+  facet_wrap(~Reporter + Variable,
+             scales = "free",
+             ncol = 2) +
+  labs(title="Top 25 species by landings (left) and value (right)\n from the SAU dataset",
+       x ="Species",
+       y = "Values \n (Thousand of Tonns & US Dollars)"
   )
+
 
 ```
 ### Trade data
@@ -215,7 +293,7 @@ UN_F_Name <- "UN_Comtrade_Statistics.csv"
 
 
 UN <- fread(paste(Data_Path,UN_F_Name,
-                   sep = ""))
+                  sep = ""))
 
 # Data exploration
 
@@ -229,9 +307,13 @@ UN <- fread(paste(Data_Path,UN_F_Name,
 # max(UN$Gross_weight_kg)
 
 
+# write.csv(UN_Clean,
+#           "UN_Dataset.csv",
+#           row.names = F)
+
 #### Trade Graph ####
 
-# UN_Clean <-
+UN_Clean <-
 UN %>% 
   filter(Year == Year_an) %>% 
   group_by(Reporter,
@@ -271,12 +353,12 @@ UN %>%
        y = "Million US Dollars"
   )
 
-  
-  #### Trade Graph With Landings ####
+
+#### Trade Graph With Landings ####
 
 
 # UN_Clean <-
-  UN %>% 
+UN %>% 
   filter(Year == Year_an) %>% 
   group_by(Reporter,
            Trade_Flow
@@ -289,11 +371,11 @@ UN %>%
     Net_Trade_Value = (Export-Import),
     Net_Re_Import_value = ifelse(!is.na(`Re-Import`),(Net_Trade_Value -`Re-Import`),Net_Trade_Value)
   ) %>% 
-  left_join(SAU_Clean,
+  left_join(Totals,
             by = "Reporter") %>% 
   mutate(Fish_Industry_Total = Net_Trade_Value + Landings_Value) %>% 
-  select(1:3,5,10:11) %>% 
-  tidyr::gather("Action","Value",2:6) %>%
+  select(1:3,5,10) %>% 
+  tidyr::gather("Action","Value",2:5) %>%
   ggplot(.,
          aes(
            x = Action,
@@ -322,8 +404,8 @@ UN %>%
        y = "Million US Dollars"
   )
 
-  
-  
+
+
 
 
 ```
@@ -350,11 +432,11 @@ SAU_Clean %>%
     Total_Fishing_Value = Total_value + Net_Re_Import_value
   ) %>% 
   ggplot(.,
-           aes(
-             x = Reporter,
-             y = Total_Fishing_Value,
-             fill = Reporter
-           )) +
+         aes(
+           x = Reporter,
+           y = Total_Fishing_Value,
+           fill = Reporter
+         )) +
   geom_bar(stat = "identity") +
   theme_classic()
 
