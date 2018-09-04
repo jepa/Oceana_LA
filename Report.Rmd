@@ -1,14 +1,20 @@
 ---
-title: "Contributions of marine capture fisheries to the domestic livelihoods and seafood consumption of Brazil Chile and Peru"
-author: "Juliano Palacios Abrantes, MSc, Camila Vargas, MSc, Daniel Viana, PhD, Maria I. Rivera, MSc, Rocío López, MSc, Santiago de la Puente, MSc, Andrés M. Cisneros-Montemayor, PhD"
-subtitle: "Response to Oceana Request for Proposal: Most Important Fisheries for People Study"
+title: Contributions of marine capture fisheries to the domestic livelihoods and seafood
+  consumption of Brazil Chile and Peru
+author: Juliano Palacios Abrantes, MSc, Camila Vargas, MSc, Daniel Viana, PhD, Maria
+  I. Rivera, MSc, Rocío López, MSc, Santiago de la Puente, MSc, Andrés M. Cisneros-Montemayor,
+  PhD
+subtitle: 'Response to Oceana Request for Proposal: Most Important Fisheries for People
+  Study'
 output:
-  html_notebook: 
-    toc: true
-    toc_float: true
-    collapsed: false
-    smooth_scroll: true
-    number_sections: true
+  pdf_document:
+    toc: yes
+  html_notebook:
+    collapsed: no
+    number_sections: yes
+    smooth_scroll: yes
+    toc: yes
+    toc_float: yes
 ---
 
 ```{r setup, eval=T, echo=F, warning=F,message=F}
@@ -65,12 +71,12 @@ ggtheme_plot <- function() {
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
     axis.ticks = element_blank(),
-    axis.text.x = element_text(angle = 45, hjust = 1, face = "italic", size = 22),
-    axis.text.y = element_text(size = 22),
-    axis.title = element_text(size = 22),
+    axis.text.x = element_text(size = 16),
+    axis.text.y = element_text(size = 16),
+    axis.title = element_text(size = 16),
     legend.key = element_rect(colour = NA, fill = NA),
     legend.position  = "top",
-    legend.title = element_text(size = 20),
+    legend.title = element_text(size = 18),
     legend.text = element_text(size = 16),
     strip.text.x = element_text(size = 20, colour = "darkgrey")
   )
@@ -79,15 +85,29 @@ ggtheme_plot <- function() {
 
 #### Datasets ####
 
+# International Datasets #### 
+
+# All datafiles should be in THIS path
+Int_Data_Path <- "./clean_databases/International/"
 
 #### SAU dataset used for international analysis chunks:
-# 1, 2 & 3
-Data_Path <- "./clean_databases/International/"
+# 1, 2 & 3, 4
+
 # # File name
 SAU_F_Name <- "SAU_Dataset.csv"
 # #read dataset
-SAU_Database <- fread(paste(Data_Path,SAU_F_Name,
+SAU_Database <- fread(paste(Int_Data_Path,
+                            SAU_F_Name,
                             sep = ""))
+#### UN dataset used for international analysis chunks:
+# 4
+
+UN_F_Name <- "UN_Dataset.csv"
+
+UN_Database <- read.csv(paste(Int_Data_Path,
+                  UN_F_Name,
+                  sep = ""))
+
 
 ```
 
@@ -106,7 +126,7 @@ income.
 - Determine most important capture fisheries and fisheries sectors for domestic catch and landed
 value.
 
-Deliverables
+Deliverable
 - Final report including a critical analysis of domestic seafood consumption, related fisheries
 employment and income, and general fishery conditions of each nation included (Brazil, Chile and
 Peru).
@@ -166,7 +186,7 @@ Finally, for estimating the contribution of landings and imports to domestic sea
 # Results
 ## International
 
-Results from the international analysis shows a clear dominance in fisheries landings of both Chile and Peru over Brazil, even thou Brazil captures around 3 times more species than the formers. In terms of total fishing revenue, all nations are simliar (**Table XX**)
+Results from the international analysis shows a clear dominance in fisheries landings of both Chile and Peru over Brazil, even thou Brazil captures around 3 times more species than the former. In terms of total fishing revenue, all nations are similar (**Table XX**)
 
 ```{r Total_Table, eval =T, echo = F}
 
@@ -176,9 +196,7 @@ Totals <- SAU_Database %>%
     "Totals" = round(sum(Value)),
     "Exploited Species" = n()
   ) %>% 
-  tidyr::spread(Variable,Totals) %>% 
-  rename("Total Revenue" = Landings_Value,
-         "Total Landings" = Total_tonnes)
+  tidyr::spread(Variable,Totals)
 
 kable(Totals)
 
@@ -186,39 +204,120 @@ kable(Totals)
 
 When we analyze the top ten species in terms of landing volume (tons) and value (USD), we find different trends between and within countries. Brazil's most prolific fishery in 2014 was *Umbrina canosai*, a croaker fished in the southern part of the country, however, the most exploited specie (in terms of landings) was the ray-finned fish *Sardinella brasiliensis*. For Chile, the most valuable and landed fishery was *Engraulis ringens*, Peruvian anchoveta. Finally, Peru most valuable fishery in 2014 was the Peruvian scallop *Argopecten purpuratus* but like Chile, *Engraulis ringens* was the most landed species (**Fig. XX**).
 
-```{r SAU_Landings_Data, eval = T, echo = T, warning =F, message = F, fig.height = 15, fig.width= 10, fig.cap= "Top 25 species by landings (left) and value (right)\n from the SAU dataset. Red bars repreent species not present in the other category"}
+```{r SAU_Landings_Data, eval = T, echo = F, warning =F, message = F, fig.height = 25, fig.width= 20, fig.cap= "Top 10 species by landings (left) and value (right)\n from the SAU dataset. Red bars represent species not present in the other category. White boxes represent the contribution of that speciest to the total variable"}
 
-SAU_Database %>%
+
+Totals_Plot <- Totals %>%
+  select(-2) %>% 
+  tidyr::gather("Variable","Totals",2:3)
+
+# Including the proportion of the catch/value of each species
+SAU_Prop <- SAU_Database %>% 
+  left_join(Totals_Plot,
+            by = c("Reporter", "Variable")) %>% 
+  mutate(
+    Proportion = round((Value/Totals)*100,2)
+  ) %>% 
   group_by(Reporter,Variable) %>%
-  top_n(n = 10, wt = Value) %>%  # Top 10, change if interactive plot
-  # Determine what species are in both "Top" categories
+  top_n(n = 10, wt = Proportion) %>% 
   group_by(Reporter,scientific_name) %>%  
   mutate(Repeated = n()) %>% 
-  mutate(Repeated = ifelse(Repeated == 1, "No", "Yes")) %>% 
-  # Plot 
-  ggplot(.,
-         aes(
-           x= reorder(scientific_name,-Value),
-           y = Value/1000, #thousands
-           fill = Repeated
-         )
+  mutate(Repeated = ifelse(Repeated == 1, "No", "Yes"))
+
+# Including the accumulative proportion of plotted species
+
+Prop_Total <- SAU_Prop %>% 
+  group_by(Reporter,Variable) %>% 
+  summarise(
+    Tot_Prop = sum(Proportion),
+    Location = max(Value)
+    )
+
+ggplot() +
+  geom_bar(data = SAU_Prop,
+           aes(
+             x= reorder(scientific_name,-Proportion),
+             y = Value/1000, #thousands
+             fill = Repeated
+           ),
+           stat = "identity"
+           ) +
+  geom_label(data = SAU_Prop,
+            aes(
+              x = reorder(scientific_name,-Proportion),
+              y = Value/1000,
+              label = paste(as.character(Proportion),"%",sep = " ")
+            )
   ) +
-  geom_bar(stat = "identity") +
+  geom_label(data = Prop_Total,
+            aes(
+              x = 9,
+              y = Location/1100,
+              label = paste("Proportion of total",Variable, "\n of selected species\n",as.character(Tot_Prop),"%",sep = " ")
+            )
+  ) +
+  theme(axis.text.x = element_text(angle = 45,
+                                   hjust = 1,
+                                   face = "italic")
+  ) +
   scale_fill_manual(values =c("darkred",
                               "darkgreen"),
                     name ="Repeated") +
   facet_wrap(~Reporter + Variable,
              scales = "free",
              ncol = 2) +
-  labs(#title="Top 25 species by landings (left) and value (right)\n from the SAU dataset",
-    x ="Species",
-    y = "Values (Thousand of Tonns & Thousand of US Dollars)"
-  ) +
-  ggtheme_plot()
+  labs(
+    # title="Top 25 species by landings (left) and value (right)\n from the SAU dataset",
+       x ="Species",
+       y = "Values \n (Thousand of Tonns & US Dollars)"
+  ) + 
+  ggtheme_plot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, face = "italic", size = 16))
+
 
 # For interactive plot
 # Name the plot and then call it
 # ggplotly(g_plot)
+```
+
+In addition to the internal fish production, Brazil, Chile and Peru all import and export fish (**Fig. XXX**). According to the UN data, Brazil spends more money importing fish than what it makes from producing it and exporting that production. In the other hand, both Chile and Peru have positive surplus from their fisheries and commerce activities being Chile the most "*profitable*" country.
+
+```{r Trade, eval = T, echo = F, warning=F, fig.height = 10, fig.width= 15, fig.cap= "Revenue from fisheries production, imports and exports for each nation from the UN database."}
+
+
+UN_Database %>% 
+  left_join(Totals,
+            by = "Reporter") %>% 
+  mutate(Fish_Industry_Total = Net_Trade_Value + Landings_Value) %>% 
+  select(1:3,5,10) %>% 
+  tidyr::gather("Action","Value",2:5) %>%
+  ggplot(.,
+         aes(
+           x = Action,
+           y = Value/1000000,
+           # colour = Action
+           fill = Action
+         )
+  ) +
+  # geom_point()
+  geom_bar(stat = "identity",
+           width = 0.5 #Bar size
+  ) +
+  facet_wrap(~Reporter) +
+  scale_fill_manual(values =c("green4", 
+                              "blue", 
+                              "red", 
+                              "green3",
+                              "skyblue"
+  )
+  ) +
+  coord_flip() +
+  labs(title="",
+       x ="Countries",
+       y = "Million US Dollars"
+  ) +
+  ggtheme_plot()
+
 ```
 
 ## Results Brazil
