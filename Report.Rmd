@@ -54,7 +54,7 @@ packages <- c(
 suppressWarnings(
   suppressMessages(
     suppressPackageStartupMessages(
-    ipak(packages)
+      ipak(packages)
     )
   )
 )
@@ -105,8 +105,8 @@ SAU_Database <- fread(paste(Int_Data_Path,
 UN_F_Name <- "UN_Dataset.csv"
 
 UN_Database <- read.csv(paste(Int_Data_Path,
-                  UN_F_Name,
-                  sep = ""))
+                              UN_F_Name,
+                              sep = ""))
 
 
 ```
@@ -166,18 +166,23 @@ The international analysis done using three main datasets.
 
 1. The Sea Around Us Dataset (SAU) has reconstructed fisheries catches for all three countries dating from 1950 to 2014. These data present a more accurate and complete picture of global fisheries than nationally collected data (nor the FAO dataset) [@Zeller2016]. Data extracted from SAU for Chile included the islands Juan Fernandez, Easter, and Desventuradas. For Brazil landings data included Fernando de Noronha, St Paul and St. Peter Archipelagos, and Trindade & Martim Vaz islands.
 2. The United Nations Come-trade database (UNCD) is managed by the Trade Statistics Branch of the United Nations Statistics Division. The UNCD has detailed trade data by commodity or services category for both merchandise trade and trade in services from 1962 to 2017 (https://unstats.un.org/unsd/trade/default.asp). 
-3. Fish consumption (TBD)
+3. A recent study estimated the proportion of fish landings destinated to human direct consumption and fish meal and fish oil[@Cashion:2018]. Such study used the SAU database, internal reports and other methods for estimating total landings devoted to each segment for all countries in the world.
 
 ### Analysis
 
-For the former analysis we used the SAU database to estimate the total landings (tons) of Chile, Brasil, and Peru in 2014, the last year of data in the SAU database. All fishing sectors were aggregated (Industrial, Subsistence and Artisanal) and ** COMMENT: "Recreational" was ignored as it does not contribute to local food security.** Other countries that fish within Chile, Peru and Brasil were also not included in the analysis for the same reason. Landings were grouped by taxa excluding those not identified (e.g. "Marine fishes not identified"). We used the same database and method to estimate the revenue (US dollars) from each fishery. 
+For the former analysis we used the SAU database to estimate the total landings (tons) of Chile, Brasil, and Peru in 2014, the last year of data in the SAU database. All fishing sectors were aggregated (Industrial, Subsistence and Artisanal) and ** COMMENT: "Recreational" was ignored as it does not contribute to local food security.** Other countries that fish within Chile, Peru and Brasil were also not included in the analysis for the same reason. Landings were grouped by taxa excluding those not identified (e.g. "Marine fishes not identified"). We used the same database and method to estimate the revenue (US dollars) from each fishery.The SAU landings database reconstruction methods for each country can be accessed for Brazil[@], Chile[@], and Peru[@]. 
+
+We used the SAU information on economic value of fish lansings as published in the website. Fishing revenue integrates the different ex-vessel price that landings have, depending on the final destination: direct human consumption (DHC) and indirect human consumption (IHC). Therefore, total revenue (*R*) is estimated in the SAU database as follows:
+
+$$R = \sum_{i = 1}^n (L_{i}*ß_{i})*ßP_{i} + (L_{i}*∂_{i}) *∂P_{i}$$
+where *L* is total landings for species *i*, *ß* is the proportion of total landings destined to DHC, ßP s the ex-vessel price for DHC, *∂* is the proportion of total landings destined to IHC and ∂P is the ex-vessel price for it.
 
 In addition to the landings data, we used the UNCD database to determine the value (US dollars) of fish and crustaceans, mollusks and other aquatic invertebrates imported and exported by Brazil, Chile and Peru in 2014. We estimate the net trade (*NT*) as follows:
 
 $$NT = (E-I)-RI$$
 where *E* is exports, *I* is imports and *RI* is re-imports. Due to the lack of detail in the UNCD database, all taxa in the SAU database had to be combined. Therefore, the estimate of total revenue from fisheries-related products per country in 2014 is an addition of the total landings revenue (all species) and the UN net trade.
 
-Finally, for estimating the contribution of landings and imports to domestic seafood consumption, we used the FAO data on food security per capita...
+Finally, for estimating the contribution of landings and imports to domestic seafood consumption, we used data published by Cashion *et al.*, 2018 on human direct consumption and processing (fish meal and fish oil). 
 
 
 ## Brazil Specifics
@@ -231,30 +236,30 @@ Prop_Total <- SAU_Prop %>%
   summarise(
     Tot_Prop = sum(Proportion),
     Location = max(Value)
-    )
+  )
 
 ggplot() +
-  geom_bar(data = SAU_Prop,
+  geom_bar(data = SAU_Prop, # Catch and value data
            aes(
              x= reorder(scientific_name,-Proportion),
              y = Value/1000, #thousands
              fill = Repeated
            ),
            stat = "identity"
-           ) +
-  geom_label(data = SAU_Prop,
-            aes(
-              x = reorder(scientific_name,-Proportion),
-              y = Value/1000,
-              label = paste(as.character(Proportion),"%",sep = " ")
-            )
   ) +
-  geom_label(data = Prop_Total,
-            aes(
-              x = 9,
-              y = Location/1100,
-              label = paste("Proportion of total",Variable, "\n of selected species\n",as.character(Tot_Prop),"%",sep = " ")
-            )
+  geom_label(data = SAU_Prop, # Species proportion data (Barx boxes)
+             aes(
+               x = reorder(scientific_name,-Proportion),
+               y = Value/1000,
+               label = paste(as.character(Proportion),"%",sep = " ")
+             )
+  ) +
+  geom_label(data = Prop_Total, # Total proportion data 
+             aes(
+               x = 9,
+               y = Location/1100,
+               label = paste("Proportion of total",Variable, "\n of selected species\n",as.character(Tot_Prop),"%",sep = " ")
+             )
   ) +
   theme(axis.text.x = element_text(angle = 45,
                                    hjust = 1,
@@ -268,8 +273,8 @@ ggplot() +
              ncol = 2) +
   labs(
     # title="Top 25 species by landings (left) and value (right)\n from the SAU dataset",
-       x ="Species",
-       y = "Values \n (Thousand of Tonns & US Dollars)"
+    x ="Species",
+    y = "Values \n (Thousand of Tonns & US Dollars)"
   ) + 
   ggtheme_plot() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1, face = "italic", size = 16))
