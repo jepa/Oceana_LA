@@ -4,7 +4,7 @@
 .gitignore
 
 # Data files
-# Please ignore raw_data files
+# Ignore raw_data files
 raw_databases
 
 # Example code in package build process
@@ -49,3 +49,6 @@ international_analysis.nb.html
 # Ignore any html document, the're too big
 *.html
 Report.nb.html
+
+# Ignore perosonal documents
+My_Oceana
