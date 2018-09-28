@@ -275,7 +275,7 @@ ggplot() +
 
 ```
 
-```{r UN_Landings_Data, eval = T, echo = T}
+```{r FAO_Landings_Data, eval = T, echo = T}
 
 #Data Path
 Data_Path <- "./information/raw_databases/"
@@ -285,8 +285,8 @@ FAO_F_Name <- "INPUT FAO Fishstat 2018.csv"
 FAO <- read.csv(paste(Data_Path,FAO_F_Name,
                       sep = ""))
 
-head(FAO)
-names(FAO)
+# head(FAO)
+# names(FAO)
 
 Clean_FAO <- FAO %>% 
   filter(Country %in% Countries) %>% 
@@ -346,12 +346,11 @@ Totals <- Clean_FAO %>%
            Sector,
            Trade.Flow,
            Unit) %>% 
-  summarise_at(vars(matches("X20")), sum, na.rm=T) %>% 
-  rowwise() %>% #DPLYR FUNCTION FOR rowMeans!!!!
-  mutate(Mean = mean(c(X2014,X2015,X2016))) %>% 
-  filter(Unit != "Number",
-         Sector != "Trade" | Trade.Flow != "Production"
-  )
+  summarise(
+    Mean = mean(Value, na.rm=T)) #%>% 
+# filter(Unit != "Number",
+#        Sector != "Trade" | Trade.Flow != "Production"
+#        )#Until we figure out this
 
 ggplot(Totals,
        aes(
@@ -443,6 +442,7 @@ Dummy_DataB <- data.frame(
     Year = 2016,
     Variable = rep(c("Tonnes","Value","Tonnes"), times=10, each=1),
     Catch = rnorm(30,2000,150),
+    Discards = rnorm(30,0.5,0.1),
     # Landings_Value = rnorm(30,2000,150),
     Aquaculture = rnorm(30,1000,50),
     # Aquaculture_Value = rnorm(30,1000,50),
@@ -453,28 +453,70 @@ Dummy_DataB <- data.frame(
     # Exports_Value = rnorm(30,1000,50)
   )
 
+write.csv(Dummy_DataB,
+          "Dummy_Data.csv",
+          row.names = F)
+
 Spp_Analysis(
   Data = Dummy_DataB,
   Spp = Dummy_DataB$Species,
-  Co = c("Chile","Brazil"),
-  # Co = "Brazil",
+  Co = Dummy_DataB$Country, #c("Chile","Brazil"), "Brazil",
   Y = 2016,
   Var = "Tonnes",
   Top = 5,
   Result = "P"
 )
 
-Spp_Analysis <- function(
-  Data,
-  Spp, #Specie (es)
-  Co, #Country(es) (Brazil, Chile, Peru)
-  Y, # Year (es) NOTE if more than one function will return mean +- sd
-  Var, # Tonnes, Value, Both
-  Top,# number of species to show
-  Result # P = Plot or D = dataset
+# Catch times proportion to DHC from Tim + Aquaculture production + Import production - Exports
+# NOTE IMPORTS FOR DIC
+# LS <- Catch - (CATCH * Discards)# Landing supply (TDS)
+# SHC <- LS - (LS * NHC) # HS = Not human suman consumption (SHC)
+# LHC <- (SHC * PL) # PL is Processing lost (LHC)
+# Nsp <- LHC + AP + I_DHC NEt seafood supply
+
+# NSP <- Catch - TDS - TNHC - TPL + AP + I_DHC - Exp 
+
+
+#### OLD VARIABLES ####
+# Dis,
+#   Spp, #Specie (es)
+#   Co, #Country(es) (Brazil, Chile, Peru)
+#   Y, # Year (es) NOTE if more than one function will return mean +- sd
+#   Var, # Tonnes, Value, Both
+#   Top,# number of species to show
+#   Result # P = Plot or D = dataset
+####
+
+corefx <- function(
+  Catch,
+  Dis,
+  NHC,
+  PL,
+  ADis,
+  I_DHC,
+  Exp
 ){
   
-# First general filter according to parameters∫  
+  # First Step 
+  TDS <- Catch - Dis #TDS Discard fish befor landings
+  LS <- Catch - TDS # LS Landings supply 
+  
+  # Second Step
+  HS <- LS * NHC # Landings supply that does NOT go to DHC
+  SHC <- LS - HS # Landings supply that goes to DHC
+  
+  # Third Step
+  LP <- SHC * PL #Lost in processing 
+  LHC <- SHC - LP # Final landings after processing losses 
+  
+  # Fourth Step (Aquaculture)
+  ADS <- AP * ADis # Lost of aquaculture production by discards 
+  AHC <- AP - ADS # Aquaculture production - losses in processing
+  
+  # Final step
+  NSP <- (LHC + AHC + I_DHC) - Exp  # National fish food supply 
+  
+  # First general filter according to parameters
   Spp_Data <- Data %>% 
     filter(
       Species %in% Spp,
@@ -490,33 +532,32 @@ Spp_Analysis <- function(
       group_by(Species,
                Country) %>% 
       mutate(
-        # Catch times proportion to DHC from Tim + Aquaculture production + Import production - Exports
-        DHC_Available = ((Catch * DHC) + Aquaculture + Imports) - Exports,
-        Catch_IHC = (Catch * (1-DHC))*-1
+        DHC_Available = (((Catch - (CATCH * Discards)) * DHC) + Aquaculture + Imports_DHC) - Exports,
+        Catch_IHC = ((Catch * Discards) * (1-DHC))*-1 # Visually negative
       ) %>% 
       group_by(Country) %>% 
       top_n(n = Top, wt = DHC_Available) %>% 
       # Anoying GGPLOT comands for plotting niceley
       mutate(Exports = Exports*-1) %>% 
       select(-Variable,
-            -Year,
-            -DHC) %>% 
+             -Year,
+             -DHC) %>% 
       gather("Concept","Value",3:8) %>% 
       mutate(
         Levels = factor(ifelse(Concept == "Aquaculture","AA_Aqua",
-                        ifelse(Concept == "Catch", "AAA_Cat",
-                               ifelse(Concept == "Imports", "AAA_Imp",
-                                      ifelse(Concept == "DHC_Available", "A_DH",
-                                             ifelse(Concept == "Exports", "B","NA")))))
+                               ifelse(Concept == "Catch", "AAA_Cat",
+                                      ifelse(Concept == "Imports", "AAA_Imp",
+                                             ifelse(Concept == "DHC_Available", "A_DH",
+                                                    ifelse(Concept == "Exports", "B","NA")))))
         )
       )
     
     Plot <- ggplot(Result,
-    aes(
-      x = Species,
-      y = Value,
-      fill = Levels
-    )
+                   aes(
+                     x = Species,
+                     y = Value,
+                     fill = Levels
+                   )
     )+
       geom_bar(stat = "identity") +
       facet_wrap(~Country,
@@ -543,27 +584,27 @@ Spp_Analysis <- function(
       # Anoying GGPLOT comands for plotting niceley
       mutate(Imports = Imports*-1) %>% 
       select(-Variable,
-            -Year,
-            -DHC) %>% 
+             -Year,
+             -DHC) %>% 
       gather("Concept","Value",3:8) %>% 
       mutate(
         Levels = factor(ifelse(Concept == "Aquaculture","AA_Aqua",
-                        ifelse(Concept == "Catch", "AAA_Cat",
-                               ifelse(Concept == "Exports", "AAA_Exp",
-                                     ifelse(Concept == "Value_DHC", "A_DH",
-                                            ifelse(Concept == "Value_IHC", "AA_IH",
-                                                   ifelse(Concept == "Imports", "B","NA"))))))
+                               ifelse(Concept == "Catch", "AAA_Cat",
+                                      ifelse(Concept == "Exports", "AAA_Exp",
+                                             ifelse(Concept == "Value_DHC", "A_DH",
+                                                    ifelse(Concept == "Value_IHC", "AA_IH",
+                                                           ifelse(Concept == "Imports", "B","NA"))))))
         )
       )
     
     
     # The plot !
     ggplot(Result,
-    aes(
-      x = Species,
-      y = Value,
-      fill = Levels
-    )
+           aes(
+             x = Species,
+             y = Value,
+             fill = Levels
+           )
     )+
       geom_bar(stat = "identity") +
       facet_wrap(~Country,
@@ -590,7 +631,7 @@ Spp_Analysis <- function(
   
   
   # Function return
-
+  
   return(Plot)  
   # if(Result == "P"){
   #   return(Plot)
