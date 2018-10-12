@@ -55,7 +55,13 @@ suppressWarnings(
   )
 )
 
-#### For all plots look alike
+
+#### Functions ####
+
+# Note that the main function is on a separate file (corefx.r)
+source('Functions/corefx.R')
+
+#### For all plots look alike ###
 
 ggtheme_plot <- function() {
   theme(
@@ -89,21 +95,29 @@ Int_Data_Path <- "./clean_databases/International/"
 #### SAU dataset used for international analysis chunks:
 # 1, 2 & 3, 4
 
-# # File name
-SAU_F_Name <- "SAU_Dataset.csv"
-# #read dataset
-SAU_Database <- fread(paste(Int_Data_Path,
-                            SAU_F_Name,
-                            sep = ""))
-#### UN dataset used for international analysis chunks:
-# 4
+# # # File name
+# SAU_F_Name <- "SAU_Dataset.csv"
+# # #read dataset
+# SAU_Database <- fread(paste(Int_Data_Path,
+#                             SAU_F_Name,
+#                             sep = ""))
+# #### UN dataset used for international analysis chunks:
+# # 4
+# 
+# UN_F_Name <- "UN_Dataset.csv"
+# 
+# UN_Database <- read.csv(paste(Int_Data_Path,
+#                               UN_F_Name,
+#                               sep = ""))
 
-UN_F_Name <- "UN_Dataset.csv"
 
-UN_Database <- read.csv(paste(Int_Data_Path,
+#### International dataset ####
+
+UN_F_Name <- "International_Data.csv"
+
+International_D<- read.csv(paste(Int_Data_Path,
                               UN_F_Name,
                               sep = ""))
-
 
 ```
 
@@ -230,8 +244,8 @@ $$NSS_i = [(L_i - L_i * {\lambda_{o,i}} + A_i] * {\lambda_{p,i}}- E_i + I_i$$
 
 The first approach that we did was to determine domestic seafood consumption, and its relationship with local employment in wild capture fisheries from international databases. While this first step represents the most broad analysis, it gives an idea of general country-level trends as well as information available to focus at more specific levels. The international analysis done using three main datasets:
 
-1. The Sea Around Us Dataset (SAU) has reconstructed fisheries catches for all three countries dating from 1950 to 2014. These data present a more accurate and complete picture of global fisheries than nationally collected data (nor the FAO dataset) [@Zeller2016]. Data extracted from SAU for Chile included the islands Juan Fernandez, Easter, and Desventuradas. For Brazil landings data included Fernando de Noronha, St Paul and St. Peter Archipelagos, and Trindade & Martim Vaz islands.
-2. The United Nations Come-trade database (UNCD) is managed by the Trade Statistics Branch of the United Nations Statistics Division. The UNCD has detailed trade data by commodity or services category for both merchandise trade and trade in services from 1962 to 2017 (https://unstats.un.org/unsd/trade/default.asp).
+<!-- 1. The Sea Around Us Dataset (SAU) has reconstructed fisheries catches for all three countries dating from 1950 to 2014. These data present a more accurate and complete picture of global fisheries than nationally collected data (nor the FAO dataset) [@Zeller2016]. Data extracted from SAU for Chile included the islands Juan Fernandez, Easter, and Desventuradas. For Brazil landings data included Fernando de Noronha, St Paul and St. Peter Archipelagos, and Trindade & Martim Vaz islands. -->
+<!-- 2. The United Nations Come-trade database (UNCD) is managed by the Trade Statistics Branch of the United Nations Statistics Division. The UNCD has detailed trade data by commodity or services category for both merchandise trade and trade in services from 1962 to 2017 (https://unstats.un.org/unsd/trade/default.asp). -->
 3. A recent study estimated the proportion of fish landings designated to human direct consumption and fish meal and fish oil[@Cashion:2018]. Such study used the SAU database, internal reports and other methods for estimating total landings devoted to each segment for all countries in the world.
 4. The FAO-SOFIA Catch and trade database.
 
@@ -256,12 +270,17 @@ Results from the international analysis shows a clear dominance in fisheries lan
 
 ```{r Total_Table, eval = T, echo = F}
 
-Totals <- SAU_Database %>%
-  group_by(Reporter,Variable) %>%
+Totals <- International_data %>%
+  gather("Variable","Value",6:13) %>% 
+  filter(Unit == "Tonnes") %>% 
+  group_by(Country,Sci.Name.Fb,Variable) %>%
+  summarise_if(is.numeric,mean,na.rm =T) %>% 
+  group_by(Country,Variable) %>% 
   summarise(
-    "Totals" = round(sum(Value)),
+    "Totals" = round(sum(Value,na.rm=T)),
     "Exploited Species" = n()
   ) %>%
+  filter(Variable %in% c("Aquaculture","Capture","Exports","Imports")) %>% 
   tidyr::spread(Variable,Totals)
 
 kable(Totals)
@@ -270,7 +289,28 @@ kable(Totals)
 
 When we analyze the top ten species in terms of landing volume (tons) and value (USD), we find different trends between and within countries. Brazil's most prolific fishery in 2014 was *Umbrina canosai*, a croaker fished in the southern part of the country, however, the most exploited specie (in terms of landings) was the ray-finned fish *Sardinella brasiliensis*. For Chile, the most valuable and landed fishery was *Engraulis ringens*, Peruvian anchoveta. Finally, Peru most valuable fishery in 2014 was the Peruvian scallop *Argopecten purpuratus* but like Chile, *Engraulis ringens* was the most landed species (**Fig. XX**).
 
-```{r SAU_Landings_Data, eval = T, echo = F, warning =F, message = F, fig.height = 25, fig.width= 20, fig.cap= "Top 10 species by landings (left) and value (right)\n from the SAU dataset. Red bars represent species not present in the other category. White boxes represent the contribution of that speciest to the total variable"}
+```{r International_Data, eval = T, echo = F, warning =F, message = F, fig.height = 25, fig.width= 20, fig.cap= ""}
+
+corefx(
+  Species = International_D$Sci.Name.Fb,
+  Country = International_D$Country,
+  Catch = International_D$Capture,
+  Dis = 0.20,
+  DHC = International_D$DHC_Use,
+  PL = 0.20,
+  AP = International_D$Aquaculture,
+  A_PL = 0.20,
+  I_DHC = International_D$IHC,
+  Exp = International_D$Exports,
+  Result = "T",
+  n = 5
+  )
+
+```
+
+
+
+```{r SAU_Landings_Data, eval = F, echo = F, warning =F, message = F, fig.height = 25, fig.width= 20, fig.cap= "Top 10 species by landings (left) and value (right)\n from the SAU dataset. Red bars represent species not present in the other category. White boxes represent the contribution of that speciest to the total variable"}
 
 
 Totals_Plot <- Totals %>%
