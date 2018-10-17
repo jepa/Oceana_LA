@@ -3,14 +3,14 @@ title: "Contributions of marine capture fisheries to the domestic livelihoods an
 author: "Juliano Palacios Abrantes, MSc, Camila Vargas, MSc, Daniel Viana, PhD, Maria I. Rivera, MSc, Rocío López, MSc, Santiago de la Puente, MSc, Andrés M. Cisneros-Montemayor, PhD"
 subtitle: "Response to Oceana Request for Proposal: Most Important Fisheries for People Study"
 output:
+  pdf_document:
+    toc: yes
   html_notebook:
     collapsed: no
     number_sections: yes
     smooth_scroll: yes
     toc: yes
     toc_float: yes
-  pdf_document:
-    toc: yes
 ---
 
 ```{r setup, eval = T, echo=F, warning=F,message=F}
@@ -37,8 +37,8 @@ packages <- c(
   # "RColorBrewer",
   "knitr",
   "kableExtra",
-  "data.table"#,
-  # "ggrepel",
+  "data.table",
+  "ggrepel"#,
   # "gridExtra",
   # "ggmap",
   # "rgeos",
@@ -54,7 +54,9 @@ suppressWarnings(
     )
   )
 )
+```
 
+```{r Data_Fun, eval = T, echo = F, warning = F, message = F}
 
 #### Functions ####
 
@@ -96,19 +98,19 @@ Int_Data_Path <- "./clean_databases/International/"
 # 1, 2 & 3, 4
 
 # # # File name
-# SAU_F_Name <- "SAU_Dataset.csv"
-# # #read dataset
-# SAU_Database <- fread(paste(Int_Data_Path,
-#                             SAU_F_Name,
-#                             sep = ""))
-# #### UN dataset used for international analysis chunks:
-# # 4
-# 
-# UN_F_Name <- "UN_Dataset.csv"
-# 
-# UN_Database <- read.csv(paste(Int_Data_Path,
-#                               UN_F_Name,
-#                               sep = ""))
+SAU_F_Name <- "SAU_Dataset.csv"
+# #read dataset
+SAU_Database <- fread(paste(Int_Data_Path,
+                            SAU_F_Name,
+                            sep = ""))
+#### UN dataset used for international analysis chunks:
+# 4
+
+UN_F_Name <- "UN_Dataset.csv"
+
+UN_Database <- read.csv(paste(Int_Data_Path,
+                              UN_F_Name,
+                              sep = ""))
 
 
 #### International dataset ####
@@ -169,22 +171,13 @@ changes in seafood supply.
 
 ## Analysis
 
-<!-- Fishing revenue integrates the different ex-vessel price that landings have, depending on the final destination: direct human consumption (DHC) and indirect human consumption (IHC). Therefore, total revenue (*R*) is estimated in the SAU database as follows: -->
+In the following section you will find the detail methods of estimating *i*) seafood supply and *ii*) revenues from fisheries landings as well as trade and aquaculture. Such analysis was applied across all countries using different datasets. Results will vary within countries according to the dataset (source) used.
 
-<!-- $$R = \sum_{i = 1}^n (L_{i}*\beta_{i})*\beta P_{i} + (L_{i}*\alpha _{i}) *\alpha P_{i}$$ -->
+### Estimations of National Seafood Supply
 
+We used the framework proposed (Figure 1) to design a model to estimate total seafood supply. The model included fish providing from for wild (ocean) domestic catch, farmed fish, and trade. In addition, estimations accounted for discards at sea (e.g. di-gutting and overall fish cleaning), rate losses at wild fish and aquaculture processing plants (e.g. 10 kilos of a certain fish might produce only 4 kilos of actual fish by-product) (See Table 1 for a summary of all variables).
 
-<!-- where *L* is total landings for species *i*, $\beta$ is the proportion of total landings destined to DHC, $\beta P$ s the ex-vessel price for DHC, $\alpha$ is the proportion of total landings destined to IHC and $\alpha P$ is the ex-vessel price for it. -->
-
-<!-- In addition to the landings data, we used the UNCD database to determine the value (US dollars) of fish and crustaceans, mollusks and other aquatic invertebrates imported and exported by Brazil, Chile and Peru in 2014. We estimate the net trade (*NT*) as follows: -->
-
-<!-- $$NT = (E-I)-RI$$ -->
-<!-- where *E* is exports, *I* is imports and *RI* is re-imports. Due to the lack of detail in the UNCD database, all taxa in the SAU database had to be combined. Therefore, the estimate of total revenue from fisheries-related products per country in 2014 is an addition of the total landings revenue (all species) and the UN net trade. -->
-
-<!-- Finally, for estimating the contribution of landings and imports to domestic seafood consumption, we used data published by Cashion *et al.*, 2018 on human direct consumption and processing (fish meal and fish oil). -->
-
-
-```{r Variables, eval = T, echo = F}
+```{r NSS_Variables, eval = T, echo = F}
 
 data.table(
   Symbol = c(
@@ -222,12 +215,18 @@ data.table(
 
 ```
 
+The model first estimated the total domestic catch of fish supply per species (*i*) from wild captures and aquaculture as follows:
+
 $${TDFS_i} = {C_i} + {A_i}$$
-Note that, to avoid double-counting fish production, domestic catch that is fed to farmed fish should be subtracted from overall production. This was done as possible given available country information and context (i.e., this may be more of an issue for some countries than others).
+
+Note that, to avoid double-counting fish production, domestic catch that is fed to farmed fish was subtracted from overall production. This was done as possible given available country information and context (i.e., this may be more of an issue for some countries than others). Then, not domestic fish supply was estimated from fish landed (catch minus discards), aquaculture and exports as follows:
 
 $${NDFS_i} = {L_i} + {A_i} - {E_i} $$
 
-$$ {L_i} = {C_i} - ({C_i} * {\lambda_{d,i}} )$$
+
+
+$${L_i} = {C_i} - ({C_i} * {\lambda_{d,i}} )$$
+
 
 where the second term in Equation 3 allows for a calculation of total discards in each country.
 In Equations 4 and 5, we assume that all imported seafood (we do not include imports not for human consumption, e.g., fish meal) is ready to be consumed and thus do not include losses from processing. We also assume that all aquaculture production is for human consumption and that none of this production is discarded, though processing losses do occur as in production from capture fisheries (e.g., farmed and wild caught shrimps would receive similar processing).
@@ -240,78 +239,119 @@ Therefore, national seafood supply will be estimated for each country and specie
 $$NSS_i = [(L_i - L_i * {\lambda_{o,i}} + A_i] * {\lambda_{p,i}}- E_i + I_i$$
 
 
-### International Analysis
+### Estimations of National Economic Participation
+
+Estimations of economic participation of fish in each country was computed based on fisheries landings, trade, aquaculture, and market value. Note that landings will have different ex-vessel price depending in the buyer (e.g. direct human consumption, fish meal or fish oil).
+
+
+```{r NEE_Variables, eval = T, echo = F}
+
+data.table(
+  Symbol = c(
+    "$\beta P$",
+    "$\alpha P$",
+    "I",
+    "RI",
+    "E",
+    "FR",
+    "NT"
+  ),
+  Description = c(
+    "Ex-vessel price for catch landed for direct human consumption",
+    "Ex-vessel price for catch landed for indirect human consumption",
+    "Imports. Economic value of imported fish",
+    "Re-Imports. Economic value of fish products re imported in the country",
+    "Exports. Economic value of exported fish",
+    "Fishing Revenue. The total revenue for that species provided by the fishing activity",
+    "Net trade. Economic value of fish traded considering both exports and imports"
+  )
+) %>% 
+  kable("latex", booktabs = T) %>% 
+  kable_styling(full_width = F) %>% 
+   column_spec(2, width = "15cm") #wraps text in column2
+
+```
+
+
+Fishing revenue integrates the different ex-vessel price that landings have, depending on the final destination: direct human consumption (DHC) and indirect human consumption (IHC). Therefore, total revenue (*R*) is estimated in the SAU database as follows:
+
+$$FR = \sum_{i = 1}^n (L_{i}*\beta_{i})*\beta P_{i} + (L_{i}*\alpha _{i}) *\alpha P_{i}$$
+
+In addition to the landings data, we used the FAO (SOFIA 2016) database to determine the value (US dollars) of fish and crustaceans, mollusks and other aquatic invertebrates imported and exported by Brazil, Chile and Peru. We estimate the net trade (*NT*) as follows:
+
+$$NT = (E-I)-RI$$
+
+
+### Brazil Specifics
+Briefly state any specific analysis done differently for Brasil due to data limitations or other reasons
+
+### Chile Specifics
+Briefly state any specific analysis done differently for Chile due to data limitations or other reasons
+
+### Peru Specifics
+Briefly state any specific analysis done differently for Peru due to data limitations or other reasons
+
+### Data descriptions
+
+#### International Analysis
 
 The first approach that we did was to determine domestic seafood consumption, and its relationship with local employment in wild capture fisheries from international databases. While this first step represents the most broad analysis, it gives an idea of general country-level trends as well as information available to focus at more specific levels. The international analysis done using three main datasets:
 
-<!-- 1. The Sea Around Us Dataset (SAU) has reconstructed fisheries catches for all three countries dating from 1950 to 2014. These data present a more accurate and complete picture of global fisheries than nationally collected data (nor the FAO dataset) [@Zeller2016]. Data extracted from SAU for Chile included the islands Juan Fernandez, Easter, and Desventuradas. For Brazil landings data included Fernando de Noronha, St Paul and St. Peter Archipelagos, and Trindade & Martim Vaz islands. -->
-<!-- 2. The United Nations Come-trade database (UNCD) is managed by the Trade Statistics Branch of the United Nations Statistics Division. The UNCD has detailed trade data by commodity or services category for both merchandise trade and trade in services from 1962 to 2017 (https://unstats.un.org/unsd/trade/default.asp). -->
+1. The FAO-SOFIA Catch and trade database.
+2. The Sea Around Us Dataset (SAU) has reconstructed fisheries catches for all three countries dating from 1950 to 2014. These data present a more accurate and complete picture of global fisheries than nationally collected data (nor the FAO dataset) [@Zeller2016]. Data extracted from SAU for Chile included the islands Juan Fernandez, Easter, and Desventuradas. For Brazil landings data included Fernando de Noronha, St Paul and St. Peter Archipelagos, and Trindade & Martim Vaz islands.
 3. A recent study estimated the proportion of fish landings designated to human direct consumption and fish meal and fish oil[@Cashion:2018]. Such study used the SAU database, internal reports and other methods for estimating total landings devoted to each segment for all countries in the world.
-4. The FAO-SOFIA Catch and trade database.
+4. The FISHMAR database for names homologation. 
 
 For the former analysis we used the FAO database to estimate the total landings (tons) of Chile, Brasil, and Peru in 2014, the last year with results in all database. All fishing sectors were aggregated (Industrial, Subsistence and Artisanal) and ** COMMENT: "Recreational" was ignored as it does not contribute to local food security.** Other countries that fish within Chile, Peru and Brasil were also not included in the analysis for the same reason. Landings were grouped by taxa excluding those not identified (e.g. "Marine fishes not identified"). We used the SAU database under the same method to estimate the revenue (US dollars) from each fishery.The SAU landings database reconstruction methods for each country can be accessed for Brazil[@REF], Chile[@REF], and Peru[@REF]. We then used the Tim *et al., 2018* database to estimate how much of the landings go to direct human consumption and how much goes to indirect human consumption...
 
-
-## Brazil Specifics
-Briefly state data used and how we combine them
-
-## Chile Specifics
-Briefly state data used and how we combine them
-
-## Peru Specifics
-Briefly state data used and how we combine them
-
 # Results
+
+the results section is divided in two main subsections representing international datasets (*International results*) and local datasets (*Brazil/Chile/Peru*). Results follow the same structure for each country from a fisheries context to a fish consumption supply to an employment and income section.
+
+Overall results show the average value of the last 5 years of data, although data provided along with this report dates several years ago.
+
 ## International
-### Domestic Fish Consumption (General)
-### Employment and Income (General)
+
 ### Fisheries Context (General)
+
+
 Results from the international analysis shows a clear dominance in fisheries landings of both Chile and Peru over Brazil, even thou Brazil captures around 3 times more species than the former. In terms of total fishing revenue, all nations are similar (**Table XX**)
 
 ```{r Total_Table, eval = T, echo = F}
 
-Totals <- International_data %>%
-  gather("Variable","Value",6:13) %>% 
-  filter(Unit == "Tonnes") %>% 
-  group_by(Country,Sci.Name.Fb,Variable) %>%
+Totals <- SAU_Database %>%
+  group_by(Reporter,Variable,scientific_name) %>%
   summarise_if(is.numeric,mean,na.rm =T) %>% 
-  group_by(Country,Variable) %>% 
+  group_by(Reporter,Variable) %>% 
   summarise(
     "Totals" = round(sum(Value,na.rm=T)),
     "Exploited Species" = n()
   ) %>%
-  filter(Variable %in% c("Aquaculture","Capture","Exports","Imports")) %>% 
   tidyr::spread(Variable,Totals)
 
-kable(Totals)
+
+International_D %>%
+  gather("Variable","Value",5:12) %>% 
+  group_by(Country,Comm.Name,Sci.Name.Fb,Variable) %>%
+  summarise_if(is.numeric,mean,na.rm =T) %>% 
+  group_by(Country,Variable) %>% 
+  summarise(
+    "Totals" = round(sum(Value,na.rm=T))/1000, #Thousands
+    "Exploited Species" = n()
+  ) %>%
+  filter(Variable %in% c("Aquaculture","Capture","Exports","Imports")) %>% 
+  tidyr::spread(Variable,Totals) %>% 
+  kable(
+    
+    caption = "Summary of results. Database used: SOFIA-FAO"
+  ) 
 
 ```
 
-When we analyze the top ten species in terms of landing volume (tons) and value (USD), we find different trends between and within countries. Brazil's most prolific fishery in 2014 was *Umbrina canosai*, a croaker fished in the southern part of the country, however, the most exploited specie (in terms of landings) was the ray-finned fish *Sardinella brasiliensis*. For Chile, the most valuable and landed fishery was *Engraulis ringens*, Peruvian anchoveta. Finally, Peru most valuable fishery in 2014 was the Peruvian scallop *Argopecten purpuratus* but like Chile, *Engraulis ringens* was the most landed species (**Fig. XX**).
-
-```{r International_Data, eval = T, echo = F, warning =F, message = F, fig.height = 25, fig.width= 20, fig.cap= ""}
-
-corefx(
-  Species = International_D$Sci.Name.Fb,
-  Country = International_D$Country,
-  Catch = International_D$Capture,
-  Dis = 0.20,
-  DHC = International_D$DHC_Use,
-  PL = 0.20,
-  AP = International_D$Aquaculture,
-  A_PL = 0.20,
-  I_DHC = International_D$IHC,
-  Exp = International_D$Exports,
-  Result = "T",
-  n = 5
-  )
-
-```
-
+When we analyze the top ten species in terms of landing volume (tons) and value (USD) using the SAU database, we find different trends between and within countries. Brazil's most prolific fishery in 2014 was *Umbrina canosai*, a croaker fished in the southern part of the country, however, the most exploited specie (in terms of landings) was the ray-finned fish *Sardinella brasiliensis*. For Chile, the most valuable and landed fishery was *Engraulis ringens*, Peruvian anchoveta. Finally, Peru most valuable fishery in 2014 was the Peruvian scallop *Argopecten purpuratus* but like Chile, *Engraulis ringens* was the most landed species (**Fig. XX**).
 
 
 ```{r SAU_Landings_Data, eval = F, echo = F, warning =F, message = F, fig.height = 25, fig.width= 20, fig.cap= "Top 10 species by landings (left) and value (right)\n from the SAU dataset. Red bars represent species not present in the other category. White boxes represent the contribution of that speciest to the total variable"}
-
 
 Totals_Plot <- Totals %>%
   select(-2) %>%
@@ -425,6 +465,37 @@ UN_Database %>%
   ggtheme_plot()
 
 ```
+
+
+### Domestic Fish Consumption (General)
+
+
+```{r R_Seafood_Consmption, eval = T, echo = F}
+
+International_DM <- International_D %>% 
+  group_by(Country,Comm.Name,Sci.Name.Fb) %>% 
+  summarise_if(is.numeric,mean,na.rm=T)
+
+
+corefx(
+  Species = International_DM$Sci.Name.Fb,
+  Country = International_DM$Country,
+  Catch = International_DM$Capture,
+  Dis = .2,
+  DHC = International_DM$DHC_Use,
+  PL = 0.2,
+  AP = International_DM$Aquaculture,
+  A_PL = 0.2,
+  I_DHC = International_DM$Imports,
+  Exp = International_DM$Exports,
+  Result = "T",
+  n = 2
+)
+
+
+```
+
+### Employment and Income (General)
 
 ## Results Brazil
 ### Domestic Fish Consumption (General)
