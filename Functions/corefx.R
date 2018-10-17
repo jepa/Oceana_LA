@@ -61,6 +61,12 @@ corefx <- function(
   TIHC <- IHC + AIHC # Total IHC fishmeal fishoil
   
   
+  #### Frequencies ####
+  
+  hist(NSP)
+  
+  
+  
   #### Table option ####
   Result_Table <- data.table(
     "Specie" = Species,
@@ -72,12 +78,12 @@ corefx <- function(
   )
   
   #### Graphic option ####
-  Result_Table <- Result_Table %>% 
+  Plot_Table <- Result_Table %>% 
     gather("Variable","Value",3:6) %>%
     group_by(Country,Variable) %>% 
     top_n(n = 5, wt = Value)
   
-  Plot <- Result_Table %>% 
+  Plot <- Plot_Table %>% 
     ggplot(.,
            aes(
              x= Specie,
@@ -112,18 +118,33 @@ corefx <- function(
 
 #### Testing ####
 
-corefx(
-  Species = "Julianus",
-  Country = "Chile",
-  Catch = 500,
-  Dis = .9,
-  DHC = 0.9,
-  PL = 0.2,
-  AP = 0,
-  A_PL = 0.2,
-  I_DHC = 0,
-  Exp = 10,
-  Result = "P",
-  n = 5
-)
+# corefx(
+#   Species = "Julianus",
+#   Country = "Chile",
+#   Catch = 500,
+#   Dis = .9,
+#   DHC = 0.9,
+#   PL = 0.2,
+#   AP = 0,
+#   A_PL = 0.2,
+#   I_DHC = 0,
+#   Exp = 10,
+#   Result = "P",
+#   n = 5
+# )
+
+# corefx(
+#   Species = International_D$Sci.Name.Fb,
+#   Country = International_D$Country,
+#   Catch = International_D$Capture,
+#   Dis = .2,
+#   DHC = International_D$DHC_Use,
+#   PL = 0.2,
+#   AP = International_D$Aquaculture,
+#   A_PL = 0.2,
+#   I_DHC = International_D$Imports,
+#   Exp = International_D$Exports,
+#   Result = "T",
+#   n = 5
+# )
 
