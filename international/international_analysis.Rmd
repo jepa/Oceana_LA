@@ -355,8 +355,8 @@ Clean_FAO_T <- FAO %>%
   gather("Year","Value",6:12) %>% 
   filter(!is.na(Value)) %>%  #Removes years with no trade
   group_by(
-    Group, # NOTE: not identifying between marine/freshwater
     Country,
+    Group, # NOTE: not identifying between marine/freshwater
     Year,
     # Unit,
     Trade.Flow #,
@@ -399,6 +399,14 @@ Clean_FAO_T %>%
 # unique(Clean_FAO_C$Sector)
 # unique(Clean_FAO_C$Group)
 # unique(Clean_FAO_C$Environment)
+
+
+### Checking the famous NAs
+
+Clean_FAO_T %>% 
+  filter(is.na(Group))
+# No NAs
+
 
 #### Overall production per Sector FAO ####
 
@@ -605,9 +613,9 @@ Catch_Data <- Clean_FAO_C %>%
   left_join(Clean_FISHMAR,
             by = c("Comm.Name","Country")
   ) %>% 
-  select(1,2,10,11,3:5) #%>% 
-  # select(-Group) %>% # Need to remove all the duplicates
-  # distinct(.keep_all= TRUE)
+  select(1,2,10,11,3:5) %>% 
+  select(-Group) %>% # Need to remove all the duplicates
+  distinct(.keep_all= TRUE)
   
 
 #Checking catch data match #####
@@ -625,18 +633,51 @@ Catch_Data <- Clean_FAO_C %>%
 #             by = "Comm.Name")
 # All in! 
 
+
+#### How many of the Catch Data is represented on FISHMAR data
+
+Catch_Data %>% 
+  group_by(Country,Comm.Name) %>% 
+  summarise(n()) %>% 
+  anti_join(
+    Clean_FISHMAR,
+    by = c("Comm.Name","Country")
+  )
+
+# Very few catch data is represented in FISHMAR
+
+
 #  END CHECK _____________________
 
-#### Merging Trade Data ##
+#### Merging Trade Data ####
+
+# First those that are in FISHMAR
+
 
 Trade_Data <- Clean_FAO_T %>% 
   left_join(Clean_FISHMAR,
             by = c("Group","Country")
   ) %>% 
-  select(2,1,10,11,3:5) %>% 
+  mutate(
+    Sci.Name.Fbs = as.character(Sci.Name.Fb),
+    Comm.Names = as.character(Comm.Name)
+  ) %>% 
+  mutate(
+    Sci.Name.Fb = ifelse(is.na(Sci.Name.Fbs),Group,Sci.Name.Fbs),
+    Comm.Name = ifelse(is.na(Comm.Names),Group,Comm.Names)
+    ) %>% select(2,1,10,11,3:5) %>% 
   group_by(Country,Sci.Name.Fb,Comm.Name,Year) %>% 
   summarise_at(c("Exports","Imports"),sum, na.rm=T)
 
+# Trade_Data_C <- Clean_FAO_T %>% 
+#   left_join(Clean_FISHMAR,
+#             by = c("Group","Country")
+#   ) %>% 
+#   filter(is.na(Comm.Name)) %>% 
+#   group_by(Group) %>% 
+  # summarise_at(c("Exports","Imports"),sum, na.rm=T)
+
+  
 #Checking we have all trade ####
 # sum(Trade_Data$Exports, na.rm = T)/100000 # 804.019
 # sum(Trade_Data$Imports, na.rm = T)/100000 # 180.539
@@ -653,48 +694,138 @@ Trade_Data <- Clean_FAO_T %>%
 
 # Those that are in trade dataset but not on Catch datset
 
-Trade_Data %>%
-  anti_join(Catch_Data,
-            by = "Comm.Name") %>% 
-  group_by(Comm.Name) %>% 
-  summarise(n())
+# Trade_Data %>%
+#   group_by(Country,Comm.Name) %>% 
+#   summarise(n()) %>% 
+#   anti_join(Catch_Data,
+#             by = c("Country","Comm.Name")) %>% 
+#   group_by(Comm.Name) %>% 
+#   summarise(n()) # There are 6 common names in the Trade data that are not in the catch data
 
-# Those that are in catch dataset but not on Catch datset
+# Catch_Data %>%
+#   group_by(Country,Comm.Name) %>% 
+#   summarise(n()) %>% 
+#   semi_join(Trade_Data,
+#             by = "Comm.Name")
 
-x <- Catch_Data %>%
-  semi_join(Trade_Data,
-            by = "Comm.Name") %>% 
-  group_by(Comm.Name) %>% 
-  summarise(n())
+# There are 58 catched species not represented in the trade data-set
 
-#### STILL NOT WORKING. THE DATASETS DONT MATCH...
+
+### Is the less data problem the Unknowns?
+# YES!!!!!
+# Now solve for the unknowns! 
+
+
+# Data with NA
+Trade_Data_NA <- Trade_Data %>% 
+  filter(is.na(Comm.Name))
+
+# Checking we're not loosing data
+# Trade_Data_NA$Sci.Name.Fb <- "Unknown"
+# Trade_Data_NA$Comm.Name <- "Unknown"
+
+# Data without NA
+Trade_Data_OK <- Trade_Data %>% 
+  filter(!is.na(Comm.Name))
+
+Trade_Data_B <- Trade_Data_NA %>% 
+  bind_rows(Trade_Data_OK)
+
+# Checking we're not loosing data
+# sum(Trade_Data_B$Exports)/100000
+# sum(Trade_Data_B$Imports)/100000
+# Trade_Data <- Trade_Data_B
+
+
+# Searching for the NAs
+
+
+Trade_Data_C <- Clean_FAO_T %>% 
+  left_join(Clean_FISHMAR,
+            by = c("Group","Country")
+  ) %>% 
+  filter(is.na(Comm.Name)) %>% 
+  group_by(Group) %>% 
+  summarise_at(c("Exports","Imports"),sum, na.rm=T)
+
+# Founde it! There are many commodities not matched
+
+
+NAs_Search <- Clean_FAO_T %>% 
+  anti_join(Trade_Data_C,
+            by = c("Group","Country")
+            )
 
 
 #  END CHECK _____________________
 
 #### Merging both Data ####
 
-Clean_FAO_Data <- Catch_Data %>% 
-  left_join(Trade_Data,
+
+# First we merge those species in both....
+
+Semi_Catch <- Catch_Data %>%
+  semi_join(Trade_Data,
+            by = c("Comm.Name","Sci.Name.Fb")
+  )
+
+Semi_Trade <- Trade_Data %>% 
+  semi_join(Catch_Data,
+            by = c("Comm.Name","Sci.Name.Fb")
+  )
+
+Semi_Data <- Semi_Catch %>% 
+  left_join(Semi_Trade,
             by = c("Country","Comm.Name","Sci.Name.Fb","Year")
-            ) %>% 
-  select(-Group) %>% # Need to remove all the duplicates
-  distinct(.keep_all= TRUE)
+  )
+# Checking we're not loosing data
+# sum(Semi_Data$Exports,na.rm=T)/100000 # 127.7865
+# sum(Semi_Data$Imports,na.rm=T)/100000 # 28.08
 
-# Check if makes sence
+sum(Semi_Data$Capture,na.rm=T)/100000 # 156.7049
 
-# Looking for cuplicates
-Clean_FAO_Data %>% 
-  get_dupes()
-# No duplicate combinations found of: Country, Comm.Name, Sci.Name.Fb, Year, Aquaculture, Capture, Exports, Imports
+# Now we merge those species NOT in both....
 
-### See if values are the same
+
+Anti_Catch <- Catch_Data %>%
+  anti_join(Trade_Data,
+            by = c("Comm.Name","Sci.Name.Fb")
+  )
+
+Anti_Trade <- Trade_Data %>% 
+  anti_join(Catch_Data,
+            by = c("Comm.Name","Sci.Name.Fb")
+  )
+
+# Checking we're not loosing data
+# sum(Anti_Trade$Exports, na.rm = T)/100000 # 676.2326
+# sum(Anti_Trade$Imports, na.rm = T)/100000 # 152.4552
+
+Anti_Data <- Anti_Catch %>% 
+  bind_rows(Anti_Trade)
+
+# Checking we're not loosing data
+# sum(Anti_Data$Exports, na.rm = T)/100000 # 676.2326
+# sum(Anti_Data$Imports, na.rm = T)/100000 # 152.4552
+
+#### Merging both datasets... 
+
+Clean_FAO_Data <- Semi_Data %>% 
+  bind_rows(Anti_Data)
+
+## Check all is there (#TheMomentOfTruth!)
+
 Clean_FAO_Data %>% 
   gather("Variable","Value",5:8) %>% 
   group_by(Variable) %>% 
   summarise(sum(Value,na.rm=T)/100000)
 
-### For some reason Trades do not mach and are overestimated but when you remove duplicates they get UNDER estimated (big time)
+#  Aquaculture                 113.52088
+#  Capture                     592.72573
+#  Exports                     804.0190
+#  Imports                      180.5390
+
+# YES! But we can't just leave them as "Unknown"...
 
 
 # Use this data to merge with Tim's data
@@ -786,7 +917,7 @@ International_data <- Clean_FAO_Data %>%
 
 write.csv(
   International_data,
-  "Internationl_Data.csv",
+  "International_Data.csv",
   row.names = F)
 
 ```
@@ -997,6 +1128,36 @@ corefx(
   I_DHC = Dummy_Data$Imports,
   Exp = Dummy_Data$Exports
 )
+
+
+
+corefx(
+  Country=International_data$Country,
+  Species = International_data$Comm.Name,
+  Catch = International_data$Capture,
+  Dis = 0.20,
+  DHC = International_data$DHC_Use,
+  PL = 0.20,
+  AP = International_data$Aquaculture,
+  A_PL = 0.20,
+  I_DHC = International_data$Imports,
+  Exp = International_data$Exports,
+  Result = "T",
+  n = 5
+)
+
+# Species,
+#   Country,
+#   Catch,
+#   Dis,
+#   DHC,
+#   PL,
+#   AP,
+#   A_PL,
+#   I_DHC,
+#   Exp,
+#   Result = "T",
+#   n = 5
 
 
 ```
