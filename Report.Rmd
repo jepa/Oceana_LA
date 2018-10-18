@@ -1,8 +1,14 @@
 ---
-title: "Contributions of marine capture fisheries to the domestic livelihoods and seafood consumption of Brazil Chile and Peru"
-author: "Juliano Palacios Abrantes, MSc, Camila Vargas, MSc, Daniel Viana, PhD, Maria I. Rivera, MSc, Rocío López, MSc, Santiago de la Puente, MSc, Andrés M. Cisneros-Montemayor, PhD"
-subtitle: "Response to Oceana Request for Proposal: Most Important Fisheries for People Study"
+title: Contributions of marine capture fisheries to the domestic livelihoods and seafood
+  consumption of Brazil Chile and Peru
+author: Juliano Palacios Abrantes, MSc, Camila Vargas, MSc, Daniel Viana, PhD, Maria
+  I. Rivera, MSc, Rocío López, MSc, Santiago de la Puente, MSc, Andrés M. Cisneros-Montemayor,
+  PhD
+subtitle: 'Response to Oceana Request for Proposal: Most Important Fisheries for People
+  Study'
 output:
+  word_document:
+    toc: yes
   pdf_document:
     toc: yes
   html_notebook:
@@ -54,7 +60,9 @@ suppressWarnings(
     )
   )
 )
+
 ```
+
 
 ```{r Data_Fun, eval = T, echo = F, warning = F, message = F}
 
@@ -67,7 +75,7 @@ source('Functions/corefx.R')
 
 ggtheme_plot <- function() {
   theme(
-    plot.title = element_text(size = rel(1.25), hjust = 0, face = "bold"),
+    plot.title = element_text(size = rel(1), hjust = 0, face = "bold"),
     panel.background = element_blank(),
     strip.background = element_blank(),
     # strip.text       = element_text(size = base_size, face = "italic"),
@@ -75,14 +83,14 @@ ggtheme_plot <- function() {
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
     axis.ticks = element_blank(),
-    axis.text.x = element_text(size = 16),
-    axis.text.y = element_text(size = 16),
-    axis.title = element_text(size = 16),
+    axis.text.x = element_text(size = 8),
+    axis.text.y = element_text(size = 8),
+    axis.title = element_text(size = 8),
     legend.key = element_rect(colour = NA, fill = NA),
     legend.position  = "top",
-    legend.title = element_text(size = 18),
-    legend.text = element_text(size = 16),
-    strip.text.x = element_text(size = 20, colour = "darkgrey")
+    legend.title = element_text(size = 10),
+    legend.text = element_text(size = 8),
+    strip.text.x = element_text(size = 14, colour = "darkgrey")
   )
 }
 
@@ -209,9 +217,10 @@ data.table(
     "Net seafood supply. Effective amount of fish for human consumption in the country (TFS for human consumption, minus processing waste)."
   )
 ) %>% 
-  kable("latex", booktabs = T) %>% 
-  kable_styling(full_width = F) %>% 
-   column_spec(2, width = "15cm") #wraps text in column2
+  # kable("latex", booktabs = T) %>% 
+  # kable_styling(full_width = F) %>% 
+  #  column_spec(2, width = "15cm") %>% #wraps text in column2
+  kable()
 
 ```
 
@@ -248,8 +257,8 @@ Estimations of economic participation of fish in each country was computed based
 
 data.table(
   Symbol = c(
-    "$\beta P$",
-    "$\alpha P$",
+    "beta",
+    "alpha",
     "I",
     "RI",
     "E",
@@ -266,9 +275,10 @@ data.table(
     "Net trade. Economic value of fish traded considering both exports and imports"
   )
 ) %>% 
-  kable("latex", booktabs = T) %>% 
-  kable_styling(full_width = F) %>% 
-   column_spec(2, width = "15cm") #wraps text in column2
+  # kable("latex", booktabs = T) %>% 
+  # kable_styling(full_width = F) %>% 
+  #  column_spec(2, width = "15cm") %>%  #wraps text in column2
+  kable()
 
 ```
 
@@ -343,15 +353,16 @@ International_D %>%
   tidyr::spread(Variable,Totals) %>% 
   kable(
     
-    caption = "Summary of results. Database used: SOFIA-FAO"
+    caption = "Summary of results. Database used: SOFIA-FAO. Thousand tonnes"
   ) 
 
 ```
 
 When we analyze the top ten species in terms of landing volume (tons) and value (USD) using the SAU database, we find different trends between and within countries. Brazil's most prolific fishery in 2014 was *Umbrina canosai*, a croaker fished in the southern part of the country, however, the most exploited specie (in terms of landings) was the ray-finned fish *Sardinella brasiliensis*. For Chile, the most valuable and landed fishery was *Engraulis ringens*, Peruvian anchoveta. Finally, Peru most valuable fishery in 2014 was the Peruvian scallop *Argopecten purpuratus* but like Chile, *Engraulis ringens* was the most landed species (**Fig. XX**).
 
+\clearpage
 
-```{r SAU_Landings_Data, eval = F, echo = F, warning =F, message = F, fig.height = 25, fig.width= 20, fig.cap= "Top 10 species by landings (left) and value (right)\n from the SAU dataset. Red bars represent species not present in the other category. White boxes represent the contribution of that speciest to the total variable"}
+```{r SAU_Landings_Data, eval = T, echo = F, warning =F, message = F, fig.height = 25, fig.width= 20, fig.cap= "Top 10 species by landings (left) and value (right)\n from the SAU dataset. Red bars represent species not present in the other category. White boxes represent the contribution of that speciest to the total variable"}
 
 Totals_Plot <- Totals %>%
   select(-2) %>%
@@ -426,9 +437,11 @@ ggplot() +
 # ggplotly(g_plot)
 ```
 
+\clearpage
+
 In addition to the internal fish production, Brazil, Chile and Peru all import and export fish (**Fig. XXX**). According to the UN data, Brazil spends more money importing fish than what it makes from producing it and exporting that production. In the other hand, both Chile and Peru have positive surplus from their fisheries and commerce activities being Chile the most "*profitable*" country.
 
-```{r Trade, eval = T, echo = F, warning=F, fig.height = 10, fig.width= 15, fig.cap= "Revenue from fisheries production, imports and exports for each nation from the UN database."}
+```{r Trade, eval = T, echo = F, warning=F, fig.align='center', fig.height = 4, fig.width= 6, fig.cap= "Revenue from fisheries production, imports and exports for each nation from the UN database."}
 
 
 UN_Database %>%
@@ -469,31 +482,50 @@ UN_Database %>%
 
 ### Domestic Fish Consumption (General)
 
+Something about the table...
 
 ```{r R_Seafood_Consmption, eval = T, echo = F}
 
-International_DM <- International_D %>% 
-  group_by(Country,Comm.Name,Sci.Name.Fb) %>% 
-  summarise_if(is.numeric,mean,na.rm=T)
-
-
-corefx(
-  Species = International_DM$Sci.Name.Fb,
-  Country = International_DM$Country,
-  Catch = International_DM$Capture,
-  Dis = .2,
-  DHC = International_DM$DHC_Use,
-  PL = 0.2,
-  AP = International_DM$Aquaculture,
-  A_PL = 0.2,
-  I_DHC = International_DM$Imports,
-  Exp = International_DM$Exports,
+Data <-corefx(
+  Country=International_D$Country,
+  Species = International_D$Comm.Name,
+  Catch = International_D$Capture,
+  Dis = 0.20,
+  DHC = International_D$DHC_Use,
+  PL = 0.20,
+  AP = International_D$Aquaculture,
+  A_PL = 0.20,
+  I_DHC = International_D$Imports,
+  Exp = International_D$Exports,
   Result = "T",
-  n = 2
+  n = 5
 )
 
 
+Ignore <- c(
+  "Anchoveta.=Peruvian anchovy",
+  "Anchoveta.=Peruvian anchovy ",
+  "Chilean kelp",
+  "Common dolphinfish" # ¿Qué carajos!?
+  )
+
+Data %>% 
+  filter(!Specie %in% Ignore) %>% 
+  group_by(Country,
+           Specie) %>% 
+  summarise_if(is.numeric,mean,na.rm=T) %>% 
+  group_by(Country) %>% 
+  top_n(n = 5, wt = `National Seafood Supply`) %>%
+  # kable("latex", booktabs = T) %>%
+  # kable_styling(full_width = F) %>% 
+  #  column_spec(2, width = "13em") %>% #wraps text in column2
+  # column_spec(3:6, width = "6em") #%>% 
+  kable()
+
 ```
+
+
+
 
 ### Employment and Income (General)
 
