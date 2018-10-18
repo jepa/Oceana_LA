@@ -40,30 +40,54 @@ corefx <- function(
   TDS <- Catch*Dis #TDS (Total Discards) Discarded fish before landings
   LS <- Catch - TDS # LS Landings supply after discards at see
   
+  ## Rules for NA values
+  LS <- ifelse(is.na(LS),TDS,LS) # If no discard data then LS becomes catch
+  
   # Second Step
   IHC <- LS * (1-DHC) # (Indirect Human Consumption) Landings supply that does NOT go to DHC
   SHC <- LS - IHC # (Supply for Human Consumption) Landings supply that goes to DHC
   
+  ## Rules for NA values
+  SHC <- ifelse(is.na(SHC),LS,SHC) # If no IHC/DHC data then SHC becomes LS (assuming everything goes to DHC)
+  
   # Third Step
   LP <- SHC * PL # Fish lost in processing 
   LHC <- SHC - LP # Final landings after processing losses 
+
+  ## Rules for NA values
+  LHC <- ifelse(is.na(LHC),SHC,LHC) # If no processing values data then LHC becomes SHC
+  
   
   # Fourth Step (Aquaculture)
-  AIHC <- AP * A_PL # (Aquaculture indirect human Consumption) Lost of aquaculture processing
+  
+  AIHC <- AP * A_PL # Lost of aquaculture processing
   AHC <- AP - AIHC # (Aquaculture Human Consumption) Aquaculure human Consumption
+  
+  ## Rules for NA values
+  AHC <- ifelse(is.na(AHC),AP,AHC) # If no discard data then AHC becomes AP
+  
+    
   
   # Fifth Step (Trade)
   NI <- I_DHC - Exp # Net Imports
   
   
   # Final step
+  
+  ## Rules for NAs
+  LHC <- ifelse(is.na(LHC),0,LHC)
+  AHC <- ifelse(is.na(AHC),0,AHC)
+  NI <- ifelse(is.na(NI),0,NI)
+  
+  ## Results
+  LA_HC <- LHC + AHC # Whats produced in the country
   NSP <- LHC + AHC + NI # (National Seafood Supply) 
-  TIHC <- IHC + AIHC # Total IHC fishmeal fishoil
+  TIHC <- sum(IHC, AIHC, na.rm =T) # Total IHC fish meal fish oil
   
   
   #### Frequencies ####
   
-  hist(NSP)
+  # hist(NSP)
   
   
   
@@ -75,7 +99,10 @@ corefx <- function(
     "Aquaculutre Food Supply" = AHC,
     "Net Imports" = NI,
     "National Seafood Supply" = NSP
-  )
+  ) %>% 
+    mutate(
+      Warning = ifelse(Exp > LA_HC,"*","")
+    )
   
   #### Graphic option ####
   Plot_Table <- Result_Table %>% 
@@ -112,6 +139,12 @@ corefx <- function(
     return(Plot)
   }
   
+  if(Result == "B") {
+    Plot
+    return(Result_Table)
+    
+  }
+  
 }
 
 
@@ -133,18 +166,36 @@ corefx <- function(
 #   n = 5
 # )
 
-# corefx(
-#   Species = International_D$Sci.Name.Fb,
-#   Country = International_D$Country,
-#   Catch = International_D$Capture,
-#   Dis = .2,
-#   DHC = International_D$DHC_Use,
-#   PL = 0.2,
-#   AP = International_D$Aquaculture,
-#   A_PL = 0.2,
-#   I_DHC = International_D$Imports,
-#   Exp = International_D$Exports,
-#   Result = "T",
+
+# International_Data <- read.csv("~/Documents/Github/Oceana_LA/clean_databases/International/International_Data.csv")
+# View(International_Data)
+# 
+# International_Data <- International_Data[1:2,1:12]
+# 
+# Country=International_Data$Country
+# Species = International_Data$Comm.Name
+# Catch = International_Data$Capture
+# Dis = 0.20
+# DHC = International_Data$DHC_Use
+# PL = 0.20
+# AP = International_Data$Aquaculture
+# A_PL = 0.20
+# I_DHC = International_Data$Imports
+# Exp = International_Data$Exports
+# 
+# 
+# x <-corefx(
+#   Country=International_Data$Country,
+#   Species = International_Data$Comm.Name,
+#   Catch = International_Data$Capture,
+#   Dis = 0.20,
+#   DHC = International_Data$DHC_Use,
+#   PL = 0.20,
+#   AP = International_Data$Aquaculture,
+#   A_PL = 0.20,
+#   I_DHC = International_Data$Imports,
+#   Exp = International_Data$Exports,
+#   Result = "B",
 #   n = 5
 # )
 
