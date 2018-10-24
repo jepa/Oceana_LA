@@ -1,0 +1,3174 @@
+year,month,taxa,species_portuguese,species_english,species_sci,production_kg
+2014,1,Crustáceos,Camarão-barba-ruça,Shrimp,Artemesia longinaris,383217
+2014,1,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,3305
+2014,1,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,11734
+2014,1,Crustáceos,Camarão-santana + barba-ruca,Camarão-santana + barba-ruca,NA,35000
+2014,1,Crustáceos,Pitú,Pitú,NA,270
+2014,1,Crustáceos,Sapateira,Edible crab,Cancer pagurus,60
+2014,1,Elasmobrânquios,Cação-anequim,Shark,NA,1059
+2014,1,Elasmobrânquios,Cação-anjo,Shark,NA,240
+2014,1,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,3860
+2014,1,Elasmobrânquios,Cação-cabeca-chata,Shark,NA,280
+2014,1,Elasmobrânquios,Cação-martelo,Shark,NA,905
+2014,1,Elasmobrânquios,Cação-tigre,Shark,NA,130
+2014,1,Elasmobrânquios,Cações,Shark,Mustelus spp,1069
+2014,1,Elasmobrânquios,Caçonete,Shark,NA,1026
+2014,1,Elasmobrânquios,Emplastro,Emplastro,NA,25921
+2014,1,Elasmobrânquios,Machote,Spinner Shark,NA,1251
+2014,1,Elasmobrânquios,Raia,Ray,NA,635
+2014,1,Moluscos,Calamar-argentino,Calamar-argentino,Illex argentinus,1000
+2014,1,Moluscos,Lula,Squid,Loligo sanpaulensis,30903
+2014,1,Moluscos,Polvo,Octopus,Octopus spp.,200
+2014,1,Não Cadastrado,Mistura,Other fish,NA,20153
+2014,1,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,19825
+2014,1,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,104140
+2014,1,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,389
+2014,1,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,14920
+2014,1,Teleósteos,Atum,Blow goat,Auxis rochei,16
+2014,1,Teleósteos,Bagre,Couma sea catfish,Sciades couma,1720
+2014,1,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,400
+2014,1,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,4510
+2014,1,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,4383
+2014,1,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,1165318
+2014,1,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,50010
+2014,1,Teleósteos,Cangoá,Cangoá,NA,50
+2014,1,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,57084
+2014,1,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,20
+2014,1,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,3600
+2014,1,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,10990
+2014,1,Teleósteos,Corvina,Croaker,Micropogonias furnieri,530972
+2014,1,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,5860
+2014,1,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,1120
+2014,1,Teleósteos,Enguia,Common Eel,Conger orbignyanus,180
+2014,1,Teleósteos,Espada,Broadbill,Xiphias gladius,19776
+2014,1,Teleósteos,Ferrinho,Ferrinho,NA,600
+2014,1,Teleósteos,Galo,American John Dory,Zenopsis conchifer,1540
+2014,1,Teleósteos,Galo-de-profundidade,American John Dory,Zenopsis conchifer,2000
+2014,1,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,10380
+2014,1,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,4780
+2014,1,Teleósteos,Guaivira,Jack,Oligoplites spp.,680
+2014,1,Teleósteos,Lanceta,Lanceta,NA,100
+2014,1,Teleósteos,Linguado,Flatfish,Paralichthys spp.,26491
+2014,1,Teleósteos,Linguado-areia,Flatfish,NA,13894
+2014,1,Teleósteos,Mangangá,Mangangá,NA,560
+2014,1,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,96680
+2014,1,Teleósteos,Marimbá,Porgy,NA,680
+2014,1,Teleósteos,Meca,Meca,NA,12801
+2014,1,Teleósteos,Merluza,Hake,Merluccius hubbsi,58180
+2014,1,Teleósteos,Miracéu,Stargazer,NA,100
+2014,1,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,620
+2014,1,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,186906
+2014,1,Teleósteos,Pampo,Pampo,Trachinotus spp.,530
+2014,1,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,20
+2014,1,Teleósteos,Paru,Paru,NA,40
+2014,1,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,19120
+2014,1,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,14680
+2014,1,Teleósteos,Pescada,Weakfish,Cynoscion spp.,8164
+2014,1,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,1750
+2014,1,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,520
+2014,1,Teleósteos,Pescada-cambucu,Weakfish,NA,140
+2014,1,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,2760
+2014,1,Teleósteos,Pijirica,Pijirica,NA,20
+2014,1,Teleósteos,Prego,Prego,NA,278
+2014,1,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,2251
+2014,1,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,2880
+2014,1,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,700
+2014,2,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,512111
+2014,2,Crustáceos,Camarão-cristalino,Shrimp,NA,18828
+2014,2,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,22112
+2014,2,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,9062
+2014,2,Crustáceos,Camarão-santana + barba-ruca,Camarão-santana + barba-ruca,NA,6000
+2014,2,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,800
+2014,2,Crustáceos,Pitú,Pitú,NA,26895
+2014,2,Crustáceos,Sapateira,Edible crab,Cancer pagurus,2805
+2014,2,Elasmobrânquios,Cação-anequim,Shark,NA,888
+2014,2,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,10072
+2014,2,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,800
+2014,2,Elasmobrânquios,Cação-martelo,Shark,NA,4629
+2014,2,Elasmobrânquios,Cações,Shark,Mustelus spp,3260
+2014,2,Elasmobrânquios,Caçonete,Shark,NA,340
+2014,2,Elasmobrânquios,Emplastro,Emplastro,NA,58130
+2014,2,Elasmobrânquios,Machote,Spinner Shark,NA,341
+2014,2,Elasmobrânquios,Raia,Ray,NA,3807
+2014,2,Elasmobrânquios,Ratinho,Ratinho,NA,31
+2014,2,Moluscos,Lula,Squid,Loligo sanpaulensis,102310
+2014,2,Moluscos,Polvo,Octopus,Octopus spp.,13900
+2014,2,Não Cadastrado,Mistura,Other fish,NA,348234
+2014,2,Não Cadastrado,Ovas,Ovas,NA,1300
+2014,2,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,70190
+2014,2,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,242800
+2014,2,Teleósteos,Agulhão-azul,Agulhão-azul,NA,1625
+2014,2,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,95
+2014,2,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,5056
+2014,2,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,22356
+2014,2,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,17123.5
+2014,2,Teleósteos,Bagre,Couma sea catfish,Sciades couma,3361
+2014,2,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,473
+2014,2,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,2920
+2014,2,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,3537
+2014,2,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,1130038.5
+2014,2,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,144899
+2014,2,Teleósteos,Carapeba,Broad shad,Diapterus auratus,1760
+2014,2,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,141100
+2014,2,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,14
+2014,2,Teleósteos,Cioba,Dog Snapper,Lutjanus analis,580
+2014,2,Teleósteos,Congro,Argentine Conger,Conger spp.,0
+2014,2,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,17980
+2014,2,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,2940
+2014,2,Teleósteos,Corvina,Croaker,Micropogonias furnieri,1047011
+2014,2,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,1657
+2014,2,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,398
+2014,2,Teleósteos,Enguia,Common Eel,Conger orbignyanus,200
+2014,2,Teleósteos,Espada,Broadbill,Xiphias gladius,3512
+2014,2,Teleósteos,Ferrinho,Ferrinho,NA,500
+2014,2,Teleósteos,Galo,American John Dory,Zenopsis conchifer,28587
+2014,2,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,42728
+2014,2,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,11210
+2014,2,Teleósteos,Guaivira,Jack,Oligoplites spp.,3445
+2014,2,Teleósteos,Lanceta,Lanceta,NA,0
+2014,2,Teleósteos,Linguado,Flatfish,Paralichthys spp.,101349
+2014,2,Teleósteos,Linguado-areia,Flatfish,NA,52220
+2014,2,Teleósteos,Mangangá,Mangangá,NA,2490
+2014,2,Teleósteos,Maria-luiza,Maria-luiza,NA,40
+2014,2,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,319480
+2014,2,Teleósteos,Marimbá,Porgy,NA,6620
+2014,2,Teleósteos,Meca,Meca,NA,10085
+2014,2,Teleósteos,Merluza,Hake,Merluccius hubbsi,90340
+2014,2,Teleósteos,Miracéu,Stargazer,NA,780
+2014,2,Teleósteos,Namorado,Namorado,Pseudopercis spp.,360
+2014,2,Teleósteos,Olho-de-boi,Amberjack,NA,0
+2014,2,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,840
+2014,2,Teleósteos,Oveva,Cabezon,Larimus breviceps,200
+2014,2,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,276600
+2014,2,Teleósteos,Pampo,Pampo,Trachinotus spp.,1683
+2014,2,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,548
+2014,2,Teleósteos,Paru,Paru,NA,218
+2014,2,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,51500
+2014,2,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,25459
+2014,2,Teleósteos,Peixe-tábua,Mediterranean dealfish,Trachipterus trachipterus,0
+2014,2,Teleósteos,Pescada,Weakfish,Cynoscion spp.,63667
+2014,2,Teleósteos,Pescada-cambucu,Weakfish,NA,120
+2014,2,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,10140
+2014,2,Teleósteos,Pijirica,Pijirica,NA,42
+2014,2,Teleósteos,Prego,Prego,NA,1129
+2014,2,Teleósteos,Robalo,Snook,Centropomus spp.,73
+2014,2,Teleósteos,Roncador,Barred grunt,Conodon nobilis,1680
+2014,2,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,93
+2014,2,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,50090
+2014,2,Teleósteos,Sarrão,Sarrão,NA,180
+2014,2,Teleósteos,Sororoca,Sororoca,Scomberomorus,20
+2014,2,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,3800
+2014,2,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,1505
+2014,2,Teleósteos,Xarelete,Black jack,Caranx latus,10
+2014,2,Teleósteos,Xaréu,Black cavalli,Caranx hippos,64962
+2014,3,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,34384
+2014,3,Crustáceos,Camarão-cristalino,Shrimp,NA,53997
+2014,3,Crustáceos,Pitú,Pitú,NA,25508
+2014,3,Crustáceos,Sapateira,Edible crab,Cancer pagurus,1570
+2014,3,Elasmobrânquios,Cação-anequim,Shark,NA,2150
+2014,3,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,48455
+2014,3,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,20
+2014,3,Elasmobrânquios,Cação-cabeca-chata,Shark,NA,90
+2014,3,Elasmobrânquios,Cação-gato,Shark,NA,500
+2014,3,Elasmobrânquios,Cação-lombo-preto,Cação-lombo-preto,NA,15
+2014,3,Elasmobrânquios,Cação-martelo,Shark,NA,2065
+2014,3,Elasmobrânquios,Cações,Shark,Mustelus spp,10567
+2014,3,Elasmobrânquios,Caçonete,Shark,NA,2699
+2014,3,Elasmobrânquios,Emplastro,Emplastro,NA,72414
+2014,3,Elasmobrânquios,Machote,Spinner Shark,NA,150
+2014,3,Elasmobrânquios,Raia,Ray,NA,6104
+2014,3,Moluscos,Lula,Squid,Loligo sanpaulensis,5808
+2014,3,Moluscos,Polvo,Octopus,Octopus spp.,6996
+2014,3,Não Cadastrado,Mistura,Other fish,NA,205765
+2014,3,Não Cadastrado,Residuo,Residuo,NA,19774
+2014,3,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,80397
+2014,3,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,325280
+2014,3,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,285
+2014,3,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,4620
+2014,3,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,167
+2014,3,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,20765.5
+2014,3,Teleósteos,Atum,Blow goat,Auxis rochei,23066
+2014,3,Teleósteos,Bagre,Couma sea catfish,Sciades couma,4701
+2014,3,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,1615
+2014,3,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,13100
+2014,3,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,1535.5
+2014,3,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,1935402
+2014,3,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,223840
+2014,3,Teleósteos,Carapeba,Broad shad,Diapterus auratus,2600
+2014,3,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,224490
+2014,3,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,10
+2014,3,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,15418
+2014,3,Teleósteos,Cioba,Dog Snapper,Lutjanus analis,1535
+2014,3,Teleósteos,Congro,Argentine Conger,Conger spp.,5328
+2014,3,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,8700
+2014,3,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,5150
+2014,3,Teleósteos,Corvina,Croaker,Micropogonias furnieri,1310842
+2014,3,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,135
+2014,3,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,400
+2014,3,Teleósteos,Enguia,Common Eel,Conger orbignyanus,180
+2014,3,Teleósteos,Espada,Broadbill,Xiphias gladius,18072
+2014,3,Teleósteos,Galo,American John Dory,Zenopsis conchifer,890
+2014,3,Teleósteos,Galo-de-profundidade,American John Dory,Zenopsis conchifer,260
+2014,3,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,71845
+2014,3,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,20730
+2014,3,Teleósteos,Guaivira,Jack,Oligoplites spp.,3195
+2014,3,Teleósteos,Linguado,Flatfish,Paralichthys spp.,80334
+2014,3,Teleósteos,Linguado-areia,Flatfish,NA,44950
+2014,3,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,100
+2014,3,Teleósteos,Mangangá,Mangangá,NA,2100
+2014,3,Teleósteos,Maria-luiza,Maria-luiza,NA,20
+2014,3,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,326640
+2014,3,Teleósteos,Marimbá,Porgy,NA,220
+2014,3,Teleósteos,Meca,Meca,NA,13234
+2014,3,Teleósteos,Merluza,Hake,Merluccius hubbsi,99270
+2014,3,Teleósteos,Miracéu,Stargazer,NA,72
+2014,3,Teleósteos,Namorado,Namorado,Pseudopercis spp.,226
+2014,3,Teleósteos,Olho-de-boi,Amberjack,NA,500
+2014,3,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,40
+2014,3,Teleósteos,Oveva,Cabezon,Larimus breviceps,280
+2014,3,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,116406
+2014,3,Teleósteos,Pampo,Pampo,Trachinotus spp.,2130
+2014,3,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,440
+2014,3,Teleósteos,Paru,Paru,NA,40
+2014,3,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,210
+2014,3,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,59085
+2014,3,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,20097
+2014,3,Teleósteos,Pescada,Weakfish,Cynoscion spp.,43630
+2014,3,Teleósteos,Pescada-cambucu,Weakfish,NA,160
+2014,3,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,2720
+2014,3,Teleósteos,Pijirica,Pijirica,NA,80
+2014,3,Teleósteos,Prego,Prego,NA,4906
+2014,3,Teleósteos,Robalo,Snook,Centropomus spp.,104
+2014,3,Teleósteos,Roncador,Barred grunt,Conodon nobilis,80
+2014,3,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,5480
+2014,3,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,11902638.58
+2014,3,Teleósteos,Sarrão,Sarrão,NA,1310
+2014,3,Teleósteos,Tainha,Mullet,Mugil spp.,2840
+2014,3,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,5892
+2014,3,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,940
+2014,3,Teleósteos,Xarelete,Black jack,Caranx latus,87873
+2014,3,Teleósteos,Xixarro,Jack mackerel,Trachurus lathami,30770
+2014,4,Crustáceos,Camarão-cristalino,Shrimp,NA,99920
+2014,4,Crustáceos,Pitú,Pitú,NA,42609
+2014,4,Crustáceos,Sapateira,Edible crab,Cancer pagurus,680
+2014,4,Elasmobrânquios,Cação-anequim,Shark,NA,700
+2014,4,Elasmobrânquios,Cação-anjo,Shark,NA,220
+2014,4,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,18000
+2014,4,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,20
+2014,4,Elasmobrânquios,Cação-gato,Shark,NA,400
+2014,4,Elasmobrânquios,Cação-martelo,Shark,NA,1000
+2014,4,Elasmobrânquios,Cações,Shark,Mustelus spp,9903
+2014,4,Elasmobrânquios,Caçonete,Shark,NA,1072
+2014,4,Elasmobrânquios,Emplastro,Emplastro,NA,78897
+2014,4,Elasmobrânquios,Raia,Ray,NA,3938
+2014,4,Moluscos,Lula,Squid,Loligo sanpaulensis,750
+2014,4,Moluscos,Polvo,Octopus,Octopus spp.,2403
+2014,4,Não Cadastrado,Mistura,Other fish,NA,195151
+2014,4,Não Cadastrado,Residuo,Residuo,NA,70561
+2014,4,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,85146
+2014,4,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,237100
+2014,4,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,66
+2014,4,Teleósteos,Aipim,Brazilian flathead,Percophis brasiliensis,20
+2014,4,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,5653
+2014,4,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,48102
+2014,4,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,12338.5
+2014,4,Teleósteos,Bagre,Couma sea catfish,Sciades couma,7610
+2014,4,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,3300
+2014,4,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,8415
+2014,4,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,1642.5
+2014,4,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,1570118.5
+2014,4,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,167056
+2014,4,Teleósteos,Carapeba,Broad shad,Diapterus auratus,2000
+2014,4,Teleósteos,Carapicu,Broad shad,Diapterus auratus,280
+2014,4,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,299547
+2014,4,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,245837
+2014,4,Teleósteos,Congro,Argentine Conger,Conger spp.,12182
+2014,4,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,33400
+2014,4,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,4380
+2014,4,Teleósteos,Corvina,Croaker,Micropogonias furnieri,586615
+2014,4,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,995
+2014,4,Teleósteos,Enguia,Common Eel,Conger orbignyanus,872
+2014,4,Teleósteos,Espada,Broadbill,Xiphias gladius,12451
+2014,4,Teleósteos,Ferrinho,Ferrinho,NA,0
+2014,4,Teleósteos,Galo,American John Dory,Zenopsis conchifer,125363
+2014,4,Teleósteos,Galo-de-profundidade,American John Dory,Zenopsis conchifer,2650
+2014,4,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,27366
+2014,4,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,7709
+2014,4,Teleósteos,Guaivira,Jack,Oligoplites spp.,3460
+2014,4,Teleósteos,Linguado,Flatfish,Paralichthys spp.,64172
+2014,4,Teleósteos,Linguado-areia,Flatfish,NA,46438
+2014,4,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,37
+2014,4,Teleósteos,Mangangá,Mangangá,NA,1820
+2014,4,Teleósteos,Maria-luiza,Maria-luiza,NA,1740
+2014,4,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,203840
+2014,4,Teleósteos,Marimbá,Porgy,NA,40
+2014,4,Teleósteos,Meca,Meca,NA,6000
+2014,4,Teleósteos,Merluza,Hake,Merluccius hubbsi,61098
+2014,4,Teleósteos,Miracéu,Stargazer,NA,180
+2014,4,Teleósteos,Namorado,Namorado,Pseudopercis spp.,3118
+2014,4,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,3720
+2014,4,Teleósteos,Oveva,Cabezon,Larimus breviceps,1580
+2014,4,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,359826
+2014,4,Teleósteos,Pampo,Pampo,Trachinotus spp.,696
+2014,4,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,496
+2014,4,Teleósteos,Paru,Paru,NA,830
+2014,4,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,6890
+2014,4,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,8340
+2014,4,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,36669
+2014,4,Teleósteos,Pescada,Weakfish,Cynoscion spp.,14820
+2014,4,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,16000
+2014,4,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,240
+2014,4,Teleósteos,Pescada-cambucu,Weakfish,NA,2680
+2014,4,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,5520
+2014,4,Teleósteos,Prego,Prego,NA,1500
+2014,4,Teleósteos,Robalo,Snook,Centropomus spp.,221
+2014,4,Teleósteos,Roncador,Barred grunt,Conodon nobilis,2620
+2014,4,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,254099
+2014,4,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,2457601.8
+2014,4,Teleósteos,Sarrão,Sarrão,NA,40
+2014,4,Teleósteos,Serrinha,Atlantic spanish mackerel,Scomberomorus maculatus,20
+2014,4,Teleósteos,Sororoca,Sororoca,Scomberomorus,200
+2014,4,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,6796
+2014,4,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,1140
+2014,4,Teleósteos,Xarelete,Black jack,Caranx latus,450
+2014,5,Crustáceos,Camarão-cristalino,Shrimp,NA,58863
+2014,5,Crustáceos,Pitú,Pitú,NA,41271
+2014,5,Crustáceos,Sapateira,Edible crab,Cancer pagurus,20
+2014,5,Elasmobrânquios,Cação-anequim,Shark,NA,2528
+2014,5,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,67227
+2014,5,Elasmobrânquios,Cação-cola-fina,Cação-cola-fina,NA,200
+2014,5,Elasmobrânquios,Cação-gato,Shark,NA,360
+2014,5,Elasmobrânquios,Cação-martelo,Shark,NA,1029
+2014,5,Elasmobrânquios,Cações,Shark,Mustelus spp,4774
+2014,5,Elasmobrânquios,Caçonete,Shark,NA,1643
+2014,5,Elasmobrânquios,Emplastro,Emplastro,NA,49246
+2014,5,Elasmobrânquios,Raia,Ray,NA,8308
+2014,5,Elasmobrânquios,Ratinho,Ratinho,NA,1282
+2014,5,Moluscos,Calamar-argentino,Calamar-argentino,Illex argentinus,19000
+2014,5,Moluscos,Lula,Squid,Loligo sanpaulensis,560
+2014,5,Moluscos,Polvo,Octopus,Octopus spp.,725
+2014,5,Não Cadastrado,Mistura,Other fish,NA,254573
+2014,5,Não Cadastrado,Não discriminado,Não discriminado,NA,30000
+2014,5,Não Cadastrado,Residuo,Residuo,NA,56481
+2014,5,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,101960
+2014,5,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,212500
+2014,5,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,80
+2014,5,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,90
+2014,5,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,12575
+2014,5,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,10072
+2014,5,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,1282
+2014,5,Teleósteos,Atum,Blow goat,Auxis rochei,266
+2014,5,Teleósteos,Bagre,Couma sea catfish,Sciades couma,13325
+2014,5,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,2373
+2014,5,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,1933
+2014,5,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,19411
+2014,5,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,919562
+2014,5,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,79300
+2014,5,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,260
+2014,5,Teleósteos,Carapeba,Broad shad,Diapterus auratus,360
+2014,5,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,300832
+2014,5,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,79730
+2014,5,Teleósteos,Congro,Argentine Conger,Conger spp.,16798
+2014,5,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,41927
+2014,5,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,7592
+2014,5,Teleósteos,Corvina,Croaker,Micropogonias furnieri,713316
+2014,5,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,15217
+2014,5,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,9859
+2014,5,Teleósteos,Enguia,Common Eel,Conger orbignyanus,1380
+2014,5,Teleósteos,Espada,Broadbill,Xiphias gladius,4145
+2014,5,Teleósteos,Galo,American John Dory,Zenopsis conchifer,530
+2014,5,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,5280
+2014,5,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,8130
+2014,5,Teleósteos,Guaivira,Jack,Oligoplites spp.,2690
+2014,5,Teleósteos,Linguado,Flatfish,Paralichthys spp.,26603
+2014,5,Teleósteos,Linguado-areia,Flatfish,NA,34055
+2014,5,Teleósteos,Mangangá,Mangangá,NA,80
+2014,5,Teleósteos,Maria-luiza,Maria-luiza,NA,460
+2014,5,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,107720
+2014,5,Teleósteos,Marimbá,Porgy,NA,20
+2014,5,Teleósteos,Meca,Meca,NA,13361
+2014,5,Teleósteos,Merluza,Hake,Merluccius hubbsi,100050
+2014,5,Teleósteos,Miracéu,Stargazer,NA,40
+2014,5,Teleósteos,Namorado,Namorado,Pseudopercis spp.,346
+2014,5,Teleósteos,Olhete,Amberjack,Seriola lalandi,100
+2014,5,Teleósteos,Olho-de-boi,Amberjack,NA,127
+2014,5,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,120
+2014,5,Teleósteos,Oveva,Cabezon,Larimus breviceps,100
+2014,5,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,174286
+2014,5,Teleósteos,Pampo,Pampo,Trachinotus spp.,490
+2014,5,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,2920
+2014,5,Teleósteos,Paru,Paru,NA,719
+2014,5,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,4880
+2014,5,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,44263
+2014,5,Teleósteos,Pescada,Weakfish,Cynoscion spp.,15627
+2014,5,Teleósteos,Pescada-cambucu,Weakfish,NA,180
+2014,5,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,20
+2014,5,Teleósteos,Prego,Prego,NA,2739
+2014,5,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,717458
+2014,5,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,4681430
+2014,5,Teleósteos,Sarrão,Sarrão,NA,100
+2014,5,Teleósteos,Sororoca,Sororoca,Scomberomorus,20
+2014,5,Teleósteos,Tainha,Mullet,Mugil spp.,311937
+2014,5,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,8560
+2014,5,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,20
+2014,5,Teleósteos,Xarelete,Black jack,Caranx latus,80
+2014,5,Teleósteos,Xixarro,Jack mackerel,Trachurus lathami,19600
+2014,6,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,1350
+2014,6,Crustáceos,Camarão-cristalino,Shrimp,NA,700
+2014,6,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,56796
+2014,6,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,1100
+2014,6,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,112967
+2014,6,Crustáceos,Pitú,Pitú,NA,3120
+2014,6,Crustáceos,Sapateira,Edible crab,Cancer pagurus,10
+2014,6,Elasmobrânquios,Cação-anequim,Shark,NA,3116
+2014,6,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,50623
+2014,6,Elasmobrânquios,Cação-gato,Shark,NA,120
+2014,6,Elasmobrânquios,Cação-martelo,Shark,NA,15
+2014,6,Elasmobrânquios,Cações,Shark,Mustelus spp,9695
+2014,6,Elasmobrânquios,Caçonete,Shark,NA,277
+2014,6,Elasmobrânquios,Emplastro,Emplastro,NA,46020
+2014,6,Elasmobrânquios,Raia,Ray,NA,6858
+2014,6,Elasmobrânquios,Ratinho,Ratinho,NA,134
+2014,6,Moluscos,Calamar-argentino,Calamar-argentino,Illex argentinus,5300
+2014,6,Moluscos,Polvo,Octopus,Octopus spp.,125
+2014,6,Não Cadastrado,Mistura,Other fish,NA,177747
+2014,6,Não Cadastrado,Residuo,Residuo,NA,2100
+2014,6,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,188303
+2014,6,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,72500
+2014,6,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,430
+2014,6,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,7602
+2014,6,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,39740
+2014,6,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,11317
+2014,6,Teleósteos,Atum,Blow goat,Auxis rochei,47
+2014,6,Teleósteos,Bagre,Couma sea catfish,Sciades couma,27759
+2014,6,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,4060
+2014,6,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,3930
+2014,6,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,4153
+2014,6,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,825456
+2014,6,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,69320
+2014,6,Teleósteos,Carapeba,Broad shad,Diapterus auratus,540
+2014,6,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,289820
+2014,6,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,407100
+2014,6,Teleósteos,Cioba,Dog Snapper,Lutjanus analis,550
+2014,6,Teleósteos,Congro,Argentine Conger,Conger spp.,368
+2014,6,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,8305
+2014,6,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,3060
+2014,6,Teleósteos,Corvina,Croaker,Micropogonias furnieri,155199
+2014,6,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,24540
+2014,6,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,2841
+2014,6,Teleósteos,Enguia,Common Eel,Conger orbignyanus,500
+2014,6,Teleósteos,Espada,Broadbill,Xiphias gladius,7019
+2014,6,Teleósteos,Galo,American John Dory,Zenopsis conchifer,66350
+2014,6,Teleósteos,Galo-de-profundidade,American John Dory,Zenopsis conchifer,100
+2014,6,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,19810
+2014,6,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,19925
+2014,6,Teleósteos,Guaivira,Jack,Oligoplites spp.,1160
+2014,6,Teleósteos,Linguado,Flatfish,Paralichthys spp.,55146
+2014,6,Teleósteos,Linguado-areia,Flatfish,NA,21932
+2014,6,Teleósteos,Mangangá,Mangangá,NA,420
+2014,6,Teleósteos,Maria-luiza,Maria-luiza,NA,30020
+2014,6,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,91200
+2014,6,Teleósteos,Marimbá,Porgy,NA,40
+2014,6,Teleósteos,Meca,Meca,NA,23721
+2014,6,Teleósteos,Merluza,Hake,Merluccius hubbsi,44843
+2014,6,Teleósteos,Miracéu,Stargazer,NA,40
+2014,6,Teleósteos,Namorado,Namorado,Pseudopercis spp.,68
+2014,6,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,60
+2014,6,Teleósteos,Oveva,Cabezon,Larimus breviceps,80
+2014,6,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,281395
+2014,6,Teleósteos,Pampo,Pampo,Trachinotus spp.,32930
+2014,6,Teleósteos,Papa-moscas,Papa-moscas,NA,5000
+2014,6,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,3510
+2014,6,Teleósteos,Paru,Paru,NA,38110
+2014,6,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,6680
+2014,6,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,24917
+2014,6,Teleósteos,Pescada,Weakfish,Cynoscion spp.,10080
+2014,6,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,700
+2014,6,Teleósteos,Pescada-cambucu,Weakfish,NA,300
+2014,6,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,723
+2014,6,Teleósteos,Prego,Prego,NA,670
+2014,6,Teleósteos,Roncador,Barred grunt,Conodon nobilis,40
+2014,6,Teleósteos,Sardinha-cascuda,Blackbill sprat,Harengula clupeola,0
+2014,6,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,191184
+2014,6,Teleósteos,Sardinha-mole,Sardinha-mole,NA,0
+2014,6,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,1149068
+2014,6,Teleósteos,Tainha,Mullet,Mugil spp.,876183
+2014,6,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,9200
+2014,6,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,160
+2014,6,Teleósteos,Xarelete,Black jack,Caranx latus,40
+2014,7,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,300
+2014,7,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,21030
+2014,7,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,6200
+2014,7,Elasmobrânquios,Cação-anequim,Shark,NA,18
+2014,7,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,365
+2014,7,Elasmobrânquios,Cação-martelo,Shark,NA,800
+2014,7,Elasmobrânquios,Cações,Shark,Mustelus spp,7282
+2014,7,Elasmobrânquios,Caçonete,Shark,NA,3686
+2014,7,Elasmobrânquios,Emplastro,Emplastro,NA,8550
+2014,7,Elasmobrânquios,Raia,Ray,NA,140
+2014,7,Moluscos,Polvo,Octopus,Octopus spp.,0
+2014,7,Não Cadastrado,Mistura,Other fish,NA,48054
+2014,7,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,2910
+2014,7,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,10000
+2014,7,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,500
+2014,7,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,80
+2014,7,Teleósteos,Bagre,Couma sea catfish,Sciades couma,9275
+2014,7,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,1720
+2014,7,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,30
+2014,7,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,133243
+2014,7,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,15280
+2014,7,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,20000
+2014,7,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,30100
+2014,7,Teleósteos,Corvina,Croaker,Micropogonias furnieri,501580
+2014,7,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,67809
+2014,7,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,365
+2014,7,Teleósteos,Espada,Broadbill,Xiphias gladius,933
+2014,7,Teleósteos,Galo,American John Dory,Zenopsis conchifer,17514
+2014,7,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,12340
+2014,7,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,22455
+2014,7,Teleósteos,Guaivira,Jack,Oligoplites spp.,3015
+2014,7,Teleósteos,Linguado,Flatfish,Paralichthys spp.,102220
+2014,7,Teleósteos,Linguado-areia,Flatfish,NA,407
+2014,7,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,31198
+2014,7,Teleósteos,Merluza,Hake,Merluccius hubbsi,650
+2014,7,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,400
+2014,7,Teleósteos,Oveva,Cabezon,Larimus breviceps,20
+2014,7,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,139280
+2014,7,Teleósteos,Pampo,Pampo,Trachinotus spp.,42480
+2014,7,Teleósteos,Papa-moscas,Papa-moscas,NA,5000
+2014,7,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,100
+2014,7,Teleósteos,Paru,Paru,NA,100
+2014,7,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,3250
+2014,7,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,20
+2014,7,Teleósteos,Pescada,Weakfish,Cynoscion spp.,4080
+2014,7,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,120
+2014,7,Teleósteos,Pescada-cambucu,Weakfish,NA,90
+2014,7,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,1180
+2014,7,Teleósteos,Roncador,Barred grunt,Conodon nobilis,100
+2014,7,Teleósteos,Tainha,Mullet,Mugil spp.,40
+2014,7,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,4020
+2014,7,Teleósteos,Xarelete,Black jack,Caranx latus,7930
+2014,8,Elasmobrânquios,Cação-anequim,Shark,NA,1418
+2014,8,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,20
+2014,8,Elasmobrânquios,Cações,Shark,Mustelus spp,2265
+2014,8,Elasmobrânquios,Caçonete,Shark,NA,1297
+2014,8,Elasmobrânquios,Emplastro,Emplastro,NA,524
+2014,8,Elasmobrânquios,Raia,Ray,NA,100
+2014,8,Elasmobrânquios,Ratinho,Ratinho,NA,303
+2014,8,Não Cadastrado,Mistura,Other fish,NA,7093
+2014,8,Não Cadastrado,Residuo,Residuo,NA,313
+2014,8,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,15795
+2014,8,Teleósteos,Atum,Blow goat,Auxis rochei,154
+2014,8,Teleósteos,Bagre,Couma sea catfish,Sciades couma,1360
+2014,8,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,2620
+2014,8,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,20
+2014,8,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,9640
+2014,8,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,24860
+2014,8,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,50
+2014,8,Teleósteos,Congro,Argentine Conger,Conger spp.,111
+2014,8,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,2800
+2014,8,Teleósteos,Corvina,Croaker,Micropogonias furnieri,277325
+2014,8,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,23583
+2014,8,Teleósteos,Enguia,Common Eel,Conger orbignyanus,180
+2014,8,Teleósteos,Espada,Broadbill,Xiphias gladius,19503
+2014,8,Teleósteos,Galo,American John Dory,Zenopsis conchifer,14830
+2014,8,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,5540
+2014,8,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,10150
+2014,8,Teleósteos,Guaivira,Jack,Oligoplites spp.,1260
+2014,8,Teleósteos,Linguado,Flatfish,Paralichthys spp.,2366
+2014,8,Teleósteos,Linguado-areia,Flatfish,NA,143
+2014,8,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,105
+2014,8,Teleósteos,Mangangá,Mangangá,NA,420
+2014,8,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,23336
+2014,8,Teleósteos,Marimbá,Porgy,NA,40
+2014,8,Teleósteos,Meca,Meca,NA,5236
+2014,8,Teleósteos,Merluza,Hake,Merluccius hubbsi,520
+2014,8,Teleósteos,Olhete,Amberjack,Seriola lalandi,160
+2014,8,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,120
+2014,8,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,780
+2014,8,Teleósteos,Pampo,Pampo,Trachinotus spp.,210
+2014,8,Teleósteos,Paru,Paru,NA,480
+2014,8,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,660
+2014,8,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,40
+2014,8,Teleósteos,Pescada,Weakfish,Cynoscion spp.,30856
+2014,8,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,1080
+2014,8,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,128
+2014,8,Teleósteos,Pescada-cambucu,Weakfish,NA,400
+2014,8,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,2980
+2014,8,Teleósteos,Roncador,Barred grunt,Conodon nobilis,40
+2014,8,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,162530
+2014,8,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,1935686
+2014,8,Teleósteos,Serrinha,Atlantic spanish mackerel,Scomberomorus maculatus,30
+2014,8,Teleósteos,Sororoca,Sororoca,Scomberomorus,90
+2014,8,Teleósteos,Tainha,Mullet,Mugil spp.,100
+2014,8,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,400
+2014,8,Teleósteos,Xarelete,Black jack,Caranx latus,520
+2014,8,Teleósteos,Xixarro,Jack mackerel,Trachurus lathami,9600
+2014,9,Elasmobrânquios,Cação-anequim,Shark,NA,629
+2014,9,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,3666
+2014,9,Elasmobrânquios,Cações,Shark,Mustelus spp,573
+2014,9,Elasmobrânquios,Caçonete,Shark,NA,349
+2014,9,Elasmobrânquios,Emplastro,Emplastro,NA,551
+2014,9,Elasmobrânquios,Ratinho,Ratinho,NA,357
+2014,9,Não Cadastrado,Mistura,Other fish,NA,4035
+2014,9,Não Cadastrado,Residuo,Residuo,NA,7653
+2014,9,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,3360
+2014,9,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,52
+2014,9,Teleósteos,Atum,Blow goat,Auxis rochei,170
+2014,9,Teleósteos,Bagre,Couma sea catfish,Sciades couma,680
+2014,9,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,2580
+2014,9,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,5840
+2014,9,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,3000
+2014,9,Teleósteos,Carapeba,Broad shad,Diapterus auratus,140
+2014,9,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,9110
+2014,9,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,310
+2014,9,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,1520
+2014,9,Teleósteos,Corvina,Croaker,Micropogonias furnieri,248393
+2014,9,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,4083
+2014,9,Teleósteos,Enguia,Common Eel,Conger orbignyanus,120
+2014,9,Teleósteos,Espada,Broadbill,Xiphias gladius,2050
+2014,9,Teleósteos,Galo,American John Dory,Zenopsis conchifer,130
+2014,9,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,38120
+2014,9,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,14316
+2014,9,Teleósteos,Guaivira,Jack,Oligoplites spp.,1480
+2014,9,Teleósteos,Linguado,Flatfish,Paralichthys spp.,1244
+2014,9,Teleósteos,Mangangá,Mangangá,NA,300
+2014,9,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,540
+2014,9,Teleósteos,Marimbá,Porgy,NA,20
+2014,9,Teleósteos,Meca,Meca,NA,5209
+2014,9,Teleósteos,Merluza,Hake,Merluccius hubbsi,260
+2014,9,Teleósteos,Miracéu,Stargazer,NA,20
+2014,9,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,60
+2014,9,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,1830
+2014,9,Teleósteos,Pampo,Pampo,Trachinotus spp.,630
+2014,9,Teleósteos,Paru,Paru,NA,573
+2014,9,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,780
+2014,9,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,180
+2014,9,Teleósteos,Pescada,Weakfish,Cynoscion spp.,47520
+2014,9,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,840
+2014,9,Teleósteos,Pescada-bicuda,Pescada-bicuda,NA,100
+2014,9,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,1067
+2014,9,Teleósteos,Pescada-cambucu,Weakfish,NA,3360
+2014,9,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,8540
+2014,9,Teleósteos,Roncador,Barred grunt,Conodon nobilis,180
+2014,9,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,10000
+2014,9,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,1107004
+2014,9,Teleósteos,Serrinha,Atlantic spanish mackerel,Scomberomorus maculatus,20
+2014,9,Teleósteos,Sororoca,Sororoca,Scomberomorus,100
+2014,9,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,20
+2014,9,Teleósteos,Xarelete,Black jack,Caranx latus,9730
+2014,9,Teleósteos,Xixarro,Jack mackerel,Trachurus lathami,14330
+2014,10,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,45
+2014,10,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,9675
+2014,10,Elasmobrânquios,Cação-anequim,Shark,NA,1179
+2014,10,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,5198
+2014,10,Elasmobrânquios,Cações,Shark,Mustelus spp,454
+2014,10,Elasmobrânquios,Caçonete,Shark,NA,300
+2014,10,Elasmobrânquios,Emplastro,Emplastro,NA,479
+2014,10,Elasmobrânquios,Ratinho,Ratinho,NA,444
+2014,10,Moluscos,Lula,Squid,Loligo sanpaulensis,147
+2014,10,Não Cadastrado,Mistura,Other fish,NA,3557
+2014,10,Não Cadastrado,Ovas,Ovas,NA,318
+2014,10,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,859
+2014,10,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,42
+2014,10,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,37
+2014,10,Teleósteos,Atum,Blow goat,Auxis rochei,549
+2014,10,Teleósteos,Bagre,Couma sea catfish,Sciades couma,3035
+2014,10,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,1260
+2014,10,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,1080
+2014,10,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,13210
+2014,10,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,11740
+2014,10,Teleósteos,Cioba,Dog Snapper,Lutjanus analis,150
+2014,10,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,700
+2014,10,Teleósteos,Corvina,Croaker,Micropogonias furnieri,251453
+2014,10,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,17578
+2014,10,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,85040
+2014,10,Teleósteos,Enguia,Common Eel,Conger orbignyanus,200
+2014,10,Teleósteos,Espada,Broadbill,Xiphias gladius,2625
+2014,10,Teleósteos,Galo,American John Dory,Zenopsis conchifer,270
+2014,10,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,15632
+2014,10,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,10039
+2014,10,Teleósteos,Guaivira,Jack,Oligoplites spp.,1110
+2014,10,Teleósteos,Linguado,Flatfish,Paralichthys spp.,3022
+2014,10,Teleósteos,Linguado-areia,Flatfish,NA,36
+2014,10,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,32
+2014,10,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,7860
+2014,10,Teleósteos,Meca,Meca,NA,13832
+2014,10,Teleósteos,Merluza,Hake,Merluccius hubbsi,160
+2014,10,Teleósteos,Miracéu,Stargazer,NA,340
+2014,10,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,400
+2014,10,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,209027
+2014,10,Teleósteos,Pampo,Pampo,Trachinotus spp.,60
+2014,10,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,260
+2014,10,Teleósteos,Paru,Paru,NA,20
+2014,10,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,140
+2014,10,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,1990
+2014,10,Teleósteos,Peixe-tábua,Mediterranean dealfish,Trachipterus trachipterus,80
+2014,10,Teleósteos,Pescada,Weakfish,Cynoscion spp.,14120
+2014,10,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,10400
+2014,10,Teleósteos,Pescada-bicuda,Pescada-bicuda,NA,20
+2014,10,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,2090
+2014,10,Teleósteos,Pescada-cambucu,Weakfish,NA,20
+2014,10,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,1115
+2014,10,Teleósteos,Prego,Prego,NA,41
+2014,10,Teleósteos,Robalo,Snook,Centropomus spp.,220
+2014,10,Teleósteos,Roncador,Barred grunt,Conodon nobilis,630
+2014,10,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,2300
+2014,10,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,1101180
+2014,10,Teleósteos,Sororoca,Sororoca,Scomberomorus,40
+2014,10,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,2300
+2014,10,Teleósteos,Xarelete,Black jack,Caranx latus,1850
+2014,11,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,2646
+2014,11,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,195
+2014,11,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,1045
+2014,11,Elasmobrânquios,Cação-anequim,Shark,NA,998
+2014,11,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,1651
+2014,11,Elasmobrânquios,Cações,Shark,Mustelus spp,500
+2014,11,Elasmobrânquios,Caçonete,Shark,NA,40
+2014,11,Elasmobrânquios,Emplastro,Emplastro,NA,510
+2014,11,Elasmobrânquios,Ratinho,Ratinho,NA,14
+2014,11,Não Cadastrado,Mistura,Other fish,NA,1027
+2014,11,Não Cadastrado,Ovas,Ovas,NA,1111
+2014,11,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,630
+2014,11,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,273
+2014,11,Teleósteos,Atum,Blow goat,Auxis rochei,463
+2014,11,Teleósteos,Bagre,Couma sea catfish,Sciades couma,210
+2014,11,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,240
+2014,11,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,16
+2014,11,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,1840
+2014,11,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,32490
+2014,11,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,50
+2014,11,Teleósteos,Corvina,Croaker,Micropogonias furnieri,160942
+2014,11,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,81513
+2014,11,Teleósteos,Galo,American John Dory,Zenopsis conchifer,320
+2014,11,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,7050
+2014,11,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,3170
+2014,11,Teleósteos,Linguado,Flatfish,Paralichthys spp.,1662
+2014,11,Teleósteos,Linguado-areia,Flatfish,NA,540
+2014,11,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,7
+2014,11,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,8070
+2014,11,Teleósteos,Marimbá,Porgy,NA,50
+2014,11,Teleósteos,Meca,Meca,NA,3645
+2014,11,Teleósteos,Merluza,Hake,Merluccius hubbsi,80
+2014,11,Teleósteos,Miracéu,Stargazer,NA,140
+2014,11,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,150
+2014,11,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,60
+2014,11,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,108
+2014,11,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,1600
+2014,11,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,100
+2014,11,Teleósteos,Pescada,Weakfish,Cynoscion spp.,680
+2014,11,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,1430
+2014,11,Teleósteos,Prego,Prego,NA,26
+2014,11,Teleósteos,Robalo,Snook,Centropomus spp.,60
+2014,11,Teleósteos,Roncador,Barred grunt,Conodon nobilis,1400
+2014,11,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,400
+2014,12,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,13000
+2014,12,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,200
+2014,12,Elasmobrânquios,Cação-anjo,Shark,NA,120
+2014,12,Elasmobrânquios,Cações,Shark,Mustelus spp,260
+2014,12,Elasmobrânquios,Emplastro,Emplastro,NA,80
+2014,12,Moluscos,Lula,Squid,Loligo sanpaulensis,200
+2014,12,Não Cadastrado,Mistura,Other fish,NA,7506
+2014,12,Não Cadastrado,Ovas,Ovas,NA,150
+2014,12,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,2580
+2014,12,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,22
+2014,12,Teleósteos,Bagre,Couma sea catfish,Sciades couma,2560
+2014,12,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,1040
+2014,12,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,20
+2014,12,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,74600
+2014,12,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,4610
+2014,12,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,64680
+2014,12,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,1200
+2014,12,Teleósteos,Corvina,Croaker,Micropogonias furnieri,170648
+2014,12,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,9260
+2014,12,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,570
+2014,12,Teleósteos,Espada,Broadbill,Xiphias gladius,2520
+2014,12,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,10460
+2014,12,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,3480
+2014,12,Teleósteos,Guaivira,Jack,Oligoplites spp.,1180
+2014,12,Teleósteos,Linguado,Flatfish,Paralichthys spp.,3656
+2014,12,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,400
+2014,12,Teleósteos,Mangangá,Mangangá,NA,960
+2014,12,Teleósteos,Maria-luiza,Maria-luiza,NA,20
+2014,12,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,77930
+2014,12,Teleósteos,Merluza,Hake,Merluccius hubbsi,60
+2014,12,Teleósteos,Miracéu,Stargazer,NA,280
+2014,12,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,600
+2014,12,Teleósteos,Pescada,Weakfish,Cynoscion spp.,54890
+2014,12,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,13730
+2014,12,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,310
+2014,12,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,560
+2015,2,Não Cadastrado,Mistura,Other fish,NA,10000
+2015,2,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,0
+2015,2,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,618100
+2015,2,Teleósteos,Xarelete,Black jack,Caranx latus,0
+2015,3,Elasmobrânquios,Cações,Shark,Mustelus spp,8474
+2015,3,Elasmobrânquios,Emplastro,Emplastro,NA,1643
+2015,3,Não Cadastrado,Mistura,Other fish,NA,860
+2015,3,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,480
+2015,3,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,3000
+2015,3,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,3000
+2015,3,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,4253
+2015,3,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,211000
+2015,3,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,5254
+2015,3,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,20
+2015,3,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,17160
+2015,3,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,27900
+2015,3,Teleósteos,Congro,Argentine Conger,Conger spp.,72
+2015,3,Teleósteos,Corvina,Croaker,Micropogonias furnieri,40404
+2015,3,Teleósteos,Enguia,Common Eel,Conger orbignyanus,440
+2015,3,Teleósteos,Espada,Broadbill,Xiphias gladius,400
+2015,3,Teleósteos,Galo,American John Dory,Zenopsis conchifer,1000
+2015,3,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,20
+2015,3,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,40
+2015,3,Teleósteos,Guaivira,Jack,Oligoplites spp.,20
+2015,3,Teleósteos,Linguado,Flatfish,Paralichthys spp.,3552
+2015,3,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,5760
+2015,3,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,329147
+2015,3,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,320
+2015,3,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,200
+2015,3,Teleósteos,Pescada,Weakfish,Cynoscion spp.,51
+2015,3,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,228020
+2015,3,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,7413284
+2015,3,Teleósteos,Serrinha,Atlantic spanish mackerel,Scomberomorus maculatus,60
+2015,3,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,500
+2015,3,Teleósteos,Xaréu,Black cavalli,Caranx hippos,1000
+2015,3,Teleósteos,Xixarro,Jack mackerel,Trachurus lathami,4250
+2015,4,Crustáceos,Sapateira,Edible crab,Cancer pagurus,1200
+2015,4,Elasmobrânquios,Emplastro,Emplastro,NA,6000
+2015,4,Moluscos,Calamar-argentino,Calamar-argentino,Illex argentinus,3000
+2015,4,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,5000
+2015,4,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,20000
+2015,4,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,5000
+2015,4,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,25300
+2015,4,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,646000
+2015,4,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,4000
+2015,4,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,1000
+2015,4,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,1000
+2015,4,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,1800
+2015,4,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,500
+2015,4,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,1000
+2015,4,Teleósteos,Linguado,Flatfish,Paralichthys spp.,1800
+2015,4,Teleósteos,Linguado-areia,Flatfish,NA,5500
+2015,4,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,1000
+2015,4,Teleósteos,Merluza,Hake,Merluccius hubbsi,30000
+2015,4,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,145800
+2015,4,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,2020
+2015,4,Teleósteos,Sardinha-cascuda,Blackbill sprat,Harengula clupeola,120
+2015,4,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,363800
+2015,4,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,2964323
+2015,5,Moluscos,Calamar-argentino,Calamar-argentino,Illex argentinus,5000
+2015,5,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,40000
+2015,5,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,2000
+2015,5,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,2400
+2015,5,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,871000
+2015,5,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,5000
+2015,5,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,2000
+2015,5,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,550
+2015,5,Teleósteos,Espada,Broadbill,Xiphias gladius,18000
+2015,5,Teleósteos,Galo,American John Dory,Zenopsis conchifer,17500
+2015,5,Teleósteos,Merluza,Hake,Merluccius hubbsi,8000
+2015,5,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,221700
+2015,5,Teleósteos,Paru,Paru,NA,36000
+2015,5,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,2500
+2015,5,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,365300
+2015,5,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,5132100
+2015,5,Teleósteos,Xixarro,Jack mackerel,Trachurus lathami,600
+2015,6,Não Cadastrado,Mistura,Other fish,NA,18582
+2015,6,Não Cadastrado,Residuo,Residuo,NA,120
+2015,6,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,135000
+2015,6,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,3200
+2015,6,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,100
+2015,6,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,5100
+2015,6,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,343000
+2015,6,Teleósteos,Corvina,Croaker,Micropogonias furnieri,1778
+2015,6,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,500
+2015,6,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,2285
+2015,6,Teleósteos,Espada,Broadbill,Xiphias gladius,6568
+2015,6,Teleósteos,Galo,American John Dory,Zenopsis conchifer,65280
+2015,6,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,20
+2015,6,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,822
+2015,6,Teleósteos,Guaivira,Jack,Oligoplites spp.,180
+2015,6,Teleósteos,Linguado,Flatfish,Paralichthys spp.,14
+2015,6,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,20
+2015,6,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,210800
+2015,6,Teleósteos,Pampo,Pampo,Trachinotus spp.,600
+2015,6,Teleósteos,Paru,Paru,NA,180
+2015,6,Teleósteos,Pescada,Weakfish,Cynoscion spp.,420
+2015,6,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,20
+2015,6,Teleósteos,Pescada-bicuda,Pescada-bicuda,NA,20
+2015,6,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,20
+2015,6,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,110000
+2015,6,Teleósteos,Sardinha-mole,Sardinha-mole,NA,0
+2015,6,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,1260850
+2015,6,Teleósteos,Tainha,Mullet,Mugil spp.,1595882
+2015,6,Teleósteos,Xaréu,Black cavalli,Caranx hippos,180
+2015,6,Teleósteos,Xixarro,Jack mackerel,Trachurus lathami,20000
+2015,7,Elasmobrânquios,Emplastro,Emplastro,NA,6000
+2015,7,Não Cadastrado,Mistura,Other fish,NA,8621
+2015,7,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,50000
+2015,7,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,15500
+2015,7,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,2000
+2015,7,Teleósteos,Bagre,Couma sea catfish,Sciades couma,80
+2015,7,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,1080
+2015,7,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,425000
+2015,7,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,100000
+2015,7,Teleósteos,Corvina,Croaker,Micropogonias furnieri,3334
+2015,7,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,8530
+2015,7,Teleósteos,Espada,Broadbill,Xiphias gladius,2903
+2015,7,Teleósteos,Galo,American John Dory,Zenopsis conchifer,45170
+2015,7,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,35040
+2015,7,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,1660
+2015,7,Teleósteos,Guaivira,Jack,Oligoplites spp.,959
+2015,7,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,12000
+2015,7,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,406320
+2015,7,Teleósteos,Pampo,Pampo,Trachinotus spp.,20
+2015,7,Teleósteos,Paru,Paru,NA,960
+2015,7,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,20
+2015,7,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,670
+2015,7,Teleósteos,Tainha,Mullet,Mugil spp.,408738
+2015,11,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,16817
+2015,11,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,753
+2015,11,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,1101
+2015,11,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,3902
+2015,11,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,31
+2015,11,Teleósteos,Corvina,Croaker,Micropogonias furnieri,7394
+2015,11,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,2857
+2015,11,Teleósteos,Enguia,Common Eel,Conger orbignyanus,6
+2015,11,Teleósteos,Espada,Broadbill,Xiphias gladius,225
+2015,11,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,1700
+2015,11,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,17
+2015,11,Teleósteos,Guaivira,Jack,Oligoplites spp.,17
+2015,11,Teleósteos,Linguado,Flatfish,Paralichthys spp.,168
+2015,11,Teleósteos,Mangangá,Mangangá,NA,1640
+2015,11,Teleósteos,Maria-luiza,Maria-luiza,NA,8
+2015,11,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,3177
+2015,11,Teleósteos,Miracéu,Stargazer,NA,298
+2015,11,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,27
+2015,11,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,369
+2015,11,Teleósteos,Pescada,Weakfish,Cynoscion spp.,727
+2015,11,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,280
+2015,11,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,7
+2015,12,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,100
+2015,12,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,300
+2015,12,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,52700
+2015,12,Teleósteos,Corvina,Croaker,Micropogonias furnieri,7017500
+2015,12,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,16100
+2015,12,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,500
+2016,1,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,1420
+2016,1,Elasmobrânquios,Emplastro,Emplastro,NA,3300
+2016,1,Não Cadastrado,Mistura,Other fish,NA,1260
+2016,1,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,10860
+2016,1,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,20
+2016,1,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,4807.5
+2016,1,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,3300
+2016,1,Teleósteos,Cascudo,Atlantic searobin,Prionotus punctatus,2240
+2016,1,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,340
+2016,1,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,20
+2016,1,Teleósteos,Corvina,Croaker,Micropogonias furnieri,14020
+2016,1,Teleósteos,Enguia,Common Eel,Conger orbignyanus,80
+2016,1,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,20
+2016,1,Teleósteos,Linguado-areia,Flatfish,NA,5560
+2016,1,Teleósteos,Mangangá,Mangangá,NA,1580
+2016,1,Teleósteos,Maria-luiza,Maria-luiza,NA,20
+2016,1,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,1020
+2016,1,Teleósteos,Merluza,Hake,Merluccius hubbsi,560
+2016,1,Teleósteos,Namorado,Namorado,Pseudopercis spp.,20
+2016,1,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,1000
+2016,1,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,760
+2016,1,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,380
+2016,2,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,144752
+2016,2,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,3014
+2016,2,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,340
+2016,2,Elasmobrânquios,Emplastro,Emplastro,NA,9620
+2016,2,Elasmobrânquios,Raia,Ray,NA,176
+2016,2,Não Cadastrado,Mistura,Other fish,NA,3899
+2016,2,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,49153
+2016,2,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,20
+2016,2,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,808
+2016,2,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,44210
+2016,2,Teleósteos,Cascudo,Atlantic searobin,Prionotus punctatus,3120
+2016,2,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,10580
+2016,2,Teleósteos,Congro,Argentine Conger,Conger spp.,80
+2016,2,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,360
+2016,2,Teleósteos,Corvina,Croaker,Micropogonias furnieri,74789
+2016,2,Teleósteos,Enguia,Common Eel,Conger orbignyanus,40
+2016,2,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,1020
+2016,2,Teleósteos,Linguado,Flatfish,Paralichthys spp.,20
+2016,2,Teleósteos,Linguado-areia,Flatfish,NA,2504
+2016,2,Teleósteos,Mangangá,Mangangá,NA,460
+2016,2,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,820
+2016,2,Teleósteos,Merluza,Hake,Merluccius hubbsi,1600
+2016,2,Teleósteos,Namorado,Namorado,Pseudopercis spp.,60
+2016,2,Teleósteos,Olho-de-boi,Amberjack,NA,320
+2016,2,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,40
+2016,2,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,1260
+2016,2,Teleósteos,Pescada,Weakfish,Cynoscion spp.,1240
+2016,2,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,1140
+2016,2,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,283
+2016,3,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,21204
+2016,3,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,234
+2016,3,Elasmobrânquios,Emplastro,Emplastro,NA,5060
+2016,3,Elasmobrânquios,Raia,Ray,NA,40
+2016,3,Não Cadastrado,Mistura,Other fish,NA,1100
+2016,3,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,51640
+2016,3,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,360
+2016,3,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,16760
+2016,3,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,14360
+2016,3,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,380
+2016,3,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,740
+2016,3,Teleósteos,Corvina,Croaker,Micropogonias furnieri,51600
+2016,3,Teleósteos,Enguia,Common Eel,Conger orbignyanus,20
+2016,3,Teleósteos,Espada,Broadbill,Xiphias gladius,20
+2016,3,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,9420
+2016,3,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,400
+2016,3,Teleósteos,Linguado-areia,Flatfish,NA,1300
+2016,3,Teleósteos,Mangangá,Mangangá,NA,20
+2016,3,Teleósteos,Maria-luiza,Maria-luiza,NA,40
+2016,3,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,5200
+2016,3,Teleósteos,Marimbá,Porgy,NA,20
+2016,3,Teleósteos,Merluza,Hake,Merluccius hubbsi,480
+2016,3,Teleósteos,Miracéu,Stargazer,NA,20
+2016,3,Teleósteos,Olho-de-boi,Amberjack,NA,80
+2016,3,Teleósteos,Pampo,Pampo,Trachinotus spp.,60
+2016,3,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,60
+2016,3,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,540
+2016,3,Teleósteos,Pescada,Weakfish,Cynoscion spp.,480
+2016,3,Teleósteos,Pescada-cambucu,Weakfish,NA,100
+2016,3,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,36700
+2016,3,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,452000
+2016,3,Teleósteos,Sarrão,Sarrão,NA,580
+2016,3,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,100
+2016,4,Crustáceos,Camarão-cristalino,Shrimp,NA,12600
+2016,4,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,260
+2016,4,Elasmobrânquios,Emplastro,Emplastro,NA,12600
+2016,4,Elasmobrânquios,Raia,Ray,NA,205
+2016,4,Moluscos,Polvo,Octopus,Octopus spp.,167
+2016,4,Não Cadastrado,Mistura,Other fish,NA,1552
+2016,4,Não Cadastrado,Não discriminado,Não discriminado,NA,2281.4
+2016,4,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,42040
+2016,4,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,123
+2016,4,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,4441.5
+2016,4,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,133.3
+2016,4,Teleósteos,Atum,Blow goat,Auxis rochei,35
+2016,4,Teleósteos,Bagre,Couma sea catfish,Sciades couma,220
+2016,4,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,96
+2016,4,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,520
+2016,4,Teleósteos,Bonito,skipjack tuna,Auxis rochei,300
+2016,4,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,265
+2016,4,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,100074.1
+2016,4,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,36260
+2016,4,Teleósteos,Cascudo,Atlantic searobin,Prionotus punctatus,280
+2016,4,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,14160
+2016,4,Teleósteos,Congro,Argentine Conger,Conger spp.,1540
+2016,4,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,180
+2016,4,Teleósteos,Corvina,Croaker,Micropogonias furnieri,32840
+2016,4,Teleósteos,Enguia,Common Eel,Conger orbignyanus,60
+2016,4,Teleósteos,Espada,Broadbill,Xiphias gladius,220
+2016,4,Teleósteos,Galo,American John Dory,Zenopsis conchifer,40
+2016,4,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,23480
+2016,4,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,1500
+2016,4,Teleósteos,Guaivira,Jack,Oligoplites spp.,60
+2016,4,Teleósteos,Linguado-areia,Flatfish,NA,2340
+2016,4,Teleósteos,Mangangá,Mangangá,NA,120
+2016,4,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,6780
+2016,4,Teleósteos,Merluza,Hake,Merluccius hubbsi,2780
+2016,4,Teleósteos,Namorado,Namorado,Pseudopercis spp.,100
+2016,4,Teleósteos,Olho-de-boi,Amberjack,NA,460
+2016,4,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,12000
+2016,4,Teleósteos,Papa-moscas,Papa-moscas,NA,100
+2016,4,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,40
+2016,4,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,4020
+2016,4,Teleósteos,Pescada,Weakfish,Cynoscion spp.,220
+2016,4,Teleósteos,Pescada-cambucu,Weakfish,NA,100
+2016,4,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,201000
+2016,4,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,1685049
+2016,4,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,680
+2016,4,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,460
+2016,5,Crustáceos,Camarão-cristalino,Shrimp,NA,5085
+2016,5,Elasmobrânquios,Cação-anequim,Shark,NA,200
+2016,5,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,4000
+2016,5,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,60
+2016,5,Elasmobrânquios,Emplastro,Emplastro,NA,14683
+2016,5,Elasmobrânquios,Raia,Ray,NA,64
+2016,5,Moluscos,Polvo,Octopus,Octopus spp.,190
+2016,5,Não Cadastrado,Não discriminado,Não discriminado,NA,152
+2016,5,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,48503
+2016,5,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,681.5
+2016,5,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,5108
+2016,5,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,2838.5
+2016,5,Teleósteos,Atum,Blow goat,Auxis rochei,2201
+2016,5,Teleósteos,Bagre,Couma sea catfish,Sciades couma,476
+2016,5,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,116
+2016,5,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,355
+2016,5,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,243
+2016,5,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,23667.5
+2016,5,Teleósteos,Bonito-pintado,Atlantic black skipjack,Euthynnus alletteratus,905.5
+2016,5,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,40798
+2016,5,Teleósteos,Cangoá,Cangoá,NA,12
+2016,5,Teleósteos,Cascudo,Atlantic searobin,Prionotus punctatus,2000
+2016,5,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,35211
+2016,5,Teleósteos,Congro,Argentine Conger,Conger spp.,914
+2016,5,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,655
+2016,5,Teleósteos,Corvina,Croaker,Micropogonias furnieri,60112
+2016,5,Teleósteos,Enguia,Common Eel,Conger orbignyanus,117
+2016,5,Teleósteos,Espada,Broadbill,Xiphias gladius,437
+2016,5,Teleósteos,Galo,American John Dory,Zenopsis conchifer,39
+2016,5,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,8444
+2016,5,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,180
+2016,5,Teleósteos,Guaivira,Jack,Oligoplites spp.,20
+2016,5,Teleósteos,Linguado-areia,Flatfish,NA,3439
+2016,5,Teleósteos,Mangangá,Mangangá,NA,182
+2016,5,Teleósteos,Maria-luiza,Maria-luiza,NA,131
+2016,5,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,8136
+2016,5,Teleósteos,Marimbá,Porgy,NA,4
+2016,5,Teleósteos,Meca,Meca,NA,4000
+2016,5,Teleósteos,Merluza,Hake,Merluccius hubbsi,4479
+2016,5,Teleósteos,Olho-de-boi,Amberjack,NA,348
+2016,5,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,5800
+2016,5,Teleósteos,Pampo,Pampo,Trachinotus spp.,25
+2016,5,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,66
+2016,5,Teleósteos,Paru,Paru,NA,54
+2016,5,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,66
+2016,5,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,1378
+2016,5,Teleósteos,Pescada,Weakfish,Cynoscion spp.,490
+2016,5,Teleósteos,Pescada-cambucu,Weakfish,NA,124
+2016,5,Teleósteos,Roncador,Barred grunt,Conodon nobilis,227
+2016,5,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,159715
+2016,5,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,1461569.4
+2016,5,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,4141
+2016,5,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,285
+2016,6,Elasmobrânquios,Cação-anequim,Shark,NA,1800
+2016,6,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,11298
+2016,6,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,154
+2016,6,Elasmobrânquios,Emplastro,Emplastro,NA,18316
+2016,6,Elasmobrânquios,Raia,Ray,NA,1800
+2016,6,Moluscos,Lula,Squid,Loligo sanpaulensis,1000
+2016,6,Moluscos,Polvo,Octopus,Octopus spp.,406
+2016,6,Não Cadastrado,Mistura,Other fish,NA,340
+2016,6,Não Cadastrado,Residuo,Residuo,NA,3158
+2016,6,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,82637
+2016,6,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,300
+2016,6,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,5739.5
+2016,6,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,2131.5
+2016,6,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,671.5
+2016,6,Teleósteos,Atum,Blow goat,Auxis rochei,491.5
+2016,6,Teleósteos,Bagre,Couma sea catfish,Sciades couma,80
+2016,6,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,2001
+2016,6,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,167
+2016,6,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,150037.5
+2016,6,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,98617
+2016,6,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,11367
+2016,6,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,3075
+2016,6,Teleósteos,Congro,Argentine Conger,Conger spp.,855
+2016,6,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,400
+2016,6,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,400
+2016,6,Teleósteos,Corvina,Croaker,Micropogonias furnieri,2066
+2016,6,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,36673
+2016,6,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,70780
+2016,6,Teleósteos,Enguia,Common Eel,Conger orbignyanus,322
+2016,6,Teleósteos,Espada,Broadbill,Xiphias gladius,454
+2016,6,Teleósteos,Galo,American John Dory,Zenopsis conchifer,2560
+2016,6,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,1706
+2016,6,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,360
+2016,6,Teleósteos,Guaivira,Jack,Oligoplites spp.,5400
+2016,6,Teleósteos,Linguado-areia,Flatfish,NA,12588
+2016,6,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,147636
+2016,6,Teleósteos,Meca,Meca,NA,4000
+2016,6,Teleósteos,Merluza,Hake,Merluccius hubbsi,12774
+2016,6,Teleósteos,Pampo,Pampo,Trachinotus spp.,4320
+2016,6,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,260
+2016,6,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,3157
+2016,6,Teleósteos,Pescada,Weakfish,Cynoscion spp.,860
+2016,6,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,900
+2016,6,Teleósteos,Prego,Prego,NA,18
+2016,6,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,869469
+2016,6,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,1534309.5
+2016,6,Teleósteos,Savelha,Twaite shad,Brevoortia spp.,200
+2016,6,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,5641
+2016,6,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,1019
+2016,7,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,2170
+2016,7,Crustáceos,Camarão-cristalino,Shrimp,NA,4000
+2016,7,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,56896
+2016,7,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,46219
+2016,7,Crustáceos,Pitú,Pitú,NA,5513
+2016,7,Crustáceos,Sapateira,Edible crab,Cancer pagurus,905
+2016,7,Elasmobrânquios,Cação-anequim,Shark,NA,14781
+2016,7,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,90594
+2016,7,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,110
+2016,7,Elasmobrânquios,Cações,Shark,Mustelus spp,620
+2016,7,Elasmobrânquios,Caçonete,Shark,NA,400
+2016,7,Elasmobrânquios,Emplastro,Emplastro,NA,21310
+2016,7,Elasmobrânquios,Raia,Ray,NA,260
+2016,7,Moluscos,Lula,Squid,Loligo sanpaulensis,530
+2016,7,Moluscos,Polvo,Octopus,Octopus spp.,5145
+2016,7,Não Cadastrado,Mistura,Other fish,NA,83963
+2016,7,Não Cadastrado,Residuo,Residuo,NA,4600
+2016,7,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,193146
+2016,7,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,13860
+2016,7,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,101
+2016,7,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,124
+2016,7,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,837
+2016,7,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,5246.41
+2016,7,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,8113.5
+2016,7,Teleósteos,Atum,Blow goat,Auxis rochei,2100
+2016,7,Teleósteos,Bagre,Couma sea catfish,Sciades couma,1630
+2016,7,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,460
+2016,7,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,5914
+2016,7,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,4447.5
+2016,7,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,23188
+2016,7,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,197987
+2016,7,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,731494
+2016,7,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,53
+2016,7,Teleósteos,Congro,Argentine Conger,Conger spp.,16772
+2016,7,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,13860
+2016,7,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,1080
+2016,7,Teleósteos,Corvina,Croaker,Micropogonias furnieri,704936
+2016,7,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,161
+2016,7,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,669405
+2016,7,Teleósteos,Enguia,Common Eel,Conger orbignyanus,1367
+2016,7,Teleósteos,Espada,Broadbill,Xiphias gladius,14821
+2016,7,Teleósteos,Galo,American John Dory,Zenopsis conchifer,3000
+2016,7,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,7302
+2016,7,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,8818
+2016,7,Teleósteos,Guaivira,Jack,Oligoplites spp.,11552
+2016,7,Teleósteos,Linguado,Flatfish,Paralichthys spp.,32019
+2016,7,Teleósteos,Linguado-areia,Flatfish,NA,79729
+2016,7,Teleósteos,Mangangá,Mangangá,NA,1600
+2016,7,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,392804
+2016,7,Teleósteos,Meca,Meca,NA,51221
+2016,7,Teleósteos,Merluza,Hake,Merluccius hubbsi,57565
+2016,7,Teleósteos,Miracéu,Stargazer,NA,260
+2016,7,Teleósteos,Namorado,Namorado,Pseudopercis spp.,1172
+2016,7,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,85520
+2016,7,Teleósteos,Pampo,Pampo,Trachinotus spp.,4580
+2016,7,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,1180
+2016,7,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,530
+2016,7,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,20813
+2016,7,Teleósteos,Peixe-tábua,Mediterranean dealfish,Trachipterus trachipterus,80
+2016,7,Teleósteos,Pescada,Weakfish,Cynoscion spp.,62580
+2016,7,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,27250
+2016,7,Teleósteos,Pescada-cambucu,Weakfish,NA,70
+2016,7,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,72929
+2016,7,Teleósteos,Prego,Prego,NA,3381
+2016,7,Teleósteos,Sarrão,Sarrão,NA,20
+2016,7,Teleósteos,Serrinha,Atlantic spanish mackerel,Scomberomorus maculatus,200
+2016,7,Teleósteos,Tainha,Mullet,Mugil spp.,839049
+2016,7,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,16755
+2016,7,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,3928
+2016,7,,,#N/A,#N/A,0
+2016,8,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,43852
+2016,8,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,1649
+2016,8,Crustáceos,Camarão-cristalino,Shrimp,NA,1070
+2016,8,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,49842
+2016,8,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,4034
+2016,8,Crustáceos,Camarão-santana + barba-ruca,Camarão-santana + barba-ruca,NA,7000
+2016,8,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,65940
+2016,8,Crustáceos,Pitú,Pitú,NA,3490
+2016,8,Crustáceos,Sapateira,Edible crab,Cancer pagurus,223
+2016,8,Elasmobrânquios,Cação-anequim,Shark,NA,11363
+2016,8,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,90234
+2016,8,Elasmobrânquios,Emplastro,Emplastro,NA,9030
+2016,8,Elasmobrânquios,Raia,Ray,NA,3000
+2016,8,Moluscos,Lula,Squid,Loligo sanpaulensis,368
+2016,8,Moluscos,Polvo,Octopus,Octopus spp.,5311
+2016,8,Não Cadastrado,Mistura,Other fish,NA,86265
+2016,8,Não Cadastrado,Residuo,Residuo,NA,20682
+2016,8,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,195448
+2016,8,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,70900
+2016,8,Teleósteos,Agulhão-azul,Agulhão-azul,NA,2500
+2016,8,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,540
+2016,8,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,41385.5
+2016,8,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,44019
+2016,8,Teleósteos,Bagre,Couma sea catfish,Sciades couma,1020
+2016,8,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,2170
+2016,8,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,11608
+2016,8,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,21670
+2016,8,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,26470
+2016,8,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,220996
+2016,8,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,5580
+2016,8,Teleósteos,Cascudo,Atlantic searobin,Prionotus punctatus,360
+2016,8,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,619238
+2016,8,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,40
+2016,8,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,114274
+2016,8,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,500
+2016,8,Teleósteos,Congro,Argentine Conger,Conger spp.,8585
+2016,8,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,5200
+2016,8,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,1078
+2016,8,Teleósteos,Corvina,Croaker,Micropogonias furnieri,1768573
+2016,8,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,95
+2016,8,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,8847
+2016,8,Teleósteos,Enguia,Common Eel,Conger orbignyanus,1093
+2016,8,Teleósteos,Espada,Broadbill,Xiphias gladius,15580
+2016,8,Teleósteos,Galo,American John Dory,Zenopsis conchifer,10020
+2016,8,Teleósteos,Garoupa,Deady,Epinephelus spp.,15
+2016,8,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,26470
+2016,8,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,21769
+2016,8,Teleósteos,Guaivira,Jack,Oligoplites spp.,15101
+2016,8,Teleósteos,Linguado,Flatfish,Paralichthys spp.,101898
+2016,8,Teleósteos,Linguado-areia,Flatfish,NA,26432
+2016,8,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,1150
+2016,8,Teleósteos,Mangangá,Mangangá,NA,2300
+2016,8,Teleósteos,Maria-luiza,Maria-luiza,NA,710
+2016,8,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,359092
+2016,8,Teleósteos,Meca,Meca,NA,105430
+2016,8,Teleósteos,Merluza,Hake,Merluccius hubbsi,44270
+2016,8,Teleósteos,Miracéu,Stargazer,NA,3480
+2016,8,Teleósteos,Namorado,Namorado,Pseudopercis spp.,3600
+2016,8,Teleósteos,Olho-de-boi,Amberjack,NA,20
+2016,8,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,63260
+2016,8,Teleósteos,Pampo,Pampo,Trachinotus spp.,15450
+2016,8,Teleósteos,Papa-moscas,Papa-moscas,NA,1840
+2016,8,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,420
+2016,8,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,31
+2016,8,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,1266
+2016,8,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,53090
+2016,8,Teleósteos,Peixe-tábua,Mediterranean dealfish,Trachipterus trachipterus,220
+2016,8,Teleósteos,Pescada,Weakfish,Cynoscion spp.,66133
+2016,8,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,75930
+2016,8,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,80
+2016,8,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,64997
+2016,8,Teleósteos,Prego,Prego,NA,3878
+2016,8,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,2335301
+2016,8,Teleósteos,Sardinha-mole,Sardinha-mole,NA,2400
+2016,8,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,4820437.92
+2016,8,Teleósteos,Savelha,Twaite shad,Brevoortia spp.,1000
+2016,8,Teleósteos,Serrinha,Atlantic spanish mackerel,Scomberomorus maculatus,2430
+2016,8,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,22285
+2016,8,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,1015
+2016,8,Teleósteos,Xarelete,Black jack,Caranx latus,8882
+2016,8,Teleósteos,Xixarro,Jack mackerel,Trachurus lathami,14080
+2016,8,,,#N/A,#N/A,0
+2016,9,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,624443
+2016,9,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,1218
+2016,9,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,96434
+2016,9,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,209975
+2016,9,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,57200
+2016,9,Crustáceos,Pitú,Pitú,NA,1770
+2016,9,Crustáceos,Sapateira,Edible crab,Cancer pagurus,382
+2016,9,Elasmobrânquios,Cação-anequim,Shark,NA,12876
+2016,9,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,154982
+2016,9,Elasmobrânquios,Cação-martelo,Shark,NA,12910
+2016,9,Elasmobrânquios,Cações,Shark,Mustelus spp,3040
+2016,9,Elasmobrânquios,Emplastro,Emplastro,NA,15420
+2016,9,Elasmobrânquios,Machote,Spinner Shark,NA,39
+2016,9,Elasmobrânquios,Raia,Ray,NA,770
+2016,9,Moluscos,Lula,Squid,Loligo sanpaulensis,1049
+2016,9,Moluscos,Polvo,Octopus,Octopus spp.,1932
+2016,9,Não Cadastrado,Mistura,Other fish,NA,127670
+2016,9,Não Cadastrado,Residuo,Residuo,NA,49621
+2016,9,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,76267
+2016,9,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,80
+2016,9,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,5242
+2016,9,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,18243
+2016,9,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,7512
+2016,9,Teleósteos,Atum,Blow goat,Auxis rochei,18000
+2016,9,Teleósteos,Bagre,Couma sea catfish,Sciades couma,25884
+2016,9,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,2300
+2016,9,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,10859
+2016,9,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,2000
+2016,9,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,221427
+2016,9,Teleósteos,Cangoá,Cangoá,NA,500
+2016,9,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,737532
+2016,9,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,232
+2016,9,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,151834
+2016,9,Teleósteos,Cherne-galha-amarela,Grouper,Hyporthodus flavolimbatus,300
+2016,9,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,500
+2016,9,Teleósteos,Congro,Argentine Conger,Conger spp.,31
+2016,9,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,480
+2016,9,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,1250
+2016,9,Teleósteos,Corvina,Croaker,Micropogonias furnieri,1617872
+2016,9,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,488
+2016,9,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,340
+2016,9,Teleósteos,Enguia,Common Eel,Conger orbignyanus,215
+2016,9,Teleósteos,Espada,Broadbill,Xiphias gladius,15556
+2016,9,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,16094
+2016,9,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,16740
+2016,9,Teleósteos,Guaivira,Jack,Oligoplites spp.,8148
+2016,9,Teleósteos,Linguado,Flatfish,Paralichthys spp.,83662
+2016,9,Teleósteos,Linguado-areia,Flatfish,NA,8537
+2016,9,Teleósteos,Mangangá,Mangangá,NA,560
+2016,9,Teleósteos,Maria-luiza,Maria-luiza,NA,190
+2016,9,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,175788
+2016,9,Teleósteos,Meca,Meca,NA,90052
+2016,9,Teleósteos,Merluza,Hake,Merluccius hubbsi,570
+2016,9,Teleósteos,Namorado,Namorado,Pseudopercis spp.,2600
+2016,9,Teleósteos,Oveva,Cabezon,Larimus breviceps,50
+2016,9,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,40
+2016,9,Teleósteos,Pampo,Pampo,Trachinotus spp.,200
+2016,9,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,94
+2016,9,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,280
+2016,9,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,3495
+2016,9,Teleósteos,Peixe-tábua,Mediterranean dealfish,Trachipterus trachipterus,160
+2016,9,Teleósteos,Pescada,Weakfish,Cynoscion spp.,23180
+2016,9,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,53930
+2016,9,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,100
+2016,9,Teleósteos,Pescada-cambucu,Weakfish,NA,20
+2016,9,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,54160
+2016,9,Teleósteos,Prego,Prego,NA,5618
+2016,9,Teleósteos,Sardinha-cascuda,Blackbill sprat,Harengula clupeola,1000
+2016,9,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,111563
+2016,9,Teleósteos,Sardinha-mole,Sardinha-mole,NA,100
+2016,9,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,2641967.9
+2016,9,Teleósteos,Serrinha,Atlantic spanish mackerel,Scomberomorus maculatus,16473
+2016,9,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,20768
+2016,9,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,3115
+2016,9,Teleósteos,Xixarro,Jack mackerel,Trachurus lathami,21240
+2016,9,,,#N/A,#N/A,0
+2016,10,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,594339
+2016,10,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,300
+2016,10,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,59940
+2016,10,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,388150
+2016,10,Crustáceos,Camarão-santana + barba-ruca,Camarão-santana + barba-ruca,NA,18000
+2016,10,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,4100
+2016,10,Crustáceos,Pitú,Pitú,NA,488
+2016,10,Crustáceos,Sapateira,Edible crab,Cancer pagurus,788
+2016,10,Elasmobrânquios,Cação-anequim,Shark,NA,25526
+2016,10,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,79705
+2016,10,Elasmobrânquios,Cação-gato,Shark,NA,520
+2016,10,Elasmobrânquios,Cação-martelo,Shark,NA,25868
+2016,10,Elasmobrânquios,Cações,Shark,Mustelus spp,1458
+2016,10,Elasmobrânquios,Caçonete,Shark,NA,200
+2016,10,Elasmobrânquios,Emplastro,Emplastro,NA,37216
+2016,10,Elasmobrânquios,Machote,Spinner Shark,NA,2400
+2016,10,Elasmobrânquios,Raia,Ray,NA,3600
+2016,10,Moluscos,Lula,Squid,Loligo sanpaulensis,570
+2016,10,Moluscos,Polvo,Octopus,Octopus spp.,5438
+2016,10,Não Cadastrado,Mistura,Other fish,NA,177483
+2016,10,Não Cadastrado,Não discriminado,Não discriminado,NA,1552
+2016,10,Não Cadastrado,Residuo,Residuo,NA,5164
+2016,10,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,84080
+2016,10,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,400
+2016,10,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,71
+2016,10,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,2919
+2016,10,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,36906
+2016,10,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,64392.5
+2016,10,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,2065.5
+2016,10,Teleósteos,Atum,Blow goat,Auxis rochei,27165.5
+2016,10,Teleósteos,Bagre,Couma sea catfish,Sciades couma,4450
+2016,10,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,7835
+2016,10,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,14158
+2016,10,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,10000
+2016,10,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,37500.5
+2016,10,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,257565
+2016,10,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,19420
+2016,10,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,851813
+2016,10,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,46
+2016,10,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,99736
+2016,10,Teleósteos,Cherne-galha-amarela,Grouper,Hyporthodus flavolimbatus,1250
+2016,10,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,390
+2016,10,Teleósteos,Congro,Argentine Conger,Conger spp.,102
+2016,10,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,1945
+2016,10,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,800
+2016,10,Teleósteos,Corvina,Croaker,Micropogonias furnieri,1225341
+2016,10,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,1580
+2016,10,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,864
+2016,10,Teleósteos,Enguia,Common Eel,Conger orbignyanus,420
+2016,10,Teleósteos,Espada,Broadbill,Xiphias gladius,18380
+2016,10,Teleósteos,Ferrinho,Ferrinho,NA,28000
+2016,10,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,42863
+2016,10,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,28980
+2016,10,Teleósteos,Guaivira,Jack,Oligoplites spp.,3290
+2016,10,Teleósteos,Linguado,Flatfish,Paralichthys spp.,128893
+2016,10,Teleósteos,Linguado-areia,Flatfish,NA,9106
+2016,10,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,260
+2016,10,Teleósteos,Mangangá,Mangangá,NA,2320
+2016,10,Teleósteos,Maria-luiza,Maria-luiza,NA,440
+2016,10,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,358119
+2016,10,Teleósteos,Marimbá,Porgy,NA,100
+2016,10,Teleósteos,Meca,Meca,NA,84962
+2016,10,Teleósteos,Merluza,Hake,Merluccius hubbsi,8798
+2016,10,Teleósteos,Miracéu,Stargazer,NA,180
+2016,10,Teleósteos,Namorado,Namorado,Pseudopercis spp.,3210
+2016,10,Teleósteos,Olhete,Amberjack,Seriola lalandi,700
+2016,10,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,148392.4
+2016,10,Teleósteos,Pampo,Pampo,Trachinotus spp.,600
+2016,10,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,5520
+2016,10,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,731
+2016,10,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,21767
+2016,10,Teleósteos,Pescada,Weakfish,Cynoscion spp.,17320
+2016,10,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,49205
+2016,10,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,100
+2016,10,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,24120
+2016,10,Teleósteos,Prego,Prego,NA,4215
+2016,10,Teleósteos,Sardinha-cascuda,Blackbill sprat,Harengula clupeola,400
+2016,10,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,50574
+2016,10,Teleósteos,Sardinha-mole,Sardinha-mole,NA,1000
+2016,10,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,874276
+2016,10,Teleósteos,Serrinha,Atlantic spanish mackerel,Scomberomorus maculatus,10277
+2016,10,Teleósteos,Sororoca,Sororoca,Scomberomorus,4000
+2016,10,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,59476
+2016,10,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,879
+2016,10,Teleósteos,Xarelete,Black jack,Caranx latus,7000
+2016,10,Teleósteos,Xixarro,Jack mackerel,Trachurus lathami,112970
+2016,10,,,#N/A,#N/A,0
+2016,11,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,367599
+2016,11,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,800
+2016,11,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,53400
+2016,11,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,203037
+2016,11,Crustáceos,Camarão-santana + barba-ruca,Camarão-santana + barba-ruca,NA,38588
+2016,11,Crustáceos,Pitú,Pitú,NA,20
+2016,11,Crustáceos,Sapateira,Edible crab,Cancer pagurus,340
+2016,11,Elasmobrânquios,Cação-anequim,Shark,NA,19308
+2016,11,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,42614
+2016,11,Elasmobrânquios,Cação-cabeca-chata,Shark,NA,120
+2016,11,Elasmobrânquios,Cação-lombo-preto,Cação-lombo-preto,NA,31
+2016,11,Elasmobrânquios,Cação-martelo,Shark,NA,2310
+2016,11,Elasmobrânquios,Cações,Shark,Mustelus spp,4786
+2016,11,Elasmobrânquios,Caçonete,Shark,NA,400
+2016,11,Elasmobrânquios,Emplastro,Emplastro,NA,26269
+2016,11,Elasmobrânquios,Machote,Spinner Shark,NA,3210
+2016,11,Elasmobrânquios,Raia,Ray,NA,3140
+2016,11,Moluscos,Lula,Squid,Loligo sanpaulensis,2000
+2016,11,Moluscos,Polvo,Octopus,Octopus spp.,2720
+2016,11,Não Cadastrado,Mistura,Other fish,NA,186825
+2016,11,Não Cadastrado,Residuo,Residuo,NA,1920
+2016,11,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,129189
+2016,11,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,11180
+2016,11,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,1000
+2016,11,Teleósteos,Aipim,Brazilian flathead,Percophis brasiliensis,13
+2016,11,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,767
+2016,11,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,13300
+2016,11,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,68231.5
+2016,11,Teleósteos,Atum,Blow goat,Auxis rochei,14400
+2016,11,Teleósteos,Bagre,Couma sea catfish,Sciades couma,983
+2016,11,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,17280
+2016,11,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,19026
+2016,11,Teleósteos,Bonito,skipjack tuna,Auxis rochei,10000
+2016,11,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,8000
+2016,11,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,58346.5
+2016,11,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,198922
+2016,11,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,3000
+2016,11,Teleósteos,Carapeba,Broad shad,Diapterus auratus,459
+2016,11,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,327579
+2016,11,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,36345
+2016,11,Teleósteos,Cherne-galha-amarela,Grouper,Hyporthodus flavolimbatus,380
+2016,11,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,1780
+2016,11,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,4360
+2016,11,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,3687
+2016,11,Teleósteos,Corvina,Croaker,Micropogonias furnieri,934678
+2016,11,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,35064
+2016,11,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,16571
+2016,11,Teleósteos,Enguia,Common Eel,Conger orbignyanus,335
+2016,11,Teleósteos,Espada,Broadbill,Xiphias gladius,11548
+2016,11,Teleósteos,Galo,American John Dory,Zenopsis conchifer,850
+2016,11,Teleósteos,Garoupa,Deady,Epinephelus spp.,180
+2016,11,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,59619
+2016,11,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,5669
+2016,11,Teleósteos,Guaivira,Jack,Oligoplites spp.,1100
+2016,11,Teleósteos,Linguado,Flatfish,Paralichthys spp.,55103
+2016,11,Teleósteos,Linguado-areia,Flatfish,NA,10391
+2016,11,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,536
+2016,11,Teleósteos,Mangangá,Mangangá,NA,3130
+2016,11,Teleósteos,Maria-luiza,Maria-luiza,NA,40
+2016,11,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,275472
+2016,11,Teleósteos,Marimbá,Porgy,NA,152
+2016,11,Teleósteos,Meca,Meca,NA,69632
+2016,11,Teleósteos,Merluza,Hake,Merluccius hubbsi,19511
+2016,11,Teleósteos,Miracéu,Stargazer,NA,1032
+2016,11,Teleósteos,Namorado,Namorado,Pseudopercis spp.,4530
+2016,11,Teleósteos,Olhete,Amberjack,Seriola lalandi,900
+2016,11,Teleósteos,Olho-de-boi,Amberjack,NA,200
+2016,11,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,220
+2016,11,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,25290
+2016,11,Teleósteos,Pampo,Pampo,Trachinotus spp.,300
+2016,11,Teleósteos,Papa-moscas,Papa-moscas,NA,40
+2016,11,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,3181
+2016,11,Teleósteos,Paru,Paru,NA,808
+2016,11,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,762
+2016,11,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,6727
+2016,11,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,32945
+2016,11,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,30970
+2016,11,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,2340
+2016,11,Teleósteos,Pescada-cambucu,Weakfish,NA,40
+2016,11,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,18540
+2016,11,Teleósteos,Prego,Prego,NA,5624
+2016,11,Teleósteos,Robalo,Snook,Centropomus spp.,577
+2016,11,Teleósteos,Roncador,Barred grunt,Conodon nobilis,1480
+2016,11,Teleósteos,Sardinha-cascuda,Blackbill sprat,Harengula clupeola,1000
+2016,11,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,52568
+2016,11,Teleósteos,Sororoca,Sororoca,Scomberomorus,21
+2016,11,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,12756
+2016,11,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,1159
+2016,11,Teleósteos,Xarelete,Black jack,Caranx latus,480
+2016,11,Teleósteos,Xixarro,Jack mackerel,Trachurus lathami,18400
+2016,11,,,#N/A,#N/A,0
+2016,12,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,351296
+2016,12,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,43924
+2016,12,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,58720
+2016,12,Crustáceos,Camarão-santana + barba-ruca,Camarão-santana + barba-ruca,NA,22000
+2016,12,Crustáceos,Pitú,Pitú,NA,90
+2016,12,Crustáceos,Sapateira,Edible crab,Cancer pagurus,1880
+2016,12,Elasmobrânquios,Cação-anequim,Shark,NA,15206
+2016,12,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,59765
+2016,12,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,680
+2016,12,Elasmobrânquios,Cação-cabeca-chata,Shark,NA,30
+2016,12,Elasmobrânquios,Cação-martelo,Shark,NA,300
+2016,12,Elasmobrânquios,Cações,Shark,Mustelus spp,380
+2016,12,Elasmobrânquios,Emplastro,Emplastro,NA,42897
+2016,12,Elasmobrânquios,Raia,Ray,NA,5200
+2016,12,Moluscos,Lula,Squid,Loligo sanpaulensis,360
+2016,12,Moluscos,Polvo,Octopus,Octopus spp.,3300
+2016,12,Não Cadastrado,Mistura,Other fish,NA,89348
+2016,12,Não Cadastrado,Residuo,Residuo,NA,1440
+2016,12,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,71887
+2016,12,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,81360
+2016,12,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,1368
+2016,12,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,175
+2016,12,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,215
+2016,12,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,21378.5
+2016,12,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,3000
+2016,12,Teleósteos,Atum,Blow goat,Auxis rochei,22054
+2016,12,Teleósteos,Bagre,Couma sea catfish,Sciades couma,4130
+2016,12,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,17190
+2016,12,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,19225
+2016,12,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,5076
+2016,12,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,164760
+2016,12,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,334821
+2016,12,Teleósteos,Carapicu,Broad shad,Diapterus auratus,80
+2016,12,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,249128
+2016,12,Teleósteos,Cherne-galha-amarela,Grouper,Hyporthodus flavolimbatus,200
+2016,12,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,2200
+2016,12,Teleósteos,Congro,Argentine Conger,Conger spp.,3200
+2016,12,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,5660
+2016,12,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,3510
+2016,12,Teleósteos,Corvina,Croaker,Micropogonias furnieri,1061930
+2016,12,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,71787
+2016,12,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,18525
+2016,12,Teleósteos,Enguia,Common Eel,Conger orbignyanus,320
+2016,12,Teleósteos,Espada,Broadbill,Xiphias gladius,7084
+2016,12,Teleósteos,Galo,American John Dory,Zenopsis conchifer,2100
+2016,12,Teleósteos,Garoupa,Deady,Epinephelus spp.,1100
+2016,12,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,16795
+2016,12,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,6340
+2016,12,Teleósteos,Guaivira,Jack,Oligoplites spp.,100
+2016,12,Teleósteos,Linguado,Flatfish,Paralichthys spp.,95996
+2016,12,Teleósteos,Linguado-areia,Flatfish,NA,13091
+2016,12,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,6236
+2016,12,Teleósteos,Mangangá,Mangangá,NA,8780
+2016,12,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,648016
+2016,12,Teleósteos,Meca,Meca,NA,18581
+2016,12,Teleósteos,Merluza,Hake,Merluccius hubbsi,7418
+2016,12,Teleósteos,Miracéu,Stargazer,NA,3060
+2016,12,Teleósteos,Namorado,Namorado,Pseudopercis spp.,1070
+2016,12,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,20
+2016,12,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,37020
+2016,12,Teleósteos,Papa-moscas,Papa-moscas,NA,100
+2016,12,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,1900
+2016,12,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,743
+2016,12,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,23300
+2016,12,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,32171
+2016,12,Teleósteos,Pescada,Weakfish,Cynoscion spp.,100
+2016,12,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,33450
+2016,12,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,3530
+2016,12,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,13560
+2016,12,Teleósteos,Prego,Prego,NA,1396
+2016,12,Teleósteos,Robalo,Snook,Centropomus spp.,500
+2016,12,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,22259
+2016,12,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,1449
+2016,12,,,#N/A,#N/A,0
+2017,1,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,257937
+2017,1,Crustáceos,Camarão-cristalino,Shrimp,NA,30
+2017,1,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,30765
+2017,1,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,8540
+2017,1,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,5000
+2017,1,Crustáceos,Pitú,Pitú,NA,60
+2017,1,Crustáceos,Sapateira,Edible crab,Cancer pagurus,4198
+2017,1,Elasmobrânquios,Cação-anequim,Shark,NA,9860
+2017,1,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,83056
+2017,1,Elasmobrânquios,Cação-gato,Shark,NA,400
+2017,1,Elasmobrânquios,Cações,Shark,Mustelus spp,2300
+2017,1,Elasmobrânquios,Emplastro,Emplastro,NA,23472
+2017,1,Elasmobrânquios,Raia,Ray,NA,700
+2017,1,Moluscos,Lula,Squid,Loligo sanpaulensis,560
+2017,1,Moluscos,Polvo,Octopus,Octopus spp.,825
+2017,1,Não Cadastrado,Mistura,Other fish,NA,58300
+2017,1,Não Cadastrado,Residuo,Residuo,NA,4140
+2017,1,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,34343
+2017,1,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,111548
+2017,1,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,1159
+2017,1,Teleósteos,Agulhão-azul,Agulhão-azul,NA,600
+2017,1,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,135
+2017,1,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,141
+2017,1,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,31260.5
+2017,1,Teleósteos,Atum,Blow goat,Auxis rochei,22177
+2017,1,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,19780
+2017,1,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,2700
+2017,1,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,829.5
+2017,1,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,1458378.5
+2017,1,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,201383
+2017,1,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,106683
+2017,1,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,24
+2017,1,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,5200
+2017,1,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,5850
+2017,1,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,15
+2017,1,Teleósteos,Corvina,Croaker,Micropogonias furnieri,244563
+2017,1,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,66479
+2017,1,Teleósteos,Enguia,Common Eel,Conger orbignyanus,120
+2017,1,Teleósteos,Espada,Broadbill,Xiphias gladius,241508
+2017,1,Teleósteos,Garoupa,Deady,Epinephelus spp.,6900
+2017,1,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,39547
+2017,1,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,5260
+2017,1,Teleósteos,Guaivira,Jack,Oligoplites spp.,300
+2017,1,Teleósteos,Linguado,Flatfish,Paralichthys spp.,4400
+2017,1,Teleósteos,Linguado-areia,Flatfish,NA,18330
+2017,1,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,20
+2017,1,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,22768
+2017,1,Teleósteos,Meca,Meca,NA,13145
+2017,1,Teleósteos,Merluza,Hake,Merluccius hubbsi,22128
+2017,1,Teleósteos,Miracéu,Stargazer,NA,720
+2017,1,Teleósteos,Namorado,Namorado,Pseudopercis spp.,1600
+2017,1,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,62220
+2017,1,Teleósteos,Pampo,Pampo,Trachinotus spp.,540
+2017,1,Teleósteos,Papa-moscas,Papa-moscas,NA,1020
+2017,1,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,2780
+2017,1,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,792
+2017,1,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,2900
+2017,1,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,13855.5
+2017,1,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,7470
+2017,1,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,8020
+2017,1,Teleósteos,Prego,Prego,NA,10991
+2017,1,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,50000
+2017,1,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,3333.8
+2017,1,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,1757
+2017,1,Teleósteos,Xarelete,Black jack,Caranx latus,22000
+2017,1,,,#N/A,#N/A,0
+2017,2,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,89746
+2017,2,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,300
+2017,2,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,59511
+2017,2,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,1610
+2017,2,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,8900
+2017,2,Crustáceos,Pitú,Pitú,NA,235
+2017,2,Crustáceos,Sapateira,Edible crab,Cancer pagurus,4200
+2017,2,Elasmobrânquios,Cação-anequim,Shark,NA,10581
+2017,2,Elasmobrânquios,Cação-anjo,Shark,NA,500
+2017,2,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,91172
+2017,2,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,1308
+2017,2,Elasmobrânquios,Cação-lombo-preto,Cação-lombo-preto,NA,1410
+2017,2,Elasmobrânquios,Cação-martelo,Shark,NA,50
+2017,2,Elasmobrânquios,Cações,Shark,Mustelus spp,10
+2017,2,Elasmobrânquios,Emplastro,Emplastro,NA,34562
+2017,2,Elasmobrânquios,Raia,Ray,NA,580
+2017,2,Moluscos,Lula,Squid,Loligo sanpaulensis,1595
+2017,2,Moluscos,Polvo,Octopus,Octopus spp.,4672
+2017,2,Não Cadastrado,Mistura,Other fish,NA,380477
+2017,2,Não Cadastrado,Residuo,Residuo,NA,10420
+2017,2,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,76594
+2017,2,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,81610
+2017,2,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,60
+2017,2,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,16750
+2017,2,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,87
+2017,2,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,13750.5
+2017,2,Teleósteos,Atum,Blow goat,Auxis rochei,51791.5
+2017,2,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,4192
+2017,2,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,5997
+2017,2,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,1229
+2017,2,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,571047.5
+2017,2,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,286658
+2017,2,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,12479
+2017,2,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,273065
+2017,2,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,382
+2017,2,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,217298
+2017,2,Teleósteos,Cherne-galha-amarela,Grouper,Hyporthodus flavolimbatus,500
+2017,2,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,2200
+2017,2,Teleósteos,Congro,Argentine Conger,Conger spp.,1400
+2017,2,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,20700
+2017,2,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,740
+2017,2,Teleósteos,Corvina,Croaker,Micropogonias furnieri,1234411
+2017,2,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,4014
+2017,2,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,670
+2017,2,Teleósteos,Enguia,Common Eel,Conger orbignyanus,257
+2017,2,Teleósteos,Espada,Broadbill,Xiphias gladius,4316
+2017,2,Teleósteos,Galo,American John Dory,Zenopsis conchifer,360
+2017,2,Teleósteos,Garoupa,Deady,Epinephelus spp.,1300
+2017,2,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,81489
+2017,2,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,19480
+2017,2,Teleósteos,Guaivira,Jack,Oligoplites spp.,890
+2017,2,Teleósteos,Linguado,Flatfish,Paralichthys spp.,37342
+2017,2,Teleósteos,Linguado-areia,Flatfish,NA,31177
+2017,2,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,650
+2017,2,Teleósteos,Mangangá,Mangangá,NA,1890
+2017,2,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,273259
+2017,2,Teleósteos,Meca,Meca,NA,35890
+2017,2,Teleósteos,Merluza,Hake,Merluccius hubbsi,5189
+2017,2,Teleósteos,Miracéu,Stargazer,NA,740
+2017,2,Teleósteos,Namorado,Namorado,Pseudopercis spp.,130
+2017,2,Teleósteos,Olho-de-boi,Amberjack,NA,320
+2017,2,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,16040
+2017,2,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,74510
+2017,2,Teleósteos,Pampo,Pampo,Trachinotus spp.,690
+2017,2,Teleósteos,Papa-moscas,Papa-moscas,NA,400
+2017,2,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,3400
+2017,2,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,1945
+2017,2,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,22460
+2017,2,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,18841
+2017,2,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,70720
+2017,2,Teleósteos,Pescada-cambucu,Weakfish,NA,40
+2017,2,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,930
+2017,2,Teleósteos,Prego,Prego,NA,25398
+2017,2,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,64027
+2017,2,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,1761415
+2017,2,Teleósteos,Sarrão,Sarrão,NA,200
+2017,2,Teleósteos,Serrinha,Atlantic spanish mackerel,Scomberomorus maculatus,40
+2017,2,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,6559
+2017,2,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,4983
+2017,2,Teleósteos,Xarelete,Black jack,Caranx latus,855
+2017,2,,,#N/A,#N/A,0
+2017,3,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,33000
+2017,3,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,300
+2017,3,Crustáceos,Camarão-cristalino,Shrimp,NA,38135
+2017,3,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,22053
+2017,3,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,800
+2017,3,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,11200
+2017,3,Crustáceos,Pitú,Pitú,NA,170
+2017,3,Crustáceos,Sapateira,Edible crab,Cancer pagurus,3336
+2017,3,Elasmobrânquios,Cação-anequim,Shark,NA,3613
+2017,3,Elasmobrânquios,Cação-anjo,Shark,NA,20
+2017,3,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,33826
+2017,3,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,848
+2017,3,Elasmobrânquios,Cações,Shark,Mustelus spp,387
+2017,3,Elasmobrânquios,Emplastro,Emplastro,NA,26804
+2017,3,Elasmobrânquios,Machote,Spinner Shark,NA,15
+2017,3,Moluscos,Lula,Squid,Loligo sanpaulensis,802
+2017,3,Moluscos,Polvo,Octopus,Octopus spp.,5985
+2017,3,Não Cadastrado,Mistura,Other fish,NA,294079
+2017,3,Não Cadastrado,Residuo,Residuo,NA,3460
+2017,3,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,78388
+2017,3,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,245425
+2017,3,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,120
+2017,3,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,10557
+2017,3,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,363
+2017,3,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,49532
+2017,3,Teleósteos,Atum,Blow goat,Auxis rochei,36582.5
+2017,3,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,2500
+2017,3,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,10459
+2017,3,Teleósteos,Bonito,skipjack tuna,Auxis rochei,380
+2017,3,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,8976
+2017,3,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,924207
+2017,3,Teleósteos,Bonito-pintado,Atlantic black skipjack,Euthynnus alletteratus,83
+2017,3,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,324491
+2017,3,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,15180
+2017,3,Teleósteos,Carapeba,Broad shad,Diapterus auratus,20
+2017,3,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,124231
+2017,3,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,618
+2017,3,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,28773
+2017,3,Teleósteos,Cherne-poveiro,Atlantic wreckfish,Polyprion americanus,80
+2017,3,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,300
+2017,3,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,18130
+2017,3,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,2900
+2017,3,Teleósteos,Corvina,Croaker,Micropogonias furnieri,1100881
+2017,3,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,334
+2017,3,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,240
+2017,3,Teleósteos,Enguia,Common Eel,Conger orbignyanus,20
+2017,3,Teleósteos,Espada,Broadbill,Xiphias gladius,9634
+2017,3,Teleósteos,Galo,American John Dory,Zenopsis conchifer,420
+2017,3,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,41051
+2017,3,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,7088
+2017,3,Teleósteos,Guaivira,Jack,Oligoplites spp.,380
+2017,3,Teleósteos,Linguado,Flatfish,Paralichthys spp.,22511
+2017,3,Teleósteos,Linguado-areia,Flatfish,NA,30646
+2017,3,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,68
+2017,3,Teleósteos,Mangangá,Mangangá,NA,840
+2017,3,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,216574
+2017,3,Teleósteos,Meca,Meca,NA,38674
+2017,3,Teleósteos,Merluza,Hake,Merluccius hubbsi,24462
+2017,3,Teleósteos,Miracéu,Stargazer,NA,1440
+2017,3,Teleósteos,Namorado,Namorado,Pseudopercis spp.,200
+2017,3,Teleósteos,Olhete,Amberjack,Seriola lalandi,60
+2017,3,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,4400
+2017,3,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,515128
+2017,3,Teleósteos,Pampo,Pampo,Trachinotus spp.,5370
+2017,3,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,4520
+2017,3,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,26740
+2017,3,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,34131
+2017,3,Teleósteos,Pescada,Weakfish,Cynoscion spp.,52640
+2017,3,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,27300
+2017,3,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,300
+2017,3,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,61200
+2017,3,Teleósteos,Prego,Prego,NA,8081
+2017,3,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,297559
+2017,3,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,1364517
+2017,3,Teleósteos,Sarrão,Sarrão,NA,400
+2017,3,Teleósteos,Serrinha,Atlantic spanish mackerel,Scomberomorus maculatus,100
+2017,3,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,6489
+2017,3,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,1249
+2017,3,Teleósteos,Xarelete,Black jack,Caranx latus,5422
+2017,4,Crustáceos,Camarão-cristalino,Shrimp,NA,73033
+2017,4,Crustáceos,Pitú,Pitú,NA,2800
+2017,4,Crustáceos,Sapateira,Edible crab,Cancer pagurus,130
+2017,4,Elasmobrânquios,Cação-anequim,Shark,NA,5193
+2017,4,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,116963
+2017,4,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,832
+2017,4,Elasmobrânquios,Cação-gato,Shark,NA,1000
+2017,4,Elasmobrânquios,Cação-martelo,Shark,NA,146
+2017,4,Elasmobrânquios,Emplastro,Emplastro,NA,38827
+2017,4,Elasmobrânquios,Machote,Spinner Shark,NA,74
+2017,4,Moluscos,Lula,Squid,Loligo sanpaulensis,1820
+2017,4,Moluscos,Polvo,Octopus,Octopus spp.,730
+2017,4,Não Cadastrado,Mistura,Other fish,NA,437574
+2017,4,Não Cadastrado,Residuo,Residuo,NA,1100
+2017,4,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,44679
+2017,4,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,122996
+2017,4,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,60
+2017,4,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,157
+2017,4,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,1554
+2017,4,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,503
+2017,4,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,6707.5
+2017,4,Teleósteos,Atum,Blow goat,Auxis rochei,31755.5
+2017,4,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,6090
+2017,4,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,1873
+2017,4,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,393887.5
+2017,4,Teleósteos,Bonito-pintado,Atlantic black skipjack,Euthynnus alletteratus,219
+2017,4,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,124650
+2017,4,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,39600
+2017,4,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,129696
+2017,4,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,313
+2017,4,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,440
+2017,4,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,9450
+2017,4,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,540
+2017,4,Teleósteos,Corvina,Croaker,Micropogonias furnieri,752537
+2017,4,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,27462
+2017,4,Teleósteos,Espada,Broadbill,Xiphias gladius,2119
+2017,4,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,10828
+2017,4,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,2782
+2017,4,Teleósteos,Guaivira,Jack,Oligoplites spp.,1072
+2017,4,Teleósteos,Linguado,Flatfish,Paralichthys spp.,17530
+2017,4,Teleósteos,Linguado-areia,Flatfish,NA,27851
+2017,4,Teleósteos,Mangangá,Mangangá,NA,1400
+2017,4,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,185727
+2017,4,Teleósteos,Meca,Meca,NA,73537
+2017,4,Teleósteos,Merluza,Hake,Merluccius hubbsi,35547
+2017,4,Teleósteos,Namorado,Namorado,Pseudopercis spp.,300
+2017,4,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,1100
+2017,4,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,141588
+2017,4,Teleósteos,Pampo,Pampo,Trachinotus spp.,500
+2017,4,Teleósteos,Paru,Paru,NA,129655
+2017,4,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,376
+2017,4,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,586
+2017,4,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,9598
+2017,4,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,10500
+2017,4,Teleósteos,Pescada-bicuda,Pescada-bicuda,NA,17
+2017,4,Teleósteos,Prego,Prego,NA,6053
+2017,4,Teleósteos,Sardinha-cascuda,Blackbill sprat,Harengula clupeola,8400
+2017,4,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,374513
+2017,4,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,495425
+2017,4,Teleósteos,Sarrão,Sarrão,NA,200
+2017,4,Teleósteos,Sororoca,Sororoca,Scomberomorus,192
+2017,4,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,2837
+2017,4,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,3151
+2017,4,Teleósteos,Xarelete,Black jack,Caranx latus,37000
+2017,4,,,#N/A,#N/A,0
+2017,5,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,4329
+2017,5,Crustáceos,Camarão-cristalino,Shrimp,NA,50987
+2017,5,Crustáceos,Pitú,Pitú,NA,6500
+2017,5,Crustáceos,Sapateira,Edible crab,Cancer pagurus,450
+2017,5,Elasmobrânquios,Cação-anequim,Shark,NA,9983
+2017,5,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,114069
+2017,5,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,2933
+2017,5,Elasmobrânquios,Emplastro,Emplastro,NA,58179
+2017,5,Moluscos,Lula,Squid,Loligo sanpaulensis,900
+2017,5,Moluscos,Polvo,Octopus,Octopus spp.,423
+2017,5,Não Cadastrado,Mistura,Other fish,NA,127917
+2017,5,Não Cadastrado,Residuo,Residuo,NA,1777
+2017,5,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,86458
+2017,5,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,135997
+2017,5,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,7943
+2017,5,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,1315
+2017,5,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,21785
+2017,5,Teleósteos,Atum,Blow goat,Auxis rochei,18660
+2017,5,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,9800
+2017,5,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,4222
+2017,5,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,397591
+2017,5,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,217905
+2017,5,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,7068
+2017,5,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,211648
+2017,5,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,65608
+2017,5,Teleósteos,Cherne-galha-amarela,Grouper,Hyporthodus flavolimbatus,500
+2017,5,Teleósteos,Congro,Argentine Conger,Conger spp.,40
+2017,5,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,22938
+2017,5,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,3520
+2017,5,Teleósteos,Corvina,Croaker,Micropogonias furnieri,1128695
+2017,5,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,212105
+2017,5,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,1430
+2017,5,Teleósteos,Enguia,Common Eel,Conger orbignyanus,126
+2017,5,Teleósteos,Espada,Broadbill,Xiphias gladius,5993
+2017,5,Teleósteos,Galo-de-profundidade,American John Dory,Zenopsis conchifer,1000
+2017,5,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,21394
+2017,5,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,12960
+2017,5,Teleósteos,Guaivira,Jack,Oligoplites spp.,348
+2017,5,Teleósteos,Linguado,Flatfish,Paralichthys spp.,40183
+2017,5,Teleósteos,Linguado-areia,Flatfish,NA,66189
+2017,5,Teleósteos,Mangangá,Mangangá,NA,1560
+2017,5,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,152441
+2017,5,Teleósteos,Meca,Meca,NA,78054
+2017,5,Teleósteos,Merluza,Hake,Merluccius hubbsi,32570
+2017,5,Teleósteos,Miracéu,Stargazer,NA,1460
+2017,5,Teleósteos,Namorado,Namorado,Pseudopercis spp.,600
+2017,5,Teleósteos,Olho-de-boi,Amberjack,NA,400
+2017,5,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,2000
+2017,5,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,356808
+2017,5,Teleósteos,Pampo,Pampo,Trachinotus spp.,40
+2017,5,Teleósteos,Papa-moscas,Papa-moscas,NA,420
+2017,5,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,170
+2017,5,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,448
+2017,5,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,1630
+2017,5,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,23950
+2017,5,Teleósteos,Pescada,Weakfish,Cynoscion spp.,69420
+2017,5,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,12630
+2017,5,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,250
+2017,5,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,1960
+2017,5,Teleósteos,Prego,Prego,NA,646
+2017,5,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,2795789
+2017,5,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,2698270
+2017,5,Teleósteos,Serrinha,Atlantic spanish mackerel,Scomberomorus maculatus,50
+2017,5,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,12152
+2017,5,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,3929
+2017,5,Teleósteos,Xarelete,Black jack,Caranx latus,5265
+2017,5,,,#N/A,#N/A,0
+2017,6,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,2850
+2017,6,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,2850
+2017,6,Crustáceos,Camarão-cristalino,Shrimp,NA,5075
+2017,6,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,132170
+2017,6,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,84100
+2017,6,Crustáceos,Pitú,Pitú,NA,4760
+2017,6,Crustáceos,Sapateira,Edible crab,Cancer pagurus,1200
+2017,6,Elasmobrânquios,Cação-anequim,Shark,NA,15404
+2017,6,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,167016
+2017,6,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,1846
+2017,6,Elasmobrânquios,Cações,Shark,Mustelus spp,120
+2017,6,Elasmobrânquios,Emplastro,Emplastro,NA,54454
+2017,6,Moluscos,Lula,Squid,Loligo sanpaulensis,1577
+2017,6,Moluscos,Polvo,Octopus,Octopus spp.,1542
+2017,6,Não Cadastrado,Mistura,Other fish,NA,297935
+2017,6,Não Cadastrado,Residuo,Residuo,NA,100
+2017,6,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,79882
+2017,6,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,150540
+2017,6,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,17613
+2017,6,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,2920
+2017,6,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,23872
+2017,6,Teleósteos,Atum,Blow goat,Auxis rochei,31200
+2017,6,Teleósteos,Baiacú,trunkfish,NA,130
+2017,6,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,8429
+2017,6,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,8003
+2017,6,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,207787
+2017,6,Teleósteos,Bonito-pintado,Atlantic black skipjack,Euthynnus alletteratus,9000
+2017,6,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,346220
+2017,6,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,260
+2017,6,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,232293
+2017,6,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,119515
+2017,6,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,16737
+2017,6,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,1470
+2017,6,Teleósteos,Corvina,Croaker,Micropogonias furnieri,173440
+2017,6,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,198616
+2017,6,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,510
+2017,6,Teleósteos,Enguia,Common Eel,Conger orbignyanus,210
+2017,6,Teleósteos,Espada,Broadbill,Xiphias gladius,2905
+2017,6,Teleósteos,Galo,American John Dory,Zenopsis conchifer,16000
+2017,6,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,15668
+2017,6,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,32670
+2017,6,Teleósteos,Guaivira,Jack,Oligoplites spp.,45
+2017,6,Teleósteos,Linguado,Flatfish,Paralichthys spp.,33898
+2017,6,Teleósteos,Linguado-areia,Flatfish,NA,35095
+2017,6,Teleósteos,Mangangá,Mangangá,NA,40
+2017,6,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,64334
+2017,6,Teleósteos,Meca,Meca,NA,112465
+2017,6,Teleósteos,Merluza,Hake,Merluccius hubbsi,25697
+2017,6,Teleósteos,Miracéu,Stargazer,NA,20
+2017,6,Teleósteos,Olho-de-boi,Amberjack,NA,200
+2017,6,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,10078
+2017,6,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,593471
+2017,6,Teleósteos,Papa-moscas,Papa-moscas,NA,80
+2017,6,Teleósteos,Paru,Paru,NA,24000
+2017,6,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,144
+2017,6,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,688
+2017,6,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,10855
+2017,6,Teleósteos,Pescada,Weakfish,Cynoscion spp.,25080
+2017,6,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,28440
+2017,6,Teleósteos,Pescada-cambucu,Weakfish,NA,500
+2017,6,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,3140
+2017,6,Teleósteos,Prego,Prego,NA,1626
+2017,6,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,781325.5
+2017,6,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,1087738
+2017,6,Teleósteos,Sarrão,Sarrão,NA,2000
+2017,6,Teleósteos,Serrinha,Atlantic spanish mackerel,Scomberomorus maculatus,20
+2017,6,Teleósteos,Tainha,Mullet,Mugil spp.,500438
+2017,6,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,4963
+2017,6,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,7987
+2017,6,Teleósteos,Xarelete,Black jack,Caranx latus,17800
+2017,6,,,#N/A,#N/A,0
+2017,7,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,1910
+2017,7,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,2150
+2017,7,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,213411
+2017,7,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,50
+2017,7,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,39800
+2017,7,Crustáceos,Pitú,Pitú,NA,178
+2017,7,Crustáceos,Sapateira,Edible crab,Cancer pagurus,770
+2017,7,Elasmobrânquios,Cação-anequim,Shark,NA,10747
+2017,7,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,125889
+2017,7,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,1000
+2017,7,Elasmobrânquios,Emplastro,Emplastro,NA,35584
+2017,7,Moluscos,Lula,Squid,Loligo sanpaulensis,3580
+2017,7,Moluscos,Polvo,Octopus,Octopus spp.,1007
+2017,7,Não Cadastrado,Mistura,Other fish,NA,248764
+2017,7,Não Cadastrado,Residuo,Residuo,NA,1580
+2017,7,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,138177
+2017,7,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,163300
+2017,7,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,25
+2017,7,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,248
+2017,7,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,3185
+2017,7,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,8125
+2017,7,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,19014
+2017,7,Teleósteos,Atum,Blow goat,Auxis rochei,50313
+2017,7,Teleósteos,Bagre,Couma sea catfish,Sciades couma,2650
+2017,7,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,6600
+2017,7,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,11492
+2017,7,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,694
+2017,7,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,218029
+2017,7,Teleósteos,Borriquete,Borriquete,NA,40
+2017,7,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,292777
+2017,7,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,56500
+2017,7,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,318790
+2017,7,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,34
+2017,7,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,2000
+2017,7,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,13870
+2017,7,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,2227
+2017,7,Teleósteos,Corvina,Croaker,Micropogonias furnieri,1273736
+2017,7,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,57506
+2017,7,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,1523
+2017,7,Teleósteos,Enguia,Common Eel,Conger orbignyanus,38
+2017,7,Teleósteos,Espada,Broadbill,Xiphias gladius,4667
+2017,7,Teleósteos,Galo,American John Dory,Zenopsis conchifer,1590
+2017,7,Teleósteos,Garoupa,Deady,Epinephelus spp.,30
+2017,7,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,13595
+2017,7,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,58920
+2017,7,Teleósteos,Guaivira,Jack,Oligoplites spp.,2564
+2017,7,Teleósteos,Linguado,Flatfish,Paralichthys spp.,41964
+2017,7,Teleósteos,Linguado-areia,Flatfish,NA,25697
+2017,7,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,1500
+2017,7,Teleósteos,Mangangá,Mangangá,NA,880
+2017,7,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,120778
+2017,7,Teleósteos,Marimbá,Porgy,NA,60
+2017,7,Teleósteos,Meca,Meca,NA,138787
+2017,7,Teleósteos,Merluza,Hake,Merluccius hubbsi,28644
+2017,7,Teleósteos,Miracéu,Stargazer,NA,240
+2017,7,Teleósteos,Namorado,Namorado,Pseudopercis spp.,3200
+2017,7,Teleósteos,Olho-de-boi,Amberjack,NA,60
+2017,7,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,6959
+2017,7,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,1484406.5
+2017,7,Teleósteos,Pampo,Pampo,Trachinotus spp.,616
+2017,7,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,1730
+2017,7,Teleósteos,Paru,Paru,NA,36960
+2017,7,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,235
+2017,7,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,4255
+2017,7,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,29732
+2017,7,Teleósteos,Pescada,Weakfish,Cynoscion spp.,940
+2017,7,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,62220
+2017,7,Teleósteos,Pescada-bicuda,Pescada-bicuda,NA,100
+2017,7,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,10200
+2017,7,Teleósteos,Pescada-cambucu,Weakfish,NA,352
+2017,7,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,3840
+2017,7,Teleósteos,Prego,Prego,NA,1382
+2017,7,Teleósteos,Sarrão,Sarrão,NA,500
+2017,7,Teleósteos,Tainha,Mullet,Mugil spp.,66100
+2017,7,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,5780
+2017,7,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,4865
+2017,7,Teleósteos,Xarelete,Black jack,Caranx latus,28520
+2017,8,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,1000
+2017,8,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,1770
+2017,8,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,77272
+2017,8,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,12100
+2017,8,Crustáceos,Pitú,Pitú,NA,216
+2017,8,Crustáceos,Sapateira,Edible crab,Cancer pagurus,485
+2017,8,Elasmobrânquios,Cação-anequim,Shark,NA,11017
+2017,8,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,71483
+2017,8,Elasmobrânquios,Emplastro,Emplastro,NA,18499
+2017,8,Elasmobrânquios,Machote,Spinner Shark,NA,600
+2017,8,Elasmobrânquios,Raia,Ray,NA,260
+2017,8,Elasmobrânquios,Raposa,Raposa,NA,10
+2017,8,Moluscos,Lula,Squid,Loligo sanpaulensis,3322
+2017,8,Moluscos,Polvo,Octopus,Octopus spp.,173
+2017,8,Moluscos,Vieira,Great Atlantic scallop,Euvola ziczac,40
+2017,8,Não Cadastrado,Mistura,Other fish,NA,94457
+2017,8,Não Cadastrado,Residuo,Residuo,NA,3340
+2017,8,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,164195
+2017,8,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,33030
+2017,8,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,644
+2017,8,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,2447
+2017,8,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,11258
+2017,8,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,19151
+2017,8,Teleósteos,Atum,Blow goat,Auxis rochei,5820
+2017,8,Teleósteos,Bagre,Couma sea catfish,Sciades couma,100
+2017,8,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,14007
+2017,8,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,7353
+2017,8,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,95525
+2017,8,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,255235
+2017,8,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,1060
+2017,8,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,233873
+2017,8,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,24917
+2017,8,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,4000
+2017,8,Teleósteos,Cioba,Dog Snapper,Lutjanus analis,56
+2017,8,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,850
+2017,8,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,3834
+2017,8,Teleósteos,Corvina,Croaker,Micropogonias furnieri,1433346
+2017,8,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,528
+2017,8,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,1284
+2017,8,Teleósteos,Enguia,Common Eel,Conger orbignyanus,235
+2017,8,Teleósteos,Espada,Broadbill,Xiphias gladius,4003
+2017,8,Teleósteos,Galo,American John Dory,Zenopsis conchifer,988
+2017,8,Teleósteos,Garoupa,Deady,Epinephelus spp.,1000
+2017,8,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,11023
+2017,8,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,42917
+2017,8,Teleósteos,Guaivira,Jack,Oligoplites spp.,3449
+2017,8,Teleósteos,Linguado,Flatfish,Paralichthys spp.,22323
+2017,8,Teleósteos,Linguado-areia,Flatfish,NA,7333
+2017,8,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,300
+2017,8,Teleósteos,Mangangá,Mangangá,NA,1520
+2017,8,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,85428
+2017,8,Teleósteos,Meca,Meca,NA,83489
+2017,8,Teleósteos,Merluza,Hake,Merluccius hubbsi,6300
+2017,8,Teleósteos,Miracéu,Stargazer,NA,1660
+2017,8,Teleósteos,Namorado,Namorado,Pseudopercis spp.,2280
+2017,8,Teleósteos,Olho-de-boi,Amberjack,NA,1540
+2017,8,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,3491
+2017,8,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,367929
+2017,8,Teleósteos,Pampo,Pampo,Trachinotus spp.,735
+2017,8,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,32
+2017,8,Teleósteos,Paru,Paru,NA,1669
+2017,8,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,68
+2017,8,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,3804
+2017,8,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,24210
+2017,8,Teleósteos,Pescada,Weakfish,Cynoscion spp.,1217
+2017,8,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,27500
+2017,8,Teleósteos,Pescada-bicuda,Pescada-bicuda,NA,691
+2017,8,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,1000
+2017,8,Teleósteos,Pescada-cambucu,Weakfish,NA,318
+2017,8,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,10154
+2017,8,Teleósteos,Prego,Prego,NA,2961
+2017,8,Teleósteos,Sardinha-cascuda,Blackbill sprat,Harengula clupeola,2240
+2017,8,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,3610838.96
+2017,8,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,1531239.5
+2017,8,Teleósteos,Sarrão,Sarrão,NA,4400
+2017,8,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,2977
+2017,8,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,2500
+2017,8,,,#N/A,#N/A,0
+2017,9,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,22022
+2017,9,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,680
+2017,9,Crustáceos,Camarão-cristalino,Shrimp,NA,9500
+2017,9,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,146067
+2017,9,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,515
+2017,9,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,48500
+2017,9,Crustáceos,Sapateira,Edible crab,Cancer pagurus,91
+2017,9,Elasmobrânquios,Cação-anequim,Shark,NA,22110
+2017,9,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,117187
+2017,9,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,1000
+2017,9,Elasmobrânquios,Emplastro,Emplastro,NA,12867
+2017,9,Elasmobrânquios,Machote,Spinner Shark,NA,27
+2017,9,Elasmobrânquios,Raia,Ray,NA,1080
+2017,9,Moluscos,Lula,Squid,Loligo sanpaulensis,8812
+2017,9,Moluscos,Polvo,Octopus,Octopus spp.,436
+2017,9,Não Cadastrado,Mistura,Other fish,NA,221497
+2017,9,Não Cadastrado,Residuo,Residuo,NA,2840
+2017,9,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,146402
+2017,9,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,119800
+2017,9,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,84
+2017,9,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,107
+2017,9,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,1901
+2017,9,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,18819
+2017,9,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,23813
+2017,9,Teleósteos,Atum,Blow goat,Auxis rochei,11800
+2017,9,Teleósteos,Bagre,Couma sea catfish,Sciades couma,3000
+2017,9,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,11100
+2017,9,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,4267
+2017,9,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,21705
+2017,9,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,99265
+2017,9,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,54070
+2017,9,Teleósteos,Carapeba,Broad shad,Diapterus auratus,70
+2017,9,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,428923
+2017,9,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,42
+2017,9,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,600
+2017,9,Teleósteos,Cherne,Grouper,NA,200
+2017,9,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,300
+2017,9,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,5600
+2017,9,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,2074
+2017,9,Teleósteos,Corvina,Croaker,Micropogonias furnieri,821715
+2017,9,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,1514
+2017,9,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,16485
+2017,9,Teleósteos,Enguia,Common Eel,Conger orbignyanus,46
+2017,9,Teleósteos,Espada,Broadbill,Xiphias gladius,10332
+2017,9,Teleósteos,Galo,American John Dory,Zenopsis conchifer,123
+2017,9,Teleósteos,Garoupa,Deady,Epinephelus spp.,300
+2017,9,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,8335
+2017,9,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,11640
+2017,9,Teleósteos,Guaivira,Jack,Oligoplites spp.,1364
+2017,9,Teleósteos,Linguado,Flatfish,Paralichthys spp.,36338
+2017,9,Teleósteos,Linguado-areia,Flatfish,NA,5994
+2017,9,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,1300
+2017,9,Teleósteos,Mangangá,Mangangá,NA,60
+2017,9,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,30569
+2017,9,Teleósteos,Meca,Meca,NA,91598
+2017,9,Teleósteos,Merluza,Hake,Merluccius hubbsi,43601
+2017,9,Teleósteos,Miracéu,Stargazer,NA,1355
+2017,9,Teleósteos,Namorado,Namorado,Pseudopercis spp.,2183
+2017,9,Teleósteos,Olhete,Amberjack,Seriola lalandi,150
+2017,9,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,1069
+2017,9,Teleósteos,Oveva,Cabezon,Larimus breviceps,39
+2017,9,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,800285
+2017,9,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,318
+2017,9,Teleósteos,Paru,Paru,NA,100781
+2017,9,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,364
+2017,9,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,5686
+2017,9,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,21924
+2017,9,Teleósteos,Pescada,Weakfish,Cynoscion spp.,1642
+2017,9,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,6605
+2017,9,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,300
+2017,9,Teleósteos,Pescada-cambucu,Weakfish,NA,381
+2017,9,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,626
+2017,9,Teleósteos,Prego,Prego,NA,7462
+2017,9,Teleósteos,Roncador,Barred grunt,Conodon nobilis,68
+2017,9,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,467288
+2017,9,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,1293418
+2017,9,Teleósteos,Sarrão,Sarrão,NA,1000
+2017,9,Teleósteos,Savelha,Twaite shad,Brevoortia spp.,6
+2017,9,Teleósteos,Sororoca,Sororoca,Scomberomorus,113
+2017,9,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,2582
+2017,9,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,3839
+2017,9,Teleósteos,Xarelete,Black jack,Caranx latus,13180
+2017,9,Teleósteos,Xixarro,Jack mackerel,Trachurus lathami,26550
+2017,9,,,#N/A,#N/A,0
+2017,10,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,195487
+2017,10,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,320
+2017,10,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,102459
+2017,10,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,123525
+2017,10,Crustáceos,Camarão-santana + barba-ruca,Camarão-santana + barba-ruca,NA,12848
+2017,10,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,20300
+2017,10,Crustáceos,Sapateira,Edible crab,Cancer pagurus,100
+2017,10,Elasmobrânquios,Cação-anequim,Shark,NA,24017
+2017,10,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,97945
+2017,10,Elasmobrânquios,Emplastro,Emplastro,NA,4000
+2017,10,Elasmobrânquios,Raposa,Raposa,NA,1350
+2017,10,Moluscos,Lula,Squid,Loligo sanpaulensis,5300
+2017,10,Moluscos,Polvo,Octopus,Octopus spp.,345
+2017,10,Não Cadastrado,Mistura,Other fish,NA,190699
+2017,10,Não Cadastrado,Residuo,Residuo,NA,700
+2017,10,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,125457
+2017,10,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,30800
+2017,10,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,26
+2017,10,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,19
+2017,10,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,275
+2017,10,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,3489
+2017,10,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,17798
+2017,10,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,12000
+2017,10,Teleósteos,Atum,Blow goat,Auxis rochei,6360
+2017,10,Teleósteos,Bagre,Couma sea catfish,Sciades couma,140
+2017,10,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,9000
+2017,10,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,6448
+2017,10,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,14840
+2017,10,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,95397
+2017,10,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,62741
+2017,10,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,22180
+2017,10,Teleósteos,Carapeba,Broad shad,Diapterus auratus,376
+2017,10,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,533606
+2017,10,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,133
+2017,10,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,920
+2017,10,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,650
+2017,10,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,100
+2017,10,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,851
+2017,10,Teleósteos,Corvina,Croaker,Micropogonias furnieri,1511409
+2017,10,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,2747
+2017,10,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,5460
+2017,10,Teleósteos,Espada,Broadbill,Xiphias gladius,17008
+2017,10,Teleósteos,Galo,American John Dory,Zenopsis conchifer,3203
+2017,10,Teleósteos,Garoupa,Deady,Epinephelus spp.,400
+2017,10,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,20471
+2017,10,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,13726
+2017,10,Teleósteos,Guaivira,Jack,Oligoplites spp.,1730
+2017,10,Teleósteos,Linguado,Flatfish,Paralichthys spp.,84886
+2017,10,Teleósteos,Linguado-areia,Flatfish,NA,960
+2017,10,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,40
+2017,10,Teleósteos,Mangangá,Mangangá,NA,1890
+2017,10,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,128388
+2017,10,Teleósteos,Meca,Meca,NA,125736
+2017,10,Teleósteos,Merluza,Hake,Merluccius hubbsi,4000
+2017,10,Teleósteos,Miracéu,Stargazer,NA,341
+2017,10,Teleósteos,Namorado,Namorado,Pseudopercis spp.,2100
+2017,10,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,768
+2017,10,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,492087
+2017,10,Teleósteos,Pampo,Pampo,Trachinotus spp.,96
+2017,10,Teleósteos,Parati,Mullet,NA,140
+2017,10,Teleósteos,Paru,Paru,NA,24177
+2017,10,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,523
+2017,10,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,497
+2017,10,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,18660
+2017,10,Teleósteos,Pescada,Weakfish,Cynoscion spp.,681
+2017,10,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,64860
+2017,10,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,2200
+2017,10,Teleósteos,Pescada-cambucu,Weakfish,NA,536
+2017,10,Teleósteos,Prego,Prego,NA,9516
+2017,10,Teleósteos,Robalo,Snook,Centropomus spp.,98
+2017,10,Teleósteos,Roncador,Barred grunt,Conodon nobilis,40
+2017,10,Teleósteos,Sardinha-cascuda,Blackbill sprat,Harengula clupeola,71353
+2017,10,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,199015
+2017,10,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,847731
+2017,10,Teleósteos,Sarrão,Sarrão,NA,1000
+2017,10,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,8700
+2017,10,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,1250
+2017,10,Teleósteos,Xarelete,Black jack,Caranx latus,18480
+2017,10,Teleósteos,Xixarro,Jack mackerel,Trachurus lathami,20
+2017,10,,,#N/A,#N/A,0
+2017,11,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,282062
+2017,11,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,498
+2017,11,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,51681
+2017,11,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,209582
+2017,11,Crustáceos,Camarão-santana + barba-ruca,Camarão-santana + barba-ruca,NA,29500
+2017,11,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,44600
+2017,11,Crustáceos,Sapateira,Edible crab,Cancer pagurus,492
+2017,11,Elasmobrânquios,Cação-anequim,Shark,NA,17653
+2017,11,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,40743
+2017,11,Elasmobrânquios,Cação-baia,Cação-baia,NA,300
+2017,11,Elasmobrânquios,Cação-gato,Shark,NA,2000
+2017,11,Elasmobrânquios,Cação-tigre,Shark,NA,40
+2017,11,Elasmobrânquios,Cações,Shark,Mustelus spp,1810788
+2017,11,Elasmobrânquios,Emplastro,Emplastro,NA,27670
+2017,11,Elasmobrânquios,Machote,Spinner Shark,NA,1500
+2017,11,Elasmobrânquios,Raposa,Raposa,NA,60
+2017,11,Moluscos,Lula,Squid,Loligo sanpaulensis,10266
+2017,11,Moluscos,Polvo,Octopus,Octopus spp.,142
+2017,11,Não Cadastrado,Mistura,Other fish,NA,235800
+2017,11,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,77776
+2017,11,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,99000
+2017,11,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,260
+2017,11,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,6048
+2017,11,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,794
+2017,11,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,44225
+2017,11,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,13911.5
+2017,11,Teleósteos,Atum,Blow goat,Auxis rochei,1200
+2017,11,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,6100
+2017,11,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,7130
+2017,11,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,2440
+2017,11,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,247937
+2017,11,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,325220
+2017,11,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,1000
+2017,11,Teleósteos,Carapeba,Broad shad,Diapterus auratus,180
+2017,11,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,204077
+2017,11,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,142
+2017,11,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,500
+2017,11,Teleósteos,Congro,Argentine Conger,Conger spp.,500
+2017,11,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,1000
+2017,11,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,3561
+2017,11,Teleósteos,Corvina,Croaker,Micropogonias furnieri,727490
+2017,11,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,14830
+2017,11,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,13526
+2017,11,Teleósteos,Espada,Broadbill,Xiphias gladius,7185
+2017,11,Teleósteos,Galo,American John Dory,Zenopsis conchifer,2755
+2017,11,Teleósteos,Galo-de-profundidade,American John Dory,Zenopsis conchifer,1000
+2017,11,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,25151
+2017,11,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,8535
+2017,11,Teleósteos,Guaivira,Jack,Oligoplites spp.,7893
+2017,11,Teleósteos,Linguado,Flatfish,Paralichthys spp.,54289
+2017,11,Teleósteos,Linguado-areia,Flatfish,NA,10575
+2017,11,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,800
+2017,11,Teleósteos,Mangangá,Mangangá,NA,24
+2017,11,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,87840
+2017,11,Teleósteos,Meca,Meca,NA,57055
+2017,11,Teleósteos,Merluza,Hake,Merluccius hubbsi,22610
+2017,11,Teleósteos,Miracéu,Stargazer,NA,2238
+2017,11,Teleósteos,Namorado,Namorado,Pseudopercis spp.,100
+2017,11,Teleósteos,Olhete,Amberjack,Seriola lalandi,300
+2017,11,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,3112
+2017,11,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,11488
+2017,11,Teleósteos,Pampo,Pampo,Trachinotus spp.,333
+2017,11,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,500
+2017,11,Teleósteos,Paru,Paru,NA,10000
+2017,11,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,906
+2017,11,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,70795
+2017,11,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,9380
+2017,11,Teleósteos,Pescada,Weakfish,Cynoscion spp.,2409
+2017,11,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,94640
+2017,11,Teleósteos,Pescada-cambucu,Weakfish,NA,492
+2017,11,Teleósteos,Prego,Prego,NA,2635
+2017,11,Teleósteos,Robalo,Snook,Centropomus spp.,132
+2017,11,Teleósteos,Roncador,Barred grunt,Conodon nobilis,207
+2017,11,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,40
+2017,11,Teleósteos,Sarrão,Sarrão,NA,500
+2017,11,Teleósteos,Serrinha,Atlantic spanish mackerel,Scomberomorus maculatus,40
+2017,11,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,4368
+2017,11,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,770
+2017,11,Teleósteos,Xarelete,Black jack,Caranx latus,38
+2017,12,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,153359
+2017,12,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,577
+2017,12,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,30308
+2017,12,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,46660
+2017,12,Crustáceos,Camarão-santana + barba-ruca,Camarão-santana + barba-ruca,NA,9000
+2017,12,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,38944
+2017,12,Crustáceos,Sapateira,Edible crab,Cancer pagurus,725
+2017,12,Elasmobrânquios,Cação-anequim,Shark,NA,32751
+2017,12,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,48681
+2017,12,Elasmobrânquios,Cações,Shark,Mustelus spp,4892
+2017,12,Elasmobrânquios,Emplastro,Emplastro,NA,16415
+2017,12,Elasmobrânquios,Raposa,Raposa,NA,157
+2017,12,Moluscos,Lula,Squid,Loligo sanpaulensis,41230
+2017,12,Moluscos,Polvo,Octopus,Octopus spp.,860
+2017,12,Não Cadastrado,Mistura,Other fish,NA,199502
+2017,12,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,112124
+2017,12,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,77000
+2017,12,Teleósteos,Agulhão-azul,Agulhão-azul,NA,56
+2017,12,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,674
+2017,12,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,704
+2017,12,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,2665
+2017,12,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,87592.5
+2017,12,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,3961.5
+2017,12,Teleósteos,Atum,Blow goat,Auxis rochei,9860
+2017,12,Teleósteos,Bagre,Couma sea catfish,Sciades couma,991
+2017,12,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,12951
+2017,12,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,4335
+2017,12,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,949403
+2017,12,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,223404
+2017,12,Teleósteos,Carapeba,Broad shad,Diapterus auratus,1127
+2017,12,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,178607
+2017,12,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,172
+2017,12,Teleósteos,Cioba,Dog Snapper,Lutjanus analis,44
+2017,12,Teleósteos,Congro,Argentine Conger,Conger spp.,2500
+2017,12,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,1200
+2017,12,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,2762
+2017,12,Teleósteos,Corvina,Croaker,Micropogonias furnieri,917245
+2017,12,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,27153.8
+2017,12,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,46188
+2017,12,Teleósteos,Enguia,Common Eel,Conger orbignyanus,10
+2017,12,Teleósteos,Espada,Broadbill,Xiphias gladius,2709
+2017,12,Teleósteos,Galo,American John Dory,Zenopsis conchifer,4479
+2017,12,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,108596
+2017,12,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,11751
+2017,12,Teleósteos,Guaivira,Jack,Oligoplites spp.,2573
+2017,12,Teleósteos,Linguado,Flatfish,Paralichthys spp.,31403
+2017,12,Teleósteos,Linguado-areia,Flatfish,NA,8650
+2017,12,Teleósteos,Mangangá,Mangangá,NA,743
+2017,12,Teleósteos,Maria-luiza,Maria-luiza,NA,217
+2017,12,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,69688
+2017,12,Teleósteos,Meca,Meca,NA,33310
+2017,12,Teleósteos,Merluza,Hake,Merluccius hubbsi,22052
+2017,12,Teleósteos,Miracéu,Stargazer,NA,520
+2017,12,Teleósteos,Olhete,Amberjack,Seriola lalandi,20550
+2017,12,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,2944
+2017,12,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,5653
+2017,12,Teleósteos,Pampo,Pampo,Trachinotus spp.,831
+2017,12,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,22
+2017,12,Teleósteos,Paru,Paru,NA,25
+2017,12,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,864
+2017,12,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,49941
+2017,12,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,53601
+2017,12,Teleósteos,Pescada,Weakfish,Cynoscion spp.,781
+2017,12,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,21890
+2017,12,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,1530
+2017,12,Teleósteos,Pescada-cambucu,Weakfish,NA,858
+2017,12,Teleósteos,Prego,Prego,NA,1880
+2017,12,Teleósteos,Robalo,Snook,Centropomus spp.,535
+2017,12,Teleósteos,Roncador,Barred grunt,Conodon nobilis,1007
+2017,12,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,290
+2017,12,Teleósteos,Sarrão,Sarrão,NA,500
+2017,12,Teleósteos,Serrinha,Atlantic spanish mackerel,Scomberomorus maculatus,2300
+2017,12,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,1977
+2017,12,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,3697
+2017,12,Teleósteos,Xarelete,Black jack,Caranx latus,1922
+2018,1,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,31180
+2018,1,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,1115
+2018,1,Crustáceos,Camarão-cristalino,Shrimp,NA,89216
+2018,1,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,15037
+2018,1,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,17502
+2018,1,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,144852
+2018,1,Crustáceos,Pitú,Pitú,NA,11320
+2018,1,Crustáceos,Sapateira,Edible crab,Cancer pagurus,719
+2018,1,Elasmobrânquios,Cação-anequim,Shark,NA,3233
+2018,1,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,37182
+2018,1,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,300
+2018,1,Elasmobrânquios,Cação-gato,Shark,NA,1000
+2018,1,Elasmobrânquios,Cações,Shark,Mustelus spp,851
+2018,1,Elasmobrânquios,Emplastro,Emplastro,NA,18715
+2018,1,Elasmobrânquios,Raia,Ray,NA,1000
+2018,1,Moluscos,Lula,Squid,Loligo sanpaulensis,20500
+2018,1,Moluscos,Polvo,Octopus,Octopus spp.,244
+2018,1,Não Cadastrado,Mistura,Other fish,NA,113238
+2018,1,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,79267
+2018,1,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,124000
+2018,1,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,62
+2018,1,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,12020
+2018,1,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,1147
+2018,1,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,145445
+2018,1,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,4822
+2018,1,Teleósteos,Atum,Blow goat,Auxis rochei,27996
+2018,1,Teleósteos,Bagre,Couma sea catfish,Sciades couma,8
+2018,1,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,8160
+2018,1,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,3035
+2018,1,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,947
+2018,1,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,933190.5
+2018,1,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,159821
+2018,1,Teleósteos,Carapeba,Broad shad,Diapterus auratus,1000
+2018,1,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,63046
+2018,1,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,869
+2018,1,Teleósteos,Cherne,Grouper,NA,40
+2018,1,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,1400
+2018,1,Teleósteos,Congro,Argentine Conger,Conger spp.,736
+2018,1,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,8693
+2018,1,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,849
+2018,1,Teleósteos,Corvina,Croaker,Micropogonias furnieri,223556
+2018,1,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,27224
+2018,1,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,112
+2018,1,Teleósteos,Enguia,Common Eel,Conger orbignyanus,15
+2018,1,Teleósteos,Espada,Broadbill,Xiphias gladius,3409
+2018,1,Teleósteos,Ferrinho,Ferrinho,NA,2000
+2018,1,Teleósteos,Galo,American John Dory,Zenopsis conchifer,874
+2018,1,Teleósteos,Galo-de-profundidade,American John Dory,Zenopsis conchifer,1800
+2018,1,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,42846
+2018,1,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,6997
+2018,1,Teleósteos,Guaivira,Jack,Oligoplites spp.,236
+2018,1,Teleósteos,Linguado,Flatfish,Paralichthys spp.,6251
+2018,1,Teleósteos,Linguado-areia,Flatfish,NA,31021
+2018,1,Teleósteos,Mangangá,Mangangá,NA,115
+2018,1,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,16918
+2018,1,Teleósteos,Meca,Meca,NA,57509
+2018,1,Teleósteos,Merluza,Hake,Merluccius hubbsi,37189
+2018,1,Teleósteos,Miracéu,Stargazer,NA,632
+2018,1,Teleósteos,Namorado,Namorado,Pseudopercis spp.,711
+2018,1,Teleósteos,Olho-de-boi,Amberjack,NA,40
+2018,1,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,448
+2018,1,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,36140
+2018,1,Teleósteos,Pampo,Pampo,Trachinotus spp.,1201
+2018,1,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,2820
+2018,1,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,74625
+2018,1,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,20964
+2018,1,Teleósteos,Pescada,Weakfish,Cynoscion spp.,1265
+2018,1,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,51590
+2018,1,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,800
+2018,1,Teleósteos,Pescada-cambucu,Weakfish,NA,20
+2018,1,Teleósteos,Prego,Prego,NA,1446
+2018,1,Teleósteos,Robalo,Snook,Centropomus spp.,100
+2018,1,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,4254
+2018,1,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,5508
+2018,1,,,#N/A,#N/A,0
+2018,2,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,6020
+2018,2,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,5369
+2018,2,Crustáceos,Camarão-cristalino,Shrimp,NA,42009
+2018,2,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,80799
+2018,2,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,444
+2018,2,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,91086
+2018,2,Crustáceos,Camarões,Shrimp,NA,21
+2018,2,Crustáceos,Pitú,Pitú,NA,12973
+2018,2,Crustáceos,Sapateira,Edible crab,Cancer pagurus,2497
+2018,2,Elasmobrânquios,Cação-anequim,Shark,NA,2289
+2018,2,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,32844
+2018,2,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,2020
+2018,2,Elasmobrânquios,Emplastro,Emplastro,NA,18272
+2018,2,Elasmobrânquios,Raia,Ray,NA,3775
+2018,2,Moluscos,Lula,Squid,Loligo sanpaulensis,25599
+2018,2,Moluscos,Polvo,Octopus,Octopus spp.,1129
+2018,2,Não Cadastrado,Mistura,Other fish,NA,334277.97
+2018,2,Não Cadastrado,Residuo,Residuo,NA,22977.96
+2018,2,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,107945
+2018,2,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,95590
+2018,2,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,17
+2018,2,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,337
+2018,2,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,479
+2018,2,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,33330.5
+2018,2,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,55180
+2018,2,Teleósteos,Atum,Blow goat,Auxis rochei,25548
+2018,2,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,17594
+2018,2,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,4263
+2018,2,Teleósteos,Bonito,skipjack tuna,Auxis rochei,40
+2018,2,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,610
+2018,2,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,1018463
+2018,2,Teleósteos,Bonito-pintado,Atlantic black skipjack,Euthynnus alletteratus,129
+2018,2,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,224428
+2018,2,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,15000
+2018,2,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,160389
+2018,2,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,387
+2018,2,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,165970
+2018,2,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,774
+2018,2,Teleósteos,Congro,Argentine Conger,Conger spp.,915
+2018,2,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,25593
+2018,2,Teleósteos,Corvina,Croaker,Micropogonias furnieri,1138805
+2018,2,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,53
+2018,2,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,75
+2018,2,Teleósteos,Enguia,Common Eel,Conger orbignyanus,80
+2018,2,Teleósteos,Espada,Broadbill,Xiphias gladius,2629
+2018,2,Teleósteos,Galo,American John Dory,Zenopsis conchifer,1000
+2018,2,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,103969
+2018,2,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,11761
+2018,2,Teleósteos,Guaivira,Jack,Oligoplites spp.,400
+2018,2,Teleósteos,Linguado,Flatfish,Paralichthys spp.,22736
+2018,2,Teleósteos,Linguado-areia,Flatfish,NA,59365
+2018,2,Teleósteos,Mangangá,Mangangá,NA,18
+2018,2,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,133541
+2018,2,Teleósteos,Meca,Meca,NA,41746
+2018,2,Teleósteos,Merluza,Hake,Merluccius hubbsi,20471
+2018,2,Teleósteos,Miracéu,Stargazer,NA,526
+2018,2,Teleósteos,Namorado,Namorado,Pseudopercis spp.,2100
+2018,2,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,1314
+2018,2,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,2050
+2018,2,Teleósteos,Pampo,Pampo,Trachinotus spp.,238
+2018,2,Teleósteos,Papa-moscas,Papa-moscas,NA,80
+2018,2,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,420
+2018,2,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,121496
+2018,2,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,49149
+2018,2,Teleósteos,Pescada,Weakfish,Cynoscion spp.,69
+2018,2,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,35480
+2018,2,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,150
+2018,2,Teleósteos,Pescada-cambucu,Weakfish,NA,19
+2018,2,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,220
+2018,2,Teleósteos,Prego,Prego,NA,3345
+2018,2,Teleósteos,Robalo,Snook,Centropomus spp.,1000
+2018,2,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,46433
+2018,2,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,4684443
+2018,2,Teleósteos,Serrinha,Atlantic spanish mackerel,Scomberomorus maculatus,1160
+2018,2,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,15073
+2018,2,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,7137
+2018,2,Teleósteos,Xarelete,Black jack,Caranx latus,16500
+2018,2,,,#N/A,#N/A,0
+2018,3,Crustáceos,Camarão-barba-ruça,Camarão-barba-ruça,Artemesia longinaris,7170
+2018,3,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,961
+2018,3,Crustáceos,Camarão-cristalino,Shrimp,NA,38279
+2018,3,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,13055
+2018,3,Crustáceos,Camarão-santana,Shrimp,Pleoticus muelleri,2444
+2018,3,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,38035
+2018,3,Crustáceos,Pitú,Pitú,NA,12115
+2018,3,Crustáceos,Sapateira,Edible crab,Cancer pagurus,1247
+2018,3,Elasmobrânquios,Cação-anequim,Shark,NA,5288
+2018,3,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,48178
+2018,3,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,1688
+2018,3,Elasmobrânquios,Cação-baia,Cação-baia,NA,65
+2018,3,Elasmobrânquios,Cação-gato,Shark,NA,1060
+2018,3,Elasmobrânquios,Cação-tigre,Shark,NA,24
+2018,3,Elasmobrânquios,Emplastro,Emplastro,NA,28700
+2018,3,Elasmobrânquios,Machote,Spinner Shark,NA,11
+2018,3,Elasmobrânquios,Raia,Ray,NA,1079
+2018,3,Elasmobrânquios,Raposa,Raposa,NA,30
+2018,3,Moluscos,Lula,Squid,Loligo sanpaulensis,2080
+2018,3,Moluscos,Polvo,Octopus,Octopus spp.,338
+2018,3,Não Cadastrado,Mistura,Other fish,NA,235012.55
+2018,3,Não Cadastrado,Residuo,Residuo,NA,1057.76
+2018,3,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,101113
+2018,3,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,104474
+2018,3,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,18
+2018,3,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,3483
+2018,3,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,1889
+2018,3,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,30080
+2018,3,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,427
+2018,3,Teleósteos,Atum,Blow goat,Auxis rochei,6100
+2018,3,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,15353
+2018,3,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,4334
+2018,3,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,2722
+2018,3,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,1071637
+2018,3,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,351420
+2018,3,Teleósteos,Caranha,Dog Snapper,Lutjanus spp.,3500
+2018,3,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,1000
+2018,3,Teleósteos,Carapeba,Broad shad,Diapterus auratus,12
+2018,3,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,120382
+2018,3,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,312
+2018,3,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,243221
+2018,3,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,3700
+2018,3,Teleósteos,Congro,Argentine Conger,Conger spp.,1146
+2018,3,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,6867
+2018,3,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,100
+2018,3,Teleósteos,Corvina,Croaker,Micropogonias furnieri,889937
+2018,3,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,2736
+2018,3,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,98
+2018,3,Teleósteos,Enguia,Common Eel,Conger orbignyanus,194
+2018,3,Teleósteos,Espada,Broadbill,Xiphias gladius,4134
+2018,3,Teleósteos,Ferrinho,Ferrinho,NA,400
+2018,3,Teleósteos,Galo,American John Dory,Zenopsis conchifer,4755
+2018,3,Teleósteos,Galo-de-profundidade,American John Dory,Zenopsis conchifer,2000
+2018,3,Teleósteos,Garoupa,Deady,Epinephelus spp.,600
+2018,3,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,16941
+2018,3,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,24844
+2018,3,Teleósteos,Guaivira,Jack,Oligoplites spp.,341
+2018,3,Teleósteos,Linguado,Flatfish,Paralichthys spp.,27177
+2018,3,Teleósteos,Linguado-areia,Flatfish,NA,39731
+2018,3,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,176
+2018,3,Teleósteos,Mangangá,Mangangá,NA,408
+2018,3,Teleósteos,Maria-luiza,Maria-luiza,NA,180
+2018,3,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,178958
+2018,3,Teleósteos,Meca,Meca,NA,62557
+2018,3,Teleósteos,Merluza,Hake,Merluccius hubbsi,20994
+2018,3,Teleósteos,Miracéu,Stargazer,NA,238
+2018,3,Teleósteos,Namorado,Namorado,Pseudopercis spp.,3400
+2018,3,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,3520
+2018,3,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,25845
+2018,3,Teleósteos,Pampo,Pampo,Trachinotus spp.,2300
+2018,3,Teleósteos,Papa-moscas,Papa-moscas,NA,200
+2018,3,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,1840
+2018,3,Teleósteos,Paru,Paru,NA,100
+2018,3,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,58477.4
+2018,3,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,81167
+2018,3,Teleósteos,Pescada,Weakfish,Cynoscion spp.,477
+2018,3,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,47500
+2018,3,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,1200
+2018,3,Teleósteos,Prego,Prego,NA,15288
+2018,3,Teleósteos,Robalo,Snook,Centropomus spp.,1000
+2018,3,Teleósteos,Roncador,Barred grunt,Conodon nobilis,1008
+2018,3,Teleósteos,Sardinha-cascuda,Blackbill sprat,Harengula clupeola,552
+2018,3,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,456558
+2018,3,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,852425.56
+2018,3,Teleósteos,Sarrão,Sarrão,NA,100
+2018,3,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,3726
+2018,3,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,11550
+2018,3,Teleósteos,Xarelete,Black jack,Caranx latus,17080
+2018,3,Teleósteos,Xaréu,Black cavalli,Caranx hippos,10000
+2018,3,,,#N/A,#N/A,0
+2018,4,Crustáceos,Camarão-cristalino,Shrimp,NA,51405
+2018,4,Crustáceos,Pitú,Pitú,NA,23280
+2018,4,Crustáceos,Sapateira,Edible crab,Cancer pagurus,4033
+2018,4,Elasmobrânquios,Cação-anequim,Shark,NA,14297
+2018,4,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,107072
+2018,4,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,1073
+2018,4,Elasmobrânquios,Cação-martelo,Shark,NA,80
+2018,4,Elasmobrânquios,Emplastro,Emplastro,NA,62302
+2018,4,Elasmobrânquios,Moka,Moka,NA,60
+2018,4,Elasmobrânquios,Raia,Ray,NA,88
+2018,4,Moluscos,Lula,Squid,Loligo sanpaulensis,1800
+2018,4,Moluscos,Polvo,Octopus,Octopus spp.,958
+2018,4,Não Cadastrado,Mistura,Other fish,NA,267897.1
+2018,4,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,126816
+2018,4,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,140120
+2018,4,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,185
+2018,4,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,9351
+2018,4,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,2832
+2018,4,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,37751.5
+2018,4,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,729
+2018,4,Teleósteos,Atum,Blow goat,Auxis rochei,25000
+2018,4,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,13476
+2018,4,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,11159
+2018,4,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,1806
+2018,4,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,767323.5
+2018,4,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,313682
+2018,4,Teleósteos,Cangoá,Cangoá,NA,59
+2018,4,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,24640
+2018,4,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,194112
+2018,4,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,30
+2018,4,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,14175
+2018,4,Teleósteos,Cherne,Grouper,NA,500
+2018,4,Teleósteos,Congro,Argentine Conger,Conger spp.,623
+2018,4,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,13450
+2018,4,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,1400
+2018,4,Teleósteos,Corvina,Croaker,Micropogonias furnieri,568025
+2018,4,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,6500
+2018,4,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,125
+2018,4,Teleósteos,Enguia,Common Eel,Conger orbignyanus,156
+2018,4,Teleósteos,Espada,Broadbill,Xiphias gladius,4336
+2018,4,Teleósteos,Ferrinho,Ferrinho,NA,120
+2018,4,Teleósteos,Galo,American John Dory,Zenopsis conchifer,24777
+2018,4,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,42512
+2018,4,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,8664
+2018,4,Teleósteos,Guaivira,Jack,Oligoplites spp.,457
+2018,4,Teleósteos,Linguado,Flatfish,Paralichthys spp.,35181
+2018,4,Teleósteos,Linguado-areia,Flatfish,NA,52831
+2018,4,Teleósteos,Mangangá,Mangangá,NA,180
+2018,4,Teleósteos,Maria-luiza,Maria-luiza,NA,39
+2018,4,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,173806
+2018,4,Teleósteos,Meca,Meca,NA,79228
+2018,4,Teleósteos,Merluza,Hake,Merluccius hubbsi,61256
+2018,4,Teleósteos,Miracéu,Stargazer,NA,776
+2018,4,Teleósteos,Namorado,Namorado,Pseudopercis spp.,820
+2018,4,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,6403
+2018,4,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,223116
+2018,4,Teleósteos,Pampo,Pampo,Trachinotus spp.,210
+2018,4,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,140
+2018,4,Teleósteos,Paru,Paru,NA,160
+2018,4,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,267678
+2018,4,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,77421
+2018,4,Teleósteos,Pescada,Weakfish,Cynoscion spp.,26597
+2018,4,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,72300
+2018,4,Teleósteos,Pescada-bicuda,Pescada-bicuda,NA,40
+2018,4,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,250
+2018,4,Teleósteos,Pescada-cambucu,Weakfish,NA,467
+2018,4,Teleósteos,Prego,Prego,NA,2524
+2018,4,Teleósteos,Roncador,Barred grunt,Conodon nobilis,4280
+2018,4,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,1005600
+2018,4,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,1224278.9
+2018,4,Teleósteos,Sarrão,Sarrão,NA,2040
+2018,4,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,4792
+2018,4,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,10569
+2018,4,Teleósteos,Xarelete,Black jack,Caranx latus,4300
+2018,4,Teleósteos,Xaréu,Black cavalli,Caranx hippos,9000
+2018,4,,,#N/A,#N/A,0
+2018,5,Crustáceos,Camarão-cristalino,Shrimp,NA,66724
+2018,5,Crustáceos,Pitú,Pitú,NA,29125
+2018,5,Crustáceos,Sapateira,Edible crab,Cancer pagurus,770
+2018,5,Elasmobrânquios,Cação-anequim,Shark,NA,7762
+2018,5,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,118480
+2018,5,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,200
+2018,5,Elasmobrânquios,Emplastro,Emplastro,NA,42640
+2018,5,Elasmobrânquios,Raia,Ray,NA,277
+2018,5,Moluscos,Lula,Squid,Loligo sanpaulensis,2200
+2018,5,Moluscos,Polvo,Octopus,Octopus spp.,722
+2018,5,Não Cadastrado,Mistura,Other fish,NA,92488.07
+2018,5,Não Cadastrado,Residuo,Residuo,NA,1481.23
+2018,5,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,102615
+2018,5,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,157640
+2018,5,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,7043
+2018,5,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,2098
+2018,5,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,38768
+2018,5,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,7
+2018,5,Teleósteos,Atum,Blow goat,Auxis rochei,8700
+2018,5,Teleósteos,Bagre,Couma sea catfish,Sciades couma,2000
+2018,5,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,2480
+2018,5,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,6517
+2018,5,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,1252
+2018,5,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,940972
+2018,5,Teleósteos,Bonito-pintado,Atlantic black skipjack,Euthynnus alletteratus,20000
+2018,5,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,277713
+2018,5,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,297249
+2018,5,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,96
+2018,5,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,31945
+2018,5,Teleósteos,Cherne,Grouper,NA,100
+2018,5,Teleósteos,Cioba,Dog Snapper,Lutjanus analis,20
+2018,5,Teleósteos,Congro,Argentine Conger,Conger spp.,1545
+2018,5,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,24550
+2018,5,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,286
+2018,5,Teleósteos,Corvina,Croaker,Micropogonias furnieri,532440
+2018,5,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,1107
+2018,5,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,116
+2018,5,Teleósteos,Enguia,Common Eel,Conger orbignyanus,140
+2018,5,Teleósteos,Espada,Broadbill,Xiphias gladius,2840
+2018,5,Teleósteos,Galo,American John Dory,Zenopsis conchifer,5217
+2018,5,Teleósteos,Galo-de-profundidade,American John Dory,Zenopsis conchifer,1000
+2018,5,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,14705
+2018,5,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,7538
+2018,5,Teleósteos,Guaivira,Jack,Oligoplites spp.,739
+2018,5,Teleósteos,Linguado,Flatfish,Paralichthys spp.,14668
+2018,5,Teleósteos,Linguado-areia,Flatfish,NA,43823
+2018,5,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,1850
+2018,5,Teleósteos,Mangangá,Mangangá,NA,80
+2018,5,Teleósteos,Maria-luiza,Maria-luiza,NA,300
+2018,5,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,116792
+2018,5,Teleósteos,Meca,Meca,NA,49062
+2018,5,Teleósteos,Merluza,Hake,Merluccius hubbsi,42273
+2018,5,Teleósteos,Miracéu,Stargazer,NA,511
+2018,5,Teleósteos,Namorado,Namorado,Pseudopercis spp.,400
+2018,5,Teleósteos,Olho-de-boi,Amberjack,NA,120
+2018,5,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,1589
+2018,5,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,123383
+2018,5,Teleósteos,Pampo,Pampo,Trachinotus spp.,65
+2018,5,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,173
+2018,5,Teleósteos,Paru,Paru,NA,4480
+2018,5,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,20878
+2018,5,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,36016
+2018,5,Teleósteos,Pescada,Weakfish,Cynoscion spp.,159
+2018,5,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,42500
+2018,5,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,500
+2018,5,Teleósteos,Pescada-cambucu,Weakfish,NA,724
+2018,5,Teleósteos,Prego,Prego,NA,1985
+2018,5,Teleósteos,Roncador,Barred grunt,Conodon nobilis,2000
+2018,5,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,3036732.2
+2018,5,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,436825
+2018,5,Teleósteos,Sororoca,Sororoca,Scomberomorus,120
+2018,5,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,4786
+2018,5,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,7662
+2018,5,Teleósteos,Xarelete,Black jack,Caranx latus,1840
+2018,5,Teleósteos,Xaréu,Black cavalli,Caranx hippos,40
+2018,5,,,#N/A,#N/A,0
+2018,6,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,1430
+2018,6,Crustáceos,Camarão-cristalino,Shrimp,NA,1650
+2018,6,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,34431
+2018,6,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,82954
+2018,6,Crustáceos,Pitú,Pitú,NA,1272
+2018,6,Crustáceos,Sapateira,Edible crab,Cancer pagurus,1150
+2018,6,Elasmobrânquios,Cação-anequim,Shark,NA,21780
+2018,6,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,202960
+2018,6,Elasmobrânquios,Cação-bagre,Cação-bagre,NA,2200
+2018,6,Elasmobrânquios,Cação-cola-fina,Cação-cola-fina,NA,950
+2018,6,Elasmobrânquios,Emplastro,Emplastro,NA,49340
+2018,6,Moluscos,Lula,Squid,Loligo sanpaulensis,2100
+2018,6,Moluscos,Polvo,Octopus,Octopus spp.,1510
+2018,6,Não Cadastrado,Mistura,Other fish,NA,62389
+2018,6,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,22695
+2018,6,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,85000
+2018,6,Teleósteos,Agulhão,Atlantic saury,Scomberesox saurus,73
+2018,6,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,251
+2018,6,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,6785
+2018,6,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,3782
+2018,6,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,48152.5
+2018,6,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,45176
+2018,6,Teleósteos,Atum,Blow goat,Auxis rochei,3000
+2018,6,Teleósteos,Bagre,Couma sea catfish,Sciades couma,550
+2018,6,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,5100
+2018,6,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,5635
+2018,6,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,8051.5
+2018,6,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,650936
+2018,6,Teleósteos,Bonito-pintado,Atlantic black skipjack,Euthynnus alletteratus,18
+2018,6,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,238552
+2018,6,Teleósteos,Carapeba,Broad shad,Diapterus auratus,67
+2018,6,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,288801
+2018,6,Teleósteos,Cavala,Chub mackerel,Scomberomorus cavalla,50
+2018,6,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,70
+2018,6,Teleósteos,Cherne-galha-amarela,Grouper,Hyporthodus flavolimbatus,200
+2018,6,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,500
+2018,6,Teleósteos,Congro,Argentine Conger,Conger spp.,3040
+2018,6,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,6998
+2018,6,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,766
+2018,6,Teleósteos,Corvina,Croaker,Micropogonias furnieri,184938
+2018,6,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,7283
+2018,6,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,663
+2018,6,Teleósteos,Enguia,Common Eel,Conger orbignyanus,700
+2018,6,Teleósteos,Espada,Broadbill,Xiphias gladius,1798
+2018,6,Teleósteos,Galo,American John Dory,Zenopsis conchifer,463
+2018,6,Teleósteos,Galo-de-profundidade,American John Dory,Zenopsis conchifer,1500
+2018,6,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,10499
+2018,6,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,11937
+2018,6,Teleósteos,Guaivira,Jack,Oligoplites spp.,823
+2018,6,Teleósteos,Linguado,Flatfish,Paralichthys spp.,20112
+2018,6,Teleósteos,Linguado-areia,Flatfish,NA,27030
+2018,6,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,7
+2018,6,Teleósteos,Mangangá,Mangangá,NA,368
+2018,6,Teleósteos,Maria-luiza,Maria-luiza,NA,185
+2018,6,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,117834
+2018,6,Teleósteos,Meca,Meca,NA,124810
+2018,6,Teleósteos,Merluza,Hake,Merluccius hubbsi,45440
+2018,6,Teleósteos,Miracéu,Stargazer,NA,53
+2018,6,Teleósteos,Namorado,Namorado,Pseudopercis spp.,1044
+2018,6,Teleósteos,Olho-de-boi,Amberjack,NA,160
+2018,6,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,1815
+2018,6,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,486668
+2018,6,Teleósteos,Pampo,Pampo,Trachinotus spp.,529
+2018,6,Teleósteos,Paru,Paru,NA,38
+2018,6,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,673
+2018,6,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,59808
+2018,6,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,11500
+2018,6,Teleósteos,Pescada,Weakfish,Cynoscion spp.,859
+2018,6,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,28000
+2018,6,Teleósteos,Pescada-cambucu,Weakfish,NA,711
+2018,6,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,320
+2018,6,Teleósteos,Prego,Prego,NA,579
+2018,6,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,133380
+2018,6,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,55075
+2018,6,Teleósteos,Serrinha,Atlantic spanish mackerel,Scomberomorus maculatus,20
+2018,6,Teleósteos,Tainha,Mullet,Mugil spp.,3101558
+2018,6,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,6855
+2018,6,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,15278
+2018,7,Crustáceos,Camarão-branco,Camarão-branco,Litopenaeus schimitti,643
+2018,7,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,175835
+2018,7,Crustáceos,Camarão-sete-barbas,Shrimp,Xiphopenaeus kroyeri,35212
+2018,7,Crustáceos,Pitú,Pitú,NA,1130
+2018,7,Crustáceos,Sapateira,Edible crab,Cancer pagurus,1000
+2018,7,Elasmobrânquios,Cação-anequim,Shark,NA,20334
+2018,7,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,144248
+2018,7,Elasmobrânquios,Caçonete,Shark,NA,200
+2018,7,Elasmobrânquios,Emplastro,Emplastro,NA,25162
+2018,7,Elasmobrânquios,Machote,Spinner Shark,NA,15
+2018,7,Elasmobrânquios,Raia,Ray,NA,6650
+2018,7,Moluscos,Lula,Squid,Loligo sanpaulensis,1880
+2018,7,Moluscos,Polvo,Octopus,Octopus spp.,2360
+2018,7,Não Cadastrado,Mistura,Other fish,NA,119700
+2018,7,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,71736
+2018,7,Teleósteos,Abrótea-de-fundo,Brazilian codling,NA,70360
+2018,7,Teleósteos,Agulhão-azul,Agulhão-azul,NA,1600
+2018,7,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,165
+2018,7,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,15030
+2018,7,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,6613
+2018,7,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,45845.5
+2018,7,Teleósteos,Albacorinha,Albacore,Thunnus atlanticus,31279
+2018,7,Teleósteos,Atum,Blow goat,Auxis rochei,3532
+2018,7,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,2620
+2018,7,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,14383
+2018,7,Teleósteos,Bonito-cachorro,Bonito,Auxis thazard,7749.5
+2018,7,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,291755.5
+2018,7,Teleósteos,Bonito-pintado,Atlantic black skipjack,Euthynnus alletteratus,1217
+2018,7,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,300902
+2018,7,Teleósteos,Carapau,Jack mackerel,Trachurus lathami,700
+2018,7,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,399576
+2018,7,Teleósteos,Cherne-galha-amarela,Grouper,Hyporthodus flavolimbatus,1000
+2018,7,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,500
+2018,7,Teleósteos,Cioba,Dog Snapper,Lutjanus analis,40
+2018,7,Teleósteos,Congro,Argentine Conger,Conger spp.,160
+2018,7,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,2315
+2018,7,Teleósteos,Corcoroca,Grey Grunt,Haemulon spp.,2179
+2018,7,Teleósteos,Corvina,Croaker,Micropogonias furnieri,1551810
+2018,7,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,8849
+2018,7,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,657
+2018,7,Teleósteos,Enguia,Common Eel,Conger orbignyanus,855
+2018,7,Teleósteos,Espada,Broadbill,Xiphias gladius,35384
+2018,7,Teleósteos,Galo,American John Dory,Zenopsis conchifer,6020
+2018,7,Teleósteos,Galo-de-profundidade,American John Dory,Zenopsis conchifer,2500
+2018,7,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,12543
+2018,7,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,14526
+2018,7,Teleósteos,Guaivira,Jack,Oligoplites spp.,1486
+2018,7,Teleósteos,Linguado,Flatfish,Paralichthys spp.,36704
+2018,7,Teleósteos,Linguado-areia,Flatfish,NA,7220
+2018,7,Teleósteos,Linguado-vermelho,Linguado-vermelho,NA,500
+2018,7,Teleósteos,Mangangá,Mangangá,NA,1159
+2018,7,Teleósteos,Maria-luiza,Maria-luiza,NA,560
+2018,7,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,135232
+2018,7,Teleósteos,Marimbá,Porgy,NA,39
+2018,7,Teleósteos,Meca,Meca,NA,97144
+2018,7,Teleósteos,Merluza,Hake,Merluccius hubbsi,56584
+2018,7,Teleósteos,Miracéu,Stargazer,NA,672
+2018,7,Teleósteos,Namorado,Namorado,Pseudopercis spp.,1000
+2018,7,Teleósteos,Olho-de-boi,Amberjack,NA,60
+2018,7,Teleósteos,Olho-de-cão,Olho-de-cão,Priacanthus spp.,114
+2018,7,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,619740
+2018,7,Teleósteos,Pampo,Pampo,Trachinotus spp.,1723
+2018,7,Teleósteos,Pargo-rosa,Common sea bream,Pagrus pagrus,40
+2018,7,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,78
+2018,7,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,45347
+2018,7,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,32540
+2018,7,Teleósteos,Pescada,Weakfish,Cynoscion spp.,2894
+2018,7,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,53600
+2018,7,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,1500
+2018,7,Teleósteos,Pescada-cambucu,Weakfish,NA,38
+2018,7,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,24040
+2018,7,Teleósteos,Prego,Prego,NA,323
+2018,7,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,1067528
+2018,7,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,3511
+2018,7,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,2374
+2018,7,Teleósteos,Xarelete,Black jack,Caranx latus,1160
+2018,8,Crustáceos,Camarão-rosa,Shrimp,Farfantepenaeus paulensis,37083
+2018,8,Crustáceos,Pitú,Pitú,NA,198
+2018,8,Crustáceos,Sapateira,Edible crab,Cancer pagurus,60
+2018,8,Elasmobrânquios,Cação-anequim,Shark,NA,7069
+2018,8,Elasmobrânquios,Cação-azul,Blue dog,Prionace glauca,68168
+2018,8,Elasmobrânquios,Emplastro,Emplastro,NA,5250
+2018,8,Moluscos,Lula,Squid,Loligo sanpaulensis,270
+2018,8,Moluscos,Polvo,Octopus,Octopus spp.,1050
+2018,8,Não Cadastrado,Mistura,Other fish,NA,40462
+2018,8,Teleósteos,Abrótea,Brazilian codling,Urophycis brasiliensis,35300
+2018,8,Teleósteos,Agulhão-branco,Agulhão-branco,Tetrapturus albidus,98
+2018,8,Teleósteos,Albacora-bandolim,Albacore,Thunnus obesus,3429
+2018,8,Teleósteos,Albacora-branca,Albacora-branca,Thunnus alalunga,2395
+2018,8,Teleósteos,Albacora-lage,Albacore,Thunnus albacares,10062
+2018,8,Teleósteos,Atum,Blow goat,Auxis rochei,19000
+2018,8,Teleósteos,Batata,Atlantic goldeneye tilefish,Caulolatilus chrysops,8200
+2018,8,Teleósteos,Betara,Carolina Whiting,Menticirrhus spp.,3800
+2018,8,Teleósteos,Bonito-listrado,Skipjack tuna,Katsuwonus pelamis,23559
+2018,8,Teleósteos,Cabra,East Atlantic Red Gurnard,Prionotus spp.,52310
+2018,8,Teleósteos,Cascudo,Atlantic searobin,Prionotus punctatus,2000
+2018,8,Teleósteos,Castanha,Argentine croaker,Umbrina canosai,73500
+2018,8,Teleósteos,Cavalinha,American mackerel,Scomber japonicus,154
+2018,8,Teleósteos,Cherne-galha-amarela,Grouper,Hyporthodus flavolimbatus,1200
+2018,8,Teleósteos,Cherne-verdadeiro,Cherne-verdadeiro,NA,700
+2018,8,Teleósteos,Congro-rosa,Australian Rockling,Genypterus brasiliensis,655
+2018,8,Teleósteos,Corvina,Croaker,Micropogonias furnieri,528472
+2018,8,Teleósteos,Dourado,Common dolphifish,Coryphaena hippurus,1250
+2018,8,Teleósteos,Enchova,Ancho,Pomatomus saltatrix,500
+2018,8,Teleósteos,Espada,Broadbill,Xiphias gladius,3200
+2018,8,Teleósteos,Goete,Jamaica weakfish,Cynoscion jamaicensis,3650
+2018,8,Teleósteos,Gordinho,Angelfish,Pomacanthus arcuatus,3245
+2018,8,Teleósteos,Guaivira,Jack,Oligoplites spp.,530
+2018,8,Teleósteos,Linguado,Flatfish,Paralichthys spp.,19700
+2018,8,Teleósteos,Linguado-areia,Flatfish,NA,5000
+2018,8,Teleósteos,Maria-mole,Maria-mole,Cynoscion guatucupa,59240
+2018,8,Teleósteos,Meca,Meca,NA,60901
+2018,8,Teleósteos,Merluza,Hake,Merluccius hubbsi,400
+2018,8,Teleósteos,Namorado,Namorado,Pseudopercis spp.,3900
+2018,8,Teleósteos,Palombeta,Leerfish,Chloroscombrus chrysurus,390000
+2018,8,Teleósteos,Pampo,Pampo,Trachinotus spp.,380
+2018,8,Teleósteos,Peixe-lua,Ocean sunfish,Mola mola,60
+2018,8,Teleósteos,Peixe-porco,Angular roughshark,Oxynotus centrina,15700
+2018,8,Teleósteos,Peixe-sapo,Anglerfish,Lophius gastrophysus,110
+2018,8,Teleósteos,Peixe-tábua,Mediterranean dealfish,Trachipterus trachipterus,500
+2018,8,Teleósteos,Pescada,Weakfish,Cynoscion spp.,200
+2018,8,Teleósteos,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,45520
+2018,8,Teleósteos,Pescada-branca,Weakfish,Cynoscion leiarchus,510
+2018,8,Teleósteos,Pescadinha-real,Bangamary,Macrodon ancylodon,31300
+2018,8,Teleósteos,Prego,Prego,NA,221
+2018,8,Teleósteos,Sardinha-cascuda,Blackbill sprat,Harengula clupeola,19200
+2018,8,Teleósteos,Sardinha-lage,Atlantic thread herring,Opisthonema oglinum,734691
+2018,8,Teleósteos,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,1437101
+2018,8,Teleósteos,Tira-vira,Brazilian flathead,Percophis brasiliensis,1950
+2018,8,Teleósteos,Trilha,Argentine goatfish,Mullus argentinae,640
