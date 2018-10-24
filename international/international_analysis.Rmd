@@ -1357,6 +1357,7 @@ fnam_eez_world <- "eez_boundaries.shp"
 eez_world <- readOGR(dsn = path_eez_world,
                      layer =file_path_sans_ext(fnam_eez_world))
 
+Countries <- c("Brazil","Chile","Peru")
 Countries_Ar <- c(Countries,"Argentina")
 
 
@@ -1395,7 +1396,7 @@ unique(South_America_Land@data$NAME)
 
 # Getting Long and Lat data
 
-Coor <- read.csv("/Users/jpalacios/Documents/UBC/Oceans_Project/Distribution/DBEM/Data/Lat_Lon_DBEM.txt")
+Coor <- read.csv("/Users/jpalacios/Documents/UBC/Oceans_Project/Distribution/DBEM/Data/Lon_Lat_DBEM.txt")
 
 colnames(Coor) <- c("cell_id","Long","Lat")
 
@@ -1449,7 +1450,7 @@ Psum <- ggplot() +
   theme_classic() +
   theme(legend.position = "bottom")
   
-Plog <- ggplot() +
+ggplot() +
   geom_tile(data = SAU_Coor,
                aes(
                  x=Long,
@@ -1476,13 +1477,25 @@ Plog <- ggplot() +
        ) +
   # ylim(-75,5) +
   # xlim(-85,-26) +
+  ylab("") +
+  xlab("")+
   coord_fixed(xlim = c(-85, -26),  
               ylim = c(-60, 5), ratio = 1.2)+
   # facet_wrap(~Type,
   #            scales = "free") +
-  scale_fill_gradientn("Catch",colours = pal) +
+  scale_fill_gradientn("Log Catch",colours = pal) +
   theme_classic() +
-  theme(legend.position = "bottom")
+  theme(
+    axis.line = element_blank(),
+    axis.ticks=element_blank(),
+    axis.text = element_blank(),
+    legend.position = "bottom",
+    legend.text = element_text(size = 20),
+    legend.title = element_text(size = 20),
+    legend.key = element_rect(size = 4),
+    legend.key.width =unit(5,"line")
+  )
+  
 
 gridExtra::grid.arrange(Psum,
                         Plog,
