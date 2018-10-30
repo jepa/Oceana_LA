@@ -95,10 +95,10 @@ corefx <- function(
   Result_Table <- data.table(
     "Specie" = Species,
     "Country" = Country,
-    "Landings Food Supply" = LHC,
-    "Aquaculutre Food Supply" = AHC,
-    "Net Imports" = NI,
-    "National Seafood Supply" = NSP
+    "Landings Food Supply" = round(LHC,2),
+    "Aquaculutre Food Supply" = round(AHC,2),
+    "Net Imports" = round(NI,2),
+    "National Seafood Supply" = round(NSP,2)
   ) %>% 
     mutate(
       Warning = ifelse(Exp > LA_HC,"*","")
