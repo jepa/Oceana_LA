@@ -41,6 +41,7 @@ packages <- c(
   "broom",
   "rgeos",
   "sp",
+  "sf"
   "rgdal", #Spatial analysis
   "tools" #Spatial analysis
 )
@@ -339,7 +340,7 @@ Clean_FAO <- FAO %>%
 
 Data_Path <- "./information/raw_databases/"
 # File name
-A_F_Name <- "INPUT Matching Names.csv"
+A_F_Name <- "INPUT Matching Names_B.csv"
 #read dataset
 Andres_Names <- read.csv(paste(Data_Path,A_F_Name,
                       sep = ""))
@@ -347,13 +348,12 @@ Andres_Names <- read.csv(paste(Data_Path,A_F_Name,
 Andres_Names$FishStatName <- gsub(" ", ".",Andres_Names$FishStatName)
 Andres_Names$FishStatName <- gsub(",", "",Andres_Names$FishStatName)
 
-
-
 # First level #
 
 Clean_FAO_Spp <- Clean_FAO %>% 
   group_by(Comm.Name) %>% 
-  summarise(n())
+  summarise(n=n()) %>% 
+  select(-n)
 
 
 First_FAO_Andres <- Clean_FAO_Spp %>% 
@@ -377,7 +377,13 @@ Clean_FAO_Andres <- Clean_FAO %>%
   left_join(Final_FAO_Andres,
             by = "Comm.Name")
   
-  
+x <- Clean_FAO_Andres %>% 
+  filter(is.na(Taxon.Key)) %>% 
+  semi_join(Clean_FAO,
+            by = "Comm.Name") %>% 
+  group_by(Comm.Name) %>% 
+  summarise(n())
+
   
 #### DONE CLEANING FAO CATCH DATA #
 
@@ -1448,6 +1454,7 @@ SAU_Clean %>%
 
 #### FAO Data ####
 
+
 #Data Path
 Data_Path <- "./information/raw_databases/SAU/"
 # File name
@@ -1456,54 +1463,65 @@ SAU_Space_F_Name <- "OceanaSpatialDataPeruChileBrazil.csv"
 SAU_Spatial <- read.csv(paste(Data_Path,SAU_Space_F_Name,
                       sep = ""))
 
-
 #### EEZ limits ####
 
 path_eez_world <- ("/Users/jpalacios/Documents/UBC/Oceans_Project/Distribution/Data/Spatial/World_EEZ_v9_20161021/")
 #The File
-fnam_eez_world <- "eez_boundaries.shp"
+fnam_eez_world <- "eez_boundaries"
 #Load it!
 
 #### Extract
-eez_world <- readOGR(dsn = path_eez_world,
-                     layer =file_path_sans_ext(fnam_eez_world))
-
+system.time(eez_world <- st_read(
+  dsn = path_eez_world,
+  layer =file_path_sans_ext(fnam_eez_world)
+  )
+)
+  
+# Select countries EEZ
 Countries <- c("Brazil","Chile","Peru")
 Countries_Ar <- c(Countries,"Argentina")
 
+# Subset EEZs from shapefile
+South_America_EEZ <- eez_world %>% 
+  filter(Territory1 %in% Countries)
 
-#Subsetting South America
-South_America <- eez_world[eez_world$Territory1 %in% Countries_Ar,]
-unique(South_America@data$Territory1)
+# unique(South_America$Territory1)
 
 
 #### Countries shape ####
 
 path.ne.coast <- "information/raw_databases/Spatial/TM_WORLD_BORDERS-0.3"
-file_name <- "TM_WORLD_BORDERS-0.3.shp"
+file_name <- "TM_WORLD_BORDERS"
 
 # Loading the shapefile:
-World_Land <- readOGR(dsn = path.ne.coast, 
-                      layer = file_path_sans_ext(file_name),
-                      verbose = FALSE
+system.time(World_Land <- st_read(dsn = path.ne.coast, 
+                      layer = file_path_sans_ext(file_name)#,
+                      # verbose = FALSE
                       )
-
-# Central_A@data$NAME
+)
 
 South_Border <- c("Brazil",
                   "Peru",
                   "Chile",
                   "Argentina",
-                  # "Colombia",
+                  "Colombia",
+                  "Venezuela",
                   "Ecuador",
                   "Uruguay",
                   "Bolivia",
-                  "Paraguay")
+                  "Paraguay",
+                  "Guyana",
+                  "Suriname",
+                  "French Guiana"
+                  )
 
+South_America_Land <- World_Land %>% 
+  filter(NAME %in% South_Border) %>% 
+  mutate(
+    Nation = ifelse(NAME %in% Countries, "Yes","No")
+  )
 
-South_America_Land <- subset(World_Land, NAME %in% South_Border)
-
-unique(South_America_Land@data$NAME)
+unique(South_America_Land$NAME)
 
 # Getting Long and Lat data
 
@@ -1511,106 +1529,126 @@ Coor <- read.csv("/Users/jpalacios/Documents/UBC/Oceans_Project/Distribution/DBE
 
 colnames(Coor) <- c("cell_id","Long","Lat")
 
+# Use Vicky's dataset...
+
+# library(readxl)
+EEZ_CellID <- read_excel("~/Documents/UBC/Oceans_Project/Distribution/By Cell/Cell_Data/EEZ_CellID.xlsx")
+head(EEZ_CellID)
+
+EEZ_List <- read_excel("~/Documents/UBC/Oceans_Project/Distribution/By Cell/Cell_Data/Updated_EEZList_17June2016.xlsx")
+head(EEZ_List)
+
+# First filter  the countries we want, bruh! 
+Countries_EEZ_SAU <- EEZ_List %>% 
+  filter(Name %in% Countries)
+
+# Now get the cellID for these countries
+
+Countries_Cell_Id <-EEZ_CellID %>% 
+  filter(EEZID %in% Countries_EEZ_SAU$EEZID)
+
+# unique(Countries_Cell_Id$EEZID)
+# unique(SAU_Spatial$fishing_entity_id)
+
 # Merging datasets
 SAU_Coor <- SAU_Spatial %>%
+  filter(cell_id %in% Countries_Cell_Id$`CellID `) %>% 
   group_by(fishing_entity_id,
            cell_id) %>% 
   summarise(sum = sum(sum,na.rm=T)) %>% 
   mutate(Log = log10(sum)) %>% 
   left_join(Coor,
-            by = "cell_id")
+            by = "cell_id") %>% 
+  mutate(
+    Territory1 = ifelse(fishing_entity_id == 15, "Brazil",
+                  ifelse(fishing_entity_id == 30,"Chile","Peru")
+    )
+    ) %>% 
+  left_join(South_America_Land,
+            by = "Territory1")
   
   
+# Save the shapefile for report
+# st_write(SAU_Coor, "SAU_Shapefile.shp", driver = "ESRI Shapefile", delete_layer = TRUE)
+
+## Test loading 
+
+# path_SAU_shp <- ("~/Documents/Github/Oceana_LA/international/information/raw_databases/Spatial/SAU_Shapefile_Clean/")
+# #The File
+# fnam_SAU_shp <- "SAU_Shapefile"
+# #Load it!
+# 
+# system.time(test <- st_read(
+#   dsn = path_SAU_shp,
+#   layer =file_path_sans_ext(fnam_SAU_shp)
+#   )
+# )
+
+# Works beautifully!!!!
+
+
 # The actual map
 
 # Some Zissouy collors :)
 pal <- wes_palette("Zissou1", 100, type = "continuous")
 
-Psum <- ggplot() +
+ggplot(South_America_Land) +
+  geom_sf() +
+  # geom_sf(aes(fill = Nation)) +
+  # scale_fill_manual(values = wes_palette("Darjeeling1", 2, type = "discrete")#,
+  #                   # labels = c("Export","Import") 
+  #                   ) +
   geom_tile(data = SAU_Coor,
                aes(
                  x=Long,
                  y=Lat,
-                 fill = sum
+                 fill = Log,
+                 colour = Log
                )
                ) +
-  geom_polygon(data = South_America_Land,
-               aes(
-                 x = long,
-                 y = lat,
-                 group = group,
-                 color = NAME
-               ),
-               fill = "gray",
-               colour = "black"
-               ) +
-  geom_path(data = South_America,
-       aes(
-         x = long,
-         y = lat,
-         group = group
-       )
-       ) +
-  # ylim(-75,5) +
-  # xlim(-85,-26) +
-  coord_fixed(xlim = c(-85, -26),  
-              ylim = c(-60, 5), ratio = 1.2)+
-  # facet_wrap(~Type,
-  #            scales = "free") +
-  scale_fill_gradientn("Catch",colours = pal) +
-  theme_classic() +
-  theme(legend.position = "bottom")
-  
-ggplot() +
-  geom_tile(data = SAU_Coor,
-               aes(
-                 x=Long,
-                 y=Lat,
-                 fill = Log
-               )
-               ) +
-  geom_polygon(data = South_America_Land,
-               aes(
-                 x = long,
-                 y = lat,
-                 group = group,
-                 color = NAME
-               ),
-               fill = "gray",
-               colour = "black"
-               ) +
-  geom_path(data = South_America,
-       aes(
-         x = long,
-         y = lat,
-         group = group
-       )
-       ) +
-  # ylim(-75,5) +
-  # xlim(-85,-26) +
-  ylab("") +
-  xlab("")+
-  coord_fixed(xlim = c(-85, -26),  
-              ylim = c(-60, 5), ratio = 1.2)+
-  # facet_wrap(~Type,
-  #            scales = "free") +
-  scale_fill_gradientn("Log Catch",colours = pal) +
-  theme_classic() +
+  scale_fill_gradientn("Wild Captures\n (Log x 10)",
+                       colours = pal
+                       ) +
+  scale_colour_gradientn("Wild Captures\n (Log x 10)",
+                         colours = pal) +
+  coord_sf(
+    xlim = c(-85, -26),
+    ylim = c(-65, 10)
+  ) +
+  ggtheme_map() +
   theme(
-    axis.line = element_blank(),
-    axis.ticks=element_blank(),
-    axis.text = element_blank(),
-    legend.position = "bottom",
-    legend.text = element_text(size = 20),
-    legend.title = element_text(size = 20),
     legend.key = element_rect(size = 4),
-    legend.key.width =unit(5,"line")
+    legend.key.width =unit(6,"line")
+  ) +
+  annotate("text",
+           label= "Brazil",
+           x = -28,
+           y = -1,
+           size = 5,
+           colour = "#000000"
+  ) +
+  annotate("text",
+           label= "Chile",
+           x = -83,
+           y = -26.5,
+           size = 5,
+           colour = "#000000"
+  ) +
+  annotate("text",
+           label= "Peru",
+           x = -83.5,
+           y = -16,
+           size = 5,
+           colour = "#000000"
+  ) +
+  theme(
+    legend.position = "bottom"
   )
-  
 
-gridExtra::grid.arrange(Psum,
-                        Plog,
-                        ncol = 2)
 
+ggplot(South_America_Land) +
+  geom_sf(
+    aes(fill = Log)
+  )
 
 ```

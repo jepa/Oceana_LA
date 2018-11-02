@@ -41,6 +41,8 @@ packages <- c(
   "dplyr", # Data manipulation
   "tidyr", # Data manipulation
   "ggplot2", #Nice grpahs and spatial analysis
+  "cowplot",
+  "ggpubr",
   # "plotly",
   "wesanderson",
   "purrr", #for loading multiple datasets
@@ -53,7 +55,7 @@ packages <- c(
   "gridExtra",
   # "ggmap",
   # "rgeos",
-  # "sp",
+  "sf",
   "rgdal", #Spatial analysis
   "tools" #Spatial analysis
 )
@@ -420,7 +422,7 @@ ggplot() +
            x = -26,
            y = -9,
            size = 5,
-           colour = "#FF0000"
+           colour = "#000000"
   ) +
   annotate("text",
            label= "Chile",
@@ -486,7 +488,102 @@ The results section is divided in two main subsections representing Intergovernm
 
 <!-- ### Fisheries Context -->
 
-**SAU MAP**
+```{r SAU_Fishing_Effort_Map, eval=T, echo=F, warning=F,message=F}
+
+#### Countries shape ####
+
+path.ne.coast <- "~/Documents/Github/Oceana_LA/international/information/raw_databases/Spatial/TM_WORLD_BORDERS-0.3"
+file_name <- "TM_WORLD_BORDERS"
+
+# Loading the shapefile:
+World_Land <- st_read(dsn = path.ne.coast, 
+                      layer = file_path_sans_ext(file_name)
+                      )
+South_Border <- c("Brazil",
+                  "Peru",
+                  "Chile",
+                  "Argentina",
+                  "Colombia",
+                  "Venezuela",
+                  "Ecuador",
+                  "Uruguay",
+                  "Bolivia",
+                  "Paraguay",
+                  "Guyana",
+                  "Suriname",
+                  "French Guiana"
+                  )
+
+South_America_Land <- World_Land %>% 
+  filter(NAME %in% South_Border)
+
+# Now we load SAU shapefile with fishing data
+
+path_SAU_shp <- ("~/Documents/Github/Oceana_LA/international/information/raw_databases/Spatial/SAU_Shapefile_Clean/")
+#The File
+fnam_SAU_shp <- "SAU_Shapefile"
+#Load it!
+
+SAU_shp <- st_read(
+  dsn = path_SAU_shp,
+  layer =file_path_sans_ext(fnam_SAU_shp)
+  )
+
+# And now we plot theactual map
+
+# Some Zissouy collors :)
+pal <- wes_palette("Zissou1", 100, type = "continuous")
+
+ggplot(South_America_Land) +
+  geom_sf() +
+  geom_tile(data = SAU_shp,
+               aes(
+                 x=Long,
+                 y=Lat,
+                 fill = Log,
+                 colour = Log
+               )
+               ) +
+  scale_fill_gradientn("Wild Captures\n (Log x 10)",
+                       colours = pal
+                       ) +
+  scale_colour_gradientn("Wild Captures\n (Log x 10)",
+                         colours = pal) +
+  coord_sf(
+    xlim = c(-85, -26),
+    ylim = c(-58, 10)
+  ) +
+  ggtheme_map() +
+  theme(
+    legend.key = element_rect(size = 2),
+    legend.key.width =unit(3,"line")
+  ) +
+  annotate("text",
+           label= "Brazil",
+           x = -28,
+           y = -1,
+           size = 4,
+           colour = "#000000"
+  ) +
+  annotate("text",
+           label= "Chile",
+           x = -83,
+           y = -26.5,
+           size = 4,
+           colour = "#000000"
+  ) +
+  annotate("text",
+           label= "Peru",
+           x = -83.5,
+           y = -16,
+           size = 4,
+           colour = "#000000"
+  ) +
+  theme(
+    legend.position = "bottom"
+  )
+
+```
 
 Results from the initial analysis of intergovernmental data show a clear dominance in fisheries landings of both Chile and Peru over Brazil, even thou Brazil captures around 3 times more species than the former. In terms of total fishing revenue, all nations are similar (**Table XX**).
 
@@ -524,7 +621,7 @@ When we analyze the top ten species in terms of landing volume in tones using th
 
 <!-- \clearpage -->
 
-```{r SAU_Landings_Data, eval = T, echo = F, warning =F, message = F, fig.height = 8, fig.width= 12, fig.cap= "Top 10 species by landings from the SAU dataset. Red bars represent species not present in the other category. White boxes represent the contribution of that speciest to the total country landing"}
+```{r SAU_Landings_Data, eval = T, echo = F, warning =F, message = F, fig.height = 8, fig.width= 12, fig.cap= "Top 10 species by landings from the SAU dataset. Brown bars represent species not present in the other category. White boxes represent the contribution of that speciest to the total country landing"}
 
 Totals_Plot <- Totals %>%
   select(-2) %>%
@@ -589,8 +686,8 @@ ggplot() +
                                    hjust = 1,
                                    face = "italic")
   ) +
-  scale_fill_manual(values =c("darkred",
-                              "darkgreen"),
+  scale_fill_manual(values =c("#D69C4E",
+                              "#046C9A"),
                     name ="Repeated") +
   facet_wrap(~Reporter,
              scales = "free",
@@ -604,6 +701,7 @@ ggplot() +
   coord_flip() +
   theme(axis.text.y = element_text(face = "italic")
         )
+
 
 ```
 
@@ -648,8 +746,8 @@ SAU_Subsistance <- SAU_Dat_S %>%
        )
 ) +
   geom_bar(stat = "identity") +
-  scale_fill_manual(values =c("darkred",
-                              "darkgreen"),
+  scale_fill_manual(values =c("#D69C4E",
+                              "#046C9A"),
                     name ="Repeated") +
   facet_wrap(~fishing_entity,
              scales = "free",
@@ -760,9 +858,9 @@ ggplot() +
   theme(axis.text.x = element_text(angle = 45,
                                    hjust = 1,
                                    face = "italic")
-  ) +
-  scale_fill_manual(values =c("darkred",
-                              "darkgreen"),
+  )+
+  scale_fill_manual(values =c("#D69C4E",
+                              "#046C9A"),
                     name ="Repeated") +
   facet_wrap(~Reporter,
              scales = "free",
@@ -849,7 +947,10 @@ Brasil_Data[[1]] %>%
          ) + 
   geom_bar(stat = "identity", position = position_stack(reverse = TRUE)) + 
   labs(x="Year", y="Quantity (Thousand Tonnes)") +
-  ggtheme_plot()
+  ggtheme_plot() +
+  scale_fill_manual(values = wes_palette("Darjeeling1", 2, type = "discrete"),
+                    labels = c("Export","Import") ) +
+  guides(fill=guide_legend(title="Trade Category"))
 
 ```
 
@@ -941,28 +1042,160 @@ Brasil_Data[[3]] %>%
 
 ```
 
+
+```{r SIGIF_Map, eval = T, echo = F, warning =F, message = F}
+
+path_bra <- ("international/information/raw_databases/Spatial/bra_adm1/")
+#The File
+fnam_bra <- "BRA_adm1"
+#Load it!
+
+#### Extract
+
+system.time(Bra_Shape <- st_read(dsn = path_bra, layer=fnam_bra)) 
+
+head(Bra_Shape)
+
+# plot(Bra_Shape)
+
+
+# SIGSIF
+
+
+###Rank main species comercialized 
+
+Mean_Data <- Brasil_Data[[3]] %>% 
+  filter(origin == "PRODUTOR") %>% 
+  group_by(UF,
+           # form,
+           year) %>% 
+  summarise(
+    Total = sum(quantity, na.rm = T)
+  ) %>% 
+  group_by(UF#,
+           # form
+           ) %>% 
+summarise(mean = mean(Total)
+          ) %>% 
+  mutate(HASC_1 = paste("BR.",UF,sep="")) %>% 
+  select(-UF)
+
+  Bra_ShapeB <- Bra_Shape %>% 
+  left_join(Mean_Data,
+            by = "HASC_1")
+
+
+  # First we make it work with bars
+  
+  ggplot(Bra_ShapeB) +
+  geom_bar(
+    aes(
+      x = HASC_1,
+      y = log(mean)
+    ),
+    stat = "identity"
+  ) 
+    
+  pal <- wes_palette("Zissou1", 100, type = "continuous")
+ 
+  ggplot(Bra_ShapeB) +
+  geom_sf(
+    aes(
+      fill = log(mean)
+    )
+  ) +
+   scale_fill_gradientn(colours = pal)
+  
+
+
+
+```
+
+
 Consumption of fish and seafood products in Brazil increases significantly during religious dates. Data from SEAGESP suggests that seafood consumption increases during Easter, when other types of meat are not consumed in respect of Christian tradition. For this reason, there is a significant peak in fish and seafood consumption during Easter week (**Figure xxx**).
 
-```{r Comercial_Plot, eval = T, echo = F, warning =F, message = F, fig.height=5, fig.width= 5, fig.cap= "Quantity of fish and seafood products commercialized per month in 2017 at CEAGESP market (Source: CEAGESP)"}
+```{r Comercial_Plot, eval = T, echo = F, warning =F, message = F, fig.height=6, fig.width= 7, fig.cap= "Quantity of fish and seafood products commercialized per month in 2017 at CEAGESP market (Source: CEAGESP)"}
 
 # "producao_seagesp.csv" 2
 
 ####graph monthly prodcution
-Brasil_Data[[2]] %>% 
+P1 <- Brasil_Data[[2]] %>% 
   filter(year == "2016") %>%
-  group_by(month) %>%
+  group_by(month,species_english) %>%
   summarize(sum(production_kg)) %>%
   rename(month = month, 
          prod = "sum(production_kg)") %>% 
   transform(monthabb = month.abb[month]) %>% 
+  group_by(month) %>% 
+  top_n(n = 3, wt = prod) %>%
   ggplot(.,
          aes(x = reorder(monthabb, 
                          month),
-             y = prod/1000000)
+             y = prod/1000000,
+             fill = species_english)
          ) + 
   geom_bar(stat = "identity") + 
   labs(x="Month", y="Quantity (Thausand Tones)") + 
-  ggtheme_plot()
+  # facet_wrap(~month,
+  #            nrow= 4) #+
+  ggtheme_plot() +
+  scale_fill_manual(values = wes_palette("Darjeeling1", 5, type = "discrete")#,
+                    # labels = c("Export","Import") 
+                    ) +
+  guides(fill=guide_legend(title="Species")) +
+  theme(
+    legend.position = ""
+  )
+
+P2 <- Brasil_Data[[2]] %>% 
+  filter(year == "2016") %>%
+  group_by(month,species_english) %>%
+  summarize(sum(production_kg)) %>%
+  rename(month = month, 
+         prod = "sum(production_kg)") %>% 
+  transform(monthabb = month.abb[month]) %>% 
+  group_by(month) %>% 
+  top_n(n = 3, wt = prod) %>%
+  ggplot(.,
+         aes(x = reorder(monthabb, 
+                         month),
+             y = prod/1000000,
+             fill = species_english
+             )
+         ) + 
+  geom_bar(stat = "identity") + 
+  labs(x="Month", y="Quantity (Thausand Tones)") + 
+  facet_wrap(~species_english,
+             nrow= 4,
+             scales = "free_x") +
+  ggtheme_plot() +
+  scale_fill_manual(
+    name = "Species",
+    values = wes_palette("Darjeeling1", 5, type = "discrete")#,
+                    # labels = c("Export","Import")
+                    ) +
+  theme(
+    legend.position = "bottom",
+    legend.box = "horizontal"
+  )
+
+
+# Transform plot to grob with the cowplot package
+gt <- arrangeGrob(P1,
+                  P2,
+                  ncol = 1,
+                  nrow = 2
+                  )
+
+as_ggplot(gt) + # transform to a ggplot
+  draw_plot_label(
+    label = c("", ""),
+    size = 20,
+    x = c(0, 0),
+    y = c(.5, 1)
+    )
+
+
 ```
 
 Fish and seafood consumption in Brazil has distinct patterns according to the region of the country. As shown in IBGE data, the top consumers of fish and seafood products in the country are from the north and northeast regions (**Figure xxx**). These regions are the poorest of the country (**Figure xxx**) and have the greatest number of registered fishers (**MPA, 2013**), especially from the small-scale sector. 
@@ -974,21 +1207,67 @@ Fish and seafood consumption in Brazil has distinct patterns according to the re
 
 # "IBGE_consumption.csv"
 
-Brasil_Data[[4]] %>%
+P1 <- Brasil_Data[[4]] %>%
   transform(kg = consumption*365/1000) %>% 
   ggplot(.,
          aes(x=region,
              y=kg,
              fill=protein)) + 
   geom_bar(stat = "identity",
-           position = position_stack(reverse = TRUE)) + 
-  labs(x="Region",
+           position = position_stack(reverse = FALSE)) + 
+  labs(x="",
        y="Per capita Consumption (kg/year)") +
+  ggtheme_plot() +
+  scale_fill_manual(name = "Protein Type",
+                      values = wes_palette("Darjeeling1", 5, type = "discrete")#,
+                    # labels = c("Export","Import")
+                    )
+
+### And Income 
+
+
+# "IBGE_renda.csv"
+
+P2 <- Brasil_Data[[5]] %>% 
+  filter(type == "region") %>% 
+  mutate(region = c("North","Northeast","Southeast","South","Middle-West")) %>% 
+  ggplot(.,
+         aes(x=region,
+             y=per_capita
+             )
+         ) + 
+  geom_bar(stat = "identity",
+           position = position_stack(reverse = FALSE)) + 
+  labs(x="",
+       y="Monthly Per capita Income (R$)") +
+  # theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   ggtheme_plot()
+
+
+
+gt <- arrangeGrob(P1,
+                  P2,
+                  ncol = 2
+                  )
+
+Plot <- as_ggplot(gt) + # transform to a ggplot
+  draw_plot_label(
+    label = c("", ""),
+    size = 20,
+    x = c(0, 0),
+    y = c(.5, 1)
+    )
+
+  annotate_figure(Plot,
+                bottom = text_grob("Region",
+                                   hjust = 1, 
+                                   x = 0.6, 
+                                   size = 16)
+                )
 
 ```
 
-```{r IBGE_Income, eval = T, echo = F, warning =F, message = F, fig.height = 5 , fig.width = 5, fig.cap= "Monthly per capta income by region of Brazil in 2014 (Source: IBGE)"}
+```{r IBGE_Income, eval = F, echo = F, warning =F, message = F, fig.height = 5 , fig.width = 5, fig.cap= "Monthly per capta income by region of Brazil in 2014 (Source: IBGE)"}
 
 # "IBGE_renda.csv"
 
@@ -1066,8 +1345,10 @@ To respond to the economic question we put together several pieces of informatio
 ```{r Brazil_Registerd fishers, eval = T, echo = F, warning =F, message = F, fig.cap= "Number of registered fishers in Brazil from 2003 to 2010 (Source: Minitry of Fisheries and Aquaculture)"}
 
 # rgp_MPA.csv
-ggplot(Brasil_Data[[6]], aes(x = year, 
-                     y = fishers/1000)) + 
+ggplot(Brasil_Data[[6]], 
+       aes(x = year,
+           y = fishers/1000)
+       ) + 
   geom_bar(stat = "identity") + 
   labs(x="Year", y="Number of Registered Fishers (Thousands)"
        # caption = "Figure 1 - Number of registered fishers in Brazil from 2003 to 2010 (Source: Minitry of Fisheries and Aquaculture)"
@@ -1280,82 +1561,289 @@ exports_total_yr_IFOP <- data.frame(year, exports)
 ## Landing, harvest and exports data in one dataframe
 ##Totals landings, harvest and exports (tons) per year (2013-2017)
 
-table_totals <- landings_total_yr %>% 
+Unit <- 1000
+
+landings_total_yr %>% 
   left_join(harvest_total_yr, by = "year") %>% 
   left_join(exports_total_yr_IFOP, by = "year") %>% 
-  rename(total_exports = exports)
-kable(table_totals, "latex", caption = "Total amount of landings, aquaculture harvest and exports (tons) in Chile in the last 5 years", booktabs = T) #%>%
+  rename(
+    Year = year,
+    Exports = exports,
+    Landings = total_landing,
+    Aquaculture = total_harvest
+             ) %>% 
+  mutate(
+    Year = Year,
+    Exports = Exports/Unit,
+    Landings = Landings/Unit,
+    Aquaculture = Aquaculture/Unit
+  ) %>% 
+  kable("latex",
+        caption = "Total amount of landings, aquaculture and exports (tons) in Chile from 2013-2017",
+        booktabs = T,
+        digits = 0) #%>%
 # kable_styling(latex_options = c("hold_position"))
 ```
 
 According to SERNAPESCA information in the last five years the most important fisheries in terms of landings have been Anchovy (*Engraulis ringens*), Chilean jack mackerel (*Trachurus murphy*) and Araucanian herring (*Strangomera bentincki*) (**Figure xx**), all three of them mainly catch by the industrial fleet. This pelagic fishes are mainly used to produce fish meal. Other species that contribute importantly to industrial catch are merluza comun, merluza del sur, merluza de tres aletas, cod, merluza de cola, and langostinos amarillo and colorado.
 
-```{r top 10 fisheries in terms of volume, eval = T, echo= FALSE, warning=FALSE}
+```{r top_fisheries_catch, eval = T, echo= FALSE, warning=FALSE,fig.height=6, fig.width= 7}
+
 ## Landings
 ## Totals
+
 landing_reg_sp_total <- landings_reg %>%
   group_by(year, species) %>% 
   summarise(tons = sum(tons, na.rm = T)) %>% 
   data.frame()
+
+
+
+## In 2017 they changed from "huiro negro o chascon" to  "chascon o huiro negro" so we need to fix this
+
+landing_reg_sp_total$species <- gsub("HUIRO NEGRO O CHASCON","CHASCON O HUIRO NEGRO",landing_reg_sp_total$species)
+
 ## Top 10 landings total
-top10_catch_per_yr <- landing_reg_sp_total  %>%
+
+top5_catch_per_yr <- landing_reg_sp_total  %>%
   arrange(year, desc(tons)) %>% 
   group_by(year) %>% 
-  top_n(10, tons) %>% 
+  top_n(5, tons) %>% 
   data.frame()
+
+
+P1 <-landing_reg_sp_total  %>%
+  arrange(year, desc(tons)) %>% 
+  group_by(year) %>% 
+  filter(!species %in% x$species) %>% 
+  group_by(year) %>% 
+  summarise(tons = sum(tons)) %>% 
+  mutate(species = "Others") %>% 
+  bind_rows(top5_catch_per_yr) %>% 
+  mutate(
+    species =  tolower(species)
+  ) %>% 
+  ggplot(.,
+         aes(x = year, 
+             y = tons/1000, 
+             fill = species)
+         ) + 
+    geom_bar(stat= "identity")+
+    scale_y_continuous(expand = c(0, 0)) +
+    labs(y="", x="Year") +
+  theme(
+    legend.position = ""
+  )+
+  scale_fill_manual(name = "",
+                    values = c(wes_palette("Darjeeling1", 5, type = "discrete"),"#000000")#,
+                    # labels = c("Anchovies","Brown Algae")
+                    )
+
+
+## The rest
+
+P2 <- landing_reg_sp_total  %>%
+  arrange(year, desc(tons)) %>% 
+  group_by(year) %>% 
+  filter(!species %in% x$species) %>% 
+  group_by(year) %>% 
+  summarise(tons = sum(tons)) %>% 
+  mutate(species = "Others") %>% 
+  bind_rows(top5_catch_per_yr) %>% 
+  mutate(
+    species =  tolower(species)
+  ) %>% 
+  ggplot(.,
+         aes(x = reorder(species,tons), 
+             y = tons/1000, 
+             fill = species)
+         ) + 
+    geom_bar(stat= "identity")+
+    scale_y_continuous(expand = c(0, 0)) +
+    labs(y="", x="Year") +
+  facet_wrap(~year,
+             ncol = 2) + 
+  ggtheme_plot() +
+  theme(
+    # axis.text.x = element_text(size = 10,
+    #                            angle = 45,
+    #                            hjust = 1,
+    #                            face = "plain")
+    axis.text.x = element_blank(),
+    legend.position = "bottom"
+  ) +
+  scale_fill_manual(name = "Species",
+                    values = c(wes_palette("Darjeeling1", 5, type = "discrete"),"#000000")#,
+                    # labels = c("Anchovies","Brown Algae")
+                    )
+
+# Transform plot to grob with the cowplot package
+
+
+gt <- arrangeGrob(P1,
+                  P2,
+                  ncol = 1,
+                  nrow = 2,
+                  left ="Landings (Thousand Tons)"
+                  )
+
+as_ggplot(gt) + # transform to a ggplot
+  draw_plot_label(
+    label = c("", ""),
+    size = 20,
+    x = c(0, 0),
+    y = c(.5, 1)
+    )
+
+
+
+
+```
+
+
+In terms of aquaculture production the main species harvested in the last 5 years have been: Atlantic salmon (*Salmo salar*), mussels (*Mytilus chilensis*) and coho salmon (*Oncorhynchus kisutch*) in descending order (Figure x). 
+
+
+
+```{r top_fisheries_aqua, eval = T, echo= FALSE, warning=FALSE,fig.height=6, fig.width= 7}
+
+
 ##Harvest
 ## Totals
-harvest_reg_sp_total <- harvest_reg %>%
+# harvest_reg_sp_total <- harvest_reg %>%
+#   group_by(year, species) %>% 
+#   summarise(tons = sum(tons, na.rm = T)) %>% 
+#   data.frame()
+# ## Top 10 harvest total
+# top10_harvest_per_yr <- harvest_reg_sp_total  %>%
+#   arrange(year, desc(tons)) %>% 
+#   group_by(year) %>% 
+#   top_n(10, tons) %>% 
+#   data.frame()
+# 
+#   
+# top10_harvest <-
+#   ggplot(data = top10_harvest_per_yr, 
+#          aes(x = year,
+#              y = tons/1000, #thousand
+#              fill = species)) + 
+#     geom_bar(stat= "identity")+
+#     scale_y_continuous(expand = c(0, 0)) +
+#     labs(y="Harvest (1000 x Tons)",
+#          x="Year") +
+#   ggtheme_plot()
+
+
+aqua_reg_sp_total <- harvest_reg %>%
   group_by(year, species) %>% 
   summarise(tons = sum(tons, na.rm = T)) %>% 
   data.frame()
-## Top 10 harvest total
-top10_harvest_per_yr <- harvest_reg_sp_total  %>%
+
+
+
+## In 2017 they changed from "huiro negro o chascon" to  "chascon o huiro negro" so we need to fix this
+
+aqua_reg_sp_total$species <- gsub("HUIRO NEGRO O CHASCON","CHASCON O HUIRO NEGRO",aqua_reg_sp_total$species)
+aqua_reg_sp_total$species <- sub("O COHO","",aqua_reg_sp_total$species) # So many different ways to report salmon
+# aqua_reg_sp_total$species <- gsub("SALMON DEL ATLANTICO","atlantic salmon",aqua_reg_sp_total$species) # So many different ways to report salmon
+aqua_reg_sp_total$species <- gsub("TRUCHA.*","rainbow trout",aqua_reg_sp_total$species) # Rainbow trout
+aqua_reg_sp_total$species <- gsub("SALMON PLATEADO ","SALMON PLATEADO",aqua_reg_sp_total$species)
+
+## Top 10 landings total
+
+top5_aqua_per_yr <- aqua_reg_sp_total  %>%
   arrange(year, desc(tons)) %>% 
   group_by(year) %>% 
-  top_n(10, tons) %>% 
+  top_n(5, tons) %>% 
   data.frame()
-## Figure
-##Creating a figure reportinf the top 10 species on landings and harvest
-top10_catch <- 
-  ggplot(data = top10_catch_per_yr, aes(x = year, y = tons, fill = species)) + 
+
+unique(top5_aqua_per_yr$species)
+
+
+P1 <- aqua_reg_sp_total  %>%
+  arrange(year, desc(tons)) %>% 
+  group_by(year) %>% 
+  filter(!species %in% x$species) %>% 
+  group_by(year) %>% 
+  summarise(tons = sum(tons)) %>% 
+  mutate(species = "Others") %>% 
+  bind_rows(top5_aqua_per_yr) %>% 
+  # filter(species != "Others") %>% 
+  mutate(
+    species =  tolower(species)
+  ) %>% 
+  ggplot(.,
+         aes(x = year, 
+             y = tons/1000, 
+             fill = species)
+         ) + 
     geom_bar(stat= "identity")+
     scale_y_continuous(expand = c(0, 0)) +
-    labs(y="Landings (Tons)", x="Year") +
-  ggtheme_plot()
-  
-    # theme(axis.line = element_line(colour = "black"),
-    #     axis.text=element_text(size=11),
-    #     axis.title=element_text(size=12,face="bold"))
-  
-top10_harvest <-
-  ggplot(data = top10_harvest_per_yr, 
-         aes(x = year,
-             y = tons/1000, #thousand
-             fill = species)) + 
+    labs(y="", x="Year") +
+  theme(
+    legend.position = ""
+  ) +
+  scale_fill_manual(name = "",
+                    values = c(wes_palette("Darjeeling1", 5, type = "discrete"),"#000000")#,
+                    # labels = c("Anchovies","Brown Algae")
+                    )
+
+
+## The rest
+
+P2 <- aqua_reg_sp_total  %>%
+  arrange(year, desc(tons)) %>% 
+  group_by(year) %>% 
+  filter(!species %in% x$species) %>% 
+  group_by(year) %>% 
+  summarise(tons = sum(tons)) %>% 
+  mutate(species = "Others") %>% 
+  bind_rows(top5_aqua_per_yr) %>% 
+  mutate(
+    species =  tolower(species)
+  ) %>% 
+  ggplot(.,
+         aes(x = reorder(species,tons), 
+             y = tons/1000, 
+             fill = species)
+         ) + 
     geom_bar(stat= "identity")+
     scale_y_continuous(expand = c(0, 0)) +
-    labs(y="Harvest (1000 x Tons)",
-         x="Year") +
-  ggtheme_plot()
-  # theme_cowplot()+
-  #   theme(axis.line = element_line(colour = "black"),
-  #       axis.text=element_text(size=11),
-  #       axis.title=element_text(size=12,face="bold"))
+    labs(y="", x="Year") +
+  facet_wrap(~year,
+             ncol = 2) + 
+  ggtheme_plot() +
+  theme(
+    # axis.text.x = element_text(size = 10,
+    #                            angle = 45,
+    #                            hjust = 1,
+    #                            face = "plain")
+    axis.text.x = element_blank(),
+    legend.position = "bottom"
+  ) +
+  scale_fill_manual(name = "Species",
+                    values = c(wes_palette("Darjeeling1", 5, type = "discrete"),"#000000")#,
+                    # labels = c("Anchovies","Brown Algae")
+                    )
+
+# Transform plot to grob with the cowplot package
+gt <- arrangeGrob(P1,
+                  P2,
+                  ncol = 1,
+                  nrow = 2,
+                  left ="Landings (Thousand Tons)"
+                  )
+
+as_ggplot(gt) + # transform to a ggplot
+  draw_plot_label(
+    label = c("", ""),
+    size = 20,
+    x = c(0, 0),
+    y = c(.5, 1)
+    )
+
 ```
 
-
-```{r, eval = T,  echo= FALSE, fig.cap= 'Main fisheries in Chile in the last five years accordint to wild catch landings', fig.height=5,fig.width=6,}
-top10_catch
-```
-
-In terms of aquaculture production the main species harvested in the last 5 years have been: Atlantic salmon (*Salmo salar*), mussels (*Mytilus chilensis*) and coho salmon (*Oncorhynchus kisutch*) in descending order (Figure 2). 
-
-
-
-```{r, eval = T,  echo= FALSE, fig.cap= 'Main fisheries in Chile in the last five years according to aquaculture harvests', fig.height=5,fig.width=6}
-top10_harvest
-```
 
 
 ### Estimating National Seafood Supply
@@ -1373,28 +1861,68 @@ By 2017, there were 80,056 artisanal fishers officially registered along with 11
 <!-- Different activities are associated to different groups of species; fishers usually target pelagic and demersal species, divers target mostly benthic species, while gatherers tend to collect and harvest algae. This give us an idea of the groups of species that are more important in terms of employment in each region and for each gender. We see that in general, women mostly participate in the extraction of algae while men tend to rely on multiple group of species as sources of employment. -->
 
 ```{r number of fishers in each activity,  eval = T, echo = FALSE, warning = F, fig.cap= 'Number of fishers participating in different activities in each Chilean region based RPA 2018, provided by SERNAPESCA. The upper panel refers to women while the panel below to men. A single fisher can be register under multiple activities.',fig.height=5,fig.width=6}
+
 # Importing national records of artisanal fisheres
 rpa <- read_excel("Chile/information/raw_databases/RPA_RPI_mano_obra.xlsx", sheet = "RPA PESCADORES", skip = 2, n_max = 138294) %>% 
   rename(region = "Regi\u00f3n", year = "A\u00f1o Inscripci\u00f3n")
 # Number of boat owners, divers, fishers and gatherers in each region.
 rpa_activity <- rpa %>% 
-  select(region, gender= Genero, year, ARMADOR, BUZO, RECOLECTOR, PESCADOR) %>% 
-  gather(activity, practice, ARMADOR:PESCADOR) %>% 
+  select(region, 
+         gender= Genero, 
+         year,
+         Indistrial = ARMADOR, 
+         Diver = BUZO,
+         Collector = RECOLECTOR,
+         Fisher = PESCADOR
+         ) %>% 
+  gather(activity, 
+         practice, 
+         Indistrial:Fisher) %>% 
   filter(practice == 'X') %>% 
   group_by(region, activity, gender) %>% 
   summarize(count = n())
+
 # Ploting by gender, activity and region 
 men_activities <- ggplot(filter(rpa_activity, gender == 'M'), aes(as.factor(region), count)) +   
   geom_bar(aes(fill = activity), position = "dodge", stat="identity")+
-  ylab('Number of fishers')+
+  ylab("")+
   xlab('Region') +
-  ggtheme_plot()
+  ggtheme_plot()+
+  scale_fill_manual(name = "",
+                    values = c(wes_palette("Darjeeling1", 5, type = "discrete"),"#000000")#,
+                    # labels = c("Anchovies","Brown Algae")
+                    ) +
+  theme(legend.position = "")
+
 women_activities <- ggplot(filter(rpa_activity, gender == 'F'), aes(as.factor(region), count)) +   
   geom_bar(aes(fill = activity), position = "dodge", stat="identity")+
-  ylab('Number of fishers')+
-  xlab('Region') +
-  ggtheme_plot()
-Figure2 <- grid.arrange(women_activities, men_activities, nrow=2)
+  ylab("")+
+  xlab('') +
+  ggtheme_plot() +
+  scale_fill_manual(name = "Activity",
+                    values = c(wes_palette("Darjeeling1", 5, type = "discrete"),"#000000")#,
+                    # labels = c("Anchovies","Brown Algae")
+                    ) +
+  theme(legend.position = "top")
+
+# Transform plot to grob with the cowplot package
+
+
+gt <- arrangeGrob(women_activities,
+                  men_activities,
+                  ncol = 1,
+                  # nrow = 2,
+                  left ="Number of Fishers"
+                  )
+
+as_ggplot(gt) + # transform to a ggplot
+  draw_plot_label(
+    label = c("♂", "♀"),
+    size = 50,
+    x = c(.2, .2),
+    y = c(.45, .90)
+    )
+
 ```
 
 The artisanal sector generates employment beyond the extraction stage. After extraction, most resources are directly sold by the fishers in commercial facilities near their landing points, some are sold to local restaurants 
