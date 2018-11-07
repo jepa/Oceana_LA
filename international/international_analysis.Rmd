@@ -944,18 +944,51 @@ SAU_Spp <- fread(paste(Data_Path,SAU_F_Name,
 
 Tim_D <- fread("./information/raw_databases/SAU/Brazil-Peru-Chile Fisheries Data.csv")
 
+#  [1] "fishing_entity_id"   "year"                "taxon_key"           "sector_type_id"      "catch_type_id"       "reporting_status_id"
+#  [7] "gear_type_id"        "sum"                 "DHC_Use"             "FMFO_Use"            "Other_Use"           "DHC_Amount"         
+# [13] "FMFO_Amount"         "Other_Amount"        "Discards"            "taxon_name"          "fishing_entity" 
+
+# sector_type_id <- 1 Industrial, 3 Artisanal
+# 
+
+
+
 # Im going to use the average DHC and IHC value of all secotrs (Artisanal/Industrial) and reporting status (official/reconstructed) I dont think it matters 
 
 Tim_D_Clear <- Tim_D %>% 
-  filter(year >= 2010) %>% # use last 5 years average
-  # mutate(D = Discards/sum)
-  mutate(D = ifelse(Discards/sum < 0,0,Discards/sum)) %>% 
+  filter(
+    year >= 2010, # use last 5 years average
+    reporting_status_id == 1 # Use only reported data
+    ) %>% 
+  group_by( # first we average by the 5 years
+    taxon_key,
+    taxon_name,
+    fishing_entity,
+    sector_type_id
+           ) %>% 
+  summarise_at(vars(sum:Discards),c(M=mean,sd=sd)) %>% 
+  group_by( # Now we sum both artisanal and industrial fishing
+    taxon_key,
+    taxon_name,
+    fishing_entity
+  ) %>% 
+  summarise_at(vars(sum_M:Discards_sd),sum,na.rm=T) %>% 
+  mutate( # now we estimate the proportion of both sectors 
+    DHC_Use = DHC_Amount_M/sum_M,
+    FMFO_Use = FMFO_Amount_M/sum_M,
+    Other_Use = Other_Amount_M/sum_M,
+    Discards_F = Discards_M/sum_M
+  ) %>% 
+  select(
+    1:3,
+    DHC_Use:Discards_F
+  ) %>% 
+  mutate(Discards = ifelse(Discards_F < 0,0,Discards_F)) %>% #Some discards have very small negative numbers so correct for that
   group_by(
     Taxon.Key = taxon_key, # Change name to match FAO data
-    # taxon_name, 
+    # taxon_name,
     Country = fishing_entity
-    ) %>% 
-  summarise_at(vars(DHC_Use:Other_Use,D),c(M=mean,sd=sd)) %>% 
+    ) %>%
   mutate_if(is.numeric,round,3)
 
 
@@ -994,23 +1027,13 @@ FAO_Andres_Clear_T <- FAO_Andres_Clear %>%
               )
   )
 
-
-```
-
-
-```{r Manual_Correction}
-
-names(FAO_Andres_Clear_T)
-
-FAO_Andres_Clear_T$Comm.Name
-
-
 write.csv(
   FAO_Andres_Clear_T,
   "International_Data.csv",
   row.names = F)
 
 ```
+
 
 
 ```{r Spp_Data_For_Function, eval =T}
@@ -1209,7 +1232,7 @@ Dummy_Data <- FAO_Andres_Clear_T %>%
   mutate(Species = ifelse(is.na(Comm.Name) == TRUE, paste(MatchName),paste(Comm.Name))) %>% 
   group_by(Species,
            Country) %>% 
-  summarise_at(vars(Aquaculture:D_sd),
+  summarise_at(vars(Aquaculture:Discards),
                mean, na.rm=T)
 
 ### Example for multiple species
@@ -1219,8 +1242,8 @@ x <- corefx(
   n = 5,
   Species = Dummy_Data$Species,
   Catch = Dummy_Data$Capture,
-  Dis = Dummy_Data$D_M,
-  DHC = Dummy_Data$DHC_Use_M,
+  Dis = Dummy_Data$Discards,
+  DHC = Dummy_Data$DHC_Use,
   PL = 0.20,
   AP = Dummy_Data$Aquaculture,
   A_PL = 0.20,
