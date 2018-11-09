@@ -1,0 +1,2374 @@
+"Taxon.Key","MatchName","Country","Year","Exports","Imports","Production"
+100000,"Marine animals","Brazil","X2010",0,0,0
+100000,"Marine animals","Brazil","X2011",0,0,0
+100000,"Marine animals","Brazil","X2012",0,0,0
+100000,"Marine animals","Brazil","X2013",0,0,0
+100000,"Marine animals","Brazil","X2014",0,0,0
+100000,"Marine animals","Brazil","X2015",0,0,0
+100000,"Marine animals","Brazil","X2016",0,0,0
+100000,"Marine animals","Chile","X2010",0,0,0
+100000,"Marine animals","Chile","X2011",0,0,0
+100000,"Marine animals","Chile","X2012",0,0,0
+100000,"Marine animals","Chile","X2013",0,0,0
+100000,"Marine animals","Chile","X2014",0,0,8
+100000,"Marine animals","Chile","X2015",0,0,0
+100000,"Marine animals","Chile","X2016",0,0,0
+100000,"Marine animals","Peru","X2010",0,0,0
+100000,"Marine animals","Peru","X2011",0,0,0
+100000,"Marine animals","Peru","X2012",0,0,0
+100000,"Marine animals","Peru","X2013",0,0,0
+100000,"Marine animals","Peru","X2014",0,0,0
+100000,"Marine animals","Peru","X2015",0,0,0
+100000,"Marine animals","Peru","X2016",0,0,0
+100011,"Carps, barbels, other cyprinids","Brazil","X2010",0,0,0
+100011,"Carps, barbels, other cyprinids","Brazil","X2011",0,0,0
+100011,"Carps, barbels, other cyprinids","Brazil","X2012",0,100,0
+100011,"Carps, barbels, other cyprinids","Brazil","X2013",0,104,0
+100011,"Carps, barbels, other cyprinids","Brazil","X2014",0,182,0
+100011,"Carps, barbels, other cyprinids","Brazil","X2015",0,56,0
+100011,"Carps, barbels, other cyprinids","Brazil","X2016",0,12,0
+100011,"Carps, barbels, other cyprinids","Chile","X2010",0,0,0
+100011,"Carps, barbels, other cyprinids","Chile","X2011",0,0,0
+100011,"Carps, barbels, other cyprinids","Chile","X2012",0,0,0
+100011,"Carps, barbels, other cyprinids","Chile","X2013",0,0,0
+100011,"Carps, barbels, other cyprinids","Chile","X2014",0,0,0
+100011,"Carps, barbels, other cyprinids","Chile","X2015",0,0,0
+100011,"Carps, barbels, other cyprinids","Chile","X2016",0,0,0
+100025,"Diadromous fishes","Chile","X2010",0,0,0
+100025,"Diadromous fishes","Chile","X2011",0,0,0
+100025,"Diadromous fishes","Chile","X2012",0,0,0
+100025,"Diadromous fishes","Chile","X2013",0,0,0
+100025,"Diadromous fishes","Chile","X2014",0,0,0
+100025,"Diadromous fishes","Chile","X2015",0,0,0
+100025,"Diadromous fishes","Chile","X2016",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Brazil","X2010",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Brazil","X2011",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Brazil","X2012",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Brazil","X2013",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Brazil","X2014",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Brazil","X2015",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Brazil","X2016",0,1,0
+100031,"Flounders, halibuts, soles, turbots","Chile","X2010",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Chile","X2011",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Chile","X2012",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Chile","X2013",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Chile","X2014",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Chile","X2015",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Chile","X2016",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Peru","X2010",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Peru","X2011",0,2,0
+100031,"Flounders, halibuts, soles, turbots","Peru","X2012",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Peru","X2013",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Peru","X2014",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Peru","X2015",0,0,0
+100031,"Flounders, halibuts, soles, turbots","Peru","X2016",0,0,0
+100035,"Herrings, sardines, anchovies","Brazil","X2010",48,31771,8720
+100035,"Herrings, sardines, anchovies","Brazil","X2011",0,27907,8900
+100035,"Herrings, sardines, anchovies","Brazil","X2012",161,43837,9000
+100035,"Herrings, sardines, anchovies","Brazil","X2013",50,43628,8570
+100035,"Herrings, sardines, anchovies","Brazil","X2014",15,23428,4850
+100035,"Herrings, sardines, anchovies","Brazil","X2015",0,17983,4340
+100035,"Herrings, sardines, anchovies","Brazil","X2016",6,72992,4560
+100035,"Herrings, sardines, anchovies","Chile","X2010",0,0,0
+100035,"Herrings, sardines, anchovies","Chile","X2011",0,26,0
+100035,"Herrings, sardines, anchovies","Chile","X2012",0,0,0
+100035,"Herrings, sardines, anchovies","Chile","X2013",0,23,20173
+100035,"Herrings, sardines, anchovies","Chile","X2014",0,0,48765
+100035,"Herrings, sardines, anchovies","Chile","X2015",0,0,0
+100035,"Herrings, sardines, anchovies","Chile","X2016",0,0,0
+100035,"Herrings, sardines, anchovies","Peru","X2010",453,261,0
+100035,"Herrings, sardines, anchovies","Peru","X2011",1000,54,0
+100035,"Herrings, sardines, anchovies","Peru","X2012",1801,1272,0
+100035,"Herrings, sardines, anchovies","Peru","X2013",1955,5728,0
+100035,"Herrings, sardines, anchovies","Peru","X2014",1081,795,0
+100035,"Herrings, sardines, anchovies","Peru","X2015",355,571,0
+100035,"Herrings, sardines, anchovies","Peru","X2016",529,30,0
+100036,"Tunas, bonitos, billfishes","Brazil","X2010",592,5020,0
+100036,"Tunas, bonitos, billfishes","Brazil","X2011",816,6100,0
+100036,"Tunas, bonitos, billfishes","Brazil","X2012",922,5377,0
+100036,"Tunas, bonitos, billfishes","Brazil","X2013",967,10137,0
+100036,"Tunas, bonitos, billfishes","Brazil","X2014",1165,8719,0
+100036,"Tunas, bonitos, billfishes","Brazil","X2015",973,9796,0
+100036,"Tunas, bonitos, billfishes","Brazil","X2016",461,8167,0
+100036,"Tunas, bonitos, billfishes","Chile","X2010",0,7361,0
+100036,"Tunas, bonitos, billfishes","Chile","X2011",0,10476,0
+100036,"Tunas, bonitos, billfishes","Chile","X2012",30,7581,0
+100036,"Tunas, bonitos, billfishes","Chile","X2013",0,7746,0
+100036,"Tunas, bonitos, billfishes","Chile","X2014",8,6034,0
+100036,"Tunas, bonitos, billfishes","Chile","X2015",4,5785,0
+100036,"Tunas, bonitos, billfishes","Chile","X2016",3,8289,0
+100039,"Marine fishes","Brazil","X2010",10071,68899,114675
+100039,"Marine fishes","Brazil","X2011",10352,129187,120932
+100039,"Marine fishes","Brazil","X2012",7502,50767,126090
+100039,"Marine fishes","Brazil","X2013",7418,52974,123200
+100039,"Marine fishes","Brazil","X2014",9630,52869,125320
+100039,"Marine fishes","Brazil","X2015",8258,37846,114970
+100039,"Marine fishes","Brazil","X2016",9738,33847,119845
+100039,"Marine fishes","Chile","X2010",55668,75192,129420
+100039,"Marine fishes","Chile","X2011",65974,78768,213963
+100039,"Marine fishes","Chile","X2012",73744,74043,161248
+100039,"Marine fishes","Chile","X2013",69115,45607,84538
+100039,"Marine fishes","Chile","X2014",86956,61127,88651
+100039,"Marine fishes","Chile","X2015",81305,73050,153240
+100039,"Marine fishes","Chile","X2016",70522,54180,168197
+100039,"Marine fishes","Peru","X2010",282540,71740,21226
+100039,"Marine fishes","Peru","X2011",337084,38541,25143
+100039,"Marine fishes","Peru","X2012",344138,13860,28219
+100039,"Marine fishes","Peru","X2013",156860,18786,22457
+100039,"Marine fishes","Peru","X2014",189440,16655,25962
+100039,"Marine fishes","Peru","X2015",142125,20407,30629
+100039,"Marine fishes","Peru","X2016",118647,19706,30288
+100043,"Lobsters, spiny-rock lobsters","Brazil","X2010",0,0,0
+100043,"Lobsters, spiny-rock lobsters","Brazil","X2011",0,0,0
+100043,"Lobsters, spiny-rock lobsters","Brazil","X2012",0,0,0
+100043,"Lobsters, spiny-rock lobsters","Brazil","X2013",0,0,0
+100043,"Lobsters, spiny-rock lobsters","Brazil","X2014",0,0,0
+100043,"Lobsters, spiny-rock lobsters","Brazil","X2015",0,0,0
+100043,"Lobsters, spiny-rock lobsters","Brazil","X2016",0,0,0
+100043,"Lobsters, spiny-rock lobsters","Chile","X2010",0,0,1100
+100043,"Lobsters, spiny-rock lobsters","Chile","X2011",0,0,970
+100043,"Lobsters, spiny-rock lobsters","Chile","X2012",0,0,0
+100043,"Lobsters, spiny-rock lobsters","Chile","X2013",71,0,0
+100043,"Lobsters, spiny-rock lobsters","Chile","X2014",2,0,0
+100043,"Lobsters, spiny-rock lobsters","Chile","X2015",0,0,0
+100043,"Lobsters, spiny-rock lobsters","Chile","X2016",0,0,0
+100043,"Lobsters, spiny-rock lobsters","Peru","X2010",0,0,0
+100043,"Lobsters, spiny-rock lobsters","Peru","X2011",0,0,0
+100043,"Lobsters, spiny-rock lobsters","Peru","X2012",0,0,0
+100043,"Lobsters, spiny-rock lobsters","Peru","X2013",0,0,0
+100043,"Lobsters, spiny-rock lobsters","Peru","X2014",0,0,0
+100043,"Lobsters, spiny-rock lobsters","Peru","X2015",0,0,0
+100043,"Lobsters, spiny-rock lobsters","Peru","X2016",0,0,0
+100045,"Shrimps and prawns","Brazil","X2010",2292,0,2305
+100045,"Shrimps and prawns","Brazil","X2011",603,0,610
+100045,"Shrimps and prawns","Brazil","X2012",2,0,455
+100045,"Shrimps and prawns","Brazil","X2013",9,1,1049
+100045,"Shrimps and prawns","Brazil","X2014",0,1,700
+100045,"Shrimps and prawns","Brazil","X2015",0,1,670
+100045,"Shrimps and prawns","Brazil","X2016",6,0,930
+100045,"Shrimps and prawns","Chile","X2010",637,1283,1671
+100045,"Shrimps and prawns","Chile","X2011",681,1961,1471
+100045,"Shrimps and prawns","Chile","X2012",258,2220,1277
+100045,"Shrimps and prawns","Chile","X2013",409,2465,1376
+100045,"Shrimps and prawns","Chile","X2014",437,2836,1329
+100045,"Shrimps and prawns","Chile","X2015",379,3051,1474
+100045,"Shrimps and prawns","Chile","X2016",532,3350,1511
+100045,"Shrimps and prawns","Peru","X2010",10593,401,7410
+100045,"Shrimps and prawns","Peru","X2011",12945,641,6724
+100045,"Shrimps and prawns","Peru","X2012",9630,746,17045
+100045,"Shrimps and prawns","Peru","X2013",9869,929,12272
+100045,"Shrimps and prawns","Peru","X2014",12627,1420,15813
+100045,"Shrimps and prawns","Peru","X2015",13518,3471,12382
+100045,"Shrimps and prawns","Peru","X2016",13597,3177,13493
+100047,"Marine crabs, shrimps, lobsters","Brazil","X2010",24,16,20
+100047,"Marine crabs, shrimps, lobsters","Brazil","X2011",555,14,10
+100047,"Marine crabs, shrimps, lobsters","Brazil","X2012",2764,99,0
+100047,"Marine crabs, shrimps, lobsters","Brazil","X2013",4293,619,0
+100047,"Marine crabs, shrimps, lobsters","Brazil","X2014",0,774,0
+100047,"Marine crabs, shrimps, lobsters","Brazil","X2015",0,857,0
+100047,"Marine crabs, shrimps, lobsters","Brazil","X2016",8,590,0
+100047,"Marine crabs, shrimps, lobsters","Chile","X2010",2741,596,24470
+100047,"Marine crabs, shrimps, lobsters","Chile","X2011",2435,1014,7841
+100047,"Marine crabs, shrimps, lobsters","Chile","X2012",4226,1280,3556
+100047,"Marine crabs, shrimps, lobsters","Chile","X2013",3902,1439,1900
+100047,"Marine crabs, shrimps, lobsters","Chile","X2014",3654,1710,2717
+100047,"Marine crabs, shrimps, lobsters","Chile","X2015",2727,1307,1385
+100047,"Marine crabs, shrimps, lobsters","Chile","X2016",3199,1859,702
+100047,"Marine crabs, shrimps, lobsters","Peru","X2010",10619,581,0
+100047,"Marine crabs, shrimps, lobsters","Peru","X2011",12537,328,0
+100047,"Marine crabs, shrimps, lobsters","Peru","X2012",15668,142,0
+100047,"Marine crabs, shrimps, lobsters","Peru","X2013",10533,213,0
+100047,"Marine crabs, shrimps, lobsters","Peru","X2014",12419,290,0
+100047,"Marine crabs, shrimps, lobsters","Peru","X2015",18843,1,0
+100047,"Marine crabs, shrimps, lobsters","Peru","X2016",10520,1,0
+100053,"Oysters","Brazil","X2010",0,0,0
+100053,"Oysters","Brazil","X2011",0,0,0
+100053,"Oysters","Brazil","X2012",0,0,0
+100053,"Oysters","Brazil","X2013",0,0,0
+100053,"Oysters","Brazil","X2014",0,0,0
+100053,"Oysters","Brazil","X2015",0,0,0
+100053,"Oysters","Brazil","X2016",0,0,0
+100053,"Oysters","Chile","X2010",38,0,13
+100053,"Oysters","Chile","X2011",12,0,0
+100053,"Oysters","Chile","X2012",9,0,2
+100053,"Oysters","Chile","X2013",6,1,0
+100053,"Oysters","Chile","X2014",3,1,2
+100053,"Oysters","Chile","X2015",4,1,0
+100053,"Oysters","Chile","X2016",7,2,0
+100053,"Oysters","Peru","X2010",0,0,0
+100053,"Oysters","Peru","X2011",0,0,0
+100053,"Oysters","Peru","X2012",0,0,0
+100053,"Oysters","Peru","X2013",1,0,0
+100053,"Oysters","Peru","X2014",0,0,0
+100053,"Oysters","Peru","X2015",0,0,0
+100053,"Oysters","Peru","X2016",0,0,0
+100054,"Mussels","Brazil","X2010",0,213,0
+100054,"Mussels","Brazil","X2011",0,53,0
+100054,"Mussels","Brazil","X2012",0,40,0
+100054,"Mussels","Brazil","X2013",0,0,0
+100054,"Mussels","Brazil","X2014",0,48,0
+100054,"Mussels","Brazil","X2015",0,49,0
+100054,"Mussels","Brazil","X2016",0,71,0
+100054,"Mussels","Chile","X2010",568,0,51129
+100054,"Mussels","Chile","X2011",321,0,69971
+100054,"Mussels","Chile","X2012",321,0,62907
+100054,"Mussels","Chile","X2013",28,5,64219
+100054,"Mussels","Chile","X2014",67,23,64716
+100054,"Mussels","Chile","X2015",204,141,83630
+100054,"Mussels","Chile","X2016",74,250,76126
+100054,"Mussels","Peru","X2010",3,20,0
+100054,"Mussels","Peru","X2011",1,3,0
+100054,"Mussels","Peru","X2012",94,14,0
+100054,"Mussels","Peru","X2013",47,15,0
+100054,"Mussels","Peru","X2014",0,13,0
+100054,"Mussels","Peru","X2015",0,18,0
+100054,"Mussels","Peru","X2016",0,17,0
+100056,"Clams, cockles, arkshells","Brazil","X2010",0,0,0
+100056,"Clams, cockles, arkshells","Brazil","X2011",0,0,0
+100056,"Clams, cockles, arkshells","Brazil","X2012",0,0,0
+100056,"Clams, cockles, arkshells","Brazil","X2013",0,0,0
+100056,"Clams, cockles, arkshells","Brazil","X2014",0,0,0
+100056,"Clams, cockles, arkshells","Brazil","X2015",0,0,0
+100056,"Clams, cockles, arkshells","Brazil","X2016",0,0,0
+100056,"Clams, cockles, arkshells","Chile","X2010",0,0,0
+100056,"Clams, cockles, arkshells","Chile","X2011",0,0,0
+100056,"Clams, cockles, arkshells","Chile","X2012",2322,2,0
+100056,"Clams, cockles, arkshells","Chile","X2013",1811,0,0
+100056,"Clams, cockles, arkshells","Chile","X2014",2014,0,0
+100056,"Clams, cockles, arkshells","Chile","X2015",2122,0,0
+100056,"Clams, cockles, arkshells","Chile","X2016",2305,0,0
+100056,"Clams, cockles, arkshells","Peru","X2010",0,0,0
+100056,"Clams, cockles, arkshells","Peru","X2011",0,0,0
+100056,"Clams, cockles, arkshells","Peru","X2012",73,0,0
+100056,"Clams, cockles, arkshells","Peru","X2013",356,0,0
+100056,"Clams, cockles, arkshells","Peru","X2014",317,0,0
+100056,"Clams, cockles, arkshells","Peru","X2015",137,0,0
+100056,"Clams, cockles, arkshells","Peru","X2016",38,1,0
+100058,"Marine molluscs","Brazil","X2010",0,0,0
+100058,"Marine molluscs","Brazil","X2011",0,0,0
+100058,"Marine molluscs","Brazil","X2012",0,1,0
+100058,"Marine molluscs","Brazil","X2013",0,0,0
+100058,"Marine molluscs","Brazil","X2014",0,0,0
+100058,"Marine molluscs","Brazil","X2015",0,0,0
+100058,"Marine molluscs","Brazil","X2016",0,0,0
+100058,"Marine molluscs","Chile","X2010",13982,193,4463
+100058,"Marine molluscs","Chile","X2011",49206,156,4941
+100058,"Marine molluscs","Chile","X2012",20569,355,3381
+100058,"Marine molluscs","Chile","X2013",16572,190,2599
+100058,"Marine molluscs","Chile","X2014",24591,410,2107
+100058,"Marine molluscs","Chile","X2015",20470,447,2104
+100058,"Marine molluscs","Chile","X2016",27590,672,1993
+100058,"Marine molluscs","Peru","X2010",55019,46,0
+100058,"Marine molluscs","Peru","X2011",74094,78,0
+100058,"Marine molluscs","Peru","X2012",2604,47,0
+100058,"Marine molluscs","Peru","X2013",1797,1,0
+100058,"Marine molluscs","Peru","X2014",1648,2,0
+100058,"Marine molluscs","Peru","X2015",2165,29,6
+100058,"Marine molluscs","Peru","X2016",1810,0,0
+100077,"Aquatic invertebrates","Chile","X2010",0,0,42
+100077,"Aquatic invertebrates","Chile","X2011",0,0,82
+100077,"Aquatic invertebrates","Chile","X2012",0,0,102
+100077,"Aquatic invertebrates","Chile","X2013",0,0,95
+100077,"Aquatic invertebrates","Chile","X2014",0,0,18
+100077,"Aquatic invertebrates","Chile","X2015",0,0,30
+100077,"Aquatic invertebrates","Chile","X2016",0,0,25
+100196,"Cnidarians, coelenterates","Brazil","X2010",1,50,0
+100196,"Cnidarians, coelenterates","Brazil","X2011",1,140,0
+100196,"Cnidarians, coelenterates","Brazil","X2012",2,106,0
+100196,"Cnidarians, coelenterates","Brazil","X2013",11,52,0
+100196,"Cnidarians, coelenterates","Brazil","X2014",0,99,0
+100196,"Cnidarians, coelenterates","Brazil","X2015",0,58,0
+100196,"Cnidarians, coelenterates","Brazil","X2016",0,37,0
+100196,"Cnidarians, coelenterates","Chile","X2010",0,0,0
+100196,"Cnidarians, coelenterates","Chile","X2011",0,0,0
+100196,"Cnidarians, coelenterates","Chile","X2012",0,0,0
+100196,"Cnidarians, coelenterates","Chile","X2013",0,0,0
+100196,"Cnidarians, coelenterates","Chile","X2014",0,0,0
+100196,"Cnidarians, coelenterates","Chile","X2015",0,0,0
+100196,"Cnidarians, coelenterates","Chile","X2016",0,0,0
+100196,"Cnidarians, coelenterates","Peru","X2010",1,1,0
+100196,"Cnidarians, coelenterates","Peru","X2011",49,0,0
+100196,"Cnidarians, coelenterates","Peru","X2012",62,0,0
+100196,"Cnidarians, coelenterates","Peru","X2013",65,0,0
+100196,"Cnidarians, coelenterates","Peru","X2014",13,1,0
+100196,"Cnidarians, coelenterates","Peru","X2015",14,0,0
+100196,"Cnidarians, coelenterates","Peru","X2016",0,0,0
+100538,"Sharks, rays, chimaeras","Chile","X2010",0,0,0
+100538,"Sharks, rays, chimaeras","Chile","X2011",0,0,0
+100538,"Sharks, rays, chimaeras","Chile","X2012",0,0,0
+100538,"Sharks, rays, chimaeras","Chile","X2013",0,0,0
+100538,"Sharks, rays, chimaeras","Chile","X2014",0,0,0
+100538,"Sharks, rays, chimaeras","Chile","X2015",0,0,0
+100538,"Sharks, rays, chimaeras","Chile","X2016",0,0,0
+200004,"Sharks, rays, skates","Brazil","X2010",0,1164,0
+200004,"Sharks, rays, skates","Brazil","X2011",0,1693,0
+200004,"Sharks, rays, skates","Brazil","X2012",0,1731,0
+200004,"Sharks, rays, skates","Brazil","X2013",0,1401,0
+200004,"Sharks, rays, skates","Brazil","X2014",0,1270,0
+200004,"Sharks, rays, skates","Brazil","X2015",0,942,0
+200004,"Sharks, rays, skates","Brazil","X2016",0,1277,0
+200004,"Sharks, rays, skates","Chile","X2010",0,0,0
+200004,"Sharks, rays, skates","Chile","X2011",0,0,0
+200004,"Sharks, rays, skates","Chile","X2012",0,25,0
+200004,"Sharks, rays, skates","Chile","X2013",0,0,0
+200004,"Sharks, rays, skates","Chile","X2014",0,0,0
+200004,"Sharks, rays, skates","Chile","X2015",0,0,0
+200004,"Sharks, rays, skates","Chile","X2016",0,0,0
+200004,"Sharks, rays, skates","Peru","X2010",0,0,0
+200004,"Sharks, rays, skates","Peru","X2011",0,0,0
+200004,"Sharks, rays, skates","Peru","X2012",0,0,0
+200004,"Sharks, rays, skates","Peru","X2013",0,0,0
+200004,"Sharks, rays, skates","Peru","X2014",0,0,0
+200004,"Sharks, rays, skates","Peru","X2015",0,0,0
+200004,"Sharks, rays, skates","Peru","X2016",0,0,0
+200007,"Sharks","Brazil","X2010",0,18605,0
+200007,"Sharks","Brazil","X2011",25,19374,0
+200007,"Sharks","Brazil","X2012",5,21315,0
+200007,"Sharks","Brazil","X2013",0,19385,0
+200007,"Sharks","Brazil","X2014",0,17413,0
+200007,"Sharks","Brazil","X2015",0,12833,0
+200007,"Sharks","Brazil","X2016",11,15940,0
+200007,"Sharks","Chile","X2010",0,0,29
+200007,"Sharks","Chile","X2011",52,0,7
+200007,"Sharks","Chile","X2012",25,0,37
+200007,"Sharks","Chile","X2013",0,0,7
+200007,"Sharks","Chile","X2014",2,5,1
+200007,"Sharks","Chile","X2015",0,6,11
+200007,"Sharks","Chile","X2016",22,5,58
+200007,"Sharks","Peru","X2010",903,4716,477
+200007,"Sharks","Peru","X2011",847,4298,305
+200007,"Sharks","Peru","X2012",1197,4338,92
+200007,"Sharks","Peru","X2013",633,3554,249
+200007,"Sharks","Peru","X2014",673,3185,534
+200007,"Sharks","Peru","X2015",864,3233,1116
+200007,"Sharks","Peru","X2016",679,3998,851
+290002,"Squids, cuttlefishes, octopuses","Brazil","X2010",0,0,0
+290002,"Squids, cuttlefishes, octopuses","Brazil","X2011",0,0,0
+290002,"Squids, cuttlefishes, octopuses","Brazil","X2012",0,0,0
+290002,"Squids, cuttlefishes, octopuses","Brazil","X2013",0,0,0
+290002,"Squids, cuttlefishes, octopuses","Brazil","X2014",0,0,0
+290002,"Squids, cuttlefishes, octopuses","Brazil","X2015",0,0,0
+290002,"Squids, cuttlefishes, octopuses","Brazil","X2016",0,0,0
+290002,"Squids, cuttlefishes, octopuses","Peru","X2010",0,0,0
+290002,"Squids, cuttlefishes, octopuses","Peru","X2011",0,0,0
+290002,"Squids, cuttlefishes, octopuses","Peru","X2012",0,0,0
+290002,"Squids, cuttlefishes, octopuses","Peru","X2013",0,0,0
+290002,"Squids, cuttlefishes, octopuses","Peru","X2014",0,0,0
+290002,"Squids, cuttlefishes, octopuses","Peru","X2015",0,0,0
+290002,"Squids, cuttlefishes, octopuses","Peru","X2016",0,0,0
+290004,"Clams","Brazil","X2010",0,0,0
+290004,"Clams","Brazil","X2011",0,0,0
+290004,"Clams","Brazil","X2012",0,0,0
+290004,"Clams","Brazil","X2013",0,0,0
+290004,"Clams","Brazil","X2014",0,0,0
+290004,"Clams","Brazil","X2015",0,0,0
+290004,"Clams","Brazil","X2016",0,0,0
+290004,"Clams","Chile","X2010",6244,2,4615
+290004,"Clams","Chile","X2011",3053,7,3839
+290004,"Clams","Chile","X2012",5026,5,3816
+290004,"Clams","Chile","X2013",3352,0,3662
+290004,"Clams","Chile","X2014",4120,30,3203
+290004,"Clams","Chile","X2015",3835,25,3697
+290004,"Clams","Chile","X2016",2922,1,2769
+290004,"Clams","Peru","X2010",0,0,40
+290004,"Clams","Peru","X2011",0,0,6
+290004,"Clams","Peru","X2012",0,0,0
+290004,"Clams","Peru","X2013",0,0,170
+290004,"Clams","Peru","X2014",0,0,179
+290004,"Clams","Peru","X2015",0,0,159
+290004,"Clams","Peru","X2016",0,0,34
+290006,"Sea snails","Chile","X2010",2103,1,844
+290006,"Sea snails","Chile","X2011",1652,1,550
+290006,"Sea snails","Chile","X2012",1359,9,439
+290006,"Sea snails","Chile","X2013",1159,0,397
+290006,"Sea snails","Chile","X2014",965,0,437
+290006,"Sea snails","Chile","X2015",914,1,546
+290006,"Sea snails","Chile","X2016",1155,0,688
+290006,"Sea snails","Peru","X2010",0,0,8
+290006,"Sea snails","Peru","X2011",0,0,6
+290006,"Sea snails","Peru","X2012",0,0,30
+290006,"Sea snails","Peru","X2013",0,0,79
+290006,"Sea snails","Peru","X2014",0,0,1243
+290006,"Sea snails","Peru","X2015",0,0,176
+290006,"Sea snails","Peru","X2016",0,0,18
+290013,"True jellyfishes","Chile","X2010",0,0,0
+290013,"True jellyfishes","Chile","X2011",0,0,0
+290013,"True jellyfishes","Chile","X2012",0,0,0
+290013,"True jellyfishes","Chile","X2013",0,0,0
+290013,"True jellyfishes","Chile","X2014",0,0,0
+290013,"True jellyfishes","Chile","X2015",0,0,0
+290013,"True jellyfishes","Chile","X2016",0,0,0
+300026,"Eels, morays","Brazil","X2010",0,0,0
+300026,"Eels, morays","Brazil","X2011",0,0,0
+300026,"Eels, morays","Brazil","X2012",0,0,0
+300026,"Eels, morays","Brazil","X2013",0,1,0
+300026,"Eels, morays","Brazil","X2014",0,0,0
+300026,"Eels, morays","Brazil","X2015",0,2,0
+300026,"Eels, morays","Brazil","X2016",0,1,0
+300026,"Eels, morays","Chile","X2010",0,0,0
+300026,"Eels, morays","Chile","X2011",0,0,0
+300026,"Eels, morays","Chile","X2012",0,0,0
+300026,"Eels, morays","Chile","X2013",0,0,0
+300026,"Eels, morays","Chile","X2014",0,0,0
+300026,"Eels, morays","Chile","X2015",0,2,0
+300026,"Eels, morays","Chile","X2016",10,0,0
+300026,"Eels, morays","Peru","X2010",0,0,0
+300026,"Eels, morays","Peru","X2011",0,0,0
+300026,"Eels, morays","Peru","X2012",0,0,0
+300026,"Eels, morays","Peru","X2013",0,0,0
+300026,"Eels, morays","Peru","X2014",0,0,0
+300026,"Eels, morays","Peru","X2015",0,0,0
+300026,"Eels, morays","Peru","X2016",1,0,0
+300028,"Herrings, shads, anchovies","Brazil","X2010",0,1576,0
+300028,"Herrings, shads, anchovies","Brazil","X2011",1,2782,0
+300028,"Herrings, shads, anchovies","Brazil","X2012",0,2168,0
+300028,"Herrings, shads, anchovies","Brazil","X2013",0,2169,0
+300028,"Herrings, shads, anchovies","Brazil","X2014",0,909,0
+300028,"Herrings, shads, anchovies","Brazil","X2015",0,576,0
+300028,"Herrings, shads, anchovies","Brazil","X2016",0,216,0
+300028,"Herrings, shads, anchovies","Chile","X2010",0,21,2175
+300028,"Herrings, shads, anchovies","Chile","X2011",0,16,2086
+300028,"Herrings, shads, anchovies","Chile","X2012",0,25,1771
+300028,"Herrings, shads, anchovies","Chile","X2013",0,15,1884
+300028,"Herrings, shads, anchovies","Chile","X2014",0,24,2120
+300028,"Herrings, shads, anchovies","Chile","X2015",104,10,2056
+300028,"Herrings, shads, anchovies","Chile","X2016",0,15,1791
+300028,"Herrings, shads, anchovies","Peru","X2010",0,835,1598
+300028,"Herrings, shads, anchovies","Peru","X2011",0,1107,396
+300028,"Herrings, shads, anchovies","Peru","X2012",0,1214,508
+300028,"Herrings, shads, anchovies","Peru","X2013",0,2077,1098
+300028,"Herrings, shads, anchovies","Peru","X2014",0,1147,658
+300028,"Herrings, shads, anchovies","Peru","X2015",0,1088,1495
+300028,"Herrings, shads, anchovies","Peru","X2016",0,1672,991
+300032,"Catfishes","Brazil","X2010",51,37,0
+300032,"Catfishes","Brazil","X2011",34,20,0
+300032,"Catfishes","Brazil","X2012",5,12724,0
+300032,"Catfishes","Brazil","X2013",1,23411,0
+300032,"Catfishes","Brazil","X2014",0,46559,0
+300032,"Catfishes","Brazil","X2015",29,31077,0
+300032,"Catfishes","Brazil","X2016",97,33815,0
+300032,"Catfishes","Chile","X2010",0,0,0
+300032,"Catfishes","Chile","X2011",0,0,0
+300032,"Catfishes","Chile","X2012",0,2519,0
+300032,"Catfishes","Chile","X2013",50,1508,0
+300032,"Catfishes","Chile","X2014",0,2289,0
+300032,"Catfishes","Chile","X2015",0,1849,0
+300032,"Catfishes","Chile","X2016",0,2920,0
+300032,"Catfishes","Peru","X2010",0,0,0
+300032,"Catfishes","Peru","X2011",25,0,0
+300032,"Catfishes","Peru","X2012",634,2699,0
+300032,"Catfishes","Peru","X2013",104,1960,0
+300032,"Catfishes","Peru","X2014",585,2575,0
+300032,"Catfishes","Peru","X2015",0,1661,0
+300032,"Catfishes","Peru","X2016",0,2147,0
+300044,"Cods","Brazil","X2010",0,19411,0
+300044,"Cods","Brazil","X2011",1,24067,0
+300044,"Cods","Brazil","X2012",1183,23668,0
+300044,"Cods","Brazil","X2013",981,27065,0
+300044,"Cods","Brazil","X2014",439,33448,0
+300044,"Cods","Brazil","X2015",888,24828,0
+300044,"Cods","Brazil","X2016",1987,25401,0
+300044,"Cods","Chile","X2010",998,0,1684
+300044,"Cods","Chile","X2011",668,0,951
+300044,"Cods","Chile","X2012",705,77,777
+300044,"Cods","Chile","X2013",433,65,802
+300044,"Cods","Chile","X2014",294,99,799
+300044,"Cods","Chile","X2015",712,59,811
+300044,"Cods","Chile","X2016",350,175,1517
+300044,"Cods","Peru","X2010",84,5,0
+300044,"Cods","Peru","X2011",76,4,0
+300044,"Cods","Peru","X2012",1419,30,0
+300044,"Cods","Peru","X2013",1228,137,0
+300044,"Cods","Peru","X2014",848,109,0
+300044,"Cods","Peru","X2015",554,8,0
+300044,"Cods","Peru","X2016",662,5,0
+300061,"Flatfishes","Brazil","X2010",0,0,0
+300061,"Flatfishes","Brazil","X2011",0,0,0
+300061,"Flatfishes","Brazil","X2012",0,671,0
+300061,"Flatfishes","Brazil","X2013",1,1021,0
+300061,"Flatfishes","Brazil","X2014",2,1136,0
+300061,"Flatfishes","Brazil","X2015",1,2916,0
+300061,"Flatfishes","Brazil","X2016",27,1268,0
+300061,"Flatfishes","Chile","X2010",0,0,0
+300061,"Flatfishes","Chile","X2011",0,0,0
+300061,"Flatfishes","Chile","X2012",1,0,0
+300061,"Flatfishes","Chile","X2013",2,0,0
+300061,"Flatfishes","Chile","X2014",0,0,0
+300061,"Flatfishes","Chile","X2015",0,23,0
+300061,"Flatfishes","Chile","X2016",0,44,0
+300061,"Flatfishes","Peru","X2010",0,0,0
+300061,"Flatfishes","Peru","X2011",24,0,0
+300061,"Flatfishes","Peru","X2012",0,0,0
+300061,"Flatfishes","Peru","X2013",0,0,0
+300061,"Flatfishes","Peru","X2014",0,116,0
+300061,"Flatfishes","Peru","X2015",20,55,0
+300061,"Flatfishes","Peru","X2016",1,33,0
+390002,"Squids","Brazil","X2010",1,1950,0
+390002,"Squids","Brazil","X2011",0,2963,0
+390002,"Squids","Brazil","X2012",0,3495,0
+390002,"Squids","Brazil","X2013",0,5332,0
+390002,"Squids","Brazil","X2014",0,6143,0
+390002,"Squids","Brazil","X2015",0,6278,0
+390002,"Squids","Brazil","X2016",0,7431,0
+390002,"Squids","Chile","X2010",15452,30,0
+390002,"Squids","Chile","X2011",40997,95,0
+390002,"Squids","Chile","X2012",62219,115,0
+390002,"Squids","Chile","X2013",50033,83,0
+390002,"Squids","Chile","X2014",75630,239,1
+390002,"Squids","Chile","X2015",68649,424,0
+390002,"Squids","Chile","X2016",80460,345,339
+390002,"Squids","Peru","X2010",0,0,40
+390002,"Squids","Peru","X2011",0,0,0
+390002,"Squids","Peru","X2012",0,0,0
+390002,"Squids","Peru","X2013",0,0,4
+390002,"Squids","Peru","X2014",0,0,0
+390002,"Squids","Peru","X2015",0,0,0
+390002,"Squids","Peru","X2016",0,0,0
+390006,"Cuttlefishes, bobtail squids","Brazil","X2010",0,0,0
+390006,"Cuttlefishes, bobtail squids","Brazil","X2011",0,0,0
+390006,"Cuttlefishes, bobtail squids","Brazil","X2012",2,108,0
+390006,"Cuttlefishes, bobtail squids","Brazil","X2013",0,153,0
+390006,"Cuttlefishes, bobtail squids","Brazil","X2014",0,101,0
+390006,"Cuttlefishes, bobtail squids","Brazil","X2015",0,90,0
+390006,"Cuttlefishes, bobtail squids","Brazil","X2016",0,22,0
+390006,"Cuttlefishes, bobtail squids","Chile","X2010",354,0,0
+390006,"Cuttlefishes, bobtail squids","Chile","X2011",49,0,0
+390006,"Cuttlefishes, bobtail squids","Chile","X2012",0,0,0
+390006,"Cuttlefishes, bobtail squids","Chile","X2013",0,0,0
+390006,"Cuttlefishes, bobtail squids","Chile","X2014",0,0,0
+390006,"Cuttlefishes, bobtail squids","Chile","X2015",53,0,0
+390006,"Cuttlefishes, bobtail squids","Chile","X2016",0,7,0
+390006,"Cuttlefishes, bobtail squids","Peru","X2010",119,89,0
+390006,"Cuttlefishes, bobtail squids","Peru","X2011",2363,204,0
+390006,"Cuttlefishes, bobtail squids","Peru","X2012",854,27,0
+390006,"Cuttlefishes, bobtail squids","Peru","X2013",326,1,0
+390006,"Cuttlefishes, bobtail squids","Peru","X2014",122,37,0
+390006,"Cuttlefishes, bobtail squids","Peru","X2015",0,17,0
+390006,"Cuttlefishes, bobtail squids","Peru","X2016",1692,1,0
+390013,"Crabs, lobsters, shrimps","Brazil","X2010",2427,8,0
+390013,"Crabs, lobsters, shrimps","Brazil","X2011",2135,0,0
+390013,"Crabs, lobsters, shrimps","Brazil","X2012",1393,0,0
+390013,"Crabs, lobsters, shrimps","Brazil","X2013",1886,0,0
+390013,"Crabs, lobsters, shrimps","Brazil","X2014",1723,0,0
+390013,"Crabs, lobsters, shrimps","Brazil","X2015",1813,0,0
+390013,"Crabs, lobsters, shrimps","Brazil","X2016",1155,0,0
+390013,"Crabs, lobsters, shrimps","Chile","X2010",46,4,0
+390013,"Crabs, lobsters, shrimps","Chile","X2011",86,0,0
+390013,"Crabs, lobsters, shrimps","Chile","X2012",53,2,0
+390013,"Crabs, lobsters, shrimps","Chile","X2013",48,4,0
+390013,"Crabs, lobsters, shrimps","Chile","X2014",63,5,0
+390013,"Crabs, lobsters, shrimps","Chile","X2015",64,4,0
+390013,"Crabs, lobsters, shrimps","Chile","X2016",86,9,0
+390013,"Crabs, lobsters, shrimps","Peru","X2010",0,0,0
+390013,"Crabs, lobsters, shrimps","Peru","X2011",0,1,0
+390013,"Crabs, lobsters, shrimps","Peru","X2012",4,1,0
+390013,"Crabs, lobsters, shrimps","Peru","X2013",66,1,0
+390013,"Crabs, lobsters, shrimps","Peru","X2014",0,0,0
+390013,"Crabs, lobsters, shrimps","Peru","X2015",10,0,0
+390013,"Crabs, lobsters, shrimps","Peru","X2016",1,0,0
+400013,"Dogfish sharks","Chile","X2010",0,0,94
+400013,"Dogfish sharks","Chile","X2011",0,0,111
+400013,"Dogfish sharks","Chile","X2012",0,0,0
+400013,"Dogfish sharks","Chile","X2013",0,0,0
+400013,"Dogfish sharks","Chile","X2014",0,0,1
+400013,"Dogfish sharks","Chile","X2015",0,0,0
+400013,"Dogfish sharks","Chile","X2016",0,0,0
+400032,"Sturgeons","Chile","X2010",0,0,0
+400032,"Sturgeons","Chile","X2011",0,0,0
+400032,"Sturgeons","Chile","X2012",0,0,0
+400032,"Sturgeons","Chile","X2013",0,0,0
+400032,"Sturgeons","Chile","X2014",0,0,0
+400032,"Sturgeons","Chile","X2015",0,0,0
+400032,"Sturgeons","Chile","X2016",0,0,0
+400076,"Salmonids","Brazil","X2010",0,23660,0
+400076,"Salmonids","Brazil","X2011",0,33760,0
+400076,"Salmonids","Brazil","X2012",28,8723,0
+400076,"Salmonids","Brazil","X2013",2,13531,0
+400076,"Salmonids","Brazil","X2014",2,18210,0
+400076,"Salmonids","Brazil","X2015",0,15333,0
+400076,"Salmonids","Brazil","X2016",25,9863,0
+400076,"Salmonids","Chile","X2010",45587,242,36136
+400076,"Salmonids","Chile","X2011",77732,69,65880
+400076,"Salmonids","Chile","X2012",135362,14,114851
+400076,"Salmonids","Chile","X2013",167884,5,147582
+400076,"Salmonids","Chile","X2014",185533,194,165241
+400076,"Salmonids","Chile","X2015",189096,297,170370
+400076,"Salmonids","Chile","X2016",185165,715,167161
+400076,"Salmonids","Peru","X2010",30,132,0
+400076,"Salmonids","Peru","X2011",160,154,0
+400076,"Salmonids","Peru","X2012",159,168,0
+400076,"Salmonids","Peru","X2013",23,166,0
+400076,"Salmonids","Peru","X2014",76,280,0
+400076,"Salmonids","Peru","X2015",244,339,0
+400076,"Salmonids","Peru","X2016",53,250,0
+400082,"Icefishes, noodlefishes","Chile","X2010",0,0,0
+400082,"Icefishes, noodlefishes","Chile","X2011",0,0,0
+400082,"Icefishes, noodlefishes","Chile","X2012",0,0,0
+400082,"Icefishes, noodlefishes","Chile","X2013",234,0,0
+400082,"Icefishes, noodlefishes","Chile","X2014",0,0,0
+400082,"Icefishes, noodlefishes","Chile","X2015",26,0,0
+400082,"Icefishes, noodlefishes","Chile","X2016",94,0,0
+400186,"Cuskeels","Chile","X2010",1044,0,1202
+400186,"Cuskeels","Chile","X2011",1080,0,1160
+400186,"Cuskeels","Chile","X2012",757,0,1154
+400186,"Cuskeels","Chile","X2013",745,0,807
+400186,"Cuskeels","Chile","X2014",325,0,283
+400186,"Cuskeels","Chile","X2015",348,14,579
+400186,"Cuskeels","Chile","X2016",244,5,548
+400186,"Cuskeels","Peru","X2010",0,0,0
+400186,"Cuskeels","Peru","X2011",0,0,0
+400186,"Cuskeels","Peru","X2012",0,0,0
+400186,"Cuskeels","Peru","X2013",0,0,0
+400186,"Cuskeels","Peru","X2014",0,0,0
+400186,"Cuskeels","Peru","X2015",0,0,0
+400186,"Cuskeels","Peru","X2016",0,0,0
+400319,"Pomfrets","Chile","X2010",300,0,0
+400319,"Pomfrets","Chile","X2011",78,0,0
+400319,"Pomfrets","Chile","X2012",0,0,0
+400319,"Pomfrets","Chile","X2013",0,0,0
+400319,"Pomfrets","Chile","X2014",0,0,0
+400319,"Pomfrets","Chile","X2015",0,2,0
+400319,"Pomfrets","Chile","X2016",0,0,0
+400323,"Snappers","Brazil","X2010",3087,0,0
+400323,"Snappers","Brazil","X2011",2567,33,0
+400323,"Snappers","Brazil","X2012",3196,0,0
+400323,"Snappers","Brazil","X2013",3538,0,0
+400323,"Snappers","Brazil","X2014",2657,0,0
+400323,"Snappers","Brazil","X2015",3228,0,0
+400323,"Snappers","Brazil","X2016",3918,0,0
+400331,"Drums, croakers","Brazil","X2010",2065,2560,2070
+400331,"Drums, croakers","Brazil","X2011",1374,1111,1380
+400331,"Drums, croakers","Brazil","X2012",1010,1097,1010
+400331,"Drums, croakers","Brazil","X2013",2081,1919,2090
+400331,"Drums, croakers","Brazil","X2014",2925,1575,2930
+400331,"Drums, croakers","Brazil","X2015",2850,709,2850
+400331,"Drums, croakers","Brazil","X2016",3720,535,3720
+400331,"Drums, croakers","Chile","X2010",1066,0,16
+400331,"Drums, croakers","Chile","X2011",3691,2,34
+400331,"Drums, croakers","Chile","X2012",2980,1,59
+400331,"Drums, croakers","Chile","X2013",380,29,42
+400331,"Drums, croakers","Chile","X2014",2155,78,8
+400331,"Drums, croakers","Chile","X2015",1902,7,5
+400331,"Drums, croakers","Chile","X2016",1351,12,92
+400331,"Drums, croakers","Peru","X2010",0,0,4
+400331,"Drums, croakers","Peru","X2011",0,0,0
+400331,"Drums, croakers","Peru","X2012",0,0,0
+400331,"Drums, croakers","Peru","X2013",0,0,0
+400331,"Drums, croakers","Peru","X2014",0,0,0
+400331,"Drums, croakers","Peru","X2015",0,0,0
+400331,"Drums, croakers","Peru","X2016",0,0,0
+400416,"Mackerels, tunas, bonitos","Brazil","X2010",4799,5854,0
+400416,"Mackerels, tunas, bonitos","Brazil","X2011",9551,8410,0
+400416,"Mackerels, tunas, bonitos","Brazil","X2012",14099,4562,0
+400416,"Mackerels, tunas, bonitos","Brazil","X2013",8645,3946,0
+400416,"Mackerels, tunas, bonitos","Brazil","X2014",6287,4420,0
+400416,"Mackerels, tunas, bonitos","Brazil","X2015",6996,4075,0
+400416,"Mackerels, tunas, bonitos","Brazil","X2016",6453,7219,0
+400416,"Mackerels, tunas, bonitos","Chile","X2010",490,455,22484
+400416,"Mackerels, tunas, bonitos","Chile","X2011",74,1859,4900
+400416,"Mackerels, tunas, bonitos","Chile","X2012",8,201,4507
+400416,"Mackerels, tunas, bonitos","Chile","X2013",0,175,5801
+400416,"Mackerels, tunas, bonitos","Chile","X2014",87,246,4602
+400416,"Mackerels, tunas, bonitos","Chile","X2015",141,815,10151
+400416,"Mackerels, tunas, bonitos","Chile","X2016",166,1465,10912
+400416,"Mackerels, tunas, bonitos","Peru","X2010",496,9762,1330
+400416,"Mackerels, tunas, bonitos","Peru","X2011",6288,4515,1766
+400416,"Mackerels, tunas, bonitos","Peru","X2012",1967,8462,1741
+400416,"Mackerels, tunas, bonitos","Peru","X2013",4859,16239,3313
+400416,"Mackerels, tunas, bonitos","Peru","X2014",7169,20938,4382
+400416,"Mackerels, tunas, bonitos","Peru","X2015",1049,16643,4588
+400416,"Mackerels, tunas, bonitos","Peru","X2016",27199,9562,4200
+400441,"Soles","Chile","X2010",0,0,0
+400441,"Soles","Chile","X2011",0,0,0
+400441,"Soles","Chile","X2012",0,1,0
+400441,"Soles","Chile","X2013",0,0,0
+400441,"Soles","Chile","X2014",0,0,0
+400441,"Soles","Chile","X2015",0,0,0
+400441,"Soles","Chile","X2016",0,0,0
+490011,"Cuttlefishes","Brazil","X2010",0,199,0
+490011,"Cuttlefishes","Brazil","X2011",0,179,0
+490011,"Cuttlefishes","Brazil","X2012",0,193,0
+490011,"Cuttlefishes","Brazil","X2013",0,249,0
+490011,"Cuttlefishes","Brazil","X2014",0,668,0
+490011,"Cuttlefishes","Brazil","X2015",0,436,0
+490011,"Cuttlefishes","Brazil","X2016",0,463,0
+490011,"Cuttlefishes","Chile","X2010",4147,155,36325
+490011,"Cuttlefishes","Chile","X2011",4693,336,81898
+490011,"Cuttlefishes","Chile","X2012",1407,194,68508
+490011,"Cuttlefishes","Chile","X2013",1292,195,61720
+490011,"Cuttlefishes","Chile","X2014",322,281,101948
+490011,"Cuttlefishes","Chile","X2015",68,184,82320
+490011,"Cuttlefishes","Chile","X2016",354,155,100152
+490011,"Cuttlefishes","Peru","X2010",161182,2575,0
+490011,"Cuttlefishes","Peru","X2011",164095,2556,0
+490011,"Cuttlefishes","Peru","X2012",181264,1728,0
+490011,"Cuttlefishes","Peru","X2013",198441,608,0
+490011,"Cuttlefishes","Peru","X2014",197241,3033,0
+490011,"Cuttlefishes","Peru","X2015",186199,355,0
+490011,"Cuttlefishes","Peru","X2016",125078,334,0
+490012,"Octopuses","Brazil","X2010",0,195,0
+490012,"Octopuses","Brazil","X2011",82,292,0
+490012,"Octopuses","Brazil","X2012",56,108,0
+490012,"Octopuses","Brazil","X2013",15,141,0
+490012,"Octopuses","Brazil","X2014",0,533,0
+490012,"Octopuses","Brazil","X2015",9,339,0
+490012,"Octopuses","Brazil","X2016",17,180,0
+490012,"Octopuses","Chile","X2010",1600,1,1262
+490012,"Octopuses","Chile","X2011",2746,9,2623
+490012,"Octopuses","Chile","X2012",1073,41,1647
+490012,"Octopuses","Chile","X2013",843,26,1214
+490012,"Octopuses","Chile","X2014",1638,31,1850
+490012,"Octopuses","Chile","X2015",886,4,1420
+490012,"Octopuses","Chile","X2016",1821,19,2481
+490012,"Octopuses","Peru","X2010",1663,0,0
+490012,"Octopuses","Peru","X2011",1745,1,0
+490012,"Octopuses","Peru","X2012",837,6,0
+490012,"Octopuses","Peru","X2013",571,1,0
+490012,"Octopuses","Peru","X2014",1003,21,0
+490012,"Octopuses","Peru","X2015",2107,0,0
+490012,"Octopuses","Peru","X2016",3358,0,0
+490055,"Scallops","Brazil","X2010",0,57,0
+490055,"Scallops","Brazil","X2011",0,65,0
+490055,"Scallops","Brazil","X2012",0,51,0
+490055,"Scallops","Brazil","X2013",0,73,0
+490055,"Scallops","Brazil","X2014",0,93,0
+490055,"Scallops","Brazil","X2015",0,30,0
+490055,"Scallops","Brazil","X2016",0,106,0
+490055,"Scallops","Chile","X2010",1589,58,1336
+490055,"Scallops","Chile","X2011",1630,80,1445
+490055,"Scallops","Chile","X2012",1008,182,857
+490055,"Scallops","Chile","X2013",749,303,905
+490055,"Scallops","Chile","X2014",681,257,870
+490055,"Scallops","Chile","X2015",796,283,725
+490055,"Scallops","Chile","X2016",1014,264,1076
+490055,"Scallops","Peru","X2010",12612,27,10320
+490055,"Scallops","Peru","X2011",10462,0,6164
+490055,"Scallops","Peru","X2012",5820,0,0
+490055,"Scallops","Peru","X2013",15121,0,12224
+490055,"Scallops","Peru","X2014",12332,1,8340
+490055,"Scallops","Peru","X2015",6178,0,2404
+490055,"Scallops","Peru","X2016",4372,0,2765
+490097,"Marine crabs","Brazil","X2010",350,28,0
+490097,"Marine crabs","Brazil","X2011",329,52,0
+490097,"Marine crabs","Brazil","X2012",308,30,0
+490097,"Marine crabs","Brazil","X2013",114,31,0
+490097,"Marine crabs","Brazil","X2014",104,40,0
+490097,"Marine crabs","Brazil","X2015",76,27,0
+490097,"Marine crabs","Brazil","X2016",175,24,0
+490097,"Marine crabs","Chile","X2010",982,27,941
+490097,"Marine crabs","Chile","X2011",1509,15,1563
+490097,"Marine crabs","Chile","X2012",999,117,1259
+490097,"Marine crabs","Chile","X2013",1038,162,1659
+490097,"Marine crabs","Chile","X2014",808,36,1458
+490097,"Marine crabs","Chile","X2015",728,33,1754
+490097,"Marine crabs","Chile","X2016",908,37,2060
+490097,"Marine crabs","Peru","X2010",44,2,0
+490097,"Marine crabs","Peru","X2011",74,2,0
+490097,"Marine crabs","Peru","X2012",244,3,0
+490097,"Marine crabs","Peru","X2013",18,2,0
+490097,"Marine crabs","Peru","X2014",14,2,0
+490097,"Marine crabs","Peru","X2015",4,2,0
+490097,"Marine crabs","Peru","X2016",2,0,0
+500116,"Dolphinfishes","Chile","X2010",0,0,0
+500116,"Dolphinfishes","Chile","X2011",0,0,0
+500116,"Dolphinfishes","Chile","X2012",6,0,0
+500116,"Dolphinfishes","Chile","X2013",0,0,0
+500116,"Dolphinfishes","Chile","X2014",0,0,0
+500116,"Dolphinfishes","Chile","X2015",0,0,0
+500116,"Dolphinfishes","Chile","X2016",0,0,0
+500136,"Trouts","Brazil","X2010",0,5620,0
+500136,"Trouts","Brazil","X2011",0,3326,0
+500136,"Trouts","Brazil","X2012",0,3954,0
+500136,"Trouts","Brazil","X2013",0,2095,0
+500136,"Trouts","Brazil","X2014",0,542,0
+500136,"Trouts","Brazil","X2015",0,532,0
+500136,"Trouts","Brazil","X2016",0,324,0
+500136,"Trouts","Chile","X2010",122983,12,96210
+500136,"Trouts","Chile","X2011",128830,175,100383
+500136,"Trouts","Chile","X2012",139682,239,122912
+500136,"Trouts","Chile","X2013",109646,0,60734
+500136,"Trouts","Chile","X2014",74721,65,70691
+500136,"Trouts","Chile","X2015",65851,25,50981
+500136,"Trouts","Chile","X2016",48628,0,36350
+500136,"Trouts","Peru","X2010",584,0,13
+500136,"Trouts","Peru","X2011",922,0,10
+500136,"Trouts","Peru","X2012",1370,0,0
+500136,"Trouts","Peru","X2013",1336,16,1
+500136,"Trouts","Peru","X2014",767,0,0
+500136,"Trouts","Peru","X2015",1862,23,136
+500136,"Trouts","Peru","X2016",2523,68,15
+500158,"Grenadiers","Brazil","X2010",0,1605,0
+500158,"Grenadiers","Brazil","X2011",0,828,0
+500158,"Grenadiers","Brazil","X2012",0,913,0
+500158,"Grenadiers","Brazil","X2013",0,787,0
+500158,"Grenadiers","Brazil","X2014",0,239,0
+500158,"Grenadiers","Brazil","X2015",0,194,0
+500158,"Grenadiers","Brazil","X2016",0,686,0
+500158,"Grenadiers","Chile","X2010",254,0,15608
+500158,"Grenadiers","Chile","X2011",247,0,11334
+500158,"Grenadiers","Chile","X2012",89,0,15244
+500158,"Grenadiers","Chile","X2013",386,0,10696
+500158,"Grenadiers","Chile","X2014",239,0,9392
+500158,"Grenadiers","Chile","X2015",0,0,6916
+500158,"Grenadiers","Chile","X2016",0,0,4353
+500158,"Grenadiers ","Chile","X2010",13686,0,6649
+500158,"Grenadiers ","Chile","X2011",11410,0,5799
+500158,"Grenadiers ","Chile","X2012",9101,0,4100
+500158,"Grenadiers ","Chile","X2013",9679,0,4344
+500158,"Grenadiers ","Chile","X2014",10049,0,4990
+500158,"Grenadiers ","Chile","X2015",10941,0,6089
+500158,"Grenadiers ","Chile","X2016",7457,317,3364
+500352,"Shads","Brazil","X2010",0,294,0
+500352,"Shads","Brazil","X2011",0,440,0
+500352,"Shads","Brazil","X2012",0,0,0
+500352,"Shads","Brazil","X2013",0,0,0
+500352,"Shads","Brazil","X2014",0,0,0
+500352,"Shads","Brazil","X2015",0,0,0
+500352,"Shads","Brazil","X2016",0,0,0
+500538,"Marlins","Brazil","X2010",0,42,0
+500538,"Marlins","Brazil","X2011",2,27,0
+500538,"Marlins","Brazil","X2012",0,0,0
+500538,"Marlins","Brazil","X2013",0,0,0
+500538,"Marlins","Brazil","X2014",0,3,0
+500538,"Marlins","Brazil","X2015",0,6,0
+500538,"Marlins","Brazil","X2016",0,0,0
+500538,"Marlins","Chile","X2010",0,0,0
+500538,"Marlins","Chile","X2011",0,0,0
+500538,"Marlins","Chile","X2012",0,0,0
+500538,"Marlins","Chile","X2013",0,0,0
+500538,"Marlins","Chile","X2014",0,0,0
+500538,"Marlins","Chile","X2015",0,0,0
+500538,"Marlins","Chile","X2016",0,0,0
+500654,"Hakes","Brazil","X2010",0,43697,0
+500654,"Hakes","Brazil","X2011",0,34366,0
+500654,"Hakes","Brazil","X2012",0,21725,0
+500654,"Hakes","Brazil","X2013",0,25850,0
+500654,"Hakes","Brazil","X2014",2,30498,0
+500654,"Hakes","Brazil","X2015",0,24196,0
+500654,"Hakes","Brazil","X2016",17,24264,0
+500654,"Hakes","Chile","X2010",4540,69,4024
+500654,"Hakes","Chile","X2011",3596,69,3395
+500654,"Hakes","Chile","X2012",5255,49,5760
+500654,"Hakes","Chile","X2013",5277,48,5500
+500654,"Hakes","Chile","X2014",3896,209,4160
+500654,"Hakes","Chile","X2015",3023,219,3358
+500654,"Hakes","Chile","X2016",2912,541,3155
+500654,"Hakes","Peru","X2010",8658,1,4047
+500654,"Hakes","Peru","X2011",8326,192,4831
+500654,"Hakes","Peru","X2012",7940,112,4837
+500654,"Hakes","Peru","X2013",9340,1647,4139
+500654,"Hakes","Peru","X2014",12285,299,4685
+500654,"Hakes","Peru","X2015",9382,64,4223
+500654,"Hakes","Peru","X2016",7846,30,3022
+500661,"Jacks, horse mackerels","Brazil","X2010",0,0,0
+500661,"Jacks, horse mackerels","Brazil","X2011",0,0,0
+500661,"Jacks, horse mackerels","Brazil","X2012",0,0,0
+500661,"Jacks, horse mackerels","Brazil","X2013",0,0,0
+500661,"Jacks, horse mackerels","Brazil","X2014",0,2,0
+500661,"Jacks, horse mackerels","Brazil","X2015",9,0,0
+500661,"Jacks, horse mackerels","Brazil","X2016",2,3,0
+500661,"Jacks, horse mackerels","Chile","X2010",76178,2896,148358
+500661,"Jacks, horse mackerels","Chile","X2011",70008,16819,113728
+500661,"Jacks, horse mackerels","Chile","X2012",89537,13016,122679
+500661,"Jacks, horse mackerels","Chile","X2013",124538,9554,148732
+500661,"Jacks, horse mackerels","Chile","X2014",123005,5413,167526
+500661,"Jacks, horse mackerels","Chile","X2015",79040,12481,130868
+500661,"Jacks, horse mackerels","Chile","X2016",86340,12788,144621
+500661,"Jacks, horse mackerels","Peru","X2010",0,0,4166
+500661,"Jacks, horse mackerels","Peru","X2011",0,0,137142
+500661,"Jacks, horse mackerels","Peru","X2012",48436,5823,86657
+500661,"Jacks, horse mackerels","Peru","X2013",8787,23844,19919
+500661,"Jacks, horse mackerels","Peru","X2014",7843,21148,27206
+500661,"Jacks, horse mackerels","Peru","X2015",75,42559,2931
+500661,"Jacks, horse mackerels","Peru","X2016",64,44154,1276
+500901,"Groupers","Brazil","X2010",0,0,0
+500901,"Groupers","Brazil","X2011",0,0,0
+500901,"Groupers","Brazil","X2012",0,0,0
+500901,"Groupers","Brazil","X2013",0,0,0
+500901,"Groupers","Brazil","X2014",0,0,0
+500901,"Groupers","Brazil","X2015",0,0,0
+500901,"Groupers","Brazil","X2016",1,0,0
+500903,"Subtropical seabreams","Brazil","X2010",0,0,0
+500903,"Subtropical seabreams","Brazil","X2011",0,0,0
+500903,"Subtropical seabreams","Brazil","X2012",6,0,0
+500903,"Subtropical seabreams","Brazil","X2013",0,0,0
+500903,"Subtropical seabreams","Brazil","X2014",2,0,0
+500903,"Subtropical seabreams","Brazil","X2015",0,0,0
+500903,"Subtropical seabreams","Brazil","X2016",0,0,0
+500903,"Subtropical seabreams","Chile","X2010",0,0,1895
+500903,"Subtropical seabreams","Chile","X2011",0,0,1913
+500903,"Subtropical seabreams","Chile","X2012",0,0,1340
+500903,"Subtropical seabreams","Chile","X2013",0,0,1937
+500903,"Subtropical seabreams","Chile","X2014",0,0,1965
+500903,"Subtropical seabreams","Chile","X2015",0,0,2666
+500903,"Subtropical seabreams","Chile","X2016",0,0,3781
+500903,"Subtropical seabreams","Peru","X2010",0,0,0
+500903,"Subtropical seabreams","Peru","X2011",0,0,0
+500903,"Subtropical seabreams","Peru","X2012",0,25,0
+500903,"Subtropical seabreams","Peru","X2013",0,52,0
+500903,"Subtropical seabreams","Peru","X2014",0,44,0
+500903,"Subtropical seabreams","Peru","X2015",11,83,3
+500903,"Subtropical seabreams","Peru","X2016",28,495,7
+501143,"Grunts","Chile","X2010",0,0,0
+501143,"Grunts","Chile","X2011",0,0,0
+501143,"Grunts","Chile","X2012",0,0,0
+501143,"Grunts","Chile","X2013",0,0,0
+501143,"Grunts","Chile","X2014",0,0,0
+501143,"Grunts","Chile","X2015",0,0,0
+501143,"Grunts","Chile","X2016",0,0,0
+501682,"Sea catfishes","Brazil","X2010",0,0,0
+501682,"Sea catfishes","Brazil","X2011",0,0,0
+501682,"Sea catfishes","Brazil","X2012",0,0,0
+501682,"Sea catfishes","Brazil","X2013",0,0,0
+501682,"Sea catfishes","Brazil","X2014",0,0,0
+501682,"Sea catfishes","Brazil","X2015",0,0,0
+501682,"Sea catfishes","Brazil","X2016",0,0,0
+501905,"Tunas","Brazil","X2010",3078,2295,2960
+501905,"Tunas","Brazil","X2011",3037,3411,3420
+501905,"Tunas","Brazil","X2012",3566,2669,3780
+501905,"Tunas","Brazil","X2013",2507,2257,2345
+501905,"Tunas","Brazil","X2014",2095,3681,1800
+501905,"Tunas","Brazil","X2015",2573,2389,2000
+501905,"Tunas","Brazil","X2016",1958,1812,1550
+501905,"Tunas","Chile","X2010",92,10744,0
+501905,"Tunas","Chile","X2011",215,12432,0
+501905,"Tunas","Chile","X2012",203,11114,1
+501905,"Tunas","Chile","X2013",135,14127,0
+501905,"Tunas","Chile","X2014",89,15473,0
+501905,"Tunas","Chile","X2015",145,18659,0
+501905,"Tunas","Chile","X2016",358,14971,16
+501905,"Tunas","Peru","X2010",2838,7702,9248
+501905,"Tunas","Peru","X2011",2629,11566,6216
+501905,"Tunas","Peru","X2012",1024,10372,1891
+501905,"Tunas","Peru","X2013",3447,13456,7224
+501905,"Tunas","Peru","X2014",2821,11139,6725
+501905,"Tunas","Peru","X2015",4483,15688,10619
+501905,"Tunas","Peru","X2016",2241,14413,10182
+502682,"Seabasses","Brazil","X2010",0,42,0
+502682,"Seabasses","Brazil","X2011",0,4,0
+502682,"Seabasses","Brazil","X2012",0,0,0
+502682,"Seabasses","Brazil","X2013",0,0,0
+502682,"Seabasses","Brazil","X2014",0,0,0
+502682,"Seabasses","Brazil","X2015",0,0,0
+502682,"Seabasses","Brazil","X2016",0,0,0
+502682,"Seabasses","Chile","X2010",0,0,0
+502682,"Seabasses","Chile","X2011",0,0,0
+502682,"Seabasses","Chile","X2012",0,0,0
+502682,"Seabasses","Chile","X2013",0,0,0
+502682,"Seabasses","Chile","X2014",0,0,2
+502682,"Seabasses","Chile","X2015",0,3,1
+502682,"Seabasses","Chile","X2016",0,0,0
+502682,"Seabasses","Peru","X2010",0,0,0
+502682,"Seabasses","Peru","X2011",0,0,0
+502682,"Seabasses","Peru","X2012",0,7,0
+502682,"Seabasses","Peru","X2013",0,7,0
+502682,"Seabasses","Peru","X2014",0,11,0
+502682,"Seabasses","Peru","X2015",0,24,0
+502682,"Seabasses","Peru","X2016",0,34,0
+502794,"Weakfishes","Brazil","X2010",176,146,0
+502794,"Weakfishes","Brazil","X2011",44,27,0
+502794,"Weakfishes","Brazil","X2012",0,15,0
+502794,"Weakfishes","Brazil","X2013",343,11,0
+502794,"Weakfishes","Brazil","X2014",184,0,0
+502794,"Weakfishes","Brazil","X2015",1257,3,0
+502794,"Weakfishes","Brazil","X2016",1762,0,0
+505586,"Anchovies","Brazil","X2010",0,163,0
+505586,"Anchovies","Brazil","X2011",0,176,0
+505586,"Anchovies","Brazil","X2012",0,226,0
+505586,"Anchovies","Brazil","X2013",0,117,0
+505586,"Anchovies","Brazil","X2014",0,157,0
+505586,"Anchovies","Brazil","X2015",0,89,0
+505586,"Anchovies","Brazil","X2016",0,111,0
+505586,"Anchovies","Chile","X2010",676,394,582
+505586,"Anchovies","Chile","X2011",733,760,768
+505586,"Anchovies","Chile","X2012",726,701,273
+505586,"Anchovies","Chile","X2013",373,681,10
+505586,"Anchovies","Chile","X2014",416,601,24
+505586,"Anchovies","Chile","X2015",338,609,0
+505586,"Anchovies","Chile","X2016",439,231,0
+505586,"Anchovies","Peru","X2010",9975,3202,54478
+505586,"Anchovies","Peru","X2011",8442,3038,53083
+505586,"Anchovies","Peru","X2012",12158,1790,35751
+505586,"Anchovies","Peru","X2013",11086,1526,41818
+505586,"Anchovies","Peru","X2014",8602,870,21626
+505586,"Anchovies","Peru","X2015",11406,1057,28666
+505586,"Anchovies","Peru","X2016",7038,256,23107
+509279,"Eels","Brazil","X2010",0,1,0
+509279,"Eels","Brazil","X2011",0,1,0
+509279,"Eels","Brazil","X2012",0,1,0
+509279,"Eels","Brazil","X2013",0,2,0
+509279,"Eels","Brazil","X2014",0,2,0
+509279,"Eels","Brazil","X2015",0,1,0
+509279,"Eels","Brazil","X2016",0,2,0
+509279,"Eels","Chile","X2010",0,0,0
+509279,"Eels","Chile","X2011",0,0,0
+509279,"Eels","Chile","X2012",12,0,0
+509279,"Eels","Chile","X2013",61,0,0
+509279,"Eels","Chile","X2014",5,0,0
+509279,"Eels","Chile","X2015",0,0,0
+509279,"Eels","Chile","X2016",0,9,0
+509279,"Eels","Peru","X2010",1,483,0
+509279,"Eels","Peru","X2011",1,216,0
+509279,"Eels","Peru","X2012",1,0,0
+509279,"Eels","Peru","X2013",2,0,0
+509279,"Eels","Peru","X2014",1,0,0
+509279,"Eels","Peru","X2015",2,0,0
+509279,"Eels","Peru","X2016",1,0,0
+590046,"Abalones","Brazil","X2010",0,0,0
+590046,"Abalones","Brazil","X2011",0,0,0
+590046,"Abalones","Brazil","X2012",0,0,0
+590046,"Abalones","Brazil","X2013",0,0,0
+590046,"Abalones","Brazil","X2014",0,1,0
+590046,"Abalones","Brazil","X2015",0,0,0
+590046,"Abalones","Brazil","X2016",0,0,0
+590046,"Abalones","Chile","X2010",498,0,448
+590046,"Abalones","Chile","X2011",272,0,454
+590046,"Abalones","Chile","X2012",589,0,424
+590046,"Abalones","Chile","X2013",591,0,574
+590046,"Abalones","Chile","X2014",589,0,371
+590046,"Abalones","Chile","X2015",656,0,447
+590046,"Abalones","Chile","X2016",700,0,519
+590046,"Abalones","Peru","X2010",295,0,431
+590046,"Abalones","Peru","X2011",247,0,364
+590046,"Abalones","Peru","X2012",372,0,530
+590046,"Abalones","Peru","X2013",362,0,279
+590046,"Abalones","Peru","X2014",369,0,182
+590046,"Abalones","Peru","X2015",203,2,150
+590046,"Abalones","Peru","X2016",183,0,92
+590060,"Crayfishes","Brazil","X2010",0,0,0
+590060,"Crayfishes","Brazil","X2011",0,0,0
+590060,"Crayfishes","Brazil","X2012",0,0,0
+590060,"Crayfishes","Brazil","X2013",0,0,0
+590060,"Crayfishes","Brazil","X2014",0,0,0
+590060,"Crayfishes","Brazil","X2015",0,0,0
+590060,"Crayfishes","Brazil","X2016",0,0,0
+590103,"Krills","Brazil","X2010",0,0,0
+590103,"Krills","Brazil","X2011",1,0,0
+590103,"Krills","Brazil","X2012",0,0,0
+590103,"Krills","Brazil","X2013",0,0,0
+590103,"Krills","Brazil","X2014",0,0,0
+590103,"Krills","Brazil","X2015",0,0,0
+590103,"Krills","Brazil","X2016",0,0,0
+590103,"Krills","Chile","X2010",0,0,0
+590103,"Krills","Chile","X2011",0,0,0
+590103,"Krills","Chile","X2012",0,0,0
+590103,"Krills","Chile","X2013",0,0,0
+590103,"Krills","Chile","X2014",0,0,0
+590103,"Krills","Chile","X2015",0,0,0
+590103,"Krills","Chile","X2016",0,0,0
+600004,"Anchoveta","Chile","X2010",0,0,170494
+600004,"Anchoveta","Chile","X2011",0,0,276499
+600004,"Anchoveta","Chile","X2012",0,0,210830
+600004,"Anchoveta","Chile","X2013",0,0,191905
+600004,"Anchoveta","Chile","X2014",0,0,198614
+600004,"Anchoveta","Chile","X2015",0,0,117887
+600004,"Anchoveta","Chile","X2016",0,0,70490
+600004,"Anchoveta","Peru","X2010",0,0,174088
+600004,"Anchoveta","Peru","X2011",0,0,335744
+600004,"Anchoveta","Peru","X2012",0,0,1089155
+600004,"Anchoveta","Peru","X2013",0,0,1361265
+600004,"Anchoveta","Peru","X2014",0,0,629176
+600004,"Anchoveta","Peru","X2015",0,0,965578
+600004,"Anchoveta","Peru","X2016",0,0,756054
+600031,"Blue whiting ","Chile","X2010",0,0,711
+600031,"Blue whiting ","Chile","X2011",0,0,743
+600031,"Blue whiting ","Chile","X2012",0,0,802
+600031,"Blue whiting ","Chile","X2013",0,0,273
+600031,"Blue whiting ","Chile","X2014",0,0,87
+600031,"Blue whiting ","Chile","X2015",0,0,31
+600031,"Blue whiting ","Chile","X2016",0,0,63
+600033,"Ling ","Chile","X2010",0,0,0
+600033,"Ling ","Chile","X2011",0,0,0
+600033,"Ling ","Chile","X2012",0,0,0
+600033,"Ling ","Chile","X2013",0,0,0
+600033,"Ling ","Chile","X2014",0,0,0
+600033,"Ling ","Chile","X2015",0,0,0
+600033,"Ling ","Chile","X2016",0,0,0
+600069,"Atlantic cod","Brazil","X2010",0,10,0
+600069,"Atlantic cod","Brazil","X2011",0,33,0
+600069,"Atlantic cod","Brazil","X2012",0,0,0
+600069,"Atlantic cod","Brazil","X2013",0,0,0
+600069,"Atlantic cod","Brazil","X2014",0,0,0
+600069,"Atlantic cod","Brazil","X2015",0,0,0
+600069,"Atlantic cod","Brazil","X2016",0,0,0
+600107,"Skipjack tuna","Brazil","X2010",0,0,3750
+600107,"Skipjack tuna","Brazil","X2011",0,0,8650
+600107,"Skipjack tuna","Brazil","X2012",0,129,14100
+600107,"Skipjack tuna","Brazil","X2013",0,2466,8350
+600107,"Skipjack tuna","Brazil","X2014",0,5149,5550
+600107,"Skipjack tuna","Brazil","X2015",0,5834,7000
+600107,"Skipjack tuna","Brazil","X2016",0,5073,6460
+600107,"Skipjack tuna","Chile","X2010",0,0,0
+600107,"Skipjack tuna","Chile","X2011",0,0,0
+600107,"Skipjack tuna","Chile","X2012",0,0,0
+600107,"Skipjack tuna","Chile","X2013",0,0,0
+600107,"Skipjack tuna","Chile","X2014",0,2,0
+600107,"Skipjack tuna","Chile","X2015",23,0,0
+600107,"Skipjack tuna","Chile","X2016",0,0,0
+600107,"Skipjack tuna","Peru","X2010",103,7460,567
+600107,"Skipjack tuna","Peru","X2011",51,3085,2063
+600107,"Skipjack tuna","Peru","X2012",22,6443,2284
+600107,"Skipjack tuna","Peru","X2013",26,10592,2670
+600107,"Skipjack tuna","Peru","X2014",82,10069,3107
+600107,"Skipjack tuna","Peru","X2015",53,9231,1903
+600107,"Skipjack tuna","Peru","X2016",5995,14230,1235
+600117,"Chub mackerel","Brazil","X2010",0,0,0
+600117,"Chub mackerel","Brazil","X2011",0,0,0
+600117,"Chub mackerel","Brazil","X2012",0,0,0
+600117,"Chub mackerel","Brazil","X2013",0,0,0
+600117,"Chub mackerel","Brazil","X2014",0,0,0
+600117,"Chub mackerel","Brazil","X2015",0,0,0
+600117,"Chub mackerel","Brazil","X2016",0,0,0
+600117,"Chub mackerel","Chile","X2010",714,25,1205
+600117,"Chub mackerel","Chile","X2011",36,40,315
+600117,"Chub mackerel","Chile","X2012",74,2,2984
+600117,"Chub mackerel","Chile","X2013",35,115,3021
+600117,"Chub mackerel","Chile","X2014",98,54,1046
+600117,"Chub mackerel","Chile","X2015",266,15,597
+600117,"Chub mackerel","Chile","X2016",253,57,2583
+600117,"Chub mackerel","Peru","X2010",0,0,5851
+600117,"Chub mackerel","Peru","X2011",0,0,24302
+600117,"Chub mackerel","Peru","X2012",0,0,6463
+600117,"Chub mackerel","Peru","X2013",0,0,23009
+600117,"Chub mackerel","Peru","X2014",0,0,36558
+600117,"Chub mackerel","Peru","X2015",0,0,11728
+600117,"Chub mackerel","Peru","X2016",0,0,83495
+600142,"Albacore","Brazil","X2010",0,0,100
+600142,"Albacore","Brazil","X2011",781,0,785
+600142,"Albacore","Brazil","X2012",1152,0,1155
+600142,"Albacore","Brazil","X2013",870,0,870
+600142,"Albacore","Brazil","X2014",65,0,70
+600142,"Albacore","Brazil","X2015",78,0,80
+600142,"Albacore","Brazil","X2016",30,0,30
+600142,"Albacore","Chile","X2010",6,2,0
+600142,"Albacore","Chile","X2011",1,4,0
+600142,"Albacore","Chile","X2012",0,0,1
+600142,"Albacore","Chile","X2013",30,1,0
+600142,"Albacore","Chile","X2014",67,0,0
+600142,"Albacore","Chile","X2015",30,0,0
+600142,"Albacore","Chile","X2016",431,0,0
+600142,"Albacore","Peru","X2010",0,1002,0
+600142,"Albacore","Peru","X2011",0,26,0
+600142,"Albacore","Peru","X2012",27,270,0
+600142,"Albacore","Peru","X2013",0,114,0
+600142,"Albacore","Peru","X2014",0,221,0
+600142,"Albacore","Peru","X2015",0,4,0
+600142,"Albacore","Peru","X2016",23,9,0
+600143,"Yellowfin tuna","Brazil","X2010",223,0,155
+600143,"Yellowfin tuna","Brazil","X2011",784,3,755
+600143,"Yellowfin tuna","Brazil","X2012",575,0,515
+600143,"Yellowfin tuna","Brazil","X2013",314,0,225
+600143,"Yellowfin tuna","Brazil","X2014",142,0,50
+600143,"Yellowfin tuna","Brazil","X2015",427,20,225
+600143,"Yellowfin tuna","Brazil","X2016",781,16,490
+600143,"Yellowfin tuna","Chile","X2010",0,68,0
+600143,"Yellowfin tuna","Chile","X2011",23,41,0
+600143,"Yellowfin tuna","Chile","X2012",3,30,25
+600143,"Yellowfin tuna","Chile","X2013",6,26,0
+600143,"Yellowfin tuna","Chile","X2014",0,20,0
+600143,"Yellowfin tuna","Chile","X2015",0,51,0
+600143,"Yellowfin tuna","Chile","X2016",0,94,1
+600143,"Yellowfin tuna","Peru","X2010",0,3438,0
+600143,"Yellowfin tuna","Peru","X2011",23,3636,0
+600143,"Yellowfin tuna","Peru","X2012",84,1619,0
+600143,"Yellowfin tuna","Peru","X2013",407,1173,0
+600143,"Yellowfin tuna","Peru","X2014",291,2495,0
+600143,"Yellowfin tuna","Peru","X2015",307,2167,0
+600143,"Yellowfin tuna","Peru","X2016",3303,4817,0
+600145,"Southern bluefin tuna","Brazil","X2010",0,0,0
+600145,"Southern bluefin tuna","Brazil","X2011",50,0,0
+600145,"Southern bluefin tuna","Brazil","X2012",0,0,0
+600145,"Southern bluefin tuna","Brazil","X2013",0,0,0
+600145,"Southern bluefin tuna","Brazil","X2014",0,0,0
+600145,"Southern bluefin tuna","Brazil","X2015",0,0,0
+600145,"Southern bluefin tuna","Brazil","X2016",0,0,0
+600145,"Southern bluefin tuna","Chile","X2010",0,0,0
+600145,"Southern bluefin tuna","Chile","X2011",0,0,0
+600145,"Southern bluefin tuna","Chile","X2012",0,0,0
+600145,"Southern bluefin tuna","Chile","X2013",0,0,0
+600145,"Southern bluefin tuna","Chile","X2014",0,0,0
+600145,"Southern bluefin tuna","Chile","X2015",0,0,0
+600145,"Southern bluefin tuna","Chile","X2016",0,0,0
+600146,"Bigeye tuna","Brazil","X2010",129,0,0
+600146,"Bigeye tuna","Brazil","X2011",454,0,0
+600146,"Bigeye tuna","Brazil","X2012",428,0,0
+600146,"Bigeye tuna","Brazil","X2013",256,0,0
+600146,"Bigeye tuna","Brazil","X2014",297,0,0
+600146,"Bigeye tuna","Brazil","X2015",600,154,0
+600146,"Bigeye tuna","Brazil","X2016",698,24,0
+600146,"Bigeye tuna","Chile","X2010",0,0,1
+600146,"Bigeye tuna","Chile","X2011",0,0,0
+600146,"Bigeye tuna","Chile","X2012",0,1,6
+600146,"Bigeye tuna","Chile","X2013",0,0,0
+600146,"Bigeye tuna","Chile","X2014",0,0,0
+600146,"Bigeye tuna","Chile","X2015",0,0,0
+600146,"Bigeye tuna","Chile","X2016",0,0,0
+600146,"Bigeye tuna","Peru","X2010",0,223,0
+600146,"Bigeye tuna","Peru","X2011",0,244,0
+600146,"Bigeye tuna","Peru","X2012",0,546,0
+600146,"Bigeye tuna","Peru","X2013",185,483,0
+600146,"Bigeye tuna","Peru","X2014",0,651,0
+600146,"Bigeye tuna","Peru","X2015",0,494,0
+600146,"Bigeye tuna","Peru","X2016",1079,2069,0
+600226,"Swordfish","Brazil","X2010",1303,9,0
+600226,"Swordfish","Brazil","X2011",1461,0,0
+600226,"Swordfish","Brazil","X2012",1138,0,0
+600226,"Swordfish","Brazil","X2013",809,13,0
+600226,"Swordfish","Brazil","X2014",682,20,0
+600226,"Swordfish","Brazil","X2015",862,0,0
+600226,"Swordfish","Brazil","X2016",1214,0,0
+600226,"Swordfish","Chile","X2010",1760,0,879
+600226,"Swordfish","Chile","X2011",2284,2,1538
+600226,"Swordfish","Chile","X2012",2177,0,2016
+600226,"Swordfish","Chile","X2013",1024,53,899
+600226,"Swordfish","Chile","X2014",1228,0,1024
+600226,"Swordfish","Chile","X2015",1380,0,1152
+600226,"Swordfish","Chile","X2016",2166,2,2315
+600226,"Swordfish","Peru","X2010",22,41,44
+600226,"Swordfish","Peru","X2011",47,32,126
+600226,"Swordfish","Peru","X2012",168,40,188
+600226,"Swordfish","Peru","X2013",391,342,68
+600226,"Swordfish","Peru","X2014",85,20,74
+600226,"Swordfish","Peru","X2015",121,10,155
+600226,"Swordfish","Peru","X2016",19,26,274
+600226,"Swordfish ","Brazil","X2010",99,3,0
+600226,"Swordfish ","Brazil","X2011",104,0,0
+600226,"Swordfish ","Brazil","X2012",73,0,0
+600226,"Swordfish ","Brazil","X2013",0,8,0
+600226,"Swordfish ","Brazil","X2014",35,0,0
+600226,"Swordfish ","Brazil","X2015",83,0,0
+600226,"Swordfish ","Brazil","X2016",85,0,0
+600226,"Swordfish ","Chile","X2010",318,1,120
+600226,"Swordfish ","Chile","X2011",201,0,70
+600226,"Swordfish ","Chile","X2012",539,0,210
+600226,"Swordfish ","Chile","X2013",697,14,220
+600226,"Swordfish ","Chile","X2014",531,0,101
+600226,"Swordfish ","Chile","X2015",594,4,111
+600226,"Swordfish ","Chile","X2016",460,0,123
+600226,"Swordfish ","Peru","X2010",0,0,0
+600226,"Swordfish ","Peru","X2011",0,0,0
+600226,"Swordfish ","Peru","X2012",13,0,0
+600226,"Swordfish ","Peru","X2013",12,12,0
+600226,"Swordfish ","Peru","X2014",21,8,0
+600226,"Swordfish ","Peru","X2015",0,0,0
+600226,"Swordfish ","Peru","X2016",0,0,0
+600236,"Atlantic salmon","Brazil","X2010",0,4944,0
+600236,"Atlantic salmon","Brazil","X2011",0,2208,0
+600236,"Atlantic salmon","Brazil","X2012",0,54072,0
+600236,"Atlantic salmon","Brazil","X2013",0,63570,0
+600236,"Atlantic salmon","Brazil","X2014",0,75030,0
+600236,"Atlantic salmon","Brazil","X2015",0,80234,0
+600236,"Atlantic salmon","Brazil","X2016",0,70171,0
+600236,"Atlantic salmon","Chile","X2010",42686,308,24356
+600236,"Atlantic salmon","Chile","X2011",64141,0,68197
+600236,"Atlantic salmon","Chile","X2012",91335,0,83259
+600236,"Atlantic salmon","Chile","X2013",135895,0,120230
+600236,"Atlantic salmon","Chile","X2014",194346,0,169452
+600236,"Atlantic salmon","Chile","X2015",206358,0,136749
+600236,"Atlantic salmon","Chile","X2016",189310,0,107071
+600236,"Atlantic salmon","Peru","X2010",0,0,0
+600236,"Atlantic salmon","Peru","X2011",0,1,0
+600236,"Atlantic salmon","Peru","X2012",0,178,0
+600236,"Atlantic salmon","Peru","X2013",0,336,0
+600236,"Atlantic salmon","Peru","X2014",0,219,0
+600236,"Atlantic salmon","Peru","X2015",0,289,0
+600236,"Atlantic salmon","Peru","X2016",0,273,0
+600240,"Pink salmon","Chile","X2010",0,0,0
+600240,"Pink salmon","Chile","X2011",0,0,0
+600240,"Pink salmon","Chile","X2012",0,0,0
+600240,"Pink salmon","Chile","X2013",0,0,0
+600240,"Pink salmon","Chile","X2014",0,0,0
+600240,"Pink salmon","Chile","X2015",0,0,0
+600240,"Pink salmon","Chile","X2016",0,0,0
+600243,"Sockeye salmon","Brazil","X2010",0,1,0
+600243,"Sockeye salmon","Brazil","X2011",0,0,0
+600243,"Sockeye salmon","Brazil","X2012",0,4,0
+600243,"Sockeye salmon","Brazil","X2013",0,30,0
+600243,"Sockeye salmon","Brazil","X2014",0,69,0
+600243,"Sockeye salmon","Brazil","X2015",0,15,0
+600243,"Sockeye salmon","Brazil","X2016",0,21,0
+600243,"Sockeye salmon","Chile","X2010",58,0,0
+600243,"Sockeye salmon","Chile","X2011",121,0,0
+600243,"Sockeye salmon","Chile","X2012",68,0,0
+600243,"Sockeye salmon","Chile","X2013",75,0,0
+600243,"Sockeye salmon","Chile","X2014",35,0,0
+600243,"Sockeye salmon","Chile","X2015",21,0,0
+600243,"Sockeye salmon","Chile","X2016",3,0,0
+600243,"Sockeye salmon","Peru","X2010",0,0,0
+600243,"Sockeye salmon","Peru","X2011",0,0,0
+600243,"Sockeye salmon","Peru","X2012",0,0,0
+600243,"Sockeye salmon","Peru","X2013",9,0,0
+600243,"Sockeye salmon","Peru","X2014",0,0,0
+600243,"Sockeye salmon","Peru","X2015",0,0,0
+600243,"Sockeye salmon","Peru","X2016",17,0,0
+600244,"Chinook salmon","Chile","X2010",0,0,0
+600244,"Chinook salmon","Chile","X2011",0,0,0
+600244,"Chinook salmon","Chile","X2012",0,0,0
+600244,"Chinook salmon","Chile","X2013",0,0,0
+600244,"Chinook salmon","Chile","X2014",0,0,0
+600244,"Chinook salmon","Chile","X2015",0,0,0
+600244,"Chinook salmon","Chile","X2016",0,0,0
+600245,"Coho salmon","Chile","X2010",0,0,0
+600245,"Coho salmon","Chile","X2011",0,0,0
+600245,"Coho salmon","Chile","X2012",0,0,0
+600245,"Coho salmon","Chile","X2013",0,0,0
+600245,"Coho salmon","Chile","X2014",0,0,0
+600245,"Coho salmon","Chile","X2015",0,0,0
+600245,"Coho salmon","Chile","X2016",0,0,0
+600318,"Alaska pollock ","Brazil","X2010",0,0,0
+600318,"Alaska pollock ","Brazil","X2011",0,0,0
+600318,"Alaska pollock ","Brazil","X2012",0,53478,0
+600318,"Alaska pollock ","Brazil","X2013",1,64898,0
+600318,"Alaska pollock ","Brazil","X2014",0,37295,0
+600318,"Alaska pollock ","Brazil","X2015",0,34570,0
+600318,"Alaska pollock ","Brazil","X2016",12,20314,0
+600318,"Alaska pollock ","Chile","X2010",0,0,0
+600318,"Alaska pollock ","Chile","X2011",0,0,0
+600318,"Alaska pollock ","Chile","X2012",80,312,0
+600318,"Alaska pollock ","Chile","X2013",169,312,0
+600318,"Alaska pollock ","Chile","X2014",50,149,0
+600318,"Alaska pollock ","Chile","X2015",0,109,0
+600318,"Alaska pollock ","Chile","X2016",0,54,0
+600318,"Alaska pollock ","Peru","X2010",0,0,0
+600318,"Alaska pollock ","Peru","X2011",0,0,0
+600318,"Alaska pollock ","Peru","X2012",0,50,0
+600318,"Alaska pollock ","Peru","X2013",10,44,0
+600318,"Alaska pollock ","Peru","X2014",310,324,0
+600318,"Alaska pollock ","Peru","X2015",0,2,0
+600318,"Alaska pollock ","Peru","X2016",0,0,0
+600320,"Southern blue whiting","Chile","X2010",226,0,43
+600320,"Southern blue whiting","Chile","X2011",176,0,156
+600320,"Southern blue whiting","Chile","X2012",604,0,0
+600320,"Southern blue whiting","Chile","X2013",620,0,82
+600320,"Southern blue whiting","Chile","X2014",465,12,114
+600320,"Southern blue whiting","Chile","X2015",510,0,83
+600320,"Southern blue whiting","Chile","X2016",454,0,239
+600322,"Southern hake","Chile","X2010",15326,25,0
+600322,"Southern hake","Chile","X2011",13518,0,0
+600322,"Southern hake","Chile","X2012",10039,0,0
+600322,"Southern hake","Chile","X2013",8384,0,0
+600322,"Southern hake","Chile","X2014",6517,0,0
+600322,"Southern hake","Chile","X2015",7816,0,0
+600322,"Southern hake","Chile","X2016",8116,25,0
+600324,"South Pacific hake","Chile","X2010",1495,0,16043
+600324,"South Pacific hake","Chile","X2011",1305,1,16871
+600324,"South Pacific hake","Chile","X2012",1279,2,16305
+600324,"South Pacific hake","Chile","X2013",1056,0,13764
+600324,"South Pacific hake","Chile","X2014",205,21,7019
+600324,"South Pacific hake","Chile","X2015",174,5,10201
+600324,"South Pacific hake","Chile","X2016",136,0,7686
+600324,"South Pacific hake","Peru","X2010",0,0,4925
+600324,"South Pacific hake","Peru","X2011",0,0,4728
+600324,"South Pacific hake","Peru","X2012",0,0,4986
+600324,"South Pacific hake","Peru","X2013",0,0,11736
+600324,"South Pacific hake","Peru","X2014",0,0,8363
+600324,"South Pacific hake","Peru","X2015",0,0,6306
+600324,"South Pacific hake","Peru","X2016",0,0,7512
+600324,"South Pacific hake ","Chile","X2010",5208,45,5503
+600324,"South Pacific hake ","Chile","X2011",4927,0,4968
+600324,"South Pacific hake ","Chile","X2012",5113,50,4210
+600324,"South Pacific hake ","Chile","X2013",5103,127,4403
+600324,"South Pacific hake ","Chile","X2014",2675,213,2283
+600324,"South Pacific hake ","Chile","X2015",2281,150,1840
+600324,"South Pacific hake ","Chile","X2016",3576,116,3120
+600325,"Argentine hake","Chile","X2010",0,0,0
+600325,"Argentine hake","Chile","X2011",0,0,0
+600325,"Argentine hake","Chile","X2012",0,0,0
+600325,"Argentine hake","Chile","X2013",0,0,0
+600325,"Argentine hake","Chile","X2014",0,0,0
+600325,"Argentine hake","Chile","X2015",0,0,0
+600325,"Argentine hake","Chile","X2016",0,0,53
+600334,"Orange roughy","Chile","X2010",0,0,0
+600334,"Orange roughy","Chile","X2011",0,0,0
+600334,"Orange roughy","Chile","X2012",0,0,0
+600334,"Orange roughy","Chile","X2013",0,0,0
+600334,"Orange roughy","Chile","X2014",0,0,0
+600334,"Orange roughy","Chile","X2015",0,0,0
+600334,"Orange roughy","Chile","X2016",0,0,0
+600489,"Snoek","Chile","X2010",0,0,103
+600489,"Snoek","Chile","X2011",0,0,41
+600489,"Snoek","Chile","X2012",0,0,1047
+600489,"Snoek","Chile","X2013",0,0,659
+600489,"Snoek","Chile","X2014",0,0,380
+600489,"Snoek","Chile","X2015",0,0,474
+600489,"Snoek","Chile","X2016",0,0,701
+600525,"Common sole","Brazil","X2010",0,83,0
+600525,"Common sole","Brazil","X2011",0,7,0
+600525,"Common sole","Brazil","X2012",0,4,0
+600525,"Common sole","Brazil","X2013",0,0,0
+600525,"Common sole","Brazil","X2014",0,0,0
+600525,"Common sole","Brazil","X2015",0,0,0
+600525,"Common sole","Brazil","X2016",0,0,0
+600525,"Common sole","Chile","X2010",0,0,0
+600525,"Common sole","Chile","X2011",0,0,0
+600525,"Common sole","Chile","X2012",0,0,0
+600525,"Common sole","Chile","X2013",0,0,0
+600525,"Common sole","Chile","X2014",0,0,0
+600525,"Common sole","Chile","X2015",0,0,0
+600525,"Common sole","Chile","X2016",0,0,0
+600525,"Common sole","Peru","X2010",0,0,0
+600525,"Common sole","Peru","X2011",3,0,0
+600525,"Common sole","Peru","X2012",0,3,0
+600525,"Common sole","Peru","X2013",0,1,0
+600525,"Common sole","Peru","X2014",0,4,0
+600525,"Common sole","Peru","X2015",0,158,0
+600525,"Common sole","Peru","X2016",0,23,0
+600716,"Angler","Brazil","X2010",1332,0,0
+600716,"Angler","Brazil","X2011",2040,0,0
+600716,"Angler","Brazil","X2012",966,0,0
+600716,"Angler","Brazil","X2013",660,0,0
+600716,"Angler","Brazil","X2014",686,0,0
+600716,"Angler","Brazil","X2015",563,0,0
+600716,"Angler","Brazil","X2016",1057,0,0
+600790,"Red mullet","Brazil","X2010",28,210,0
+600790,"Red mullet","Brazil","X2011",28,132,0
+600790,"Red mullet","Brazil","X2012",50,221,0
+600790,"Red mullet","Brazil","X2013",0,190,0
+600790,"Red mullet","Brazil","X2014",1,443,0
+600790,"Red mullet","Brazil","X2015",3,97,0
+600790,"Red mullet","Brazil","X2016",29,69,0
+600790,"Red mullet","Chile","X2010",0,0,0
+600790,"Red mullet","Chile","X2011",0,0,0
+600790,"Red mullet","Chile","X2012",0,0,0
+600790,"Red mullet","Chile","X2013",0,0,0
+600790,"Red mullet","Chile","X2014",0,0,0
+600790,"Red mullet","Chile","X2015",0,0,0
+600790,"Red mullet","Chile","X2016",0,0,0
+601342,"European plaice","Brazil","X2010",0,0,0
+601342,"European plaice","Brazil","X2011",0,0,0
+601342,"European plaice","Brazil","X2012",0,0,0
+601342,"European plaice","Brazil","X2013",0,0,0
+601342,"European plaice","Brazil","X2014",0,0,0
+601342,"European plaice","Brazil","X2015",0,0,0
+601342,"European plaice","Brazil","X2016",0,0,0
+601342,"European plaice","Chile","X2010",0,0,0
+601342,"European plaice","Chile","X2011",0,0,0
+601342,"European plaice","Chile","X2012",0,0,0
+601342,"European plaice","Chile","X2013",0,0,0
+601342,"European plaice","Chile","X2014",0,0,0
+601342,"European plaice","Chile","X2015",0,0,0
+601342,"European plaice","Chile","X2016",0,0,0
+601343,"Saithe","Brazil","X2010",0,176,0
+601343,"Saithe","Brazil","X2011",0,209,0
+601343,"Saithe","Brazil","X2012",0,2388,0
+601343,"Saithe","Brazil","X2013",0,2312,0
+601343,"Saithe","Brazil","X2014",0,2076,0
+601343,"Saithe","Brazil","X2015",0,1256,0
+601343,"Saithe","Brazil","X2016",0,2156,0
+601343,"Saithe","Chile","X2010",0,0,0
+601343,"Saithe","Chile","X2011",0,0,0
+601343,"Saithe","Chile","X2012",0,0,0
+601343,"Saithe","Chile","X2013",0,0,0
+601343,"Saithe","Chile","X2014",0,0,0
+601343,"Saithe","Chile","X2015",0,0,0
+601343,"Saithe","Chile","X2016",0,0,0
+601348,"Turbot ","Chile","X2010",243,0,0
+601348,"Turbot ","Chile","X2011",231,0,0
+601348,"Turbot ","Chile","X2012",196,0,0
+601348,"Turbot ","Chile","X2013",87,0,0
+601348,"Turbot ","Chile","X2014",0,0,0
+601348,"Turbot ","Chile","X2015",0,0,0
+601348,"Turbot ","Chile","X2016",0,0,0
+601351,"Bastard halibut","Chile","X2010",2,0,0
+601351,"Bastard halibut","Chile","X2011",0,0,0
+601351,"Bastard halibut","Chile","X2012",68,0,0
+601351,"Bastard halibut","Chile","X2013",0,0,0
+601351,"Bastard halibut","Chile","X2014",190,0,0
+601351,"Bastard halibut","Chile","X2015",102,0,0
+601351,"Bastard halibut","Chile","X2016",69,0,0
+601381,"Haddock","Brazil","X2010",0,0,0
+601381,"Haddock","Brazil","X2011",0,0,0
+601381,"Haddock","Brazil","X2012",0,35,0
+601381,"Haddock","Brazil","X2013",0,16,0
+601381,"Haddock","Brazil","X2014",0,1,0
+601381,"Haddock","Brazil","X2015",0,0,0
+601381,"Haddock","Brazil","X2016",0,2,0
+601381,"Haddock","Chile","X2010",0,0,0
+601381,"Haddock","Chile","X2011",0,0,0
+601381,"Haddock","Chile","X2012",0,0,0
+601381,"Haddock","Chile","X2013",0,0,0
+601381,"Haddock","Chile","X2014",0,0,0
+601381,"Haddock","Chile","X2015",0,0,0
+601381,"Haddock","Chile","X2016",0,0,0
+601381,"Haddock","Peru","X2010",0,0,0
+601381,"Haddock","Peru","X2011",0,0,0
+601381,"Haddock","Peru","X2012",0,0,0
+601381,"Haddock","Peru","X2013",0,0,0
+601381,"Haddock","Peru","X2014",0,0,0
+601381,"Haddock","Peru","X2015",0,1,0
+601381,"Haddock","Peru","X2016",0,0,0
+603542,"Cobia","Brazil","X2010",0,0,0
+603542,"Cobia","Brazil","X2011",0,0,0
+603542,"Cobia","Brazil","X2012",0,0,0
+603542,"Cobia","Brazil","X2013",0,0,0
+603542,"Cobia","Brazil","X2014",0,0,0
+603542,"Cobia","Brazil","X2015",0,0,0
+603542,"Cobia","Brazil","X2016",0,0,0
+603542,"Cobia","Chile","X2010",0,0,0
+603542,"Cobia","Chile","X2011",0,0,0
+603542,"Cobia","Chile","X2012",0,0,0
+603542,"Cobia","Chile","X2013",0,0,0
+603542,"Cobia","Chile","X2014",0,0,0
+603542,"Cobia","Chile","X2015",0,0,0
+603542,"Cobia","Chile","X2016",0,0,0
+603542,"Cobia","Peru","X2010",0,0,0
+603542,"Cobia","Peru","X2011",0,0,0
+603542,"Cobia","Peru","X2012",0,0,0
+603542,"Cobia","Peru","X2013",0,0,0
+603542,"Cobia","Peru","X2014",0,0,0
+603542,"Cobia","Peru","X2015",0,0,0
+603542,"Cobia","Peru","X2016",0,1,0
+690211,"King crab","Chile","X2010",2127,1,1901
+690211,"King crab","Chile","X2011",2363,12,3088
+690211,"King crab","Chile","X2012",3056,5,3608
+690211,"King crab","Chile","X2013",3261,5,3286
+690211,"King crab","Chile","X2014",4015,25,4063
+690211,"King crab","Chile","X2015",3992,28,3885
+690211,"King crab","Chile","X2016",3650,8,3781
+NA,"Agar agar","Brazil","X2010",3,70,0
+NA,"Agar agar","Brazil","X2011",6,69,0
+NA,"Agar agar","Brazil","X2012",0,53,0
+NA,"Agar agar","Brazil","X2013",5,52,0
+NA,"Agar agar","Brazil","X2014",3,68,0
+NA,"Agar agar","Brazil","X2015",4,57,0
+NA,"Agar agar","Brazil","X2016",6,104,0
+NA,"Agar agar","Chile","X2010",2170,44,0
+NA,"Agar agar","Chile","X2011",2056,126,0
+NA,"Agar agar","Chile","X2012",1925,125,0
+NA,"Agar agar","Chile","X2013",1771,264,0
+NA,"Agar agar","Chile","X2014",1780,311,0
+NA,"Agar agar","Chile","X2015",1825,255,0
+NA,"Agar agar","Chile","X2016",1562,177,0
+NA,"Agar agar","Peru","X2010",0,2,0
+NA,"Agar agar","Peru","X2011",0,2,0
+NA,"Agar agar","Peru","X2012",0,4,0
+NA,"Agar agar","Peru","X2013",0,5,0
+NA,"Agar agar","Peru","X2014",0,6,0
+NA,"Agar agar","Peru","X2015",0,2,0
+NA,"Agar agar","Peru","X2016",0,5,0
+NA,"Anchovies","Brazil","X2010",0,0,0
+NA,"Anchovies","Brazil","X2011",0,0,0
+NA,"Anchovies","Brazil","X2012",0,0,0
+NA,"Anchovies","Brazil","X2013",0,0,0
+NA,"Anchovies","Brazil","X2014",0,0,0
+NA,"Anchovies","Brazil","X2015",0,0,0
+NA,"Anchovies","Brazil","X2016",0,0,0
+NA,"Anchovies","Chile","X2010",0,0,0
+NA,"Anchovies","Chile","X2011",0,0,0
+NA,"Anchovies","Chile","X2012",0,0,0
+NA,"Anchovies","Chile","X2013",0,0,0
+NA,"Anchovies","Chile","X2014",0,0,0
+NA,"Anchovies","Chile","X2015",0,0,0
+NA,"Anchovies","Chile","X2016",0,0,0
+NA,"Aquatic animals oils and fats,","Chile","X2010",0,0,0
+NA,"Aquatic animals oils and fats,","Chile","X2011",0,0,0
+NA,"Aquatic animals oils and fats,","Chile","X2012",0,0,0
+NA,"Aquatic animals oils and fats,","Chile","X2013",0,0,0
+NA,"Aquatic animals oils and fats,","Chile","X2014",0,0,0
+NA,"Aquatic animals oils and fats,","Chile","X2015",0,0,0
+NA,"Aquatic animals oils and fats,","Chile","X2016",0,0,0
+NA,"Bluefin tuna","Brazil","X2010",0,0,0
+NA,"Bluefin tuna","Brazil","X2011",0,0,0
+NA,"Bluefin tuna","Brazil","X2012",0,0,0
+NA,"Bluefin tuna","Brazil","X2013",0,0,0
+NA,"Bluefin tuna","Brazil","X2014",0,0,0
+NA,"Bluefin tuna","Brazil","X2015",0,0,0
+NA,"Bluefin tuna","Brazil","X2016",0,2,0
+NA,"Bluefin tuna","Chile","X2010",0,0,0
+NA,"Bluefin tuna","Chile","X2011",0,0,0
+NA,"Bluefin tuna","Chile","X2012",0,1,0
+NA,"Bluefin tuna","Chile","X2013",0,0,0
+NA,"Bluefin tuna","Chile","X2014",0,0,0
+NA,"Bluefin tuna","Chile","X2015",0,0,0
+NA,"Bluefin tuna","Chile","X2016",0,0,0
+NA,"Bluefin tuna","Peru","X2010",0,46,0
+NA,"Bluefin tuna","Peru","X2011",1,7,0
+NA,"Bluefin tuna","Peru","X2012",0,8,0
+NA,"Bluefin tuna","Peru","X2013",0,191,0
+NA,"Bluefin tuna","Peru","X2014",0,49,0
+NA,"Bluefin tuna","Peru","X2015",0,1,0
+NA,"Bluefin tuna","Peru","X2016",0,19,0
+NA,"Caviar","Brazil","X2010",0,0,0
+NA,"Caviar","Brazil","X2011",0,0,0
+NA,"Caviar","Brazil","X2012",0,2,0
+NA,"Caviar","Brazil","X2013",0,2,0
+NA,"Caviar","Brazil","X2014",0,1,0
+NA,"Caviar","Brazil","X2015",0,1,0
+NA,"Caviar","Brazil","X2016",0,0,0
+NA,"Caviar","Chile","X2010",0,0,0
+NA,"Caviar","Chile","X2011",0,0,0
+NA,"Caviar","Chile","X2012",5,0,0
+NA,"Caviar","Chile","X2013",6,1,0
+NA,"Caviar","Chile","X2014",3,0,0
+NA,"Caviar","Chile","X2015",0,0,0
+NA,"Caviar","Chile","X2016",0,0,0
+NA,"Caviar","Peru","X2010",0,0,0
+NA,"Caviar","Peru","X2011",0,0,0
+NA,"Caviar","Peru","X2012",0,0,0
+NA,"Caviar","Peru","X2013",0,0,0
+NA,"Caviar","Peru","X2014",0,0,0
+NA,"Caviar","Peru","X2015",0,0,0
+NA,"Caviar","Peru","X2016",0,0,0
+NA,"Caviar and caviar substitutes","Brazil","X2010",0,7,0
+NA,"Caviar and caviar substitutes","Brazil","X2011",0,5,0
+NA,"Caviar and caviar substitutes","Brazil","X2012",0,0,0
+NA,"Caviar and caviar substitutes","Brazil","X2013",0,0,0
+NA,"Caviar and caviar substitutes","Brazil","X2014",0,0,0
+NA,"Caviar and caviar substitutes","Brazil","X2015",0,0,0
+NA,"Caviar and caviar substitutes","Brazil","X2016",0,0,0
+NA,"Caviar and caviar substitutes","Chile","X2010",8,1,0
+NA,"Caviar and caviar substitutes","Chile","X2011",8,3,0
+NA,"Caviar and caviar substitutes","Chile","X2012",0,0,0
+NA,"Caviar and caviar substitutes","Chile","X2013",0,0,0
+NA,"Caviar and caviar substitutes","Chile","X2014",0,0,0
+NA,"Caviar and caviar substitutes","Chile","X2015",0,0,0
+NA,"Caviar and caviar substitutes","Chile","X2016",0,0,0
+NA,"Caviar and caviar substitutes","Peru","X2010",194,1,0
+NA,"Caviar and caviar substitutes","Peru","X2011",0,0,0
+NA,"Caviar and caviar substitutes","Peru","X2012",0,0,0
+NA,"Caviar and caviar substitutes","Peru","X2013",0,0,0
+NA,"Caviar and caviar substitutes","Peru","X2014",0,0,0
+NA,"Caviar and caviar substitutes","Peru","X2015",0,0,0
+NA,"Caviar and caviar substitutes","Peru","X2016",0,0,0
+NA,"Caviar substitutes","Brazil","X2010",0,0,0
+NA,"Caviar substitutes","Brazil","X2011",0,0,0
+NA,"Caviar substitutes","Brazil","X2012",0,0,0
+NA,"Caviar substitutes","Brazil","X2013",0,7,0
+NA,"Caviar substitutes","Brazil","X2014",0,14,0
+NA,"Caviar substitutes","Brazil","X2015",0,12,0
+NA,"Caviar substitutes","Brazil","X2016",0,3,0
+NA,"Caviar substitutes","Chile","X2010",0,0,0
+NA,"Caviar substitutes","Chile","X2011",0,0,0
+NA,"Caviar substitutes","Chile","X2012",0,0,0
+NA,"Caviar substitutes","Chile","X2013",0,0,0
+NA,"Caviar substitutes","Chile","X2014",2,2,0
+NA,"Caviar substitutes","Chile","X2015",4,0,0
+NA,"Caviar substitutes","Chile","X2016",4,12,0
+NA,"Caviar substitutes","Peru","X2010",0,0,0
+NA,"Caviar substitutes","Peru","X2011",0,0,0
+NA,"Caviar substitutes","Peru","X2012",0,0,0
+NA,"Caviar substitutes","Peru","X2013",0,0,0
+NA,"Caviar substitutes","Peru","X2014",0,0,0
+NA,"Caviar substitutes","Peru","X2015",61,0,0
+NA,"Caviar substitutes","Peru","X2016",82,0,0
+NA,"Clams, cockles, arkshells","Brazil","X2010",0,0,0
+NA,"Clams, cockles, arkshells","Brazil","X2011",0,0,0
+NA,"Clams, cockles, arkshells","Brazil","X2012",0,0,0
+NA,"Clams, cockles, arkshells","Brazil","X2013",0,0,0
+NA,"Clams, cockles, arkshells","Brazil","X2014",0,0,0
+NA,"Clams, cockles, arkshells","Brazil","X2015",0,1,0
+NA,"Clams, cockles, arkshells","Brazil","X2016",0,2,0
+NA,"Clams, cockles, arkshells","Chile","X2010",0,0,0
+NA,"Clams, cockles, arkshells","Chile","X2011",0,0,0
+NA,"Clams, cockles, arkshells","Chile","X2012",2,0,0
+NA,"Clams, cockles, arkshells","Chile","X2013",0,0,0
+NA,"Clams, cockles, arkshells","Chile","X2014",0,0,0
+NA,"Clams, cockles, arkshells","Chile","X2015",0,0,0
+NA,"Clams, cockles, arkshells","Chile","X2016",2,0,0
+NA,"Clams, cockles, arkshells","Peru","X2010",0,0,0
+NA,"Clams, cockles, arkshells","Peru","X2011",0,0,0
+NA,"Clams, cockles, arkshells","Peru","X2012",0,0,0
+NA,"Clams, cockles, arkshells","Peru","X2013",2,1,0
+NA,"Clams, cockles, arkshells","Peru","X2014",0,0,0
+NA,"Clams, cockles, arkshells","Peru","X2015",0,0,0
+NA,"Clams, cockles, arkshells","Peru","X2016",0,0,0
+NA,"Cods","Brazil","X2010",0,143,0
+NA,"Cods","Brazil","X2011",0,63,0
+NA,"Cods","Brazil","X2012",2,1553,0
+NA,"Cods","Brazil","X2013",0,1872,0
+NA,"Cods","Brazil","X2014",0,1479,0
+NA,"Cods","Brazil","X2015",4,818,0
+NA,"Cods","Brazil","X2016",3,1151,0
+NA,"Cods","Chile","X2010",0,0,0
+NA,"Cods","Chile","X2011",0,0,0
+NA,"Cods","Chile","X2012",0,1,0
+NA,"Cods","Chile","X2013",0,0,2898
+NA,"Cods","Chile","X2014",2,1,4050
+NA,"Cods","Chile","X2015",0,2,0
+NA,"Cods","Chile","X2016",2,3,0
+NA,"Cods","Peru","X2010",0,0,0
+NA,"Cods","Peru","X2011",13,0,0
+NA,"Cods","Peru","X2012",605,0,0
+NA,"Cods","Peru","X2013",258,3,0
+NA,"Cods","Peru","X2014",236,0,0
+NA,"Cods","Peru","X2015",412,3,0
+NA,"Cods","Peru","X2016",96,27,0
+NA,"Corals","Chile","X2010",41,6,0
+NA,"Corals","Chile","X2011",42,33,0
+NA,"Corals","Chile","X2012",14,34,0
+NA,"Corals","Chile","X2013",30,25,0
+NA,"Corals","Chile","X2014",19,14,0
+NA,"Corals","Chile","X2015",31,25,0
+NA,"Corals","Chile","X2016",42,15,0
+NA,"Crustaceans and molluscs","Brazil","X2010",0,0,0
+NA,"Crustaceans and molluscs","Brazil","X2011",0,0,0
+NA,"Crustaceans and molluscs","Brazil","X2012",0,0,0
+NA,"Crustaceans and molluscs","Brazil","X2013",0,0,0
+NA,"Crustaceans and molluscs","Brazil","X2014",0,0,0
+NA,"Crustaceans and molluscs","Brazil","X2015",0,0,0
+NA,"Crustaceans and molluscs","Brazil","X2016",0,0,0
+NA,"Crustaceans and molluscs","Chile","X2010",0,0,0
+NA,"Crustaceans and molluscs","Chile","X2011",0,0,0
+NA,"Crustaceans and molluscs","Chile","X2012",0,0,0
+NA,"Crustaceans and molluscs","Chile","X2013",0,0,0
+NA,"Crustaceans and molluscs","Chile","X2014",0,0,0
+NA,"Crustaceans and molluscs","Chile","X2015",0,0,0
+NA,"Crustaceans and molluscs","Chile","X2016",0,0,0
+NA,"Crustaceans and molluscs","Peru","X2010",0,0,6589
+NA,"Crustaceans and molluscs","Peru","X2011",0,0,21004
+NA,"Crustaceans and molluscs","Peru","X2012",0,0,9026
+NA,"Crustaceans and molluscs","Peru","X2013",0,0,2108
+NA,"Crustaceans and molluscs","Peru","X2014",0,0,2336
+NA,"Crustaceans and molluscs","Peru","X2015",0,0,8680
+NA,"Crustaceans and molluscs","Peru","X2016",0,0,4371
+NA,"Cuttlefishes, bobtail squids","Brazil","X2010",0,0,0
+NA,"Cuttlefishes, bobtail squids","Brazil","X2011",0,0,0
+NA,"Cuttlefishes, bobtail squids","Brazil","X2012",0,67,0
+NA,"Cuttlefishes, bobtail squids","Brazil","X2013",0,77,0
+NA,"Cuttlefishes, bobtail squids","Brazil","X2014",0,122,0
+NA,"Cuttlefishes, bobtail squids","Brazil","X2015",0,30,0
+NA,"Cuttlefishes, bobtail squids","Brazil","X2016",0,69,0
+NA,"Cuttlefishes, bobtail squids","Chile","X2010",0,0,0
+NA,"Cuttlefishes, bobtail squids","Chile","X2011",0,0,0
+NA,"Cuttlefishes, bobtail squids","Chile","X2012",9,11,0
+NA,"Cuttlefishes, bobtail squids","Chile","X2013",0,5,0
+NA,"Cuttlefishes, bobtail squids","Chile","X2014",0,31,0
+NA,"Cuttlefishes, bobtail squids","Chile","X2015",0,35,0
+NA,"Cuttlefishes, bobtail squids","Chile","X2016",0,24,0
+NA,"Cuttlefishes, bobtail squids","Peru","X2010",0,0,0
+NA,"Cuttlefishes, bobtail squids","Peru","X2011",160,0,0
+NA,"Cuttlefishes, bobtail squids","Peru","X2012",89921,26,0
+NA,"Cuttlefishes, bobtail squids","Peru","X2013",70382,0,0
+NA,"Cuttlefishes, bobtail squids","Peru","X2014",105328,0,0
+NA,"Cuttlefishes, bobtail squids","Peru","X2015",96321,18,0
+NA,"Cuttlefishes, bobtail squids","Peru","X2016",41166,184,0
+NA,"Diadromous fishes","Brazil","X2010",0,0,0
+NA,"Diadromous fishes","Brazil","X2011",0,0,0
+NA,"Diadromous fishes","Brazil","X2012",0,0,0
+NA,"Diadromous fishes","Brazil","X2013",0,0,0
+NA,"Diadromous fishes","Brazil","X2014",0,0,0
+NA,"Diadromous fishes","Brazil","X2015",0,0,0
+NA,"Diadromous fishes","Brazil","X2016",0,0,0
+NA,"Diadromous fishes","Chile","X2010",0,0,0
+NA,"Diadromous fishes","Chile","X2011",0,0,0
+NA,"Diadromous fishes","Chile","X2012",0,0,0
+NA,"Diadromous fishes","Chile","X2013",0,0,0
+NA,"Diadromous fishes","Chile","X2014",0,0,0
+NA,"Diadromous fishes","Chile","X2015",0,0,0
+NA,"Diadromous fishes","Chile","X2016",0,0,0
+NA,"Flatfishes","Brazil","X2010",2,4,0
+NA,"Flatfishes","Brazil","X2011",26,0,0
+NA,"Flatfishes","Brazil","X2012",437,2,0
+NA,"Flatfishes","Brazil","X2013",264,50,0
+NA,"Flatfishes","Brazil","X2014",447,0,0
+NA,"Flatfishes","Brazil","X2015",337,0,0
+NA,"Flatfishes","Brazil","X2016",73,0,0
+NA,"Flatfishes","Chile","X2010",0,14,5
+NA,"Flatfishes","Chile","X2011",0,19,3
+NA,"Flatfishes","Chile","X2012",9,0,10
+NA,"Flatfishes","Chile","X2013",0,0,10
+NA,"Flatfishes","Chile","X2014",0,0,0
+NA,"Flatfishes","Chile","X2015",0,0,0
+NA,"Flatfishes","Chile","X2016",0,0,0
+NA,"Flatfishes","Peru","X2010",44,226,0
+NA,"Flatfishes","Peru","X2011",82,2,0
+NA,"Flatfishes","Peru","X2012",157,1,0
+NA,"Flatfishes","Peru","X2013",77,1,0
+NA,"Flatfishes","Peru","X2014",100,0,0
+NA,"Flatfishes","Peru","X2015",13,0,0
+NA,"Flatfishes","Peru","X2016",240,33,0
+NA,"Freshwater fish ","Brazil","X2010",0,0,0
+NA,"Freshwater fish ","Brazil","X2011",0,0,0
+NA,"Freshwater fish ","Brazil","X2012",0,0,0
+NA,"Freshwater fish ","Brazil","X2013",0,0,0
+NA,"Freshwater fish ","Brazil","X2014",0,0,0
+NA,"Freshwater fish ","Brazil","X2015",0,0,0
+NA,"Freshwater fish ","Brazil","X2016",0,0,0
+NA,"Freshwater fish ","Peru","X2010",5,0,0
+NA,"Freshwater fish ","Peru","X2011",11,0,0
+NA,"Freshwater fish ","Peru","X2012",21,0,0
+NA,"Freshwater fish ","Peru","X2013",20,0,0
+NA,"Freshwater fish ","Peru","X2014",15,0,0
+NA,"Freshwater fish ","Peru","X2015",25,0,0
+NA,"Freshwater fish ","Peru","X2016",49,0,0
+NA,"Hakes","Brazil","X2010",0,2171,0
+NA,"Hakes","Brazil","X2011",0,2086,0
+NA,"Hakes","Brazil","X2012",0,1257,0
+NA,"Hakes","Brazil","X2013",0,1917,0
+NA,"Hakes","Brazil","X2014",0,2103,0
+NA,"Hakes","Brazil","X2015",0,1657,0
+NA,"Hakes","Brazil","X2016",1,944,0
+NA,"Hakes","Chile","X2010",0,0,0
+NA,"Hakes","Chile","X2011",0,0,0
+NA,"Hakes","Chile","X2012",4210,0,0
+NA,"Hakes","Chile","X2013",2334,0,0
+NA,"Hakes","Chile","X2014",1559,0,0
+NA,"Hakes","Chile","X2015",891,22,0
+NA,"Hakes","Chile","X2016",422,2,0
+NA,"Hakes","Peru","X2010",414,82,39
+NA,"Hakes","Peru","X2011",2434,139,44
+NA,"Hakes","Peru","X2012",3785,276,47
+NA,"Hakes","Peru","X2013",7642,109,44
+NA,"Hakes","Peru","X2014",7262,28,115
+NA,"Hakes","Peru","X2015",4964,41,48
+NA,"Hakes","Peru","X2016",3028,0,53
+NA,"Herrings, shads, anchovies","Chile","X2010",90,0,0
+NA,"Herrings, shads, anchovies","Chile","X2011",80,0,0
+NA,"Herrings, shads, anchovies","Chile","X2012",42,17,0
+NA,"Herrings, shads, anchovies","Chile","X2013",91,6,0
+NA,"Herrings, shads, anchovies","Chile","X2014",58,5,0
+NA,"Herrings, shads, anchovies","Chile","X2015",23,0,0
+NA,"Herrings, shads, anchovies","Chile","X2016",16,18,0
+NA,"Mackerels, tunas, bonitos","Chile","X2010",0,0,0
+NA,"Mackerels, tunas, bonitos","Chile","X2011",0,0,0
+NA,"Mackerels, tunas, bonitos","Chile","X2012",0,0,0
+NA,"Mackerels, tunas, bonitos","Chile","X2013",0,0,0
+NA,"Mackerels, tunas, bonitos","Chile","X2014",0,0,0
+NA,"Mackerels, tunas, bonitos","Chile","X2015",0,0,0
+NA,"Mackerels, tunas, bonitos","Chile","X2016",0,0,0
+NA,"Mackerels, tunas, bonitos","Peru","X2010",0,0,192
+NA,"Mackerels, tunas, bonitos","Peru","X2011",0,0,209
+NA,"Mackerels, tunas, bonitos","Peru","X2012",0,0,221
+NA,"Mackerels, tunas, bonitos","Peru","X2013",0,0,212
+NA,"Mackerels, tunas, bonitos","Peru","X2014",0,0,556
+NA,"Mackerels, tunas, bonitos","Peru","X2015",0,0,231
+NA,"Mackerels, tunas, bonitos","Peru","X2016",0,0,233
+NA,"Marine crabs, shrimps, lobsters","Brazil","X2010",3,0,0
+NA,"Marine crabs, shrimps, lobsters","Brazil","X2011",0,0,0
+NA,"Marine crabs, shrimps, lobsters","Brazil","X2012",0,0,0
+NA,"Marine crabs, shrimps, lobsters","Brazil","X2013",0,0,0
+NA,"Marine crabs, shrimps, lobsters","Brazil","X2014",0,0,0
+NA,"Marine crabs, shrimps, lobsters","Brazil","X2015",0,0,0
+NA,"Marine crabs, shrimps, lobsters","Brazil","X2016",0,0,0
+NA,"Marine crabs, shrimps, lobsters","Chile","X2010",103,10,1
+NA,"Marine crabs, shrimps, lobsters","Chile","X2011",112,0,1
+NA,"Marine crabs, shrimps, lobsters","Chile","X2012",81,0,0
+NA,"Marine crabs, shrimps, lobsters","Chile","X2013",32,0,2
+NA,"Marine crabs, shrimps, lobsters","Chile","X2014",23,0,0
+NA,"Marine crabs, shrimps, lobsters","Chile","X2015",11,0,0
+NA,"Marine crabs, shrimps, lobsters","Chile","X2016",0,0,0
+NA,"Marine fishes","Brazil","X2010",2463,30902,64044
+NA,"Marine fishes","Brazil","X2011",1214,29415,65340
+NA,"Marine fishes","Brazil","X2012",721,29037,64690
+NA,"Marine fishes","Brazil","X2013",846,24059,66550
+NA,"Marine fishes","Brazil","X2014",462,19251,67200
+NA,"Marine fishes","Brazil","X2015",3274,13639,67310
+NA,"Marine fishes","Brazil","X2016",8697,8058,76610
+NA,"Marine fishes","Chile","X2010",318790,50084,5213
+NA,"Marine fishes","Chile","X2011",334025,61029,4383
+NA,"Marine fishes","Chile","X2012",308199,64288,4100
+NA,"Marine fishes","Chile","X2013",238631,66405,2935
+NA,"Marine fishes","Chile","X2014",257899,75641,3368
+NA,"Marine fishes","Chile","X2015",194783,58729,3465
+NA,"Marine fishes","Chile","X2016",193621,26619,4360
+NA,"Marine fishes","Peru","X2010",1082790,20,793355
+NA,"Marine fishes","Peru","X2011",1292372,12,1644454
+NA,"Marine fishes","Peru","X2012",1333343,0,4735
+NA,"Marine fishes","Peru","X2013",855091,1787,9855
+NA,"Marine fishes","Peru","X2014",857688,2131,11443
+NA,"Marine fishes","Peru","X2015",692472,1243,16721
+NA,"Marine fishes","Peru","X2016",635060,4386,6727
+NA,"Marine invertebrates","Brazil","X2010",0,2079,22500
+NA,"Marine invertebrates","Brazil","X2011",0,1824,22600
+NA,"Marine invertebrates","Brazil","X2012",2,872,23800
+NA,"Marine invertebrates","Brazil","X2013",0,1204,22100
+NA,"Marine invertebrates","Brazil","X2014",0,1285,22400
+NA,"Marine invertebrates","Brazil","X2015",0,504,20400
+NA,"Marine invertebrates","Brazil","X2016",0,115,20250
+NA,"Marine invertebrates","Chile","X2010",0,0,0
+NA,"Marine invertebrates","Chile","X2011",0,0,0
+NA,"Marine invertebrates","Chile","X2012",0,0,0
+NA,"Marine invertebrates","Chile","X2013",0,0,0
+NA,"Marine invertebrates","Chile","X2014",0,0,0
+NA,"Marine invertebrates","Chile","X2015",0,0,0
+NA,"Marine invertebrates","Chile","X2016",0,0,0
+NA,"Marine invertebrates","Peru","X2010",0,0,418
+NA,"Marine invertebrates","Peru","X2011",0,0,439
+NA,"Marine invertebrates","Peru","X2012",0,0,462
+NA,"Marine invertebrates","Peru","X2013",0,0,447
+NA,"Marine invertebrates","Peru","X2014",0,0,403
+NA,"Marine invertebrates","Peru","X2015",0,0,491
+NA,"Marine invertebrates","Peru","X2016",0,0,394
+NA,"Marine molluscs","Brazil","X2010",0,231,0
+NA,"Marine molluscs","Brazil","X2011",0,458,0
+NA,"Marine molluscs","Brazil","X2012",0,1,0
+NA,"Marine molluscs","Brazil","X2013",0,1,0
+NA,"Marine molluscs","Brazil","X2014",0,1,0
+NA,"Marine molluscs","Brazil","X2015",0,0,0
+NA,"Marine molluscs","Brazil","X2016",0,0,0
+NA,"Marine molluscs","Chile","X2010",1336,21,0
+NA,"Marine molluscs","Chile","X2011",1504,35,0
+NA,"Marine molluscs","Chile","X2012",3,0,0
+NA,"Marine molluscs","Chile","X2013",0,0,0
+NA,"Marine molluscs","Chile","X2014",0,0,0
+NA,"Marine molluscs","Chile","X2015",0,0,0
+NA,"Marine molluscs","Chile","X2016",22,0,0
+NA,"Marine molluscs","Peru","X2010",9,54,0
+NA,"Marine molluscs","Peru","X2011",11,0,0
+NA,"Marine molluscs","Peru","X2012",0,0,0
+NA,"Marine molluscs","Peru","X2013",0,86,0
+NA,"Marine molluscs","Peru","X2014",0,0,0
+NA,"Marine molluscs","Peru","X2015",0,0,0
+NA,"Marine molluscs","Peru","X2016",30,0,0
+NA,"Natural sponges raw","Brazil","X2010",0,0,0
+NA,"Natural sponges raw","Brazil","X2011",0,0,0
+NA,"Natural sponges raw","Brazil","X2012",0,0,0
+NA,"Natural sponges raw","Brazil","X2013",0,0,0
+NA,"Natural sponges raw","Brazil","X2014",0,0,0
+NA,"Natural sponges raw","Brazil","X2015",0,0,0
+NA,"Natural sponges raw","Brazil","X2016",0,0,0
+NA,"Natural sponges raw","Chile","X2010",0,0,0
+NA,"Natural sponges raw","Chile","X2011",0,0,0
+NA,"Natural sponges raw","Chile","X2012",0,0,0
+NA,"Natural sponges raw","Chile","X2013",0,0,0
+NA,"Natural sponges raw","Chile","X2014",0,0,0
+NA,"Natural sponges raw","Chile","X2015",0,0,0
+NA,"Natural sponges raw","Chile","X2016",0,0,0
+NA,"Natural sponges raw","Peru","X2010",0,0,0
+NA,"Natural sponges raw","Peru","X2011",0,0,0
+NA,"Natural sponges raw","Peru","X2012",0,0,0
+NA,"Natural sponges raw","Peru","X2013",0,0,0
+NA,"Natural sponges raw","Peru","X2014",0,0,0
+NA,"Natural sponges raw","Peru","X2015",0,0,0
+NA,"Natural sponges raw","Peru","X2016",0,0,0
+NA,"Nile perch ","Chile","X2010",0,0,0
+NA,"Nile perch ","Chile","X2011",0,0,0
+NA,"Nile perch ","Chile","X2012",0,0,0
+NA,"Nile perch ","Chile","X2013",0,0,0
+NA,"Nile perch ","Chile","X2014",0,0,0
+NA,"Nile perch ","Chile","X2015",0,0,0
+NA,"Nile perch ","Chile","X2016",0,0,0
+NA,"Nile perch ","Peru","X2010",0,0,0
+NA,"Nile perch ","Peru","X2011",0,0,0
+NA,"Nile perch ","Peru","X2012",0,0,0
+NA,"Nile perch ","Peru","X2013",0,0,0
+NA,"Nile perch ","Peru","X2014",0,0,0
+NA,"Nile perch ","Peru","X2015",0,0,0
+NA,"Nile perch ","Peru","X2016",0,0,0
+NA,"Ornamental fish","Brazil","X2010",86,11,0
+NA,"Ornamental fish","Brazil","X2011",76,13,0
+NA,"Ornamental fish","Brazil","X2012",1,0,0
+NA,"Ornamental fish","Brazil","X2013",0,0,0
+NA,"Ornamental fish","Brazil","X2014",0,0,0
+NA,"Ornamental fish","Brazil","X2015",0,0,0
+NA,"Ornamental fish","Brazil","X2016",0,0,0
+NA,"Ornamental fish","Chile","X2010",0,7,0
+NA,"Ornamental fish","Chile","X2011",0,9,0
+NA,"Ornamental fish","Chile","X2012",0,0,0
+NA,"Ornamental fish","Chile","X2013",0,0,0
+NA,"Ornamental fish","Chile","X2014",0,0,0
+NA,"Ornamental fish","Chile","X2015",0,0,0
+NA,"Ornamental fish","Chile","X2016",0,0,0
+NA,"Ornamental fish","Peru","X2010",441,7,0
+NA,"Ornamental fish","Peru","X2011",387,6,0
+NA,"Ornamental fish","Peru","X2012",2,0,0
+NA,"Ornamental fish","Peru","X2013",0,0,0
+NA,"Ornamental fish","Peru","X2014",0,0,0
+NA,"Ornamental fish","Peru","X2015",0,0,0
+NA,"Ornamental fish","Peru","X2016",0,0,0
+NA,"Ornamental freshwater fish","Brazil","X2010",0,0,0
+NA,"Ornamental freshwater fish","Brazil","X2011",0,0,0
+NA,"Ornamental freshwater fish","Brazil","X2012",60,3,0
+NA,"Ornamental freshwater fish","Brazil","X2013",61,3,0
+NA,"Ornamental freshwater fish","Brazil","X2014",74,5,0
+NA,"Ornamental freshwater fish","Brazil","X2015",80,5,0
+NA,"Ornamental freshwater fish","Brazil","X2016",57,309,0
+NA,"Ornamental freshwater fish","Chile","X2010",0,0,0
+NA,"Ornamental freshwater fish","Chile","X2011",0,0,0
+NA,"Ornamental freshwater fish","Chile","X2012",0,13,0
+NA,"Ornamental freshwater fish","Chile","X2013",0,14,0
+NA,"Ornamental freshwater fish","Chile","X2014",0,18,0
+NA,"Ornamental freshwater fish","Chile","X2015",0,16,0
+NA,"Ornamental freshwater fish","Chile","X2016",0,7,0
+NA,"Ornamental freshwater fish","Peru","X2010",0,0,0
+NA,"Ornamental freshwater fish","Peru","X2011",5,0,0
+NA,"Ornamental freshwater fish","Peru","X2012",327,7,0
+NA,"Ornamental freshwater fish","Peru","X2013",316,4,0
+NA,"Ornamental freshwater fish","Peru","X2014",300,9,0
+NA,"Ornamental freshwater fish","Peru","X2015",292,8,0
+NA,"Ornamental freshwater fish","Peru","X2016",5961,60,0
+NA,"Ornamental saltwater fish","Brazil","X2010",0,0,0
+NA,"Ornamental saltwater fish","Brazil","X2011",0,0,0
+NA,"Ornamental saltwater fish","Brazil","X2012",6,8,0
+NA,"Ornamental saltwater fish","Brazil","X2013",5,9,0
+NA,"Ornamental saltwater fish","Brazil","X2014",4,12,0
+NA,"Ornamental saltwater fish","Brazil","X2015",4,11,0
+NA,"Ornamental saltwater fish","Brazil","X2016",4,115,0
+NA,"Ornamental saltwater fish","Chile","X2010",0,0,0
+NA,"Ornamental saltwater fish","Chile","X2011",0,0,0
+NA,"Ornamental saltwater fish","Chile","X2012",0,0,0
+NA,"Ornamental saltwater fish","Chile","X2013",0,1,0
+NA,"Ornamental saltwater fish","Chile","X2014",0,3,0
+NA,"Ornamental saltwater fish","Chile","X2015",0,3,0
+NA,"Ornamental saltwater fish","Chile","X2016",0,4,0
+NA,"Ornamental saltwater fish","Peru","X2010",0,0,0
+NA,"Ornamental saltwater fish","Peru","X2011",0,0,0
+NA,"Ornamental saltwater fish","Peru","X2012",14,0,0
+NA,"Ornamental saltwater fish","Peru","X2013",24,1,0
+NA,"Ornamental saltwater fish","Peru","X2014",15,1,0
+NA,"Ornamental saltwater fish","Peru","X2015",25,2,0
+NA,"Ornamental saltwater fish","Peru","X2016",111,14,0
+NA,"Pilchard ","Peru","X2010",0,0,0
+NA,"Pilchard ","Peru","X2011",0,0,0
+NA,"Pilchard ","Peru","X2012",0,0,0
+NA,"Pilchard ","Peru","X2013",0,0,0
+NA,"Pilchard ","Peru","X2014",0,0,0
+NA,"Pilchard ","Peru","X2015",0,0,0
+NA,"Pilchard ","Peru","X2016",0,0,0
+NA,"Pilchard meal","Chile","X2010",0,0,168567
+NA,"Pilchard meal","Chile","X2011",0,0,179656
+NA,"Pilchard meal","Chile","X2012",0,0,165305
+NA,"Pilchard meal","Chile","X2013",0,0,49810
+NA,"Pilchard meal","Chile","X2014",0,0,108112
+NA,"Pilchard meal","Chile","X2015",0,0,90026
+NA,"Pilchard meal","Chile","X2016",0,0,62003
+NA,"Plaice","Chile","X2010",0,0,0
+NA,"Plaice","Chile","X2011",0,0,0
+NA,"Plaice","Chile","X2012",0,0,0
+NA,"Plaice","Chile","X2013",0,0,0
+NA,"Plaice","Chile","X2014",0,0,0
+NA,"Plaice","Chile","X2015",0,0,0
+NA,"Plaice","Chile","X2016",0,0,0
+NA,"Salmonids","Chile","X2010",2648,0,9268
+NA,"Salmonids","Chile","X2011",5005,0,8082
+NA,"Salmonids","Chile","X2012",8743,0,7880
+NA,"Salmonids","Chile","X2013",9540,0,7620
+NA,"Salmonids","Chile","X2014",9458,1,6570
+NA,"Salmonids","Chile","X2015",10121,0,5900
+NA,"Salmonids","Chile","X2016",9621,0,3220
+NA,"Salmons, trouts","Brazil","X2010",0,1147,0
+NA,"Salmons, trouts","Brazil","X2011",0,2513,0
+NA,"Salmons, trouts","Brazil","X2012",0,2218,0
+NA,"Salmons, trouts","Brazil","X2013",0,1879,0
+NA,"Salmons, trouts","Brazil","X2014",0,3111,0
+NA,"Salmons, trouts","Brazil","X2015",0,1230,0
+NA,"Salmons, trouts","Brazil","X2016",0,2944,0
+NA,"Salmons, trouts","Chile","X2010",79886,0,77676
+NA,"Salmons, trouts","Chile","X2011",108234,29,86249
+NA,"Salmons, trouts","Chile","X2012",111546,17,104674
+NA,"Salmons, trouts","Chile","X2013",103749,0,89391
+NA,"Salmons, trouts","Chile","X2014",101654,21,89542
+NA,"Salmons, trouts","Chile","X2015",117918,0,94121
+NA,"Salmons, trouts","Chile","X2016",82504,26,66969
+NA,"Salmons, trouts","Peru","X2010",25,0,0
+NA,"Salmons, trouts","Peru","X2011",38,0,0
+NA,"Salmons, trouts","Peru","X2012",0,0,0
+NA,"Salmons, trouts","Peru","X2013",0,0,0
+NA,"Salmons, trouts","Peru","X2014",0,11,0
+NA,"Salmons, trouts","Peru","X2015",0,5,0
+NA,"Salmons, trouts","Peru","X2016",1,0,0
+NA,"Scallops","Brazil","X2010",0,0,0
+NA,"Scallops","Brazil","X2011",0,0,0
+NA,"Scallops","Brazil","X2012",0,0,0
+NA,"Scallops","Brazil","X2013",0,0,0
+NA,"Scallops","Brazil","X2014",0,0,0
+NA,"Scallops","Brazil","X2015",0,0,0
+NA,"Scallops","Brazil","X2016",0,0,0
+NA,"Scallops","Chile","X2010",0,0,0
+NA,"Scallops","Chile","X2011",0,0,7
+NA,"Scallops","Chile","X2012",12,0,4
+NA,"Scallops","Chile","X2013",30,1,16
+NA,"Scallops","Chile","X2014",0,1,0
+NA,"Scallops","Chile","X2015",0,2,0
+NA,"Scallops","Chile","X2016",0,2,0
+NA,"Scallops","Peru","X2010",0,0,0
+NA,"Scallops","Peru","X2011",0,0,0
+NA,"Scallops","Peru","X2012",0,0,0
+NA,"Scallops","Peru","X2013",0,0,0
+NA,"Scallops","Peru","X2014",0,0,0
+NA,"Scallops","Peru","X2015",0,0,0
+NA,"Scallops","Peru","X2016",0,0,0
+NA,"Sea snails","Chile","X2010",482,77,0
+NA,"Sea snails","Chile","X2011",1294,31,0
+NA,"Sea snails","Chile","X2012",76,0,0
+NA,"Sea snails","Chile","X2013",49,0,0
+NA,"Sea snails","Chile","X2014",23,0,0
+NA,"Sea snails","Chile","X2015",175,0,0
+NA,"Sea snails","Chile","X2016",119,0,0
+NA,"Sea snails","Peru","X2010",226,29,0
+NA,"Sea snails","Peru","X2011",151,0,0
+NA,"Sea snails","Peru","X2012",199,0,0
+NA,"Sea snails","Peru","X2013",114,0,0
+NA,"Sea snails","Peru","X2014",133,0,0
+NA,"Sea snails","Peru","X2015",44,0,0
+NA,"Sea snails","Peru","X2016",18,0,0
+NA,"Sea urchins","Brazil","X2010",0,0,0
+NA,"Sea urchins","Brazil","X2011",0,0,0
+NA,"Sea urchins","Brazil","X2012",0,0,0
+NA,"Sea urchins","Brazil","X2013",0,0,0
+NA,"Sea urchins","Brazil","X2014",0,0,0
+NA,"Sea urchins","Brazil","X2015",0,0,0
+NA,"Sea urchins","Brazil","X2016",0,0,0
+NA,"Sea urchins","Chile","X2010",1878,0,1088
+NA,"Sea urchins","Chile","X2011",2589,0,1456
+NA,"Sea urchins","Chile","X2012",2079,0,1112
+NA,"Sea urchins","Chile","X2013",1943,0,1235
+NA,"Sea urchins","Chile","X2014",2032,0,1222
+NA,"Sea urchins","Chile","X2015",2023,0,1235
+NA,"Sea urchins","Chile","X2016",1944,0,1169
+NA,"Sea urchins","Peru","X2010",12,0,10
+NA,"Sea urchins","Peru","X2011",27,5,11
+NA,"Sea urchins","Peru","X2012",1,5,0
+NA,"Sea urchins","Peru","X2013",11,0,25
+NA,"Sea urchins","Peru","X2014",0,0,40
+NA,"Sea urchins","Peru","X2015",0,0,49
+NA,"Sea urchins","Peru","X2016",17,0,46
+NA,"Seal","Brazil","X2010",0,0,0
+NA,"Seal","Brazil","X2011",0,0,0
+NA,"Seal","Brazil","X2012",0,0,0
+NA,"Seal","Brazil","X2013",0,0,0
+NA,"Seal","Brazil","X2014",0,0,0
+NA,"Seal","Brazil","X2015",0,0,0
+NA,"Seal","Brazil","X2016",0,0,0
+NA,"Seal","Chile","X2010",0,0,0
+NA,"Seal","Chile","X2011",0,0,0
+NA,"Seal","Chile","X2012",0,0,0
+NA,"Seal","Chile","X2013",0,0,0
+NA,"Seal","Chile","X2014",0,0,0
+NA,"Seal","Chile","X2015",0,0,0
+NA,"Seal","Chile","X2016",0,0,0
+NA,"Seaweeds","Brazil","X2010",121,2172,0
+NA,"Seaweeds","Brazil","X2011",137,3121,0
+NA,"Seaweeds","Brazil","X2012",0,3,0
+NA,"Seaweeds","Brazil","X2013",0,0,0
+NA,"Seaweeds","Brazil","X2014",0,0,0
+NA,"Seaweeds","Brazil","X2015",0,0,0
+NA,"Seaweeds","Brazil","X2016",0,0,0
+NA,"Seaweeds","Chile","X2010",65173,4223,0
+NA,"Seaweeds","Chile","X2011",67770,5259,0
+NA,"Seaweeds","Chile","X2012",0,0,0
+NA,"Seaweeds","Chile","X2013",0,0,0
+NA,"Seaweeds","Chile","X2014",0,0,0
+NA,"Seaweeds","Chile","X2015",0,0,0
+NA,"Seaweeds","Chile","X2016",0,0,0
+NA,"Seaweeds","Peru","X2010",22783,15,0
+NA,"Seaweeds","Peru","X2011",25257,9,0
+NA,"Seaweeds","Peru","X2012",786,0,0
+NA,"Seaweeds","Peru","X2013",0,0,0
+NA,"Seaweeds","Peru","X2014",0,0,0
+NA,"Seaweeds","Peru","X2015",0,0,0
+NA,"Seaweeds","Peru","X2016",0,0,0
+NA,"Sharks","Brazil","X2010",0,0,0
+NA,"Sharks","Brazil","X2011",0,0,0
+NA,"Sharks","Brazil","X2012",0,0,0
+NA,"Sharks","Brazil","X2013",0,0,0
+NA,"Sharks","Brazil","X2014",0,0,0
+NA,"Sharks","Brazil","X2015",0,0,0
+NA,"Sharks","Brazil","X2016",0,0,0
+NA,"Sharks","Chile","X2010",0,0,0
+NA,"Sharks","Chile","X2011",0,0,0
+NA,"Sharks","Chile","X2012",0,0,0
+NA,"Sharks","Chile","X2013",0,0,0
+NA,"Sharks","Chile","X2014",0,0,0
+NA,"Sharks","Chile","X2015",0,0,0
+NA,"Sharks","Chile","X2016",0,0,0
+NA,"Sharks","Peru","X2010",0,0,68
+NA,"Sharks","Peru","X2011",0,0,99
+NA,"Sharks","Peru","X2012",0,0,74
+NA,"Sharks","Peru","X2013",0,0,104
+NA,"Sharks","Peru","X2014",0,0,271
+NA,"Sharks","Peru","X2015",0,0,114
+NA,"Sharks","Peru","X2016",0,0,113
+NA,"Sharks, rays, chimaeras","Chile","X2010",0,0,0
+NA,"Sharks, rays, chimaeras","Chile","X2011",0,0,0
+NA,"Sharks, rays, chimaeras","Chile","X2012",0,0,0
+NA,"Sharks, rays, chimaeras","Chile","X2013",0,0,0
+NA,"Sharks, rays, chimaeras","Chile","X2014",0,0,0
+NA,"Sharks, rays, chimaeras","Chile","X2015",0,0,0
+NA,"Sharks, rays, chimaeras","Chile","X2016",0,0,0
+NA,"Sharks, rays, chimaeras","Peru","X2010",0,0,217
+NA,"Sharks, rays, chimaeras","Peru","X2011",0,0,224
+NA,"Sharks, rays, chimaeras","Peru","X2012",0,0,284
+NA,"Sharks, rays, chimaeras","Peru","X2013",0,0,280
+NA,"Sharks, rays, chimaeras","Peru","X2014",0,0,734
+NA,"Sharks, rays, chimaeras","Peru","X2015",0,0,308
+NA,"Sharks, rays, chimaeras","Peru","X2016",0,0,270
+NA,"Sharks, rays, skates","Brazil","X2010",49,0,50
+NA,"Sharks, rays, skates","Brazil","X2011",59,0,60
+NA,"Sharks, rays, skates","Brazil","X2012",39,0,40
+NA,"Sharks, rays, skates","Brazil","X2013",31,0,31
+NA,"Sharks, rays, skates","Brazil","X2014",28,0,28
+NA,"Sharks, rays, skates","Brazil","X2015",28,0,28
+NA,"Sharks, rays, skates","Brazil","X2016",24,0,24
+NA,"Sharks, rays, skates","Chile","X2010",1,0,0
+NA,"Sharks, rays, skates","Chile","X2011",3,0,0
+NA,"Sharks, rays, skates","Chile","X2012",4,0,0
+NA,"Sharks, rays, skates","Chile","X2013",3,0,0
+NA,"Sharks, rays, skates","Chile","X2014",2,0,0
+NA,"Sharks, rays, skates","Chile","X2015",0,0,0
+NA,"Sharks, rays, skates","Chile","X2016",0,0,0
+NA,"Sharks, rays, skates","Peru","X2010",202,77,0
+NA,"Sharks, rays, skates","Peru","X2011",206,71,0
+NA,"Sharks, rays, skates","Peru","X2012",134,30,0
+NA,"Sharks, rays, skates","Peru","X2013",146,94,0
+NA,"Sharks, rays, skates","Peru","X2014",236,111,0
+NA,"Sharks, rays, skates","Peru","X2015",387,191,0
+NA,"Sharks, rays, skates","Peru","X2016",377,176,0
+NA,"Shrimps and prawns","Brazil","X2010",0,0,0
+NA,"Shrimps and prawns","Brazil","X2011",0,0,0
+NA,"Shrimps and prawns","Brazil","X2012",444,0,0
+NA,"Shrimps and prawns","Brazil","X2013",1033,25,0
+NA,"Shrimps and prawns","Brazil","X2014",700,0,0
+NA,"Shrimps and prawns","Brazil","X2015",614,0,0
+NA,"Shrimps and prawns","Brazil","X2016",900,0,0
+NA,"Shrimps and prawns","Chile","X2010",6,2,0
+NA,"Shrimps and prawns","Chile","X2011",38,2,0
+NA,"Shrimps and prawns","Chile","X2012",0,275,0
+NA,"Shrimps and prawns","Chile","X2013",62,297,0
+NA,"Shrimps and prawns","Chile","X2014",18,139,0
+NA,"Shrimps and prawns","Chile","X2015",44,114,0
+NA,"Shrimps and prawns","Chile","X2016",76,555,0
+NA,"Shrimps and prawns","Peru","X2010",0,0,0
+NA,"Shrimps and prawns","Peru","X2011",96,0,0
+NA,"Shrimps and prawns","Peru","X2012",4005,0,0
+NA,"Shrimps and prawns","Peru","X2013",3777,0,0
+NA,"Shrimps and prawns","Peru","X2014",3322,26,0
+NA,"Shrimps and prawns","Peru","X2015",5191,0,0
+NA,"Shrimps and prawns","Peru","X2016",4787,42,0
+NA,"Southern blue whiting","Chile","X2010",2105,0,5397
+NA,"Southern blue whiting","Chile","X2011",1397,0,876
+NA,"Southern blue whiting","Chile","X2012",556,0,600
+NA,"Southern blue whiting","Chile","X2013",656,0,945
+NA,"Southern blue whiting","Chile","X2014",1046,0,825
+NA,"Southern blue whiting","Chile","X2015",231,0,122
+NA,"Southern blue whiting","Chile","X2016",0,8,11
+NA,"Sperm oil","Brazil","X2010",0,0,0
+NA,"Sperm oil","Brazil","X2011",0,0,0
+NA,"Sperm oil","Brazil","X2012",0,0,0
+NA,"Sperm oil","Brazil","X2013",0,0,0
+NA,"Sperm oil","Brazil","X2014",0,0,0
+NA,"Sperm oil","Brazil","X2015",0,0,0
+NA,"Sperm oil","Brazil","X2016",0,0,0
+NA,"Sperm oil","Chile","X2010",0,0,0
+NA,"Sperm oil","Chile","X2011",0,0,0
+NA,"Sperm oil","Chile","X2012",0,0,0
+NA,"Sperm oil","Chile","X2013",0,0,0
+NA,"Sperm oil","Chile","X2014",0,0,0
+NA,"Sperm oil","Chile","X2015",0,0,0
+NA,"Sperm oil","Chile","X2016",0,0,0
+NA,"Sperm oil","Peru","X2010",0,0,0
+NA,"Sperm oil","Peru","X2011",0,0,0
+NA,"Sperm oil","Peru","X2012",0,0,0
+NA,"Sperm oil","Peru","X2013",0,0,0
+NA,"Sperm oil","Peru","X2014",0,0,0
+NA,"Sperm oil","Peru","X2015",0,0,0
+NA,"Sperm oil","Peru","X2016",0,0,0
+NA,"Stingrays, skates","Brazil","X2010",0,0,0
+NA,"Stingrays, skates","Brazil","X2011",0,0,0
+NA,"Stingrays, skates","Brazil","X2012",1079,0,0
+NA,"Stingrays, skates","Brazil","X2013",1674,0,0
+NA,"Stingrays, skates","Brazil","X2014",1252,0,0
+NA,"Stingrays, skates","Brazil","X2015",1496,0,0
+NA,"Stingrays, skates","Brazil","X2016",1298,0,0
+NA,"Stingrays, skates","Chile","X2010",1851,0,1538
+NA,"Stingrays, skates","Chile","X2011",1682,0,1562
+NA,"Stingrays, skates","Chile","X2012",1914,0,1358
+NA,"Stingrays, skates","Chile","X2013",1236,0,798
+NA,"Stingrays, skates","Chile","X2014",137,66,14
+NA,"Stingrays, skates","Chile","X2015",138,96,13
+NA,"Stingrays, skates","Chile","X2016",578,1,607
+NA,"Stingrays, skates","Peru","X2010",0,0,0
+NA,"Stingrays, skates","Peru","X2011",0,0,0
+NA,"Stingrays, skates","Peru","X2012",0,207,0
+NA,"Stingrays, skates","Peru","X2013",0,113,0
+NA,"Stingrays, skates","Peru","X2014",2,50,0
+NA,"Stingrays, skates","Peru","X2015",0,5,0
+NA,"Stingrays, skates","Peru","X2016",18,31,0
+NA,"Tilapia ","Brazil","X2010",0,0,0
+NA,"Tilapia ","Brazil","X2011",0,0,0
+NA,"Tilapia ","Brazil","X2012",11,0,0
+NA,"Tilapia ","Brazil","X2013",72,0,0
+NA,"Tilapia ","Brazil","X2014",73,0,0
+NA,"Tilapia ","Brazil","X2015",171,0,0
+NA,"Tilapia ","Brazil","X2016",886,0,0
+NA,"Tilapia ","Chile","X2010",0,0,0
+NA,"Tilapia ","Chile","X2011",0,0,0
+NA,"Tilapia ","Chile","X2012",0,538,0
+NA,"Tilapia ","Chile","X2013",0,570,0
+NA,"Tilapia ","Chile","X2014",0,842,0
+NA,"Tilapia ","Chile","X2015",19,876,0
+NA,"Tilapia ","Chile","X2016",0,560,0
+NA,"Tilapia ","Peru","X2010",0,0,0
+NA,"Tilapia ","Peru","X2011",0,0,0
+NA,"Tilapia ","Peru","X2012",225,817,0
+NA,"Tilapia ","Peru","X2013",237,1482,0
+NA,"Tilapia ","Peru","X2014",182,2254,0
+NA,"Tilapia ","Peru","X2015",262,1845,0
+NA,"Tilapia ","Peru","X2016",215,2698,0
+NA,"Tilapias","Brazil","X2010",110,0,0
+NA,"Tilapias","Brazil","X2011",23,0,0
+NA,"Tilapias","Brazil","X2012",0,0,0
+NA,"Tilapias","Brazil","X2013",0,0,0
+NA,"Tilapias","Brazil","X2014",0,0,0
+NA,"Tilapias","Brazil","X2015",0,0,0
+NA,"Tilapias","Brazil","X2016",12,0,0
+NA,"Tilapias","Chile","X2010",0,0,0
+NA,"Tilapias","Chile","X2011",0,0,0
+NA,"Tilapias","Chile","X2012",0,2,0
+NA,"Tilapias","Chile","X2013",0,21,0
+NA,"Tilapias","Chile","X2014",0,0,0
+NA,"Tilapias","Chile","X2015",0,4,0
+NA,"Tilapias","Chile","X2016",0,3,0
+NA,"Tilapias","Peru","X2010",0,0,0
+NA,"Tilapias","Peru","X2011",0,0,0
+NA,"Tilapias","Peru","X2012",53,37,0
+NA,"Tilapias","Peru","X2013",0,56,0
+NA,"Tilapias","Peru","X2014",0,0,0
+NA,"Tilapias","Peru","X2015",0,3,0
+NA,"Tilapias","Peru","X2016",0,0,0
+NA,"Tunas","Brazil","X2010",0,0,0
+NA,"Tunas","Brazil","X2011",0,0,0
+NA,"Tunas","Brazil","X2012",0,0,0
+NA,"Tunas","Brazil","X2013",0,0,0
+NA,"Tunas","Brazil","X2014",0,0,0
+NA,"Tunas","Brazil","X2015",0,0,0
+NA,"Tunas","Brazil","X2016",0,0,0
+NA,"Tunas, bonitos, billfishes","Chile","X2010",0,0,0
+NA,"Tunas, bonitos, billfishes","Chile","X2011",0,0,0
+NA,"Tunas, bonitos, billfishes","Chile","X2012",0,0,0
+NA,"Tunas, bonitos, billfishes","Chile","X2013",0,0,0
+NA,"Tunas, bonitos, billfishes","Chile","X2014",0,0,0
+NA,"Tunas, bonitos, billfishes","Chile","X2015",0,0,0
+NA,"Tunas, bonitos, billfishes","Chile","X2016",0,0,0
+NA,"Tunas, bonitos, billfishes","Peru","X2010",0,0,0
+NA,"Tunas, bonitos, billfishes","Peru","X2011",0,0,0
+NA,"Tunas, bonitos, billfishes","Peru","X2012",0,0,0
+NA,"Tunas, bonitos, billfishes","Peru","X2013",0,0,0
+NA,"Tunas, bonitos, billfishes","Peru","X2014",0,0,0
+NA,"Tunas, bonitos, billfishes","Peru","X2015",0,0,0
+NA,"Tunas, bonitos, billfishes","Peru","X2016",0,0,0
+NA,"Turbot ","Chile","X2010",0,0,0
+NA,"Turbot ","Chile","X2011",0,0,0
+NA,"Turbot ","Chile","X2012",0,0,0
+NA,"Turbot ","Chile","X2013",4,0,0
+NA,"Turbot ","Chile","X2014",0,0,0
+NA,"Turbot ","Chile","X2015",0,1,0
+NA,"Turbot ","Chile","X2016",0,0,0
+NA,"Whale oil","Brazil","X2010",0,0,0
+NA,"Whale oil","Brazil","X2011",0,0,0
+NA,"Whale oil","Brazil","X2012",0,0,0
+NA,"Whale oil","Brazil","X2013",0,0,0
+NA,"Whale oil","Brazil","X2014",0,0,0
+NA,"Whale oil","Brazil","X2015",0,0,0
+NA,"Whale oil","Brazil","X2016",0,0,0
+NA,"Whale oil","Peru","X2010",0,0,0
+NA,"Whale oil","Peru","X2011",0,0,0
+NA,"Whale oil","Peru","X2012",0,0,0
+NA,"Whale oil","Peru","X2013",0,0,0
+NA,"Whale oil","Peru","X2014",0,0,0
+NA,"Whale oil","Peru","X2015",0,0,0
+NA,"Whale oil","Peru","X2016",0,0,0
+NA,"Whales","Brazil","X2010",0,0,0
+NA,"Whales","Brazil","X2011",0,0,0
+NA,"Whales","Brazil","X2012",0,0,0
+NA,"Whales","Brazil","X2013",0,0,0
+NA,"Whales","Brazil","X2014",0,0,0
+NA,"Whales","Brazil","X2015",0,0,0
+NA,"Whales","Brazil","X2016",0,0,0
+NA,"Whales","Chile","X2010",0,0,0
+NA,"Whales","Chile","X2011",0,0,0
+NA,"Whales","Chile","X2012",0,0,0
+NA,"Whales","Chile","X2013",0,0,0
+NA,"Whales","Chile","X2014",0,0,0
+NA,"Whales","Chile","X2015",0,0,0
+NA,"Whales","Chile","X2016",0,0,0
