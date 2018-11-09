@@ -43,7 +43,8 @@ packages <- c(
   "sp",
   "sf",
   "rgdal", #Spatial analysis
-  "tools" #Spatial analysis
+  "tools", #Spatial analysis
+  "networkD3"
 )
 
 suppressWarnings(
@@ -341,6 +342,22 @@ Clean_FAO <- FAO %>%
   spread(Sector,Value) %>% 
   spread(Trade.Flow,Trade)# Spread catches and aquaculture
 
+Clean_FAO_Trade <- FAO %>%
+  filter(Country %in% Countries,
+         Sector == "Trade",
+         Unit == "USD.1000"
+         ) %>% # Select only Brazil, Chile and Peru
+  group_by(Country,
+         Comm.Name= Group, # Change name to match FISHMAR data
+         # Environment, # NOTE: not identifying between marine/freshwater
+         # Sector ,
+         Trade.Flow #, # No need its all Production anyway
+         # Unit # Remove dollars from this database
+         ) %>%
+  summarise_at(vars(matches("X201")), sum, na.rm=T) %>% # This fixes the FAO fishing area issue
+  gather("Year","Value",X2010:X2016) %>%
+  spread(Trade.Flow,Value)
+
 
 # Clean_FAO$Comm.Name <- gsub("..",".",Clean_FAO$Comm.Name)
 
@@ -405,13 +422,39 @@ FAO_Andres_Clear %>%
 
 ## YES !!!!
 
-write.csv(FAO_Andres_Clear,
-          "FAO_Clear_Data.csv",
+# write.csv(FAO_Andres_Clear,
+#           "FAO_Clear_Data.csv",
+#           row.names = F)
+
+
+
+#### Fao Andres Money! ###
+
+FAO_Andres_Trade <- Andres_Names %>% 
+  select(
+    Comm.Name,
+    everything()
+  ) %>% 
+  left_join(Clean_FAO_T,
+            by = "Comm.Name") %>% 
+  filter(!is.na(Country)) %>% 
+  group_by(
+    # Comm.Name,
+    Taxon.Key,
+    MatchName,
+    Country,
+    Year) %>%
+  summarise_if(is.numeric,sum,na.rm=T) %>% 
+  select(-FishStatNameID)
+
+write.csv(FAO_Andres_Trade,
+          "FAO_Trade_USD.csv",
           row.names = F)
-
-
   
-#### DONE CLEANING FAO CATCH DATA #
+#### DONE CLEANING FAO CATCH DATA # 
+# JUMP TO TIMS DATA
+
+### END NEW APPROACH ####
 
 # Clean_FAO_C %>% 
 #   group_by(Country,Year,Unit) %>% 
@@ -989,35 +1032,11 @@ Tim_D_Clear <- Tim_D %>%
     # taxon_name,
     Country = fishing_entity
     ) %>%
-  mutate_if(is.numeric,round,3)
-
-
-### Lets see the level of datasest match
-
-# head(FAO_Andres_Clear)
-# 
-# FAO_Andres_Clear %>% 
-#   filter(Capture >= 0) %>%  #It only makes sense to match at the capture level
-#   group_by(Taxon.Key) %>% 
-#   summarise(n()) %>% # There are 282 different Taxon.keys
-#   semi_join(Tim_D_Clear,
-#             by = "Taxon.Key") # 208 at the end, we lost 82 (not bad)
-# 
-# # What did we lost
-# 
-# FAO_Andres_Clear %>% 
-#   filter(Capture >= 0) %>%  #It only makes sense to match at the capture level
-#   group_by(Taxon.Key,
-#            Comm.Name) %>% 
-#   summarise(n()) %>% # There are 282 different Taxon.keys
-#   anti_join(Tim_D_Clear,
-#             by = "Taxon.Key") %>%  # 208 at the end, we lost 82 (not bad)
-#   View()
-#   
-# # Freshwater stuff
+  mutate_if(is.numeric,round,3) %>%
+  ungroup() %>% 
+  select(-taxon_key)
 
 #### Merge with Sofia-Andres ####
-
 
 FAO_Andres_Clear_T <- FAO_Andres_Clear %>% 
   left_join(Tim_D_Clear,
@@ -1025,7 +1044,36 @@ FAO_Andres_Clear_T <- FAO_Andres_Clear %>%
               "Taxon.Key",
               "Country"
               )
-  )
+  ) %>% 
+  mutate(
+    Species = ifelse(is.na(Comm.Name) == TRUE, paste(MatchName),paste(Comm.Name))
+    ) %>% 
+  select(Taxon.Key,
+         FAO_Name = Comm.Name,
+         MatchName,
+         SAU_name = taxon_name,
+         Species,
+         everything(),
+         -fishing_entity,
+         -Discards_F) %>% 
+  filter_at(vars(Aquaculture:Production),any_vars(. > 0)) # Removes rows with no production (any)
+
+
+
+# Sci.Name.Fb = ifelse(is.na(Sci.Name.Fbs),Group,Sci.Name.Fbs),
+
+# %>% 
+#   select(
+#     Taxon.Key,
+#     FAO_Name = Comm.Name,
+#     MatchName,
+#     taxon_name,
+#     All_Names,
+#     everything()
+#   )
+
+
+
 
 write.csv(
   FAO_Andres_Clear_T,
@@ -1059,52 +1107,6 @@ Dummy_Data <- data.frame(
   )
 
 
-# 
-# International_Dataset <- Final_FAO_Data %>% 
-#   left_join(Clean_Tim,
-#             by = c(
-#               "Year",
-#               "Country",
-#               "Comm.Name",
-#               "Sci.Name.Fb")
-#             )
-
-
-
-FAO_Dummy <- Clean_FAO_C %>% 
-  gather("Year","Value",7:13) %>% 
-  filter(Year == "X2014") %>% 
-  group_by(
-    Comm.Name = Group, # NOTE: not identifying between marine/freshwater
-    Country,
-    Year,
-    Unit,
-    # Trade.Flow,
-    Sector
-    ) %>% 
-  summarise(Value = sum(Value)) %>% 
-  spread(Sector,Value) %>% # First we split the sectors in catches, aqua and trade
-  mutate(
-    Discards = 0.20
-  ) %>% 
-  # Now we incorporate de Trade code from FISHMAR data
-  left_join(FISHMAR_Merge,
-            by = c("Country","Comm.Name","Year","Unit","Sci.Name.Fb")
-  ) %>% 
-  # Now we incorporate DHC/IHC from Tim's database
-  left_join(Clean_Tim,
-            by = c(
-              "Year",
-              "Country",
-              "Comm.Name",
-              "Sci.Name.Fb")
-            )
-
-
-
-
-
-
 ```
 
 ```{r Spp_Function, eval =T}
@@ -1121,94 +1123,7 @@ FAO_Dummy <- Clean_FAO_C %>%
 # Exp = Exports
 
 
-corefx <- function(
-  Species,
-  Country,
-  Catch,
-  Dis,
-  DHC,
-  PL,
-  AP,
-  A_PL,
-  I_DHC,
-  Exp,
-  Result = "T",
-  n = 5
-){
-  
-  #### Variables ####
-  
-  # First Step 
-  TDS <- Catch*Dis #TDS (Total Discards) Discarded fish before landings
-  LS <- Catch - TDS # LS Landings supply after discards at see
-  
-  # Second Step
-  IHC <- LS * (1-DHC) # (Indirect Human Consumption) Landings supply that does NOT go to DHC
-  SHC <- LS - IHC # (Supply for Human Consumption) Landings supply that goes to DHC
-  
-  # Third Step
-  LP <- SHC * PL # Fish lost in processing 
-  LHC <- SHC - LP # Final landings after processing losses 
-  
-  # Fourth Step (Aquaculture)
-  AIHC <- AP * A_PL # (Aquaculture indirect human Consumption) Lost of aquaculture processing
-  AHC <- AP - AIHC # (Aquaculture Human Consumption) Aquaculure human Consumption
-  
-  # Fifth Step (Trade)
-  NI <- I_DHC - Exp # Net Imports
-  
-  
-  # Final step
-  NSP <- LHC + AHC + NI # (National Seafood Supply) 
-  TIHC <- IHC + AIHC # Total IHC fishmeal fishoil
-  
-  
-  #### Table option ####
-  Result_Table <- data.table(
-    "Specie" = Species,
-    "Country" = Country,
-    "Landings Food Supply" = LHC,
-    "Aquaculutre Food Supply" = AHC,
-    "Net Imports" = NI,
-    "National Seafood Supply" = NSP
-  )
-  
-  #### Graphic option ####
-  Result_Table <- Result_Table %>% 
-    gather("Variable","Value",3:6) %>%
-    group_by(Country,Variable) %>% 
-    top_n(n = 5, wt = Value)
-  
-  Plot <- Result_Table %>% 
-  ggplot(.,
-    aes(
-      x= Specie,
-      y = Value/1000,
-      fill = Variable
-    )
-    ) +
-    geom_bar(stat = "identity") +
-    geom_label_repel(data = Result_Table,
-              aes(
-      x= Specie,
-      y = (Value-(Value*.10))/1000,
-      label = as.factor(round((Value-(Value*.10))/1000))
-    ),
-    show.legend = FALSE
-    ) +
-    ylab("Thousand Tonnes") +
-    facet_wrap(~Country)
-
-  # Function result ####
-  if(Result == "T"){
-  return(Result_Table)
-  }
-  
- if(Result == "P") {
-  return(Plot)
-}
-  
-} # End of function ####
+FAO_Andres_Clear_T
 
 #### Example for one single species
 
@@ -1229,9 +1144,9 @@ corefx(
 
 
 Dummy_Data <- FAO_Andres_Clear_T %>% 
-  mutate(Species = ifelse(is.na(Comm.Name) == TRUE, paste(MatchName),paste(Comm.Name))) %>% 
+  # mutate(Species = ifelse(is.na(Comm.Name) == TRUE, paste(MatchName),paste(Comm.Name))) %>% 
   group_by(Species,
-           Country) %>% 
+           Country) %>% #Average of all years
   summarise_at(vars(Aquaculture:Discards),
                mean, na.rm=T)
 
@@ -1655,5 +1570,60 @@ ggplot(South_America_Land) +
   geom_sf(
     aes(fill = Log)
   )
+
+```
+
+
+```{r Network_Analysis, eval = F}
+
+International_Data <- read.csv("~/Documents/Github/Oceana_LA/clean_databases/International/International_Data.csv")
+
+Dummy_Data <- International_Data %>% 
+  # mutate(Species = ifelse(is.na(Comm.Name) == TRUE, paste(MatchName),paste(Comm.Name))) %>% 
+  group_by(Species,
+           Country) %>% #Average of all years
+  summarise_at(vars(Aquaculture:Discards),
+               mean, na.rm=T)
+
+### Example for multiple species
+Dummy_NSS <- corefx(
+  Result = "T",
+  Country=Dummy_Data$Country,
+  n = 5,
+  Species = Dummy_Data$Species,
+  Catch = Dummy_Data$Capture,
+  Dis = Dummy_Data$Discards,
+  DHC = Dummy_Data$DHC_Use,
+  PL = 0.20,
+  AP = Dummy_Data$Aquaculture,
+  A_PL = 0.20,
+  I_DHC = Dummy_Data$Imports,
+  Exp = Dummy_Data$Exports
+)
+
+
+
+Category <- c(
+  "Capture",
+  "Aquaculture",
+  "Imports",
+  "Exports",
+  "NSS"
+)
+
+
+Sources <- names(Dummy_NSS)[3:5]
+Target <- c("NSS","Lost")
+
+Captures <- Dummy_NSS %>% 
+  filter(Country == "Chile") %>% 
+  gather("category","value",3:6) %>% 
+  group_by(category) %>% 
+  summarise(top = sum(value))
+  # top_n(n = 5, wt = `National Seafood Supply`)
+
+Final_T <-
+
+
 
 ```
