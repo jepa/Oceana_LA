@@ -1059,7 +1059,7 @@ FAO_Andres_Clear_T <- FAO_Andres_Clear %>%
   filter_at(vars(Aquaculture:Production),any_vars(. > 0)) # Removes rows with no production (any)
 
 
-
+head(FAO_Andres_Clear_T)
 # Sci.Name.Fb = ifelse(is.na(Sci.Name.Fbs),Group,Sci.Name.Fbs),
 
 # %>% 
