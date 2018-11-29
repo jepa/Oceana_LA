@@ -5,14 +5,9 @@ author: Juliano Palacios Abrantes, Camila Vargas, Daniel Viana, Maria I. Rivera,
   López, Santiago de la Puente, Andrés M. Cisneros-Montemayor
 date: "October 26, 2018"
 output:
-  html_notebook:
-    collapsed: yes
-    number_sections: yes
-    smooth_scroll: yes
-    toc: yes
-    toc_float: yes
   pdf_document:
     toc: yes
+    toc_depth: '2'
   word_document:
     fig_caption: yes
     fig_height: 5
@@ -20,13 +15,7 @@ output:
     reference_docx: Template_guide.docx
     toc: yes
     toc_depth: 2
-  html_document:
-    df_print: paged
-    toc: yes
-    toc_depth: '2'
 subtitle: Draft report prepared for Oceana
-always_allow_html: yes
-bibliography: References.bid
 ---
 
 
@@ -46,6 +35,7 @@ ipak <- function(pkg){
 #### Library ####
 packages <- c(
   "readxl", # Read dataframe
+  "readr",
   "dplyr", # Data manipulation
   "tidyr", # Data manipulation
   "ggplot2", #Nice grpahs and spatial analysis
@@ -53,6 +43,8 @@ packages <- c(
   "ggpubr",
   # "plotly",
   "wesanderson",
+  "png",
+  "grid",
   "stringr",
   "purrr", #for loading multiple datasets
   # "rgdal",
@@ -163,14 +155,16 @@ FAO_USD <- read.csv(paste(Int_Data_Path,
                               sep = ""))
 # head(FAO_USD)
 
-FAO_F_Name <- "International_Data.csv"
+Int_F_Name <- "International_Data.csv"
 
 International_D<- read.csv(paste(Int_Data_Path,
-                              FAO_F_Name,
+                              Int_F_Name,
                               sep = ""))
 
 # head(International_D)
 ```
+
+\clearpage
 
 # Project Goal and Objectives
 
@@ -211,12 +205,18 @@ The objective of this project is to determine the most important species for dom
 
 ## Analytical framework
 
-Given the nature of fisheries data and governance systems, each of the nations considered presented unique analytical challenges (see ‘Data sources’), but a consistent methodological framework (**Fig. 1**) was used to maintain consistency in methods and comparability of results across nations. 
+Given the nature of fisheries data and governance systems, each of the nations considered presented unique analytic challenges (see ‘Data sources’), but a consistent methodological framework (**Fig. 1**) was used to maintain consistency in methods and comparability of results across nations. 
 
 Based on the best available data in each country, total seafood supply was estimated as the sum of per-species production of domestic catch and aquaculture (minus exports), plus the sum of species net imports. Catch statistics were separated by sectors whenever possible, including artisanal, industrial, and subsistence catches. In the case of domestic catch, inputs to aquaculture are subtracted from production (similar to exports); this is particularly relevant for large industrialized fisheries for small pelagics that are almost entirely reduced into fish feeds. The distribution of consumption (demand) of this seafood supply was based on regional (as available) estimates of seafood consumption per capita and regional populations. An important additional aspect for the critical analysis portion of the project was the linking of fisheries landings with available regional socioeconomic and governance indicators, providing a basis for discussing relative vulnerabilities to potential changes in seafood supply.
 
+```{r Framework_I, fig.width=5, fig.height=5, echo=FALSE, fig.align= "center", fig.cap="Fig 1. Methodological framework to estimate national food consumption, employment, and revenue from fisheries."}
 
-![Fig 1. Methodological framework to estimate national food consumption, employment, and revenue from fisheries.](Report_Figures/Fig1.png)
+img <- readPNG("Report_Figures/Fig1.png")
+ grid.raster(img)
+```
+
+
+<!-- ![Fig 1. Methodological framework to estimate national food consumption, employment, and revenue from fisheries.](Report_Figures/Fig1.png) -->
 
 
 The framework proposed in Figure 1 is similar to that proposed by FAO [@FAO:2017vf], which has also been slightly modified and applied to specific national fisheries [@Sumaila:2007gf]. We further incorporate species-specific accounting in our approach, which is challenging due to the differences in aggregation in data reporting, for example when landings are reported by species (e.g., “Whiteleg shrimp”) and trade statistics by product name (e.g., “Shrimp frozen,” “Shrimp fresh”). However, this modification is critical for identifying specific species or species groups that are important for national food security.  
@@ -259,10 +259,10 @@ data.table(
     "Net seafood supply. Effective amount of fish for human consumption in the country (TFS for human consumption, minus processing waste)."
   )
 ) %>% 
-  # kable("latex", booktabs = T) %>% 
-  # kable_styling(full_width = F) %>% 
-  #  column_spec(2, width = "15cm") %>% #wraps text in column2
-  kable()
+  kable("latex", booktabs = T) %>%
+  kable_styling(full_width = F) %>%
+   column_spec(2, width = "15cm") #%>% #wraps text in column2
+  # kable()
 
 ```
 
@@ -297,8 +297,8 @@ Estimations of economic participation of fish in each country were computed base
 
 data.table(
   Symbol = c(
-    "beta",
-    "alpha",
+    "b",
+    "a",
     "I",
     "RI",
     "E",
@@ -315,17 +315,17 @@ data.table(
     "Net trade. Economic value of fish traded considering both exports and imports"
   )
 ) %>% 
-  kable("latex", booktabs = T) #%>%
+  # kable("rmarkdown", booktabs = T) #%>%
   # kable_styling(full_width = F) %>%
    # column_spec(2, width = "15cm") %>%  #wraps text in column2
-  # kable()
+  kable()
 
 ```
 
 
 Fishing revenue integrates the different ex-vessel price that landings have, depending on the final destination: direct human consumption (DHC) and indirect human consumption (IHC). Therefore, total revenue (R) is estimated in the SAU database as follows:
 
-$$FR = \sum_{i = 1}^n (L_{i}*\beta_{i})*\beta P_{i} + (L_{i}*\alpha _{i}) *\alpha P_{i}$$
+$$FR = \sum_{i = 1}^n (L_{i}*b_{i})*b P_{i} + (L_{i}*a _{i}) *a P_{i}$$
 
 An important part of the economic participation of fishing is the activities after landings. For that, we used the information included in Dyck *et al* (2010) to estimate the contribution of landings to the country GDP [@Dyck:2010ez].
 
@@ -465,7 +465,7 @@ For this level of analysis we used the FAO database to estimate the total landin
 
 ### Country-specific data, Brazil 
 
-```{r Brazil_Regions, eval=T, echo=F}
+```{r Brazil_Regions, eval=T, echo=F, results='hide'}
 
 path_bra <- ("international/information/raw_databases/Spatial/bra_adm1/")
 #The File
@@ -474,16 +474,25 @@ fnam_bra <- "BRA_adm1"
 
 #### Extract
 
-system.time(Bra_Shape <- st_read(dsn = path_bra, layer=fnam_bra)) 
+Bra_Shape <- st_read(dsn = path_bra, layer=fnam_bra)
 
-ggplot(Bra_Shape) +
-  aes(
-    
-  )
+# ggplot(Bra_Shape) +
+#   aes(
+#     
+#   )
 
 ```
 
-![Political divission of Brazil](Report_Figures/Brazil_States.png)
+
+
+```{r B_Regions_Image, fig.width=4, fig.height=4,echo=FALSE, fig.align="center",fig.cap="Regional distribution of Brazil"}
+
+img <- readPNG("Report_Figures/Brazil_Regions.png")
+ grid.raster(img)
+```
+
+
+<!-- ![Political divission of Brazil](Report_Figures/Brazil_Regions.jpg) -->
 
 There is no basic fisheries statistics in the country since 2008. The lack of national fisheries statistics posed a great challenge to this study. Several researchers and fisheries managers consulted during the study pointed out the lack of data to provide basic information on Brazilian fisheries. Information such as how much the country produces, how much it consumes or even the number of fishers in the country is very sparse. In an interview with the most renowned fisheries scientist in the country, Dr. Fabio Hazin, he pointed out that there are between 400 thousand and one million fishers in the country. Additionally, he pointed out that data from FAO on Brazilian fisheries is mostly a copy of the production from the previous years. And this has been going on since 2008, when the last year of national fisheries statistics was recorded, and even then it wasn't very reliable. Therefore, we had to be creative to conduct this study. We contacted people from all fisheries sectors to find out what was available. After an extensive search, we gathered six different databases representing the different fisheries sectors and conducted an extensive literature research. We also identified other potential sources of information that we were not able to obtain in time for this study. 
 
@@ -506,18 +515,35 @@ After this effort, we gathered the following databases representing different fi
 
 ### Country-specific data, Chile
 
-** MAP OF CHILE REGION **
+```{r C_Regions_Image, fig.width=6, fig.height=4, echo=FALSE, fig.align= "center", fig.cap="Regional distribution of Chile"}
 
-1. *SERNAPESCA* - The Chilean National Service of Fisheries is in charge of keeping track of landings and other fisheries and aquaculture related data in Chile. In their website there is public access to databases reporting landings per sector (artisanal, industrial and factory vessels) and aquaculture harvest. We also received from them datasets with information on prices of first transaction in artisanal fisheries and number of fishers and fisher vessels officially registered as proxi to estimate employment in this sector. SERNAPESCA data is reportes at a specie level and for each geopolitical region of the country.
+img <- readPNG("Report_Figures/Chile_Regions.png")
+ grid.raster(img)
+```
+
+1. *SERNAPESCA* - The Chilean National Service of Fisheries is in charge of keeping track of landings and other fisheries and aquaculture related data in Chile. In their website there is public access to databases reporting landings per sector (artisanal, industrial and factory vessels) and aquaculture harvest[^C1]. We also received from them datasets with information on prices of first transaction in artisanal fisheries and number of fishers and fisher vessels officially registered as proxi to estimate employment in this sector. SERNAPESCA data is reportes at a specie level and for each geopolitical region of the country.
+
+[^C1]: Chilean National Service of Fisheries. Data available athttp://www.sernapesca.cl/informes/estadisticas
 
 2. *RPA* - The RPA holds information regarding the gender, date of birth, location and type of activities performed by each fisher (e.i. diver, fisher, boat owner, shore gatherer).
 
-3. *Aduanas Chile (Chilean Costumes)*. This source details products (amount and prices) imported and exported for each region of the country. We expect to be able to estimates of the domestic consumption of local species by understanding how much of what is landed is being exported. 
+3. *Aduanas Chile (Chilean Costumes)*. This source details products (amount and prices) imported and exported for each region of the country[^C2]. We expect to be able to estimates of the domestic consumption of local species by understanding how much of what is landed is being exported. 
+
+[^C2]:Chilean Costumes databases. Available at http://www.aduana.cl/registros-de-comercio-exterior-datos-agregados/aduana/2017-07-21/113048.html)
+
+
+
+[Chilean Customs](http://www.aduana.cl/registros-de-comercio-exterior-datos-agregados/aduana/2017-07-21/113048.html), respectively and were accessed between August and September of 2018.
 
 
 ### Country-specific data, Peru 
 
-![Fig x. Regions of Peru.](Report_Figures/Peru_Regions.png)
+```{r P_Regions_Image, fig.width=2, fig.height=3, echo=FALSE, fig.align= "center", fig.cap="Regional distribution of Peru"}
+
+img <- readPNG("Report_Figures/Peru_Regions.png")
+ grid.raster(img)
+```
+<!-- ![Fig x. Regions of Peru.](Report_Figures/Peru_Regions.png) -->
 
 Data from the following governmental institutions was used to characterize Peruvian capture and aquaculture production, internal and international trade of seafood products, apparent seafood consumption and the contribution of seafood to the national economy:
 
@@ -532,6 +558,8 @@ Data from the following governmental institutions was used to characterize Peruv
 3. *SUNAT* - The Peruvian Customs Agency (Superintendencia Nacional de Aduanas y de Administración Tributaria), reports seafood imports and exports by ‘custom code’, which group together products by type and sometimes species.
 
 4. *INEI* - The Peruvian Institute of Statistics and Informatics (Instituto Nacional de Estadística e Informática). They provided, upon request, the results of the annual household survey (ENAHO – Encuesta Nacional de Hogares). The results of these surveys include information regarding per capita seafood consumption by species, product type and region.
+
+\clearpage
 
 # Results
 
@@ -564,7 +592,7 @@ SAU_shp <- st_read(
   )
 ```
 
-```{r SAU_Fishing_Effort_Map, eval=T, echo=F, warning=F, message=F}
+```{r SAU_Fishing_Effort_Map, eval=T, echo=F, warning=F, fig.align="center", fig.width=3,fig.height=4, fig.cap="Fishing effort within Brazil, Chile and Peru's Economic Exclusive Zones. Logarithmic scale.",message=F}
 
 #### Countries shape ####
 
@@ -668,10 +696,15 @@ International_D %>%
   ) %>%
   filter(Variable %in% c("Aquaculture","Capture","Exports","Imports")) %>% 
   tidyr::spread(Variable,Totals) %>% 
-  kable(
+  kable("latex", booktabs = T, escape = F,
     caption = "Summary of results. Database used: SOFIA-FAO. Thousand tones",
-    format.args = list(big.mark = ",")
-  ) 
+    format.args = list(big.mark = ","#,
+                       # col.names = linebreak(c("Food\nSupply", "Seafood\nsupply"), align = "c")
+                       )
+    ) %>% 
+  kable_styling(full_width = F) #%>%
+   # column_spec(2, width = "15cm") #%>% #wraps text in column2
+  # kable()
 
 ```
 
@@ -718,6 +751,8 @@ SAU_Prop_C <- SAU_Prop %>%
   filter(Variable == "Total_tonnes") %>% #Rounds everything without decimals
   mutate_if(is.numeric,round,0)
 
+SAU_Prop_C$scientific_name <- gsub("\n"," ",SAU_Prop_C$scientific_name)
+
 Prop_Total_C <- Prop_Total %>%
   filter(Variable == "Total_tonnes") %>% 
   mutate_if(is.numeric,round,0)
@@ -762,7 +797,8 @@ ggplot() +
   ) +
   ggtheme_plot() +
   coord_flip() +
-  theme(axis.text.y = element_text(face = "italic")
+  theme(axis.text.y = element_text(face = "italic",
+                                   size = 10)
         )
 
 
@@ -771,7 +807,7 @@ ggplot() +
 <!-- \clearpage -->
 
 
-Subsistance fisheries are an important aspect for Brazil, Chile and Peru. Results from the SAU database suggest that species such as ...
+Subsistence fisheries are an important aspect for Brazil, Chile and Peru virtually all the capture is destined to consumption. 
 
 ```{r SAU_Subsistance_Landings, eval = T, echo = F, warning =F, message = F, fig.height = 10, fig.width= 12, fig.cap= "Top 10 subsistance species by landings from the SAU dataset."}
 
@@ -828,7 +864,7 @@ SAU_Subsistance <- SAU_Dat_S %>%
 
 <!-- In addition to the internal fish production, Brazil, Chile and Peru all import and export fish (**Fig. XXX**). According to FAO-SOFIA data, imports and exports balances....  -->
 
-```{r Trade_Food, eval = F, echo = F, warning=F, fig.align='center', fig.height = 4, fig.width= 6, fig.cap= "Revenue from fisheries production, imports and exports for each nation from the UN database."}
+```{r Trade_Food_T, eval = F, echo = F, warning=F, fig.align='center'}
 
 names(International_D)
 
@@ -851,7 +887,8 @@ International_D %>%
 
 ### Estimating National Seafood Supply
 
-**Talk about FAO consumptions rates per country. I believe the WHO also has a simliar study. Also describe the table...**
+We applied the previous methodology to estimate the national seafood supply of Brazil, Chile and Peru using international data. More specific, we used the FAO capture and trade data combined with the IHC and DHC information available from Cashion et al (2018). Names in the FAO-trade data were standarized as possible to mach the categories in the catch and consumption data. Results suggest that Brazil main group destined to food is tilapia, Chile is salmon and Peru anchoveta (**Table x**). However, as discussed below (see each country's section) these results might not represent the main food sources as regional dynamics (e.g. subsistance fishing, fishers interactions) might not be captured by international data sources.
+
 
 ```{r R_Seafood_Consmption, eval = T, echo = F}
 
@@ -883,24 +920,26 @@ Data %>%
   top_n(n = 5, wt = `National Seafood Supply`) %>%
   mutate_if(is.numeric,round) %>% 
   arrange(Country,desc(`National Seafood Supply`)) %>% 
-  select(-Warning) #%>% 
-  # kable("latex", booktabs = T,
-  #       caption = "Top 5 species (or species groups) contributing to the National Seafood Supply of Brazil, Chile and Peru. Data from FAO and SAU",
-  #       format.args = list(big.mark = ","),
-  #       digits = 1) %>%
-  # kable_styling(full_width = F) %>%
-  # column_spec(2, width = "13em") %>% #wraps text in column2
-  # column_spec(3:6, width = "6em") %>% 
+  select(-Warning) %>% 
+  kable("latex", booktabs = T,
+        caption = "Top 5 species (or species groups) contributing to the National Seafood Supply of Brazil, Chile and Peru. Data from FAO and SAU",
+        format.args = list(big.mark = ","),
+        digits = 1) %>%
+  kable_styling(full_width = F) %>%
+  column_spec(2, width = "13em") %>% #wraps text in column2
+  column_spec(3:6, width = "6em") ##%>%
+  # kable()
 
 ```
 
+\clearpage
 
 ### Estimating National Economic Participation
 
 In terms of landing values Brazil's most prolific fishery in 2014 was *Umbrina canosai*, a croaker fished in the southern part of the country. For Chile, the most valuable fishery was *Engraulis ringens*, Peruvian anchoveta. Finally, Peru most valuable fishery in 2014 was the Peruvian scallop *Argopecten purpuratus*.
 
 
-```{r SAU_Landings_Value, eval = T, echo = F, warning =F, message = F, fig.height = 10, fig.width= 12, fig.cap= "Top 10 species by economic value from the SAU dataset. Red bars represent species not included as top 10 most landed species. White boxes represent the contribution of that speciest to the total country value"}
+```{r SAU_Landings_Value, eval = T, echo = F, warning =F, message = F, fig.height = 12, fig.width= 12, fig.cap= "Top 10 species by economic value from the SAU dataset. Red bars represent species not included as top 10 most landed species. White boxes represent the contribution of that speciest to the total country value"}
 
 ### Plot of Landing value
 
@@ -911,6 +950,8 @@ SAU_Prop_V <- SAU_Prop %>%
 Prop_Total_V <- Prop_Total %>%
   filter(Variable == "Landings_Value") %>% 
   mutate_if(is.numeric,round,0)
+
+SAU_Prop_V$scientific_name <- gsub("n/"," ", SAU_Prop_V$scientific_name)
 
 ggplot() +
   geom_bar(data = SAU_Prop_V, # Catch and value data
@@ -959,12 +1000,12 @@ ggplot() +
 ```
 
 
-Trade is an importat component of fisheries. From the countries analyzed Brazil was the only country to have a net import of fish. Brazil spends more money importing fish than what it makes from producing it and exporting that production. In the other hand, both Chile and Peru have positive surplus from their fisheries and commerce activities being Chile the most "*profitable*" country.
+Trade is an important component of fisheries. From the countries analyzed Brazil was the only country to have a net import of fish. Brazil spends more money importing fish than what it makes from producing it and exporting that production. In the other hand, both Chile and Peru have positive surplus from their fisheries and commerce activities being Chile the most "*profitable*" country.
 
 ```{r Exports_Per_Country, eval = T, echo = F, warning =F, message = F}
 
-names(FAO_USD)
-unique(FAO_USD$Year)
+# names(FAO_USD)
+# unique(FAO_USD$Year)
 
 ## Totals 
 
@@ -992,18 +1033,20 @@ FAO_USD %>%
   top_n(n = 5, wt = Net_Trade) %>% 
   rename(Category = MatchName) %>% 
   bind_rows(Total_Trade) %>% 
-  arrange(Country,desc(Net_Trade)) 
-  mutate_if(is.numeric,funs = funs(. * 1000))
-  mutate_each(funs(.*deflator), starts_with("inc"))
-  kable(
-    caption = "Summary of results. Database used: SOFIA-FAO. Thousand USD",
-    format.args = list(big.mark = ","),
-    digits = 1
-  ) 
+  arrange(Country,desc(Net_Trade)) %>% 
+  # mutate_if(is.numeric,funs = funs(. * 1000))
+  # mutate_each(funs(.*deflator), starts_with("inc"))
+  # kable(
+  #   caption = "Summary of results. Database used: SOFIA-FAO. Thousand USD",
+  #   format.args = list(big.mark = ","),
+  #   digits = 1
+  # ) 
+  kable()
 
 
 ```
 
+\clearpage
 
 ## Results Brazil
 
@@ -1040,9 +1083,9 @@ Brasil_Data <- B_Files %>% # read in all the files, appending the path before th
 
 As previously mentioned, there are no national-level fisheries statistics data in Brazil since 2008. Therefore, the country-wide assessment was only possible using the SAU and FAO datasets. While these datasets provide information regarding landings by species, it is worth mentioning that they are far from realistic. In our meeting with Dr. Fabio Hazin, he pointed out that data from FAO on Brazilian fisheries is mostly extrapolated as-is from production in previous years, were reliability was already questionable. 
 
-According to both the FAO and SAU data, Brazil's fisheries capture has been declining since 2012 as opposite to the increasing aquaculture production. The SAU database accounts for unreported and unregulated catches in Brazil [@REF] so it estimates around 50 thousand tonnes more captures than FAO. These captures are importan since they are mainly believed to be explited by the artisanal sector, hence, contributing directly to food security. As pattern that diferes in Brazil from the other countries is the overall dominance of inports over exports (**Table xxx**).
+According to both the FAO and SAU data, Brazil's fisheries capture has been declining since 2012 as opposite to the increasing aquaculture production. The SAU database accounts for unreported and unregulated catches in Brazil [@REF] so it estimates around 50 thousand tonnes more captures than FAO. These captures are important since they are mainly believed to be exploited by the artisanal sector, hence, contributing directly to food security. As pattern that differs in Brazil from the other countries is the overall dominance of imports over exports (**Table xxx**).
 
-```{r Brazil_Totals, eval=T,echo=F}
+```{r Brazil_Totals, eval=F,echo=F}
 
 # names(SAU_Database)
 # unique(SAU_Database$year)
@@ -1053,7 +1096,8 @@ SAU2010 <- SAU_Database %>%
   filter(Reporter == "Brazil",
          year >= 2012, #SAu database goes back to 1951
          Variable == "Total_tonnes") %>% 
-  group_by(Year = year) %>% 
+  rename(Year = year) %>% 
+  group_by(Year) %>% 
   summarise(SAU_Capture = round(sum(Value,na.rm=T)/1000,0)) # Thosand tones
 
 # Estimating all variables from the FAO database
@@ -1067,6 +1111,7 @@ International_D %>%
   ) %>%
   ungroup() %>% 
   tidyr::spread(Variable,Totals) %>% 
+  select(-Year) %>% 
   mutate(Year = seq(2010,2016)) %>% 
   filter(Year >= 2012) %>% 
   left_join(SAU2010,
@@ -1078,15 +1123,16 @@ International_D %>%
     Capture,
     "SAU Capture" = SAU_Capture,
     everything()
-  )
+  ) %>% 
   kable(
-    caption = "Summary of results for Brazil. Database used: SOFIA-FAO and SAU. Exploited species in quantity, other variables represent thousand tones",
-    format.args = list(big.mark = ",")
-  ) 
+  #   caption = "Summary of results for Brazil. Database used: SOFIA-FAO and SAU. Exploited species in quantity, other variables represent thousand tones",
+  #   format.args = list(big.mark = ",")
+  # ) 
+  kable()
 
 ```
 
-According to the SAU database *Macrodon ancylodon*,*Micropogonias furnieri*,*Sardinella brasiliensis"*,*Umbrina canosai*, and Ray fishes (*Baitoidea*) are the most landed fish between 2010 and 2014 (**Figure xxx**). Due to the importance of these fish, it is very likeley that these fish are consumed in the country representing an important source of food. 
+According to the SAU database *Macrodon ancylodon*,*Micropogonias furnieri*,*Sardinella brasiliensis"*,*Umbrina canosai*, and Ray fishes (*Baitoidea*) are the most landed fish between 2010 and 2014 (**Figure xxx**). Due to the importance of these fish, it is very likely that these fish are consumed in the country representing an important source of food. 
 
 ```{r Brazil_Landings, eval=T, echo=F, fig.height=9,fig.width=9, fig.cap="Top 5 most landed groups in Brazil."}
 
@@ -1148,10 +1194,10 @@ P1 <- SAU_Database %>%
                     ) +
   theme(
     legend.key = element_rect(size = 20),
-    legend.key.width =unit(4,"line"),
+    legend.key.width =unit(2,"line"),
     legend.justification = "center"
   ) +
-  guides(fill = guide_legend(nrow = 1, byrow = TRUE))
+  guides(fill = guide_legend(nrow = 2, byrow = TRUE))
 
 P2 <- SAU_Database %>%
   filter(
@@ -1231,7 +1277,7 @@ Domestic consumption of fish and seafood in Brazil is estimated to be around 10 
 Despite large potential for seafood production from both capture fisheries and aquaculture, Brazil imports large quantities of seafood for domestic consumption. In 2017, Brazil imported more than 380 thousand tonnes of fish and seafood products, while exporting less than 10% of that value (**Figure xx**). This shows that local production is not meeting seafood demand in the country and increased national production, especially from aquaculture, has great potential to fill this gap.
 
 
-```{r B_Trade, eval = T, echo = F, warning =F, message = F, fig.height=4, fig.width=5, fig.cap="Seafood and fish imports and exports from Brazil between 2014 to 2017 (Source: MDIC)"}
+```{r B_Trade, eval = T, echo = F, warning =F, message = F, fig.height=3, fig.width=4, fig.cap="Seafood and fish imports and exports from Brazil between 2014 to 2017 (Source: MDIC)"}
 
 #MDIC
 
@@ -1254,7 +1300,7 @@ Brasil_Data[[1]] %>%
 
 ```
 
-Fish and seafood import data shows that the main imported species in 2017 was the sardine followed by salmon, catfish fillet (pagasius) and hake fillet (**Table xxx**). There was a major increase in the import of sardine in the last two years, from 17 thousand tonnes imported in 2014 to 90 thousand tonnes in 2017. This increase is mainly result of the decline in sardine catches from the industrial fleet. According to information from research developed about this fishery, about 100 thousand tonnes of sardine was landed in 2014 followed by a decline to about 20 thousand tonnes in 2017 (Pincinato and Asche 2018). According to the authors, this decline is mainly because of environmental variability in the south of Brazil and "El Niño" events that occurred during that period. Thus, Brazilian sardine and imports form a fully integrated market, which maintains a steady supply of sardines to canary industries year-round.
+Fish and seafood import data shows that the main imported species in 2017 was the sardine followed by salmon, catfish fillet (*paganism*) and hake fillet (**Table xxx**). There was a major increase in the import of sardine in the last two years, from 17 thousand tonnes imported in 2014 to 90 thousand tonnes in 2017. This increase is mainly result of the decline in sardine catches from the industrial fleet. According to information from research developed about this fishery, about 100 thousand tonnes of sardine was landed in 2014 followed by a decline to about 20 thousand tonnes in 2017 (Pincinato and Asche 2018). According to the authors, this decline is mainly because of environmental variability in the south of Brazil and "El Niño" events that occurred during that period. Thus, Brazilian sardine and imports form a fully integrated market, which maintains a steady supply of sardines to canary industries year-round.
 
 ```{r B_Imports, eval = T, echo = F, warning =F, message = F}
 
@@ -1275,12 +1321,13 @@ Brasil_Data [[1]] %>%
     Product = c("Sardines","Atlantic and danube salmon","Catfishes","Hake and Abrotea","Misc. Fish (excl. herrings, cod, anchovies)","Alaskan hake","Dogfish and other sharks","Misc. Fish","Cods")
   ) %>% 
     kable(
-        caption = "Main species imported in 2017, Brazil (Source, MDIC)", 
+        caption = "Main species imported in 2017, Brazil (Source, MDIC)",
         booktabs = T,
         format.args = list(big.mark = ",")
-        ) %>%
-  kable_styling(position = "center")
+        ) #%>%
+  # kable_styling(position = "center") %>%
   # kable_styling(latex_options = c("striped", "hold_position"))
+  
   
 
 ```
@@ -1308,12 +1355,15 @@ Brasil_Data[[2]] %>%
         caption = "Main species commercialized in CEAGESP market, Sao Paulo, Brazil in 2017 (Source: CEAGESP)", 
         booktabs = T,
         format.args = list(big.mark = ",")
-        ) %>%
-  kable_styling(position = "center")
+        ) #%>%
+  # kable_styling(position = "center")
   # kable_styling(latex_options = c("striped", "hold_position"))
 
 
 ```
+
+
+\clearpage
 
 Data from SIGSIF shows that the main species processed in the country in 2017 was tilapia, followed by tambaqui (*Colossoma macropomum*), sardine, croaker, tambatinga (hybrid aquaculture species from the Amazon), catfish, salmon and tuna (**Table x**). From the top 10 species processed in the country, 5 are from aquaculture production and 5 are from wild caught fisheries. A total of 360k tonnes of fish and seafood products were commercialized by 472 processing and distribution companies. This volume corresponded to about 20% of all estimated seafood consumed in the country (1.8b tonnes).
 
@@ -1474,7 +1524,13 @@ as_ggplot(Map_grid) + # transform to a ggplot
 Figure X shows the regional patterns of the data from seafood processing industries (SIGSIF). The map on the left (producers) shows the quantity of fish and seafood products that entered industries directly from producers (fisheries and aquaculture). This map provides insights on the main producing states and location of seafood industries. According to this map, the Rio de Janeiro state has the largest density of seafood industries in the country. The map on the right (commerce) shows the quantity of fish and seafood products received from other seafood industries. In other words, the map shows the exchange of products between seafood industries. Because the map shows the receiving sates, it provides important insights on the consumption of seafood products per region. It is important to highlight that Santa Catarina state shows high quantity of fish and seafood products received, but not necessarily means there is high consumption. This happens because Santa Catarina State is where most of the sardine and tuna canaries are located. Such canned products are produced in these states and then distributed and consumed all over the country.  
 
 
-![Regional patterns of the data from seafood processing industries (SIGSIF). Logarithmic scale](Report_Figures/SIGIF_Prod.png)
+<!-- ![Regional patterns of the data from seafood processing industries (SIGSIF). Logarithmic scale](Report_Figures/SIGIF_Prod.png) -->
+
+```{r Methods_Image, fig.width=5, fig.height=5, echo=FALSE, fig.align= "center", fig.cap="Fig 1. Methodological framework to estimate national food consumption, employment, and revenue from fisheries."}
+
+img <- readPNG("Report_Figures/SIGIF_Prod.png")
+ grid.raster(img)
+```
 
 Consumption of fish and seafood products in Brazil increases significantly during religious dates. Data from SEAGESP suggests that seafood consumption increases during Easter, when other types of meat are not consumed in respect of Christian tradition. For this reason, there is a significant peak in fish and seafood consumption during Easter week (**Figure xxx**).
 
@@ -1705,6 +1761,8 @@ Brasil_Data[[2]] %>%
 
 The aquaculture industry in Brazil has been growing rapidly. According the Brazilian fish farming association, the aquaculture industry is the fastest growing food production sector in the country [@PeixeBr2018]. Brazil has some the largest potential for freshwater aquaculture in the world and will become a significant producer of fish in the next years. Fish farming has been growing around 8% per year in recent years, with a large increase in farming of native fish, especially in the north and middle-west regions. Additionally, Brazil is the fourth largest producer of tilapia in the world, with rapidly growing industries in the south and northeast regions. Another important aquaculture industry in the country is shrimp farming in the northeast region, although it has not been growing the production in recent years. With the expansion of the aquaculture industry in the country, the domestic supply of seafood will increase thus increasing accessibility of fish and seafood product for Brazil's population. In the North region, farmed fish is already affecting the market and reducing prices. Today, a large portion of the fish consumed in the region is produced by aquaculture. Tilapia is already the second most commercialized species in the CEAGESP market in São Paulo and the top species processed by seafood companies in the country. Cachuma (or Tambaqui) is a native species farmed in the north and mid-west regions and is the second most processed fish by seafood industries in Brazil. Thus, aquaculture products are already an important source of seafood for Brazil and has the perspective to grow rapidly in the future.
 
+\clearpage
+
 ### Estimating National Economic Participation
 
 To respond to the economic question we put together several pieces of information from different sources to have an estimate of the importance of fisheries for employment in Brazil. Data from IBGE (2013) estimates that Brazil had about 500 thousand fishers throughout the country, with 90% from the small-scale sector and 10% from the industrial sector [@CamposandChaves2016]. Data from the extinct Ministry of Fisheries and Aquaculture (MPA) suggests there are many more fishers in Brazil **(Figure xxx)**. According to these data, there were about 900 thousand registered fishers in 2010 throughout the country, with 95% of the registered fishers from the small-scale sector **(MPA, 2013**). There is a large discrepancy between these two sources, which reiterates the uncertainty around estimates of the number of fishers in the country. Nonetheless, these numbers highlight the huge importance of the fisheries sector to employment in Brazil.
@@ -1733,7 +1791,7 @@ Most of the registered fishers in Brazil are from the North and Northeast region
 
 Industrial fisheries in Brazil employ only about 10% of the fishers and are responsible for about 30-50% of the fisheries production. The industrial sector in Brazil is mainly concentrated in the south of the country, especially in Santa Catarina state where the main industrial fisheries port is located (**Itajai port**). Landings data from Santa Catarina indicate that sardines are the most important species, followed by corvina and skipjack tuna (**Table X**). Another important industrial fisheries fleet is located in the mouth of the Amazon river, in the north of Brazil. The main resource captured in the region is the catfish piramutaba (*Brachyplatystoma vaillantii*), although there is no data available from this fleet. Therefore, the top fisheries by employment in the industrial sector are represented in the landings data from the Santa Catarina state and the piramutaba fishery in the north.
 
-```{r Brazil_SC, eval = T, echo = F, warning =F, message = F}
+```{r Brazil_SC_T, eval = T, echo = F, warning =F, message = F}
 
 # Santa_Catarina
 ###Graph main species - production
@@ -1757,9 +1815,9 @@ Brasil_Data[[7]] %>%
 
 ```
 
-In the industrial sector, the majority of the catch is processed by large companies to be distributed in supermarkets and restaurants all over the country. According to data published by the Seafood Industry Association (ABIPESCA), the seafood industry employs about 8 thousand direct employments and 30 thousand indirect employments. Data from the seafood companies (SIGSIF) indicates that the most important industrial fisheries are sardines, croacker, tuna and piramutaba catfish (**Table xxx**). Thus, the industrial sector employs relatively less people per ton of captured fish compared to the artisanal sector. 
+In the industrial sector, the majority of the catch is processed by large companies to be distributed in supermarkets and restaurants all over the country. According to data published by the Seafood Industry Association (ABIPESCA), the seafood industry employs about 8 thousand direct employments and 30 thousand indirect employments. Data from the seafood companies (SIGSIF) indicates that the most important industrial fisheries are sardines, croacker, tuna and piramutaba catfish (**Table xxx**). Thus, the industrial sector employs relatively less people per tonne of captured fish compared to the artisanal sector. 
 
-```{r SIGIF, eval = T, echo = F, warning =F, message = F}
+```{r SIGIF_T, eval = T, echo = F, warning =F, message = F}
 
 ### Rank main species comercialized 
 # SIGIF
@@ -1791,7 +1849,7 @@ A report by Nielsen analytic (Nielsen, 2018) shows that the canned sardine marke
 Data from SEAGESP market have important information on the value of seafood in the country. This database contains quantity and price information for all seafood products. Products sold in the market are both from industrial and artisanal sectors. **Table xxx** shows the main species ranked by value sold in the CEAGESP market in 2017. The most valuable species in this year were sardines followed by sharks, croaker, tuna and acoupa weakfish (**Table x**). 
 Sharks are not distinguished by species and are captured by both artisanal and industrial fleets. Sardines, croakers and tunas are caught mainly by the industrial fleet, while the acoupa weakfish is mainly caught by artisanal fisheries from the north and northeast regions of Brazil. Snook is also one of the top 10 species sold in the market and mainly captured by the artisanal sector. It is one of the species with greater price in the market.
 
-```{r CEAGESP, eval = T, echo = F, warning =F, message = F}
+```{r CEAGESP_T, eval = T, echo = F, warning =F, message = F}
 
 ###Graph main species - production
 
@@ -1866,13 +1924,13 @@ Brasil_Data[[1]] %>%
 
 ```
 
+\clearpage
+
 ## Results Chile
 
 ### Fisheries Context
 
-Landing and harvest data was obtained through the National Service of Fisheries of Chile. In general, wild caught fish has almost double the tons of the amount harvested in the last five years. 
-
-```{r importing and wrangling data to create table1, eval = T, echo=FALSE, include=FALSE}
+```{r C_importing_data, eval = T, echo=FALSE, include=FALSE}
 
 ##Total landig data
 
@@ -1920,7 +1978,7 @@ exports_total_yr_IFOP <- data.frame(year, exports)
 
 ```
 
-```{r Chile_Totals, eval = T, echo=FALSE}
+```{r C_Totals_P, eval = T, echo=FALSE}
 ## Landing, harvest and exports data in one dataframe
 ##Totals landings, harvest and exports (tons) per year (2013-2017)
 
@@ -1950,9 +2008,50 @@ landings_total_yr %>%
 # kable_styling(latex_options = c("hold_position"))
 ```
 
-According to SERNAPESCA information in the last five years the most important fisheries in terms of landings have been Anchovy (*Engraulis ringens*), Chilean jack mackerel (*Trachurus murphy*) and Araucanian herring (*Strangomera bentincki*) (**Figure xx**), all three of them mainly catch by the industrial fleet. This pelagic fishes are mainly used to produce fish meal. Other species that contribute importantly to industrial catch are merluza comun, merluza del sur, merluza de tres aletas, cod, merluza de cola, and langostinos amarillo and colorado.
+According to SERNAPESCA information in the last five years the most important fisheries in terms of landings have been Anchovy (*Engraulis ringens*), Chilean jack mackerel (*Trachurus murphy*) and Araucanian herring (*Strangomera bentincki*) (**Figure xx**), all three of them mainly catch by the industrial fleet. This pelagic fishes are mainly used to produce fish meal. Other species that contribute importantly to industrial catch are merluza comun, merluza del sur, merluza de tres aletas, cod, merluza de cola, and langostinos amarillo and colorado (**S Table x**).
 
-```{r top_fisheries_catch, eval = T, echo= FALSE, warning=FALSE,fig.height=9, fig.width= 9}
+```{r C_Landings_T, eval=F, echo = FALSE, message= FALSE, warning= FALSE}
+# importing cleaned landings dataset and aggregating at the national level
+landings <- read_csv("clean_databases/Chile/landings_SERNAPESCA.csv")
+# replacing NAs to zero
+landings[is.na(landings)] <- as.numeric(0)
+landings <- landings %>% 
+  filter(region != "national" & international_waters == 0) %>% 
+  select(-month) %>% 
+  mutate(species = ifelse(species == 'HUIRO NEGRO O CHASCON', 'CHASCON O HUIRO NEGRO', species))
+  
+#  aggregating species over the years to get the 10 most common 
+most_landed<- landings %>% 
+  group_by(species) %>% 
+  summarise(tons = sum(tons)) %>% 
+  arrange(desc(tons)) %>% 
+  top_n(10, tons) %>% 
+  select(species)
+# calculating SD in tons for each species
+landings_SD <- landings %>% 
+  group_by(species) %>% 
+  summarise(SD= round(sd(tons, na.rm= TRUE), 0), Mean = round(mean(tons)),0)
+# making table
+landings_year_main <- landings %>%
+  group_by(year, species) %>% 
+  summarise(tons = sum(tons)) %>% 
+  right_join(most_landed) %>% 
+  spread(key= year, value= tons) %>% 
+  left_join(landings_SD)
+landings_year_main[is.na(landings_year_main)]<- 0
+# including scientific name. Ojo Lessonia Nigrensis aparece como dos especies distintas. 
+species_match <- read_csv("clean_databases/Chile/species_match.csv") %>% 
+  mutate(species = especie_SERNAPESCA) 
+landings_year_main <- landings_year_main %>% 
+  left_join(species_match) %>% 
+  select(sc_name, '2013', '2014', '2015', '2016', '2017', 'Mean', 'SD') %>% 
+  arrange(desc(Mean))
+knitr::kable(landings_year_main, col.names = c('Species', '2013', '2014', '2015', '2016', '2017', 'Mean', 'SD'), format.args = list(decimal.mark = '.', big.mark = ","),"latex", booktabs = T, caption= 'Landings (in tons) between 2013 and 2017 for most common species landed in Chile') #%>% 
+  # kable_styling(latex_options = 'hold_position')
+ 
+```
+
+```{r C_top_Fish_catch_P, eval = T, echo= FALSE, warning=FALSE,fig.height=9, fig.width= 9, fig.cap="Top 5 groups landed in Chile"}
 
 ## Landings
 ## Totals
@@ -2003,7 +2102,7 @@ P1 <-landing_reg_sp_total  %>%
                     ) +
   theme(
     legend.key = element_rect(size = 20),
-    legend.key.width =unit(4,"line"),
+    legend.key.width =unit(2,"line"),
     legend.justification = "center"
   ) +
   guides(fill = guide_legend(nrow = 1, byrow = TRUE))
@@ -2067,12 +2166,9 @@ as_ggplot(gt) + # transform to a ggplot
 
 ```
 
+In terms of aquaculture production the main species harvested in the last 5 years have been: Atlantic salmon (*Salmo salar*), mussels (*Mytilus chilensis*) and coho salmon (*Oncorhynchus kisutch*) in descending order (**Figure x**), among others (**S Table x**). 
 
-In terms of aquaculture production the main species harvested in the last 5 years have been: Atlantic salmon (*Salmo salar*), mussels (*Mytilus chilensis*) and coho salmon (*Oncorhynchus kisutch*) in descending order (Figure x). 
-
-
-
-```{r top_fisheries_aqua, eval = T, echo= FALSE, warning=FALSE,fig.height=9, fig.width= 9}
+```{r C_top_Fish_aqua_P, eval = T, echo= FALSE, warning=FALSE,fig.height=9, fig.width= 9, fig.cap="Top 5 groups produced in aquaculture in Chile"}
 
 
 ##Harvest
@@ -2156,7 +2252,7 @@ P1 <- aqua_reg_sp_total  %>%
                     ) +
   theme(
     legend.key = element_rect(size = 20),
-    legend.key.width =unit(4,"line"),
+    legend.key.width =unit(2,"line"),
     legend.justification = "center"
   ) +
   guides(fill = guide_legend(nrow = 1, byrow = TRUE))
@@ -2221,19 +2317,178 @@ as_ggplot(gt) + # transform to a ggplot
 
 ### Estimating National Seafood Supply
 
+Chile is considered one of the main countries in fishery production worldwide (@fao_estado_2016), however several reports and studies suggest the Chilean population does not consume as many marine products (@gonzales_solo_2018). On average, people consume 10-13 kg a year, compared to the 20 kg a year recommended by the FAO (2016). Looking into what type of seafood the Chilean population consumes, a study done in 2012 shows that 60% of the seafood consume are pelagic fishes, 12% are mollusk and 2% are crustaceans (@villena_marcelo_diagnostico_2012). To estimate the NSS in Chile we combined data from Chilean Customs (ADUANAS Chile) and the National Service of Fisheries and Aquaculture (SERNAPESCA) to generate two main databases on the number of tons that are cached, harvested in aquaculture, exported and imported for all marine species in Chile.
+
+<!-- The specific data-sets we used are: -->
+
+<!-- - Catches: annual tonnes per marine species landed in each region (SERNAPESCA, 2013-2017). -->
+<!-- - Species contribution to different types of products: annual tons per marine species used in each region to elaborate each type of product (i.e. fish meal, oil, canned products, freeze products, dried products, smoked products, agar, col-agar, carragenina) (SERNAPESCA, 2012-2016). -->
+<!-- - Aquaculture: annual tonnes per species harvest from aquaculture centers in each region (SERNAPESCA, 2012-2017). -->
+<!-- - Exports: quantities of all the products exported from each Chilean region to other countries. (ADUANAS, 2013-2018). -->
+<!-- - Imports: quantities of all marine products imported into the country. (ADUANAS, 2013-2018) -->
+
+
+
+<!-- Each product in the original exports and imports data-sets is identified through an id number that matches the name of the product in a code known as the _Arancel Aduanero_. This document was only available to us in .pdf format. Thus, to identified the id of products containing domestically fished and harvest marine species we searched for the names of the fished and harvested species listed by SERNAPESCA in the document with the _Arancel Aduanero_. We searched for all the ids that refer to the species scientific name, common name or genus name as listed by SERNAPESCA and aggregated them under the species name. -->
+
+<!-- We included a column that indicates the number of tonnes of each species that were used in products that are not directly ingested by humans. For this, we assumed that the following categories of products are not for direct human consumption: fish meal, col-agar, agar, carragenina, oil and alginato. Finally, to aggregate all the data at comparable levels we generated broad categories of species based on the imports-data set, which is the one that has less detail at the species level. -->
+
+<!-- Because imports-data is not available at the regional level we generate two databases, (i) one describing tons landed, harvested, exported and imported at the national level per groups of species and (ii) one containing tons landed, harvested and exported at the regional level per species. -->
+
+Our preliminary results for this scope allows us to identify main groups of seafood consumed by the Chilean population as well as identify mayor data gaps and areas where we can still improve our methodology. We first analyzed the five main species that contribute to the four main components of the model: Landings (minus tonnes destined to indirect human consumption), aquaculture, and imports (minus exports).
+
+The main groups of species that go to human consumption in Chile (either domestic or abroad) are jack mackerel (*Trachurus murphy*), hake (*Merluccius spp*) , jumbo squid (*Trachurus murphyi*), crabs (*Cancer spp*) and algae. Through out the years the pattern is more or less constant, except for 2015. One possible explanation for this difference is that there is no data for how much fish (e.g. herrings) are use to produce oil for this year. In all other years, oil production is one of the main products that we account as no direct human consumption. Given this data gap, we asked SERNAPESCA to confirm that there is no data for fish oil production for 2015 and if that is the case we will gap-fill that information by doing a linear regression with the available data (years 2013, 2014, 2016, 2017).
+
+```{r C_Top_Fish_P, echo=FALSE, fig.width=4, fig.height=4, fig.cap= 'Main fisheries groups according to landings discounting tonnes that are not use for human consumption'}
+
+## Import database
+complete_database1 <- read.csv("clean_databases/Chile/model_df_by_group.csv")
+## Identifie top 5 for catch discuting the tonnes that are for no humna consumption 
+top5_catch_for_hc <- complete_database1%>%
+  mutate(catch_no_hc = catch - no_hc) %>% 
+  arrange(year, desc(catch_no_hc)) %>% 
+  group_by(year) %>% 
+  top_n(5, catch_no_hc) %>% 
+  data.frame()
+top5_catch_for_hc_fig <- 
+  ggplot(data = top5_catch_for_hc, aes(x = year, y = catch_no_hc/1000, fill = group)) +
+    geom_bar(stat= "identity")+
+    scale_y_continuous(expand = c(0, 0)) +
+    labs(y="Landings for human consumption \n (Thousand Tonnes)", x="Year")+
+    theme_bw()+
+    theme(axis.line = element_line(colour = "black"),
+        axis.text=element_text(size=11),
+        axis.title=element_text(size=12,face="bold"))+
+  scale_fill_manual(values = c(wes_palette("Darjeeling1", 5, type = "discrete"),wes_palette("Darjeeling2", 3, type = "discrete")))+
+  ggtheme_plot()
+
+top5_catch_for_hc_fig
+```
+
+Aquaculture activity in Chile is dominated by the production of salmon (**Figure x**). Other groups of species harvested in Chile are mussels, trout, algae and scallops. However the production of these four other groups is relatively small. Quantities and main groups of species harvested in Chile are relatively constant in the last 5 years. 
+
+```{r C_Top_Aqua_P, echo=FALSE, fig.cap= 'Main fisheries groups based on aquaculture harvest'}
+
+## Identify top 5 fieheries in aquaculture
+top5_aqua_per_yr <- complete_database1%>%
+  arrange(year, desc(aquaculture)) %>% 
+  group_by(year) %>% 
+  top_n(5, aquaculture)
+top5_aqua <- 
+  ggplot(data = top5_aqua_per_yr, aes(x = year, y = aquaculture, fill = group)) + 
+    geom_bar(stat= "identity")+
+    scale_y_continuous(expand = c(0, 0)) +
+    labs(y="Aquaculture harvest (Tonnes)", x="Year")+
+    theme_bw()+
+    theme(axis.line = element_line(colour = "black"),
+        axis.text=element_text(size=11),
+        axis.title=element_text(size=12,face="bold"))+
+  scale_fill_manual(values = wes_palette("Darjeeling1", 5, type = "discrete"))+
+  ggtheme_plot()
+top5_aqua
+```
+
+The current data shows that Chilean exports are dominated by pelagic fishes (Salmon and jack mackerel, **Figure x**), but we know that salmon should have a larger contribution respect to jack mackerel, therefore we need to revise our methods. Most of the seafood that Chile imports are also pelagic fishes mainly tuna (**Figure x**).
+
+```{r C_Trade_P, echo=FALSE, fig.cap= 'Main fisheries groups based on seafood that Chile imports and exports', fig.height=5, fig.width=10}
+##Identify top 5 exported products
+top5_export_per_yr <- complete_database1%>%
+  arrange(year, desc(exports)) %>% 
+  group_by(year) %>% 
+  top_n(5, exports)
+top5_export <- 
+  ggplot(data = top5_export_per_yr, aes(x = year, y = exports/1000, fill = group)) + 
+    geom_bar(stat= "identity")+
+    scale_y_continuous(expand = c(0, 0)) +
+    labs(y="Exports (ThousandTonnes)", x="Year")+
+  scale_fill_manual(values = c(wes_palette("Darjeeling1", 5, type = "discrete"),wes_palette("Darjeeling2", 3, type = "discrete")))+
+  ggtheme_plot()+
+  theme(
+    legend.position = "bottom"
+  )
+
+##Identify top 5 imported products
+top5_import_per_yr <- complete_database1%>%
+  arrange(year, desc(imports)) %>% 
+  group_by(year) %>% 
+  top_n(5, imports)
+top5_import <- 
+  ggplot(data = top5_import_per_yr, aes(x = year, y = imports/1000, fill = group)) + 
+    geom_bar(stat= "identity")+
+    scale_y_continuous(expand = c(0, 0)) +
+    labs(y="Imports (Thousand Tonnes)", x="Year")+
+  scale_fill_manual(values = c(wes_palette("Darjeeling1", 5, type = "discrete"),wes_palette("Darjeeling2", 4, type = "discrete")))+
+  ggtheme_plot() +
+  theme(
+    legend.position = "bottom"
+  )
+
+gt <- arrangeGrob(top5_export,
+                  top5_import,
+                  ncol = 2#,
+                  # nrow = 2,
+                  # left ="Thousand Tons"
+                  )
+
+as_ggplot(gt) + # transform to a ggplot
+  draw_plot_label(
+    label = c("Exports", "Imports"),
+    size = 15,
+    x = c(-0, 0.53),
+    y = c(1, 1)
+  )
+
+```
+
+
+According to our model, salmon would be the main fish consumed by the Chilean population (**Figure x**). However, that does not align to our internal conversations with fishers and local consumers which perceive that salmon is mainly exported and the main pelagic fish consumed by the population could be the hake. Furthermore, according to @observatorio_laboral_nacional_reporte_nodate, 66% of Chilean exports of sea products are salmon. Even though, our data shows salmon as one of the five main species exported by the country, we do not see a major difference with jack mackerel (*Trachurus murphy*) as we expected. This mean that our data is underestimating exports of salmon. One possible explanation for this issue is that through the process of matching exports' ids with the name of each product we missed salmon products therefore this products are currently not being considered within the exports values. We are currently revising our methods in order to incorporate all marine products that are not currently being accounted. We also requested information about the destination of harvest products to SERNAPESCA to have a second source of information to compare the Chilean customs data. 
+
+```{r, echo=FALSE, include=FALSE}
+##MODEL:Landings + aqua - no_hc - export + import
+top5_total <- complete_database1%>%
+  arrange(year, desc(total)) %>% 
+  group_by(year) %>% 
+  top_n(5, total) %>% 
+  data.frame()
+top5_total_fig <- 
+  ggplot(data = top5_total, aes(x = year, y = total/1000, fill = group)) + 
+    geom_bar(stat= "identity")+
+    scale_y_continuous(expand = c(0, 0)) +
+    labs(y="Total domestic consumption \n(Thousand Tonnes)", x="Year")+
+  scale_fill_manual(values = c(wes_palette("Darjeeling1", 5, type = "discrete"),wes_palette("Darjeeling2", 4, type = "discrete")))+
+  ggtheme_plot()
+top5_total_fig
+```
+
+We run the model not considering salmon (**Figure x**) to have a better representation of domestic seafood consumption in Chile. As mention above, there is a data gap on 2015 no human consumption products, this explains the changes compared to all other years. But also allows us to visualize that most of the demersal fisheries (other fishes and herrings) catches are mainly used to produce products not for direct human consumption (e.g.: fish meal, fish oil).
+
+```{r, echo=FALSE, include=FALSE}
+
+##MODEL NO SALMON:Landings + aqua - no_hc - export + import
+top5_total_no_sal <- complete_database1%>%
+  filter(group != "salmon") %>% 
+  arrange(year, desc(total)) %>% 
+  group_by(year) %>% 
+  top_n(5, total) %>% 
+  data.frame()
+top5_total_no_sal_fig <- 
+  ggplot(data = top5_total_no_sal, aes(x = year, y = total/1000, fill = group)) + 
+    geom_bar(stat= "identity")+
+    scale_y_continuous(expand = c(0, 0)) +
+    labs(y="Total domestic consumption \n(Thousand Tonnes)", x="Year")+
+  scale_fill_manual(values = c(wes_palette("Darjeeling1", 5, type = "discrete"),wes_palette("Darjeeling2", 3, type = "discrete")))+
+  ggtheme_plot()
+top5_total_no_sal_fig
+```
+
+
+These results show that domestic consumption is mainly dominated by algae, mussels, tuna and hake. There are two main things to remark on these results: (i) the high values on algae is probably due to our methodologies given that within our methods we did not include dry algae as a product not for human consumption. The rationale behind this decision was that subtracting dry algae from total landings would underestimate what ever is directly consumed by the population given that algae consumed by humans are mainly dry. However, we will re run our analysis discounting dry algae because most of the algae goes to the industry and only ~3% goes to human consumption @noauthor_incorporacion_2014. The second point we want to emphasis, is the tunas are within the main group of seafood consumed in Chile. However, tunas are one of the main imported species in the country, rather than species caught locally.
 
 ### Estimating National Economic Participation
 
-#### Artisanal sector
+Fishing activity is considered to be the economic sector that provides less direct employment in the country, relative to other sectors (@sense_reporte_2015). However, there is an estimate of 100 thousand people employed directly in the two extraction sectors in Chile, the artisanal and the industrial (**Fig x**). 
 
-By 2017, there were 80,056 artisanal fishers officially registered along with 11,819 vessels. 
-
-<!-- Although detailed, the RPA does not provide information on the specific species targeted by each fisher. Thus, we cannot determine the contribution of particular species to artisanal fishers livelihoods. Nonetheless, we can combine information from the RPA with other data to get estimates.  -->
-
-**Figure xxx** shows the number of fishers in each region that perform a particular activity based on the 2018 RPA for women (upper panel) and men. 
-<!-- Different activities are associated to different groups of species; fishers usually target pelagic and demersal species, divers target mostly benthic species, while gatherers tend to collect and harvest algae. This give us an idea of the groups of species that are more important in terms of employment in each region and for each gender. We see that in general, women mostly participate in the extraction of algae while men tend to rely on multiple group of species as sources of employment. -->
-
-```{r number of fishers in each activity,  eval = T, echo = FALSE, warning = F, fig.cap= 'Number of fishers participating in different activities in each Chilean region based RPA 2018, provided by SERNAPESCA. The upper panel refers to women while the panel below to men. A single fisher can be register under multiple activities.',fig.height=5,fig.width=6}
+```{r C_employment_gender,  eval = T, echo = FALSE, warning = F, fig.cap= 'Number of fishers participating in different activities in each Chilean region based RPA 2018, provided by SERNAPESCA. The upper panel refers to women while the panel below to men. A single fisher can be register under multiple activities.',fig.height=4,fig.width=5, fig.align="center"}
 
 # Importing national records of artisanal fisheres
 rpa <- read_excel("Chile/information/raw_databases/RPA_RPI_mano_obra.xlsx", sheet = "RPA PESCADORES", skip = 2, n_max = 138294) %>% 
@@ -2243,17 +2498,19 @@ rpa_activity <- rpa %>%
   select(region, 
          gender= Genero, 
          year,
-         Indistrial = ARMADOR, 
+         Industrial = ARMADOR, 
          Diver = BUZO,
          Collector = RECOLECTOR,
          Fisher = PESCADOR
          ) %>% 
   gather(activity, 
          practice, 
-         Indistrial:Fisher) %>% 
+         Industrial:Fisher) %>% 
   filter(practice == 'X') %>% 
   group_by(region, activity, gender) %>% 
   summarize(count = n())
+
+
 
 # Ploting by gender, activity and region 
 men_activities <- ggplot(filter(rpa_activity, gender == 'M'), aes(as.factor(region), count)) +   
@@ -2299,12 +2556,7 @@ as_ggplot(gt) + # transform to a ggplot
 
 ```
 
-The artisanal sector generates employment beyond the extraction stage. After extraction, most resources are directly sold by the fishers in commercial facilities near their landing points, some are sold to local restaurants 
-
-#### Industrial sector
-
-
-```{r importing Registro Pescadores Industriales, eval = T,  warning = F, echo = F}
+```{r C_industry, eval = T,  warning = F, echo = F}
 # Importing national records of industrial vessels
 rpi <- read_excel("Chile/information/raw_databases/RPA_RPI_mano_obra.xlsx", sheet = "RPI", skip = 2, n_max = 472)
 # Number of industrial vessels registered by 2018
@@ -2313,11 +2565,7 @@ number_ind_vessels <- length(unique(rpi$`RPI Nave`))
 number_ind_owners <- length(unique(rpi$`Nombre Armador`))
 ```
 
-For the industrial fishing sector, SERNAPESCA holds records only on the number of boats and its owners. There are currently `r number_ind_vessels` industrial vessels owned by `r number_ind_owners` different companies based on official registers. Estimates from SUBPESCA indicate that the overall operation of industrial vessels provide around 3,500 jobs nationwide. 
-
-Most of the catch from the industrial sector ends up going to processing facilities where it is transformed in products for domestic consumption, exportation or as supplies for the aquaculture industry. 
-
-```{r Importing data on jobs in production facilities, eval = T, echo = F}
+```{r C_jobs_facility, eval = T, echo = F}
 # Importing national records of job positions in processing facilities
 mano_obra_plantas <- read_excel("Chile/information/raw_databases/RPA_RPI_mano_obra.xlsx", sheet = "MANO DE OBRA", skip = 2, n_max = 48140)
 colnames(mano_obra_plantas) <- c('year', 'month', 'region', 'port', 'code', 'name', 'mo_perm_m', 'mo_perm_f', 'mo_temp_m', 'mo_temp_f', 'system')
@@ -2327,17 +2575,161 @@ number_job_planta <- mano_obra_plantas %>%
   summarise(mo_perm_m = max(mo_perm_m), mo_perm_f = max(mo_perm_f), mo_temp_m = max(mo_temp_m), mo_temp_f = max(mo_temp_f))
 ```
 
-In terms of processing SERNAPESCA holds records on the self-reported number of permanent and temporal jobs in each facility. There were 7,751 permanent job positions and another 1,233 temporal positions in processing facilities in 2017.
+
+The industrial sector involves all the fishing activities performed by vessels larger than 18 meters. SERNAPESCA keeps a record on each industrial vessels and its owner in the Industrial Fishing Record (RPI, acronym in Spanish). Currently, there are 475 industrial vessels and 164 vessel owners according to the RPI. SERNAPESCA estimates a total of 3,500 jobs generated directly by the industrial sector, through vessels operations (@subpesca_pesca_2018). 
+
+Most of the catch from the industrial sector ends up going to processing facilities where it is transformed in products for domestic consumption, exportation or as supplies for the aquaculture industry. In terms of processing SERNAPESCA holds records on the self-reported number of permanent and temporal jobs in each facility. There were 7,751 permanent job positions and another 1,233 temporal positions in processing facilities in 2017.
+
+The artisanal sector correspond to fishing activities performed by vessels equal or smaller than 18 meters in length and by harvesters in the inter-tidal zone (@subpesca_panorama_2018). Artisanal fishers and their vessels must be registered in the National Records of Artisanal Fishers (RPA, acronym in Spanish) in order to be allow to operate. The RPA register all artisanal fishers and lists the kind of species each one is allowed to extract in a given region. The number of unregistered fishers is low since being registered gives fishers access to potential benefits like subsidies or territorial users' rights for fishing. Based on the current RPA, there are around 89,000 artisanal fishers along with 12,700 vessels in Chile. Artisanal fishers are concentrated in the central south in the region of *Los Lagos*, which has the major number of registered fishers, followed by Bio Bio and Los Rios (@maturana_mujeres_2017). 
+
+We used the RPA (provided to us by SERNAPESCA, 2018) to compute the number of permits issued for different species in each region. We use this as a proxy of the contribution of specific fisheries to direct employment in the artisanal sector. This approach assumes that if a fisher holds a permit for a given species then, he or she targets that species. 
+
+To estimate the contribution of particular types of species to employment in processing facilities we use data on the number of employees in each marine processing facility in the country and the type of products they generate. Both data-sets are available at SERNAPESCA's website. We present our results in percent of jobs because one processing facility can generate more than one type of product but there is no way in which we can know what proportion of the workers are employed for a given product. Hence, we cannot know the number of workers working in specific products but we can have an idea of the relative importance of different products in number of jobs.
+
+The artisanal sector generates employment beyond the extraction stage as most resources are directly sold by fishers in commercial facilities near their landing points, and some are sold to local restaurants. At the national level the most targeted species in the artisanal sector are algae species like Luche (*Porphyra columbina*) and Pelillo (*Gracilaria spp.*). This is mainly driven by the high number of fishers in the region of *Los Lagos* (10) in where algae like these are important resources for artisanal fishers. The distribution of capture suggests that the north most targeted species are fish while to the south they are mostly algae and selfish (*Table x*).
+
+
+```{r C_rpa_per_species, message=FALSE, echo = FALSE, warning=FALSE}
+## Importing rpa per species (SERNAPESCA, 2018)
+### gets names of sheets
+rpa_list <- list.files('clean_databases/Chile', pattern= 'rpa_.*.csv', full.names = TRUE)
+## Rrad, wrangle and bind all y datasets
+species_match <- read_csv("clean_databases/Chile/species_match.csv") %>% 
+  mutate(species = especie_SERNAPESCA) 
+rpa_species <- rpa_list %>% 
+  map(read_delim,",", escape_double = FALSE, trim_ws = TRUE, col_names = c("species", "region"), skip =1) %>% 
+  reduce(rbind)
+  
+## Most important species in terms of  artisanal employment in the region
+most_species_permits <- rpa_species %>% 
+  group_by(species, region) %>% 
+  summarise(n = n()) %>% 
+  arrange(region, desc(n)) %>% 
+  group_by(region) %>% 
+  top_n(1, n) %>% 
+  left_join(species_match) %>% 
+  select(species,species, sc_name)
+  # data.frame() 
+knitr::kable(most_species_permits, col.names = c('Region', 'Most targeted species (Common name)', 'Most targeted species (Scientific name)'), format.args = list(decimal.mark = '.', big.mark = ","),"latex", booktabs = T, caption= 'Most targeted species by the artisanal sector in each region based on the number of permits issued by SERNAPESCA') #%>% 
+  # kable_styling(latex_options = 'hold_position')
+```
+
+
+Fisheries also support employment in the production facilities in which marine resources are processed to elaborate products for direct or indirect human use. There were around 740 facilities operating along the country in 2017 (data from SERNAPESCA, 2018). In this regard, the fishing industry is estimated to indirectly generate around 26,500 job positions at the national level (@subpesca_pesca_2018).
+
+Fish oil and fish meal are the two products generating more jobs in processing facilities. There was no data for fish meal facilities in 2016 we need to ask SERNAPESCA if this is due to lack of data collection or to the lack of production of fishing oil (probably the former option). The processing of frozen and, to a lesser extent, fresh and canned products are also important in terms of employment in the country. In 2017, the species that most contributed to fish oil and meal production were the Araucanian herring (*Strangomera bentincki*) and the Peruvian anchovy (*Engraulis ringens*) (based on data from SERNAPESCA, 2017). Therefore, this species are important in terms of employment. 
+
+
+```{r C_jobs_products, fig.cap= 'Percent of total anual jobs generated by the five most common types of products each year. Elaborated based on records from SERNAPESCA, 2018.', echo = FALSE, message= FALSE, warning=FALSE, fig.align="center", fig.width=4, fig.height=4}
+# Importing national records of job positions per processing facilities
+# employment_facilities <- read_excel(here("information/raw_databases/SERNAPESCA/employment/RPA_RPI_mano_obra.xlsx"), sheet = "MANO DE OBRA", skip = 2, n_max = 48140)
+
+employment_facilities <- read_excel("clean_databases/Chile/RPA_RPI_mano_obra.xlsx", 
+sheet = "MANO DE OBRA", skip = 2, n_max = 48140)
+
+colnames(employment_facilities) <- c('year', 'month', 'region', 'port', 'code', 'name', 'mo_perm_m', 'mo_perm_f', 'mo_temp_m', 'mo_temp_f', 'system')
+# Average number of permanent and temporal job positions 
+jobs_per_facility <- employment_facilities %>% 
+  mutate(total_jobs= mo_perm_m + mo_perm_f + mo_temp_m + mo_temp_f)
+
+# Importing data on types of products per facilities
+facilities <- read.csv('clean_databases/Chile/products_per_facilities.csv') %>% 
+  select(-X)
+  
+# Combining facilities production with jobs
+job_type_product <- facilities %>% 
+  gather(key = product, value =production, 3:17) %>% 
+  filter(!(production == 'NA')) %>% 
+  full_join(jobs_per_facility, by = 'code') %>% 
+  group_by(year.x, product) %>% 
+  summarise(total_jobs = sum(total_jobs)) %>% 
+  filter(!(total_jobs == "NA")) 
+total_jobs_year <- job_type_product %>% 
+  group_by(year.x) %>% 
+  summarise(jobs_per_year = sum(total_jobs, na.rm = TRUE))
+
+job_type_product<- job_type_product %>% 
+  left_join(total_jobs_year) %>% 
+  mutate(perc_jobs = (total_jobs*100)/jobs_per_year) %>% 
+  arrange(year.x, desc(perc_jobs)) %>% 
+  top_n(5, perc_jobs) %>%
+  filter(!(is.na(product))) %>% 
+  ggplot(aes(x = year.x, y = perc_jobs, fill = product)) + 
+    geom_bar(stat= "identity")+
+    scale_y_continuous(expand = c(0, 0)) +
+    labs(y="Percent of jobs in \nprocessing facilities (%)", x="Year")+
+    scale_fill_manual(values = c(wes_palette("Darjeeling1", 5, type = "discrete"), "#000000")) +
+    theme(axis.line = element_line(colour = "black"),
+        axis.text=element_text(size=11),
+        axis.title=element_text(size=12,face="bold"))+
+  ggtheme_plot()
+job_type_product
+
+```
+
+Finally, commercialization of fisheries products is another activity supported by fisheries that supply employment and for which estimates are less available. The main point of commercialization of fishing products in Chile is the *Terminal Pesquero* and there are several other formal and informal points along the country. <!--- See if we can find estimates on the number of people woking in this places --->
+
+In terms of income related to fisheries in Chile, values vary widely depending on the type of job position. Income of artisanal fishers is usually unstable and highly variable while people working in facilities or industrial vessels face more stable incomes. Estimates from the Employment and Social Security Ministry indicate are shown in **Table X**.
+
+```{r C_Employment, echo = FALSE, message=FALSE, warning= FALSE}
+
+full_time <- c(692786, 210046, 528532, 227808, 402353)
+part_time <-c(422099, 154040, 277600, 172445, 180434)
+
+table_3 <- rbind(full_time, part_time) %>% 
+  data.frame() %>% 
+  mutate(Type = c('Full time', 'Part time'), Employer= X1/677.30, Independent= X2/677.30, Dependent_Contract= X3/677.30, Dependent_no_contract= X4/677.30, mean_income_fisheries= X5/677.30) 
+table_3 <- table_3[6:11]
+
+knitr::kable(table_3, col.names = c('Type', 'Employer', 'Independent', 'Dependent \nwith contract', 'Dependent \nwithout contract', 'Mean income'), format.args = list(decimal.mark = '.', big.mark = ","),"latex", booktabs = T, caption= 'Incomes of fisheries sector. From SENSE, 2016. Elaborated with data from NESI, 2014',
+             digits = 0) #%>% 
+  # kable_styling(latex_options = 'hold_position')
+
+```
+
+For the artisanal sector, the three most important fisheries in terms of revenue are the Southern king crab (*Lithodes santolla*), the Chilean sea urchin (*Loxechinus albus*) and the Southern rays bream or Corina (*Brama australis*). <!--- Our findings are in line with... (compare findings to other sources) --->
+
+```{r C_prices_T, echo = FALSE, message= FALSE, warning= FALSE}
+## importing species names for scientific names
+species_match <- read_csv("clean_databases/Chile/species_match.csv") %>% 
+  mutate(species = especie_SERNAPESCA)
+# importing cleaned prices dataset and aggregating at the national level
+prices_art <- read_csv("clean_databases/Chile/prices_art_SERNAPESCA.csv") %>% 
+  filter(!(species == 'NA'))
+prices_art[is.na(prices_art)] <- as.numeric(0)
+ 
+# generating total revenue
+value_species_art <- prices_art %>% 
+  mutate(total_revenue= price * tons) %>% 
+  group_by(species, year)
+  
+#  aggregating species over the years to get the 10 that have contributed more to revenues cumulatively over the las 5 years.
+most_valuable <- value_species_art %>% 
+  group_by(species) %>% 
+  summarise(total_revenue = sum(total_revenue)) %>% 
+  arrange(desc(total_revenue)) %>% 
+  top_n(10, total_revenue) #%>% 
+  #left_join(species_match) %>% 
+  #select(species, sc_name, total_revenue)
+most_expensive <- value_species_art %>% 
+  group_by(species) %>% 
+  summarise(mean_price = round(mean(price),0))%>%
+  arrange(desc(mean_price)) %>% 
+  top_n(10, mean_price)
+knitr::kable(most_valuable, col.names = c('Species', 'Total Revenues (from 2013 to 2017'), format.args = list(decimal.mark = '.', big.mark = ","),"latex", booktabs = T, caption= 'Species that generated the most revenue for the artisanal sector over the past five years based on records on landings and prices by SERNAPESCA.')
+knitr::kable(most_expensive, col.names = c('Species', 'Price (average from 2013 to 2017'), format.args = list(decimal.mark = '.', big.mark = ","),"latex", booktabs = T, caption= 'Most expensive species in Chile based on the mean price over the past five years based on records on prices by SERNAPESCA.')# %>% 
+  # kable_styling(latex_options = 'hold_position')
+```
+
+\clearpage
 
 ## Results Peru
-
-
 
 ### Fisheries Context
 
 Based on the most recent published data by the Ministry of Production, seven species and three groups of species (i.e. shrimps, tunas and sharks) were responsible for 95% of the country’s marine capture production (MCP) between 2010 and 2016 (**Figure x**) [@PRODUCE 2017]. Anchoveta (*Engraulis ringens*) represented 78% of these landings. On average, 3.93 (± 1.56) million tonnes these species were annually reduced into fishmeal and fish oil (FMFO) during the studied period. Peruvian FMFO is mainly used in feed producing value chains abroad [@Christensen et al. 2014; @Majluf et al. 2016]. 
 
-```{r P_Capture, eval=T,echo=F, fig.height=9,fig.width=9}
+```{r P_Capture, eval=T,echo=F, fig.height=10,fig.width=10, fig.cap="Top 5 groups landed in Peru"}
 
 Capture_Peru <- read_excel("clean_databases/Peru/Peru_Dataset.xlsx", 
            sheet = "Table 1") %>% 
@@ -2378,7 +2770,7 @@ P1 <- Capture_Peru %>%
     legend.key.width =unit(4,"line"),
     legend.justification = "center"
   ) +
-  guides(fill = guide_legend(nrow = 1, byrow = TRUE))
+  guides(fill = guide_legend(nrow = 2, byrow = TRUE))
   
 
 P2 <- Capture_Peru %>%
@@ -2424,19 +2816,25 @@ as_ggplot(gt)
 
 Only 22% of the Peruvian MCP was used in direct human consumption (DHC) value chains (**Figure x**), at a rate of 1.13 (± 0.13) million tonnes per year. The remaining 2% is discarded at sea, never reaching Peruvian landing sites.
 
-![Peruvian MCP was used in direct human consumption (DHC) value chains](Report_Figures/DHC_Peru.png)
+```{r P_DHC_Image, fig.width=4, fig.height=3,echo=FALSE, fig.align="center",fig.cap="Peruvian MCP was used in direct human consumption (DHC) value chains"}
 
-Freshwater capture production (FAP) in Peru is severely underestimated by PRODUCE and has very low species resolution [@SueiroDelaPuente2015]. In the last published annual report, PRODUCE failed to segregate landings by species coming from freshwater systems [@PRODUCE2017]. As FAP is predominantly used for subsistence in rural Amazonian and Andean communities, the catch hardly ever reaches landing sites monitored by the regional fisheries authorities and thus is almost never registered [@SueiroDelaPuente2015]. Between 2010 and 2016 Peruvian freshwater systems produced average estimated yields of 68.30 (± 10.11) thousand tonnes per year. The reported freshwater capture production by PRODUCE during the study period totalled 478 thousand tonnes [@PRODUCE2017], amounting to ~1% of the marine capture production (**S_Table X**).
+img <- readPNG("Report_Figures/DHC_Peru.png")
+ grid.raster(img)
+```
+
+<!-- ![Peruvian MCP was used in direct human consumption (DHC) value chains](Report_Figures/DHC_Peru.png) -->
+
+Freshwater capture production (FAP) in Peru is severely underestimated by PRODUCE and has very low species resolution [@SueiroDelaPuente2015]. In the last published annual report, PRODUCE failed to segregate landings by species coming from freshwater systems [@PRODUCE2017]. As FAP is predominantly used for subsistence in rural Amazonian and Andean communities, the catch hardly ever reaches landing sites monitored by the regional fisheries authorities and thus is almost never registered [@SueiroDelaPuente2015]. Between 2010 and 2016 Peruvian freshwater systems produced average estimated yields of 68.30 (± 10.11) thousand tonnes per year. The reported freshwater capture production by PRODUCE during the study period totaled 478 thousand tonnes [@PRODUCE2017], amounting to ~1% of the marine capture production (**S_Table X**).
 
 <!-- #### Aquaculture -->
 
-Marine aquaculture production (MAP) in Peru is much smaller than its MCP. MAP is mainly focused on two species: the Peruvian calico scallop (*Argopecten purpuratus*) and the Whiteleg shrimp (*Litopenaeus vannamei*). Scallop aquaculture is a semi-intensive to extensive industry with annual average yields of 42,913 ± 19,804 tonnes per year. Only a minor segment of the producing entities purchases seeds from hatcheries and uses suspended cultures [@Mendoetal.2016; @Lopezdelalamaet al2018a]. Most scallop aquaculture production is harvested from bottom cultures in the Sechura Bay (*Piura* Region) using seeds taken from natural banks at *Isla Lobos de Tierra*, a marine protected area [@Lopezdelalamaetal.2018a]. Production is thus highly susceptible to changes in environmental conditions, where El Niño events have led to massive economic losses for producers along the Peruvian coast [@Badjeck et al. 2009; @Mendo et al. 2016].
+Marine aquaculture production (MAP) in Peru is much smaller than its MCP. MAP is mainly focused on two species: the Peruvian calico scallop (*Argopecten purpuratus*) and the White-leg shrimp (*Litopenaeus vannamei*). Scallop aquaculture is a semi-intensive to extensive industry with annual average yields of 42,913 ± 19,804 tonnes per year. Only a minor segment of the producing entities purchases seeds from hatcheries and uses suspended cultures [@Mendoetal.2016; @Lopezdelalamaet al2018a]. Most scallop aquaculture production is harvested from bottom cultures in the Sechura Bay (*Piura* Region) using seeds taken from natural banks at *Isla Lobos de Tierra*, a marine protected area [@Lopezdelalamaetal.2018a]. Production is thus highly susceptible to changes in environmental conditions, where El Niño events have led to massive economic losses for producers along the Peruvian coast [@Badjeck et al. 2009; @Mendo et al. 2016].
 
 Shrimp aquaculture has been increasing steadily during the study period, with an average annual production of 18,538 ± 3,045 tonnes per year. This is an intensive industry that uses closed-system cultures [@Christensen et al. 2014] in large pools near mangrove forest in northern Peru [@PRODUCE 2017]. Additionally, some artisanal fishing communities are starting exploratory cultures of red algae (*Chondracanthus chamissoi*). Their production however has not surpassed 150 tonnes per year and has been declining severely since it started in 2012. Similarly, a company is developing closed-system cultures of fine flounder (*Paralichthys adspersus*) and turbot (*Scophthalmus maximus*). Nonetheless, their production is still negligible for commercial purposes or national food security (3.05 ± 1.26 tonnes per year between 2012-2016).
 
 It is worth noting that freshwater aquaculture production (FAP) has increased during the studied period surpassing marine aquaculture production in both 2015. FAP is based on rainbow trout (*Oncorhynchus mykiss*) grown in Andean lakes and tilapia (*Oreochromis* sp.) grown in across the Andean and Amazonian regions of Peru. Both of these are introduced species. FAP of local species like gamitana (*Colossoma macropomum*) and arapaima (*Arapaima gigas*), has also increased during the studied period but remains small in comparison (**Fig x**).
 
-```{r P_Aquaculutre, eval=T,echo=F, fig.height=9,fig.width=9}
+```{r P_Aquaculutre, eval=T,echo=F, fig.height=10,fig.width=10, fig.cap="Top 5 groups produced in aquculture in Peru"}
 
 Aqua_Peru <- read_excel("clean_databases/Peru/Peru_Dataset.xlsx", 
            sheet = "Table 2") %>% 
@@ -2480,7 +2878,7 @@ P1 <- Capture_Peru %>%
     legend.key.width =unit(4,"line"),
     legend.justification = "center"
   ) +
-  guides(fill = guide_legend(nrow = 1, byrow = TRUE))
+  guides(fill = guide_legend(nrow = 2, byrow = TRUE))
   
 
 P2 <- Capture_Peru %>%
@@ -2529,33 +2927,58 @@ as_ggplot(gt)
 
 Peru is both a major importer and exporter of seafood products. Based on data obtained from SUNAT, between 2010 and 2016, Peru imported 727.86 thousand tonnes of seafood products, at a rate of 103.98 ± 24.62 thousand tonnes per year **(Table 6)**. Peruvian seafood exports however are much larger than their imports. During the same period, Peru exported 10.76 million tonnes of seafood products, at a rate of 1.54 ± 0.39 million tonnes per year **(Table 6)**. When only focusing on products for DHC (i.e., excluding products for the aquarium trade, fishmeal and fish oil), average exports ascend to 371.56 ± 57.93 thousand tonnes per year, whilst imports to 97.24 ± 57.93 thousand tonnes per year. 
 
-```{r P_Trade_Table, eval=T,echo=F}
+```{r P_Trade_Table, eval=T,echo=F, warning=F,message=F}
+
+# collapse_rows_dt <- data.frame(C1 = c(rep("Canned \nProducts", 3),
+#                                       rep("Curred \nProducts", 3),
+#                                       rep("Fismeal \nProducts", 3),
+#                                       rep("Fish oil \nProducts", 3),
+#                                       rep("Fresh \nSeafood", 3),
+#                                       rep("Frozen \nProducts", 3),
+#                                       rep("Other \nProducts", 3)
+#                                       ),
+#                                replace = TRUE)
+
 
 read_excel("clean_databases/Peru/Peru_Dataset.xlsx", 
            sheet = "Table 6") %>% 
-  select(-`2010`,-`2011`)
+  select(-`2010`,-`2011`) %>% 
+  kable(
+  format.args = list(big.mark = ","),
+    digits = 0,
+  caption = "Summary table of net trade in peru"
+  ) %>% 
+  kable_styling(full_width = F) %>%
+   column_spec(1, width = "5cm") #%>% #wraps text in column2
 ```
 
 It is worth noting that imports of Atlantic salmon (*Salmo salar*) and basa (*Pangasius bocourti*), species which are not caught or cultivated in Peru, have recently increased. Between 2010-2016, net exports (i.e. exports minus imports) of basa were negative, occurring at an average rate of -2.18 ± 0.76 thousand tonnes per year. In the case of Atlantic salmon, a similar trend is seen. Net exports are negative and occurring at a rate of -1.72 ± 1.38 thousand tonnes per year. 
 
 Tilapia (*Oreochromis* sp.), a non-native species that is farmed in Peru, shows a similar trend where net exports negative and decreasing (-1.46 ± 0.83 thousand tonnes per year). Conversely, net exports of rainbow trout (*Oncorhynchus mykiss*), a heavily farmed introduced species, are positive, increasing and occurring at an annual average rate of 1.03 ± 0.33 thousand tonnes per year. It is worth noting that aside of these species (Atlantic salmon, basa, rainbow trout and tilapia), almost all remaining trade for DHC involves marine species native to Peru.
 
-Between 2010-2016, net exports of seafood products for DHC totalled 2.29 million tonnes and occurred at an average rate of 327.65 ± 95.18 thousand tonnes per year. Overtime total net exports follows a trend that closely resembles that of the production of frozen seafood which is dominated by the jumbo flying squid (*Dosidicus gigas*) (**Fig x**). However, it is worth noting that net exports were not positive for all lines of production. Two lines of production show negative values for this indicator:
+Between 2010-2016, net exports of seafood products for DHC totaled 2.29 million tonnes and occurred at an average rate of 327.65 ± 95.18 thousand tonnes per year. Overtime total net exports follows a trend that closely resembles that of the production of frozen seafood which is dominated by the jumbo flying squid (*Dosidicus gigas*) (**Fig x**). However, it is worth noting that net exports were not positive for all lines of production. Two lines of production show negative values for this indicator:
 
 -	Net exports of canned products increased until 2011 and have decreased steadily since. They reached negative value in the last two years of the studied period, indicating that imports exceeded exports in 2015 and 2016. The lowest value was recorded in 2016 with -4.98 thousand tonnes of canned products. 
 
 -	Net exports of fresh seafood products were negative throughout the studied period, reaching -30.34 thousand tonnes in 2013. 
 This indicates that the internal market of canned products was unsatisfied with local production in the last two years. However, the demand of fresh seafood was unsatisfied by the local supply for the whole studied period.
 
-![species total net exports](Report_Figures/Trade_Peru.png)
+```{r P_net_Export_Image, fig.width=3, fig.height=3,echo=FALSE, fig.align="center",fig.cap="Peruvian species total net exports"}
+
+img <- readPNG("Report_Figures/DHC_Peru.png")
+ grid.raster(img)
+```
+
+
+<!-- ![species total net exports](Report_Figures/Trade_Peru.png) -->
 
 
 ### Estimating National Seafood Supply
 
 
-When destined for direct human consumption (DHC) marine living resources landed (or harvested) in Peru enter one of four different supply chains these begin: frozen, fresh (refrigerated or chilled), canned, or cured [Christensen et al. 2014]. Before estimating the national food supply, we were able to estimate the ratio in witch fresh fish (landed) is converted to actual consumable seafood (e.g. un ton of fish could be 400 kg of actual edible meat) by supply chain.
+When destined for direct human consumption (DHC) marine living resources landed (or harvested) in Peru enter one of four different supply chains these begin: frozen, fresh (refrigerated or chilled), canned, or cured [Christensen et al. 2014]. Before estimating the national food supply, we were able to estimate the ratio in witch fresh fish (landed) is converted to actual consumable seafood (e.g. un tonne of fish could be 400 kg of actual edible meat) by supply chain.
 
-```{r P_Frozen_seafood_table, eval=T, echo=F, fig.height=4, fig.width=5}
+```{r P_Frozen_seafood_table, eval=T, echo=F, fig.height=8, fig.width=8}
 
 Frozen <- read_excel("clean_databases/Peru/Peru_Dataset.xlsx", 
            sheet = "Table 3") %>% 
@@ -2601,6 +3024,8 @@ Processed %>%
   facet_wrap(~Type,
              nrow = 1) +
   ggtheme_plot() +
+  ylab("Average (Thousand tonnes)") +
+  xlab("Species") +
   theme(
     axis.text.x = element_text(angle = 45,
                                hjust = 1)
@@ -2619,22 +3044,22 @@ Processed %>%
 Based on PRODUCE data, 53% these resources were used as inputs in frozen seafood value chains during the studied period, at an average rate of 623.24 ± 105.60 thousand tonnes per year with 6 species responsible for 91% of the total frozen seafood production (**S_Table x**). With an average input-output ratio of 1:0.52, these inputs generated 325.24 ± 57.98 thousand tonnes of frozen seafood products per year. Frozen seafood production manifested an increasing trend until 2014 (inputs: 741.68 thousand tonnes | outputs: 379.73 thousand tonnes). However, it has decreased continuously since. The lowest frozen seafood production during the 2010-2016 period was recorded in 2016 (inputs: 466.71 thousand tonnes | outputs: 270.95 thousand tonnes).
 
 <!-- - Jumbo flying squid (*Dosidicus gigas*) accounted for 67% of the total frozen seafood production (total production: 1.51 million tonnes | average production: 216.38 ± 45.09 thousand tonnes per year). -->
-<!-- <!-- Fluctuations in its production were responsible for the overall trends observed in this line of production. The largest frozen jumbo flying squid production was recorded in 2014 (276.53 thousand tonnes). --> -->
+<!-- Fluctuations in its production were responsible for the overall trends observed in this line of production. The largest frozen jumbo flying squid production was recorded in 2014 (276.53 thousand tonnes). -->
 
 <!-- - Chilean jack mackerel (*Trachurus murphyi*) amounted to 8% of the total frozen seafood production (total production: 174.41 thousand tonnes | average production: 24.92 ± 33.43 thousand tonnes per year). -->
-<!-- <!-- Its contribution to the total frozen seafood production was highest in 2011 (83.98 thousand tonnes) and has steadily decrease since then, reaching its lowest production in 2015 (728 tonnes).  --> -->
+<!-- Its contribution to the total frozen seafood production was highest in 2011 (83.98 thousand tonnes) and has steadily decrease since then, reaching its lowest production in 2015 (728 tonnes).  -->
 
 <!-- - Shrimps (mainly *Litopenaeus vannamei*) amounted to 5% of the total frozen seafood production (total production: 109. 43 thousand tonnes | average production: 15.63 ± 7.74 thousand tonnes per year). -->
-<!-- <!-- Frozen shrimp production follows an overall increasing trend reaching its peak in 2015 (30.37 thousand tonnes). --> -->
+<!-- Frozen shrimp production follows an overall increasing trend reaching its peak in 2015 (30.37 thousand tonnes). -->
 
 <!-- - Chub mackerel (*Scomber japonicus*) also amounted to 5% of the total frozen seafood production (total production: 107.71 thousand tonnes | average production: 15.31 ± 19.58 thousand tonnes per year). -->
-<!-- <!-- Frozen chub mackerel production shows an overall increasing trend reaching its peak in 2016 (56.69 thousand tonnes). --> -->
+<!-- Frozen chub mackerel production shows an overall increasing trend reaching its peak in 2016 (56.69 thousand tonnes). -->
 
 <!-- - Common dolphinfish (*Coryphaena hippurus*) amounted to 4% of the total frozen seafood production (total production: 84.64 thousand tonnes | average production: 12.09 ± 2.18 thousand tonnes per year). -->
-<!-- <!-- Frozen common dolphinfish also shows an overall increasing trend reaching its peak in 2014 (14.78 thousand tonnes). --> -->
+<!-- Frozen common dolphinfish also shows an overall increasing trend reaching its peak in 2014 (14.78 thousand tonnes). -->
 
 <!-- - Peruvian hake (*Merluccius gayi peruanus*) amounted to 3% of the total frozen seafood production (total production: 76.19 thousand tonnes | average production: 10.88 ± 2.62 thousand tonnes per year). -->
-<!-- <!-- Production was highest in 2013 (15.79 thousand tonnes) and has been decreasing since. However, the lowest frozen hake production was recorded in 2012 (8.55 thousand tonnes). --> -->
+<!-- Production was highest in 2013 (15.79 thousand tonnes) and has been decreasing since. However, the lowest frozen hake production was recorded in 2012 (8.55 thousand tonnes). -->
 
 #### Fresh (refrigerated or chilled) seafood
 
@@ -2673,7 +3098,7 @@ The remaining 7% of the marine capture and aquaculture production destined to DH
 
 #### Total and per capita seafood consumption
 
-Due to the vast amount of data on Peruvean seafood we were able to estimate seafood consumption in three different ways. The first (*Decleared seafood consumption*) was using data from the Peruvian household survey (ENAHO) performed by INEI. Survey results include per capita seafood consumption estimates per region and species. We then estimated the total seafood consumption (in tonnes) by multiplying the national per capita consumption by the Peruvian population. Annual population estimates for Peru were downloaded from World Bank Open Data[^7]. As these indicators were constructed based on survey responses that are not field verified, we referred to them throughout the text as the total and per capita Declared Seafood Consumption (DSCT and DSCpc, respectively). 
+Due to the vast amount of data on Peruvian seafood we were able to estimate seafood consumption in three different ways. The first (*Decleared seafood consumption*) was using data from the Peruvian household survey (ENAHO) performed by INEI. Survey results include per capita seafood consumption estimates per region and species. We then estimated the total seafood consumption (in tonnes) by multiplying the national per capita consumption by the Peruvian population. Annual population estimates for Peru were downloaded from World Bank Open Data[^7]. As these indicators were constructed based on survey responses that are not field verified, we referred to them throughout the text as the total and per capita Declared Seafood Consumption (DSCT and DSCpc, respectively). 
 
 The second approach to estimate seafood consumption was conducted using the method described in see section *Estimating National Seafood Supply* of this report. The Net Seafood Supply (NSS) was also divided by the Peruvian population. The resulting per capita National Seafood Supply (NSSpc) is comparable with DCSpc. 
 
@@ -2684,7 +3109,7 @@ Finally, the third approach includes using all available data obtained from PROD
 Thus, building upon the work conducted by Christensen et al. (2014), we used a mass-balance approach and product-specific multipliers to estimate the amount of seafood within different locally and internationally traded products (e.g., the weight of seafood within a can), then estimated the net seafood supply for each line of production independently and added them together with the seafood remaining in country to estimate the ASCT.
 In synthesis, the three methods produce different estimates of seafood consumption. The resulting indicators for total (i.e., DSCT, NSS and ASCT) and per capita (DSCpc, NSSpc and ASCpc) seafood consumption are comparable amongst each other. 
 
-#####	Declared seafood consumption
+#####	Declared seafood consumption (DSC)
 
 According ENAHO, per capita consumption of aquatic resources in Peru increased by 52%, going from 10.201 kg/person in 2010 to 15.50 kg/person in 2016 (**S_Table 8**). Within the same time frame, the contribution of seafood to this indicator increased from 77% in 2010 to 80% in 2016. Per capita declared consumption of seafood (DSCpc) of Peruvians in 2016 ascended to 12.36 kg/person. When segregated by product types, most seafood was consumed in fresh presentations (82%), followed by canned products (6%). Only a minor segment of seafood was consumed in cured presentations (1%), and no consumption was reported to come from frozen seafood products. 
 
@@ -2694,7 +3119,18 @@ Between 2010 and 2016 period, the total declared seafood consumption (DSCT) show
 
 When displayed by region DSCT revealed that 84% of seafood was consumed in the coastal regions of Peru (**Figure 3**). Lima was the largest market during the studied period concentrating 41% of the DSCT (**Table 10**). Other important markets were the *Piura*, *Lambayeque* and *La Libertad* regions, which respectively concentrated 11%, 8% and 6% of the DSCT. Additionally, the regional analysis of the DSCpc, revealed that seafood was more consumed per Peruvian in northern coastal regions (**Table 10**). These include *Lambayeque* (25.65 kg/person in 2016), *Tumbes* (24.43 kg/person in 2016) and *Piura* (23.76 kg/person in 2016). DSCpc in the *Ica*, *Callao* and *Lima* regions were also well above the national average. Conversely, DSCpc was lowest in the Peruvian Amazon, including the *Loreto* (1.66 kg/person in 2016), *Ucayali* (3.45 kg/person in 2016), *Madre de Dios* (4.20 kg/person in 2016), Amazonas (4.92 kg/person in 2016) and *San Martin* (5.33 kg/person in 2016) regions.
 
-```{r P_Consumption_Map, eval=T, echo=F, fig.height=4, fig.width=5}
+```{r Map_Data, echo=F, results='hide'}
+path_Peru <- ("Peru/information/raw_databases/PER_adm/")
+#The File
+fnam_Peru <- "Per_adm1"
+#Load it!
+
+#### Extract
+
+Peru_Shape <- st_read(dsn = path_Peru, layer=fnam_Peru)
+```
+
+```{r P_Consumption_Map, eval=T, echo=F, warning=F,message=F, fig.height=4, fig.width=7, fig.cap="Total and per capita seaffod consumption in peru by restion, average between 2012 and 2016."}
 
 Consumption <- read_excel("clean_databases/Peru/Peru_Dataset.xlsx", 
            sheet = "Table 10",
@@ -2712,46 +3148,92 @@ Consumption <- read_excel("clean_databases/Peru/Peru_Dataset.xlsx",
   )
 
 
-path_Peru <- ("Peru/information/raw_databases/PER_adm/")
-#The File
-fnam_Peru <- "Per_adm1"
-#Load it!
 
-#### Extract
 
-system.time(Peru_Shape <- st_read(dsn = path_Peru, layer=fnam_Peru)) 
+
 
 # head(Peru_Shape)
 
+# Missing Apurímac,Junin y Huánuco (con acentos en el shp)
+# unique(Peru_Shape$NAME_1)
+
+Consumption$NAME_1 <- gsub("Apurimac","Apurímac",Consumption$NAME_1)
+Consumption$NAME_1 <- gsub("Junin","Junín",Consumption$NAME_1)
+Consumption$NAME_1 <- gsub("Huanuco","Huánuco",Consumption$NAME_1)
+
 pal <- wes_palette("Zissou1", 100, type = "continuous")
 
-Peru_Shape %>% 
+P1 <- Peru_Shape %>% 
   left_join(Consumption,
             by = "NAME_1") %>% 
+  filter(Category == "Total") %>% 
+  ggplot(.) +
+  geom_sf(
+    aes(
+      fill = Mean/1000
+    )
+  ) +
+  ggtheme_map() +
+  scale_fill_gradientn("Thousand Tones",
+                        colours = pal) +
+  theme(
+    legend.key = element_rect(size = 2),
+    legend.key.width =unit(3,"line")
+  )
+
+P2 <- Peru_Shape %>% 
+  left_join(Consumption,
+            by = "NAME_1") %>% 
+  filter(Category == "Per capita") %>% 
   ggplot(.) +
   geom_sf(
     aes(
       fill = Mean
     )
   ) +
-  facet_wrap(~Category,
-             ncol = 2) +
   ggtheme_map() +
-  scale_fill_gradientn("Kilograms",
-                        colours = pal)
+  scale_fill_gradientn("Kg/person",
+                        colours = pal) +
+  theme(
+    legend.key = element_rect(size = 2),
+    legend.key.width =unit(3,"line")
+  )
+
+Map_grid <- arrangeGrob(P1,
+                  P2,
+                  ncol = 2#,
+                  # nrow = 2,
+                  # left ="Number of Fishers"
+                  )
+
+as_ggplot(Map_grid) + # transform to a ggplot
+  draw_plot_label(
+    label = c("Total","Per Capita"),
+    size = 10,
+    x = c(0,.5),
+    y = c(.90, .90) 
+    ) +
+  draw_plot_label(
+    label = c("Country Average: 337 thousand tones","Country Average: 11 kg per person"),
+    size = 8,
+    x = c(.0,.5),
+    y = c(.20, .20) 
+    )
 
 ```
 
 
-##### Net seafood supply 
+##### Net seafood supply (NSS)
 
 With the exception of a decrease registered between 2011 (298.56 thousand tonnes) and 2012 (231.73 thousand tonnes), net seafood supply (NSS) increased continuously during the studied period. NSS increased 48% between 2012 and 2016, reaching a supply of 343.05 thousand tonnes. The estimated NSSpc also increased since 2012, but only by 40%. The highest estimated NSSpc was in 2016 with 10.80 kg/person. Fourteen species and/or groups of species were responsible for 90% of the Peruvian NSS (**S_Table 11**). 
+
 <!-- These include: Chilean jack mackerel (Trachurus murphyi | 24% of NSS), Chub mackerel (Scomber japonicus | 15% of NSS), anchoveta (Engraulis ringens | 12% of NSS), Eastern Pacific bonito (Sarda chiliensis | 10% of NSS), tunas (Thunnus sp. | 7% of NSS), skipjack tuna (Katsuwonus pelamis | 5% of NSS), Peruvian hake (Merluccius gayi peruanus | 4% of NSS), common dolphinfish (Coryphaena hippurus | 4% of NSS), flathead grey mullet (Mugil cephalus | 3% of NSS), sharks (2% of NSS), Pacific harvestfish (Peprilus medius | 2% of NSS), lorna drum (Sciaena deliciosa | 1% of NSS), Peruvian weakfish (Cynoscion analis | 1% of NSS), Chilean silverside (Odontesthes regia | 1% of NSS). -->
 
 
-##### Apparent seafood consumption 
+##### Apparent seafood consumption (ASCT)
 
 Total apparent seafood consumption (ASCT) showed an overall increasing trend during the studied period, as did the per capita apparent seafood consumption (ASCpc). ASCT showed a 32% increase between 2010 and 2016, whilst ASCpc increased by 22%. Both indicators showed high values in 2011, 2013 and 2016, peaking in 2016 (ASCT = 388.19 thousand tonnes | ASCpc = 12.22 kg/person). Most seafood (58%) was consumed fresh between 2010-2016 (**Table 12**). Fresh seafood was followed by canned products (20%) and frozen products (20%). Cured seafood consumption was minor (2%). Eighteen species and/or groups of species were responsible for 90% of the ASCT (**S_Table 13**). 
+
 <!-- These were: Chilean jack mackerel (Trachurus murphyi | 18% ASCT), chub mackerel (Scomber japonicus | 11% ASCT), jumbo flying squid (Dosidicus gigas | 11% ASCT), anchoveta (Engraulis ringens | 11% ASCT), Eastern Pacific bonito (Sarda chiliensis | 8% ASCT), common dolphinfish (Coryphaena hippurus | 5% ASCT), tunas (Thunnus sp. | 5% ASCT), Peruvian hake (Merluccius gayi peruanus | 4% ASCT), skipjack tuna (Katsuwonus pelamis | 3% ASCT), sharks (3% ASCT), flathead grey mullet (Mugil cephalus | 2% ASCT), shrimps (2% ASCT), Pacific harvestfish (Peprilus medius | 1% ASCT), lorna drum (Sciaena deliciosa | 1% ASCT), Chilean silverside (Odontesthes regia | 1% ASCT), Peruvian weakfish (Cynoscion analis | 1% ASCT), flying fish (1% ASCT), and Patagonian squid (Doryteuthis gahi | 1% ASCT). -->
 
 
@@ -2759,13 +3241,74 @@ Total apparent seafood consumption (ASCT) showed an overall increasing trend dur
 
 Regardless of the method of estimation, seafood consumption in Peru is on the rise. The increase is strongest, steadiest and fastest in DSCpc (**Figure 4)**, as both ASCpc and NSSpc show a decrease in seafood consumption during 2012, which is not observed in DSCpc.
 
+
+```{r P_Consumption_I, fig.width=4, fig.height=3,echo=FALSE, fig.align="center",fig.cap="Peruvian seafood consumption between all approaches"}
+
+img <- readPNG("Report_Figures/Peru_Consumption.png")
+ grid.raster(img)
+```
+
+<!-- ![](Report_Figures/Peru_Consumption.png) -->
+
 <!-- Trends in ASCpc and NSSpc are very similar in trajectory, however the latter has statistically significant lower values than the former (Dunn test, p = 0.007). It is worth noting that no significant statistical differences were found between DSCpc and NSSpc (Dunn test, p = 0.151), nor between DSCpc and ASCpc (Dunn test, p = 0.078). Additionally, towards the end of the time series, estimated per capita seafood consumption through DSCpc and ASCpc grew much closer together (average difference between the two indicators of 0.4% during 2015-2016). -->
 
 <!-- Regardless of the indicator, total seafood consumed in Peru between 2014-2016 was higher than 312 thousand tonnes per year, with ASCT and DSCT having average values above 360 thousand tonnes per year. -->
 
-Six species, regardless of the indicator used, were consistently among the mayor contributors to national food security. These were (listed in decreasing order of importance): Chilean jack mackerel (*Trachurus murphyi*), chub mackerel (*Scomber japonicus*), Eastern Pacific bonito (*Sarda chiliensis*), anchoveta (*Engraulis ringens*), tunas (*Thunnus* sp.) and Peruvian hake (*Merluccius gayi peruanus*). Additionally, Peruvian weakfish (*Cynoscion analis*), Chilean silverside (*Odontesthes regia*) and lorna drum (*Sciaena deliciosa*) appear to be much more important in the DSCT and DSCpc than in any other indicator. Whilst species like flying jumbo squid (*Dosidicus gigas*) and the common dolphinfish (*Coryphaena hippurus*), appear to be much more important in ASCT and ASCpc than in other indicators.
+Six species, regardless of the indicator used, were consistently among the mayor contributors to national food security. These were (listed in decreasing order of importance): Chilean jack mackerel (*Trachurus murphyi*), chub mackerel (*Scomber japonicus*), Eastern Pacific bonito (*Sarda chiliensis*), anchoveta (*Engraulis ringens*), tunas (*Thunnus* sp.) and Peruvian hake (*Merluccius gayi peruanus*). Additionally, Peruvian weakfish (*Cynoscion analis*), Chilean silverside (*Odontesthes regia*) and lorna drum (*Sciaena deliciosa*) appear to be much more important in the DSCT and DSCpc than in any other indicator. Whilst species like flying jumbo squid (*Dosidicus gigas*) and the common dolphinfish (*Coryphaena hippurus*), appear to be much more important in ASCT and ASCpc than in other indicators (**Fig x**).
 
-```{r Seafood_cons_Table, eval=T,echo=F}
+```{r Seafood_cons_Table, eval=T,echo=F, fig.height=6, fig.width=9}
+
+Species_List <- c("Trachurus murphyi", "Scomber japonicus", "Sarda chiliensis", "Engraulis ringens", "Thunnus", "Merluccius gayi peruanus", "Cynoscion analis", "Odontesthes regia", "Sciaena deliciosa", "Dosidicus gigas","Coryphaena hippurus")
+
+DSC <- read_excel("clean_databases/Peru/Peru_Dataset.xlsx", 
+           sheet = "Table 11") %>% 
+  mutate(Type = "DSC") %>% 
+  rename(Species = `Species and/or groups of species`) %>% 
+  filter(str_detect(Species, "Trachurus murphyi|Scomber japonicus|Sarda chiliensis|Engraulis ringens|Thunnus|Merluccius gayi peruanus|Cynoscion analis|Odontesthes regia|Sciaena deliciosa|Dosidicus gigas|Coryphaena hippurus")
+  )
+
+NSS <- read_excel("clean_databases/Peru/Peru_Dataset.xlsx", 
+           sheet = "Table 4") %>% 
+  mutate(Type = "NSS") %>% 
+  rename(Species = `Species and/or groups of species`) %>% 
+  filter(str_detect(Species, "Trachurus murphyi|Scomber japonicus|Sarda chiliensis|Engraulis ringens|Thunnus|Merluccius gayi peruanus|Cynoscion analis|Odontesthes regia|Sciaena deliciosa|Dosidicus gigas|Coryphaena hippurus")
+  )
+
+
+ASC <- read_excel("clean_databases/Peru/Peru_Dataset.xlsx",
+                  sheet = "Table 5") %>% 
+  rename(Species = `Species and/or groups of species`) %>% 
+  mutate(Type = "ASC") %>% 
+  filter(str_detect(Species, "Trachurus murphyi|Scomber japonicus|Sarda chiliensis|Engraulis ringens|Thunnus|Merluccius gayi peruanus|Cynoscion analis|Odontesthes regia|Sciaena deliciosa|Dosidicus gigas|Coryphaena hippurus")
+  )
+
+DSC %>% 
+  bind_rows(NSS,ASC) %>% 
+  gather("Year","Value",2:8) %>% 
+  ggplot(.) +
+  geom_line(
+    aes(
+      x = as.numeric(Year),
+      y = Value/1000,
+      colour = Species
+    )
+  ) +
+  facet_wrap(~Type,
+             ncol =1,
+             scales = "free_y") +
+  ggtheme_plot() +
+  theme(
+  legend.position  = "right",
+  legend.title = element_text(size = 12),
+  legend.text = element_text(size = 10)
+  ) +
+  ylab("Average tones of Seafood (Thousands)") +
+  xlab("Year") +
+  scale_colour_manual(name = "Type of Process",
+                    values = c(wes_palette("Darjeeling1", 5, type = "discrete"),
+                               wes_palette("Darjeeling2", 5, type = "discrete"),"green")#,
+                    # labels = c("Anchovies","Brown Algae")
+  )
 
 ```
 
@@ -2775,41 +3318,68 @@ The Peruvian fisheries sector has been shown to have an almost constant economic
 
 Nonetheless, it is important to highlight that general multipliers for the Peruvian fisheries sector are severely skewed by the fish meal and fish oil (FMFO) industry [@Christensen et al. 2014]. This industry controls ~85% of the countries reported maritime landings and has an economic multiplier of 2.6. Thus, its effect on the sector’s economic performance is significant. However, its impact on the total employment multiplier is much smaller, despite being low (i.e., 1.77), as it only controls roughly ~13% of the sector’s employment. 
 
-Given that different resources had different economic and employment multipliers [@Christensen et al. 2014] we estimated the total revenue and employment for the DHC industry between 2010 and 2016. In order to calculate the real contribution of the fisheries sector to the national economy, we took the off-vessel prices  and adjusted them to inflation by dividing them by the national price index for food items[^7], and then turned them into US dollars by applying the official PEN-USD exchange rate. The real off-vessel prices in USD/tonne were then multiplied by the total landings per group, and then by the economic multipliers listed in Christensen et al. (2014) in order to estimate the revenue found at sea and on land.
+Given that different resources had different economic and employment multipliers [@Christensen et al. 2014] we estimated the total revenue and employment for the DHC industry between 2010 and 2016. In order to calculate the real contribution of the fisheries sector to the national economy, we took the off-vessel prices  and adjusted them to inflation by dividing them by the national price index for food items[^8], and then turned them into US dollars by applying the official PEN-USD exchange rate. The real off-vessel prices in USD/tonne were then multiplied by the total landings per group, and then by the economic multipliers listed in Christensen et al. (2014) in order to estimate the revenue found at sea and on land.
 
-[^7]: Information downloaded from the Central Reserve Bank of Peru’s (BCRP) official webpage. Available at <http://www.bcrp.gob.pe/estadisticas.html>.
+[^8]: Information downloaded from the Central Reserve Bank of Peru’s (BCRP) official webpage. Available at <http://www.bcrp.gob.pe/estadisticas.html>.
 
 After removing the effect of the FMFO industry the DHC sector’s economic multiplier during the studied period was largest in 2011 with a value of 3.43, given the large landed volume of chub and Chilean jack mackerel. It then decreased and became more stable between 2013-2016 at an average of 3.15 ± 0.04. The average economic multiple for the whole studied period was of 3.19 ± 0.14.
 
-Between 2010-2016, the total revenue of the DHC sector is estimated to be USD 23.30 billion. On average, USD 1.04 billion per year (± USD 0.14 billion per year) were made at sea and USD 3.33 billion per year (± USD 0.68 billion per year) were made on land (**Table 14**). This is consistent with the total real value of imports (total: USD 2.09 billion | average: USD 298 ± 52 million per year) and exports (total: USD 21.78 billion | average: USD 3.11 ± 0.57 billion per year) published by SUNAT (**Table 15**).
+Between 2010-2016, the total revenue of the DHC sector is estimated to be USD 23.30 billion. On average, USD 1.04 billion per year (± USD 0.14 billion per year) were made at sea and USD 3.33 billion per year (± USD 0.68 billion per year) were made on land (**S_Table 14**). This is consistent with the total real value of imports (total: USD 2.09 billion | average: USD 298 ± 52 million per year) and exports (total: USD 21.78 billion | average: USD 3.11 ± 0.57 billion per year) published by SUNAT (**S_Table 15**).
 
 Estimating the total contribution of the sector to national employment is much harder, given that the small-scale fleet has continued to grow [@IMARPE, unpublished data], and the new technological advances have potentially changed the overall employment requirements of processing facilities. Using data from the third census of small-scale fisheries [@IMARPE, unpublished data], Peru had 67,427 active small-scale fishers in 2015. This represents a 53% from 2012, when the small-scale fishermen population was 44,161 thousand fishers [@Guevara-Carrasco & Bertrand 2017]. Applying the 2.9 multiplier for employment, the total contribution of the small-scale fisheries to national employment would be of 195,538 jobs [@Christensen et al. 2014]. 
 
-Peruvian calico scallop (*Argopecten purpuratus*) and shrimp production has increased since 2009 [@PRODUCE 2017]. Given that in 2009 semi-intensive scallop aquaculture employed 0.257 people per tonne and had a 1.2 employment multiplier, whilst intensive shrimp aquaculture employed 0.176 people per tonne and had a 1.5 employment multiplier, production levels of 2015 would have resulted in 9,828 jobs before harvesting (60% from scallop aquaculture) and 3,135 jobs after harvest (38% in the farmed scallop value chains). The total jobs produced by aquiculture of marine resources would add up to 12,963 jobs.
+Peruvian calico scallop (*Argopecten purpuratus*) and shrimp production has increased since 2009 [@PRODUCE 2017]. Given that in 2009 semi-intensive scallop aquaculture employed 0.257 people per tonne and had a 1.2 employment multiplier, whilst intensive shrimp aquaculture employed 0.176 people per tonne and had a 1.5 employment multiplier, production levels of 2015 would have resulted in 9,828 jobs before harvesting (60% from scallop aquaculture) and 3,135 jobs after harvest (38% in the farmed scallop value chains). The total jobs produced by aquaculture of marine resources would add up to 12,963 jobs.
 
 Finally, although the total number of steel purse seiners that target anchoveta for FMFO have decreased, industrial vessels targeting mackerels, tuna and hake have not. According to Elena Conterno, president of the Peruvian Fisheries Society, these vessels employ roughly 3000 people at sea. After applying a 2.9 multiplier, this would result in a total of 8700 jobs for the sector (5700 on land).
 
 In synthesis, the DHC value chains would have employed roughly 217,202 people (80,256 at sea and 136,946 on land). This is smaller than that estimated by Christensen et al. (2014), however it does not include the FMFO value chains (~13% of the sectors employment), nor guano value chains.
 
+\clearpage
+
 # Critical Analysis
-## Overall of the region
+<!-- ## Overall of the region -->
+
 ## Brazil
 
 Brazil has over 7 thousand kilometers of coastline and one of the largest river networks in the world, with only the Amazon River covering over 7 million kilometers square of water. Fisheries resources in Brazil are extremely important for income and food security of millions of people throughout the country. Despite enormous social and economic importance, many fish stock are over exploited and in risk of collapse. According to a study conducted by the Ministry of Environment, 80% of fish stocks are over exploited or fully exploited. This signals the urgency for sustainable management of fisheries in order to guarantee the livelihoods of fishers, improve food security in the country, and conserve marine biodiversity. 
 
 Fish and seafood consumption in Brazil is still incipient compared to other parts of the world. However, fisheries resources are important source of food in the poorest regions of the country and therefore are key to food security. The Amazon region, for example, has some of the highest fish consumption in the world, reaching 169kg/capita/year in riverine communities. 
 
-According to the compiled databases, sardines are the most important fish for consumption in Brazil, especially through the canned market. It is an affordable alternative to other protein sources and is consumed all over the country. Other important resources for fish and seafood consumption in the country are: croakers, tilapia, catfish, cachuma, tunas, sharks, salmon, hake, among others. However, these results rely on data mostly from the industrial sector, whcih comprises about 30-50% of catches in the country. The remaining production is from the small-scale sector, where there is basically no information on catches. This sector is characterized by having hundreds of commercially exploited species, where some of  the most important species are crabs, shrimps, lobster, snappers, groupers, mullet, weakfish and snook. 
+According to the compiled databases, sardines are the most important fish for consumption in Brazil, especially through the canned market. It is an affordable alternative to other protein sources and is consumed all over the country. Other important resources for fish and seafood consumption in the country are: croakers, tilapia, catfish, cachuma, tunas, sharks, salmon, hake, among others. However, these results rely on data mostly from the industrial sector, which comprises about 30-50% of catches in the country. The remaining production is from the small-scale sector, where there is basically no information on catches. This sector is characterized by having hundreds of commercially exploited species, where some of  the most important species are crabs, shrimps, lobster, snappers, groupers, mullet, weakfish and snook. 
 
-During the study we identified several important data gaps in our analysis. First, there is no national-level fisheries statistics in the country, which hindered our ability to accurately respond some of the questions. Second, there is no data on the fisheries production from the artisanal sector, which accounts for more than half of the seafood production in the coutry. Third, there are very few studies on fish consumption in the country, with the most reliable studies dating back more than eigth years. Fourth, there is very little information on the fisheries supply chain, especially from the artisanal sector. For the industrial sector, many of our databeses did not have information on prices, which made it dificult to estimate the total income generated. 
+During the study we identified several important data gaps in our analysis. First, there is no national-level fisheries statistics in the country, which hindered our ability to accurately respond some of the questions. Second, there is no data on the fisheries production from the artisanal sector, which accounts for more than half of the seafood production in the country. Third, there are very few studies on fish consumption in the country, with the most reliable studies dating back more than eight years. Fourth, there is very little information on the fisheries supply chain, especially from the artisanal sector. For the industrial sector, many of our databases did not have information on prices, which made it difficult to estimate the total income generated. 
 
-Regardless of these data gaps, this study was able to gather the best information available. The study highlighted the huge importance of fisheries for income, employment and food security in Brazil. With data from the seafood industry and seafood markets, we now have a better understanding of the main seafood products consumed in the country. With data from IBGE and fisheries licenses, we were able to highlight the importance of fish and seafood products for food security in the poorest parts of the country. Regional landings data helped us better understand the main species caught in some of the most important ports in the country. Import and export data showed the magnitude of the seafood deficit in the country, with a huge potential for aquacuture to fill this gap. 
+Regardless of these data gaps, this study was able to gather the best information available. The study highlighted the huge importance of fisheries for income, employment and food security in Brazil. With data from the seafood industry and seafood markets, we now have a better understanding of the main seafood products consumed in the country. With data from IBGE and fisheries licenses, we were able to highlight the importance of fish and seafood products for food security in the poorest parts of the country. Regional landings data helped us better understand the main species caught in some of the most important ports in the country. Import and export data showed the magnitude of the seafood deficit in the country, with a huge potential for aquaculture to fill this gap. 
 
-More importantly, this study highlights the need for better data collection programs and fisheries management policies in Brazil. There is a huge descrepanc between the social importance of this sector and actions of the government to ensure the sustainability of this activity. Urgent action is needed to better understand this important sectorin order to gain the atention of policy makers and achieve fisheries sustainability. 
+More importantly, this study highlights the need for better data collection programs and fisheries management policies in Brazil. There is a huge discrepancy between the social importance of this sector and actions of the government to ensure the sustainability of this activity. Urgent action is needed to better understand this important sector in order to gain the attention of policy makers and achieve fisheries sustainability. 
 
+\clearpage
 
-### Chile
-### Peru
+## Chile
+
+### Data Uncertanty
+
+Landings are generally well documented in Chile and we are confident the data-set we are using for the estimates are the best we could find. However, SERNAPESCA's records of landings come mostly from self-reported landings for each vessel which means it does not account for Illegal, unreported and unregulated fishing (IUU). This means that we are likely underestimating catch, in general. We do not expect IUU to be occurring at the same rate for all species, this could be a factor that can make the relative importance of species vary.  
+
+A better proxy for economic value would be profits rather than revenues. This would require accounting for species-specific differences in fishing costs. In addition, our current approach only accounts for the value generated by the first transaction. We are not including any value generated at further stages in the supply chain. For that the current analysis employed the multipliers developed by Dyck and Sumaila (2010).
+
+Current data availability allow us to identify the most landed species at the regional level and for each sub-sector artisanal and industrial as well as the most valuable in the artisanal sector per regions (not reported here). Nonetheless, a major data gap to address this scope is the lack of data on the value of catch for the industrial sector.
+
+### Fisheries context
+
+-  The most important fisheries in Chile in terms of landings have been Anchovy (*Engraulis ringens*), Chilean jack mackerel (*Trachurus murphy*i) and Araucanian herring (*Strangomera bentincki*) (*Figure 1*), all three of them mainly catch by the industrial fleet. This pelagic fishes are mainly used to produce fish meal therefore not for human consumption. 
+
+### Seafood consumption
+
+-  Most important species for local consumption are tunas, mussels and hake. However tunas are mainly imported therefore mussels and hake are the most important local resources seafood in Chile. In general this preferences have not change over time. But, comparing data from 2013 to data from 2017 the amount consumed of each of this fisheries has changed. In 2013 31% of the consumption was hake and 32% mussel and 18% tuna. In 2017, 38% of seafood consumption is mussels, 30% of fish consumed is tuna, and only 13% is hake. Interestingly, hake consumption has been decreasing over time while tuna and mussels have been increasing. We need to further explore price variation and people's preferences in order to provide an insightful explanation to this results. Note: this percentage do not include algae. 
+
+### Economic participation
+
+- Most valuable species in terms of revenues for the artisanal sector are the Southern king crab (*Lithodes santolla*), the Chilean sea urchin (*Loxechinus albus*) and the Southern rays bream or Corvina (*Brama australis*). This, results however may vary if we take into account the fishing costs of different species.
+
+- In terms of employment, our preliminary results suggest that the most important fisheries in the artisanal sector are algae fisheries such as Luche (*Porphyra columbina*) and Pelillo (*Gracilaria spp.*) but this varies across regions. In terms of employment generated in production facilities, the Araucanian herring (*Strangomera bentincki*) and the Peruvian anchovy (*Engraulis ringens*) are the most important species given their use for fish meal and oil production.
+
+\clearpage
 
 ## Peru
 
@@ -2828,19 +3398,19 @@ More importantly, this study highlights the need for better data collection prog
 
 <!-- PRODUCE also gathers information from different fresh seafood wholesaler markets in the coastal regions of Peru. These report on a daily basis the amount of seafood sold on site by species and at their corresponding price.  -->
 
-PRODUCE estimates the monthly capture and aquaculture production by combing various sources of gouvernamental information (monthly reports from DPAs, IMARPE and DIREPROs, together with monthly affidavits from industrial fisheries processing facilities and aquaculture producing sites). However, the methods used by PRODUCE for combining the multiple data sets, have never been published and were not available when requested for the present work. This lack of transparency weakens our trust in the information provided by PRODUCE. 
+PRODUCE estimates the monthly capture and aquaculture production by combing various sources of governmental information (monthly reports from DPAs, IMARPE and DIREPROs, together with monthly affidavits from industrial fisheries processing facilities and aquaculture producing sites). However, the methods used by PRODUCE for combining the multiple data sets, have never been published and were not available when requested for the present work. This lack of transparency weakens our trust in the information provided by PRODUCE. 
 
 It is key to highlight that PRODUCE’s estimates of marine and freshwater capture production are a reconstruction of the landings rather than the catch [@DelaPuenteetal. 2013; @Sueiro & De la Puente 2015]. For some species, like sharks for example, the catch is severely underestimated because these fishes are headed and gutted on board [@DelaPuente2017]. Important discards are not accounted for in landings other species including common dolphinfish (*Coryphaena hippurus*) [@DelaPuenteetal2015], and Jumbo flying squid (*Dosidicus gigas*) [@Paredes & De la Puente 2014].
 
-Moreover, PRODUCE underestimates the maritime capture production because it does not account for illegal unreported and unregulated (IUU) fishing, which can be very significant in the small-scale fisheries [@Mendo & Wosnitza-Mendo 2014]. A potential source for this is the data-collection system itself. Species listed in industrial affidavits and/or reports from DIREPROs and DPAs are described using common names, which often vary from site to site (e.g., ‘*jurel*’, ‘*furel*’ and ‘*cairel*’ are all used in reference to the Chilean Jack mackerel *Trachurus murphyi*) or are used to describe different species (e.g., ‘*pampanito*’ is used for the Peruvian moonfish *Selene peruviana*, the starry butterfish *Stromateus stellatus*, and the Paloma pompano *Trachinotus paitensis*), or often hold no real information (e.g., ‘*tollo*’ or ‘*tiburón*’ can be used to describe any shark species [@LopezdelaLamaet al. 2018b]). As a result, landings of marine living resources reported by IMARPE for the 1997-2015 period include registries for at least 258 fish species, 43 species of molluscs, 30 species of crustaceans, 4 species of echinoderms, 4 species of brown algae, 2 species of red algae and 1 species of tunicate (**Table S1**); whilst landings reported by PRODUCE only included 45 species and/or groups of species, reported using common names only (29 for fishes; 9 for molluscs, 2 for crustaceans, 1 for echinoderms, 1 for macroalgae and 3 for unspecified resources – other fishes, other invertebrates, other species). 
+Moreover, PRODUCE underestimates the maritime capture production because it does not account for illegal unreported and unregulated (IUU) fishing, which can be very significant in the small-scale fisheries [@Mendo & Wosnitza-Mendo 2014]. A potential source for this is the data-collection system itself. Species listed in industrial affidavits and/or reports from DIREPROs and DPAs are described using common names, which often vary from site to site (e.g., ‘*jurel*’, ‘*furel*’ and ‘*cairel*’ are all used in reference to the Chilean Jack mackerel *Trachurus murphyi*) or are used to describe different species (e.g., ‘*pampanito*’ is used for the Peruvian moonfish *Selene peruviana*, the starry butterfish *Stromateus stellatus*, and the Paloma pompano *Trachinotus paitensis*), or often hold no real information (e.g., ‘*tollo*’ or ‘*tiburón*’ can be used to describe any shark species [@LopezdelaLamaet al. 2018b]). As a result, landings of marine living resources reported by IMARPE for the 1997-2015 period include registries for at least 258 fish species, 43 species of mollusks, 30 species of crustaceans, 4 species of echinoderms, 4 species of brown algae, 2 species of red algae and 1 species of tunicate (**Table S1**); whilst landings reported by PRODUCE only included 45 species and/or groups of species, reported using common names only (29 for fishes; 9 for mollusks, 2 for crustaceans, 1 for echinoderms, 1 for macroalgae and 3 for unspecified resources – other fishes, other invertebrates, other species). 
 
 Additionally, affidavits from industrial seafood processing companies are hardly ever verified (Patricia Majluf and Hector Soldi , pers. comm.). As a result, some products had very unrealistic yields (e.g., landings of macroalgae were much smaller than the reported cured algae production and export), or manifested mistaken information (e.g., landings of Atlantic salmon reported off Lima). Reports from DPAs lack common or standardized formats, leading to confusion and error. Moreover, given that DPAs are taxed in reference the amount of the fish (and marine invertebrates) landed at the sites, their administrators have a strong economic incentive to underreport them. DPAs ought to be monitored by DIREPROs and PRODUCE, but these institutions lack the man-power and resources to properly impose the rule of law within the fisheries sector [@DelaPuenteSueiro 2013]. 
 
 Alike marine captures, freshwater capture production is severely underestimated [@SueiroDelaPuente2015]. Most of the catch never goes through a landing site and is used for subsistence, as can be seen from the difference in volume reported by PRODUCE and from ENAHO [@AComerPescado 2015; @SueiroDelaPuente 2015; PRODUCE 2016].
 
-Finally, regaring to trade SUNAT records shipments coming in and going out of Peru with great care. They conduct a census of the shipments, rather than just sampling them. However, shipments are sorted by ‘customs codes’, which group together multiple product types and species. Using the general and specific commercial description of each shipment, it is possible to re-arrange their dataset into something more meaningful for monitoring international trade of fisheries and aquaculture products. However, some shipments include multiple species without detailing how much of the total weight corresponds to a particular species (e.g., shipments labeled only as ‘frozen shirmp and mahi-mahi’). The latter are hardly ever segregated with certainty. Nonetheless, the practice of cleaning SUNAT’s data is not something undertaken by PRODUCE, due to limited manpower. As a result, they use customs codes to assess trends in trade, which leads them to interpretational errors.
+Finally, regarding to trade SUNAT records shipments coming in and going out of Peru with great care. They conduct a census of the shipments, rather than just sampling them. However, shipments are sorted by ‘customs codes’, which group together multiple product types and species. Using the general and specific commercial description of each shipment, it is possible to re-arrange their dataset into something more meaningful for monitoring international trade of fisheries and aquaculture products. However, some shipments include multiple species without detailing how much of the total weight corresponds to a particular species (e.g., shipments labeled only as ‘frozen shrimp and mahi-mahi’). The latter are hardly ever segregated with certainty. Nonetheless, the practice of cleaning SUNAT’s data is not something undertaken by PRODUCE, due to limited manpower. As a result, they use customs codes to assess trends in trade, which leads them to interpretation errors.
 
-In synthesis, uncertainty in Peruvian fisheries and aquaculture data is an issue that requires closer attention. It is of paramount importance to improve transparency. Not only in terms of fisheries governance [@DelaPuente & Sueiro 2013; @Heck 2015; @Gutierrez & Sueiro 2017], but also in terms of the data used to inform policy [@DelaPuente et al. 2013; @SueiroDelaPuente 2015]. This is not just an issue for decision makers within the government, but also is a key requirement to secure compliance with international agreements such as the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES). Luckily, Peru has recently signed the Agreement of Escazú (i.e., Acuerdo Regional sobre el Acceso a la Información, la Participación Pública y el Acceso a la Justicia en Asuntos Ambientales en América Latina y el Caribe), which is aimed at increasing available information to assist decision making processes, increase public participation and foster transparency.
+In synthesis, uncertainty in Peruvian fisheries and aquaculture data is an issue that requires closer attention. It is of paramount importance to improve transparency. Not only in terms of fisheries governance [@DelaPuente & Sueiro 2013; @Heck 2015; @Gutierrez & Sueiro 2017], but also in terms of the data used to inform policy [@DelaPuente et al. 2013; @SueiroDelaPuente 2015]. This is not just an issue for decision makers within the government, but also is a key requirement to secure compliance with international agreements such as the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES). Luckily, Peru has recently signed the Agreement of Escazú (i.e., *Acuerdo Regional sobre el Acceso a la Información, la Participación Pública y el Acceso a la Justicia en Asuntos Ambientales en América Latina y el Caribe*), which is aimed at increasing available information to assist decision making processes, increase public participation and foster transparency.
 
 
 ### Fisheries context
@@ -2858,9 +3428,9 @@ As revealed by this study, DHC capture production in Peru is mostly used in valu
 
 As previously reported by De la Puente (2017) [@delapuente2017], overall catches for direct human consumption have remained somewhat stable between 2006 and 2016. Given that total and per capita seafood consumption is increasing in Peru, Peruvian dependence on seafood imports is rapidly increasing in order to ameliorate the growing unsatisfied local seafood demand. Greater demand for seafood is thought to be jeopardizing certain key species for the restaurant trade, and hence local NGOs have started to work with chefs to strengthen the sustainable seafood movement [@Lopez de la Lama et al. 2018c].
 
-The multiple methods used to estimate seafood consumption in Peru revealed that Peruvians mostly eat highly nutritional fishes (e.g., mackerels, bonito and small pelagics), with relatively low trophic levels (except for tunas and sharks). Nonetheless, the Andes mountain range is a serious barrier to seafood consumption, as can be seen by the low DSCpc reported for Peruvian regions found in the highlands and the Amazon (**Table 10**). These regions have the highest nutritional deficits and have some of the lowest values of GDP per capita within Peru [@AComerPescado 2015; @Majluf et al. 2016]. This is key to understanding regional seafood availability. As seafood consumption increases with growing household incomes [@AComerPescado 2015; @Higuchi et al. 2017], seafood continues to remain close to shore and particularly in Lima (**Table 10**), given that the coastal regions of Peru report the largest economic growth within the country [@DelaPuente et al. 2013].
+The multiple methods used to estimate seafood consumption in Peru revealed that Peruvians mostly eat highly nutritional fishes (e.g., mackerels, bonito and small pelagics), with relatively low tropic levels (except for tunas and sharks). Nonetheless, the Andes mountain range is a serious barrier to seafood consumption, as can be seen by the low DSCpc reported for Peruvian regions found in the highlands and the Amazon (**Table 10**). These regions have the highest nutritional deficits and have some of the lowest values of GDP per capita within Peru [@AComerPescado 2015; @Majluf et al. 2016]. This is key to understanding regional seafood availability. As seafood consumption increases with growing household incomes [@AComerPescado 2015; @Higuchi et al. 2017], seafood continues to remain close to shore and particularly in Lima (**Table 10**), given that the coastal regions of Peru report the largest economic growth within the country [@DelaPuente et al. 2013].
 
-It is also worth noting that some key species for DSCT were not relevant for ASCT and vice versa. The Chilean silverside (*Odontesthes regia*), lorna drum (*Sciaena deliciosa*) and Peruvian weakfish (*Cynoscion analis*) were more important contributors to total food security in DSCT than in ASCT. This could be explained as ENAHO revealing a higher unreported supply of these fishes in Peru or consumers being misled (consumer fraud) and sold mislabelled seafood at their local markets. These species have been traditionally consumed in Peru [@Sueiro & De la Puente 2015] and are praised by consumers [@AComerPescado 2015]. As seafood products are easier to sell when consumers know the species being sold and have a history of consuming it [@Carlucci et al. 2015]; perhaps this reveals a market strategy aimed at securing a purchase whilst diluting environmental (i.e., decrease in local supply of a particular species) [@Crona et al. 2016]. This could also explain why jumbo flying squid (*Dosidicus gigas*) and common dolphinfish (*Coryphaena hippurus*) are not as important for DSCT in relation to ASCT. Both of these species are relatively new to Peruvian consumers and not heavily sought seafood items [@SueiroDelaPuente 2015].
+It is also worth noting that some key species for DSCT were not relevant for ASCT and vice versa. The Chilean silverside (*Odontesthes regia*), lorna drum (*Sciaena deliciosa*) and Peruvian weakfish (*Cynoscion analis*) were more important contributors to total food security in DSCT than in ASCT. This could be explained as ENAHO revealing a higher unreported supply of these fishes in Peru or consumers being misled (consumer fraud) and sold mislabeled seafood at their local markets. These species have been traditionally consumed in Peru [@Sueiro & De la Puente 2015] and are praised by consumers [@AComerPescado 2015]. As seafood products are easier to sell when consumers know the species being sold and have a history of consuming it [@Carlucci et al. 2015]; perhaps this reveals a market strategy aimed at securing a purchase whilst diluting environmental (i.e., decrease in local supply of a particular species) [@Crona et al. 2016]. This could also explain why jumbo flying squid (*Dosidicus gigas*) and common dolphinfish (*Coryphaena hippurus*) are not as important for DSCT in relation to ASCT. Both of these species are relatively new to Peruvian consumers and not heavily sought seafood items [@SueiroDelaPuente 2015].
 
 It is also interesting to note that ENAHO does not report frozen seafood consumption. This is a result of local legislation, as seafood wholesalers and retailers are not required to inform consumers whether or not the seafood item being sold is local or if it was previously frozen [@DelaPuente 2017].
 Finally, when comparing ASCT and NSS, the latter presented much lower values. This is because SUNAT registers the net weight of the shipments entering and leaving the country and not the weight of seafood products within them. As Peru is a net exporter of seafood, when not properly accounted for the NSS method will underestimate local seafood supply. On this note, PRODUCE used to publish values for total and per capita apparent consumption of fish and aquatic invertebrates in Peru in their annual statistical reports [@PRODUCE 2015a]. They claim to use the same method for estimating ASCT as we did, however they produce much higher values, and have been heavily criticized for overestimating seafood consumption due to lack of precision and void assumption [@AComerPescado 2015]. 
@@ -2876,6 +3446,7 @@ PRODUCE estimates the fisheries sector’s contribution to the national economy 
 
 Our estimates of the sector’s overall revenue show a relative decrease in the value of DHC value chains since 2011. It is key to highlight, however, that these values are only referential as have been estimated under heavy assumptions. A much closer look is needed to understand the economic dynamics of the Peruvian fisheries sector. This is definitely a research gap that needs to be dealt with in order to properly balance trade-offs and assess the economic and social impacts of alternative fisheries policies aimed at advancing towards the ecosystem-based management of the Humboldt current and its marine living resources.
 
+\clearpage
 
 # Conclusions
 
