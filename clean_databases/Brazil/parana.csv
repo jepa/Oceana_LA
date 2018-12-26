@@ -1,0 +1,1431 @@
+#,year,month,taxa,species_portuguese,species_english,species_sci,production_kg,value_rs
+1,2016,10,Crustáceo,Camarão-estuarino,Shrimp,NA,293.67,7790.97
+2,2016,10,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,645.35,29833.9
+3,2016,10,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,10576.52,100966.92
+4,2016,10,Crustáceo,Camarões-rosa,Brown shrimp,NA,500,30000
+5,2016,10,Crustáceo,Siri-azul,Crab,NA,592.82,14379.23
+6,2016,10,Crustáceo,Siris agrupados,Crab,NA,301.76,5732.31
+7,2016,10,Molusco,Lula,Squid,Loligo sanpaulensis,14,0
+8,2016,10,Molusco,Mexilhão-do-mangue,Mussel,NA,115,1175
+9,2016,10,Molusco,Ostra,Oyster,Crassostrea spp.,2312.3,6171.05
+10,2016,10,Peixe Cartilaginoso,Cação-rola-rola,Shark,NA,6,72
+11,2016,10,Peixe Cartilaginoso,Cações agrupados,Shark,NA,224,4192
+12,2016,10,Peixe Cartilaginoso,Cambeva,Bronze hammerhead shark,Sphyrna lewini,15,180
+13,2016,10,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,78,216.25
+14,2016,10,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,103.8,1577.96
+15,2016,10,Peixe Ósseo,Acará,Acará,NA,2,0
+16,2016,10,Peixe Ósseo,Atuns agrupados,Tuna,NA,10,74.6
+17,2016,10,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,3,22.65
+18,2016,10,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,442.5,1934.2
+19,2016,10,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,2721.2,17281.82
+20,2016,10,Peixe Ósseo,Baiacú,trunkfish,NA,309,3375.3
+21,2016,10,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,1269,4397.8
+22,2016,10,Peixe Ósseo,Bicuda,European barracuda,Sphyraena tome,2.7,0
+23,2016,10,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,79,254.7
+24,2016,10,Peixe Ósseo,Caratinga,Mojarra,NA,54.5,355.6
+25,2016,10,Peixe Ósseo,Cascudo,Atlantic searobin,Prionotus punctatus,130,1231.33
+26,2016,10,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,1123,11327.38
+27,2016,10,Peixe Ósseo,Cioba,Dog Snapper,Lutjanus analis,2,0
+28,2016,10,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,1483.8,12161.29
+29,2016,10,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,10,40
+30,2016,10,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,75.2,441.04
+31,2016,10,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,22,143
+32,2016,10,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,643,2708.5
+33,2016,10,Peixe Ósseo,Lambari,Lambari,NA,0.5,0
+34,2016,10,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,425.5,9072.65
+35,2016,10,Peixe Ósseo,Linguado-areia,Flatfish,NA,10,170
+36,2016,10,Peixe Ósseo,Maria-luíza,Croaker,NA,181,1810
+37,2016,10,Peixe Ósseo,Miraguaia,Miraguaia,NA,187,2022.08
+38,2016,10,Peixe Ósseo,Mistura,Mistura,NA,2029.5,4601.7
+39,2016,10,Peixe Ósseo,Nhacunda,Nhacunda,NA,0.5,0
+40,2016,10,Peixe Ósseo,Oveva,Cabezon,Larimus breviceps,2,1
+41,2016,10,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,67,371.5
+42,2016,10,Peixe Ósseo,Pararê,Pararê,NA,107,856
+43,2016,10,Peixe Ósseo,Parati,Mullet,NA,1378.6,2927.81
+44,2016,10,Peixe Ósseo,Parati-barbudo,Parati-barbudo,NA,2,0
+45,2016,10,Peixe Ósseo,Pargo-rosa,Common sea bream,Pagrus pagrus,18,180
+46,2016,10,Peixe Ósseo,Paru,Paru,NA,359,2057.93
+47,2016,10,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,929.2,9375.93
+48,2016,10,Peixe Ósseo,Pescada-banana,Weakfish,NA,37,0
+49,2016,10,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,1029,11236.74
+50,2016,10,Peixe Ósseo,Pescada-dentão,Weakfish,NA,31,465
+51,2016,10,Peixe Ósseo,Pescada-foguete,Weakfish,NA,1679.7,10286
+52,2016,10,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,285.8,2776.1
+53,2016,10,Peixe Ósseo,Porco-chinelo,Porco-chinelo,NA,10,0
+54,2016,10,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,89.3,2465.4
+55,2016,10,Peixe Ósseo,Robalo,Snook,Centropomus spp.,67.35,939.75
+56,2016,10,Peixe Ósseo,Robalo-flecha,Snook,NA,77.5,1589.38
+57,2016,10,Peixe Ósseo,Robalo-peva,Snook,NA,576.58,9403.39
+58,2016,10,Peixe Ósseo,Saguá,Saguá,NA,30,201.9
+59,2016,10,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,2000,0
+60,2016,10,Peixe Ósseo,Sardinha-cascuda,Blackbill sprat,Harengula clupeola,10,0
+61,2016,10,Peixe Ósseo,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,176,1022
+62,2016,10,Peixe Ósseo,Sargo,Sargo,NA,5,37.9
+63,2016,10,Peixe Ósseo,Tainha,Mullet,Mugil spp.,575.9,6217.56
+64,2016,10,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,436.5,4688
+65,2016,10,,,#N/A,#N/A,0,0
+66,2016,11,Crustáceo,Camarão-estuarino,Shrimp,NA,176.75,4676.69
+67,2016,11,Crustáceo,Camarão-ferrinho,Shrimp,NA,40.03,1269
+68,2016,11,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,4359.2,219106.29
+69,2016,11,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,15464,223389.48
+70,2016,11,Crustáceo,Camarões-rosa,Brown shrimp,NA,125,6000
+71,2016,11,Crustáceo,Caranguejo-uçá,Crab,NA,149.33,923.27
+72,2016,11,Crustáceo,Siri-azul,Crab,NA,1467.33,15118.45
+73,2016,11,Crustáceo,Siri-azul-danae,Siri-azul-danae,NA,43.2,864
+74,2016,11,Crustáceo,Siris agrupados,Crab,NA,703.12,3935.1
+75,2016,11,Molusco,Lula,Squid,Loligo sanpaulensis,8,0
+76,2016,11,Molusco,Mexilhão,Mussel,Perna perna,6,48
+77,2016,11,Molusco,Mexilhão-do-mangue,Mussel,NA,133,1205
+78,2016,11,Molusco,Ostra,Oyster,Crassostrea spp.,4416.85,19317.33
+79,2016,11,Peixe Cartilaginoso,Cações agrupados,Shark,NA,35,540
+80,2016,11,Peixe Cartilaginoso,Cambeva,Bronze hammerhead shark,Sphyrna lewini,74,574
+81,2016,11,Peixe Cartilaginoso,Raia-emplastro,Ray,NA,1,0
+82,2016,11,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,187,368.35
+83,2016,11,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,335,4820.01
+84,2016,11,Peixe Ósseo,Atuns agrupados,Tuna,NA,8,59.68
+85,2016,11,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,1479,10013
+86,2016,11,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,184.5,1012.25
+87,2016,11,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,5337.4,30452.36
+88,2016,11,Peixe Ósseo,Baiacú,trunkfish,NA,920,10068.02
+89,2016,11,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,1097.5,6566.25
+90,2016,11,Peixe Ósseo,Bicuda,European barracuda,Sphyraena tome,5,0
+91,2016,11,Peixe Ósseo,Caranha,Dog Snapper,Lutjanus spp.,4,0
+92,2016,11,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,173,398.9
+93,2016,11,Peixe Ósseo,Caratinga,Mojarra,NA,166.32,477.79
+94,2016,11,Peixe Ósseo,Cascudo,Atlantic searobin,Prionotus punctatus,128,896
+95,2016,11,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,1338,15717.63
+96,2016,11,Peixe Ósseo,Cavalinha,American mackerel,Scomber japonicus,10,60
+97,2016,11,Peixe Ósseo,Congro-rosa,Australian Rockling,Genypterus brasiliensis,2,0
+98,2016,11,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,5111.5,27719.47
+99,2016,11,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,4,16
+100,2016,11,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,57.8,130.8
+101,2016,11,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,17,110.5
+102,2016,11,Peixe Ósseo,Garoupa,Deady,Epinephelus spp.,12,120
+103,2016,11,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,60,600
+104,2016,11,Peixe Ósseo,Gordinho,Angelfish,Pomacanthus arcuatus,21,0
+105,2016,11,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,1473,5111.1
+106,2016,11,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,293,4936.7
+107,2016,11,Peixe Ósseo,Linguado-areia,Flatfish,NA,5,85
+108,2016,11,Peixe Ósseo,Manjuba-chata,anchovy,NA,50,100
+109,2016,11,Peixe Ósseo,Manjubas agrupadas,anchovy,NA,50,400
+110,2016,11,Peixe Ósseo,Maria-luíza,Croaker,NA,187.5,1875
+111,2016,11,Peixe Ósseo,Miraguaia,Miraguaia,NA,139.5,3208.92
+112,2016,11,Peixe Ósseo,Mistura,Mistura,NA,3644,9754.26
+113,2016,11,Peixe Ósseo,Nundiá,Nundiá,NA,0.5,0
+114,2016,11,Peixe Ósseo,Oveva,Cabezon,Larimus breviceps,59,29.5
+115,2016,11,Peixe Ósseo,Palombeta,Leerfish,Chloroscombrus chrysurus,405,886.95
+116,2016,11,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,15,75
+117,2016,11,Peixe Ósseo,Pararê,Pararê,NA,177.5,754
+118,2016,11,Peixe Ósseo,Parati,Mullet,NA,3430.3,8805.77
+119,2016,11,Peixe Ósseo,Pargo-rosa,Common sea bream,Pagrus pagrus,65,650
+120,2016,11,Peixe Ósseo,Paru,Paru,NA,1428,7556.77
+121,2016,11,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,463.5,3919.13
+122,2016,11,Peixe Ósseo,Pescada-banana,Weakfish,NA,27,0
+123,2016,11,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,3525,37924.86
+124,2016,11,Peixe Ósseo,Pescada-dentão,Weakfish,NA,333.5,5037.14
+125,2016,11,Peixe Ósseo,Pescada-foguete,Weakfish,NA,3874.6,25169.04
+126,2016,11,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,86,428
+127,2016,11,Peixe Ósseo,Pirajica,Pirajica,Kyphosus spp.,10,20
+128,2016,11,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,44,546
+129,2016,11,Peixe Ósseo,Robalo,Snook,Centropomus spp.,20,120
+130,2016,11,Peixe Ósseo,Robalo-flecha,Snook,NA,463.4,10057.26
+131,2016,11,Peixe Ósseo,Robalo-peva,Snook,NA,834,13763.03
+132,2016,11,Peixe Ósseo,Sabão,Sabão,NA,100,0
+133,2016,11,Peixe Ósseo,Saguá,Saguá,NA,33,209.68
+134,2016,11,Peixe Ósseo,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,100,400
+135,2016,11,Peixe Ósseo,Sargo,Sargo,NA,22,166.76
+136,2016,11,Peixe Ósseo,Tainha,Mullet,Mugil spp.,571.2,3083.54
+137,2016,11,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,339,3198
+138,2016,11,,,#N/A,#N/A,0,0
+139,2016,12,Crustáceo,Camarão-estuarino,Shrimp,NA,812516,2293.56
+140,2016,12,Crustáceo,Camarão-ferrinho,Shrimp,NA,20,634
+141,2016,12,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,1975.3,90953.63
+142,2016,12,Crustáceo,Camarão-santana,Shrimp,Pleoticus muelleri,505.6,3286.4
+143,2016,12,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,47986.4,456627.7
+144,2016,12,Crustáceo,Camarões-rosa,Brown shrimp,NA,36.2,1404
+145,2016,12,Crustáceo,Caranguejo-uçá,Crab,NA,19795.839,119932.13
+146,2016,12,Crustáceo,Siri-azul,Crab,NA,613.66,9879.14
+147,2016,12,Crustáceo,Siri-azul-danae,Siri-azul-danae,NA,124.8,2093.72
+148,2016,12,Crustáceo,Siris agrupados,Crab,NA,20,390
+149,2016,12,Molusco,Lula,Squid,Loligo sanpaulensis,1,0
+150,2016,12,Molusco,Mexilhão,Mussel,Perna perna,50,125
+151,2016,12,Molusco,Mexilhão-do-mangue,Mussel,NA,54,388
+152,2016,12,Molusco,Ostra,Oyster,Crassostrea spp.,3082.21,5284.01
+153,2016,12,Peixe Cartilaginoso,Cação-cabeça-chata,Cação-cabeça-chata,NA,2,24
+154,2016,12,Peixe Cartilaginoso,Cação-rola-rola,Shark,NA,454,7485
+155,2016,12,Peixe Cartilaginoso,Cações agrupados,Shark,NA,853,9881
+156,2016,12,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,267,673.5
+157,2016,12,Peixe Cartilaginoso,Raia-ticonha,Raia-ticonha,NA,10,50
+158,2016,12,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,135,1889.6
+159,2016,12,Peixe Ósseo,Abrótea,Brazilian codling,Urophycis brasiliensis,25,150
+160,2016,12,Peixe Ósseo,Atum-legítimo,Tuna,NA,17,126.82
+161,2016,12,Peixe Ósseo,Atuns agrupados,Tuna,NA,274,1945.64
+162,2016,12,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,2056,9516.5
+163,2016,12,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,67,201.58
+164,2016,12,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,3026,11581.61
+165,2016,12,Peixe Ósseo,Baiacú,trunkfish,NA,1005.5,8109.63
+166,2016,12,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,370,2264.45
+167,2016,12,Peixe Ósseo,Bonitos agrupados,skipjack tuna,NA,1,0
+168,2016,12,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,133,183
+169,2016,12,Peixe Ósseo,Caratinga,Mojarra,NA,51,257.22
+170,2016,12,Peixe Ósseo,Cascudo,Atlantic searobin,Prionotus punctatus,150,1390
+171,2016,12,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,4248,36087.24
+172,2016,12,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,1551,8117.85
+173,2016,12,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,49.5,204.06
+174,2016,12,Peixe Ósseo,Garoupa,Deady,Epinephelus spp.,17,255
+175,2016,12,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,17,85
+176,2016,12,Peixe Ósseo,Gordinho,Angelfish,Pomacanthus arcuatus,2,0
+177,2016,12,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,8984,33411
+178,2016,12,Peixe Ósseo,Lambari,Lambari,NA,0.5,0
+179,2016,12,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,90.7,1331.5
+180,2016,12,Peixe Ósseo,Manjuba-chata,anchovy,NA,105,240.98
+181,2016,12,Peixe Ósseo,Maria-luíza,Croaker,NA,54,540
+182,2016,12,Peixe Ósseo,Mistura,Mistura,NA,2476,4633.28
+183,2016,12,Peixe Ósseo,Palombeta,Leerfish,Chloroscombrus chrysurus,292,640
+184,2016,12,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,70,440
+185,2016,12,Peixe Ósseo,Pararê,Pararê,NA,18,83
+186,2016,12,Peixe Ósseo,Parati,Mullet,NA,1140,2710.05
+187,2016,12,Peixe Ósseo,Pargo-rosa,Common sea bream,Pagrus pagrus,4,40
+188,2016,12,Peixe Ósseo,Paru,Paru,NA,3070.5,11236.56
+189,2016,12,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,432,5113.43
+190,2016,12,Peixe Ósseo,Pescada-banana,Weakfish,NA,1,0
+191,2016,12,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,3118.5,32950.2
+192,2016,12,Peixe Ósseo,Pescada-dentão,Weakfish,NA,217,3188
+193,2016,12,Peixe Ósseo,Pescada-foguete,Weakfish,NA,5871,45141.72
+194,2016,12,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,239,1959.1
+195,2016,12,Peixe Ósseo,Porco,Porco,NA,30,400
+196,2016,12,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,29,517.5
+197,2016,12,Peixe Ósseo,Robalo,Snook,Centropomus spp.,489,12810
+198,2016,12,Peixe Ósseo,Robalo-flecha,Snook,NA,297,6375.13
+199,2016,12,Peixe Ósseo,Robalo-peva,Snook,NA,168.5,2038.5
+200,2016,12,Peixe Ósseo,Saguá,Saguá,NA,5,30
+201,2016,12,Peixe Ósseo,Salema,Salema,Sarpa salpa,4.4,33.2
+202,2016,12,Peixe Ósseo,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,243,671
+203,2016,12,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,30,210
+204,2016,12,Peixe Ósseo,Tainha,Mullet,Mugil spp.,207.5,1122.52
+205,2016,12,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,60,380
+206,2016,12,Peixe Ósseo,Vermelho,Snapper,Lutjanus spp.,5,0
+207,2016,12,Peixe Ósseo,Xaréu,Black cavalli,Caranx hippos,155,1550
+208,2016,12,,,#N/A,#N/A,0,0
+209,2017,1,Crustáceo,Camarão-estuarino,Shrimp,NA,249.44,6003.77
+210,2017,1,Crustáceo,Camarão-ferrinho,Shrimp,NA,206,3120
+211,2017,1,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,1757.7,84093.5
+212,2017,1,Crustáceo,Camarão-santana,Shrimp,Pleoticus muelleri,590,5310
+213,2017,1,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,43982.5,406760.83
+214,2017,1,Crustáceo,Camarões-rosa,Brown shrimp,NA,450.6,11371
+215,2017,1,Crustáceo,Caranguejo-uçá,Crab,NA,22301.3092,139055.63
+216,2017,1,Crustáceo,Siri-azul,Crab,NA,1452.68,20424.67
+217,2017,1,Crustáceo,Siri-azul-danae,Siri-azul-danae,NA,40.32,900
+218,2017,1,Crustáceo,Siris agrupados,Crab,NA,10,150
+219,2017,1,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,1500,825
+220,2017,1,Molusco,Mexilhão,Mussel,Perna perna,70,820
+221,2017,1,Molusco,Mexilhão-do-mangue,Mussel,NA,941.7,7497.5
+222,2017,1,Molusco,Ostra,Oyster,Crassostrea spp.,4093.56,7610
+223,2017,1,Peixe Cartilaginoso,Cação-rola-rola,Shark,NA,245,3986
+224,2017,1,Peixe Cartilaginoso,Cações agrupados,Shark,NA,77,558
+225,2017,1,Peixe Cartilaginoso,Cambeva,Bronze hammerhead shark,Sphyrna lewini,219,3094
+226,2017,1,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,419,596.5
+227,2017,1,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,259,3454
+228,2017,1,Peixe Ósseo,Acará,Acará,NA,0.5,5
+229,2017,1,Peixe Ósseo,Atuns agrupados,Tuna,NA,108,954
+230,2017,1,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,300,2958
+231,2017,1,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,415,881
+232,2017,1,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,1199.9,6197.32
+233,2017,1,Peixe Ósseo,Baiacú,trunkfish,NA,551.5,4551.17
+234,2017,1,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,195.5,428.4
+235,2017,1,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,136,300.5
+236,2017,1,Peixe Ósseo,Caratinga,Mojarra,NA,12.5,72.5
+237,2017,1,Peixe Ósseo,Cascudo,Atlantic searobin,Prionotus punctatus,100,1000
+238,2017,1,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,2479,24302.57
+239,2017,1,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,940.5,3757.26
+240,2017,1,Peixe Ósseo,Dourado,Common dolphifish,Coryphaena hippurus,1,0
+241,2017,1,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,5,20
+242,2017,1,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,81,167
+243,2017,1,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,93,219
+244,2017,1,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,23,138
+245,2017,1,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,8142,30377.5
+246,2017,1,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,215,2736
+247,2017,1,Peixe Ósseo,Manjuba-chata,anchovy,NA,82,254
+248,2017,1,Peixe Ósseo,Manjubas agrupadas,anchovy,NA,11,0
+249,2017,1,Peixe Ósseo,Maria-luíza,Croaker,NA,14,140
+250,2017,1,Peixe Ósseo,Miraguaia,Miraguaia,NA,556.5,5372
+251,2017,1,Peixe Ósseo,Mistura,Mistura,NA,2168.7,5793.33
+252,2017,1,Peixe Ósseo,Oveva,Cabezon,Larimus breviceps,3,6
+253,2017,1,Peixe Ósseo,Palombeta,Leerfish,Chloroscombrus chrysurus,36,72
+254,2017,1,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,78,203.5
+255,2017,1,Peixe Ósseo,Pararê,Pararê,NA,73,252
+256,2017,1,Peixe Ósseo,Parati,Mullet,NA,1575,3828.79
+257,2017,1,Peixe Ósseo,Pargo-rosa,Common sea bream,Pagrus pagrus,1,0
+258,2017,1,Peixe Ósseo,Paru,Paru,NA,4014,27018.17
+259,2017,1,Peixe Ósseo,Peixe-voador,Flying fish,Hirundichthys affinis,23,46
+260,2017,1,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,787.7,13181.3
+261,2017,1,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,1920.4,18481.75
+262,2017,1,Peixe Ósseo,Pescada-cambucu,Weakfish,NA,16,160
+263,2017,1,Peixe Ósseo,Pescada-dentão,Weakfish,NA,187.5,1176.5
+264,2017,1,Peixe Ósseo,Pescada-foguete,Weakfish,NA,8717,66896.3
+265,2017,1,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,35,205
+266,2017,1,Peixe Ósseo,Porco,Porco,NA,3255,8995
+267,2017,1,Peixe Ósseo,Robalo,Snook,Centropomus spp.,504.5,8261
+268,2017,1,Peixe Ósseo,Robalo-flecha,Snook,NA,366,10997.57
+269,2017,1,Peixe Ósseo,Robalo-peva,Snook,NA,523,6214.25
+270,2017,1,Peixe Ósseo,Sabão,Sabão,NA,10,0
+271,2017,1,Peixe Ósseo,Saguá,Saguá,NA,75,389
+272,2017,1,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,33500,10050
+273,2017,1,Peixe Ósseo,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,30,210
+274,2017,1,Peixe Ósseo,Sargo,Sargo,NA,84,637.5
+275,2017,1,Peixe Ósseo,Tainha,Mullet,Mugil spp.,759.5,4769.74
+276,2017,1,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,98,743.5
+277,2017,1,Peixe Ósseo,Xaréu,Black cavalli,Caranx hippos,10,20
+278,2017,1,,,#N/A,#N/A,0,0
+279,2017,2,Crustáceo,Camarão-estuarino,Shrimp,NA,1790.5952,30246.62
+280,2017,2,Crustáceo,Camarão-ferrinho,Shrimp,NA,4160,18720
+281,2017,2,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,5189.8,141502.63
+282,2017,2,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,77692.3,941980.7
+283,2017,2,Crustáceo,Camarões-rosa,Brown shrimp,NA,262.6,9847.5
+284,2017,2,Crustáceo,Caranguejo-uçá,Crab,NA,12903.2959,78825.13
+285,2017,2,Crustáceo,Pitú-de-iguape,Crayfish,NA,4.2,1640
+286,2017,2,Crustáceo,Siri-azul,Crab,NA,1627.43,20978.9
+287,2017,2,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,35580,19569
+288,2017,2,Molusco,Mexilhão,Mussel,Perna perna,21.4,256.8
+289,2017,2,Molusco,Mexilhão-do-mangue,Mussel,NA,125,1780
+290,2017,2,Molusco,Ostra,Oyster,Crassostrea spp.,1498.15,3041
+291,2017,2,Peixe Cartilaginoso,Cação-rola-rola,Shark,NA,475,10180
+292,2017,2,Peixe Cartilaginoso,Cações agrupados,Shark,NA,74.8,372
+293,2017,2,Peixe Cartilaginoso,Cambeva,Bronze hammerhead shark,Sphyrna lewini,2,24
+294,2017,2,Peixe Cartilaginoso,Raia-manteiga,Raia-manteiga,NA,60,240
+295,2017,2,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,151,176.5
+296,2017,2,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,136.5,1656
+297,2017,2,Peixe Ósseo,Atuns agrupados,Tuna,NA,10,100
+298,2017,2,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,483.1,4234.9
+299,2017,2,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,494.5,994.5
+300,2017,2,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,610,3214.13
+301,2017,2,Peixe Ósseo,Baiacú,trunkfish,NA,1313,11868
+302,2017,2,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,1273.8,4199.1
+303,2017,2,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,117,278.5
+304,2017,2,Peixe Ósseo,Caratinga,Mojarra,NA,79,326
+305,2017,2,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,2498,22620
+306,2017,2,Peixe Ósseo,Cavalinha,American mackerel,Scomber japonicus,8,48
+307,2017,2,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,1074.5,4410.45
+308,2017,2,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,43,193
+309,2017,2,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,28,77
+310,2017,2,Peixe Ósseo,Foguera,Foguera,NA,15,135
+311,2017,2,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,127,450
+312,2017,2,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,4.5,27
+313,2017,2,Peixe Ósseo,Gordinho,Angelfish,Pomacanthus arcuatus,13,9
+314,2017,2,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,8763,33201.15
+315,2017,2,Peixe Ósseo,Lambari,Lambari,NA,2,160
+316,2017,2,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,96,1177
+317,2017,2,Peixe Ósseo,Manjuba-chata,anchovy,NA,55,82.5
+318,2017,2,Peixe Ósseo,Manjubas agrupadas,anchovy,NA,84,2885
+319,2017,2,Peixe Ósseo,Maria-luíza,Croaker,NA,12,120
+320,2017,2,Peixe Ósseo,Miraguaia,Miraguaia,NA,47,390
+321,2017,2,Peixe Ósseo,Mistura,Mistura,NA,1539.6,3129.85
+322,2017,2,Peixe Ósseo,Oveva,Cabezon,Larimus breviceps,23,14.15
+323,2017,2,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,50,350
+324,2017,2,Peixe Ósseo,Pararê,Pararê,NA,161,626
+325,2017,2,Peixe Ósseo,Parati,Mullet,NA,1961.8,5740.43
+326,2017,2,Peixe Ósseo,Pargo-rosa,Common sea bream,Pagrus pagrus,1,0
+327,2017,2,Peixe Ósseo,Paru,Paru,NA,1652,17477.1
+328,2017,2,Peixe Ósseo,Peixe-voador,Flying fish,Hirundichthys affinis,15,0
+329,2017,2,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,683.9,13134.4
+330,2017,2,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,938.92,13858.58
+331,2017,2,Peixe Ósseo,Pescada-dentão,Weakfish,NA,187.9,1630.4
+332,2017,2,Peixe Ósseo,Pescada-foguete,Weakfish,NA,7049.09,52954.54
+333,2017,2,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,343.3,2636.8
+334,2017,2,Peixe Ósseo,Porco,Porco,NA,461,1432
+335,2017,2,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,53,565
+336,2017,2,Peixe Ósseo,Robalo,Snook,Centropomus spp.,145.9,2689
+337,2017,2,Peixe Ósseo,Robalo-flecha,Snook,NA,424,13411
+338,2017,2,Peixe Ósseo,Robalo-peva,Snook,NA,689.4,8980.4
+339,2017,2,Peixe Ósseo,Saguá,Saguá,NA,47,149
+340,2017,2,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,7500,2250
+341,2017,2,Peixe Ósseo,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,50,150
+342,2017,2,Peixe Ósseo,Sargo,Sargo,NA,66,386
+343,2017,2,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,115,829
+344,2017,2,Peixe Ósseo,Tainha,Mullet,Mugil spp.,1466,10441.73
+345,2017,2,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,69,512
+346,2017,2,Peixe Ósseo,Xaréu,Black cavalli,Caranx hippos,60,0
+347,2017,2,,,#N/A,#N/A,0,0
+348,2017,3,Crustáceo,Camarão-estuarino,Shrimp,NA,6760.6904,107124.95
+349,2017,3,Crustáceo,Camarão-ferrinho,Shrimp,NA,4500,20250
+350,2017,3,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,6646.4,195619.13
+351,2017,3,Crustáceo,Camarão-santana,Shrimp,Pleoticus muelleri,10275,66787.5
+352,2017,3,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,21896.5,235390.5
+353,2017,3,Crustáceo,Camarões-rosa,Brown shrimp,NA,186,4162
+354,2017,3,Crustáceo,Caranguejo-uçá,Crab,NA,4004.9,25079
+355,2017,3,Crustáceo,Chama-maré,Chama-maré,NA,3.47,0
+356,2017,3,Crustáceo,Pitú-de-iguape,Crayfish,NA,9.41,3120
+357,2017,3,Crustáceo,Siri-azul,Crab,NA,1050.3402,12979.01
+358,2017,3,Crustáceo,Siri-azul-danae,Siri-azul-danae,NA,22.32,97.5
+359,2017,3,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,20200,11110
+360,2017,3,Molusco,Mexilhão,Mussel,Perna perna,69.2,507
+361,2017,3,Molusco,Mexilhão-do-mangue,Mussel,NA,446,6370
+362,2017,3,Molusco,Ostra,Oyster,Crassostrea spp.,4521.545,5014.45
+363,2017,3,Peixe Cartilaginoso,Cação-rola-rola,Shark,NA,165,3300
+364,2017,3,Peixe Cartilaginoso,Cações agrupados,Shark,NA,15,120
+365,2017,3,Peixe Cartilaginoso,Cambeva,Bronze hammerhead shark,Sphyrna lewini,6,72
+366,2017,3,Peixe Cartilaginoso,Raia-manteiga,Raia-manteiga,NA,20,100
+367,2017,3,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,431,2953.5
+368,2017,3,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,5,0
+369,2017,3,Peixe Ósseo,Acará,Acará,NA,1.5,0
+370,2017,3,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,146,595
+371,2017,3,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,504,1645
+372,2017,3,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,1541,7534.5
+373,2017,3,Peixe Ósseo,Baiacú,trunkfish,NA,2229,19690.85
+374,2017,3,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,338,903
+375,2017,3,Peixe Ósseo,Canhanha,Brim,Archosargus rhomboidalis,10,25
+376,2017,3,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,96,253
+377,2017,3,Peixe Ósseo,Caratinga,Mojarra,NA,152.5,830
+378,2017,3,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,1299,12344
+379,2017,3,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,981.1,4480.1
+380,2017,3,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,10,80
+381,2017,3,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,38,73
+382,2017,3,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,232,2160
+383,2017,3,Peixe Ósseo,Galo-de-penacho,Atlantic Moonfish,Selene setapinnis,580,5800
+384,2017,3,Peixe Ósseo,Garoupa,Deady,Epinephelus spp.,212,5300
+385,2017,3,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,15,105
+386,2017,3,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,1329,6266.98
+387,2017,3,Peixe Ósseo,Lambari,Lambari,NA,1,50
+388,2017,3,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,150,2745
+389,2017,3,Peixe Ósseo,Linguado-areia,Flatfish,NA,3.5,59.5
+390,2017,3,Peixe Ósseo,Manjubas agrupadas,anchovy,NA,22,520
+391,2017,3,Peixe Ósseo,Miraguaia,Miraguaia,NA,79,544
+392,2017,3,Peixe Ósseo,Mistura,Mistura,NA,1953,3738.5
+393,2017,3,Peixe Ósseo,Oveva,Cabezon,Larimus breviceps,40,20
+394,2017,3,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,616,5080
+395,2017,3,Peixe Ósseo,Pararê,Pararê,NA,531,2812
+396,2017,3,Peixe Ósseo,Parati,Mullet,NA,3460.7,9102
+397,2017,3,Peixe Ósseo,Paru,Paru,NA,1022.6,9207
+398,2017,3,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,1413.4,27501.27
+399,2017,3,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,1158,11588.83
+400,2017,3,Peixe Ósseo,Pescada-cambucu,Weakfish,NA,5,50
+401,2017,3,Peixe Ósseo,Pescada-dentão,Weakfish,NA,63,534
+402,2017,3,Peixe Ósseo,Pescada-foguete,Weakfish,NA,3437,23618
+403,2017,3,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,61,458
+404,2017,3,Peixe Ósseo,Pirajica,Pirajica,Kyphosus spp.,12,24
+405,2017,3,Peixe Ósseo,Porco,Porco,NA,180,560
+406,2017,3,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,79,710
+407,2017,3,Peixe Ósseo,Robalo,Snook,Centropomus spp.,319.5,4754
+408,2017,3,Peixe Ósseo,Robalo-flecha,Snook,NA,130.3,3696
+409,2017,3,Peixe Ósseo,Robalo-peva,Snook,NA,603.5,8028
+410,2017,3,Peixe Ósseo,Saguá,Saguá,NA,143.5,729
+411,2017,3,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,1000,300
+412,2017,3,Peixe Ósseo,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,50,50
+413,2017,3,Peixe Ósseo,Sargo,Sargo,NA,279,4047
+414,2017,3,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,110,760
+415,2017,3,Peixe Ósseo,Tainha,Mullet,Mugil spp.,3899.4,28038.43
+416,2017,3,Peixe Ósseo,Tilápia-do-nilo,Nile tilapia,Oreochromis niloticus,10,100
+417,2017,3,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,114,813
+418,2017,3,,,#N/A,#N/A,0,0
+419,2017,4,Crustáceo,Camarão-estuarino,Shrimp,NA,5550.9568,87482.9
+420,2017,4,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,8955.2,222048.07
+421,2017,4,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,5180,52841.98
+422,2017,4,Crustáceo,Camarões-rosa,Brown shrimp,NA,182,4550
+423,2017,4,Crustáceo,Chama-maré,Chama-maré,NA,2066,0
+424,2017,4,Crustáceo,Pitú-de-iguape,Crayfish,NA,6965,2315
+425,2017,4,Crustáceo,Siri-azul,Crab,NA,1076.5804,12598.85
+426,2017,4,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,19600,10780
+427,2017,4,Molusco,Mexilhão,Mussel,Perna perna,17,136
+428,2017,4,Molusco,Mexilhão-do-mangue,Mussel,NA,350.2,4997
+429,2017,4,Molusco,Ostra,Oyster,Crassostrea spp.,17484.03,17395.42
+430,2017,4,Peixe Cartilaginoso,Cação-rola-rola,Shark,NA,2,24
+431,2017,4,Peixe Cartilaginoso,Cações agrupados,Shark,NA,11,142
+432,2017,4,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,398,935.17
+433,2017,4,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,1,12
+434,2017,4,Peixe Ósseo,Acará,Acará,NA,7,6
+435,2017,4,Peixe Ósseo,Albacora-branca,Albacora-branca,Thunnus alalunga,12,120
+436,2017,4,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,54.5,116
+437,2017,4,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,418,1034.33
+438,2017,4,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,1853.03,8704.44
+439,2017,4,Peixe Ósseo,Baiacú,trunkfish,NA,2009.5,17013.93
+440,2017,4,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,217,670.5
+441,2017,4,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,127,397
+442,2017,4,Peixe Ósseo,Caratinga,Mojarra,NA,500.1,2438.42
+443,2017,4,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,1171,11012.71
+444,2017,4,Peixe Ósseo,Cavalinha,American mackerel,Scomber japonicus,53,220
+445,2017,4,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,579.3,2477.65
+446,2017,4,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,490.5,2359.5
+447,2017,4,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,26.6,59
+448,2017,4,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,46,418
+449,2017,4,Peixe Ósseo,Galo-de-penacho,Atlantic Moonfish,Selene setapinnis,6,60
+450,2017,4,Peixe Ósseo,Garoupa,Deady,Epinephelus spp.,228.5,5644.5
+451,2017,4,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,18,108
+452,2017,4,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,591,2690.83
+453,2017,4,Peixe Ósseo,Lambari,Lambari,NA,1.5,75
+454,2017,4,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,163.8,2098.9
+455,2017,4,Peixe Ósseo,Manjuba-chata,anchovy,NA,50,100
+456,2017,4,Peixe Ósseo,Maria-luíza,Croaker,NA,322,658
+457,2017,4,Peixe Ósseo,Miraguaia,Miraguaia,NA,179,1745
+458,2017,4,Peixe Ósseo,Mistura,Mistura,NA,2374,5678.54
+459,2017,4,Peixe Ósseo,Oveva,Cabezon,Larimus breviceps,100,50
+460,2017,4,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,237,1660
+461,2017,4,Peixe Ósseo,Pararê,Pararê,NA,503,2181
+462,2017,4,Peixe Ósseo,Parati,Mullet,NA,3532.7,11737.86
+463,2017,4,Peixe Ósseo,Paru,Paru,NA,183,888
+464,2017,4,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,1102,16398
+465,2017,4,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,1498.7,10893.37
+466,2017,4,Peixe Ósseo,Pescada-dentão,Weakfish,NA,54,258
+467,2017,4,Peixe Ósseo,Pescada-foguete,Weakfish,NA,4433.4,33451
+468,2017,4,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,35,440
+469,2017,4,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,400,4021.8
+470,2017,4,Peixe Ósseo,Robalo,Snook,Centropomus spp.,223.5,3073.5
+471,2017,4,Peixe Ósseo,Robalo-flecha,Snook,NA,92.5,1703
+472,2017,4,Peixe Ósseo,Robalo-peva,Snook,NA,550.5,7703
+473,2017,4,Peixe Ósseo,Saguá,Saguá,NA,379,2643
+474,2017,4,Peixe Ósseo,Salema,Salema,Sarpa salpa,0.7,2.8
+475,2017,4,Peixe Ósseo,Sargo,Sargo,NA,52,860
+476,2017,4,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,29,262
+477,2017,4,Peixe Ósseo,Tainha,Mullet,Mugil spp.,2652.7,20118.4
+478,2017,4,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,258.5,2445.5
+479,2017,4,,Peixes ósseos,Finfishes nei,Osteichthyes,70,105
+480,2017,4,,,#N/A,#N/A,0,0
+481,2017,5,Crustáceo,Camarão-estuarino,Shrimp,NA,4040.636,54750.6
+482,2017,5,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,3714.4,98253
+483,2017,5,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,2160.5,14143.93
+484,2017,5,Crustáceo,Camarões-rosa,Brown shrimp,NA,85,2125
+485,2017,5,Crustáceo,Chama-maré,Chama-maré,NA,3.53,0
+486,2017,5,Crustáceo,Pitú-de-iguape,Crayfish,NA,7.44,2480
+487,2017,5,Crustáceo,Siri-azul,Crab,NA,1288.56,16395
+488,2017,5,Crustáceo,Siri-azul-danae,Siri-azul-danae,NA,92.2,1408
+489,2017,5,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,11200,6160
+490,2017,5,Molusco,Mexilhão,Mussel,Perna perna,56.6,487.4
+491,2017,5,Molusco,Mexilhão-do-mangue,Mussel,NA,259,3341
+492,2017,5,Molusco,Ostra,Oyster,Crassostrea spp.,10620.38,17674.65
+493,2017,5,Peixe Cartilaginoso,Cação-galha-branca,Cação-galha-branca,NA,5,35
+494,2017,5,Peixe Cartilaginoso,Cação-galha-preta,Shark,NA,7,70
+495,2017,5,Peixe Cartilaginoso,Cação-rola-rola,Shark,NA,30,360
+496,2017,5,Peixe Cartilaginoso,Cambeva,Bronze hammerhead shark,Sphyrna lewini,131,1464
+497,2017,5,Peixe Cartilaginoso,Raia-manteiga,Raia-manteiga,NA,40,120
+498,2017,5,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,178,387
+499,2017,5,Peixe Cartilaginoso,Tintureira,Blue shark,Prionace glauca,7,70
+500,2017,5,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,227.5,1467
+501,2017,5,Peixe Ósseo,Agulhão-vela,Atlantic sailfish,Istiophorus albicans,15,120
+502,2017,5,Peixe Ósseo,Albacora-branca,Albacora-branca,Thunnus alalunga,34,204
+503,2017,5,Peixe Ósseo,Badejo,Whiting,Mycteroperca spp.,9,108
+504,2017,5,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,131,603.5
+505,2017,5,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,659,2386
+506,2017,5,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,3388.7,14532.56
+507,2017,5,Peixe Ósseo,Baiacú,trunkfish,NA,2726.23,22680.34
+508,2017,5,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,84,286.92
+509,2017,5,Peixe Ósseo,Caranha,Dog Snapper,Lutjanus spp.,41,820
+510,2017,5,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,72,152
+511,2017,5,Peixe Ósseo,Caratinga,Mojarra,NA,232.4,1189
+512,2017,5,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,3787,31667
+513,2017,5,Peixe Ósseo,Cavalinha,American mackerel,Scomber japonicus,143,552
+514,2017,5,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,888.2,4023.48
+515,2017,5,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,153,804
+516,2017,5,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,1,2.5
+517,2017,5,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,10,20
+518,2017,5,Peixe Ósseo,Gordinho,Angelfish,Pomacanthus arcuatus,4,12
+519,2017,5,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,151,1817
+520,2017,5,Peixe Ósseo,Lambari,Lambari,NA,17,850
+521,2017,5,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,639.4,9559.1
+522,2017,5,Peixe Ósseo,Miraguaia,Miraguaia,NA,653,5227
+523,2017,5,Peixe Ósseo,Mistura,Mistura,NA,872,1677.5
+524,2017,5,Peixe Ósseo,Palombeta,Leerfish,Chloroscombrus chrysurus,10,20
+525,2017,5,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,30.7,422.1
+526,2017,5,Peixe Ósseo,Pararê,Pararê,NA,158,857
+527,2017,5,Peixe Ósseo,Parati,Mullet,NA,2511.1,7022.94
+528,2017,5,Peixe Ósseo,Paru,Paru,NA,43,148
+529,2017,5,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,404,4135
+530,2017,5,Peixe Ósseo,Pescada-banana,Weakfish,NA,2,18
+531,2017,5,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,1631.5,11439.53
+532,2017,5,Peixe Ósseo,Pescada-dentão,Weakfish,NA,42,213
+533,2017,5,Peixe Ósseo,Pescada-foguete,Weakfish,NA,4159.7,28112.2
+534,2017,5,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,40,125
+535,2017,5,Peixe Ósseo,Porco,Porco,NA,15,0
+536,2017,5,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,323.7,3538.4
+537,2017,5,Peixe Ósseo,Robalo,Snook,Centropomus spp.,353.1,5188.5
+538,2017,5,Peixe Ósseo,Robalo-flecha,Snook,NA,5,85
+539,2017,5,Peixe Ósseo,Robalo-peva,Snook,NA,957.5,10876.63
+540,2017,5,Peixe Ósseo,Saguá,Saguá,NA,241.5,1287
+541,2017,5,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,77,616
+542,2017,5,Peixe Ósseo,Sargo,Sargo,NA,1.3,7.8
+543,2017,5,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,311,2240
+544,2017,5,Peixe Ósseo,Tainha,Mullet,Mugil spp.,4625.3,31851.03
+545,2017,5,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,162.6,1177.1
+546,2017,5,,,#N/A,#N/A,0,0
+547,2017,6,Crustáceo,Camarão-estuarino,Shrimp,NA,906124,23046.42
+548,2017,6,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,10083,237605.83
+549,2017,6,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,153644.6,903073.29
+550,2017,6,Crustáceo,Camarões-rosa,Brown shrimp,NA,74,2260
+551,2017,6,Crustáceo,Chama-maré,Chama-maré,NA,2.09,0
+552,2017,6,Crustáceo,Pitú-de-iguape,Crayfish,NA,5625,1875
+553,2017,6,Crustáceo,Siri-azul,Crab,NA,1621.12,16177.6
+554,2017,6,Crustáceo,Siri-azul-danae,Siri-azul-danae,NA,22.32,176
+555,2017,6,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,3780,2290.2
+556,2017,6,Molusco,Lula,Squid,Loligo sanpaulensis,3.8,0
+557,2017,6,Molusco,Mexilhão,Mussel,Perna perna,54.2,433.6
+558,2017,6,Molusco,Mexilhão-do-mangue,Mussel,NA,142.5,1593
+559,2017,6,Molusco,Ostra,Oyster,Crassostrea spp.,16094.375,25491.72
+560,2017,6,Peixe Cartilaginoso,Cação-galha-preta,Shark,NA,346,4194
+561,2017,6,Peixe Cartilaginoso,Cações agrupados,Shark,NA,22,234
+562,2017,6,Peixe Cartilaginoso,Cambeva,Bronze hammerhead shark,Sphyrna lewini,14,168
+563,2017,6,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,385.5,889.25
+564,2017,6,Peixe Cartilaginoso,Tintureira,Blue shark,Prionace glauca,7.7,81.6
+565,2017,6,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,329,3383
+566,2017,6,Peixe Ósseo,Acará,Acará,NA,2,6
+567,2017,6,Peixe Ósseo,Albacora-branca,Albacora-branca,Thunnus alalunga,15,150
+568,2017,6,Peixe Ósseo,Atuns agrupados,Tuna,NA,61,446
+569,2017,6,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,10,51
+570,2017,6,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,428,1670
+571,2017,6,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,3283.1,14040.51
+572,2017,6,Peixe Ósseo,Baiacú,trunkfish,NA,2145.1,17671.04
+573,2017,6,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,84,303.5
+574,2017,6,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,100,169
+575,2017,6,Peixe Ósseo,Caratinga,Mojarra,NA,405.9,2617.56
+576,2017,6,Peixe Ósseo,Cavala-empinge,Barracuda,Acanthocybium solandri,20,160
+577,2017,6,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,24136.4,167278.31
+578,2017,6,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,1981.7,9454.56
+579,2017,6,Peixe Ósseo,Dourado,Common dolphifish,Coryphaena hippurus,4,32
+580,2017,6,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,272,1290
+581,2017,6,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,1,2
+582,2017,6,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,215,1248
+583,2017,6,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,10.5,25
+584,2017,6,Peixe Ósseo,Gordinho,Angelfish,Pomacanthus arcuatus,110,355
+585,2017,6,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,1093.5,5131.5
+586,2017,6,Peixe Ósseo,Lambari,Lambari,NA,25.25,1000
+587,2017,6,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,2252.3,35917.22
+588,2017,6,Peixe Ósseo,Manjuba-branca,Manjuba-branca,NA,30,210
+589,2017,6,Peixe Ósseo,Maria-luíza,Croaker,NA,112,248
+590,2017,6,Peixe Ósseo,Miraguaia,Miraguaia,NA,842,7598.5
+591,2017,6,Peixe Ósseo,Mistura,Mistura,NA,1894.5,4326.47
+592,2017,6,Peixe Ósseo,Nundiá,Nundiá,NA,2.6,0
+593,2017,6,Peixe Ósseo,Oveva,Cabezon,Larimus breviceps,100,50
+594,2017,6,Peixe Ósseo,Palombeta,Leerfish,Chloroscombrus chrysurus,30,50
+595,2017,6,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,31,154
+596,2017,6,Peixe Ósseo,Parambiju,Parambiju,NA,8,80
+597,2017,6,Peixe Ósseo,Pararê,Pararê,NA,268,1501
+598,2017,6,Peixe Ósseo,Parati,Mullet,NA,2518.4,7536.84
+599,2017,6,Peixe Ósseo,Pargo-rosa,Common sea bream,Pagrus pagrus,10,100
+600,2017,6,Peixe Ósseo,Paru,Paru,NA,25,82
+601,2017,6,Peixe Ósseo,Peixe-voador,Flying fish,Hirundichthys affinis,130,395
+602,2017,6,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,213.3,3186.97
+603,2017,6,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,3070,17388.67
+604,2017,6,Peixe Ósseo,Pescada-foguete,Weakfish,NA,4146.4,30591
+605,2017,6,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,112,1008
+606,2017,6,Peixe Ósseo,Porco,Porco,NA,35,210
+607,2017,6,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,78.5,696
+608,2017,6,Peixe Ósseo,Robalo,Snook,Centropomus spp.,113.5,1533.5
+609,2017,6,Peixe Ósseo,Robalo-flecha,Snook,NA,21,395
+610,2017,6,Peixe Ósseo,Robalo-peva,Snook,NA,900.5,11570.18
+611,2017,6,Peixe Ósseo,Saguá,Saguá,NA,255.5,1577
+612,2017,6,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,69,599
+613,2017,6,Peixe Ósseo,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,19.5,165
+614,2017,6,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,541,3752
+615,2017,6,Peixe Ósseo,Tainha,Mullet,Mugil spp.,24033.1,216680.3
+616,2017,6,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,8,76
+617,2017,6,Peixe Ósseo,Traíra,Traíra,NA,8,64
+618,2017,6,Peixe Ósseo,Ubarana,Ubarana,NA,17,102
+619,2017,6,Peixe Ósseo,Vermelho,Snapper,Lutjanus spp.,20,80
+620,2017,6,,,#N/A,#N/A,0,0
+621,2017,7,Crustáceo,Camarão-estuarino,Shrimp,NA,2547088,6806.18
+622,2017,7,Crustáceo,Camarão-ferrinho,Shrimp,NA,350,2275
+623,2017,7,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,18803.3,466394.43
+624,2017,7,Crustáceo,Camarão-listrado,Camarão-listrado,NA,11,165
+625,2017,7,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,158065.1,1106429
+626,2017,7,Crustáceo,Camarões-rosa,Brown shrimp,NA,59,1695
+627,2017,7,Crustáceo,Caranguejo-uçá,Crab,NA,16592,0
+628,2017,7,Crustáceo,Pitú-de-iguape,Crayfish,NA,13275,5512.5
+629,2017,7,Crustáceo,Siri-azul,Crab,NA,1027.54,16239
+630,2017,7,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,6114.5,3362.98
+631,2017,7,Molusco,Mexilhão,Mussel,Perna perna,31,248
+632,2017,7,Molusco,Mexilhão-do-mangue,Mussel,NA,456,3819.06
+633,2017,7,Molusco,Ostra,Oyster,Crassostrea spp.,13640.915,21074.98
+634,2017,7,Peixe Cartilaginoso,Cação-anjo,Shark,NA,1208,8806
+635,2017,7,Peixe Cartilaginoso,Cação-galha-preta,Shark,NA,24,48
+636,2017,7,Peixe Cartilaginoso,Cação-rola-rola,Shark,NA,41.1,784.8
+637,2017,7,Peixe Cartilaginoso,Cações agrupados,Shark,NA,90,562
+638,2017,7,Peixe Cartilaginoso,Cambeva,Bronze hammerhead shark,Sphyrna lewini,369,3308
+639,2017,7,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,538.5,1031.75
+640,2017,7,Peixe Cartilaginoso,Tintureira,Blue shark,Prionace glauca,16,0
+641,2017,7,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,348,3096
+642,2017,7,Peixe Ósseo,Acará,Acará,NA,10,0
+643,2017,7,Peixe Ósseo,Badejo,Whiting,Mycteroperca spp.,239,0
+644,2017,7,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,153.1,458.35
+645,2017,7,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,910,3306
+646,2017,7,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,4720.5,19487.83
+647,2017,7,Peixe Ósseo,Baiacú,trunkfish,NA,2039.5,17055.4
+648,2017,7,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,329,983
+649,2017,7,Peixe Ósseo,Bonito-pintado,Atlantic black skipjack,Euthynnus alletteratus,0.5,0
+650,2017,7,Peixe Ósseo,Bonitos agrupados,skipjack tuna,NA,47,188
+651,2017,7,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,102,212
+652,2017,7,Peixe Ósseo,Caratinga,Mojarra,NA,618,4235.36
+653,2017,7,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,32213.7,192413.1
+654,2017,7,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,3356.6,14547.32
+655,2017,7,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,65,421
+656,2017,7,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,242,585
+657,2017,7,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,231,0
+658,2017,7,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,24,0
+659,2017,7,Peixe Ósseo,Gordinho,Angelfish,Pomacanthus arcuatus,320,685
+660,2017,7,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,602,2381.5
+661,2017,7,Peixe Ósseo,Lambari,Lambari,NA,14,1812.5
+662,2017,7,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,4705.4,73782.33
+663,2017,7,Peixe Ósseo,Manjubas agrupadas,anchovy,NA,10,140
+664,2017,7,Peixe Ósseo,Maria-luíza,Croaker,NA,279,1366.25
+665,2017,7,Peixe Ósseo,Miraguaia,Miraguaia,NA,1145.5,6841.5
+666,2017,7,Peixe Ósseo,Mistura,Mistura,NA,2413.8,7151.81
+667,2017,7,Peixe Ósseo,Nundiá,Nundiá,NA,5.5,0
+668,2017,7,Peixe Ósseo,Pacu,Pacu,NA,6,24
+669,2017,7,Peixe Ósseo,Palombeta,Leerfish,Chloroscombrus chrysurus,310,620
+670,2017,7,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,45.5,145.5
+671,2017,7,Peixe Ósseo,Pararê,Pararê,NA,237,1331
+672,2017,7,Peixe Ósseo,Parati,Mullet,NA,2740.5,7829.41
+673,2017,7,Peixe Ósseo,Pargo-rosa,Common sea bream,Pagrus pagrus,23,258
+674,2017,7,Peixe Ósseo,Paru,Paru,NA,268.5,1037.5
+675,2017,7,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,330.5,3494
+676,2017,7,Peixe Ósseo,Pescada-banana,Weakfish,NA,31,217
+677,2017,7,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,2716,14820.63
+678,2017,7,Peixe Ósseo,Pescada-foguete,Weakfish,NA,6272.1,42754.2
+679,2017,7,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,190,1363
+680,2017,7,Peixe Ósseo,Porco,Porco,NA,83.3,218.5
+681,2017,7,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,91,547
+682,2017,7,Peixe Ósseo,Robalo,Snook,Centropomus spp.,202.5,2809
+683,2017,7,Peixe Ósseo,Robalo-flecha,Snook,NA,47.5,1067.5
+684,2017,7,Peixe Ósseo,Robalo-peva,Snook,NA,609.7,8386.27
+685,2017,7,Peixe Ósseo,Saguá,Saguá,NA,92.5,598.2
+686,2017,7,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,60.5,416.4
+687,2017,7,Peixe Ósseo,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,34,429
+688,2017,7,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,3064,20524
+689,2017,7,Peixe Ósseo,Tainha,Mullet,Mugil spp.,5904.1,42594.27
+690,2017,7,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,151,1430
+691,2017,7,Peixe Ósseo,Vermelho,Snapper,Lutjanus spp.,40,0
+692,2017,7,Peixe Ósseo,Xaréu,Black cavalli,Caranx hippos,6,0
+693,2017,7,,,#N/A,#N/A,0,0
+694,2017,8,Crustáceo,Camarão-estuarino,Shrimp,NA,2742856,11535.62
+695,2017,8,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,3966.3056,104997.43
+696,2017,8,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,95027.1,759628.68
+697,2017,8,Crustáceo,Chama-maré,Chama-maré,NA,2318,0
+698,2017,8,Crustáceo,Pitú-de-iguape,Crayfish,NA,4.5,2187.5
+699,2017,8,Crustáceo,Siri-azul,Crab,NA,905828,13645.93
+700,2017,8,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,12688,7054
+701,2017,8,Molusco,Mexilhão,Mussel,Perna perna,70.5,882
+702,2017,8,Molusco,Mexilhão-do-mangue,Mussel,NA,449.4,4699
+703,2017,8,Molusco,Ostra,Oyster,Crassostrea spp.,11191.895,18791.22
+704,2017,8,Peixe Cartilaginoso,Cação-anjo,Shark,NA,309,2163
+705,2017,8,Peixe Cartilaginoso,Cação-rola-rola,Shark,NA,90,950
+706,2017,8,Peixe Cartilaginoso,Cações agrupados,Shark,NA,88.7,635.6
+707,2017,8,Peixe Cartilaginoso,Cambeva,Bronze hammerhead shark,Sphyrna lewini,4.3,38.7
+708,2017,8,Peixe Cartilaginoso,Raia-manteiga,Raia-manteiga,NA,70,500
+709,2017,8,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,476.5,903.38
+710,2017,8,Peixe Cartilaginoso,Tintureira,Blue shark,Prionace glauca,150,1500
+711,2017,8,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,398.5,3998
+712,2017,8,Peixe Ósseo,Acará,Acará,NA,9,54
+713,2017,8,Peixe Ósseo,Agulhão-vela,Atlantic sailfish,Istiophorus albicans,7.2,57.6
+714,2017,8,Peixe Ósseo,Badejo-mira,Comb grouper,Mycteroperca rubra,32,160
+715,2017,8,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,69,301
+716,2017,8,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,402,1228.5
+717,2017,8,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,4668.5,18657.75
+718,2017,8,Peixe Ósseo,Baiacú,trunkfish,NA,3150.1,26440.44
+719,2017,8,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,1094.05,3620.79
+720,2017,8,Peixe Ósseo,Bonitos agrupados,skipjack tuna,NA,7500,11250
+721,2017,8,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,88,167
+722,2017,8,Peixe Ósseo,Caratinga,Mojarra,NA,239.6,1591.8
+723,2017,8,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,3064,20096
+724,2017,8,Peixe Ósseo,Cavalinha,American mackerel,Scomber japonicus,5,20
+725,2017,8,Peixe Ósseo,Cioba,Dog Snapper,Lutjanus analis,18,148
+726,2017,8,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,8816.9,46890.42
+727,2017,8,Peixe Ósseo,Dourado,Common dolphifish,Coryphaena hippurus,15,105
+728,2017,8,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,65,480
+729,2017,8,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,15,25
+730,2017,8,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,7,70
+731,2017,8,Peixe Ósseo,Garoupa,Deady,Epinephelus spp.,15,375
+732,2017,8,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,21.5,123.5
+733,2017,8,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,139.5,631
+734,2017,8,Peixe Ósseo,Lambari,Lambari,NA,18,1700
+735,2017,8,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,2046.8,33255.8
+736,2017,8,Peixe Ósseo,Maria-luíza,Croaker,NA,150,300
+737,2017,8,Peixe Ósseo,Miraguaia,Miraguaia,NA,1261.8,7598.3
+738,2017,8,Peixe Ósseo,Mistura,Mistura,NA,2371.2,4819.83
+739,2017,8,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,12,60
+740,2017,8,Peixe Ósseo,Parambiju,Parambiju,NA,5,50
+741,2017,8,Peixe Ósseo,Pararê,Pararê,NA,167.5,1165
+742,2017,8,Peixe Ósseo,Parati,Mullet,NA,2247.8,5827.71
+743,2017,8,Peixe Ósseo,Pargo-rosa,Common sea bream,Pagrus pagrus,58,439
+744,2017,8,Peixe Ósseo,Paru,Paru,NA,129,617
+745,2017,8,Peixe Ósseo,Peixe-voador,Flying fish,Hirundichthys affinis,300,930
+746,2017,8,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,342.7,4902.1
+747,2017,8,Peixe Ósseo,Pescada-banana,Weakfish,NA,19,114
+748,2017,8,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,2270.95,13983.53
+749,2017,8,Peixe Ósseo,Pescada-dentão,Weakfish,NA,25,112.5
+750,2017,8,Peixe Ósseo,Pescada-foguete,Weakfish,NA,4605.1,27082.52
+751,2017,8,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,55.9,598
+752,2017,8,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,104.8,640.4
+753,2017,8,Peixe Ósseo,Robalo,Snook,Centropomus spp.,119.7,1770.5
+754,2017,8,Peixe Ósseo,Robalo-flecha,Snook,NA,16.5,238
+755,2017,8,Peixe Ósseo,Robalo-peva,Snook,NA,832.3,9440.51
+756,2017,8,Peixe Ósseo,Saguá,Saguá,NA,206,961
+757,2017,8,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,19741.5,4890.8
+758,2017,8,Peixe Ósseo,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,77.5,521
+759,2017,8,Peixe Ósseo,Sargo,Sargo,NA,17,80
+760,2017,8,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,609,4853
+761,2017,8,Peixe Ósseo,Tainha,Mullet,Mugil spp.,4773,35984.73
+762,2017,8,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,176,1097
+763,2017,8,Peixe Ósseo,Xaréu,Black cavalli,Caranx hippos,17,34
+764,2017,8,,,#N/A,#N/A,0,0
+765,2017,9,Crustáceo,Camarão-estuarino,Shrimp,NA,3923.94,100251.54
+766,2017,9,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,2352.7,83304.34
+767,2017,9,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,183261.5,1497620.28
+768,2017,9,Crustáceo,Chama-maré,Chama-maré,NA,3.8,0
+769,2017,9,Crustáceo,Lagosta,Lobster,Panulirus laevicauda,1,0
+770,2017,9,Crustáceo,Pitú-de-iguape,Crayfish,NA,4275,3012.5
+771,2017,9,Crustáceo,Siri-azul,Crab,NA,1080.9,15454.5
+772,2017,9,Crustáceo,Siri-azul-danae,Siri-azul-danae,NA,5.4,0
+773,2017,9,Molusco,Almeja,Almeja,NA,21.6,149
+774,2017,9,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,16338.5,9167
+775,2017,9,Molusco,Mexilhão-do-mangue,Mussel,NA,625,5374
+776,2017,9,Molusco,Ostra,Oyster,Crassostrea spp.,11459.402,15452.6
+777,2017,9,Peixe Cartilaginoso,Cação-anjo,Shark,NA,104,1485
+778,2017,9,Peixe Cartilaginoso,Cação-rola-rola,Shark,NA,160,1300
+779,2017,9,Peixe Cartilaginoso,Cações agrupados,Shark,NA,41,287
+780,2017,9,Peixe Cartilaginoso,Cambeva,Bronze hammerhead shark,Sphyrna lewini,51,1050
+781,2017,9,Peixe Cartilaginoso,Raia-manteiga,Raia-manteiga,NA,128,2120
+782,2017,9,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,730,1563.5
+783,2017,9,Peixe Cartilaginoso,Tintureira,Blue shark,Prionace glauca,10,100
+784,2017,9,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,217.4,2966
+785,2017,9,Peixe Ósseo,Acará,Acará,NA,2,0
+786,2017,9,Peixe Ósseo,Agulhão,Atlantic saury,Scomberesox saurus,3,0
+787,2017,9,Peixe Ósseo,Badejo,Whiting,Mycteroperca spp.,207,1242
+788,2017,9,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,59,214
+789,2017,9,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,1933,4486.5
+790,2017,9,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,4266.6,18475
+791,2017,9,Peixe Ósseo,Baiacú,trunkfish,NA,2880.3,25058.9
+792,2017,9,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,2094.5,11654
+793,2017,9,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,165,380
+794,2017,9,Peixe Ósseo,Carapicu,Broad shad,Diapterus auratus,4,8
+795,2017,9,Peixe Ósseo,Caratinga,Mojarra,NA,409.5,3180
+796,2017,9,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,5735,49925.9
+797,2017,9,Peixe Ósseo,Cavalinha,American mackerel,Scomber japonicus,7.5,37.5
+798,2017,9,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,6984.4,42839.85
+799,2017,9,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,10,50
+800,2017,9,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,25,57
+801,2017,9,Peixe Ósseo,Espadarte,Swordfish,Xiphias gladius,15,450
+802,2017,9,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,121,1210
+803,2017,9,Peixe Ósseo,Garoupa,Deady,Epinephelus spp.,81,1620
+804,2017,9,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,7,28
+805,2017,9,Peixe Ósseo,Gordinho,Angelfish,Pomacanthus arcuatus,10,20
+806,2017,9,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,1351.5,4481
+807,2017,9,Peixe Ósseo,Lambari,Lambari,NA,24.5,1712.5
+808,2017,9,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,920.1,15598.9
+809,2017,9,Peixe Ósseo,Miraguaia,Miraguaia,NA,702.3,3789
+810,2017,9,Peixe Ósseo,Mistura,Mistura,NA,2359.7,3881.15
+811,2017,9,Peixe Ósseo,Palombeta,Leerfish,Chloroscombrus chrysurus,0.2,0
+812,2017,9,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,165,909
+813,2017,9,Peixe Ósseo,Pararê,Pararê,NA,282,1477
+814,2017,9,Peixe Ósseo,Parati,Mullet,NA,3489,10582.73
+815,2017,9,Peixe Ósseo,Pargo-rosa,Common sea bream,Pagrus pagrus,35,350
+816,2017,9,Peixe Ósseo,Paru,Paru,NA,765.5,4872.75
+817,2017,9,Peixe Ósseo,Peixe-voador,Flying fish,Hirundichthys affinis,20,70
+818,2017,9,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,643.8,11984.1
+819,2017,9,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,2329.9,16917.48
+820,2017,9,Peixe Ósseo,Pescada-dentão,Weakfish,NA,128,1610
+821,2017,9,Peixe Ósseo,Pescada-foguete,Weakfish,NA,2879.5,20324.5
+822,2017,9,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,1090,1953.5
+823,2017,9,Peixe Ósseo,Porco,Porco,NA,30,87.5
+824,2017,9,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,158.5,1243
+825,2017,9,Peixe Ósseo,Robalo,Snook,Centropomus spp.,205.5,3270.5
+826,2017,9,Peixe Ósseo,Robalo-flecha,Snook,NA,265.5,5837
+827,2017,9,Peixe Ósseo,Robalo-peva,Snook,NA,952.1,13555.91
+828,2017,9,Peixe Ósseo,Saguá,Saguá,NA,153.5,729.21
+829,2017,9,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,12811.5,3386
+830,2017,9,Peixe Ósseo,Sardinha-cascuda,Blackbill sprat,Harengula clupeola,11.1,277.5
+831,2017,9,Peixe Ósseo,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,30,90
+832,2017,9,Peixe Ósseo,Sargo,Sargo,NA,96.5,452.5
+833,2017,9,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,3327,29826
+834,2017,9,Peixe Ósseo,Tainha,Mullet,Mugil spp.,2007.6,14668.17
+835,2017,9,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,179,990.5
+836,2017,9,Peixe Ósseo,Traíra,Traíra,NA,2.5,12.5
+837,2017,9,Peixe Ósseo,Xarelete,Black jack,Caranx latus,8,40
+838,2017,9,,,#N/A,#N/A,0,0
+839,2017,10,Crustáceo,Camarão-estuarino,Shrimp,NA,3181144,9021
+840,2017,10,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,2553.21,95541.45
+841,2017,10,Crustáceo,Camarão-santana,Shrimp,Pleoticus muelleri,21893,153251
+842,2017,10,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,150785,1299537.3
+843,2017,10,Crustáceo,Camarões-rosa,Brown shrimp,NA,4,100
+844,2017,10,Crustáceo,Chama-maré,Chama-maré,NA,1976,0
+845,2017,10,Crustáceo,Pitú-de-iguape,Crayfish,NA,3.15,2625
+846,2017,10,Crustáceo,Siri-azul,Crab,NA,1470.9,23030
+847,2017,10,Crustáceo,Siri-azul-danae,Siri-azul-danae,NA,164.88,576
+848,2017,10,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,22640,12452
+849,2017,10,Molusco,Lula,Squid,Loligo sanpaulensis,3,0
+850,2017,10,Molusco,Mexilhão-do-mangue,Mussel,NA,355.4,3885.1
+851,2017,10,Molusco,Ostra,Oyster,Crassostrea spp.,10235.981,15047.93
+852,2017,10,Peixe Cartilaginoso,Cação-anjo,Shark,NA,48,960
+853,2017,10,Peixe Cartilaginoso,Cação-rola-rola,Shark,NA,93,1745
+854,2017,10,Peixe Cartilaginoso,Cações agrupados,Shark,NA,40,230
+855,2017,10,Peixe Cartilaginoso,Cambeva,Bronze hammerhead shark,Sphyrna lewini,11,180
+856,2017,10,Peixe Cartilaginoso,Raia-manteiga,Raia-manteiga,NA,92,1840
+857,2017,10,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,754,1887
+858,2017,10,Peixe Cartilaginoso,Raia-ticonha,Raia-ticonha,NA,28,56
+859,2017,10,Peixe Cartilaginoso,Tintureira,Blue shark,Prionace glauca,14,280
+860,2017,10,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,446,4170
+861,2017,10,Peixe Ósseo,Acará,Acará,NA,1.5,0
+862,2017,10,Peixe Ósseo,Albacora-branca,Albacora-branca,Thunnus alalunga,8,32
+863,2017,10,Peixe Ósseo,Albacora-de-laje,Albacore,Thunnus albacares,20,40
+864,2017,10,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,5,10
+865,2017,10,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,497.5,1203.7
+866,2017,10,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,4468.1,18425.89
+867,2017,10,Peixe Ósseo,Baiacú,trunkfish,NA,3154.2,27970.22
+868,2017,10,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,1094,6075.5
+869,2017,10,Peixe Ósseo,Canhanha,Brim,Archosargus rhomboidalis,1.5,2.5
+870,2017,10,Peixe Ósseo,Caranha,Dog Snapper,Lutjanus spp.,10.5,98
+871,2017,10,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,81,190.5
+872,2017,10,Peixe Ósseo,Carapicu,Broad shad,Diapterus auratus,1,0
+873,2017,10,Peixe Ósseo,Caratinga,Mojarra,NA,510,3061.67
+874,2017,10,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,37,315
+875,2017,10,Peixe Ósseo,Cavalinha,American mackerel,Scomber japonicus,27,117
+876,2017,10,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,4211.8,21332.4
+877,2017,10,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,35,151
+878,2017,10,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,25,75
+879,2017,10,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,98,1342
+880,2017,10,Peixe Ósseo,Garoupa,Deady,Epinephelus spp.,11.5,287.5
+881,2017,10,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,10,60
+882,2017,10,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,1756.5,5596
+883,2017,10,Peixe Ósseo,Lambari,Lambari,NA,15.5,1662.5
+884,2017,10,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,243.8,1922
+885,2017,10,Peixe Ósseo,Manjuba-chata,anchovy,NA,60,180
+886,2017,10,Peixe Ósseo,Maria-luíza,Croaker,NA,9,0
+887,2017,10,Peixe Ósseo,Miraguaia,Miraguaia,NA,567.8,3086
+888,2017,10,Peixe Ósseo,Mistura,Mistura,NA,1726.5,2996.92
+889,2017,10,Peixe Ósseo,Nundiá,Nundiá,NA,2,0
+890,2017,10,Peixe Ósseo,Oveva,Cabezon,Larimus breviceps,10,30
+891,2017,10,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,38.5,149
+892,2017,10,Peixe Ósseo,Parambiju,Parambiju,NA,38,430
+893,2017,10,Peixe Ósseo,Pararê,Pararê,NA,360.5,2511.25
+894,2017,10,Peixe Ósseo,Parati,Mullet,NA,5801.9,14697.85
+895,2017,10,Peixe Ósseo,Paru,Paru,NA,968.9,6564.5
+896,2017,10,Peixe Ósseo,Peixe-voador,Flying fish,Hirundichthys affinis,3,10.5
+897,2017,10,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,1156.9,23406.8
+898,2017,10,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,2544.1,21303.13
+899,2017,10,Peixe Ósseo,Pescada-cambucu,Weakfish,NA,9,81
+900,2017,10,Peixe Ósseo,Pescada-dentão,Weakfish,NA,62,478
+901,2017,10,Peixe Ósseo,Pescada-foguete,Weakfish,NA,3707.6,24751.5
+902,2017,10,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,255.5,3231.5
+903,2017,10,Peixe Ósseo,Porco,Porco,NA,30,75
+904,2017,10,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,64,449
+905,2017,10,Peixe Ósseo,Robalo,Snook,Centropomus spp.,209,4420
+906,2017,10,Peixe Ósseo,Robalo-flecha,Snook,NA,1148,24898.32
+907,2017,10,Peixe Ósseo,Robalo-peva,Snook,NA,1083.3,14160.32
+908,2017,10,Peixe Ósseo,Saguá,Saguá,NA,264,1336
+909,2017,10,Peixe Ósseo,Salema,Salema,Sarpa salpa,29,86
+910,2017,10,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,24303.5,5289
+911,2017,10,Peixe Ósseo,Sardinha-cascuda,Blackbill sprat,Harengula clupeola,21.4,335
+912,2017,10,Peixe Ósseo,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,30,60
+913,2017,10,Peixe Ósseo,Sargo,Sargo,NA,25,105
+914,2017,10,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,1319.7,11658.5
+915,2017,10,Peixe Ósseo,Tainha,Mullet,Mugil spp.,805.5,5814.15
+916,2017,10,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,37,276
+917,2017,10,Peixe Ósseo,Traíra,Traíra,NA,4,12
+918,2017,10,,,#N/A,#N/A,0,0
+919,2017,11,Crustáceo,Camarão-estuarino,Shrimp,NA,5682112,13689.5
+920,2017,11,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,4590.2784,183371.79
+921,2017,11,Crustáceo,Camarão-santana,Shrimp,Pleoticus muelleri,16305,0
+922,2017,11,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,104682.42,877770.39
+923,2017,11,Crustáceo,Camarões-rosa,Brown shrimp,NA,46.6,2214
+924,2017,11,Crustáceo,Caranguejo-uçá,Crab,NA,1393.21,8994.8
+925,2017,11,Crustáceo,Chama-maré,Chama-maré,NA,1.14,0
+926,2017,11,Crustáceo,Pitú-de-iguape,Crayfish,NA,1.2,1000
+927,2017,11,Crustáceo,Siri-azul,Crab,NA,1581.47,23503.6
+928,2017,11,Crustáceo,Siri-azul-danae,Siri-azul-danae,NA,35.52,0
+929,2017,11,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,13490,7419.5
+930,2017,11,Molusco,Lula,Squid,Loligo sanpaulensis,2,0
+931,2017,11,Molusco,Mexilhão-do-mangue,Mussel,NA,202,2699
+932,2017,11,Molusco,Ostra,Oyster,Crassostrea spp.,8757.955,12615.4
+933,2017,11,Peixe Cartilaginoso,Anequim,Beaumaris shark,Lamna nasus,66,568
+934,2017,11,Peixe Cartilaginoso,Cação-rola-rola,Shark,NA,65,650
+935,2017,11,Peixe Cartilaginoso,Cações agrupados,Shark,NA,45.7,257.2
+936,2017,11,Peixe Cartilaginoso,Cambeva,Bronze hammerhead shark,Sphyrna lewini,4,0
+937,2017,11,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,182,499.5
+938,2017,11,Peixe Cartilaginoso,Raia-ticonha,Raia-ticonha,NA,3,0
+939,2017,11,Peixe Cartilaginoso,Tintureira,Blue shark,Prionace glauca,100,500
+940,2017,11,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,292,2076
+941,2017,11,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,355.5,1044.17
+942,2017,11,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,4947.1,22316.29
+943,2017,11,Peixe Ósseo,Baiacú,trunkfish,NA,1886.3,15380.96
+944,2017,11,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,506.5,2794
+945,2017,11,Peixe Ósseo,Canhanha,Brim,Archosargus rhomboidalis,10.5,21
+946,2017,11,Peixe Ósseo,Caranha,Dog Snapper,Lutjanus spp.,6,108
+947,2017,11,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,172.5,361.5
+948,2017,11,Peixe Ósseo,Caratinga,Mojarra,NA,162.5,1374
+949,2017,11,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,1102,8395.85
+950,2017,11,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,1717.1,7340.55
+951,2017,11,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,13,52
+952,2017,11,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,17,0
+953,2017,11,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,64,921
+954,2017,11,Peixe Ósseo,Galo-de-penacho,Atlantic Moonfish,Selene setapinnis,25,100
+955,2017,11,Peixe Ósseo,Garoupa,Deady,Epinephelus spp.,12.5,297.5
+956,2017,11,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,2748.5,10023.15
+957,2017,11,Peixe Ósseo,Lambari,Lambari,NA,6,750
+958,2017,11,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,71.8,893.8
+959,2017,11,Peixe Ósseo,Maria-luíza,Croaker,NA,11.5,0
+960,2017,11,Peixe Ósseo,Miraguaia,Miraguaia,NA,77.5,530.5
+961,2017,11,Peixe Ósseo,Mistura,Mistura,NA,5617.8,10867.01
+962,2017,11,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,166,877.5
+963,2017,11,Peixe Ósseo,Parambiju,Parambiju,NA,39,517
+964,2017,11,Peixe Ósseo,Pararê,Pararê,NA,241,1538
+965,2017,11,Peixe Ósseo,Parati,Mullet,NA,3877.55,10049.28
+966,2017,11,Peixe Ósseo,Pargo-rosa,Common sea bream,Pagrus pagrus,90,900
+967,2017,11,Peixe Ósseo,Paru,Paru,NA,2802.6,11573
+968,2017,11,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,671.1,12935
+969,2017,11,Peixe Ósseo,Pescada-banana,Weakfish,NA,212,955
+970,2017,11,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,2399,22846.8
+971,2017,11,Peixe Ósseo,Pescada-dentão,Weakfish,NA,8,56
+972,2017,11,Peixe Ósseo,Pescada-foguete,Weakfish,NA,3505.3,26040.2
+973,2017,11,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,116.5,1252
+974,2017,11,Peixe Ósseo,Porco,Porco,NA,80,0
+975,2017,11,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,164,1012
+976,2017,11,Peixe Ósseo,Robalo,Snook,Centropomus spp.,198,3385
+977,2017,11,Peixe Ósseo,Robalo-flecha,Snook,NA,996.4,25232.4
+978,2017,11,Peixe Ósseo,Robalo-peva,Snook,NA,617.5,10205.95
+979,2017,11,Peixe Ósseo,Saguá,Saguá,NA,278,1929.25
+980,2017,11,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,9609.5,2746
+981,2017,11,Peixe Ósseo,Sardinha-cascuda,Blackbill sprat,Harengula clupeola,2.8,70
+982,2017,11,Peixe Ósseo,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,234,928.5
+983,2017,11,Peixe Ósseo,Sargo,Sargo,NA,27,171
+984,2017,11,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,528,5148
+985,2017,11,Peixe Ósseo,Tainha,Mullet,Mugil spp.,842.2,5881.88
+986,2017,11,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,46,222
+987,2017,11,Peixe Ósseo,Xaréu,Black cavalli,Caranx hippos,15,90
+988,2017,11,,,#N/A,#N/A,0,0
+989,2017,12,Crustáceo,Camarão-estuarino,Shrimp,NA,2316008,4978
+990,2017,12,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,4283.56,195840.9
+991,2017,12,Crustáceo,Camarão-santana,Shrimp,Pleoticus muelleri,24439,242418
+992,2017,12,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,231896.61,1679662.35
+993,2017,12,Crustáceo,Caranguejo-uçá,Crab,NA,38735.061,228406.76
+994,2017,12,Crustáceo,Pitú-de-iguape,Crayfish,NA,2.49,830
+995,2017,12,Crustáceo,Siri-azul,Crab,NA,1354.15,19783.1
+996,2017,12,Crustáceo,Siri-azul-danae,Siri-azul-danae,NA,21.8,278
+997,2017,12,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,19130,10521.5
+998,2017,12,Molusco,Mexilhão-do-mangue,Mussel,NA,506,3010
+999,2017,12,Molusco,Ostra,Oyster,Crassostrea spp.,3054.665,5967.89
+1000,2017,12,Peixe Cartilaginoso,Cação-rola-rola,Shark,NA,78,1560
+1001,2017,12,Peixe Cartilaginoso,Cações agrupados,Shark,NA,125,1031
+1002,2017,12,Peixe Cartilaginoso,Cambeva,Bronze hammerhead shark,Sphyrna lewini,312,3432
+1003,2017,12,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,540,1218
+1004,2017,12,Peixe Cartilaginoso,Tintureira,Blue shark,Prionace glauca,27,0
+1005,2017,12,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,262,4208
+1006,2017,12,Peixe Ósseo,Abrótea,Brazilian codling,Urophycis brasiliensis,106,0
+1007,2017,12,Peixe Ósseo,Acará,Acará,NA,1,0
+1008,2017,12,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,670,2694.5
+1009,2017,12,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,183,540
+1010,2017,12,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,6841.7,34289.75
+1011,2017,12,Peixe Ósseo,Baiacú,trunkfish,NA,272.5,2564
+1012,2017,12,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,2798.4,18278.22
+1013,2017,12,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,145,271.5
+1014,2017,12,Peixe Ósseo,Caratinga,Mojarra,NA,30,208
+1015,2017,12,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,1089.8,10035.2
+1016,2017,12,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,1533.2,7543.02
+1017,2017,12,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,62,328
+1018,2017,12,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,42.3,604.5
+1019,2017,12,Peixe Ósseo,Garoupa,Deady,Epinephelus spp.,18,480
+1020,2017,12,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,4898,18008.5
+1021,2017,12,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,434,1230
+1022,2017,12,Peixe Ósseo,Manjuba-chata,anchovy,NA,225,800
+1023,2017,12,Peixe Ósseo,Manjubas agrupadas,anchovy,NA,74,4292
+1024,2017,12,Peixe Ósseo,Miraguaia,Miraguaia,NA,37,185
+1025,2017,12,Peixe Ósseo,Mistura,Mistura,NA,3020.8,5637.05
+1026,2017,12,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,107,628
+1027,2017,12,Peixe Ósseo,Parambiju,Parambiju,NA,69,872
+1028,2017,12,Peixe Ósseo,Pararê,Pararê,NA,344,2203
+1029,2017,12,Peixe Ósseo,Parati,Mullet,NA,2072.3,6055.35
+1030,2017,12,Peixe Ósseo,Paru,Paru,NA,6446,25115.5
+1031,2017,12,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,1276.1,24560.5
+1032,2017,12,Peixe Ósseo,Pescada-banana,Weakfish,NA,276.5,1448
+1033,2017,12,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,2111.8,24777.87
+1034,2017,12,Peixe Ósseo,Pescada-dentão,Weakfish,NA,28.5,185.25
+1035,2017,12,Peixe Ósseo,Pescada-foguete,Weakfish,NA,7054.6,51461.7
+1036,2017,12,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,172,314
+1037,2017,12,Peixe Ósseo,Porco,Porco,NA,150,1000
+1038,2017,12,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,9,45
+1039,2017,12,Peixe Ósseo,Robalo,Snook,Centropomus spp.,294,4567.5
+1040,2017,12,Peixe Ósseo,Robalo-flecha,Snook,NA,325.5,6819.5
+1041,2017,12,Peixe Ósseo,Robalo-peva,Snook,NA,940.7,24172.25
+1042,2017,12,Peixe Ósseo,Saguá,Saguá,NA,138.5,613.5
+1043,2017,12,Peixe Ósseo,Salema,Salema,Sarpa salpa,5,10
+1044,2017,12,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,40,100
+1045,2017,12,Peixe Ósseo,Sardinhas agrupadas,Sardine,NA,60,240
+1046,2017,12,Peixe Ósseo,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,2,4
+1047,2017,12,Peixe Ósseo,Sargo,Sargo,NA,28,190
+1048,2017,12,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,672,6739
+1049,2017,12,Peixe Ósseo,Tainha,Mullet,Mugil spp.,719.5,5011
+1050,2017,12,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,11,55
+1051,2017,12,Peixe Ósseo,Xaréu,Black cavalli,Caranx hippos,74,148
+1052,2017,12,,,#N/A,#N/A,0,0
+1053,2018,1,Crustáceo,Camarão-estuarino,Shrimp,NA,5121456,12134.13
+1054,2018,1,Crustáceo,Camarão-ferrinho,Shrimp,NA,4570,0
+1055,2018,1,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,8891.8,411686.14
+1056,2018,1,Crustáceo,Camarão-santana,Shrimp,Pleoticus muelleri,3382,21137.5
+1057,2018,1,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,170464.8,1243066.01
+1058,2018,1,Crustáceo,Caranguejo-uçá,Crab,NA,54785.747,336181.26
+1059,2018,1,Crustáceo,Pitú-de-iguape,Crayfish,NA,9075,4212.5
+1060,2018,1,Crustáceo,Siri-azul,Crab,NA,1578.51,24147.5
+1061,2018,1,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,26880,14784
+1062,2018,1,Molusco,Lula,Squid,Loligo sanpaulensis,128,0
+1063,2018,1,Molusco,Mexilhão,Mussel,Perna perna,16,144
+1064,2018,1,Molusco,Mexilhão-do-mangue,Mussel,NA,260.5,2725.5
+1065,2018,1,Molusco,Ostra,Oyster,Crassostrea spp.,1976.14,3888
+1066,2018,1,Peixe Cartilaginoso,Cação-rola-rola,Shark,NA,65,800
+1067,2018,1,Peixe Cartilaginoso,Cações agrupados,Shark,NA,485.8,3948.2
+1068,2018,1,Peixe Cartilaginoso,Cambeva,Bronze hammerhead shark,Sphyrna lewini,140,1400
+1069,2018,1,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,557,1407.5
+1070,2018,1,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,276,2376
+1071,2018,1,Peixe Ósseo,Abrótea,Brazilian codling,Urophycis brasiliensis,14,0
+1072,2018,1,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,320,50
+1073,2018,1,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,207,580
+1074,2018,1,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,922.5,4720.5
+1075,2018,1,Peixe Ósseo,Baiacú,trunkfish,NA,375,4149
+1076,2018,1,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,3597.5,25753
+1077,2018,1,Peixe Ósseo,Bonito-cachorra,skipjack tuna,NA,44,220
+1078,2018,1,Peixe Ósseo,Caranha,Dog Snapper,Lutjanus spp.,2,20
+1079,2018,1,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,79.8,131
+1080,2018,1,Peixe Ósseo,Caratinga,Mojarra,NA,35.5,257.5
+1081,2018,1,Peixe Ósseo,Cascudo,Atlantic searobin,Prionotus punctatus,4,2
+1082,2018,1,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,1172,13455
+1083,2018,1,Peixe Ósseo,Cavalinha,American mackerel,Scomber japonicus,8,41
+1084,2018,1,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,2400.8,17467
+1085,2018,1,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,70,386
+1086,2018,1,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,199,2175
+1087,2018,1,Peixe Ósseo,Garoupa,Deady,Epinephelus spp.,37,1050
+1088,2018,1,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,43,258
+1089,2018,1,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,5192,25791.5
+1090,2018,1,Peixe Ósseo,Lambari,Lambari,NA,623,1750
+1091,2018,1,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,81,339
+1092,2018,1,Peixe Ósseo,Manjuba-chata,anchovy,NA,151,455
+1093,2018,1,Peixe Ósseo,Manjubas agrupadas,anchovy,NA,20,1000
+1094,2018,1,Peixe Ósseo,Maria-luíza,Croaker,NA,7,0
+1095,2018,1,Peixe Ósseo,Miraguaia,Miraguaia,NA,151,932
+1096,2018,1,Peixe Ósseo,Mistura,Mistura,NA,4129.5,8711.99
+1097,2018,1,Peixe Ósseo,Nhacunda,Nhacunda,NA,0.5,0
+1098,2018,1,Peixe Ósseo,Oveva,Cabezon,Larimus breviceps,3,6
+1099,2018,1,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,72.5,451
+1100,2018,1,Peixe Ósseo,Pararê,Pararê,NA,146.5,863
+1101,2018,1,Peixe Ósseo,Parati,Mullet,NA,1487.5,5547.93
+1102,2018,1,Peixe Ósseo,Paru,Paru,NA,1838.5,7053.5
+1103,2018,1,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,1358,27258.5
+1104,2018,1,Peixe Ósseo,Pescada-banana,Weakfish,NA,51,291
+1105,2018,1,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,1876.6,19141.26
+1106,2018,1,Peixe Ósseo,Pescada-foguete,Weakfish,NA,12336,105540.5
+1107,2018,1,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,86.9,1455.7
+1108,2018,1,Peixe Ósseo,Porco,Porco,NA,240.8,925
+1109,2018,1,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,54,279
+1110,2018,1,Peixe Ósseo,Robalo,Snook,Centropomus spp.,1231.6,23467.5
+1111,2018,1,Peixe Ósseo,Robalo-flecha,Snook,NA,293,6972.5
+1112,2018,1,Peixe Ósseo,Robalo-peva,Snook,NA,1168.9,19771.45
+1113,2018,1,Peixe Ósseo,Saguá,Saguá,NA,206.5,1043
+1114,2018,1,Peixe Ósseo,Salema,Salema,Sarpa salpa,21,55
+1115,2018,1,Peixe Ósseo,Sardinha-verdadeira,Brazilian sardinella,Sardinella brasiliensis,14.5,0
+1116,2018,1,Peixe Ósseo,Sargo,Sargo,NA,88,584
+1117,2018,1,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,1529,16888
+1118,2018,1,Peixe Ósseo,Tainha,Mullet,Mugil spp.,1408.1,9424.8
+1119,2018,1,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,93,465
+1120,2018,1,Peixe Ósseo,Traíra,Traíra,NA,4,16
+1121,2018,1,Peixe Ósseo,Xarelete,Black jack,Caranx latus,3,15
+1122,2018,1,Peixe Ósseo,Xaréu,Black cavalli,Caranx hippos,40,160
+1123,2018,1,,,#N/A,#N/A,0,0
+1124,2018,2,Crustáceo,Camarão-estuarino,Shrimp,NA,3901.0176,68761.3
+1125,2018,2,Crustáceo,Camarão-ferrinho,Shrimp,NA,287,0
+1126,2018,2,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,32956.7,1068914.18
+1127,2018,2,Crustáceo,Camarão-santana,Shrimp,Pleoticus muelleri,4218,26362.5
+1128,2018,2,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,114493.1,1049079.91
+1129,2018,2,Crustáceo,Camarões-rosa,Brown shrimp,NA,244.5,12828.75
+1130,2018,2,Crustáceo,Caranguejo-uçá,Crab,NA,16263.162,105848.56
+1131,2018,2,Crustáceo,Pitú-de-iguape,Crayfish,NA,37275,1242.5
+1132,2018,2,Crustáceo,Siri-azul,Crab,NA,1195.08,18163.91
+1133,2018,2,Crustáceo,Siri-azul-danae,Siri-azul-danae,NA,29.04,730
+1134,2018,2,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,32571,17963
+1135,2018,2,Molusco,Mexilhão,Mussel,Perna perna,17.5,100
+1136,2018,2,Molusco,Mexilhão-do-mangue,Mussel,NA,258,3094
+1137,2018,2,Molusco,Ostra,Oyster,Crassostrea spp.,1397.23,3255
+1138,2018,2,Peixe Cartilaginoso,Cação-rola-rola,Shark,NA,1144,13893
+1139,2018,2,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,565,1334.5
+1140,2018,2,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,143,1324
+1141,2018,2,Peixe Cartilaginoso,Viola-de-focinho-curto,Viola-de-focinho-curto,NA,145,435
+1142,2018,2,Peixe Ósseo,Abrótea,Brazilian codling,Urophycis brasiliensis,56,0
+1143,2018,2,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,4,4
+1144,2018,2,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,117.5,326
+1145,2018,2,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,1103,6205.5
+1146,2018,2,Peixe Ósseo,Baiacú,trunkfish,NA,784.7,7925.85
+1147,2018,2,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,1026.8,4530.1
+1148,2018,2,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,178.1,405.25
+1149,2018,2,Peixe Ósseo,Caratinga,Mojarra,NA,42.4,332.75
+1150,2018,2,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,266,1925
+1151,2018,2,Peixe Ósseo,Cavalinha,American mackerel,Scomber japonicus,25.5,127.5
+1152,2018,2,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,1236.5,7171.3
+1153,2018,2,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,99,792
+1154,2018,2,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,23.5,76.38
+1155,2018,2,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,62.5,937.5
+1156,2018,2,Peixe Ósseo,Garoupa,Deady,Epinephelus spp.,72.6,1678
+1157,2018,2,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,18,117
+1158,2018,2,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,3015,14418
+1159,2018,2,Peixe Ósseo,Lambari,Lambari,NA,209.5,575
+1160,2018,2,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,454.7,994
+1161,2018,2,Peixe Ósseo,Manjubas agrupadas,anchovy,NA,64.5,1492.5
+1162,2018,2,Peixe Ósseo,Miraguaia,Miraguaia,NA,75,645
+1163,2018,2,Peixe Ósseo,Mistura,Mistura,NA,3607.5,8341.72
+1164,2018,2,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,43.5,300.5
+1165,2018,2,Peixe Ósseo,Pararê,Pararê,NA,350,2345
+1166,2018,2,Peixe Ósseo,Parati,Mullet,NA,1919.5,5518.3
+1167,2018,2,Peixe Ósseo,Paru,Paru,NA,609.7,2312.6
+1168,2018,2,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,989.3,19851.6
+1169,2018,2,Peixe Ósseo,Pescada-banana,Weakfish,NA,14,42
+1170,2018,2,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,1592.5,13525.78
+1171,2018,2,Peixe Ósseo,Pescada-cambucu,Weakfish,NA,5.7,0
+1172,2018,2,Peixe Ósseo,Pescada-dentão,Weakfish,NA,82,541
+1173,2018,2,Peixe Ósseo,Pescada-foguete,Weakfish,NA,9442,58952
+1174,2018,2,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,73.5,355.4
+1175,2018,2,Peixe Ósseo,Porco,Porco,NA,30,0
+1176,2018,2,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,49.9,546
+1177,2018,2,Peixe Ósseo,Robalo,Snook,Centropomus spp.,948.7,15252.25
+1178,2018,2,Peixe Ósseo,Robalo-flecha,Snook,NA,180.3,4403
+1179,2018,2,Peixe Ósseo,Robalo-peva,Snook,NA,978.9,13288.64
+1180,2018,2,Peixe Ósseo,Saguá,Saguá,NA,225.5,1240
+1181,2018,2,Peixe Ósseo,Salema,Salema,Sarpa salpa,10,30
+1182,2018,2,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,12.5,125
+1183,2018,2,Peixe Ósseo,Sardinhas agrupadas,Sardine,NA,135,270
+1184,2018,2,Peixe Ósseo,Sargo,Sargo,NA,239,1677
+1185,2018,2,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,821,8414
+1186,2018,2,Peixe Ósseo,Tainha,Mullet,Mugil spp.,2713,18698.63
+1187,2018,2,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,123,562.5
+1188,2018,2,Peixe Ósseo,Traíra,Traíra,NA,7,42
+1189,2018,2,Peixe Ósseo,Xaréu,Black cavalli,Caranx hippos,14,49
+1190,2018,2,,,#N/A,#N/A,0,0
+1191,2018,3,Crustáceo,Camarão-estuarino,Shrimp,NA,6920.422,121661.06
+1192,2018,3,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,11243,278578.98
+1193,2018,3,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,9442,57585.86
+1194,2018,3,Crustáceo,Caranguejo-uçá,Crab,NA,3360.917,20864.5
+1195,2018,3,Crustáceo,Pitú-de-iguape,Crayfish,NA,5715,1905
+1196,2018,3,Crustáceo,Siri-azul,Crab,NA,1647.29,23803.8
+1197,2018,3,Crustáceo,Siri-azul-danae,Siri-azul-danae,NA,20.72,560
+1198,2018,3,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,34610,19440.1
+1199,2018,3,Molusco,Mexilhão,Mussel,Perna perna,70.2,348
+1200,2018,3,Molusco,Mexilhão-do-mangue,Mussel,NA,150.8,1473
+1201,2018,3,Molusco,Ostra,Oyster,Crassostrea spp.,3660.522,5264
+1202,2018,3,Peixe Cartilaginoso,Cações agrupados,Shark,NA,18,135
+1203,2018,3,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,448,1181.5
+1204,2018,3,Peixe Cartilaginoso,Raia-ticonha,Raia-ticonha,NA,47,70.5
+1205,2018,3,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,54,381
+1206,2018,3,Peixe Ósseo,Acará,Acará,NA,7,70
+1207,2018,3,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,4,20
+1208,2018,3,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,242,748.5
+1209,2018,3,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,1429.5,7167.8
+1210,2018,3,Peixe Ósseo,Baiacú,trunkfish,NA,1142.6,11102.15
+1211,2018,3,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,179.5,585
+1212,2018,3,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,84,202.25
+1213,2018,3,Peixe Ósseo,Caraputanga,American red,Lutjanus purpureus,3,18
+1214,2018,3,Peixe Ósseo,Caratinga,Mojarra,NA,152.6,810.8
+1215,2018,3,Peixe Ósseo,Cascudo,Atlantic searobin,Prionotus punctatus,6.5,65
+1216,2018,3,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,154,1312
+1217,2018,3,Peixe Ósseo,Cavalinha,American mackerel,Scomber japonicus,6,30
+1218,2018,3,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,632,2820
+1219,2018,3,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,101,507
+1220,2018,3,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,3,12
+1221,2018,3,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,34,102
+1222,2018,3,Peixe Ósseo,Garoupa,Deady,Epinephelus spp.,3,90
+1223,2018,3,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,22,140
+1224,2018,3,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,99.5,136
+1225,2018,3,Peixe Ósseo,Lambari,Lambari,NA,16.5,825
+1226,2018,3,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,126.6,2034
+1227,2018,3,Peixe Ósseo,Manjubas agrupadas,anchovy,NA,135,2290
+1228,2018,3,Peixe Ósseo,Miraguaia,Miraguaia,NA,120.5,633.5
+1229,2018,3,Peixe Ósseo,Mistura,Mistura,NA,1519,3305.61
+1230,2018,3,Peixe Ósseo,Oveva,Cabezon,Larimus breviceps,30,15
+1231,2018,3,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,19,140
+1232,2018,3,Peixe Ósseo,Pararê,Pararê,NA,236,1472
+1233,2018,3,Peixe Ósseo,Parati,Mullet,NA,2130.7,6382.64
+1234,2018,3,Peixe Ósseo,Parati-barbudo,Parati-barbudo,NA,15,45
+1235,2018,3,Peixe Ósseo,Paru,Paru,NA,82,317
+1236,2018,3,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,406.9,7358.1
+1237,2018,3,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,1048.1,8269.34
+1238,2018,3,Peixe Ósseo,Pescada-foguete,Weakfish,NA,6871.5,53341.67
+1239,2018,3,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,101,1706
+1240,2018,3,Peixe Ósseo,Porco,Porco,NA,20,0
+1241,2018,3,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,29,222
+1242,2018,3,Peixe Ósseo,Robalo,Snook,Centropomus spp.,112,2029.8
+1243,2018,3,Peixe Ósseo,Robalo-flecha,Snook,NA,111,2730
+1244,2018,3,Peixe Ósseo,Robalo-peva,Snook,NA,836.9,9977.5
+1245,2018,3,Peixe Ósseo,Saguá,Saguá,NA,197.3,1072.57
+1246,2018,3,Peixe Ósseo,Salema,Salema,Sarpa salpa,10,30
+1247,2018,3,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,132.5,1325
+1248,2018,3,Peixe Ósseo,Sardinhas agrupadas,Sardine,NA,51.5,427
+1249,2018,3,Peixe Ósseo,Sargo,Sargo,NA,19,95
+1250,2018,3,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,634,5733
+1251,2018,3,Peixe Ósseo,Tainha,Mullet,Mugil spp.,1680.8,12039.27
+1252,2018,3,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,64,272
+1253,2018,3,Peixe Ósseo,Xaréu,Black cavalli,Caranx hippos,17,42.5
+1254,2018,3,,,#N/A,#N/A,0,0
+1255,2018,4,Crustáceo,Camarão-estuarino,Shrimp,NA,3982.8264,79689.15
+1256,2018,4,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,10127.6,242420.33
+1257,2018,4,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,5126.9,27081.75
+1258,2018,4,Crustáceo,Pitú-de-iguape,Crayfish,NA,48675,1622.5
+1259,2018,4,Crustáceo,Siri-azul,Crab,NA,1639.65,23984.45
+1260,2018,4,Crustáceo,Siri-azul-danae,Siri-azul-danae,NA,21.8,496
+1261,2018,4,Crustáceo,Siris agrupados,Crab,NA,7,98
+1262,2018,4,Molusco,Almeja,Almeja,NA,40,300
+1263,2018,4,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,37960,20878
+1264,2018,4,Molusco,Mexilhão,Mussel,Perna perna,35,420
+1265,2018,4,Molusco,Mexilhão-do-mangue,Mussel,NA,317.5,3648
+1266,2018,4,Molusco,Ostra,Oyster,Crassostrea spp.,7165.429,10572.5
+1267,2018,4,Peixe Cartilaginoso,Cações agrupados,Shark,NA,25,233
+1268,2018,4,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,390,956.5
+1269,2018,4,Peixe Ósseo,Acará,Acará,NA,2,16
+1270,2018,4,Peixe Ósseo,Albacora-branca,Albacora-branca,Thunnus alalunga,7,70
+1271,2018,4,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,42.4,200
+1272,2018,4,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,186.5,584.5
+1273,2018,4,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,3127,15906.75
+1274,2018,4,Peixe Ósseo,Baiacú,trunkfish,NA,2029.5,19361.5
+1275,2018,4,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,554.5,1999.5
+1276,2018,4,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,25,71
+1277,2018,4,Peixe Ósseo,Caratinga,Mojarra,NA,115.6,727.3
+1278,2018,4,Peixe Ósseo,Cascudo,Atlantic searobin,Prionotus punctatus,16.5,156
+1279,2018,4,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,403,1605
+1280,2018,4,Peixe Ósseo,Cavalinha,American mackerel,Scomber japonicus,26,99
+1281,2018,4,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,1078.7,5316.7
+1282,2018,4,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,122,513
+1283,2018,4,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,3,30
+1284,2018,4,Peixe Ósseo,Garoupa,Deady,Epinephelus spp.,21,590
+1285,2018,4,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,21,126
+1286,2018,4,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,469,1950.5
+1287,2018,4,Peixe Ósseo,Lambari,Lambari,NA,11.5,575
+1288,2018,4,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,653.6,11519
+1289,2018,4,Peixe Ósseo,Linguado-areia,Flatfish,NA,2,30
+1290,2018,4,Peixe Ósseo,Miraguaia,Miraguaia,NA,215.5,1318.5
+1291,2018,4,Peixe Ósseo,Mistura,Mistura,NA,1620.2,4932.45
+1292,2018,4,Peixe Ósseo,Oveva,Cabezon,Larimus breviceps,86,40
+1293,2018,4,Peixe Ósseo,Palombeta,Leerfish,Chloroscombrus chrysurus,213,639
+1294,2018,4,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,38,164
+1295,2018,4,Peixe Ósseo,Pararê,Pararê,NA,229.5,1349
+1296,2018,4,Peixe Ósseo,Parati,Mullet,NA,2112.8,7011.25
+1297,2018,4,Peixe Ósseo,Paru,Paru,NA,57,576.6
+1298,2018,4,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,499.5,8821.93
+1299,2018,4,Peixe Ósseo,Pescada-banana,Weakfish,NA,15,60
+1300,2018,4,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,1355.3,11450.6
+1301,2018,4,Peixe Ósseo,Pescada-foguete,Weakfish,NA,7199.4,50265.1
+1302,2018,4,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,85.6,972.8
+1303,2018,4,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,225.8,2120.4
+1304,2018,4,Peixe Ósseo,Robalo,Snook,Centropomus spp.,244.6,4341
+1305,2018,4,Peixe Ósseo,Robalo-flecha,Snook,NA,54,1156
+1306,2018,4,Peixe Ósseo,Robalo-peva,Snook,NA,580.6,7757
+1307,2018,4,Peixe Ósseo,Saguá,Saguá,NA,264.5,2862
+1308,2018,4,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,1820,416.5
+1309,2018,4,Peixe Ósseo,Sardinhas agrupadas,Sardine,NA,7.5,45
+1310,2018,4,Peixe Ósseo,Sargo,Sargo,NA,12,48
+1311,2018,4,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,10460,97039
+1312,2018,4,Peixe Ósseo,Tainha,Mullet,Mugil spp.,3406,26302.13
+1313,2018,4,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,43,301
+1314,2018,4,Peixe Ósseo,Xarelete,Black jack,Caranx latus,877,2825
+1315,2018,4,Peixe Ósseo,Xaréu,Black cavalli,Caranx hippos,456,2150
+1316,2018,4,,,#N/A,#N/A,0,0
+1317,2018,5,Crustáceo,Camarão-estuarino,Shrimp,NA,1670.2168,45583.74
+1318,2018,5,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,5483.5,141116
+1319,2018,5,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,10023,44989
+1320,2018,5,Crustáceo,Pitú-de-iguape,Crayfish,NA,4.8,1600
+1321,2018,5,Crustáceo,Siri-azul,Crab,NA,1326.32,16026.5
+1322,2018,5,Crustáceo,Siri-azul-danae,Siri-azul-danae,NA,358.3,5821.9
+1323,2018,5,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,21271,13014
+1324,2018,5,Molusco,Mexilhão,Mussel,Perna perna,113,1130
+1325,2018,5,Molusco,Mexilhão-do-mangue,Mussel,NA,509.5,4645
+1326,2018,5,Molusco,Ostra,Oyster,Crassostrea spp.,9132.52,13301.12
+1327,2018,5,Peixe Cartilaginoso,Cações agrupados,Shark,NA,8,56
+1328,2018,5,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,435.5,960.5
+1329,2018,5,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,4,0
+1330,2018,5,Peixe Ósseo,Acará,Acará,NA,1.5,0
+1331,2018,5,Peixe Ósseo,Badejo,Whiting,Mycteroperca spp.,180,3240
+1332,2018,5,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,30,145
+1333,2018,5,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,269.5,1105
+1334,2018,5,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,2559.5,11031.6
+1335,2018,5,Peixe Ósseo,Baiacú,trunkfish,NA,1876.71,17013.87
+1336,2018,5,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,131,526.57
+1337,2018,5,Peixe Ósseo,Bonitos agrupados,skipjack tuna,NA,60,360
+1338,2018,5,Peixe Ósseo,Caranha,Dog Snapper,Lutjanus spp.,26,181
+1339,2018,5,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,70.5,165
+1340,2018,5,Peixe Ósseo,Caratinga,Mojarra,NA,134,913
+1341,2018,5,Peixe Ósseo,Cascudo,Atlantic searobin,Prionotus punctatus,12,120
+1342,2018,5,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,1597,11234
+1343,2018,5,Peixe Ósseo,Cavalinha,American mackerel,Scomber japonicus,10,30
+1344,2018,5,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,821.5,4320.9
+1345,2018,5,Peixe Ósseo,Enchova,Ancho,Pomatomus saltatrix,39,178
+1346,2018,5,Peixe Ósseo,Galo,American John Dory,Zenopsis conchifer,29,435
+1347,2018,5,Peixe Ósseo,Garoupa,Deady,Epinephelus spp.,17,455
+1348,2018,5,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,104,590
+1349,2018,5,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,63,247
+1350,2018,5,Peixe Ósseo,Lambari,Lambari,NA,17.2,860
+1351,2018,5,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,718.3,12884.1
+1352,2018,5,Peixe Ósseo,Manjubas agrupadas,anchovy,NA,10,200
+1353,2018,5,Peixe Ósseo,Miraguaia,Miraguaia,NA,811.3,4875.3
+1354,2018,5,Peixe Ósseo,Mistura,Mistura,NA,1174,4452.42
+1355,2018,5,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,37,214
+1356,2018,5,Peixe Ósseo,Pararê,Pararê,NA,309,1958
+1357,2018,5,Peixe Ósseo,Parati,Mullet,NA,1815.6,5465.31
+1358,2018,5,Peixe Ósseo,Paru,Paru,NA,37.8,118
+1359,2018,5,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,188.5,2781.5
+1360,2018,5,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,1438.1,10966.05
+1361,2018,5,Peixe Ósseo,Pescada-foguete,Weakfish,NA,2519.5,19600.5
+1362,2018,5,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,23.5,228
+1363,2018,5,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,186.5,1459
+1364,2018,5,Peixe Ósseo,Robalo,Snook,Centropomus spp.,158.6,2328.2
+1365,2018,5,Peixe Ósseo,Robalo-flecha,Snook,NA,357,8832
+1366,2018,5,Peixe Ósseo,Robalo-peva,Snook,NA,474.7,7487.6
+1367,2018,5,Peixe Ósseo,Saguá,Saguá,NA,113.5,601.17
+1368,2018,5,Peixe Ósseo,Salema,Salema,Sarpa salpa,4.5,13.5
+1369,2018,5,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,13150,3370
+1370,2018,5,Peixe Ósseo,Sardinhas agrupadas,Sardine,NA,165,247.5
+1371,2018,5,Peixe Ósseo,Sargo,Sargo,NA,68.2,359
+1372,2018,5,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,16424,136065
+1373,2018,5,Peixe Ósseo,Tainha,Mullet,Mugil spp.,3481.9,26747.5
+1374,2018,5,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,91,382
+1375,2018,5,,,#N/A,#N/A,0,0
+1376,2018,6,Crustáceo,Camarão-estuarino,Shrimp,NA,7108714,18858.7
+1377,2018,6,Crustáceo,Camarão-legítimo,Shrimp,Litopenaeus schimitti,17974.9,427521.6
+1378,2018,6,Crustáceo,Camarão-sete-barbas,Seabob shrimp,Xiphopenaeus kroyeri,196192.1,1058892.5
+1379,2018,6,Crustáceo,Pitú-de-iguape,Crayfish,NA,0.975,325
+1380,2018,6,Crustáceo,Siri-azul,Crab,NA,109.12,2009
+1381,2018,6,Crustáceo,Siri-azul-danae,Siri-azul-danae,NA,908.56,14785.3
+1382,2018,6,Crustáceo,Siris agrupados,Crab,NA,25.8,105
+1383,2018,6,Molusco,Almeja,Almeja,NA,26.4,200
+1384,2018,6,Molusco,Berbigão,Cockle,Anomalocardia brasiliana,21712,12115
+1385,2018,6,Molusco,Mexilhão,Mussel,Perna perna,47,340
+1386,2018,6,Molusco,Mexilhão-do-mangue,Mussel,NA,410,4264.5
+1387,2018,6,Molusco,Ostra,Oyster,Crassostrea spp.,9046.765,13616.71
+1388,2018,6,Peixe Cartilaginoso,Raias agrupadas,Ray,NA,519,1038.25
+1389,2018,6,Peixe Cartilaginoso,Viola,Common guitarfish,Rhinobatos rhinobatos,42,308
+1390,2018,6,Peixe Ósseo,Bagre,Couma sea catfish,Sciades couma,7,35
+1391,2018,6,Peixe Ósseo,Bagre-amarelo,Gillbacker sea catfish,Sciades parkeri,255,762
+1392,2018,6,Peixe Ósseo,Bagre-branco,Catfish,Sciades proops,3799.1,16679
+1393,2018,6,Peixe Ósseo,Baiacú,trunkfish,NA,1180.3,10352.6
+1394,2018,6,Peixe Ósseo,Betara,Carolina Whiting,Menticirrhus spp.,153,428
+1395,2018,6,Peixe Ósseo,Canhanha,Brim,Archosargus rhomboidalis,6.5,26
+1396,2018,6,Peixe Ósseo,Caranha,Dog Snapper,Lutjanus spp.,210,1588
+1397,2018,6,Peixe Ósseo,Carapeba,Broad shad,Diapterus auratus,43.2,88
+1398,2018,6,Peixe Ósseo,Caratinga,Mojarra,NA,199.95,1463.85
+1399,2018,6,Peixe Ósseo,Cascudo,Atlantic searobin,Prionotus punctatus,28,314
+1400,2018,6,Peixe Ósseo,Cavalas agrupadas,Wahoo,NA,1582,10086
+1401,2018,6,Peixe Ósseo,Corvina,Croaker,Micropogonias furnieri,721.8,3554
+1402,2018,6,Peixe Ósseo,Espada,Broadbill,Xiphias gladius,1,0
+1403,2018,6,Peixe Ósseo,Goete,Jamaica weakfish,Cynoscion jamaicensis,8,48
+1404,2018,6,Peixe Ósseo,Guaivira,Jack,Oligoplites spp.,23,284
+1405,2018,6,Peixe Ósseo,Lambari,Lambari,NA,204,300
+1406,2018,6,Peixe Ósseo,Linguado,Flatfish,Paralichthys spp.,1592,28772.8
+1407,2018,6,Peixe Ósseo,Linguado-areia,Flatfish,NA,4,100
+1408,2018,6,Peixe Ósseo,Manjubas agrupadas,anchovy,NA,15,300
+1409,2018,6,Peixe Ósseo,Miraguaia,Miraguaia,NA,990.9,6186.6
+1410,2018,6,Peixe Ósseo,Mistura,Mistura,NA,2236.5,2683.86
+1411,2018,6,Peixe Ósseo,Pampo,Pampo,Trachinotus spp.,50,366
+1412,2018,6,Peixe Ósseo,Pararê,Pararê,NA,433,2939
+1413,2018,6,Peixe Ósseo,Parati,Mullet,NA,853.95,3516.35
+1414,2018,6,Peixe Ósseo,Paru,Paru,NA,66,125
+1415,2018,6,Peixe Ósseo,Pescada-amarela,Acoupa weakfish,Cynoscion acoupa,147.2,2451.43
+1416,2018,6,Peixe Ósseo,Pescada-banana,Weakfish,NA,24,80
+1417,2018,6,Peixe Ósseo,Pescada-branca,Weakfish,Cynoscion leiarchus,1757.5,11940.43
+1418,2018,6,Peixe Ósseo,Pescada-foguete,Weakfish,NA,2857,21779.78
+1419,2018,6,Peixe Ósseo,Pescadas agrupadas,Weakfish,NA,33.3,362.6
+1420,2018,6,Peixe Ósseo,Prejereba,Atlantic tripletail,Lobotes surinamensis,123.2,1515
+1421,2018,6,Peixe Ósseo,Robalo,Snook,Centropomus spp.,104.8,1373
+1422,2018,6,Peixe Ósseo,Robalo-flecha,Snook,NA,102.35,1982.75
+1423,2018,6,Peixe Ósseo,Robalo-peva,Snook,NA,420.5,7895.75
+1424,2018,6,Peixe Ósseo,Saguá,Saguá,NA,123,776.5
+1425,2018,6,Peixe Ósseo,Sardinha-bandeira,Brazilian sardinella,NA,57985,17740.92
+1426,2018,6,Peixe Ósseo,Sardinha-cascuda,Blackbill sprat,Harengula clupeola,11.2,280
+1427,2018,6,Peixe Ósseo,Sardinhas agrupadas,Sardine,NA,105,380
+1428,2018,6,Peixe Ósseo,Sororoca,Sororoca,Scomberomorus,27070.9,223518.5
+1429,2018,6,Peixe Ósseo,Tainha,Mullet,Mugil spp.,84590.95,487103.7
+1430,2018,6,Peixe Ósseo,Tortinha,Bigtooth corvina,Isopisthus parvipinnis,107,718

@@ -1,0 +1,34 @@
+type,name,per_capita
+country,Brasil,1268
+region,Norte,1657
+region,Nordeste,1494
+region,Sudeste,2507
+region,Sul,2378
+region,Centro-Oeste,2461
+UF,Rondônia,957
+UF,Acre,769
+UF,Amazonas,850
+UF,Roraima,1006
+UF,Pará,715
+UF,Amapá,936
+UF,Tocantins,937
+UF,Maranhão,597
+UF,Piauí,750
+UF,Ceará,824
+UF,Rio Grande do Norte,845
+UF,Paraíba,928
+UF,Pernambuco,852
+UF,Alagoas,658
+UF,Sergipe,834
+UF,Bahia,862
+UF,Minas Gerais,1224
+UF,Espírito Santo,1205
+UF,Rio de Janeiro,1445
+UF,São Paulo,1712
+UF,Paraná,1472
+UF,Santa Catarina,1597
+UF,Rio Grande do Sul,1635
+UF,Mato Grosso do Sul,1291
+UF,Mato Grosso,1247
+UF,Goiás,1277
+UF,Distrito Federal,2548

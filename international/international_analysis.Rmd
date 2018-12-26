@@ -5,6 +5,8 @@ output:
   html_notebook: default
   html_document:
     df_print: paged
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, eval=T, echo=F, warning=F,message=F}
@@ -25,19 +27,24 @@ packages <- c(
   "dplyr", # Data manipulation
   "tidyr", # Data manipulation
   "ggplot2", #Nice grpahs and spatial analysis
+  "wesanderson",
   "plotly",
-  # "rgdal",
+  "stringr",
+  "rgdal",
   # "RColorBrewer",
   "knitr",
   # "kableExtra",
-  "data.table"#,
-  # "ggrepel",
+  "data.table",
+  "ggrepel",
   # "gridExtra",
   # "ggmap",
-  # "rgeos",
-  # "sp",
-  # "rgdal", #Spatial analysis 
-  # "tools" #Spatial analysis 
+  "broom",
+  "rgeos",
+  "sp",
+  "sf",
+  "rgdal", #Spatial analysis
+  "tools", #Spatial analysis
+  "networkD3"
 )
 
 suppressWarnings(
@@ -45,6 +52,10 @@ suppressWarnings(
     ipak(packages)
   )
 )
+
+## Set WD for markdown file 
+
+setwd("~/Documents/Github/Oceana_LA/international")
 
 ### Set up pannel 
 
@@ -71,7 +82,7 @@ Year_an <- 2014
 ```{r SAU_Landings_Data, eval = T, echo = T, warning =F, message = F, fig.height = 15, fig.width= 10}
 
 #Data Path
-Data_Path <- "./information/raw_databases/"
+Data_Path <- "./information/raw_databases/SAU/"
 # File name
 SAU_F_Name <- "SAU EEZ 76,969,77,970,604,152,153,154,155 v47-0.csv"
 #read dataset
@@ -275,83 +286,272 @@ ggplot() +
 
 ```
 
-```{r UN_Landings_Data, eval = T, echo = T}
+```{r SOFIA_Data, eval = T, echo = T}
+
+####____________ FAO Data _______________####
 
 #Data Path
-Data_Path <- "./information/raw_databases/"
+Data_Path <- "./information/raw_databases/FAO/"
 # File name
-FAO_F_Name <- "INPUT FAO Fishstat 2018.csv"
+# FAO_F_Name <- "INPUT FAO Fishstat 2018.csv"
+FAO_F_Name <- "New_FAO.csv"
 #read dataset
 FAO <- read.csv(paste(Data_Path,FAO_F_Name,
                       sep = ""))
 
-head(FAO)
-names(FAO)
+# head(FAO)
+# names(FAO)
+# unique(FAO$Country)
+
+#### Cleaning Catch FAO data ####
+
+# We selected Brazil, Chile and Peru landings and aquaculture and filter the data from 2010 to 2016
+
+Countries <- c("Brazil","Chile","Peru")
+
+# Clean_FAO_C <- FAO %>% 
+#   filter(Country %in% Countries,
+#          Sector != "Trade",
+#          Unit != "USD.1000") %>% # Select only Brazil, Chile and Peru
+#   group_by(Country,
+#          Comm.Name= Group, # Change name to match FISHMAR data
+#          # Environment, # NOTE: not identifying between marine/freshwater
+#          Sector #,
+#          # Trade.Flow, # No need its all Production anyway
+#          # Unit # Remove dollars from this database
+#          ) %>% 
+#   summarise_at(vars(matches("X201")), sum, na.rm=T) %>% # This fixes the FAO fishing area issue
+#   gather("Year","Value",4:10) %>% 
+#   spread(Sector,Value) # Spread catches and aquaculture
+
+### _____________Andres database______________ ####
 
 Clean_FAO <- FAO %>% 
-  filter(Country %in% Countries) %>% 
+  filter(Country %in% Countries,
+         # Sector != "Trade",
+         Unit != "USD.1000") %>% # Select only Brazil, Chile and Peru
+  group_by(Country,
+         Comm.Name= Group, # Change name to match FISHMAR data
+         # Environment, # NOTE: not identifying between marine/freshwater
+         Sector ,
+         Trade.Flow #, # No need its all Production anyway
+         # Unit # Remove dollars from this database
+         ) %>% 
+  summarise_at(vars(matches("X201")), sum, na.rm=T) %>% # This fixes the FAO fishing area issue
+  gather("Year","Value",5:11) %>% 
+  spread(Sector,Value) %>% 
+  spread(Trade.Flow,Trade)# Spread catches and aquaculture
+
+Clean_FAO_Trade <- FAO %>%
+  filter(Country %in% Countries,
+         Sector == "Trade",
+         Unit == "USD.1000"
+         ) %>% # Select only Brazil, Chile and Peru
+  group_by(Country,
+         Comm.Name= Group, # Change name to match FISHMAR data
+         # Environment, # NOTE: not identifying between marine/freshwater
+         # Sector ,
+         Trade.Flow #, # No need its all Production anyway
+         # Unit # Remove dollars from this database
+         ) %>%
+  summarise_at(vars(matches("X201")), sum, na.rm=T) %>% # This fixes the FAO fishing area issue
+  gather("Year","Value",X2010:X2016) %>%
+  spread(Trade.Flow,Value)
+
+
+# Clean_FAO$Comm.Name <- gsub("..",".",Clean_FAO$Comm.Name)
+
+Data_Path <- "./information/raw_databases/"
+# File name
+A_F_Name <- "INPUT Matching Names.csv"
+#read dataset
+Andres_Names <- read.csv(paste(Data_Path,A_F_Name,
+                      sep = "")) %>% 
+  rename(Comm.Name = FishStatName2)
+ 
+# Andres_Names$FishStatName <- gsub(" ", ".",Andres_Names$FishStatName)
+# Andres_Names$FishStatName <- gsub(",", "",Andres_Names$FishStatName)
+
+
+# New aproach ####
+
+FAO_Andres <- Andres_Names %>% 
+  select(
+    Comm.Name,
+    everything()
+  ) %>% 
+  left_join(Clean_FAO,
+            by = "Comm.Name") %>% 
+  filter(!is.na(Country)) %>% 
+  group_by(
+    # Comm.Name,
+    Taxon.Key,
+    MatchName,
+    Country,
+    Year) %>%
+  summarise_if(is.numeric,sum,na.rm=T) %>% 
+  select(-FishStatNameID)
+
+FAO_Andres_Clear <- Clean_FAO %>% 
+  anti_join(Andres_Names,
+            by = "Comm.Name") %>% 
+  group_by(Country,
+           Comm.Name,
+           Year) %>% 
+  summarise_if(is.numeric,sum,na.rm=T) %>% 
+  bind_rows(FAO_Andres) %>% 
+  select(
+    Taxon.Key,
+    Comm.Name,
+    MatchName,
+    Taxon.Key,
+    everything()
+  )
+
+
+### Lets do some checks.... 
+
+# Do we have all numbers ?
+Clean_FAO %>% 
+  group_by(Country) %>% 
+  summarise_if(is.numeric,sum,na.rm=T)
+
+FAO_Andres_Clear %>% 
+  group_by(Country) %>% 
+  summarise_if(is.numeric,sum,na.rm=T)
+
+## YES !!!!
+
+# write.csv(FAO_Andres_Clear,
+#           "FAO_Clear_Data.csv",
+#           row.names = F)
+
+
+
+#### Fao Andres Money! ###
+
+FAO_Andres_Trade <- Andres_Names %>% 
+  select(
+    Comm.Name,
+    everything()
+  ) %>% 
+  left_join(Clean_FAO_T,
+            by = "Comm.Name") %>% 
+  filter(!is.na(Country)) %>% 
+  group_by(
+    # Comm.Name,
+    Taxon.Key,
+    MatchName,
+    Country,
+    Year) %>%
+  summarise_if(is.numeric,sum,na.rm=T) %>% 
+  select(-FishStatNameID)
+
+write.csv(FAO_Andres_Trade,
+          "FAO_Trade_USD.csv",
+          row.names = F)
+  
+#### DONE CLEANING FAO CATCH DATA # 
+# JUMP TO TIMS DATA
+
+### END NEW APPROACH ####
+
+# Clean_FAO_C %>% 
+#   group_by(Country,Year,Unit) %>% 
+#   summarise(n()) 211 speices per country
+
+#### Data Check METHODS ALERT ####
+# Double check why are we having double values (e.g. Patagonian.grenadier in chile) #
+# Beacuse of the FAO fishing area (Atlantic.Southwes and pacific.Southwest). I believe Oceana does not care about that so I'm adding it up! 
+
+Check_Clean_FAO_C <- FAO %>% 
+  filter(Country %in% Countries,
+         Sector != "Trade") %>% 
+  filter( Group == "Patagonian.grenadier")
+
+#### Cleaning Trade FAO data####
+
+# We selected Brazil, Chile and Peru landings and aquaculture and filter the data from 2010 to 2016. We then aggregated the data for each country, year, species and tradeflow. We lost the source detail (e.g. freshwater of saltwater).
+
+Clean_FAO_T <- FAO %>% 
+  filter(Country %in% Countries,
+         Sector == "Trade") %>% # Select only Brazil, Chile and Peru
   select(Country,
-         Sector,
          Group,
          Environment,
+         Sector,
          Trade.Flow,
-         Unit,
+         # Unit,
          X2010:X2016) %>% 
-  gather("Year","Value",7:13)
+  gather("Year","Value",6:12) %>% 
+  filter(!is.na(Value)) %>%  #Removes years with no trade
+  group_by(
+    Country,
+    Group, # NOTE: not identifying between marine/freshwater
+    Year,
+    # Unit,
+    Trade.Flow #,
+    # Sector
+  ) %>% 
+  summarise(Value = sum(Value)) %>% 
+  filter(Trade.Flow != "Production") %>% 
+  spread(Trade.Flow,Value)
 
-# Remove "X" from year to make it numeric
-Clean_FAO$Year<- gsub( 
-  "X", "", Clean_FAO$Year)
+names(Clean_FAO_T)
 
-head(Clean_FAO)
-names(Clean_FAO)
-unique(Clean_FAO$Country)
-unique(Clean_FAO$Sector)
-unique(Clean_FAO$Group)
-unique(Clean_FAO$Environment)
+Clean_FAO_T %>% 
+  group_by(Country,Year) %>% 
+  summarise(n())
 
-#### Ther's something fishy with (Captures) ####
+# Clean_FAO_C$Comm.Name <- gsub("\\b.\\b", " ",Clean_FAO_C$Comm.Name)
 
-# Peru <- 
-# FAO %>% 
-#   filter(
-#     # Country == "Peru",
-#     Sector == "Trade" | Trade.Flow == "Production") %>% 
-#   # head()
-#   group_by(
-#     Sector,
-#     Country,
-#     Trade.Flow,
-#     Unit
-#   ) %>% 
-#   summarise_at(vars(matches("X20")), sum, na.rm=T) #%>% 
-# # head()
+length(unique(Clean_FAO_T$Group))
 
-### THis Works... Maybe clean FAO???
-# Clean_FAO %>% 
-# filter(Country == "Peru") %>% 
-# # head()
-#   group_by(
-#     Sector,
-#     Trade.Flow
-#   ) %>% 
-#   summarise_at(vars(matches("X20")), sum, na.rm=T)
+# write.csv(Clean_FAO_T,
+#           "FAO_Data.csv",
+#           row.names = F)
 
+#### Checkups ####
+
+Clean_FAO_T %>%
+  filter(Year == "X2016") %>%
+  group_by(Country) %>%
+  summarise(n())
+
+# Comodities per country
+# 155 Brasil
+# 217 Chile-le
+# 164 Peru
+
+
+# head(Clean_FAO_C)
+# names(Clean_FAO_C)
+# unique(Clean_FAO_C$Country)
+# unique(Clean_FAO_C$Sector)
+# unique(Clean_FAO_C$Group)
+# unique(Clean_FAO_C$Environment)
+
+
+### Checking the famous NAs
+
+Clean_FAO_T %>% 
+  filter(is.na(Group))
+# No NAs
 
 
 #### Overall production per Sector FAO ####
 
-Totals <- Clean_FAO %>% 
+Totals <- Clean_FAO_C %>% 
   group_by(Country,
-           Sector,
-           Trade.Flow,
-           Unit) %>% 
-  summarise_at(vars(matches("X20")), sum, na.rm=T) %>% 
-  rowwise() %>% #DPLYR FUNCTION FOR rowMeans!!!!
-  mutate(Mean = mean(c(X2014,X2015,X2016))) %>% 
-  filter(Unit != "Number",
-         Sector != "Trade" | Trade.Flow != "Production"
-  )
+           # Sector,
+           Trade.Flow #,
+           # Unit
+           ) %>% 
+  summarise(
+    Mean = mean(Value, na.rm=T)) #%>% 
+# filter(Unit != "Number",
+#        Sector != "Trade" | Trade.Flow != "Production"
+#        )#Until we figure out this
 
 ggplot(Totals,
        aes(
@@ -368,239 +568,633 @@ ggplot(Totals,
 
 #### Per Species ####
 
-head(Clean_FAO)
-
-Spp_FAO <- Clean_FAO %>% 
-  # filter(scientific_name != "Marine\nfishes\nnot\nidentified") %>%  #Removed but top in B and P
-  group_by(
-    Country,
-    Sector, # Trade data is too generic for species details
-    Group,
-    Trade.Flow,
-    Unit
-  ) %>%
-  summarise_at(vars(matches("X20")), sum, na.rm=T) %>% 
-  group_by(Country,
-           Sector,
-           # Group,
-           Trade.Flow,
-           Unit) %>%
-  # top_n(n = 10, wt = X2016) %>% 
-  filter(Unit != "Number",
-         Sector != "Trade" | Trade.Flow != "Production" #Until we figure out this
-  ) %>% 
-  select(-X2015,-X2014) %>% 
-  mutate(Year = 2016) %>% 
-  rename(Value = X2016)
-
-
-
-# Are there any species in different Sectores per country?
-
-Overlap <- Spp_FAO %>% 
-  group_by(Country,
-           Group,
-           Trade.Flow) %>%
-  summarise(n(),
-            Sectors = paste(Sector,
-                            collapse = (";"))
-  ) 
+# head(Clean_FAO_C)
+# 
+# Spp_FAO <- Clean_FAO_C %>% 
+#   # filter(scientific_name != "Marine\nfishes\nnot\nidentified") %>%  #Removed but top in B and P
+#   group_by(
+#     Country,
+#     Sector, # Trade data is too generic for species details
+#     Group,
+#     Trade.Flow,
+#     Unit
+#   ) %>%
+#   summarise_at(vars(matches("X20")), sum, na.rm=T) %>% 
+#   group_by(Country,
+#            Sector,
+#            # Group,
+#            Trade.Flow,
+#            Unit) %>%
+#   # top_n(n = 10, wt = X2016) %>% 
+#   filter(Unit != "Number",
+#          Sector != "Trade" | Trade.Flow != "Production" #Until we figure out this
+#   ) %>% 
+#   select(-X2015,-X2014) %>% 
+#   mutate(Year = 2016) %>% 
+#   rename(Value = X2016)
+# 
+# 
+# 
+# # Are there any species in different Sectores per country?
+# 
+# Overlap <- Spp_FAO %>% 
+#   group_by(Country,
+#            Group,
+#            Trade.Flow) %>%
+#   summarise(n(),
+#             Sectors = paste(Sector,
+#                             collapse = (";"))
+#   ) 
 
 # unique(Overlap$Sectors)
 
-Overlap %>% 
-  filter(Sectors == "Aquaculture;Aquaculture;Capture")
-# Not realy, just 40 records out of 2000, many of them "Something.nei"
+# Overlap %>% 
+#   filter(Sectors == "Aquaculture;Aquaculture;Capture")
+# # Not realy, just 40 records out of 2000, many of them "Something.nei"
+# 
+# 
+# #### __________Alfredo's Data__________ ####
+Data_Path <- "./information/raw_databases/"
+
+FISHMAR_F_Name <- "FISHMAR_data.csv"
+#read dataset
+
+FISHMAR <- read.csv(paste(Data_Path,FISHMAR_F_Name,
+                      sep = ""))
+# 
+# head(FISHMAR)
+# View(FISHMAR)
+
+#### Standarizing both datasets ####
+# Column names differe and in Alfredo's data the names are separated by "," and spaces while FAO have them by "."
+
+### Cleaning FISHMAR data ####
+
+Clean_FISHMAR <- FISHMAR
+
+# names(Clean_FISHMAR)
+# head(Clean_FISHMAR)
+# head(Clean_FISHMAR$Commodity,20)
+# head(FAO$Group,20)
+
+# Rename to mach FAO data
+Clean_FISHMAR <- Clean_FISHMAR %>% 
+  rename(Group = Commodity)
+
+### Just checking... ###
+
+Clean_FISHMAR %>% 
+  group_by(Country) %>% 
+  summarise(n())
+
+# Comodities per country in FISHAMR
+#  Brazil 243
+# Chile 407
+# Peru 179
+
+# In FAO... VERY similar... 
+# 290 Brasil
+# 402 Chile-le
+# 244 Peru
+
+# However... 
+# #### Comparing datasets by Trade Group ####
+# Alfredo's dataset only maches the FAO data in 32.24%
+
+FAO_Trade <- Clean_FAO_T %>% 
+  group_by(Group) %>% 
+  summarise(n())
+ 
+Semi_FAO_FISHMAR <- FAO_Trade %>%
+  group_by(Group) %>% 
+  summarise(n()) %>% 
+  semi_join(Clean_FISHMAR,
+            by = "Group") # 120 out of 472 comodities matched
+# 
+# unique(Semi_FAO_FISHMAR$Group)
+
+# # What in FAO is NOT represented in Alfredo's data
+Anti_FAO_FISHMAR <- FAO_Trade %>%
+  group_by(Group) %>% 
+  summarise(n()) %>% 
+    anti_join(Clean_FISHMAR,
+            by = "Group") # 245 of Alfredo's info are on FAO's
+ 
+# unique(Anti_FAO_FISHMAR$Group)
+length(unique(Anti_FAO_FISHMAR$Group)) # 245
+ 
+
+# ### Missing Names in Alfredo's data ####
+# 
+# ## Manually checked those that do not match and found that Bonitos is a good example to talk to Alfredo
+# 
+# Boni_FAO <- Clean_FAO_C %>%
+#   filter(str_detect(Group,"Bonito")) %>%
+#   select(Group)
+# 
+# Boni_FISHMAR <- Clean_FISHMAR %>% 
+#   filter(str_detect(Group,"bonito")) %>% 
+#   select(Group)
+# 
+# Both <- data.frame(
+#   FAO = unique(Boni_FAO$Group),
+#   FISHMAR =unique(Boni_FISHMAR$Group)
+# )
+# 
+# ## For example, FISHMAR has "Plain.bonito.frozen" and FAO has "Bonito.frozen" In total FISHMAR has 15 different Bonito valies, while FAO only 3...
+
+
+#### Comparing datasets by Species (using common names) ####
+
+# What in FAO is represented in Alfredo's data
+# FAO_Production <- Clean_FAO_C %>% 
+#   rename(Comm.Name = Group)
+#   
+# length(unique(FAO_Production$Comm.Name)) # 396 different procuts
+# 
+# Semi_FAO_FISHMAR_Spp <- FAO_Production %>% 
+#   semi_join(Clean_FISHMAR,
+#             by = "Comm.Name") # 124 of Alfredo's info are on FAO's
+# 
+# unique(Semi_FAO_FISHMAR_Spp$Comm.Name)
+# length(unique(Semi_FAO_FISHMAR_Spp$Comm.Name)) # 83 different products
+# 
+# # Proportion of FAO explained by Alfredo's data
+# 
+# (83/356)*100 # only 23.31 percent 
+# 
+# # Whats not in there
+# 
+# Anti_FAO_FISHMAR_Spp <- FAO_Production %>% 
+#   anti_join(Clean_FISHMAR,
+#             by = "Comm.Name") # 4 of Alfredo's info are on FAO's
+
+
+#### I guess we:
+  # a ) Assume that whatever is not here is not tradable or...
+  # b) We did our best to match trade with species (Probably better)
+
+#### Datasets to Merge ####
+
+# We merge the FAO Trade data with the FISHMAR trade data to know what captured species represent each trade groups...
+
+#### Merging Catch Data ###
+
+Catch_Data <- Clean_FAO_C %>% 
+  left_join(Clean_FISHMAR,
+            by = c("Comm.Name","Country")
+  ) %>% 
+  select(1,2,10,11,3:5) %>% 
+  select(-Group) %>% # Need to remove all the duplicates
+  distinct(.keep_all= TRUE)
+  
+
+#Checking catch data match #####
+
+# sum(Catch_Data$Aquaculture, na.rm = T)/100000 # 113.5209
+# sum(Catch_Data$Capture, na.rm = T)/100000 # 592.7257
+
+# sum(Clean_FAO_C$Aquaculture, na.rm = T)/100000 # 113.5209
+# sum(Clean_FAO_C$Capture, na.rm = T)/100000 # 592.7257
+
+#  YES! 
+
+# Catch_Data %>% 
+#   anti_join(Clean_FAO_C,
+#             by = "Comm.Name")
+# All in! 
+
+
+#### How many of the Catch Data is represented on FISHMAR data
+
+Catch_Data %>% 
+  group_by(Country,Comm.Name) %>% 
+  summarise(n()) %>% 
+  anti_join(
+    Clean_FISHMAR,
+    by = c("Comm.Name","Country")
+  )
+
+# Very few catch data is represented in FISHMAR
+
+
+#  END CHECK _____________________
+
+#### Merging Trade Data ####
+
+# First those that are in FISHMAR
+
+
+Trade_Data <- Clean_FAO_T %>% 
+  left_join(Clean_FISHMAR,
+            by = c("Group","Country")
+  ) %>% 
+  mutate(
+    Sci.Name.Fbs = as.character(Sci.Name.Fb),
+    Comm.Names = as.character(Comm.Name)
+  ) %>% 
+  mutate(
+    Sci.Name.Fb = ifelse(is.na(Sci.Name.Fbs),Group,Sci.Name.Fbs),
+    Comm.Name = ifelse(is.na(Comm.Names),Group,Comm.Names)
+    ) %>% select(2,1,10,11,3:5) %>% 
+  group_by(Country,Sci.Name.Fb,Comm.Name,Year) %>% 
+  summarise_at(c("Exports","Imports"),sum, na.rm=T)
+
+# Trade_Data_C <- Clean_FAO_T %>% 
+#   left_join(Clean_FISHMAR,
+#             by = c("Group","Country")
+#   ) %>% 
+#   filter(is.na(Comm.Name)) %>% 
+#   group_by(Group) %>% 
+  # summarise_at(c("Exports","Imports"),sum, na.rm=T)
+
+  
+#Checking we have all trade ####
+# sum(Trade_Data$Exports, na.rm = T)/100000 # 804.019
+# sum(Trade_Data$Imports, na.rm = T)/100000 # 180.539
+# 
+# For some reason values on original dataset are slightly smaller. I believe it is because in some cases the same exports represent different species (e.g. Cholga, Choro and Chilean mussels)
+# sum(Clean_FAO_T$Exports, na.rm = T)/100000 # 746.1644
+# sum(Clean_FAO_T$Imports, na.rm = T)/100000 # 177.3709
+# 
+# Trade_Data %>%
+#   semi_join(Clean_FAO_T,
+#             by = "Group") # All in there!
+
+# But what about between datasets
+
+# Those that are in trade dataset but not on Catch datset
+
+# Trade_Data %>%
+#   group_by(Country,Comm.Name) %>% 
+#   summarise(n()) %>% 
+#   anti_join(Catch_Data,
+#             by = c("Country","Comm.Name")) %>% 
+#   group_by(Comm.Name) %>% 
+#   summarise(n()) # There are 6 common names in the Trade data that are not in the catch data
+
+# Catch_Data %>%
+#   group_by(Country,Comm.Name) %>% 
+#   summarise(n()) %>% 
+#   semi_join(Trade_Data,
+#             by = "Comm.Name")
+
+# There are 58 catched species not represented in the trade data-set
+
+
+### Is the less data problem the Unknowns?
+# YES!!!!!
+# Now solve for the unknowns! 
+
+
+# Data with NA
+Trade_Data_NA <- Trade_Data %>% 
+  filter(is.na(Comm.Name))
+
+# Checking we're not loosing data
+# Trade_Data_NA$Sci.Name.Fb <- "Unknown"
+# Trade_Data_NA$Comm.Name <- "Unknown"
+
+# Data without NA
+Trade_Data_OK <- Trade_Data %>% 
+  filter(!is.na(Comm.Name))
+
+Trade_Data_B <- Trade_Data_NA %>% 
+  bind_rows(Trade_Data_OK)
+
+# Checking we're not loosing data
+# sum(Trade_Data_B$Exports)/100000
+# sum(Trade_Data_B$Imports)/100000
+# Trade_Data <- Trade_Data_B
+
+
+# Searching for the NAs
+
+
+Trade_Data_C <- Clean_FAO_T %>% 
+  left_join(Clean_FISHMAR,
+            by = c("Group","Country")
+  ) %>% 
+  filter(is.na(Comm.Name)) %>% 
+  group_by(Group) %>% 
+  summarise_at(c("Exports","Imports"),sum, na.rm=T)
+
+# Founde it! There are many commodities not matched
+
+
+NAs_Search <- Clean_FAO_T %>% 
+  anti_join(Trade_Data_C,
+            by = c("Group","Country")
+            )
+
+
+#  END CHECK _____________________
+
+#### Merging both Data ####
+
+
+# First we merge those species in both....
+
+Semi_Catch <- Catch_Data %>%
+  semi_join(Trade_Data,
+            by = c("Comm.Name","Sci.Name.Fb")
+  )
+
+Semi_Trade <- Trade_Data %>% 
+  semi_join(Catch_Data,
+            by = c("Comm.Name","Sci.Name.Fb")
+  )
+
+Semi_Data <- Semi_Catch %>% 
+  left_join(Semi_Trade,
+            by = c("Country","Comm.Name","Sci.Name.Fb","Year")
+  )
+# Checking we're not loosing data
+# sum(Semi_Data$Exports,na.rm=T)/100000 # 127.7865
+# sum(Semi_Data$Imports,na.rm=T)/100000 # 28.08
+
+sum(Semi_Data$Capture,na.rm=T)/100000 # 156.7049
+
+# Now we merge those species NOT in both....
+
+
+Anti_Catch <- Catch_Data %>%
+  anti_join(Trade_Data,
+            by = c("Comm.Name","Sci.Name.Fb")
+  )
+
+Anti_Trade <- Trade_Data %>% 
+  anti_join(Catch_Data,
+            by = c("Comm.Name","Sci.Name.Fb")
+  )
+
+# Checking we're not loosing data
+# sum(Anti_Trade$Exports, na.rm = T)/100000 # 676.2326
+# sum(Anti_Trade$Imports, na.rm = T)/100000 # 152.4552
+
+Anti_Data <- Anti_Catch %>% 
+  bind_rows(Anti_Trade)
+
+# Checking we're not loosing data
+# sum(Anti_Data$Exports, na.rm = T)/100000 # 676.2326
+# sum(Anti_Data$Imports, na.rm = T)/100000 # 152.4552
+
+#### Merging both datasets... 
+
+Clean_FAO_Data <- Semi_Data %>% 
+  bind_rows(Anti_Data)
+
+## Check all is there (#TheMomentOfTruth!)
+
+Clean_FAO_Data %>% 
+  gather("Variable","Value",5:8) %>% 
+  group_by(Variable) %>% 
+  summarise(sum(Value,na.rm=T)/100000)
+
+#  Aquaculture                 113.52088
+#  Capture                     592.72573
+#  Exports                     804.0190
+#  Imports                      180.5390
+
+# YES! But we can't just leave them as "Unknown"...
+
+
+# Use this data to merge with Tim's data
 
 
 ```
 
 
+```{r Tim_Data, eval = T, echo = F}
 
-```{r Spp_Function, eval =T}
+### Species info name ###
+# Tim only included species names and I need common names for FAO's data
+
+#Data Path
+Data_Path <- "./information/raw_databases/SAU/"
+# File name
+SAU_F_Name <- "SAU EEZ 76,969,77,970,604,152,153,154,155 v47-0.csv"
+#read dataset
+SAU_Spp <- fread(paste(Data_Path,SAU_F_Name,
+                   sep = "")) %>% 
+  rename(taxon_name = scientific_name) %>% 
+  group_by(taxon_name,
+           common_name) %>%
+  summarise(n=n()) %>%
+  select(-n)
+
+# _______________Tim's data _____________####
+
+Tim_D <- fread("./information/raw_databases/SAU/Brazil-Peru-Chile Fisheries Data.csv")
+
+#  [1] "fishing_entity_id"   "year"                "taxon_key"           "sector_type_id"      "catch_type_id"       "reporting_status_id"
+#  [7] "gear_type_id"        "sum"                 "DHC_Use"             "FMFO_Use"            "Other_Use"           "DHC_Amount"         
+# [13] "FMFO_Amount"         "Other_Amount"        "Discards"            "taxon_name"          "fishing_entity" 
+
+# sector_type_id <- 1 Industrial, 3 Artisanal
+# 
+
+
+
+# Im going to use the average DHC and IHC value of all secotrs (Artisanal/Industrial) and reporting status (official/reconstructed) I dont think it matters 
+
+Tim_D_Clear <- Tim_D %>% 
+  filter(
+    year >= 2010, # use last 5 years average
+    reporting_status_id == 1 # Use only reported data
+    ) %>% 
+  group_by( # first we average by the 5 years
+    taxon_key,
+    taxon_name,
+    fishing_entity,
+    sector_type_id
+           ) %>% 
+  summarise_at(vars(sum:Discards),c(M=mean,sd=sd)) %>% 
+  group_by( # Now we sum both artisanal and industrial fishing
+    taxon_key,
+    taxon_name,
+    fishing_entity
+  ) %>% 
+  summarise_at(vars(sum_M:Discards_sd),sum,na.rm=T) %>% 
+  mutate( # now we estimate the proportion of both sectors 
+    DHC_Use = DHC_Amount_M/sum_M,
+    FMFO_Use = FMFO_Amount_M/sum_M,
+    Other_Use = Other_Amount_M/sum_M,
+    Discards_F = Discards_M/sum_M
+  ) %>% 
+  select(
+    1:3,
+    DHC_Use:Discards_F
+  ) %>% 
+  mutate(Discards = ifelse(Discards_F < 0,0,Discards_F)) %>% #Some discards have very small negative numbers so correct for that
+  group_by(
+    Taxon.Key = taxon_key, # Change name to match FAO data
+    # taxon_name,
+    Country = fishing_entity
+    ) %>%
+  mutate_if(is.numeric,round,3) %>%
+  ungroup() %>% 
+  select(-taxon_key)
+
+#### Merge with Sofia-Andres ####
+
+FAO_Andres_Clear_T <- FAO_Andres_Clear %>% 
+  left_join(Tim_D_Clear,
+            by = c(
+              "Taxon.Key",
+              "Country"
+              )
+  ) %>% 
+  mutate(
+    Species = ifelse(is.na(Comm.Name) == TRUE, paste(MatchName),paste(Comm.Name))
+    ) %>% 
+  select(Taxon.Key,
+         FAO_Name = Comm.Name,
+         MatchName,
+         SAU_name = taxon_name,
+         Species,
+         everything(),
+         -fishing_entity,
+         -Discards_F) %>% 
+  filter_at(vars(Aquaculture:Production),any_vars(. > 0)) # Removes rows with no production (any)
+
+
+head(FAO_Andres_Clear_T)
+# Sci.Name.Fb = ifelse(is.na(Sci.Name.Fbs),Group,Sci.Name.Fbs),
+
+# %>% 
+#   select(
+#     Taxon.Key,
+#     FAO_Name = Comm.Name,
+#     MatchName,
+#     taxon_name,
+#     All_Names,
+#     everything()
+#   )
+
+
+
+
+write.csv(
+  FAO_Andres_Clear_T,
+  "International_Data.csv",
+  row.names = F)
+
+```
+
+
+
+```{r Spp_Data_For_Function, eval =T}
 
 #### Dummy Variables #####
 
-Dummy_Data <- data.frame(
-  Species = c(rep(SAU_Clean$scientific_name[1:10], times=3, each=1))) %>% 
-  mutate(
-    Country = rep(c("Brazil","Chile", "Peru"), times=1, each=10),
-    Year = 2016,
-    Landings_Tonnes = rnorm(30,2000,150),
-    Landings_Value = rnorm(30,2000,150),
-    Aquaculture_Tonnes = rnorm(30,1000,50),
-    Aquaculture_Value = rnorm(30,1000,50),
-    Imports_Tonnes = rnorm(30,1000,50),
-    Imports_Value = rnorm(30,1000,50),
-    Exports_Tonnes = rnorm(30,1000,50),
-    Exports_Value = rnorm(30,1000,50)
-  )
 
-Dummy_DataB <- data.frame(
-  Species = c(rep(SAU_Clean$scientific_name[1:10], times=3, each=1))) %>% 
+Dummy_Data <- data.frame(
+  # Species = c(rep(FAO_Dummy$Group[41:50], times=3, each=1))) %>% 
+  Species = c(rep(SAU_Clean$scientific_name[41:50], times=3, each=1))) %>% 
   mutate(
     Country = rep(c("Brazil","Chile", "Peru"), times=1, each=10),
     Year = 2016,
     Variable = rep(c("Tonnes","Value","Tonnes"), times=10, each=1),
     Catch = rnorm(30,2000,150),
-    # Landings_Value = rnorm(30,2000,150),
+    Discards = rnorm(30,0.2,0.1),
     Aquaculture = rnorm(30,1000,50),
-    # Aquaculture_Value = rnorm(30,1000,50),
+    Aquaculture_processing = rnorm(30,0.2,0.5),
     Imports = rnorm(30,1000,50),
-    # Imports_Value = rnorm(30,1000,50),
-    Exports = rnorm(30,1000,50),
-    DHC = rnorm(30,0.5,0.1)
-    # Exports_Value = rnorm(30,1000,50)
+    Exports = rnorm(30,100,50),
+    DHC = rnorm(30,0.5,0.1),
+    Processing = rnorm(30,0.5,0.1)
   )
 
-Spp_Analysis(
-  Data = Dummy_DataB,
-  Spp = Dummy_DataB$Species,
-  Co = c("Chile","Brazil"),
-  # Co = "Brazil",
-  Y = 2016,
-  Var = "Tonnes",
-  Top = 5,
-  Result = "P"
+
+```
+
+```{r Spp_Function, eval =T}
+
+#### Function Variables ####
+
+# Catch = Fisheries Landings
+# Dis = Discards lost at sea
+# DHC = Proportion of the landings that go to direct human consumption
+# PL = Proportion lost in processing DHC
+# AP = Aquaculture production
+# A_PL = Proportion lost in processing aquaculture (Can use same as wild fish, Muhammed pers. comm.)
+# I_DHC = Imports to direct human consumtion
+# Exp = Exports
+
+
+FAO_Andres_Clear_T
+
+#### Example for one single species
+
+corefx(
+  Species = "Julianus",
+  Country = "Chile",
+  Catch = 500,
+  Dis = .9,
+  DHC = 0.9,
+  PL = 0.2,
+  AP = 0,
+  A_PL = 0.2,
+  I_DHC = 0,
+  Exp = 10,
+  Result = "P",
+  n = 5
 )
 
-Spp_Analysis <- function(
-  Data,
-  Spp, #Specie (es)
-  Co, #Country(es) (Brazil, Chile, Peru)
-  Y, # Year (es) NOTE if more than one function will return mean +- sd
-  Var, # Tonnes, Value, Both
-  Top,# number of species to show
-  Result # P = Plot or D = dataset
-){
-  
-# First general filter according to parameters∫  
-  Spp_Data <- Data %>% 
-    filter(
-      Species %in% Spp,
-      Country %in% Co,
-      Year %in% Y
-    )
-  
-  # Just Tonnage results
-  if( Var == "Tonnes"){
-    
-    Result <- Spp_Data %>%
-      filter(Variable %in% Var) %>% 
-      group_by(Species,
-               Country) %>% 
-      mutate(
-        # Catch times proportion to DHC from Tim + Aquaculture production + Import production - Exports
-        DHC_Available = ((Catch * DHC) + Aquaculture + Imports) - Exports,
-        Catch_IHC = (Catch * (1-DHC))*-1
-      ) %>% 
-      group_by(Country) %>% 
-      top_n(n = Top, wt = DHC_Available) %>% 
-      # Anoying GGPLOT comands for plotting niceley
-      mutate(Exports = Exports*-1) %>% 
-      select(-Variable,
-            -Year,
-            -DHC) %>% 
-      gather("Concept","Value",3:8) %>% 
-      mutate(
-        Levels = factor(ifelse(Concept == "Aquaculture","AA_Aqua",
-                        ifelse(Concept == "Catch", "AAA_Cat",
-                               ifelse(Concept == "Imports", "AAA_Imp",
-                                      ifelse(Concept == "DHC_Available", "A_DH",
-                                             ifelse(Concept == "Exports", "B","NA")))))
-        )
-      )
-    
-    Plot <- ggplot(Result,
-    aes(
-      x = Species,
-      y = Value,
-      fill = Levels
-    )
-    )+
-      geom_bar(stat = "identity") +
-      facet_wrap(~Country,
-                 scales = "free") +
-      scale_fill_discrete(
-        labels=c("DHC","Aquaculture","Catch","Imports","Exports","IHC"),
-        name="Component")
-  } # Close Tonnnes ifstatement
-  
-  # Just Value results
-  if( Var == "Value"){
-    
-    Result <- Spp_Data %>%
-      filter(Variable %in% Var) %>% 
-      group_by(Species,
-               Country) %>% 
-      mutate(
-        # Catch times proportion to DHC from Tim + Aquaculture production + Import production - Exports
-        Value_DHC = ((Catch * DHC) + Aquaculture + Imports) - Exports,
-        Value_IHC = Catch * (1-DHC)
-      ) %>% 
-      group_by(Country) %>% 
-      top_n(n = Top, wt = Value_DHC) %>% 
-      # Anoying GGPLOT comands for plotting niceley
-      mutate(Imports = Imports*-1) %>% 
-      select(-Variable,
-            -Year,
-            -DHC) %>% 
-      gather("Concept","Value",3:8) %>% 
-      mutate(
-        Levels = factor(ifelse(Concept == "Aquaculture","AA_Aqua",
-                        ifelse(Concept == "Catch", "AAA_Cat",
-                               ifelse(Concept == "Exports", "AAA_Exp",
-                                     ifelse(Concept == "Value_DHC", "A_DH",
-                                            ifelse(Concept == "Value_IHC", "AA_IH",
-                                                   ifelse(Concept == "Imports", "B","NA"))))))
-        )
-      )
-    
-    
-    # The plot !
-    ggplot(Result,
-    aes(
-      x = Species,
-      y = Value,
-      fill = Levels
-    )
-    )+
-      geom_bar(stat = "identity") +
-      facet_wrap(~Country,
-                 scales = "free") +
-      scale_fill_discrete(
-        labels=c("DHC","Aquaculture","IHC","Catch","Exports","Imports"),
-        name="Component")
-    
-  } #Closes value if statement
-  
-  # Both Tonnage and Value results
-  if( Var == "Both"){
-    
-    Result <- Spp_Data %>%
-      group_by(Species,
-               Country,
-               Variable) %>% 
-      mutate(
-        # Catch times proportion to DHC from Tim + Aquaculture production + Import production - Exports
-        Totals = ((Catch * DHC) + Aquaculture + Imports) - Exports 
-      ) %>% 
-      spread(Variable,Totals)
-  } #CLoses both ifstatement
-  
-  
-  # Function return
 
-  return(Plot)  
-  # if(Result == "P"){
-  #   return(Plot)
-  # }else{
-  #   return(Result)
-  # }
-  
-} # End of function
+Dummy_Data <- FAO_Andres_Clear_T %>% 
+  # mutate(Species = ifelse(is.na(Comm.Name) == TRUE, paste(MatchName),paste(Comm.Name))) %>% 
+  group_by(Species,
+           Country) %>% #Average of all years
+  summarise_at(vars(Aquaculture:Discards),
+               mean, na.rm=T)
+
+### Example for multiple species
+x <- corefx(
+  Result = "T",
+  Country=Dummy_Data$Country,
+  n = 5,
+  Species = Dummy_Data$Species,
+  Catch = Dummy_Data$Capture,
+  Dis = Dummy_Data$Discards,
+  DHC = Dummy_Data$DHC_Use,
+  PL = 0.20,
+  AP = Dummy_Data$Aquaculture,
+  A_PL = 0.20,
+  I_DHC = Dummy_Data$Imports,
+  Exp = Dummy_Data$Exports
+)
 
 
+
+corefx(
+  Country=International_data$Country,
+  Species = International_data$Comm.Name,
+  Catch = International_data$Capture,
+  Dis = 0.20,
+  DHC = International_data$DHC_Use,
+  PL = 0.20,
+  AP = International_data$Aquaculture,
+  A_PL = 0.20,
+  I_DHC = International_data$Imports,
+  Exp = International_data$Exports,
+  Result = "T",
+  n = 5
+)
+
+# Species,
+#   Country,
+#   Catch,
+#   Dis,
+#   DHC,
+#   PL,
+#   AP,
+#   A_PL,
+#   I_DHC,
+#   Exp,
+#   Result = "T",
+#   n = 5
 
 
 ```
@@ -770,5 +1364,266 @@ SAU_Clean %>%
          )) +
   geom_bar(stat = "identity") +
   theme_classic()
+
+```
+
+
+### Map data SAU
+
+```{r SAU_Map_Data, eval =T, echo = T}
+
+#### FAO Data ####
+
+
+#Data Path
+Data_Path <- "./information/raw_databases/SAU/"
+# File name
+SAU_Space_F_Name <- "OceanaSpatialDataPeruChileBrazil.csv"
+#read dataset
+SAU_Spatial <- read.csv(paste(Data_Path,SAU_Space_F_Name,
+                      sep = ""))
+
+#### EEZ limits ####
+
+path_eez_world <- ("/Users/jpalacios/Documents/UBC/Oceans_Project/Distribution/Data/Spatial/World_EEZ_v9_20161021/")
+#The File
+fnam_eez_world <- "eez_boundaries"
+#Load it!
+
+#### Extract
+system.time(eez_world <- st_read(
+  dsn = path_eez_world,
+  layer =file_path_sans_ext(fnam_eez_world)
+  )
+)
+  
+# Select countries EEZ
+Countries <- c("Brazil","Chile","Peru")
+Countries_Ar <- c(Countries,"Argentina")
+
+# Subset EEZs from shapefile
+South_America_EEZ <- eez_world %>% 
+  filter(Territory1 %in% Countries)
+
+# unique(South_America$Territory1)
+
+
+#### Countries shape ####
+
+path.ne.coast <- "information/raw_databases/Spatial/TM_WORLD_BORDERS-0.3"
+file_name <- "TM_WORLD_BORDERS"
+
+# Loading the shapefile:
+system.time(World_Land <- st_read(dsn = path.ne.coast, 
+                      layer = file_path_sans_ext(file_name)#,
+                      # verbose = FALSE
+                      )
+)
+
+South_Border <- c("Brazil",
+                  "Peru",
+                  "Chile",
+                  "Argentina",
+                  "Colombia",
+                  "Venezuela",
+                  "Ecuador",
+                  "Uruguay",
+                  "Bolivia",
+                  "Paraguay",
+                  "Guyana",
+                  "Suriname",
+                  "French Guiana"
+                  )
+
+South_America_Land <- World_Land %>% 
+  filter(NAME %in% South_Border) %>% 
+  mutate(
+    Nation = ifelse(NAME %in% Countries, "Yes","No")
+  )
+
+unique(South_America_Land$NAME)
+
+# Getting Long and Lat data
+
+Coor <- read.csv("/Users/jpalacios/Documents/UBC/Oceans_Project/Distribution/DBEM/Data/Lon_Lat_DBEM.txt")
+
+colnames(Coor) <- c("cell_id","Long","Lat")
+
+# Use Vicky's dataset...
+
+# library(readxl)
+EEZ_CellID <- read_excel("~/Documents/UBC/Oceans_Project/Distribution/By Cell/Cell_Data/EEZ_CellID.xlsx")
+head(EEZ_CellID)
+
+EEZ_List <- read_excel("~/Documents/UBC/Oceans_Project/Distribution/By Cell/Cell_Data/Updated_EEZList_17June2016.xlsx")
+head(EEZ_List)
+
+# First filter  the countries we want, bruh! 
+Countries_EEZ_SAU <- EEZ_List %>% 
+  filter(Name %in% Countries)
+
+# Now get the cellID for these countries
+
+Countries_Cell_Id <-EEZ_CellID %>% 
+  filter(EEZID %in% Countries_EEZ_SAU$EEZID)
+
+# unique(Countries_Cell_Id$EEZID)
+# unique(SAU_Spatial$fishing_entity_id)
+
+# Merging datasets
+SAU_Coor <- SAU_Spatial %>%
+  filter(cell_id %in% Countries_Cell_Id$`CellID `) %>% 
+  group_by(fishing_entity_id,
+           cell_id) %>% 
+  summarise(sum = sum(sum,na.rm=T)) %>% 
+  mutate(Log = log10(sum)) %>% 
+  left_join(Coor,
+            by = "cell_id") %>% 
+  mutate(
+    Territory1 = ifelse(fishing_entity_id == 15, "Brazil",
+                  ifelse(fishing_entity_id == 30,"Chile","Peru")
+    )
+    ) %>% 
+  left_join(South_America_Land,
+            by = "Territory1")
+  
+  
+# Save the shapefile for report
+# st_write(SAU_Coor, "SAU_Shapefile.shp", driver = "ESRI Shapefile", delete_layer = TRUE)
+
+## Test loading 
+
+# path_SAU_shp <- ("~/Documents/Github/Oceana_LA/international/information/raw_databases/Spatial/SAU_Shapefile_Clean/")
+# #The File
+# fnam_SAU_shp <- "SAU_Shapefile"
+# #Load it!
+# 
+# system.time(test <- st_read(
+#   dsn = path_SAU_shp,
+#   layer =file_path_sans_ext(fnam_SAU_shp)
+#   )
+# )
+
+# Works beautifully!!!!
+
+
+# The actual map
+
+# Some Zissouy collors :)
+pal <- wes_palette("Zissou1", 100, type = "continuous")
+
+ggplot(South_America_Land) +
+  geom_sf() +
+  # geom_sf(aes(fill = Nation)) +
+  # scale_fill_manual(values = wes_palette("Darjeeling1", 2, type = "discrete")#,
+  #                   # labels = c("Export","Import") 
+  #                   ) +
+  geom_tile(data = SAU_Coor,
+               aes(
+                 x=Long,
+                 y=Lat,
+                 fill = Log,
+                 colour = Log
+               )
+               ) +
+  scale_fill_gradientn("Wild Captures\n (Log x 10)",
+                       colours = pal
+                       ) +
+  scale_colour_gradientn("Wild Captures\n (Log x 10)",
+                         colours = pal) +
+  coord_sf(
+    xlim = c(-85, -26),
+    ylim = c(-65, 10)
+  ) +
+  ggtheme_map() +
+  theme(
+    legend.key = element_rect(size = 4),
+    legend.key.width =unit(6,"line")
+  ) +
+  annotate("text",
+           label= "Brazil",
+           x = -28,
+           y = -1,
+           size = 5,
+           colour = "#000000"
+  ) +
+  annotate("text",
+           label= "Chile",
+           x = -83,
+           y = -26.5,
+           size = 5,
+           colour = "#000000"
+  ) +
+  annotate("text",
+           label= "Peru",
+           x = -83.5,
+           y = -16,
+           size = 5,
+           colour = "#000000"
+  ) +
+  theme(
+    legend.position = "bottom"
+  )
+
+
+ggplot(South_America_Land) +
+  geom_sf(
+    aes(fill = Log)
+  )
+
+```
+
+
+```{r Network_Analysis, eval = F}
+
+International_Data <- read.csv("~/Documents/Github/Oceana_LA/clean_databases/International/International_Data.csv")
+
+Dummy_Data <- International_Data %>% 
+  # mutate(Species = ifelse(is.na(Comm.Name) == TRUE, paste(MatchName),paste(Comm.Name))) %>% 
+  group_by(Species,
+           Country) %>% #Average of all years
+  summarise_at(vars(Aquaculture:Discards),
+               mean, na.rm=T)
+
+### Example for multiple species
+Dummy_NSS <- corefx(
+  Result = "T",
+  Country=Dummy_Data$Country,
+  n = 5,
+  Species = Dummy_Data$Species,
+  Catch = Dummy_Data$Capture,
+  Dis = Dummy_Data$Discards,
+  DHC = Dummy_Data$DHC_Use,
+  PL = 0.20,
+  AP = Dummy_Data$Aquaculture,
+  A_PL = 0.20,
+  I_DHC = Dummy_Data$Imports,
+  Exp = Dummy_Data$Exports
+)
+
+
+
+Category <- c(
+  "Capture",
+  "Aquaculture",
+  "Imports",
+  "Exports",
+  "NSS"
+)
+
+
+Sources <- names(Dummy_NSS)[3:5]
+Target <- c("NSS","Lost")
+
+Captures <- Dummy_NSS %>% 
+  filter(Country == "Chile") %>% 
+  gather("category","value",3:6) %>% 
+  group_by(category) %>% 
+  summarise(top = sum(value))
+  # top_n(n = 5, wt = `National Seafood Supply`)
+
+Final_T <-
+
+
 
 ```
