@@ -1,0 +1,25 @@
+Country,Sector,Discards,HC,Pre_Check,Final,Tonnes
+Brazil,Aquaculture,Landed,DHC,To NSS,NSS,416552
+Brazil,Aquaculture,Landed,DHC,Processing Loss,LDSS,104138
+Brazil,Catch,Landed,DHC,To NSS,NSS,438652
+Brazil,Catch,Landed,DHC,Processing,LDSS,109663
+Brazil,Catch,Discard,Discard,Discards,LDSS,150779
+Brazil,Catch,Landed,IHC,IHC,LDSS,54800
+Brazil,Import,Landed,DHC,To NSS,NSS,310194
+Brazil,Import,Landed,DHC,Exported,LDSS,33707
+Chile,Aquaculture,Landed,DHC,To NSS,NSS,825240
+Chile,Aquaculture,Landed,DHC,Processing,LDSS,206310
+Chile,Catch,Landed,DHC,To NSS,NSS,622153
+Chile,Catch,Landed,DHC,Processing,LDSS,155538
+Chile,Catch,Discard,Discard,Discards,LDSS,522817
+Chile,Catch,Landed,IHC,IHC,LDSS,1313578
+Chile,Import,Landed,DHC,To NSS,NSS,119946
+Chile,Import,Landed,DHC,Exported,LDSS,1008875
+Peru,Aquaculture,Landed,DHC,To NSS,NSS,78388
+Peru,Aquaculture,Landed,DHC,Processing,LDSS,19597
+Peru,Catch,Landed,DHC,To NSS,NSS,586762
+Peru,Catch,Landed,DHC,Processing,LDSS,146691
+Peru,Catch,Discard,Discard,Discards,LDSS,1009287
+Peru,Catch,Landed,IHC,IHC,LDSS,3303695
+Peru,Import,Landed,DHC,To NSS,NSS,81009
+Peru,Import,Landed,DHC,Exported,LDSS,932967
