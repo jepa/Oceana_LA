@@ -101,6 +101,28 @@ unique(SAU$area_name)
 
 SAU$scientific_name <- gsub(" ", "\n",SAU$scientific_name)
 
+
+#### Subsistance fishing ####
+SAU_Subsistance <- SAU %>%
+  filter(scientific_name != "Marine\nfishes\nnot\nidentified",
+         fishing_sector == "Subsistence") %>%  #Removed but top in B and P
+  filter(fishing_entity %in% Countries) %>% # Remove other fishing nations
+  group_by(year,
+           common_name,
+           scientific_name, # Trade data is too generic for species details
+           fishing_entity,
+           fishing_sector # #Trade data is too generic for sector details
+  ) %>%
+  summarise(
+    Total_tonnes = sum(tonnes),
+    Landings_Value = sum(landed_value)
+  )
+
+
+write.csv(SAU_Subsistance,
+          "SAU_Sub.csv",
+          row.names = FALSE)
+
 # Plot <- #For dynamic plot
 SAU_Clean <- # FOr saving the plot
   SAU %>% 
