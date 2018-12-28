@@ -21,7 +21,7 @@ This is the repository for the Oceana project on most important fisheries in Bra
 - Santiago de la Puente, MSc  (Peru Working Group)
 - Andrés M. Cisneros-Montemayor, PhD  (Project Coordinator)
 
-**Note:** We expect the different working groups talk, colaborate and support each other throughout the development of the project
+**Note:** We expect the different working groups talk, collaborate and support each other throughout the development of the project
 
 ## Timeline and Important dates:
 
@@ -47,24 +47,18 @@ Second preliminary reports of findings for each nation (**JEPA**)
 ### Final deliverable (December 21st)
 - **Final deliverable**
 
-## Folders organization per country
+## Folders organization:
 
-Each country (an the "international" analysis) should have their folder as follows, please follow all, unless stated as "optional":
+- **cleaning_databases:** This folder holds all the clean databases for the project per country and also the international analysis.
 
-1) **Information**: folder que contenga cualquier fuente de informacion que se va a usar para desarrollar los scopes del proyecto.
+-- *Project_Metadata.csv:* This file contains the information about all the databases of the project
 
-- **raw_databases**: contiene todas las bases de datos brutas ordenadas en folders por fuente y tema. Aca van las bases especificas de cada pais. *Mantengan las bases que no utilizan en formato .zip para que no ocupen tanto espácio*
+- **Functions**: Any function needed for the project. Functions should have explanatory text and examples build within.
 
-- **interviews**: contiene una folder de audios y otra de transcripts de las entrevistas que se hayan llevado a cabo.
+- **International**: This folder contains the script used for cleaning the international analysis part. And data.
 
-- **papers** : contiene todos los papers que se usen como fuente de datos, valores estimados o supuestos.
+-- *raw_databases*: This folder contains databases in "raw" format that need to be cleaned for delivery to *Oceana*. Spatial data does not to be included in final report but need to be here for knitting the report
 
-- **reports**: contiene todos los reportes utilizados como fuente de datos, valores estimados o supuestos. Puede esar ordenada por fuente y temas.
+- *Oceana_Ref.bib*: BidText file containing all the references in the project
 
-2) **scripts** (Optional, you can have one single script to clean and analyze ecerything):  que contenga todos los scripts que se usen para desarrollar las scopes haciendo referencia a los documentos que existen en la carpeta information cada vez que sea necesario.  
-
-- **cleaning_data** (Optional, you can have one single script to clean and analyze ecerything): contiene todos los scripts de R, Rmarkdown u otro (puede ser incluso un word) que explique paso a paso como se limpiaron las *raw_databases* para llegar a las bases de datos mas limpias que se estan usando para los analisis.
-
-- **scopes** (Mandatory, but can be part of the ONE single script, as long as is clear): un script de R, Rmarkdown, word u otro para cada scope que explique como se va uniendo la informacion contenida en la carpeta information para desarrollar cada scope.  Basicamente, un documento por scope que detalle la metodologia y que puede incrorporar figuras y resultados preliminares. *Una vez completado el análisis hay que incluirlo al Rmarkdown del reporte*.
-
-3) *clean_databasases*: esta carpeta contendrá todas las nuevas bases de datos generadas y listas para entregar a Oceana. Estas bases tendrán que llamarse igual entre país (e.g. datos_brasil, datos_chile, datos_peru) y el mismo formato
+- *Report_Figures*: Include figures nor produced by code or figures that will take too long to produce
