@@ -202,7 +202,7 @@ NSS_Flow <- read.csv(paste(Int_Data_Path,
 
 \clearpage
 
-**Reference as:** Palacios-Abrantes, J; Vargas, J; Viana, D; Rivera, M.I; Gozzer, R; López, R; de la Puente, S;  Cisneros-Montemayor A. (2018). Contributions of marine capture fisheries to the domestic livelihoods and seafood consumption of Brazil, Chile, and Peru. Report commissioned by *Oceana.* Pp 100
+**Reference as:** Palacios-Abrantes, J; Vargas, C; Viana, D; Rivera, M.I; Gozzer, R; López, R; de la Puente, S;  Cisneros-Montemayor A. (2018). Contributions of marine capture fisheries to the domestic livelihoods and seafood consumption of Brazil, Chile, and Peru. Report commissioned by *Oceana.* Pp 100
 
 # Project Goal and Objectives
 
