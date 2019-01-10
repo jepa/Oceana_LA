@@ -17,6 +17,7 @@ This is the repository for the Oceana project on most important fisheries in Bra
 - Camila Vargas, MSc (Chile Working Group)
 - Daniel Viana, PhD  (Brazil Working Group)
 - Maria I. Rivera, MSc  (Chile Working Group)
+- Renato Gozzer, Ing (Peru Working Group)
 - Rocio Lopez, MSc  (Peru Working Group)
 - Santiago de la Puente, MSc  (Peru Working Group)
 - Andrés M. Cisneros-Montemayor, PhD  (Project Coordinator)
