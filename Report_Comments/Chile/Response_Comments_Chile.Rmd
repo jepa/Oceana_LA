@@ -1,0 +1,134 @@
+---
+title: "Response to Comments for the Chilean part of the Report"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+
+# Methods
+	
+- Shouldn't it be "minus E", since the description of NDFS is: Net domestic fish supply. Total amount of fish produced in the country, minus exports and discards
+	
+	-- Yes! 
+	
+- I don't understand why "A" is being added within the parenthesis "()" and not outside of it
+	We multiplied landings x Discards and Aquaculture production x production loss
+	
+	-- Should be $NSS_i=[(L_i-L_i*O_{i})+A_i]*P_{i}-E_i+I_i$
+	-- Note that this is wrong in the report but not in the actual estimation
+
+# Results
+
+## International Databases
+	
+- This table states clearly that in Chile "Captures" are more important in terms of volume than Aquaculture, and then it is stated that with the wild caught species the most important one in Chile is anchoveta.
+	
+	-- According to the data
+	
+- Regarding mote sculpin, I think it is wierd it's being included since from what I know, it's difficult to distinguish from sardines
+-  Data
+	
+- Why were these species selected? I think it would be good to include common hake for Chile, considering it is one of the species we have a campaign about.
+	
+	-- These are the species with higher landings in average between 2012 and 2016.  
+	-- *Southern hake* is level 11 with 1.14% of Chile's total landings according to FAO's data.  
+	-- Note that according to FAO's data, 59.83% of all chilean landings correspond for the first three groups.
+	
+```{r Hake, eval=T, echo=F, message=F,warning=F}
+
+# libraries
+library(dplyr)
+library(ggplot2)
+library(knitr)
+
+# Load FAO data
+International_Data <- read.csv("~/GitHub/Oceana_LA/clean_databases/International/International_Data.csv")
+
+# Reproduce analysisi for Chile
+
+# First set the average for each country
+Totals_Chile <- International_Data %>%
+  filter(Country == "Chile") %>% 
+  mutate(Year = gsub("X","",Year)) %>% 
+  filter(Year >= 2012) %>%  # last 5 years of data
+  group_by(Country,Year) %>%
+  summarise(Total_Capture = sum(Capture, na.rm = T)) %>% 
+  group_by(Country) %>% 
+  summarise("Total" = mean(Total_Capture,na.rm=T)) # average of 2012-2016
+
+# Including the proportion of the catch/value of each species
+Top_Chile <-International_Data %>%
+  filter(Country == "Chile") %>% 
+  mutate(Year = gsub("X","",Year)) %>% 
+  select(MatchName,Country,Year,Capture) %>% 
+  filter(Year >= 2012) %>% # last 5 years of data
+  group_by(Country,MatchName) %>% 
+  summarise("Mean_Spp" = mean(Capture,na.rm=T)) %>% 
+  left_join(Totals_Chile,
+            by = "Country") %>%
+  mutate(
+    Proportion = round((Mean_Spp/Total)*100,2)
+  ) %>%
+  group_by(Country) %>% 
+  arrange(desc(Proportion)) %>%
+  # ungroup() %>% 
+  select(MatchName,Mean_Spp,Proportion) %>% 
+  slice(1:13)
+
+  kable(Top_Chile,
+        format.args = list(big.mark = ","),
+        digits = 1,
+        caption = "Average of 2012-2016, tonnes.")
+
+
+# Top 3
+# sum(Top_Chile$Proportion[1:3])
+
+
+```
+	
+	
+- Estimating National Seafood Supply, some highlights but no comments 
+	
+- Regarding mote sculpin, I think it is wierd it's being included since from what I know, it's difficult to distinguish from sardines
+	
+	-- Again, that is what the data says… 
+	
+- Why are exports of species not considered in this table ? For example in Chile most salmon (Atlantic, coho and trout), about 85 percents it, is exported. So it wouldn't be truly contributing to our national food supply
+
+	-- Exports are considered (Net trade = Imports-Exports), hence, the negative number for salmon in Chile. However, it is likely that we missed products since it is very hard to match all species and products in the FAO database
+	
+```{r Trade, eval=T, echo=F, message=F,warning=F}
+
+# Trade_Chile <- 
+  International_Data %>% 
+  group_by(Species,
+           Country) %>% #Average of all years
+  summarise_at(vars(Aquaculture:Discards),
+               mean, na.rm=T) %>% 
+  filter(Country == "Chile",
+         stringr::str_detect(Species,"Salmo") |
+           stringr::str_detect(Species,"salmon")
+         ) %>% 
+  group_by(Species) %>% 
+  summarise(
+    T_Imports = sum(Imports, na.rm = T),
+    T_Exports = sum(Exports, na.rm = T),
+    Net_Trade = T_Imports-T_Exports
+  ) %>% 
+  arrange(Net_Trade) %>% 
+  kable(format.args = list(big.mark = ","),
+        digits = 1,
+        caption = "Average of 2010-2016, tonnes."
+        )
+
+```
+	
+	
+	
+- Salmon is included now for Chile, 3 times separately  
+  -- This is exactly our previous point:  
+    --- Atlantic salmon  
+    --- Salmons, trouts  
+	  --- Salmonids
