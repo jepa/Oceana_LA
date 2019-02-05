@@ -21,19 +21,26 @@ output:
 # Results
 
 ## International Databases
+
+1. pg. 17 Table 3: Summary of results
+**Comment:** "This table states clearly that in Chile "Captures" are more important in terms of volume than Aquaculture, and then it is stated that with the wild caught species the most important one in Chile is anchoveta."
+
+**Response:** This is all according to the data we gathered. The numbers presented in this table are the overall national production. This is not only for human consumption, but total tons of what is landed in the country, harvested, exported and import. In Chile landings volumes are larger than aquaculture volumes, however, all aquaculture production goes to direct human consumption where not all wild-caught does.
 	
-- This table states clearly that in Chile "Captures" are more important in terms of volume than Aquaculture, and then it is stated that with the wild caught species the most important one in Chile is anchoveta.
+**Comment:** However, later on, in page 21 it is mentioned that the main fish group destined for food in Chile is salmon, which doesn't sound right considering that most of the salmon produced in Chile is exported. Something similar is stated in page 24
+
+**Response:** Probably the export data is not accounting for all salmon products. This needs to be addressed by looking in detail how the FAO export database is constructed. Also, international data sources might not capture all national dynamics, this is why it is only part of our analysis.
+
+*Report pg 21:* However, as discussed below (see each country’s section) these results might not represent the main food sources as regional dynamics (e.g.subsistence fishing, fishers interactions) might not be captured by international data sources by country. These differences might result from regional and local dynamics (e.g.subsistence fishing, fishers interactions) not being accurately captured by international data sources. The latter might also be subject to bias driven by methodological assumptions included for catch reconstructions, or to error from data manipulation and incorrect data sharing between national government fisheries institutions and FAO. Finally, because FAO trade data is arranged by product (e.g.American and European Lobsters Homarus.spp, whole, frozen) it is very challenging to match such products with the actual species or species group.
+
+
+2. pg. 18 Figure 6: Proportion of total landings by species
+**Comment:** Why were these species selected? I think it would be good to include common hake for Chile, considering it is one of the species we have a campaign about.
 	
-	-- According to the data
-	
-- Regarding mote sculpin, I think it is weird it's being included since from what I know, it's difficult to distinguish from sardines
--  Data
-	
-- Why were these species selected? I think it would be good to include common hake for Chile, considering it is one of the species we have a campaign about.
-	
-	-- These are the species with higher landings in average between 2012 and 2016.  
-	-- *Southern hake* is level 11 with 1.14% of Chile's total landings according to FAO's data.  
-	-- Note that according to FAO's data, 59.83% of all Chilean landings correspond for the first three groups.
+**Response:** These are the species with higher landings in average between 2012 and 2016. Data details Mote Sculpin.
+
+- *Southern hake* is level 11 with 1.14% of Chile's total landings according to FAO's data.  
+Note that according to FAO's data, 59.83% of all Chilean landings correspond for the first three groups.
 	
 ```{r Hake, eval=T, echo=F, message=F,warning=F}
 
@@ -88,16 +95,20 @@ Top_Chile <-International_Data %>%
 
 ```
 	
-	
-- Estimating National Seafood Supply, some highlights but no comments 
-	
-- Regarding mote sculpin, I think it is wierd it's being included since from what I know, it's difficult to distinguish from sardines
-	
-	-- Again, that is what the data says… 
-	
-- Why are exports of species not considered in this table ? For example in Chile most salmon (Atlantic, coho and trout), about 85 percents it, is exported. So it wouldn't be truly contributing to our national food supply
 
-	-- Exports are considered (Net trade = Imports-Exports), hence, the negative number for salmon in Chile. However, it is likely that we missed products since it is very hard to match all species and products in the FAO database
+	
+3. Pg. 24 – Mote sculpin – the database details information for this species.
+
+**Comment:** Regarding mote sculpin, I think it is weird it's being included since from what I know, it's difficult to distinguish from sardines
+	
+**Response:** The databases detailed information for this species.
+
+4. Pg 25. Table 4: Top 10 species (or species groups) contributing to the National Seafood Supply
+
+**Comment:** Why are exports of species not considered in this table ? For example in Chile most salmon (Atlantic, coho and trout), about 85 percents it, is exported. So it wouldn't be truly contributing to our national food supply
+
+**Response:** Here Exports are considered within the Net import column. Net imports = Imports – exports. The fact that Salmon is one of the top 10 species is probably due to issues in how the international data accounted for salmon exports in the 1st place. Raw export data is very challenging to manipulate therefore it is likely that we missed products since it is very hard to match all species and products in the FAO database.
+
 	
 ```{r Trade, eval=T, echo=F, message=F,warning=F}
 
@@ -126,7 +137,11 @@ Top_Chile <-International_Data %>%
 ```
 	
 	
-- Salmon is included now for Chile, 3 times separately  
-  -- This is exactly our previous point
+5. pg. 29 Table 6: Top ten seafood products trade
+
+**Comment:** Salmon is included now for Chile, 3 times separately 
+
+**Response:** The fact that Salmon is mention in 3 categories has to do with how data is grouped especially in the export databases.	Our previous comment on salmon alludes to this issue.
+  
   
 ## Results National Databases
