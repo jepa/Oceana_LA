@@ -26,14 +26,14 @@ output:
 	
 	-- According to the data
 	
-- Regarding mote sculpin, I think it is wierd it's being included since from what I know, it's difficult to distinguish from sardines
+- Regarding mote sculpin, I think it is weird it's being included since from what I know, it's difficult to distinguish from sardines
 -  Data
 	
 - Why were these species selected? I think it would be good to include common hake for Chile, considering it is one of the species we have a campaign about.
 	
 	-- These are the species with higher landings in average between 2012 and 2016.  
 	-- *Southern hake* is level 11 with 1.14% of Chile's total landings according to FAO's data.  
-	-- Note that according to FAO's data, 59.83% of all chilean landings correspond for the first three groups.
+	-- Note that according to FAO's data, 59.83% of all Chilean landings correspond for the first three groups.
 	
 ```{r Hake, eval=T, echo=F, message=F,warning=F}
 
@@ -126,9 +126,7 @@ Top_Chile <-International_Data %>%
 ```
 	
 	
-	
 - Salmon is included now for Chile, 3 times separately  
-  -- This is exactly our previous point:  
-    --- Atlantic salmon  
-    --- Salmons, trouts  
-	  --- Salmonids
+  -- This is exactly our previous point
+  
+## Results National Databases
