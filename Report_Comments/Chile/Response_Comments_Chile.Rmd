@@ -1,28 +1,69 @@
 ---
 title: "Response to Comments for the Chilean part of the Report"
+author: Juliano Palacios Abrantes, Camila Vargas and Maria I. Rivera
 output:
   pdf_document: default
   html_document: default
 ---
 
+```{r libraries and functions, echo=F, warning=F, message=F}
+
+# libraries
+library(dplyr)
+library(knitr)
+library(tidyverse)
+library(here)
+library(wesanderson)
+library(knitr)
+
+# functions
+#### For all plots to look alike ###
+
+ggtheme_plot <- function() {
+  theme(
+    plot.title = element_text(size = rel(1), hjust = 0, face = "bold"),
+    panel.background = element_blank(),
+    strip.background = element_blank(),
+    strip.text       = element_text(size = 18, face = "bold"),
+    panel.border     = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_text(size = 10,
+                               angle = 0,
+                               face = "plain"),
+    axis.text.y = element_text(size = 12),
+    axis.title = element_text(size = 14),
+    legend.key = element_rect(colour = NA, fill = NA),
+    legend.position  = "top",
+    legend.justification = "center",
+    legend.title = element_text(size = 14),
+    legend.text = element_text(size = 12),
+    strip.text.x = element_text(size = 20, colour = "black")
+  )
+}
+
+
+```
+
+
 
 # Methods
 	
-- Shouldn't it be "minus E", since the description of NDFS is: Net domestic fish supply. Total amount of fish produced in the country, minus exports and discards
+#### 1. pg. 9 Estimating National Seafood Supply
+
+**Comment:** "Shouldn't it be "minus E", since the description of NDFS is: Net domestic fish supply. Total amount of fish produced in the country, minus exports and discards"
 	
-	-- Yes! 
+**Response:** Yes! 
 	
-- I don't understand why "A" is being added within the parenthesis "()" and not outside of it
-	We multiplied landings x Discards and Aquaculture production x production loss
-	
-	-- Should be $NSS_i=[(L_i-L_i*O_{i})+A_i]*P_{i}-E_i+I_i$
-	-- Note that this is wrong in the report but not in the actual estimation
+**Comment:** "I don't understand why "A" is being added within the parenthesis "()" and not outside of it"
+**Response:**	We multiplied landings x Discards and Aquaculture production x production loss. Should be $NSS_i=[(L_i-L_i*O_{i})+A_i]*P_{i}-E_i+I_i$. Note that this is wrong in the report but not in the actual estimation
 
 # Results
 
 ## International Databases
 
-1. pg. 17 Table 3: Summary of results
+#### 1. pg. 17 Table 3: Summary of results
 **Comment:** "This table states clearly that in Chile "Captures" are more important in terms of volume than Aquaculture, and then it is stated that with the wild caught species the most important one in Chile is anchoveta."
 
 **Response:** This is all according to the data we gathered. The numbers presented in this table are the overall national production. This is not only for human consumption, but total tons of what is landed in the country, harvested, exported and import. In Chile landings volumes are larger than aquaculture volumes, however, all aquaculture production goes to direct human consumption where not all wild-caught does.
@@ -44,13 +85,8 @@ Note that according to FAO's data, 59.83% of all Chilean landings correspond for
 	
 ```{r Hake, eval=T, echo=F, message=F,warning=F}
 
-# libraries
-library(dplyr)
-library(ggplot2)
-library(knitr)
-
 # Load FAO data
-International_Data <- read.csv("~/GitHub/Oceana_LA/clean_databases/International/International_Data.csv")
+International_Data <- read.csv(here("clean_databases/International/International_Data.csv"))
 
 # Reproduce analysisi for Chile
 
@@ -129,7 +165,7 @@ Top_Chile <-International_Data %>%
     Net_Trade = T_Imports-T_Exports
   ) %>% 
   arrange(Net_Trade) %>% 
-  kable(format.args = list(big.mark = ","),
+  knitr::kable(format.args = list(big.mark = ","),
         digits = 1,
         caption = "Average of 2010-2016, tonnes."
         )
@@ -145,3 +181,183 @@ Top_Chile <-International_Data %>%
   
   
 ## Results National Databases
+
+1. pg. 47 Wild-caught fish
+
+**Comment:** "You have to be careful with this figure as 260 thousand tones are kelp for exportation and sardines which even though it is caught by artisanal fishermen, the industry is in possession of the processing plants for fish meal, where 100% of sardines are being destined to fishmeal.""
+
+**Response:** That is correct. However, we did not include distinctions between domestic and international consumption nor about who owns the processing facilities in this section of the report. Here, we were just reporting landings and how they were distributed across subsectors.  Still, those points you are making were included when we analyzed domestic human consumption in other sections of the report.
+
+**Comment:** "Also entirely exported, only 1% might stay in the country for national consumption."
+**Response:** Same as above.
+
+**Comment:** "Mackerel is also exported as frozen to African countries, Russia and cuba.  We consume a very small percent which is usually a 1% caught by hand line by the arstisanal fleet."
+**Response:** Same as above. 
+
+2. pg. 48 Wild-caught fish
+
+**Comment:** "If it's still possible it could be interesting to add common hake, just because it's one of the fisheries we are campaigning about.  Landings of common hake are low though compaired to other fisheries (some 23,000 tones in 2017)"
+
+**Response:** Relative to other species, landings of common hake are too low to see when plotted in the same figure with other species. Figure 3 shows the evolution of landings just for common hake (South Pacific Hake) between 2013 and 2017 for each subsector. Table 3 lists the 20 most landed species in Chile accumulated over the last five years for each subsector. The common hake is the $19^{th}$ most landed species by the artisanal sector and the $7^{th}$ most landed by the industrial sector.
+
+```{r Including hake in landed species in Chile between 2013 and 2017, eval=T, echo=F, message=F, warning=F, fig.cap='Landings in tons of common hake (Merluccius gayi) between 2013 and 2017 by each subsector.'}
+
+# Sepcies index
+sp_index <- read_csv(here("clean_databases/Chile/sp_index.csv")) %>% 
+  mutate(chl_name = str_to_upper(chl_name)) 
+
+# Importing landings and species names 
+landings <- read_csv(here("clean_databases/Chile/landings_SERNAPESCA.csv")) %>% 
+  filter(region != "national") %>% 
+  mutate(tons = as.numeric(tons), subsector = ifelse(subsector =='fabric_vessel', 'industrial', subsector)) %>% 
+  select(-region, - month, - international_waters, chl_name = species) %>% 
+  left_join(sp_index) %>% 
+  select(subsector, year, tons, en_name)
+
+landings$tons[is.na(landings$tons)] <- 0 
+
+# Landings of common hake (South pacific hake) artisanal 
+
+## Landings per year more landed and others
+
+## Artisanal
+landings_year_art <- landings %>%
+  filter(subsector == 'artisanal' & en_name == 'South Pacific hake')
+   
+
+##Industrials
+landings_year<- landings %>%
+  filter(subsector == 'industrial' & en_name == 'South Pacific hake') %>% 
+  rbind(landings_year_art) %>% 
+  group_by(year, subsector, en_name) %>% 
+  summarise(tons = sum(tons)) %>% 
+  ungroup()
+
+## Plot
+
+landings_plot <- landings_year %>%
+  ggplot(aes(x = as.numeric(year),
+             y = as.numeric(tons)/1000000, 
+             fill = en_name)) +
+  geom_area() +
+  facet_wrap(~subsector)+
+  labs(y="Landings (Million tonnes)", x="")+
+  scale_y_continuous(expand = c(0,0))+
+  scale_fill_manual("Species",values = c(wes_palette("Darjeeling1"), wes_palette("Darjeeling2"),  'black'))+
+  ggtheme_plot() +
+  guides(fill = guide_legend(nrow = 3, byrow = TRUE))
+
+landings_plot
+
+ Total_Top_20 <- landings %>% 
+   group_by(year, en_name, subsector) %>% 
+   summarise(tons = sum(tons, na.rm = T)/1000) %>%  #thousand
+   arrange(year, desc(tons)) %>% 
+   group_by(subsector,en_name) %>% 
+   summarise(
+     Mean = mean(tons,na.rm = T),
+     s.d. = sd(tons,na.rm = T),
+     Total = sum(tons,na.rm = T)
+   ) %>% 
+   group_by(subsector) %>% 
+   top_n(20, Total) %>% 
+   ungroup() %>% 
+   arrange(subsector, desc(Total)) %>%
+   select(-subsector) %>% 
+   rename(Species = en_name) %>% 
+   knitr::kable("latex",
+         caption = "Top 20 landed (tons) species by sector in Chile from 2013-2017.",
+         booktabs = T,
+         digits = 0,
+         format.args = list(big.mark = ",")
+         ) %>% 
+   kableExtra::group_rows("Artisanal", 1, 20, latex_gap_space = "0.5em") %>% 
+   kableExtra::group_rows("Industrial", 21, 40, latex_gap_space = "1em")
+
+ Total_Top_20
+```
+
+
+3. pg. 50. Regional Diferences in volumes of wild-caught fisheries
+
+
+**Comment:** "It would be visually helpful to have the same Y axis"
+**Response:** Figure 2 presents regional differences in landings for each subsector keeping the y- and x-axis constant between panels. 
+
+```{r Landings_per_region, fig.pos="H", echo = FALSE, fig.height=6, fig.width=10, warning=FALSE, message=FALSE, fig.cap= 'Mean annual total landings per region for the artisanal (left pannel) and industrial sector (right pannel) between 2013 and 2017. The color represents the most landed species in 2017 and regions are ordered from north to south. Error bars represent one standard deviation. Note that scales are different between pannels. Data Landing records from SERNAPESCA, 2018.'}
+
+# Main species in 2017 per region and sector to add color to the barplot
+# Importing landings and species names 
+landings<- read_csv(here("clean_databases/Chile/landings_SERNAPESCA.csv"))
+
+main_species_per_region <- landings %>% 
+  filter(region != "national") %>% 
+  mutate(tons = as.numeric(tons), subsector = ifelse(subsector =='fabric_vessel', 'industrial', subsector)) %>% 
+  arrange(year, desc(tons)) %>% 
+  group_by(year, region, subsector) %>% 
+  top_n(1, tons) %>% 
+  filter(year == 2017)
+
+# Landings per region 
+
+landings_per_region <- landings %>% 
+  filter(region != "national") %>% 
+  mutate(tons = as.numeric(tons), subsector = ifelse(subsector =='fabric_vessel', 'industrial', subsector)) %>% 
+  group_by(year, subsector, region) %>% 
+  summarise(tons = sum(tons, na.rm = T))%>% 
+  group_by(subsector, region) %>% 
+  summarise(annual_tons = mean(tons, na.rm = T)/1000, sd = sd(tons, na.rm = T)/1000)%>% 
+  left_join(main_species_per_region, by = c('region', 'subsector')) %>% 
+  select(subsector, region, annual_tons, sd, chl_name = species) %>% 
+  left_join(sp_index) %>% 
+  select(-chl_name, -sc_name, species_2017= en_name) %>% 
+  filter(species_2017 != "NA")
+
+# Reordering regions
+
+landings_per_region$region <- factor(landings_per_region$region , levels = c("XII", "XI", "X", "XIV", "IX", "VIII", "VII", "VI", "RM","V", "IV", "III", "II", "I", "XV", "AI"))
+
+landings_per_region %>%
+  filter(region != "AI") %>% 
+  ggplot(aes(x = region,
+             y = annual_tons, 
+             fill=species_2017))+
+  geom_bar(stat = 'identity') +
+  geom_errorbar(aes(ymin=annual_tons-sd, ymax=annual_tons+sd), width=.2,
+                position=position_dodge(.9)) +
+  facet_wrap(~ subsector)+
+  labs(y="Landings (Thousand Tons)", x="Region")+
+  coord_flip()+
+  scale_y_continuous(expand = c(0, 0))+
+  scale_fill_manual("Species",values = c(wes_palette("Darjeeling1"), wes_palette("Darjeeling2"), wes_palette('Royal1')))+
+  ggtheme_plot() +
+  guides(fill = guide_legend(nrow = 4, byrow = TRUE))
+
+```
+
+4. pg.53. National Seafood Supply - Species contribution to Human and Non-human consumption
+
+**Comment:** "should consider exports"
+**Response:** Our intention in this section was to analyze species contribution to human and non-human consumption. We did not make the distinction here of whether they were consumed domestically or internationally. That is why we did not consider exports here. We did consider exports, however, in our analyses of domestic human consumption. 
+We recognize that the phrase "As a first approach to analyzing the main fisheries that contribute to human consumption in Chile..." is misleading as it seems to mean domestic human consumption but we meant to look at human consumption in general in this section.
+
+5. pg.54. Fish trade
+
+**Comment:** "Units?"
+**Response:** The title of this table is incorrect. It should be: "Exported volume, Imported volume, and net traded volume (Import - Exports) in tonnes for the most imported species in Chile".
+
+6. pg.56. Main fisheries for food supply
+
+**Comment:** "Doesn't sound right"
+**Response:** We agree that the result of squid being the type of species most consumed in Chile over the the last five years does not sound right. We think this result is driven by the fact that our analysis  missed some volumes of exported squid. Trade data is recorded as products that are not always detailed to the species level. We did our best to match the products listed in the International Harmonized System nomenclature with the groups of species landed and harvested in Chile. Nonetheless, it is very likely that we skipped some products that were made of squid, leading to an underestimation of exported squid and an overestimation of domestically consumed squid. A revision of the International Harmonized System nomenclature to see if we are missing squid products could help to solve this issue. A less likely explanation would be that landings for squid are overestimated by SERNAPESCA.
+
+**Comment:** "Again, common hake is not considered"
+**Response:** Actually, common hake is whithin the "Hakes" group. Instead of common hake we called it South Pacific hake but it is *Merluccius gayi gayi*.
+
+**Comment:** "most"
+**Response:** We agree that in reality most, and not all, salmon produced in Chile is exported. But here we are reporting the results of our model. It seems that we overestimated salmon and mussels exportations, as our report mentioned. This is probably related to the match between landed species and the products listed in the International Harmonized System. A less likely explanation would be that mussels and salmon hervests are being overestimated by SERNAPESCA.
+
+7. pg. 60. Trade Economic Participation
+
+**Comment:** "Exclussivelly"
+**Response:** Although this numbers qere extremely low we did observe some landings of Salmons in the data provided by SERNAPESCA. This is why we used "almost exclussivelly" rather than "exclussivelly".
