@@ -261,7 +261,7 @@ NSS <- NSS_Flow %>%
              strip.position =  "right")
 NSS
 ```
-*Production flow of seafood in Brazil, Chile, and Peru. NSS = Net Seafood Supply, seafood produced in the country or imported and consumed domestically. LDSS = Losses to Domestic Seafood Supply, seafood produced in the country and lost to discards and processing, exported or not for human consumption. Average (2010-2016). Dataset: FAO.*
+*Production flow of seafood in Brazil, Chile, and Peru. DHC= Direct Human Consumption; IHC = Indirect Human Consumption. NSS = Net Seafood Supply, seafood produced in the country or imported and consumed domestically. LDSS = Losses to Domestic Seafood Supply, seafood produced in the country and lost to discards and processing, exported or not for human consumption. Average (2010-2016). Dataset: FAO.*
 
 \clearpage
 
@@ -305,7 +305,7 @@ NSS <- NSS_Flow %>%
              strip.position =  "right")
 NSS
 ```
-*Flujo de producción de mariscos en Brasil, Chile y Perú. NSS = Aporte Nacional de Mariscos, los mariscos producidos en el país o importados para su consumo local. LDSS = Pérdidas al consumo doméstico de mariscos, mariscos producidos en el país y perdidos en procesamiento, exportados o no destinados a consumo humano. Promedio de 2010-2016. Datos: FAO.*
+*Flujo de producción de mariscos en Brasil, Chile y Perú. DHC= Aporte directo a la alimnetación; IHC = Aporte indirecto a la alimentación. NSS = Aporte Nacional de Mariscos, los mariscos producidos en el país o importados para su consumo local. LDSS = Pérdidas al consumo doméstico de mariscos, mariscos producidos en el país y perdidos en procesamiento, exportados o no destinados a consumo humano. Promedio de 2010-2016. Datos: FAO.*
 
 
 \clearpage
@@ -398,7 +398,7 @@ Note that, to avoid double-counting fish production, domestic catch that is fed 
 <!-- $${NDFS_i} = {L_i} + {A_i} - {E_i} $$ -->
 \begin{equation}
 \label{eq:2}
-NDFS_i = {L_i} + {A_i} + {E_i}
+NDFS_i = {L_i} + {A_i} - {E_i}
 \end{equation}
 
 
@@ -419,8 +419,9 @@ TFS_i = {NDFS_i} + I_i
 
 \begin{equation}
 \label{eq:4}
-NSS_i = [L_i - (L_i *O_{i} + A_i)] * P_{i} - E_i + I_i
+NSS_i = [(L_i - L_i *O_{i}) + A_i] * P_{i} - E_i + I_i
 \end{equation}
+
 
 
 ## Estimating National Economic Participation
@@ -459,7 +460,7 @@ data.table(
 ```
 
 
-Fishing revenue integrates the different ex-vessel price that landings have, depending on the final destination: direct human consumption (DHC) and indirect human consumption (IHC). Therefore, total revenue (R) is estimated in the SAU database as follows:
+Fishing revenue integrates the different ex-vessel price that landings have, depending on the final destination: direct human consumption (DHC) and indirect human consumption (IHC). Therefore, total revenue (R) is estimated in the Sea Around Us (SAU) database as follows:
 
 \begin{equation}
 \label{eq:6}
@@ -890,7 +891,9 @@ International_D %>%
 
 <!-- \clearpage -->
 
-```{r FAO_Landings_Data_G, eval = T, echo = F, warning =F, message = F, fig.height = 10, fig.width= 9, fig.cap= "Proportion of total landings by species from the FAO dataset for Brazil (top), Chile (middle), and Peru (bottom). Values average from 2012-2016"}
+```{r FAO_Landings_Data_G, eval = T, echo = F, warning =F, message = F, fig.height = 10, fig.width= 9, fig.cap= "Mean top 10 species by landings in the FAO dataset for Brazil (top), Chile (middle), and Peru (bottom). Values average from 2012-2016"[^1]}
+
+
 
 # First set the average for each country
 Totals_Plot <- International_D %>%
@@ -948,7 +951,7 @@ ggplot() +
              aes(
                x = 9,
                y = Location/1200,
-               label = paste("Proportion of total landings", "\n of selected species\n",as.character(Tot_Prop),"%",sep = " ")
+               label = paste("Proportion of total landings", "\n of most landed species\n",as.character(Tot_Prop),"%",sep = " ")
              )
   ) +
   theme(axis.text.x = element_text(angle = 45,
@@ -972,8 +975,10 @@ ggplot() +
 
 ```
 
+[^1]: Data does not represent most consumed species but rather most landed ones as species selected were based on the most landed taxa averaged between 2012 and 2016 in the FAO data. 
 
-```{r SAU_Landings_G, eval = T, echo = F, warning =F, message = F, fig.height = 10, fig.width= 9, fig.cap= "Top 10 species by landings from the SAU dataset between 2012-2014. Brown bars represent species not present in the other category. White boxes represent the contribution of that speciest to the total country landing"}
+
+```{r SAU_Landings_G, eval = F, echo = F, warning =F, message = F, fig.height = 10, fig.width= 9, fig.cap= "Top 10 species by landings from the SAU dataset between 2012-2014. Brown bars represent species not present in the other category. White boxes represent the contribution of that speciest to the total country landing"}
 
 # Totals_Plot <- International_D %>%
 #   mutate(Year = gsub("X","",Year)) %>% 
@@ -1223,7 +1228,7 @@ International_D %>%
   xlab("") +
   ylab("Million tonnes") +
   facet_wrap(~Country,
-             scales = "free",
+             scales = "", # Scales in the wrap... 
              ncol = 1,
              strip.position =  "right") +
   scale_fill_manual(name = "Sector",
@@ -1300,9 +1305,9 @@ Final_Tab <- Tab %>%
 
 ### Estimating National Seafood Supply
 
-Because seafood can be supplied by different sectors, we combine the multiple datasets collected for this study to include aquaculture, wild capture, and international trade. Names in the FAO trade data were standardized as possible to match the taxa and species groups in the catch and consumption data. Results suggest that the main fish group destined for food in Brazil is tilapia, salmon in Chile and anchoveta in Peru (Table 4). However, as discussed below (see each country’s section) these results might not represent the main food sources as regional dynamics (e.g.subsistence fishing, fishers interactions) might not be captured by international data sources by country. These differences might result from regional and local dynamics (e.g.subsistence fishing, fishers interactions) not being accuarately captured by international data sources. The latter might also be subject to bias driven by methodological assumptions included for catch reconstructions, or to error from data manipulation and incorrect data sharing between national government fisheries institutions and FAO. Finally, because FAO trade data is arranged by product (e.g.American and European Lobsters Homarus.spp, whole, frozen) it is very challenging to match such products with the actual species or species group. 
+Because seafood can be supplied by different sectors, we combine the multiple datasets collected for this study to include aquaculture, wild capture, and international trade. Names in the FAO trade data were standardized as possible to match the taxa and species groups in the catch and consumption data. Results suggest that the main fish group destined for food in Brazil is tilapia, salmon in Chile and anchoveta in Peru (Table 4). However, as discussed below (see each country’s section) these results might not represent the main food sources as regional dynamics (e.g.subsistence fishing, fishers interactions) might not be captured by international data sources by country. These differences might result from regional and local dynamics (e.g.subsistence fishing, fishers interactions) not being accuarately captured by international data sources. The latter might also be subject to bias driven by methodological assumptions included for catch reconstructions, or to error from data manipulation and incorrect data sharing between national government fisheries institutions and FAO. Finally, because FAO trade data is arranged by product (e.g.American and European Lobsters Homarus.spp, whole, frozen) it is very challenging to match such products with the actual species or species group. A clear example of the data bias is the Chilean case. While salmon is higly produced in aquaculture, it is known that most of if is exported (Pers. comm. Liesbeth van de Meer; *Oceana Chile*). However, in the FAO database such taxa is represented in five different export products making the taxa-to-product match extremely complicated. 
 
-The different international data suggest that Brazil is the only country where most seafood supply (including aquaculture, fisheries and trade) are destined for domestic human consumption (Figure 1). However, in terms of quantity (tonnes) Chile is the country that has the most seafood supply for national consumption, and Peru is the least.
+The different international data suggest that Brazil is the only country where most seafood supply (including aquaculture, fisheries and trade) are destined for domestic human consumption (Figure 1). However, in terms of quantity (tonnes) Chile is the country that has the most seafood supply for national consumption, and Peru is the least. Such result has to be taken with caution due to the potential bias embeded in the international datasets previously mentioned.
 
 In terms of sectors, all three countries are dominated by wild fisheries, specially Peru. However, most of Peru's wild catch comes from Anchovy (*Engraulis ringens*) where only a very small part is destined to direct human consumption driving the flow away from NSS (Figure 8). Brazil's wild fisheries participation is somehow misleading as the country lacks fisheries statistics, however, as stated below (See Brazil's section) there are some states with important fisheries. Aquaculture production seems to be proportionally higher in Brazil followed by Chile and almost non-existent in Peru. Chile is known to export most of its salmon (*Salmon salar*) aquaculture while Brazil heavily relies in aquaculture for seafood supply. Finally, in terms of fish trade, Brazil is the only country where seafood import represents an important contribution to national seafood supply (Figure 8).
 
@@ -1336,7 +1341,9 @@ ggplot(NSS,
              strip.position =  "right")
 ```
 
-At the species (or species group) level, Brazil’s seafood supply comes mainly from aquaculture of tilapia, cachama (*Colossoma macropomum*), and shrimp, wild capture of miscellaneous fish (not identified in the database), and imports of Atlantic salmon (*Salmon salar*), Alaska pollock, and herrings, sardines, and anchovies. In the case of Chile, the main sources of seafood come from aquaculture with species such as Atlantic salmon, Chilean mussel and rainbow trout, in addition to wild captures of jumbo flying squid (*Dosidicus gigas*) and mote sculpin. Finally the data shows a clear dominance by wild captures of anchovies (*Engraulis ringens*) in Peru, followed by jumbo flying squid, and mackerels. 
+At the species (or species group) level, Brazil’s seafood supply comes mainly from aquaculture of tilapia, cachama (*Colossoma macropomum*), and shrimp, wild capture of miscellaneous fish (not identified in the database), and imports of Atlantic salmon (*Salmon salar*), Alaska pollock, and herrings, sardines, and anchovies. In the case of Chile, the main sources of seafood come from aquaculture with species such as Atlantic salmon, Chilean mussel and rainbow trout, in addition to wild captures of jumbo flying squid (*Dosidicus gigas*) and mote sculpin [^CH2]. Finally the data shows a clear dominance by wild captures of anchovies (*Engraulis ringens*) in Peru, followed by jumbo flying squid, and mackerels. 
+
+[^CH2]: Note that these results are based on the data provided by FAO and the model developed for the current work. It is likeley that the data is not representing what happens at the several landing ports where fish is traded for food between fishers and the local communit. Moreover, as previously mentioned, products like Salmon are known to be mostly exported and should be addressed deeply.
 
 ```{r R_Seafood_Consmption_T, eval = T, echo = F, fig.pos="H"}
 
@@ -1378,7 +1385,7 @@ NSS <- Data %>%
 NSS %>% 
   kable("latex",
         booktabs = T,
-        caption = "Top 10 species (or species groups) contributing to the National Seafood Supply of Brazil, Chile and Peru. Thousand Tonnes. Dataset: FAO and SAU",
+        caption = "Top 10 species (or species groups) contributing to the National Seafood Supply of Brazil, Chile and Peru. Thousand Tonnes. Dataset: FAO and SAU. Net Imports = Imports-Exports",
         format.args = list(big.mark = ","),
         digits = 1) %>%
   kable_styling(full_width = F) %>%
@@ -1692,7 +1699,7 @@ FAO_USD %>%
   ungroup() %>% 
   select(-Country) %>%
   kable("latex",
-        caption = "Top ten traded seafood fish products trade between Brazil, Chile and Peru. Dataset SOFIA-FAO. Net trade = Exports-Imports in thousand USD",
+        caption = "Top ten traded seafood fish products trade between Brazil, Chile and Peru. Dataset SOFIA-FAO. Net trade = Exports-Imports in thousand USD.[^CH3]",
         format.args = list(big.mark = ","),
         digits = 0,
         booktabs = T,
@@ -1704,6 +1711,8 @@ FAO_USD %>%
   kable_styling(latex_options = c("repeat_header"))
 
 ```
+
+[^CH3]: Note that some products apear more than once (e.g. Chile, *Atlantic salmon*, *Salmons, trouts*, *Salmonids*). This is because of the missmatch between trade goods and fish production, even within the same database (e.g. FAO)
 
 \clearpage
 
