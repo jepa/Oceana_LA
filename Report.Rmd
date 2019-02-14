@@ -879,7 +879,7 @@ International_D %>%
   select(-Country) %>% 
   kable("latex",
         booktabs = T, escape = F,
-        caption = "Summary of results from 2012-2016. Total landings, aquaculture production, imports and exports per country. Database SOFIA-FAO. Thousand tonnes. Note: These are total values, not specifically for human consumption",
+        caption = "Total landings, aquaculture production, imports and exports per country from 2012-2016. Database SOFIA-FAO. Thousand tonnes. Note: These are total values, not specifically for human consumption",
         format.args = list(big.mark = ",")
   ) %>% 
   group_rows("Brazil", 1, 4, latex_gap_space = "0.5em") %>% 
