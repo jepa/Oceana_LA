@@ -71,7 +71,7 @@ ggtheme_plot <- function() {
 
 - **Response:** This is all according to the data we gathered. The numbers presented in this table are the overall national production. This is not only for human consumption, but total tons of what is landed in the country, harvested, exported and import. In Chile landings volumes are larger than aquaculture volumes, however, all aquaculture production goes to direct human consumption where not all wild-caught does.
 
-- **How we addressed this in the report?:** Specified the table capture saying this are total values, not specifically for human consumption.
+- **How we addressed this in the report?:** Specified the table capture saying this are total values of landings, not specifically for human consumption.
 <!-- caption line 882--> 
 
 
