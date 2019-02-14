@@ -3052,8 +3052,6 @@ The composition of catch and harvest varies between subsectors as well as the su
 
 #### Wild-caught marine species landings
 
-<!-- I removed text refering to whether the most landed species where used for human consumption and limited this section to just report the most important species in terms of volumes across subsectors. I called attention to the fact that some of the volumes landed by artisanals are processed in facilities that are owned by the industrial subsector(Ignacia) -->
-
 According to landing records from SERNAPESCA over the last five years, the artisanal sector lands on average 1.6 ± 0.58 million annual tonnes of marine species while the industrial sector lands around 0.9 ± 0.16 million tonnes per year. Is worth noting that large part of the artisanal landings are of algae and benthic species that are not targeted by the industrial sector and that some volumes landed by the artisanal sector are processed in facilities owned by the industrial sector. 
 
 Both sectors have among their most landed species the Peruvian anchoveta (*Engraulis ringens*) and the Araucanian herring (*Strangomera bentincki*) (Figure 23). Other important species in artisanal landings are the Giant grey kelp (*Lessonia nigrescens*) and the jumbo squid (*Dosidicus gigas*). The Chilean jack mackerel (*Trachurus murphyi*) is also an important fishery in terms of volume for the industrial sector. 
@@ -3160,7 +3158,9 @@ landings_plot
 
 ```
 
-Over the last years the catch composition of the artisanal sector has presented no major changes (the abrupt increase in artisanal landings for 2015 was identified as a data error in SERNAPESCA's records (See Appendix Chile Methods 1). In the case of the industrial sector, composition of the main species is also stable over the last years. Yet, the landings of Peruvian anchoveta (*Engraulis ringens*) started declining in 2014 relative to previous years, increasing the relevance of the Chilean jack mackerel (*Trachurus murphyi*) (Table 20).
+Over the last years the catch composition of the artisanal sector has presented no major changes (the abrupt increase in artisanal landings for 2015 was identified as a data error in SERNAPESCA's records (See Appendix Chile Methods 1). In the case of the industrial sector, composition of the main species is also stable over the last years. Yet, the landings of Peruvian anchoveta (*Engraulis ringens*) started declining in 2014 relative to previous years, increasing the relevance of the Chilean jack mackerel (*Trachurus murphyi*) (Table 20) [^CH4].
+
+[^CH4]: We included in Appendix Chile Results 1, a figure with the evolution of landings for South Pacific or Common hake and a table with its contribution to each sector since there has been special concern about the status of this fishery over the last years in Chile. 
 
 ```{r Top_landed_Chile_T, eval=T, echo=F}
 # Table 
@@ -3233,7 +3233,7 @@ SAU and FAO databases also identify Peruvian anchoveta (*Engraulis ringens*), th
 
 ##### Regional Diferences in volumes of wild-caught fisheries
 
-Landings varies widely along the coast of Chile for both artisanal and industrial sectors. Figure 24 shows the mean total landing per sector and region. The color of the bars represents the most landed species in 2017. We observe that the VIII region is by far the region with most landings from both sectors. However, the industrial sector, also concentrates landings in the north of the country. Artisanals are spread throughout the country. The most landed species vary geographically but tend to be the same over the years (Appendix Results Chile 1 and 2). 
+Landings varies widely along the coast of Chile for both artisanal and industrial sectors. Figure 24 shows the mean total landing per sector and region. The color of the bars represents the most landed species in 2017. We observe that the VIII region is by far the region with most landings from both sectors. However, the industrial sector, also concentrates landings in the north of the country. Artisanals are spread throughout the country. The most landed species vary geographically but tend to be the same over the years (Appendix Results Chile 2 and 3). 
 
 ```{r Landings_per_region, fig.pos="H", echo = FALSE, fig.height=6, fig.width=10, warning=FALSE, message=FALSE, fig.cap= 'Mean annual total landings per region for the artisanal (left pannel) and industrial sector (right pannel) between 2013 and 2017. The color represents the most landed species in 2017 and regions are ordered from north to south. Error bars represent one standard deviation. Note that scales are different between pannels. Data Landing records from SERNAPESCA, 2018.'}
 
@@ -3330,7 +3330,7 @@ aquaculture %>%
 
 ##### Regional diferences in farmed fisheries
 
-Aquaculture production is highly concentrated in the South of the country, between regions X and XII (Figure 26), dominated by the production of salmons and trouts, especially Atlantic salmon (*Salmo salar*). In this area, there is also centers growing algaes and mussels (*Mytilus chilensis*). In the north, from region I to region IV, the most farmed resources are algaes and scallops (*Argopecten purpuratus*) (Appendix Results Chile 3). The red abalone (*Haliotis rufescens*) became the most farmed in 2013 in region V, replacing the turbot (*Scophtalmus maximus*).
+Aquaculture production is highly concentrated in the South of the country, between regions X and XII (Figure 26), dominated by the production of salmons and trouts, especially Atlantic salmon (*Salmo salar*). In this area, there is also centers growing algaes and mussels (*Mytilus chilensis*). In the north, from region I to region IV, the most farmed resources are algaes and scallops (*Argopecten purpuratus*) (Appendix Results Chile 4). The red abalone (*Haliotis rufescens*) became the most farmed in 2013 in region V, replacing the turbot (*Scophtalmus maximus*).
 
 ```{r Harvest from aquaculture centers per region, echo = FALSE, warning=FALSE, message=FALSE, fig.height=4,fig.width=6, fig.cap= 'Mean annual harvest per region from aquaculture centers between 2012 and 2017. Error bars represent one standard deviation. Only showing regions with production. Database SERNAPESCA'}
 
@@ -5300,9 +5300,88 @@ We combined different sources of data to answer questions of economic participat
 
 ### Results
 
-```{r Appendix_Chile_Results_1, eval=F, echo = FALSE, message= FALSE, warning=FALSE}
+```{r r Appendix_Chile_Results_1, eval=F, echo = FALSE, message= FALSE, warning=FALSE, fig.cap='Landings in tons of common hake (Merluccius gayi) between 2013 and 2017 by each subsector.'}
 
-# APPENDIX 1. Main species per region artisanal sector overlast 5 years
+# # APPENDIX 1. Landings of common hake in Chile between 2013 and 2017.
+
+# Sepcies index
+sp_index <- read_csv(here("clean_databases/Chile/sp_index.csv")) %>% 
+  mutate(chl_name = str_to_upper(chl_name)) 
+
+# Importing landings and species names 
+landings <- read_csv(here("clean_databases/Chile/landings_SERNAPESCA.csv")) %>% 
+  filter(region != "national") %>% 
+  mutate(tons = as.numeric(tons), subsector = ifelse(subsector =='fabric_vessel', 'industrial', subsector)) %>% 
+  select(-region, - month, - international_waters, chl_name = species) %>% 
+  left_join(sp_index) %>% 
+  select(subsector, year, tons, en_name)
+
+landings$tons[is.na(landings$tons)] <- 0 
+
+# Landings of common hake (South pacific hake) artisanal 
+
+## Landings per year more landed and others
+
+## Artisanal
+landings_year_art <- landings %>%
+  filter(subsector == 'artisanal' & en_name == 'South Pacific hake')
+   
+
+##Industrials
+landings_year<- landings %>%
+  filter(subsector == 'industrial' & en_name == 'South Pacific hake') %>% 
+  rbind(landings_year_art) %>% 
+  group_by(year, subsector, en_name) %>% 
+  summarise(tons = sum(tons)) %>% 
+  ungroup()
+
+## Plot
+
+landings_plot <- landings_year %>%
+  ggplot(aes(x = as.numeric(year),
+             y = as.numeric(tons)/1000000, 
+             fill = en_name)) +
+  geom_area() +
+  facet_wrap(~subsector)+
+  labs(y="Landings (Million tonnes)", x="")+
+  scale_y_continuous(expand = c(0,0))+
+  scale_fill_manual("Species",values = c(wes_palette("Darjeeling1"), wes_palette("Darjeeling2"),  'black'))+
+  ggtheme_plot() +
+  guides(fill = guide_legend(nrow = 3, byrow = TRUE))
+
+landings_plot
+
+ Total_Top_20 <- landings %>% 
+   group_by(year, en_name, subsector) %>% 
+   summarise(tons = sum(tons, na.rm = T)/1000) %>%  #thousand
+   arrange(year, desc(tons)) %>% 
+   group_by(subsector,en_name) %>% 
+   summarise(
+     Mean = mean(tons,na.rm = T),
+     s.d. = sd(tons,na.rm = T),
+     Total = sum(tons,na.rm = T)
+   ) %>% 
+   group_by(subsector) %>% 
+   top_n(20, Total) %>% 
+   ungroup() %>% 
+   arrange(subsector, desc(Total)) %>%
+   select(-subsector) %>% 
+   rename(Species = en_name) %>% 
+   knitr::kable("latex",
+         caption = "Top 20 landed (tons) species by sector in Chile from 2013-2017.",
+         booktabs = T,
+         digits = 0,
+         format.args = list(big.mark = ",")
+         ) %>% 
+   kableExtra::group_rows("Artisanal", 1, 20, latex_gap_space = "0.5em") %>% 
+   kableExtra::group_rows("Industrial", 21, 40, latex_gap_space = "1em")
+
+ Total_Top_20
+```
+
+```{r Appendix_Chile_Results_2, eval=F, echo = FALSE, message= FALSE, warning=FALSE}
+
+# APPENDIX 2. Main species per region artisanal sector overlast 5 years
 sp_index <- read.csv('clean_databases/Chile/sp_index.csv')
 
 main_species_per_region_artisanal <- read_csv("clean_databases/Chile/landings_SERNAPESCA.csv") %>% 
@@ -5335,7 +5414,7 @@ write.csv(main_species_per_region_artisanal,
 
 ```
 
-```{r Appendix_Chile_Results_2, eval = F, echo = FALSE, message= FALSE, warning=FALSE}
+```{r Appendix_Chile_Results_3, eval = F, echo = FALSE, message= FALSE, warning=FALSE}
 
 # APPENDIX 2. Main species per region industrial sector overlast 5 years
 
@@ -5368,7 +5447,7 @@ write.csv(main_species_per_region_industrial,
 
 ```
 
-```{r Appendix_Chile_Results_3,eval = F, echo = FALSE, eval = F, message= FALSE, warning=FALSE}
+```{r Appendix_Chile_Results_4,eval = F, echo = FALSE, eval = F, message= FALSE, warning=FALSE}
 
 aquaculture<- read_csv("clean_databases/Chile/aquaculture_SERNAPESCA.csv") %>% 
   filter(month == "anual") %>% 
@@ -5376,7 +5455,7 @@ aquaculture<- read_csv("clean_databases/Chile/aquaculture_SERNAPESCA.csv") %>%
   left_join(sp_index) %>% 
   select(year, region, tons, en_name)
 
-# APPENDIX 3. Main farmed per region overlast 5 years  
+# APPENDIX 4. Main farmed per region overlast 5 years  
 aquaculture_species_per_region <-aquaculture %>% 
   group_by(year, en_name, region) %>% 
   summarise(tons = sum(tons, na.rm = T))%>% 
@@ -5403,7 +5482,7 @@ write.csv(aquaculture_species_per_region,
 
 ```
 
-```{r Appendix_Chile_Results_4,eval = F, echo = FALSE, message= FALSE, warning=FALSE}
+```{r Appendix_Chile_Results_5,eval = F, echo = FALSE, message= FALSE, warning=FALSE}
 
 ##APPENDIX 4. Top 10 species human consumption
 top_10_hc <- model_results %>%
@@ -5432,7 +5511,7 @@ knitr::kable(top_10_hc_table, col.names = c('2013', '2014', '2015', '2016', '201
 
 ```
 
-```{r Appendix_Chile_Results_5, eval=F, echo = FALSE, message= FALSE, warning=FALSE}
+```{r Appendix_Chile_Results_6, eval=F, echo = FALSE, message= FALSE, warning=FALSE}
 
 # importing cleaned prices dataset and aggregating at the national level
 prices_art <- read_csv("clean_databases/prices_art_SERNAPESCA.csv") %>% 
@@ -5468,7 +5547,7 @@ knitr::kable(most_expensive, col.names = c('Species', 'Mean price (US$/Kg)', 'SD
   kable_styling(latex_options = 'hold_position')
 ```
 
-```{r Appendix_Chile_Results_6, eval = F, echo = FALSE, message= FALSE, warning=FALSE}
+```{r Appendix_Chile_Results_7, eval = F, echo = FALSE, message= FALSE, warning=FALSE}
 
 mean_income_sector_chp <- 345541 # Based on report from SENSE 2015
 mean_income_sector_dollar_2018 <- ((mean_income_sector_chp/mean_uf_2014)*mean_uf_2018)/from_ChP_to_dollar_dec_2018
@@ -5495,7 +5574,7 @@ write.csv(table_incomes_sector,
 
 ```
 
-```{r Appendix_Chile_Results_7,eval = F, echo = FALSE, message= FALSE, warning=FALSE}
+```{r Appendix_Chile_Results_8,eval = F, echo = FALSE, message= FALSE, warning=FALSE}
 
 # Demographics of employees
 
