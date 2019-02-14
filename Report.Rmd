@@ -1385,7 +1385,7 @@ NSS <- Data %>%
 NSS %>% 
   kable("latex",
         booktabs = T,
-        caption = "Top 10 species (or species groups) contributing to the National Seafood Supply of Brazil, Chile and Peru. Thousand Tonnes. Dataset: FAO and SAU. Net Imports = Imports-Exports",
+        caption = "Top 10 species (or species groups) contributing to the National Seafood Supply of Brazil, Chile and Peru. Thousand Tonnes. Dataset: FAO and SAU. Net Imports = Imports-Exports. See section Estimating National Seafood supply secction (above) for details on how these results could be biased",
         format.args = list(big.mark = ","),
         digits = 1) %>%
   kable_styling(full_width = F) %>%

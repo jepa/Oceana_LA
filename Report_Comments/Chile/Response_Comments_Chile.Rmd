@@ -88,15 +88,15 @@ ggtheme_plot <- function() {
 	
 - **Response:** These are the species with higher landings in average between 2012 and 2016. Data details Mote Sculpin.
 
-- *Southern hake* is level 11 with 1.14% of Chile's total landings according to FAO's data.  
-Note that according to FAO's data, 59.83% of all Chilean landings correspond for the first three groups.
-	
-*CHECK*
-<!--*Not sure how Juliano addressed this* There is the folloing foot note on line 978:
-[^1]: Data does not represent most consumed species but rather most landed ones. Species in this table are the most landed taxa averaged between 2012 and 2016 in the FAO data. -->
-- Maybe say the 10 most landed taxa
-- Maybe add a comment on the hake, why it is not in the graph and then add the table in the next chuunck in the appendix?
-	
+<!--**JULIANO** 
+Necesitamos que revices el foot note de la línea 978 ([^1]).
+1. Es esa la forma correcta de llamar a ese footnote. Ojo que hay otro footnote en la línea 602 que se llama igual.
+2. Ese footnote esta dentro del figure caption de la figura del chunck que parte en la línea 894. Pero el footnote habla de una tabla.
+Creemos que es mejor que tu lo revises y te asegures que se entienda el mensaje de por qué se eligieron esas 10 especies para esa figura.
+3. Agregar en el footnote que el Hake es el número 11 decir algo como: *Southern hake* is level 11 with 1.14% of Chile's total landings according to FAO's data.  
+Note that according to FAO's data, 59.83% of all Chilean landings correspond for the first three groups.--> 
+
+
 ```{r Hake, eval=T, echo=F, message=F,warning=F}
 
 # Load FAO data
@@ -153,6 +153,8 @@ Top_Chile <-International_Data %>%
 - **How we addressed this in the report?:** We changed the y axis for all three graph to match
 <!-- check/run chunk line 1208--> 
 
+<!-- JULINAO: cambiamos la figura no ceirto?--> 
+
 
 #### pg. 24 – Mote sculpin – the database details information for this species.
 
@@ -171,10 +173,8 @@ Top_Chile <-International_Data %>%
 
 - **Response:** Here Exports are considered within the Net import column. Net imports = Imports – exports. The fact that Salmon is one of the top 10 species is probably due to issues in how the international data accounted for salmon exports in the 1st place. Raw export data is very challenging to manipulate therefore it is likely that we missed products since it is very hard to match all species and products in the FAO database.
 
-- **How we addressed this in the report?:** We specified in the table caption that 	Net Imports = Imports-Exports. And added a foot note remarking the issues with salmon and the international data
+- **How we addressed this in the report?:** We specified in the table caption that 	Net Imports = Imports-Exports and added where in the report you can find more detailed explanation of these results.
 <!-- table caption line 1388 --> 
-<!-- footnote 2 line 1346 --> 
-
 
 
 ```{r Trade, eval=T, echo=F, message=F,warning=F}
