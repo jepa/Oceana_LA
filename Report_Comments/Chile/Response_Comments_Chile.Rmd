@@ -419,7 +419,6 @@ We recognize that the phrase "As a first approach to analyzing the main fisherie
 
 <!-- line 3560 in the report -->
 
-*VER LINEA 3783 y 3784*
  
 - **Comment:** "Again, common hake is not considered"
 
