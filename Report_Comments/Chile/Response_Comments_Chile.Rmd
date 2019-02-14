@@ -318,9 +318,12 @@ landings_plot
  Total_Top_20
 ```
 
-- **How we addressed this in the report?:** <!-- I don't really know what to do here. We could incorporate the graph with the evolution of common hake in the mian text or in the appendix and comment it in the main text. Something like "We included the evolution of landings for common hake since there has been special concern about the status of this fishery over the last years..."-->   
+- **How we addressed this in the report?:** We added a footnote to the text indicating that the information about the hake is in the appendix. This new appendix shows landings of Hake over time for the artisanal and industrial sector (Appendix Result Chile 1). 
 
-<!-- figure on line 3061?? in the report -->
+<!-- footnote in line 3163 under the name [^CH4] and it is called in line 3161 -->
+<!-- JULIANO: CHECK FOOTNOTE NAME --> 
+
+<!-- figure in chunk line 3061 in the report -->
 
 #### pg. 50. Regional Diferences in volumes of wild-caught fisheries
 
