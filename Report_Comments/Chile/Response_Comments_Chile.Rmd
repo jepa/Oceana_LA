@@ -79,7 +79,7 @@ ggtheme_plot <- function() {
 
 - **Response:** Probably the export data is not accounting for all salmon products. This needs to be addressed by looking in detail how the FAO export database is constructed. Also, international data sources might not capture all national dynamics, this is why it is only part of our analysis.
 
-- **How we addressed this in the report?:** It al ready stated in the report possible isssues when usinf the international data.
+- **How we addressed this in the report?:** It al ready stated in the report possible isssues when using the international data. We again highlight this issue in footnote nº 2.
 
 - *Report pg 21:* However, as discussed below (see each country’s section) these results might not represent the main food sources as regional dynamics (e.g.subsistence fishing, fishers interactions) might not be captured by international data sources by country. These differences might result from regional and local dynamics (e.g.subsistence fishing, fishers interactions) not being accurately captured by international data sources. The latter might also be subject to bias driven by methodological assumptions included for catch reconstructions, or to error from data manipulation and incorrect data sharing between national government fisheries institutions and FAO. Finally, because FAO trade data is arranged by product (e.g.American and European Lobsters Homarus.spp, whole, frozen) it is very challenging to match such products with the actual species or species group.
 
