@@ -1343,7 +1343,7 @@ ggplot(NSS,
 
 At the species (or species group) level, Brazil’s seafood supply comes mainly from aquaculture of tilapia, cachama (*Colossoma macropomum*), and shrimp, wild capture of miscellaneous fish (not identified in the database), and imports of Atlantic salmon (*Salmon salar*), Alaska pollock, and herrings, sardines, and anchovies. In the case of Chile, the main sources of seafood come from aquaculture with species such as Atlantic salmon, Chilean mussel and rainbow trout, in addition to wild captures of jumbo flying squid (*Dosidicus gigas*) and mote sculpin [^CH2]. Finally the data shows a clear dominance by wild captures of anchovies (*Engraulis ringens*) in Peru, followed by jumbo flying squid, and mackerels. 
 
-[^CH2]: Note that these results are based on the data provided by FAO and the model developed for the current work. The dominance of aquaculture species like salmon and mussels in the results for domestic human consumption in Chile is probably an artifact of our model and data and do not necessarily reflects the reality. For more details on potential biases of our results see section "Estimating National Seafood Supply" for more details.
+[^CH2]: Note that these results are based on the data provided by FAO and the model developed for the current work. The dominance of aquaculture species like salmon and mussels in the results for domestic human consumption in Chile is probably an artifact of our model and data and do not necessarily reflects the reality. For more details on potential biases of our results see section "Estimating National Seafood Supply".
 
 ```{r R_Seafood_Consmption_T, eval = T, echo = F, fig.pos="H"}
 
@@ -3779,7 +3779,7 @@ NP_HC %>%
 
 #### Species contribution to Domestic Human consumption
 
-To identify the main fisheries for domestic consumption in Chile we combined data on volumes of landings, volumes of aquaculture's harvest, volumes of raw material used in the elaboration of products for non-human consumption, yield rates for different species and imported and exported volumes of marine-based products (See Appendix Chile Method 2). In this analysis, we defined local comsuption as all the local landings and aquacultur harvest that is not exported or processed for non-human consumption products. Even though landings, aquaculture and production databases are detailed at a species level, we aggregated the data in larger groups to be able to combine them with trade datasets, which are recorded by product, not by species. This matching procedure could have led to the underestimation or overestimation of exported volumes for some groups of species. This analysis does not consider landings produced by illegal unreported and unregulated (IUU) fishing. This can drive to misleading results for species that highly contribute to domestic human consuption but their landings are underestimated. 
+To identify the main fisheries for domestic consumption in Chile we combined data on volumes of landings, volumes of aquaculture's harvest, volumes of raw material used in the elaboration of products for non-human consumption, yield rates for different species and imported and exported volumes of marine-based products (See Appendix Chile Method 2). In this analysis, we defined local comsuption as all the local landings and aquaculture harvest that is not exported or processed for non-human consumption products. Even though landings, aquaculture and production databases are detailed at a species level, we aggregated the data in larger groups to be able to combine them with trade datasets, which are recorded by product, not by species. This matching procedure could have led to the underestimation or overestimation of exported volumes for some groups of species. This analysis does not consider landings produced by illegal unreported and unregulated (IUU) fishing. Consequently, these results could underestimate or overestimate the contribution of some species to domestic consumption.
 
 
 Our results show that the main fishery for local consumption across years has been squid (Figure 31), including Patagonian (*Loligo gahi*), jumbo flying (*Dosidicus gigas*), Argentine shortfin (*Illex argentinus*) and Japanese flying squids (*Todarodes Pacificus*). In 2017 there was a significant increase in squids exports, reducing the total amount of seafood available to be consumed locally. The dominance of squid in our analysis of domestic HC is mainly driven by the high yield of Squids (it has the highest yield of all species in our data), therefore their contribution to domestic consumption per landed tonne is higher. It is likely that this result is also driven in part by an underestimation of squids exports. Chileans are recently starting to increase their consumption of squid-based products. However, historically they do not consume a lot of squids and it is mostly exported, contrary to what our results show (Pers. comm. Liesbeth van de Meer; *Oceana Chile*. 
@@ -3790,9 +3790,7 @@ Since 2014, the Southern rays bream (*Brama australis*) becomes an important spe
 
 Our model shows that the Chilean population also consumes high volumes of tuna, a group of species that is mainly imported canned. This result aligns with popular Chilean preferences based on a study along the country where 84% of the respondents answered that their favorite way of eating fish was canned, followed by fresh (80%), and frozen fish (37%) [@fundacion_chile_chile_2016]. The ten most important fisheries for human consumption according to our model are provided in the Appendix (Supplemental Chile Table 4).
 
-Similarly, to the results from international databases, using local databases we found that squids and mackerels are among the most domestically consumed groups of species in Chile. However, the local analysis differs greatly from the international analysis for other species such as salmons, algae, and mussels. According to the international database these are the groups of species most consumed in Chile. The model using national data suggest that these are all salmon, algaes and mussels are exported, and therefore none are consumed locally. Nonetheless, we are aware of local consumption of mussels and salmon so probably our model undesestimates salmon or mussel production or overestimated salmon or mussel exports. The results from the local analysis seem to be more accurate when contrasting with the existing literature and what we know about Chilean seafood consumption. <!-- OJO con referencia con esta frase -->
-
-
+Both local and international databases suggest that squids and mackerels are among the most domestically consumed groups of species in Chile. But these two analyses differ in species such as salmons, algae, and mussels. According to the international databases domestic consumption in Chile is dominated by these groups. On the other hand, national data suggest that all salmon, algaes and mussels are exported, and therefore none are consumed locally. We are aware that some of the salmon and mussels produced in Chile are sold in local markets and retail. This means that not all of the local production is exported (as suggested by the national data), but local consumption is not as high as suggested by the international databases. 
 
 
 ```{r chl domestic consumption importa and wrangling databases, echo = FALSE, message=FALSE, warning = FALSE}
@@ -3905,7 +3903,7 @@ per_capita_total_Lan <- model_results %>%
 
 
 
-```{r top 5 fisheries for hc, echo = FALSE, message=FALSE, warning = FALSE, fig.height=4, fig.width=8, fig.cap= 'Main  groups of species consumed by the chilean population in the last 5 years'}
+```{r top 5 fisheries for hc, echo = FALSE, message=FALSE, warning = FALSE, fig.height=4, fig.width=8, fig.cap= 'Main  groups of species consumed by the chilean population in the last 5 years. Note: These resutls are based on recods of SERNAPESCA and Chilean Customs (Aduana Chile). See main text in this secction for possible bias'}
 
 ##Top 5 fisheries for domestic HC
 top_5_hc_cl <- model_results%>%
@@ -5299,7 +5297,7 @@ We combined different sources of data to answer questions of economic participat
 
 ### Results
 
-```{r r Appendix_Chile_Results_1, eval=F, echo = FALSE, message= FALSE, warning=FALSE, fig.cap='Landings in tons of common hake (Merluccius gayi) between 2013 and 2017 by each subsector.'}
+```{r r Appendix_Chile_Results_1, eval=F, echo = FALSE, message= FALSE, warning=FALSE, fig.cap='Landings in tons of South Pacific or Common hake (*Merluccius gayi gayi*) between 2013 and 2017 by each subsector.'}
 
 # # APPENDIX 1. Landings of common hake in Chile between 2013 and 2017.
 
