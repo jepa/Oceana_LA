@@ -89,7 +89,7 @@ ggtheme_plot <- function() {
 - **Response:** These are the species with higher landings in average between 2012 and 2016. Data details Mote Sculpin.
 
 <!--**JULIANO** 
-Necesitamos que revices el foot note de la línea 978 ([^1]).
+Necesitamos que revices el footnote de la línea 978 ([^1]).
 1. Es esa la forma correcta de llamar a ese footnote. Ojo que hay otro footnote en la línea 602 que se llama igual.
 2. Ese footnote esta dentro del figure caption de la figura del chunck que parte en la línea 894. Pero el footnote habla de una tabla.
 Creemos que es mejor que tu lo revises y te asegures que se entienda el mensaje de por qué se eligieron esas 10 especies para esa figura.
@@ -153,7 +153,7 @@ Top_Chile <-International_Data %>%
 - **How we addressed this in the report?:** We changed the y axis for all three graph to match
 <!-- check/run chunk line 1208--> 
 
-<!-- JULINAO: cambiamos la figura no ceirto?--> 
+<!-- JULINAO: cambiaste los ejes de la figura no ceirto?--> 
 
 
 #### pg. 24 – Mote sculpin – the database details information for this species.
