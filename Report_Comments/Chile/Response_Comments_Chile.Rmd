@@ -394,7 +394,7 @@ landings_per_region %>%
 - **Response:** Our intention in this section was to analyze species contribution to human and non-human consumption. We did not make the distinction here of whether they were consumed domestically or internationally. That is why we did not consider exports here. We did consider exports, however, in our analyses of domestic human consumption. 
 We recognize that the phrase "As a first approach to analyzing the main fisheries that contribute to human consumption in Chile..." is misleading as it seems to mean domestic human consumption but we meant to look at human consumption in general in this section.
 
-- **How we addressed this in the report?:** We fixed the text to make it clearer that this section analyses chilean fisheries contribution to overall human consumption (in any part of the world) and not only to domestic human consumption. <!-- We should consider removing this section because it could be missleading. Could we just present two figures? Figure 28 and Figure 28 but only for wild-caught but adding non-processed artisanal landings? -->.
+- **How we addressed this in the report?:** We fixed the text to make it clearer that this section analyses chilean fisheries contribution to overall human consumption (in any part of the world) and not only to domestic human consumption.
 
 <!-- line 3560 in the report -->
 

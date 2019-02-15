@@ -3557,12 +3557,10 @@ Imports_Exports %>%
 ### National Seafood Supply
 #### Species contribution to Overall Human and Non-human consumption
 
-We first looked at the volumes of each group of species used to generate products for human consumption (HC) and non-human consumption (NHC), without distinguishing whether they are consumed domestically or internationally (See Appendix Method Chile 2). 
-<!-- This analysis puts in perspective of how the local production contributs to food security wolrdwide versus domestically. -->
-Our results show that the main species that enter supply chains for HC are the Atlantic salmon (*Salmo salar*) and the Chilean mussel (*Mytilus chilensis*), two of the main aquaculture products from Chile (Figure 28). On the other hand, species that are used for NHC products are Peruvian anchoveta (*Engraulis ringens*) and Araucarian herring (*Strangomera bentincki*), the two main wild-caught fisheries of the country (Figure 28). A third important species for NHC is the Giant grey kelp (*Lessonia nigrescens*). Finally, Chilean jack mackerel (*Trachurus murphyi*) contributes similarly to both HC and NHC products.  
+We first looked at landings and aquaculture harvests, used for human consumption (HC) and non-human consumption (NHC), without distinguishing whether they are consumed domestically or internationally (See Appendix Method Chile 2). This shows the contribution of chilean production to global food security. Our results show, on one hand, two of the main aquaculture products (Atlantic salmon (*Salmo salar*) and the Chilean mussel (*Mytilus chilensis*)) are precessed for HC. And on the other hand, the two main wild-caught fisheries of the country (Peruvian anchoveta (*Engraulis ringens*) and Araucarian herring (*Strangomera bentincki*)), are used for NHC products (Figure 28).
 
+ 
 ```{r Species in HC products, echo = FALSE, warning=FALSE, message=FALSE, fig.width=9, fig.height=4, fig.cap="Main species used for products for human consumption (HC) and for non-human consumption (NHC) that are consumed either domestically or internationally. Dataset: SERNAPESCA."}
-
 
 ##complete specie name list with corresponding trade name
 sp_index <- read.csv('clean_databases/Chile/sp_index.csv')
@@ -3670,101 +3668,103 @@ sp_HC_with_Aq  %>%
   facet_wrap(~use, scale = 'free')+
   ggtheme_plot()
 
+
 ```
 
 
-When looking only to wild-caught species (i.e. excluding aquaculture harvests), the species that have historically contributed more to overall HC products are: Chilean jack mackerel (*Trachurus murphyi*), jumbo flying squid (*Dosidicus gigas*), and to a lesser extent Chilean sea urchin (*Loxechinus albus*) (Figure 29). <!-- These results also show that the volumes of wild-caught species that go to NHC double the volumes that go to HC (Figure 29). The figure does not show this-->. We removed year 2015 from our analysis because data was not accurate (See Appendix Chile Method 1). Also, algaes are not included because we assumed that they are all used for non-human consumption.
+When looking only to wild-caught species (i.e. excluding aquaculture harvests), the species that have historically contributed more to overall HC products are: Chilean jack mackerel (*Trachurus murphyi*), jumbo flying squid (*Dosidicus gigas*), and to a lesser extent Chilean sea urchin (*Loxechinus albus*) (Figure 29). We removed year 2015 from our analysis because data was not accurate (See Appendix Chile Method 1). Also, algaes are not included because we assumed that they are all used for non-human consumption.
 
 ```{r wild-caught_species, echo = FALSE, warning=FALSE, message=FALSE, fig.height=4, fig.width=9, fig.cap= "Tonnes of wild-cought species that are used for domestic and international human consumption. Dataset: SERNAPESCA, 2018"}  
 
-## Without Aquaculture (this assumed that all Aq goes to processing facilities). 
+ ## Without Aquaculture (this assumed that all Aq goes to processing facilities).
 
-sp_HC_no_Aq <- processing %>%
-  filter(m_p == 'M') %>% 
-  left_join(chl_to_sc) %>%
-  group_by(year, sc_name, use) %>%
-  summarise(tons = sum(tons, na.rm = TRUE)) %>% 
-  left_join(Aq, by = c('sc_name', 'year')) %>% 
-  rename(tons_raw = tons.x, tons_Aq = tons.y) %>% 
-  ungroup()
+ sp_HC_no_Aq <- processing %>%
+   filter(m_p == 'M') %>%
+   left_join(chl_to_sc) %>%
+   group_by(year, sc_name, use) %>%
+   summarise(tons = sum(tons, na.rm = TRUE)) %>%
+   left_join(Aq, by = c('sc_name', 'year')) %>%
+   rename(tons_raw = tons.x, tons_Aq = tons.y) %>%
+   ungroup()
 
-sp_HC_no_Aq$tons_Aq[is.na(sp_HC_no_Aq$tons_Aq)] <- 0
+ sp_HC_no_Aq$tons_Aq[is.na(sp_HC_no_Aq$tons_Aq)] <- 0
 
-sp_HC_no_Aq <- sp_HC_no_Aq %>%
-  mutate(tons = tons_raw - tons_Aq) %>%
-  left_join(sc_to_en) %>% 
-  filter(use == "HC") %>% 
-  filter(!sc_name %in% c("Mytilus chilensis", "Salmo salar", "Oncorhynchus mykiss", "Oncorhynchus kisutch")) %>% 
-  #filter(year!=2015) %>% 
-  mutate(en_name = as.character(en_name)) %>% 
-  mutate(tons = as.numeric(tons))
+ sp_HC_no_Aq <- sp_HC_no_Aq %>%
+   mutate(tons = tons_raw - tons_Aq) %>%
+   left_join(sc_to_en) %>%
+   filter(use == "HC") %>%
+   filter(!sc_name %in% c("Mytilus chilensis", "Salmo salar", "Oncorhynchus mykiss", "Oncorhynchus kisutch")) %>%
+   #filter(year!=2015) %>%
+   mutate(en_name = as.character(en_name)) %>%
+   mutate(tons = as.numeric(tons))
 
-top_5_HC_no_Aq <-  sp_HC_no_Aq %>% 
-  group_by(en_name) %>% 
-  summarise(tons = sum(tons)) %>% 
-  top_n(5, tons)
+ top_5_HC_no_Aq <-  sp_HC_no_Aq %>%
+   group_by(en_name) %>%
+   summarise(tons = sum(tons)) %>%
+   top_n(5, tons)
 
-sp_HC_no_Aq %>% 
-  mutate(Species = ifelse(en_name %in% top_5_HC_no_Aq$en_name, en_name, "Others")) %>%
-  ggplot(aes(x= as.factor(year), y = tons/1000, fill = Species)) +
-  geom_bar(stat= 'identity') +
-  labs(y="Landings for human consumption \n (Thousand tonnes)", x="Year")+
-  scale_y_continuous(expand = c(0,0))+
-  scale_fill_manual(values = c(wes_palette("Darjeeling1"), wes_palette("Darjeeling2"),
-                               wes_palette("Royal1")))+
-  ggtheme_plot()
+ sp_HC_no_Aq %>%
+   mutate(Species = ifelse(en_name %in% top_5_HC_no_Aq$en_name, en_name, "Others")) %>%
+   ggplot(aes(x= as.factor(year), y = tons/1000, fill = Species)) +
+   geom_bar(stat= 'identity') +
+   labs(y="Landings for human consumption \n (Thousand tonnes)", x="Year")+
+   scale_y_continuous(expand = c(0,0))+
+   scale_fill_manual(values = c(wes_palette("Darjeeling1"), wes_palette("Darjeeling2"),
+                                wes_palette("Royal1")))+
+   ggtheme_plot()
 
 ```
 
 Artisanal fishers in Chile sell products for human consumption directly from their boats. We assumed that the artisanal catches not sent to processing facilities are sold directly by fishers (See Methods Chile 2). Results show that Southern rays bream (*Brama australis*) is the main species for every year of data (Figure 30), indicating that historically has been an important specie for direct human consumption. This aligns with results obtained in a survey implemented along Chile where 51% answered that Southern rays bream was their first preference (@fundacion_chile_chile_2016). Anchoveta (*Engraulis ringens*) for direct human consumption has decline through the years, while Chilean clam (*Venus antiqua*) has increased. There was a high increase in the amount of tonnes for human consumption in 2017, partly driven by an increase in jumbo flying squid (*Dosidicus gigas*). We removed year 2015 from this analysis becasue data on landings per sector was not accurate (See Appendix Chile Method 1).
 
+
 ```{r Fix2 _Non-processed Human consumption, echo= FALSE, message=FALSE, warning=FALSE, fig.width=9, fig.height=4, fig.cap="Main artisanal landings that are not processed in facilities. Data SERNAPESCA, 2018"}
 
 ## Raw material in processing plants with scientific name per region and year
 
-processing_minus_ind_Aq <- processing %>% 
-  filter(m_p== 'M', tons !=0) %>% 
-  select(-use, -m_p, -product) %>% 
-  left_join(chl_to_sc) %>% 
-  select(-chl_name) %>% 
-  group_by(year, sc_name) %>% 
-  summarise(tons = sum(tons, na.rm = TRUE)) %>% 
-  left_join(l.i, by= c('year', 'sc_name')) %>% #How much of each sp comes from Li? 
-  mutate(tons_raw = as.numeric(tons.x), tons_ind = as.numeric(tons.y)) %>% 
-  select(-tons.x, -tons.y) %>% 
+processing_minus_ind_Aq <- processing %>%
+  filter(m_p== 'M', tons !=0) %>%
+  select(-use, -m_p, -product) %>%
+  left_join(chl_to_sc) %>%
+  select(-chl_name) %>%
+  group_by(year, sc_name) %>%
+  summarise(tons = sum(tons, na.rm = TRUE)) %>%
+  left_join(l.i, by= c('year', 'sc_name')) %>% #How much of each sp comes from Li?
+  mutate(tons_raw = as.numeric(tons.x), tons_ind = as.numeric(tons.y)) %>%
+  select(-tons.x, -tons.y) %>%
   left_join(Aq, by=c('sc_name', 'year')) %>% #How much of each sp comes from Aq?
   rename(tons_Aq = tons)
 
 processing_minus_ind_Aq$tons_ind[is.na(processing_minus_ind_Aq$tons_ind)] <- 0
 processing_minus_ind_Aq$tons_Aq[is.na(processing_minus_ind_Aq$tons_Aq)] <- 0
 
-processing_minus_ind_Aq <- processing_minus_ind_Aq %>% 
-  mutate(tons_art= tons_raw - tons_ind - tons_Aq) 
+processing_minus_ind_Aq <- processing_minus_ind_Aq %>%
+  mutate(tons_art= tons_raw - tons_ind - tons_Aq)
 
 ## Substracting artisanal catch that goes to faiclities to artisanal landings to get the rest (non-processed human consumption)
 
 NP_HC <- l.a %>%
-  left_join(processing_minus_ind_Aq, by= c('sc_name', 'year')) %>% 
-  select(year, sc_name, tons_landed = tons, tons_processed= tons_art) %>% 
-  mutate(tons_processed = ifelse(tons_processed < 0, 0, tons_processed)) %>% 
-  mutate(tons_NP_HC = tons_landed - tons_processed) %>% 
+  left_join(processing_minus_ind_Aq, by= c('sc_name', 'year')) %>%
+  select(year, sc_name, tons_landed = tons, tons_processed= tons_art) %>%
+  mutate(tons_processed = ifelse(tons_processed < 0, 0, tons_processed)) %>%
+  mutate(tons_NP_HC = tons_landed - tons_processed) %>%
   mutate(tons_NP_HC = ifelse(tons_NP_HC < 0, 0, tons_NP_HC)) %>%
-  left_join(sc_to_en) %>% 
+  left_join(sc_to_en) %>%
   mutate(en_name = as.character(en_name))
 
-top_5_NP_HC <-NP_HC %>% 
+top_5_NP_HC <-NP_HC %>%
   filter(year != 2015) %>%# data not accurate
   filter(!en_name %in% c("Giant kelp", "Red algae gracilaria")) %>%
-  group_by(en_name) %>% 
-  summarise(tons_NP_HC = sum(tons_NP_HC, na.rm = T)) %>% 
-  top_n(5, tons_NP_HC) %>% 
-  filter(!is.na(tons_NP_HC)) %>% 
+  group_by(en_name) %>%
+  summarise(tons_NP_HC = sum(tons_NP_HC, na.rm = T)) %>%
+  top_n(5, tons_NP_HC) %>%
+  filter(!is.na(tons_NP_HC)) %>%
   mutate(tons = as.numeric(tons_NP_HC))
 
 
 ## Plot
-NP_HC %>% 
-  filter(year != 2015) %>% 
+NP_HC %>%
+  filter(year != 2015) %>%
   mutate(Species = ifelse(en_name %in% top_5_NP_HC$en_name, en_name, "Others")) %>%
   ggplot(aes(x= as.factor(year), y = tons_NP_HC/1000, fill = Species)) +
   geom_bar(stat= 'identity') +
