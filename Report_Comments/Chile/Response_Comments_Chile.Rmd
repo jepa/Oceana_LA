@@ -1,6 +1,7 @@
 ---
-title: "Response to Comments for the Chilean part of the Report"
-author: Juliano Palacios Abrantes, Camila Vargas and Maria I. Rivera
+title: "Responses to Comments from Oceana Chile to the Chilean section of the Report"
+subtitle: "Contributions of marine capture fisheries to the domestic livelihoods and seafood consumption of Brazil Chile and Peru"
+author: Juliano Palacios Abrantes, Camila Vargas, Maria I. Rivera, and Andrés Cisneros-Montemayor
 output:
   pdf_document: default
   html_document: default
@@ -54,11 +55,15 @@ ggtheme_plot <- function() {
 
 - **Comment:** "Shouldn't it be "minus E", since the description of NDFS is: Net domestic fish supply. Total amount of fish produced in the country, minus exports and discards"
 	
-- **Response:** Yes! 
+- **Response:** Yes
+
+- **How we addressed this in the report?:** We corrected the equation.
 	
 - **Comment:** "I don't understand why "A" is being added within the parenthesis "()" and not outside of it"
 
-- **Response:**	We multiplied landings x Discards and Aquaculture production x production loss. Should be $NSS_i=[(L_i-L_i*O_{i})+A_i]*P_{i}-E_i+I_i$. Note that this is wrong in the report but not in the actual estimation
+- **Response:**	We multiplied landings x Discards and Aquaculture production x production loss. Should be $NSS_i=[(L_i-L_i*O_{i})+A_i]*P_{i}-E_i+I_i$. Note that this is wrong in the report but not in the actual estimation.
+
+- **How we addressed this in the report?:** We corrected the equation.
 
 # Results
 
@@ -67,9 +72,9 @@ ggtheme_plot <- function() {
 #### pg. 17 Table 3: Summary of results
 
 - **Comment:** "This table states clearly that in Chile "Captures" are more important in terms of volume than Aquaculture, and then it is stated that with the wild caught species the most important one in Chile is anchoveta."
-<!-- table chuck 860 -->
+<!-- table chunc 860 -->
 
-- **Response:** This is all according to the data we gathered. The numbers presented in this table are the overall national production. This is not only for human consumption, but total tons of what is landed in the country, harvested, exported and import. In Chile landings volumes are larger than aquaculture volumes, however, all aquaculture production goes to direct human consumption where not all wild-caught does.
+- **Response:** This is all according to the data gathered. The numbers presented in this table are the overall national production. This is not only for human consumption, but total tons of what is landed in the country, harvested, exported and import. In Chile landings volumes are larger than aquaculture volumes, however, all aquaculture production goes to direct human consumption where not all wild-caught does.
 
 - **How we addressed this in the report?:** Specified the table caption saying this are total values of landings, not specifically for human consumption.
 <!-- caption line 882--> 
@@ -79,7 +84,7 @@ ggtheme_plot <- function() {
 
 - **Response:** Probably the export data is not accounting for all salmon products. This needs to be addressed by looking in detail how the FAO export database is constructed. Also, international data sources might not capture all national dynamics, this is why it is only part of our analysis.
 
-- **How we addressed this in the report?:** The report states that possible isssues when using the international data. However, we modified the text to make this point more clear, reflecting our conversation with Oceana Chile. We again highlight this issue in footnote nº 2.
+- **How we addressed this in the report?:** The report states that possible issues when using the international data. However, we modified the text to make this point more clear, reflecting our conversation with Oceana Chile. We again highlight this issue in footnote nº 2.
 
 
 #### pg. 18 Figure 6: Proportion of total landings by species
@@ -95,6 +100,8 @@ Necesitamos que revices el footnote de la línea 978 ([^1]).
 Creemos que es mejor que tu lo revises y te asegures que se entienda el mensaje de por qué se eligieron esas 10 especies para esa figura.
 3. Agregar en el footnote que el Hake es el número 11 decir algo como: *Southern hake* is level 11 with 1.14% of Chile's total landings according to FAO's data.  
 Note that according to FAO's data, 59.83% of all Chilean landings correspond for the first three groups.--> 
+
+- **How we addressed this in the report?:** We included the following footnote: *Data does not represent most consumed species but rather most landed ones. Species in this table represent the top 10 most landed taxa averaged between 2012 and 2016 in the FAO data. Southern hake is level 11 with 1.14% of Chile's total landings according to FAO's data. Note that according to FAO's data, 59.83% of all Chilean landings correspond for the first three groups.*
 
 
 ```{r Hake, eval=T, echo=F, message=F,warning=F}
@@ -146,14 +153,15 @@ Top_Chile <-International_Data %>%
 ```
 	
 ### pg 21 - Y axix of figure 8: Seafood production by sector and species group for each country over time. Dataset FAO.
+
 - **Comment:** I think it would be good to use the same values in the Y axis for all the countries
 
-- **Response:** We can do that.
+- **Response:** We left the axis free otherwise we cannot appreciate the landings from Brazil
 
-- **How we addressed this in the report?:** We changed the y axis for all three graph to match
+<!-- - **How we addressed this in the report?:** We changed the y axis for all three graph to match -->
 <!-- check/run chunk line 1208--> 
 
-<!-- JULINAO: cambiaste los ejes de la figura no ceirto?--> 
+<!-- JULINAO: cambiaste los ejes de la figura no cirto?--> 
 
 
 #### pg. 24 – Mote sculpin – the database details information for this species.
@@ -210,7 +218,7 @@ Top_Chile <-International_Data %>%
 
 **Response:** The fact that Salmon is mention in 3 categories has to do with how data is grouped especially in the export databases.	Our previous comment on salmon alludes to this issue.
   
-- **How we addressed this in the report?:** Added a foot note specifying where the data comes from and why are there several types of salmon in the table.
+- **How we addressed this in the report?:** Added a foot note specifying where the data comes from and why are there several types of salmon in the table. It reads: *Note that some products apear more than once (e.g. Chile, Atlantic salmon, Salmons, trouts, Salmonids). This is because of the missmatch between trade goods and fish production, even within the same database (e.g. FAO)*
 
 <!-- footnote line 1715 --> 
   
@@ -221,25 +229,25 @@ Top_Chile <-International_Data %>%
 
 - **Comment:** "You have to be careful with this figure as 260 thousand tones are kelp for exportation and sardines which even though it is caught by artisanal fishermen, the industry is in possession of the processing plants for fish meal, where 100% of sardines are being destined to fishmeal.""
 
-- **Response:** That is correct. However, we did not include distinctions between domestic and international consumption nor about who owns the processing facilities in this section of the report. Here, we were just reporting landings and how they were distributed across subsectors.  Still, those points you are making were included when we analyzed domestic human consumption in other sections of the report.
+- **Response:** That is correct. However, we did not include distinctions between domestic and international consumption nor about who owns the processing facilities in this section of the report. Here, we were just reporting landings and how they were distributed across sub-sectors.  Still, those points you are making were included when we analyzed domestic human consumption in other sections of the report.
 
 - **Comment:** "Also entirely exported, only 1% might stay in the country for national consumption."
 
 - **Response:** Same as above.
 
-- **Comment:** "Mackerel is also exported as frozen to African countries, Russia and cuba.  We consume a very small percent which is usually a 1% caught by hand line by the arstisanal fleet."
+- **Comment:** "Mackerel is also exported as frozen to African countries, Russia and Cuba.  We consume a very small percent which is usually a 1% caught by hand line by the arstisanal fleet."
 
 - **Response:** Same as above. 
 
-- **How we addressed this in the report?:** We removed text refering to whether the most landed species where used for human consumption and limited this section to just report the most important species in terms of volumes across subsectors based on the data provided by SERNAPESCA. We called attention in the main text to the fact that some of the volumes landed by artisanals are processed in facilities that are owned by the industrial subsector. 
+- **How we addressed this in the report?:** We removed text referring to whether the most landed species where used for human consumption and limited this section to just report the most important species in terms of volumes across sub-sectors based on the data provided by SERNAPESCA. We called attention in the main text to the fact that some of the volumes landed by artisanals are processed in facilities that are owned by the industrial sub-sector. 
 
 <!-- line 3053 in the report -->
 
 #### pg. 48 Wild-caught fish
 
-- **Comment:** "If it's still possible it could be interesting to add common hake, just because it's one of the fisheries we are campaigning about.  Landings of common hake are low though compaired to other fisheries (some 23,000 tones in 2017)"
+- **Comment:** "If it's still possible it could be interesting to add common hake, just because it's one of the fisheries we are campaigning about.  Landings of common hake are low though compared to other fisheries (some 23,000 tones in 2017)"
 
-- **Response:** Relative to other species, landings of common hake are too low to see when plotted in the same figure with other species. Figure 3 shows the evolution of landings just for common hake (South Pacific Hake) between 2013 and 2017 for each subsector. Table 3 lists the 20 most landed species in Chile accumulated over the last five years for each subsector. The common hake is the $19^{th}$ most landed species by the artisanal sector and the $7^{th}$ most landed by the industrial sector.
+- **Response:** Relative to other species, landings of common hake are too low to see when plotted in the same figure with other species. Figure 3 shows the evolution of landings just for common hake (South Pacific Hake) between 2013 and 2017 for each sub-sector. Table 3 lists the 20 most landed species in Chile accumulated over the last five years for each sub-sector. The common hake is the $19^{th}$ most landed species by the artisanal sector and the $7^{th}$ most landed by the industrial sector.
 
 ```{r Including hake in landed species in Chile between 2013 and 2017, eval=T, echo=F, message=F, warning=F, fig.cap='Landings in tons of common hake (Merluccius gayi) between 2013 and 2017 by each subsector.'}
 
@@ -318,10 +326,11 @@ landings_plot
  Total_Top_20
 ```
 
-- **How we addressed this in the report?:** We added a footnote to the text indicating that the information about the hake is in the appendix. This new appendix shows landings of Hake over time for the artisanal and industrial sector (Appendix Result Chile 1). 
+- **How we addressed this in the report?:** We included the following footnote: *We included in Appendix Chile Results 1, a figure with the evolution of landings for South Pacific or Common hake and a table with its contribution to each sector since there has been special concern about the status of this fishery over the last years in Chile.*
 
 <!-- footnote in line 3163 under the name [^CH4] and it is called in line 3161 -->
 <!-- JULIANO: CHECK FOOTNOTE NAME --> 
+<!-- Done! -->
 
 <!-- figure in chunk line 3061 in the report -->
 
@@ -330,7 +339,7 @@ landings_plot
 
 - **Comment:** "It would be visually helpful to have the same Y axis"
 
-- **Response:** Figure 2 presents regional differences in landings for each subsector keeping the y- and x-axis constant between panels. 
+- **Response:** Figure 2 presents regional differences in landings for each sub-sector keeping the y- and x-axis constant between panels. 
 
 ```{r Landings_per_region, fig.pos="H", echo = FALSE, fig.height=6, fig.width=10, warning=FALSE, message=FALSE, fig.cap= 'Mean annual total landings per region for the artisanal (left pannel) and industrial sector (right pannel) between 2013 and 2017. The color represents the most landed species in 2017 and regions are ordered from north to south. Error bars represent one standard deviation. Note that scales are different between pannels. Data Landing records from SERNAPESCA, 2018.'}
 
@@ -394,7 +403,7 @@ landings_per_region %>%
 - **Response:** Our intention in this section was to analyze species contribution to human and non-human consumption. We did not make the distinction here of whether they were consumed domestically or internationally. That is why we did not consider exports here. We did consider exports, however, in our analyses of domestic human consumption. 
 We recognize that the phrase "As a first approach to analyzing the main fisheries that contribute to human consumption in Chile..." is misleading as it seems to mean domestic human consumption but we meant to look at human consumption in general in this section.
 
-- **How we addressed this in the report?:** We fixed the text to make it clearer that this section analyses chilean fisheries contribution to overall human consumption (in any part of the world) and not only to domestic human consumption.
+- **How we addressed this in the report?:** We fixed the text to make it clearer that this section analyses Chilean fisheries contribution to overall human consumption (in any part of the world) and not only to domestic human consumption.
 
 <!-- line 3560 in the report -->
 
@@ -415,22 +424,22 @@ We recognize that the phrase "As a first approach to analyzing the main fisherie
 
 - **Response:** We agree that the result of squid being the type of species most consumed in Chile over the the last five years does not sound right. We think this result is driven by the fact that our analysis  missed some volumes of exported squid. Trade data is recorded as products that are not always detailed to the species level. We did our best to match the products listed in the International Harmonized System nomenclature with the groups of species landed and harvested in Chile. Nonetheless, it is very likely that we skipped some products that were made of squid, leading to an underestimation of exported squid and an overestimation of domestically consumed squid. A revision of the International Harmonized System nomenclature to see if we are missing squid products could help to solve this issue. A less likely explanation would be that landings for squid are overestimated by SERNAPESCA.
 
-- **How we addressed this in the report?:** We where more explicit in the main text about the potential underestimation of exported squid that could have led to the overestimation of its domestic conssumption. We also include a disclaimer about the flaws of our method at the begining of the section and how they could lead to underestimation of species that are caught illegaly and not reported.
+- **How we addressed this in the report?:** We where more explicit in the main text about the potential underestimation of exported squid that could have led to the overestimation of its domestic consumption. We also include a disclaimer about the flaws of our method at the beginning of the section and how they could lead to underestimation of species that are caught illegally and not reported.
 
 <!-- line 3560 in the report -->
 
  
 - **Comment:** "Again, common hake is not considered"
 
-- **Response:** Actually, common hake is whithin the "Hakes" group. Instead of common hake we called it South Pacific hake but it is *Merluccius gayi gayi*.
+- **Response:** Actually, common hake is within the "Hakes" group. Instead of common hake we called it South Pacific hake but it is *Merluccius gayi gayi*.
 
-- **How we addressed this in the report?:** Everytime we refer to *Merluccius gayi gayi* we use the common name: South Pacific or Common hake.
+- **How we addressed this in the report?:** Every time we refer to *Merluccius gayi gayi* we use the common name: South Pacific or Common hake.
 
 <!-- line 3788 in the report -->
 
 - **Comment:** "most"
 
-- **Response:** We agree that in reality most, and not all, salmon produced in Chile is exported. But here we are reporting the results of our model. It seems that we overestimated salmon and mussels exportations, as our report mentioned. This is probably related to the match between landed species and the products listed in the International Harmonized System. A less likely explanation would be that mussels and salmon hervests are being overestimated by SERNAPESCA.
+- **Response:** We agree that in reality most, and not all, salmon produced in Chile is exported. But here we are reporting the results of our model. It seems that we overestimated salmon and mussels exports, as our report mentioned. This is probably related to the match between landed species and the products listed in the International Harmonized System. A less likely explanation would be that mussels and salmon harvests are being overestimated by SERNAPESCA.
 
 - **How we addressed this in the report?:** We tried to be clearer in the text to help the reader understand that this are the results of model and that are different form the reality. 
 
@@ -441,7 +450,7 @@ We recognize that the phrase "As a first approach to analyzing the main fisherie
 
 - **Comment:** "Exclussivelly"
 
-- **Response:** Although this numbers qere extremely low we did observe some landings of Salmons in the data provided by SERNAPESCA. This is why we used "almost exclussivelly" rather than "exclussivelly".
+- **Response:** Although this numbers were extremely low we did observe some landings of Salmons in the data provided by SERNAPESCA. This is why we used "almost exclusively" rather than "exclusively".
 
 - **How we addressed this in the report?:** We leave it as it was because we think it is more accurate this way.
 <!-- line 4057 in the report -->
