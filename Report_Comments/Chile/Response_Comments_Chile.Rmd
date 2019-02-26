@@ -7,7 +7,7 @@ output:
   html_document: default
 ---
 
-```{r libraries and functions, echo=F, warning=F, message=F}
+```{r libraries and functions, echo=F, warning=F, message=F, results ='hide'}
 
 # libraries
 library(dplyr)

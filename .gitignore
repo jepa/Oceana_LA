@@ -7,6 +7,7 @@
 # Ignore raw_data files
 raw_databases
 Spatial
+international/information/raw_databases/Spatial
 
 # Example code in package build process
 *-Ex.R

@@ -1,21 +1,15 @@
 ---
 title: Contributions of marine capture fisheries to the domestic livelihoods and seafood
   consumption of Brazil Chile and Peru
-author: Juliano Palacios Abrantes, Camila Vargas, Daniel Viana, Maria I. Rivera, Rocío
+subtitle: Report prepared for Oceana
+author: Juliano Palacios Abrantes, Camila Vargas, Daniel Viana, Maria I. Rivera, Renato Gozzer, Rocío
   López, Santiago de la Puente, Andrés M. Cisneros-Montemayor
-date: "October 26, 2018"
+date: "February 26, 2018"
 output:
   pdf_document:
     toc: yes
     toc_depth: '2'
-  word_document:
-    fig_caption: yes
-    fig_height: 5
-    fig_width: 5
-    reference_docx: Template_guide.docx
-    toc: yes
-    toc_depth: 2
-subtitle: Draft report prepared for Oceana
+header-includes: \usepackage{float}
 bibliography: Oceana_Ref.bib
 ---
 
@@ -754,17 +748,16 @@ Results from the intergovernmental data show a clear dominance in total fisherie
 ## Note already exisitng in chunk: EEZ_M that is eval=T.
 
 # Land shapefile
-path.ne.coast <- "~/Documents/Github/Oceana_LA/international/information/raw_databases/Spatial/TM_WORLD_BORDERS-0.3"
+path.ne.coast <- "international/information/raw_databases/Spatial/TM_WORLD_BORDERS-0.3"
 file_name <- "TM_WORLD_BORDERS"
 
 # Loading the shapefile:
 World_Land <- st_read(dsn = path.ne.coast, 
-                      layer = file_path_sans_ext(file_name)
-)
+                      layer = file_path_sans_ext(file_name))
 
 # Now we load SAU shapefile with fishing data
 
-path_SAU_shp <- ("~/Documents/Github/Oceana_LA/international/information/raw_databases/Spatial/SAU_Shapefile_Clean/")
+path_SAU_shp <- ("international/information/raw_databases/Spatial/SAU_Shapefile_Clean/")
 #The File
 fnam_SAU_shp <- "SAU_Shapefile"
 #Load it!
@@ -891,9 +884,7 @@ International_D %>%
 
 <!-- \clearpage -->
 
-```{r FAO_Landings_Data_G, eval = T, echo = F, warning =F, message = F, fig.height = 10, fig.width= 9, fig.cap= "Mean top 10 species by landings in the FAO dataset for Brazil (top), Chile (middle), and Peru (bottom). Values average from 2012-2016"[^2]}
-
-
+```{r FAO_Landings_Data_G, eval = T, echo = F, warning =F, message = F, fig.height = 10, fig.width= 9, fig.cap= "Mean top 10 species by landings in the FAO dataset for Brazil (top), Chile (middle), and Peru (bottom). Values average from 2012-2016[^2]"}
 
 # First set the average for each country
 Totals_Plot <- International_D %>%
@@ -978,7 +969,7 @@ ggplot() +
 [^2]: Data does not represent most consumed species but rather most landed ones. Species in this table represent the top 10 most landed taxa averaged between 2012 and 2016 in the FAO data. *Southern hake* is level 11 with 1.14% of Chile's total landings according to FAO's data. Note that according to FAO's data, 59.83% of all Chilean landings correspond for the first three groups.
 
 
-```{r SAU_Landings_G, eval = F, echo = F, warning =F, message = F, fig.height = 10, fig.width= 9, fig.cap= "Top 10 species by landings from the SAU dataset between 2012-2014. Brown bars represent species not present in the other category. White boxes represent the contribution of that speciest to the total country landing"}
+```{r SAU_Landings_G, eval = T, echo = F, warning =F, message = F, fig.height = 10, fig.width= 9, fig.cap= "Top 10 species by landings from the SAU dataset between 2012-2014. Brown bars represent species not present in the other category. White boxes represent the contribution of that speciest to the total country landing"}
 
 # Totals_Plot <- International_D %>%
 #   mutate(Year = gsub("X","",Year)) %>% 
@@ -1114,7 +1105,7 @@ Fish landed as part of subsistence fisheries are all destined to direct human co
 
 # For now this path but fix it in the future ###
 
-SAU_Dat_S <- read.csv("/Users/jpalacios/Documents/Github/Oceana_LA/international/information/raw_databases/SAU/SAU EEZ 76,969,77,970,604,152,153,154,155 v47-0.csv")
+SAU_Dat_S <- read.csv("international/information/raw_databases/Spatial/SAU EEZ 76,969,77,970,604,152,153,154,155 v47-0.csv")
 
 Countries <- c("Brazil","Chile","Peru")
 
@@ -1228,7 +1219,7 @@ International_D %>%
   xlab("") +
   ylab("Million tonnes") +
   facet_wrap(~Country,
-             scales = "", # Scales in the wrap... 
+             scales = "free_y", # Scales in the wrap... 
              ncol = 1,
              strip.position =  "right") +
   scale_fill_manual(name = "Sector",
@@ -1683,6 +1674,12 @@ Total_Trade <- FAO_USD %>%
   mutate(Net_Trade = Exports-Imports) %>% 
   mutate(Product = "All products")
 
+### Footnotes
+
+fn1 <- "Note that some products apear more than once (e.g. Chile, Atlantic salmon, Salmons, trouts, Salmonids).This is because of the missmatch between trade goods and fish production, even within the same database (e.g. FAO)"
+
+fn2 <- "Net trade = Exports-Imports in thousand USD."
+
 FAO_USD %>% 
   filter(Year != c("X2010,X2011")) %>% 
   group_by(
@@ -1699,7 +1696,7 @@ FAO_USD %>%
   ungroup() %>% 
   select(-Country) %>%
   kable("latex",
-        caption = "Top ten traded seafood fish products trade between Brazil, Chile and Peru. Dataset SOFIA-FAO. Net trade = Exports-Imports in thousand USD.[^CH3]",
+        caption = "Top ten traded seafood fish products trade between Brazil, Chile and Peru. Dataset SOFIA-FAO.",
         format.args = list(big.mark = ","),
         digits = 0,
         booktabs = T,
@@ -1708,11 +1705,12 @@ FAO_USD %>%
   group_rows("Brazil", 1, 11, latex_gap_space = "0.5em") %>% 
   group_rows("Chile", 12, 22, latex_gap_space = "1em") %>% 
   group_rows("Peru", 23, 33, latex_gap_space = "1em") %>% 
-  kable_styling(latex_options = c("repeat_header"))
+  kable_styling(latex_options = c("repeat_header")) %>% 
+   add_footnote(c(fn1, fn2))
+  # footnote(general = "Note that some products apear more than once (e.g. Chile, *Atlantic salmon*, *Salmons, trouts*, *Salmonids*).n\This is because of the missmatch between trade goods and fish production, even within the same database (e.g. FAO)",
+  #          number = "Net trade = Exports-Imports in thousand USD.")
 
 ```
-
-[^CH3]: Note that some products apear more than once (e.g. Chile, *Atlantic salmon*, *Salmons, trouts*, *Salmonids*). This is because of the missmatch between trade goods and fish production, even within the same database (e.g. FAO)
 
 \clearpage
 
@@ -1837,7 +1835,7 @@ The SAU database accounts for unreported catches in Brazil [@deMeirellesFelizola
 
 \clearpage
 
-```{r Brazil_Totals_T, eval=T,echo=F}
+```{r Brazil_Totals_T, eval=T, echo=F}
 
 # names(SAU_Database)
 # unique(SAU_Database$year)
@@ -1878,6 +1876,7 @@ International_D %>%
     -Production
   ) %>% 
   kable(
+    booktabs = T,
     caption = "Summary of results for Brazil. Database used: SOFIA-FAO and SAU. Exploited species in quantity, other variables represent thousand tones"
   )
 
@@ -1887,7 +1886,7 @@ International_D %>%
 
 ###### Parana
 
-Fisheries production in Parana state is mainly artisanal and totaled around one thousand tonnes in 2017. The main species caught in the state is shrimp, followed by crab and crayfish (Table 8).
+Fisheries production in Parana state is mainly artisanal and totaled around one thousand tonnes in 2017. The main species caught in the state is shrimp, followed by crab and Cockle clam (Table 8).
 
 ```{r Parana_T, eval=T, echo=F}
 
@@ -2701,11 +2700,11 @@ The aquaculture industry in Brazil has been growing rapidly. In the North region
 
 ### National Economic Participation
 
-Because there is no reliable national-level landings data in Brazil since 2008, it is challenging to determine the top fisheries by income generated in the country. Data available are mainly from the industrial sector, where sardines, croaker and tuna are the main species caught. However, information from the SIGSIF (Table 15) and Santa Catarina state landings does not have any information on price. 
+Because there is no reliable national-level landings data in Brazil since 2008, it is challenging to determine the top fisheries by income generated in the country. Data available are mainly from the industrial sector, where sardines, croaker and tuna are the main species caught. However, information from the SIGSIF (Table 14) and Santa Catarina state landings does not have any information on price. 
 
-A report by Nielsen analytic (Nielsen, 2018) shows that the canned sardine market in Brazil is valued at about 1.4 billion Brazilian Reais (approx. US\$ 380 million ) and the canned tuna market is worth about 145 million Brazilian Reais (approx. US\$ 39 million). Additionally, according to the Brazilian seafood industry association, seafood industries have an aggregate revenue of 8 billion Brazilian Reais (approx. US\$2.2 billion ) per year. These numbers demonstrate the strength of the seafood market (especially canned market) in Brazil and the importance of sardines for income and food security in the country.
+A report by Nielsen analytic (Nielsen, 2018) shows that the canned sardine market in Brazil is valued at about 1.4 billion Brazilian Reais (approx. US\$ 380 million) and the canned tuna market is worth about 145 million Brazilian Reais (approx. US\$ 39 million). Additionally, according to the Brazilian seafood industry association, seafood industries have an aggregate revenue of 8 billion Brazilian Reais (approx. US\$2.2 billion) per year. These numbers demonstrate the strength of the seafood market (especially canned market) in Brazil and the importance of sardines for income and food security in the country.
 
-Data from CEAGESP market have important information on the value of seafood in the country. This database contains quantity and price information for all seafood products. Products sold in the market are both from industrial and artisanal sectors. Table 17 shows the main species ranked by value sold in the CEAGESP market in 2017. The most valuable species in this year were sardines followed by sharks, croaker, tuna and acoupa weakfish (Table 16). 
+Data from CEAGESP market have important information on the value of seafood in the country. This database contains quantity and price information for all seafood products. Products sold in the market are both from industrial and artisanal sectors. Table 16 shows the main species ranked by value sold in the CEAGESP market in 2017. The most valuable species in this year were sardines followed by sharks, croaker, tuna and acoupa weakfish. 
 
 Sharks are not distinguished by species and are both imported an captured by both artisanal and industrial fleets. Sardines, croakers and tunas are caught mainly by the industrial fleet, while the acoupa weakfish is mainly caught by artisanal fisheries from the north and northeast regions of Brazil. Snook is also one of the top 10 species sold in the market and mainly captured by the artisanal sector. It is one of the species with highest price in the market.
 
@@ -2735,9 +2734,9 @@ Brasil_Data[[6]] %>%
 
 ```
 
-Many important small-scale resources are not sold in the CEAGESP market but are important sources of income through sale in local markets. Resources such as crabs, lobsters, mullets, shrimp, snappers and groupers are very important sources of income for small-scale fishers. Only from our databases there are over 500 different species reported. For example, in São Paulo state most of the production is from small-scale fisheries sector. In this state, total fisheries value has increased in latest years, fluctuating at around one million reais per year (Figure 20). If we divide total value (1 million) by the number of registered fishers in the state (26 thousand), there is an annual income of about 37 thousand per fisher. In this state, shrimps, crab and crayfish are the most important species in terms of value (Table 17).
+Many important small-scale resources are not sold in the CEAGESP market but are important sources of income through sale in local markets. Resources such as crabs, lobsters, mullets, shrimp, snappers and groupers are very important sources of income for small-scale fishers. Only from our databases there are over 500 different species reported. For example, in São Paulo state most of the production is from small-scale fisheries sector. In this state, total fisheries value has increased in latest years, fluctuating at around one million reais per year (Figure 20). If we divide total value (1 million) by the number of registered fishers in the state (26 thousand), there is an annual income of about 37 thousand per fisher. In this state, shrimps, brazilian sardinella, and bashaw (weakfish) are the most important species in terms of value (Table 17).
 
-```{r Sao_Paulo_Value_G, eval=T,echo=F, fig.height=4, fig.width=8, fig.cap="Main species in terms of fishing revenue in São Paulo state from 2014 to 2018. Dataset UNIVALI. Bashaw = is also known as Croaker. 1 RS = 0.26 USD", fig.pos="H"}
+```{r Sao_Paulo_Value_G, eval=T,echo=F, fig.height=3, fig.width=7, fig.cap="Main species in terms of fishing revenue in São Paulo state from 2014 to 2018. Dataset UNIVALI. Bashaw = is also known as Croaker. 1 RS = 0.26 USD", fig.pos="L"}
 
 #State of Sao Paulo
 # sp.data = read.csv("sao paulo_1998_2018.csv")
@@ -2895,7 +2894,7 @@ Brasil_Data[[5]] %>%
                 "Bigeye tunas Thunnus obesus")
   )%>%
   kable("latex",
-        caption = "Main species imported from 2014 to 2017, Brazil.  Million USD. Dataset: MDIC.",
+        caption = "Main species exported from 2014 to 2017, Brazil.  Million USD. Dataset: MDIC.",
         booktabs = T,
         format.args = list(big.mark = ",")
   ) %>% 
@@ -4051,7 +4050,7 @@ prices_art %>%
 
 #### Trade Economic Participation
 
-Seafood products are one of the most important exports of the country. IFOP valued the exportation of fisheries-related products in US\$6.28 billion dollars in 2017 (@ifop_boletines_2017). This corresponded to ~ 9 % of the total value of national exports. By far, the most important group of species in terms of exports value are salmons, particularly the Atlantic salmon (*Salmo salar*) (Figure 34). The net value of salmons is, on average, US/$ ~3.4 billion (Table 3). They are almost exclusively produced by aquaculture. Mussels, specifically the Chilean Ribbed Mussel (*Aulacomya ater*) and the Chorus mussels (*Choromytilus chorus*) are also among the most valuable exports. These are landed by artisanal fishers and to a lesser extent produced in aquaculture centers, contributing with ~ US\$167 million. In general, the value composition of exports is stable. Yet, salmon seems to be driving an increase in exports value since 2015 (Table 23).
+Seafood products are one of the most important exports of the country. IFOP valued the exportation of fisheries-related products in US\$6.28 billion dollars in 2017 (@ifop_boletines_2017). This corresponded to ~ 9 % of the total value of national exports. By far, the most important group of species in terms of exports value are salmons, particularly the Atlantic salmon (*Salmo salar*) (Figure 34). The net value of salmons is, on average, US/$ ~3.4 billion (Table 23). They are almost exclusively produced by aquaculture. Mussels, specifically the Chilean Ribbed Mussel (*Aulacomya ater*) and the Chorus mussels (*Choromytilus chorus*) are also among the most valuable exports. These are landed by artisanal fishers and to a lesser extent produced in aquaculture centers, contributing with ~ US\$167 million. In general, the value composition of exports is stable. Yet, salmon seems to be driving an increase in exports value since 2015 (Table 23).
 
 The most valuable sea products in terms of exports are frozen and fresh followed by fish meal and dried algae [@ifop_boletines_2017]. In 2016, fish fillets were the fourth most exported product by Chile. This commodity generates around US\$2 billion per year and is mainly composed of farmed salmons [@datachile_fish_2016] (Figure 34). 
 
@@ -4353,7 +4352,7 @@ ggplot(manufacturing_employment,
 
 There are 17,631 people employed among the 3,683 aquaculture centers currently registered in Chile [@Maturana:h6pAM4Qg], including ~4,500 women. Figure 38 shows the distribution of aquaculture centers per region and type of farmed species. The main type of product being farmed is fish, mostly salmon, followed by mollusks and algae. Region X hosts more than half of the aquaculture centers in the country. 
 
-```{r Aquaculture centers per region and type of species, echo= FALSE, message= FALSE, fig.height=4,fig.width=8, warning= FALSE, fig.cap= 'Number of aquaculture centers in each region by type of species in 2017. Source: Report Subsector Acuicultura 2017 by SERNAPESCA (SERNAPESCA website, 2017)'}
+```{r Aquaculture centers per region and type of species, echo= FALSE, message= FALSE, fig.height=4,fig.width=8, warning= FALSE, fig.pos='t', fig.cap= 'Number of aquaculture centers in each region by type of species in 2017. Source: Report Subsector Acuicultura 2017 by SERNAPESCA (SERNAPESCA website, 2017)'}
 
 # Importing number of aquac. centers, SERNAPESCA
 
@@ -4377,7 +4376,9 @@ ggplot(centers_aquaculture, aes(x= as.factor(Region), y= Centers, fill = Species
 
 ```
 
+
 \clearpage
+
 
 ## Results Peru
 
@@ -4385,9 +4386,7 @@ ggplot(centers_aquaculture, aes(x= as.factor(Region), y= Centers, fill = Species
 
 Based on the most recent published data by the Ministry of Production, seven species and three groups of species (i.e. shrimps, tunas and sharks) were responsible for 95% of the country’s marine capture production (MCP) between 2010 and 2016 (Figure 39 and Table 25) [@PRODUCE:2017wp]. Anchoveta (*Engraulis ringens*) represented 78% of these landings. On average, 3.93 (± 1.56) million tonnes this species were annually reduced into fishmeal and fish oil (FMFO) during the studied period. Peruvian FMFO is mainly used in feed producing value chains abroad [@Christensen:2014dy; @Majluf:2016dz].
 
-Only 22% of the Peruvian MCP was used for direct human consumption (DHC) value chains (Figure 40), at a rate of 1.13 (± 0.13) million tonnes per year. Key species for DHC include: jumbo flying squid (*Dosidicus gigas*), Chilean jack mackerel (*Trachurus murphyi*), Pacific chub mackerel (*Scomber japonicus*) and Common dolphinfish (*Coryphaena hippurus*). The remaining MCP (2%) is discarded at sea, never reaching Peruvian landing sites.
-
-```{r P_Capture_G, eval=T,echo=F, fig.height=4,fig.width=9, fig.cap="Top 5 groups landed in Peru"}
+```{r P_Capture_G, eval=T,echo=F, fig.height=4,fig.width=9, fig.pos="b", fig.cap="Top 5 groups landed in Peru"}
 
 Capture_Peru <- read_excel("clean_databases/Peru/Peru_Dataset.xlsx", 
                            sheet = "Table 1") %>% 
@@ -4433,6 +4432,8 @@ Capture_Peru %>%
 
 ```
 
+Only 22% of the Peruvian MCP was used for direct human consumption (DHC) value chains (Figure 40), at a rate of 1.13 (± 0.13) million tonnes per year. Key species for DHC include: jumbo flying squid (*Dosidicus gigas*), Chilean jack mackerel (*Trachurus murphyi*), Pacific chub mackerel (*Scomber japonicus*) and Common dolphinfish (*Coryphaena hippurus*). The remaining MCP (2%) is discarded at sea, never reaching Peruvian landing sites.
+
 Although most MCP is caught by large-scale fishing vessels using industrial purse seine nets (i.e., used for targeting anchoveta). Nonetheless, MCP for DHC is mainly caught by small-scale fishing vessels, using multiple fishing methods and gears. Mackerel species, for example, are caught using artisanal purse seine nets, common dolphinfish is caught using small-scale longlines and the jumbo flying squid is caught using manual jigs [@SueiroCabredo:2015up].
 
 ```{r P_Capture_T, eval=T,echo=F,}
@@ -4466,6 +4467,8 @@ grid.raster(img)
 ```
 
 Freshwater capture production (FAP) in Peru is severely underestimated by PRODUCE and has very low species resolution [@SueiroCabredo:2015up]. In the last published annual report, PRODUCE did not segregate landings by species coming from freshwater systems [@PRODUCE:2017wp]. As FAP is predominantly used for subsistence in rural Amazonian and Andean communities, the catch hardly ever reaches landing sites monitored by the regional fisheries authorities and thus is almost never registered [@SueiroCabredo:2015up]. Between 2010 and 2016 Peruvian freshwater systems produced average estimated yields of 68.3 (± 10.1) thousand tonnes per year. The reported freshwater capture production by PRODUCE during the study period totaled 478 thousand tonnes [@PRODUCE:2017wp], amounting to ~1% of the marine capture production.
+
+\clearpage
 
 #### Aquaculture
 
@@ -4772,9 +4775,9 @@ Between 2010 and 2016 period, the total declared seafood consumption (DSCT) show
 When displayed by region DSCT revealed that 84% of seafood was consumed in the coastal regions of Peru (Figure 4). Lima was the largest market during the studied period, concentrating 41% of the DSCT (Figure 44). Other important markets were the Piura, Lambayeque and La Libertad regions, which respectively concentrated 11%, 8% and 6% of the DSCT. Additionally, the regional analysis of the DSCpc, revealed that Peruvian seafood consumption per capita was higher in northern coastal regions. These include Lambayeque (25.65 kg/person in 2016), Tumbes (24.43 kg/person in 2016) and Piura (23.76 kg/person in 2016). DSCpc in the Ica, Callao and Lima regions were also well above the national average. Conversely, DSCpc was lowest in the Peruvian Amazon, including the Loreto (1.66 kg/person in 2016), Ucayali (3.45 kg/person in 2016), Madre de Dios (4.20 kg/person in 2016), Amazonas (4.92 kg/person in 2016) and San Martin (5.33 kg/person in 2016) regions (Figure 44).
 
 ```{r Map_Data, echo=F, results='hide'}
-path_Peru <- ("international/information/raw_databases/Spatial/PER_adm/")
+path_Peru <- ("./international/information/raw_databases/Spatial/per_admbnda_adm1_2018/")
 #The File
-fnam_Peru <- "Per_adm1"
+fnam_Peru <- "per_admbnda_adm1_2018"
 #Load it!
 
 #### Extract
