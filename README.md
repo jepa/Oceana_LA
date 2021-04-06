@@ -63,3 +63,6 @@ Second preliminary reports of findings for each nation (**JEPA**)
 - *Oceana_Ref.bib*: BidText file containing all the references in the project
 
 - *Report_Figures*: Include figures nor produced by code or figures that will take too long to produce
+
+
+*This project is completed and the repository archived*
